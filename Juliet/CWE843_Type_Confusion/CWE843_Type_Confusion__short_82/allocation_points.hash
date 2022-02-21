@@ -1,0 +1,42 @@
+AllocationPointsTypeInfo[TypeId] Size: 1
+<0xee8d98> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+TYCHE[0] = [18446744056529682432..17179869184] = FileName: ../../testcasesupport/io.c
+	<0xee8d98> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+AllocationPointsTypeInfo[TypeId] Size: 1
+<0x1c2f2c8> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_82_bad.cpp
+	<0x1c2f2c8> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+AllocationPointsTypeInfo[TypeId] Size: 1
+<0xd36828> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_82_goodG2B.cpp
+	<0xd36828> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+AllocationPointsTypeInfo[TypeId] Size: 1
+<0xfc9888> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_82a.cpp
+	<0xfc9888> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+AllocationPointsTypeInfo[TypeId] Size: 4
+<0xe647e8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xfc9888>, size: 64)
+TYCHE[0] = [0..8] = FileName: CWE843_Type_Confusion__short_82a.cpp
+	<0x10adce0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10a7e48>, file: <0x10a7e08>, line: 30, size: 64, elements: <0x10b0ef0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+	<0x10b0c28> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x10adce0>, baseType: <0x10adc60>, flags: DIFlagPublic)
+	<0x10adc60> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10a7e48>, file: <0x10a7e08>, line: 21, size: 64, elements: <0x10afdb0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+	<0x10aedc8> = !DIDerivedType(tag: DW_TAG_member, name: "_vptr$CWE843_Type_Confusion__short_82_base", scope: <0x10a7e08>, file: <0x10a7e08>, baseType: <0x10add48>, size: 64, flags: DIFlagArtificial)
+	<0x10adc60> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10a7e48>, file: <0x10a7e08>, line: 21, size: 64, elements: <0x10afdb0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+<0x10adce0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10a7e48>, file: <0x10a7e08>, line: 30, size: 64, elements: <0x10b0ef0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_82a.cpp
+	<0x10adce0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10a7e48>, file: <0x10a7e08>, line: 30, size: 64, elements: <0x10b0ef0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+<0xe647e8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xfc9888>, size: 64)
+TYCHE[0] = [0..8] = FileName: CWE843_Type_Confusion__short_82a.cpp
+	<0x10adce0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10a7e48>, file: <0x10a7e08>, line: 30, size: 64, elements: <0x10b0ef0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+	<0x10b0c28> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x10adce0>, baseType: <0x10adc60>, flags: DIFlagPublic)
+	<0x10adc60> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10a7e48>, file: <0x10a7e08>, line: 21, size: 64, elements: <0x10afdb0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+	<0x10aedc8> = !DIDerivedType(tag: DW_TAG_member, name: "_vptr$CWE843_Type_Confusion__short_82_base", scope: <0x10a7e08>, file: <0x10a7e08>, baseType: <0x10add48>, size: 64, flags: DIFlagArtificial)
+	<0x10adc60> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10a7e48>, file: <0x10a7e08>, line: 21, size: 64, elements: <0x10afdb0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+<0x10adc60> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10a7e48>, file: <0x10a7e08>, line: 21, size: 64, elements: <0x10afdb0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+TYCHE[0] = [0..8] = FileName: CWE843_Type_Confusion__short_82a.cpp
+	<0x10adce0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10a7e48>, file: <0x10a7e08>, line: 30, size: 64, elements: <0x10b0ef0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+	<0x10b0c28> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x10adce0>, baseType: <0x10adc60>, flags: DIFlagPublic)
+	<0x10adce0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10a7e48>, file: <0x10a7e08>, line: 30, size: 64, elements: <0x10b0ef0>, vtableHolder: <0x10adc60>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+CWE843_Type_Confusion__short_82a.cpp#35_56##0#8083518388459302005
+AllocationPointsDIInfo[17639880] Size: 5
+--------------------------------------------------------------------------------------------------------------

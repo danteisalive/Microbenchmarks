@@ -1,0 +1,530 @@
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 35,55][Inlined Location: 35,55][BB ID: 18723488][Inst ID: 18811296]
+  %4 = call i8* @_Znwm(i64 8) #8, !dbg !308, !effectiveSan !26
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 37,5][Inlined Location: 37,5][BB ID: 18805184][Inst ID: 18822672]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 55,55][Inlined Location: 55,55][BB ID: 18869024][Inst ID: 18878784]
+  %5 = call i8* @_Znwm(i64 8) #8, !dbg !309, !effectiveSan !50
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 57,5][Inlined Location: 57,5][BB ID: 18882096][Inst ID: 18886544]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+Calle Node: 0x1272ce0: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x12733c0: i64,ch,glue = CopyFromReg 0x1272ec0; Register:i64 %physreg35; 0x1272ec0:1 Node TypeID: [ 0#]
+Second Node: 0x12733c0: i64,ch,glue = CopyFromReg 0x1272ec0; Register:i64 %physreg35; 0x1272ec0:1 Node TypeID: [ 0#]
+0x12733c0: i64,ch,glue = CopyFromReg 0x1272ec0; Register:i64 %physreg35; 0x1272ec0:1 Node TypeID: [ 1#35#55#18983144#3368523464000242366#2501942056580049717#35#55#18723488#18811296#2#18811296#18723488#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][Location: 3368523464000242366,2501942056580049717][Inlined Location: 35,55][BB ID: 18723488][Inst ID: 18811296][Prev. Inst ID: 35]
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+X86DAGToDAGISel:: 3
+Node: 0x12733c0: i64,ch,glue = CopyFromReg 0x1272ec0; Register:i64 %physreg35; 0x1272ec0:1 Node TypeID: [ 1#35#55#18983144#3368523464000242366#2501942056580049717#35#55#18723488#18811296#2#18811296#18723488#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x1272ec0: ch,glue = callseq_end 0x1273000; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1273000:1 Node TypeID: [ 0#]
+0x1272d80: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x1272ec0: ch,glue = callseq_end 0x1273000; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1273000:1 Node TypeID: [ 0#]
+0x1273000: ch,glue = <<Unknown Node #229>> 0x1272e20; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1272e20:1 Node TypeID: [ 0#]
+0x1273000: ch,glue = <<Unknown Node #229>> 0x1272e20; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1272e20:1 Node TypeID: [ 1#35#55#18983144#3368523464000242366#2501942056580049717#35#55#18723488#18811296#2#18811296#18723488#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0x1273000: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1272e20; 0x1272e20:1 Node TypeID: [ 1#35#55#18983144#3368523464000242366#2501942056580049717#35#55#18723488#18811296#2#18811296#18723488#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#18983144#3368523464000242366#2501942056580049717#35#55#18723488#18811296#2#18811296#18723488#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+Calle Node: 0x1273780: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x12730a0: ch,glue = callseq_end 0x1272e20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1272e20:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 37,5][BB ID: 18805184][Inst ID: 18822672][Prev. Inst ID: 37]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+0x12730a0: ch,glue = callseq_end 0x1272e20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1272e20:1 Node TypeID: [ 1#37#5#0#0#0#37#5#18805184#18822672#18446744073709551615#18822672#18805184#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+X86DAGToDAGISel:: 4
+Node: 0x12730a0: ch,glue = callseq_end 0x1272e20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1272e20:1 Node TypeID: [ 1#37#5#0#0#0#37#5#18805184#18822672#18446744073709551615#18822672#18805184#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x1272e20: ch,glue = <<Unknown Node #229>> 0x12733c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x12733c0:1 Node TypeID: [ 0#]
+0x1272ce0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1272ce0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1272e20: ch,glue = <<Unknown Node #229>> 0x12733c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x12733c0:1 Node TypeID: [ 0#]
+0x1272e20: ch,glue = <<Unknown Node #229>> 0x12733c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x12733c0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#18805184#18822672#18446744073709551615#18822672#18805184#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0x1272e20: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x12733c0; 0x12733c0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#18805184#18822672#18446744073709551615#18822672#18805184#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#18805184#18822672#18446744073709551615#18822672#18805184#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#18983144#3368523464000242366#2501942056580049717#35#55#18723488#18811296#2#18811296#18723488#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#35#55#18983144#3368523464000242366#2501942056580049717#35#55#18723488#18811296#2#18811296#18723488#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#18805184#18822672#18446744073709551615#18822672#18805184#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#37#5#0#0#0#37#5#18805184#18822672#18446744073709551615#18822672#18805184#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+Calle Node: 0x125e260: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x1273500: i64,ch,glue = CopyFromReg 0x125e120; Register:i64 %physreg35; 0x125e120:1 Node TypeID: [ 0#]
+Second Node: 0x1273500: i64,ch,glue = CopyFromReg 0x125e120; Register:i64 %physreg35; 0x125e120:1 Node TypeID: [ 0#]
+0x1273500: i64,ch,glue = CopyFromReg 0x125e120; Register:i64 %physreg35; 0x125e120:1 Node TypeID: [ 1#55#55#18938984#18272993694778026663#17113089607461981850#55#55#18869024#18878784#3#18878784#18869024#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][Location: 18272993694778026663,17113089607461981850][Inlined Location: 55,55][BB ID: 18869024][Inst ID: 18878784][Prev. Inst ID: 55]
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+X86DAGToDAGISel:: 3
+Node: 0x1273500: i64,ch,glue = CopyFromReg 0x125e120; Register:i64 %physreg35; 0x125e120:1 Node TypeID: [ 1#55#55#18938984#18272993694778026663#17113089607461981850#55#55#18869024#18878784#3#18878784#18869024#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x125e120: ch,glue = callseq_end 0x1273be0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1273be0:1 Node TypeID: [ 0#]
+0x1273aa0: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x125e120: ch,glue = callseq_end 0x1273be0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1273be0:1 Node TypeID: [ 0#]
+0x1273be0: ch,glue = <<Unknown Node #229>> 0x1273960; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1273960:1 Node TypeID: [ 0#]
+0x1273be0: ch,glue = <<Unknown Node #229>> 0x1273960; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1273960:1 Node TypeID: [ 1#55#55#18938984#18272993694778026663#17113089607461981850#55#55#18869024#18878784#3#18878784#18869024#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0x1273be0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1273960; 0x1273960:1 Node TypeID: [ 1#55#55#18938984#18272993694778026663#17113089607461981850#55#55#18869024#18878784#3#18878784#18869024#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#18938984#18272993694778026663#17113089607461981850#55#55#18869024#18878784#3#18878784#18869024#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+Calle Node: 0x12730a0: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x125e1c0: ch,glue = callseq_end 0x1273960; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1273960:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 57,5][BB ID: 18882096][Inst ID: 18886544][Prev. Inst ID: 57]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+0x125e1c0: ch,glue = callseq_end 0x1273960; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1273960:1 Node TypeID: [ 1#57#5#0#0#0#57#5#18882096#18886544#18446744073709551615#18886544#18882096#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+X86DAGToDAGISel:: 4
+Node: 0x125e1c0: ch,glue = callseq_end 0x1273960; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1273960:1 Node TypeID: [ 1#57#5#0#0#0#57#5#18882096#18886544#18446744073709551615#18886544#18882096#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x1273960: ch,glue = <<Unknown Node #229>> 0x1273500; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1273500:1 Node TypeID: [ 0#]
+0x125e260: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x125e260: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1273960: ch,glue = <<Unknown Node #229>> 0x1273500; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1273500:1 Node TypeID: [ 0#]
+0x1273960: ch,glue = <<Unknown Node #229>> 0x1273500; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1273500:1 Node TypeID: [ 1#57#5#0#0#0#57#5#18882096#18886544#18446744073709551615#18886544#18882096#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0x1273960: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1273500; 0x1273500:1 Node TypeID: [ 1#57#5#0#0#0#57#5#18882096#18886544#18446744073709551615#18886544#18882096#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#18882096#18886544#18446744073709551615#18886544#18882096#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#18938984#18272993694778026663#17113089607461981850#55#55#18869024#18878784#3#18878784#18869024#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#55#55#18938984#18272993694778026663#17113089607461981850#55#55#18869024#18878784#3#18878784#18869024#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#18882096#18886544#18446744073709551615#18886544#18882096#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#57#5#0#0#0#57#5#18882096#18886544#18446744073709551615#18886544#18882096#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 35,55][Inlined Location: 35,55][BB ID: 15704704][Inst ID: 15792512]
+  %4 = call i8* @_Znwm(i64 8) #8, !dbg !308, !effectiveSan !26
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 37,5][Inlined Location: 37,5][BB ID: 15786400][Inst ID: 15803888]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 55,55][Inlined Location: 55,55][BB ID: 15850240][Inst ID: 15860000]
+  %5 = call i8* @_Znwm(i64 8) #8, !dbg !309, !effectiveSan !50
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 57,5][Inlined Location: 57,5][BB ID: 15863312][Inst ID: 15867760]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+Calle Node: 0xf91da0: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0xf92480: i64,ch,glue = CopyFromReg 0xf91f80; Register:i64 %physreg35; 0xf91f80:1 Node TypeID: [ 0#]
+Second Node: 0xf92480: i64,ch,glue = CopyFromReg 0xf91f80; Register:i64 %physreg35; 0xf91f80:1 Node TypeID: [ 0#]
+0xf92480: i64,ch,glue = CopyFromReg 0xf91f80; Register:i64 %physreg35; 0xf91f80:1 Node TypeID: [ 1#35#55#15964536#3368523464000242366#2501942056580049717#35#55#15704704#15792512#2#15792512#15704704#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][Location: 3368523464000242366,2501942056580049717][Inlined Location: 35,55][BB ID: 15704704][Inst ID: 15792512][Prev. Inst ID: 35]
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+X86DAGToDAGISel:: 3
+Node: 0xf92480: i64,ch,glue = CopyFromReg 0xf91f80; Register:i64 %physreg35; 0xf91f80:1 Node TypeID: [ 1#35#55#15964536#3368523464000242366#2501942056580049717#35#55#15704704#15792512#2#15792512#15704704#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0xf91f80: ch,glue = callseq_end 0xf920c0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf920c0:1 Node TypeID: [ 0#]
+0xf91e40: i64 = Register %physreg35 Node TypeID: [ 0#]
+0xf91f80: ch,glue = callseq_end 0xf920c0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf920c0:1 Node TypeID: [ 0#]
+0xf920c0: ch,glue = <<Unknown Node #229>> 0xf91ee0; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf91ee0:1 Node TypeID: [ 0#]
+0xf920c0: ch,glue = <<Unknown Node #229>> 0xf91ee0; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf91ee0:1 Node TypeID: [ 1#35#55#15964536#3368523464000242366#2501942056580049717#35#55#15704704#15792512#2#15792512#15704704#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0xf920c0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf91ee0; 0xf91ee0:1 Node TypeID: [ 1#35#55#15964536#3368523464000242366#2501942056580049717#35#55#15704704#15792512#2#15792512#15704704#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#15964536#3368523464000242366#2501942056580049717#35#55#15704704#15792512#2#15792512#15704704#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+Calle Node: 0xf92840: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0xf92160: ch,glue = callseq_end 0xf91ee0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf91ee0:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 37,5][BB ID: 15786400][Inst ID: 15803888][Prev. Inst ID: 37]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+0xf92160: ch,glue = callseq_end 0xf91ee0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf91ee0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#15786400#15803888#18446744073709551615#15803888#15786400#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+X86DAGToDAGISel:: 4
+Node: 0xf92160: ch,glue = callseq_end 0xf91ee0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf91ee0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#15786400#15803888#18446744073709551615#15803888#15786400#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0xf91ee0: ch,glue = <<Unknown Node #229>> 0xf92480; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf92480:1 Node TypeID: [ 0#]
+0xf91da0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xf91da0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xf91ee0: ch,glue = <<Unknown Node #229>> 0xf92480; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf92480:1 Node TypeID: [ 0#]
+0xf91ee0: ch,glue = <<Unknown Node #229>> 0xf92480; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf92480:1 Node TypeID: [ 1#37#5#0#0#0#37#5#15786400#15803888#18446744073709551615#15803888#15786400#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0xf91ee0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf92480; 0xf92480:1 Node TypeID: [ 1#37#5#0#0#0#37#5#15786400#15803888#18446744073709551615#15803888#15786400#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#15786400#15803888#18446744073709551615#15803888#15786400#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#15964536#3368523464000242366#2501942056580049717#35#55#15704704#15792512#2#15792512#15704704#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#35#55#15964536#3368523464000242366#2501942056580049717#35#55#15704704#15792512#2#15792512#15704704#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#15786400#15803888#18446744073709551615#15803888#15786400#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#37#5#0#0#0#37#5#15786400#15803888#18446744073709551615#15803888#15786400#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+Calle Node: 0xf7d350: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0xf925c0: i64,ch,glue = CopyFromReg 0xf7d210; Register:i64 %physreg35; 0xf7d210:1 Node TypeID: [ 0#]
+Second Node: 0xf925c0: i64,ch,glue = CopyFromReg 0xf7d210; Register:i64 %physreg35; 0xf7d210:1 Node TypeID: [ 0#]
+0xf925c0: i64,ch,glue = CopyFromReg 0xf7d210; Register:i64 %physreg35; 0xf7d210:1 Node TypeID: [ 1#55#55#15920520#18272993694778026663#17113089607461981850#55#55#15850240#15860000#3#15860000#15850240#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][Location: 18272993694778026663,17113089607461981850][Inlined Location: 55,55][BB ID: 15850240][Inst ID: 15860000][Prev. Inst ID: 55]
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+X86DAGToDAGISel:: 3
+Node: 0xf925c0: i64,ch,glue = CopyFromReg 0xf7d210; Register:i64 %physreg35; 0xf7d210:1 Node TypeID: [ 1#55#55#15920520#18272993694778026663#17113089607461981850#55#55#15850240#15860000#3#15860000#15850240#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0xf7d210: ch,glue = callseq_end 0xf92ca0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf92ca0:1 Node TypeID: [ 0#]
+0xf92b60: i64 = Register %physreg35 Node TypeID: [ 0#]
+0xf7d210: ch,glue = callseq_end 0xf92ca0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf92ca0:1 Node TypeID: [ 0#]
+0xf92ca0: ch,glue = <<Unknown Node #229>> 0xf92a20; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf92a20:1 Node TypeID: [ 0#]
+0xf92ca0: ch,glue = <<Unknown Node #229>> 0xf92a20; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf92a20:1 Node TypeID: [ 1#55#55#15920520#18272993694778026663#17113089607461981850#55#55#15850240#15860000#3#15860000#15850240#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0xf92ca0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf92a20; 0xf92a20:1 Node TypeID: [ 1#55#55#15920520#18272993694778026663#17113089607461981850#55#55#15850240#15860000#3#15860000#15850240#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#15920520#18272993694778026663#17113089607461981850#55#55#15850240#15860000#3#15860000#15850240#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+Calle Node: 0xf92160: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0xf7d2b0: ch,glue = callseq_end 0xf92a20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf92a20:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 57,5][BB ID: 15863312][Inst ID: 15867760][Prev. Inst ID: 57]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+0xf7d2b0: ch,glue = callseq_end 0xf92a20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf92a20:1 Node TypeID: [ 1#57#5#0#0#0#57#5#15863312#15867760#18446744073709551615#15867760#15863312#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+X86DAGToDAGISel:: 4
+Node: 0xf7d2b0: ch,glue = callseq_end 0xf92a20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xf92a20:1 Node TypeID: [ 1#57#5#0#0#0#57#5#15863312#15867760#18446744073709551615#15867760#15863312#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0xf92a20: ch,glue = <<Unknown Node #229>> 0xf925c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf925c0:1 Node TypeID: [ 0#]
+0xf7d350: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xf7d350: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xf92a20: ch,glue = <<Unknown Node #229>> 0xf925c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf925c0:1 Node TypeID: [ 0#]
+0xf92a20: ch,glue = <<Unknown Node #229>> 0xf925c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf925c0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#15863312#15867760#18446744073709551615#15867760#15863312#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0xf92a20: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xf925c0; 0xf925c0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#15863312#15867760#18446744073709551615#15867760#15863312#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#15863312#15867760#18446744073709551615#15867760#15863312#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#15920520#18272993694778026663#17113089607461981850#55#55#15850240#15860000#3#15860000#15850240#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#55#55#15920520#18272993694778026663#17113089607461981850#55#55#15850240#15860000#3#15860000#15850240#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#15863312#15867760#18446744073709551615#15867760#15863312#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#57#5#0#0#0#57#5#15863312#15867760#18446744073709551615#15867760#15863312#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 35,55][Inlined Location: 35,55][BB ID: 41915008][Inst ID: 42002816]
+  %4 = call i8* @_Znwm(i64 8) #8, !dbg !308, !effectiveSan !26
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 37,5][Inlined Location: 37,5][BB ID: 41996704][Inst ID: 42014192]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 55,55][Inlined Location: 55,55][BB ID: 42060544][Inst ID: 42070304]
+  %5 = call i8* @_Znwm(i64 8) #8, !dbg !309, !effectiveSan !50
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 57,5][Inlined Location: 57,5][BB ID: 42073616][Inst ID: 42078064]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+Calle Node: 0x2890dd0: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x28914b0: i64,ch,glue = CopyFromReg 0x2890fb0; Register:i64 %physreg35; 0x2890fb0:1 Node TypeID: [ 0#]
+Second Node: 0x28914b0: i64,ch,glue = CopyFromReg 0x2890fb0; Register:i64 %physreg35; 0x2890fb0:1 Node TypeID: [ 0#]
+0x28914b0: i64,ch,glue = CopyFromReg 0x2890fb0; Register:i64 %physreg35; 0x2890fb0:1 Node TypeID: [ 1#35#55#42174872#3368523464000242366#2501942056580049717#35#55#41915008#42002816#2#42002816#41915008#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][Location: 3368523464000242366,2501942056580049717][Inlined Location: 35,55][BB ID: 41915008][Inst ID: 42002816][Prev. Inst ID: 35]
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+X86DAGToDAGISel:: 3
+Node: 0x28914b0: i64,ch,glue = CopyFromReg 0x2890fb0; Register:i64 %physreg35; 0x2890fb0:1 Node TypeID: [ 1#35#55#42174872#3368523464000242366#2501942056580049717#35#55#41915008#42002816#2#42002816#41915008#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x2890fb0: ch,glue = callseq_end 0x28910f0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x28910f0:1 Node TypeID: [ 0#]
+0x2890e70: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x2890fb0: ch,glue = callseq_end 0x28910f0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x28910f0:1 Node TypeID: [ 0#]
+0x28910f0: ch,glue = <<Unknown Node #229>> 0x2890f10; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2890f10:1 Node TypeID: [ 0#]
+0x28910f0: ch,glue = <<Unknown Node #229>> 0x2890f10; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2890f10:1 Node TypeID: [ 1#35#55#42174872#3368523464000242366#2501942056580049717#35#55#41915008#42002816#2#42002816#41915008#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0x28910f0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2890f10; 0x2890f10:1 Node TypeID: [ 1#35#55#42174872#3368523464000242366#2501942056580049717#35#55#41915008#42002816#2#42002816#41915008#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#42174872#3368523464000242366#2501942056580049717#35#55#41915008#42002816#2#42002816#41915008#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+Calle Node: 0x2891870: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x2891190: ch,glue = callseq_end 0x2890f10; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2890f10:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 37,5][BB ID: 41996704][Inst ID: 42014192][Prev. Inst ID: 37]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+0x2891190: ch,glue = callseq_end 0x2890f10; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2890f10:1 Node TypeID: [ 1#37#5#0#0#0#37#5#41996704#42014192#18446744073709551615#42014192#41996704#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+X86DAGToDAGISel:: 4
+Node: 0x2891190: ch,glue = callseq_end 0x2890f10; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2890f10:1 Node TypeID: [ 1#37#5#0#0#0#37#5#41996704#42014192#18446744073709551615#42014192#41996704#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x2890f10: ch,glue = <<Unknown Node #229>> 0x28914b0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x28914b0:1 Node TypeID: [ 0#]
+0x2890dd0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x2890dd0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x2890f10: ch,glue = <<Unknown Node #229>> 0x28914b0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x28914b0:1 Node TypeID: [ 0#]
+0x2890f10: ch,glue = <<Unknown Node #229>> 0x28914b0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x28914b0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#41996704#42014192#18446744073709551615#42014192#41996704#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0x2890f10: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x28914b0; 0x28914b0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#41996704#42014192#18446744073709551615#42014192#41996704#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#41996704#42014192#18446744073709551615#42014192#41996704#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#42174872#3368523464000242366#2501942056580049717#35#55#41915008#42002816#2#42002816#41915008#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#35#55#42174872#3368523464000242366#2501942056580049717#35#55#41915008#42002816#2#42002816#41915008#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#41996704#42014192#18446744073709551615#42014192#41996704#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#37#5#0#0#0#37#5#41996704#42014192#18446744073709551615#42014192#41996704#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+Calle Node: 0x287c380: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x28915f0: i64,ch,glue = CopyFromReg 0x287c240; Register:i64 %physreg35; 0x287c240:1 Node TypeID: [ 0#]
+Second Node: 0x28915f0: i64,ch,glue = CopyFromReg 0x287c240; Register:i64 %physreg35; 0x287c240:1 Node TypeID: [ 0#]
+0x28915f0: i64,ch,glue = CopyFromReg 0x287c240; Register:i64 %physreg35; 0x287c240:1 Node TypeID: [ 1#55#55#42130824#18272993694778026663#17113089607461981850#55#55#42060544#42070304#3#42070304#42060544#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][Location: 18272993694778026663,17113089607461981850][Inlined Location: 55,55][BB ID: 42060544][Inst ID: 42070304][Prev. Inst ID: 55]
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+X86DAGToDAGISel:: 3
+Node: 0x28915f0: i64,ch,glue = CopyFromReg 0x287c240; Register:i64 %physreg35; 0x287c240:1 Node TypeID: [ 1#55#55#42130824#18272993694778026663#17113089607461981850#55#55#42060544#42070304#3#42070304#42060544#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x287c240: ch,glue = callseq_end 0x2891cd0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2891cd0:1 Node TypeID: [ 0#]
+0x2891b90: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x287c240: ch,glue = callseq_end 0x2891cd0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2891cd0:1 Node TypeID: [ 0#]
+0x2891cd0: ch,glue = <<Unknown Node #229>> 0x2891a50; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2891a50:1 Node TypeID: [ 0#]
+0x2891cd0: ch,glue = <<Unknown Node #229>> 0x2891a50; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2891a50:1 Node TypeID: [ 1#55#55#42130824#18272993694778026663#17113089607461981850#55#55#42060544#42070304#3#42070304#42060544#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0x2891cd0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2891a50; 0x2891a50:1 Node TypeID: [ 1#55#55#42130824#18272993694778026663#17113089607461981850#55#55#42060544#42070304#3#42070304#42060544#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#42130824#18272993694778026663#17113089607461981850#55#55#42060544#42070304#3#42070304#42060544#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+Calle Node: 0x2891190: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x287c2e0: ch,glue = callseq_end 0x2891a50; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2891a50:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 57,5][BB ID: 42073616][Inst ID: 42078064][Prev. Inst ID: 57]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+0x287c2e0: ch,glue = callseq_end 0x2891a50; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2891a50:1 Node TypeID: [ 1#57#5#0#0#0#57#5#42073616#42078064#18446744073709551615#42078064#42073616#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+X86DAGToDAGISel:: 4
+Node: 0x287c2e0: ch,glue = callseq_end 0x2891a50; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2891a50:1 Node TypeID: [ 1#57#5#0#0#0#57#5#42073616#42078064#18446744073709551615#42078064#42073616#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x2891a50: ch,glue = <<Unknown Node #229>> 0x28915f0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x28915f0:1 Node TypeID: [ 0#]
+0x287c380: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x287c380: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x2891a50: ch,glue = <<Unknown Node #229>> 0x28915f0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x28915f0:1 Node TypeID: [ 0#]
+0x2891a50: ch,glue = <<Unknown Node #229>> 0x28915f0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x28915f0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#42073616#42078064#18446744073709551615#42078064#42073616#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0x2891a50: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x28915f0; 0x28915f0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#42073616#42078064#18446744073709551615#42078064#42073616#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#42073616#42078064#18446744073709551615#42078064#42073616#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#42130824#18272993694778026663#17113089607461981850#55#55#42060544#42070304#3#42070304#42060544#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#55#55#42130824#18272993694778026663#17113089607461981850#55#55#42060544#42070304#3#42070304#42060544#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#42073616#42078064#18446744073709551615#42078064#42073616#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#57#5#0#0#0#57#5#42073616#42078064#18446744073709551615#42078064#42073616#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 35,55][Inlined Location: 35,55][BB ID: 16462496][Inst ID: 16550304]
+  %4 = call i8* @_Znwm(i64 8) #8, !dbg !308, !effectiveSan !26
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 37,5][Inlined Location: 37,5][BB ID: 16544192][Inst ID: 16561680]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 55,55][Inlined Location: 55,55][BB ID: 16608032][Inst ID: 16617792]
+  %5 = call i8* @_Znwm(i64 8) #8, !dbg !309, !effectiveSan !50
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 57,5][Inlined Location: 57,5][BB ID: 16621104][Inst ID: 16625552]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+Calle Node: 0x104acb0: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x104b390: i64,ch,glue = CopyFromReg 0x104ae90; Register:i64 %physreg35; 0x104ae90:1 Node TypeID: [ 0#]
+Second Node: 0x104b390: i64,ch,glue = CopyFromReg 0x104ae90; Register:i64 %physreg35; 0x104ae90:1 Node TypeID: [ 0#]
+0x104b390: i64,ch,glue = CopyFromReg 0x104ae90; Register:i64 %physreg35; 0x104ae90:1 Node TypeID: [ 1#35#55#16722120#3368523464000242366#2501942056580049717#35#55#16462496#16550304#2#16550304#16462496#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][Location: 3368523464000242366,2501942056580049717][Inlined Location: 35,55][BB ID: 16462496][Inst ID: 16550304][Prev. Inst ID: 35]
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+X86DAGToDAGISel:: 3
+Node: 0x104b390: i64,ch,glue = CopyFromReg 0x104ae90; Register:i64 %physreg35; 0x104ae90:1 Node TypeID: [ 1#35#55#16722120#3368523464000242366#2501942056580049717#35#55#16462496#16550304#2#16550304#16462496#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x104ae90: ch,glue = callseq_end 0x104afd0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104afd0:1 Node TypeID: [ 0#]
+0x104ad50: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x104ae90: ch,glue = callseq_end 0x104afd0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104afd0:1 Node TypeID: [ 0#]
+0x104afd0: ch,glue = <<Unknown Node #229>> 0x104adf0; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104adf0:1 Node TypeID: [ 0#]
+0x104afd0: ch,glue = <<Unknown Node #229>> 0x104adf0; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104adf0:1 Node TypeID: [ 1#35#55#16722120#3368523464000242366#2501942056580049717#35#55#16462496#16550304#2#16550304#16462496#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0x104afd0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104adf0; 0x104adf0:1 Node TypeID: [ 1#35#55#16722120#3368523464000242366#2501942056580049717#35#55#16462496#16550304#2#16550304#16462496#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#16722120#3368523464000242366#2501942056580049717#35#55#16462496#16550304#2#16550304#16462496#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+Calle Node: 0x104b750: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x104b070: ch,glue = callseq_end 0x104adf0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104adf0:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 37,5][BB ID: 16544192][Inst ID: 16561680][Prev. Inst ID: 37]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+0x104b070: ch,glue = callseq_end 0x104adf0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104adf0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#16544192#16561680#18446744073709551615#16561680#16544192#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+X86DAGToDAGISel:: 4
+Node: 0x104b070: ch,glue = callseq_end 0x104adf0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104adf0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#16544192#16561680#18446744073709551615#16561680#16544192#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x104adf0: ch,glue = <<Unknown Node #229>> 0x104b390; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b390:1 Node TypeID: [ 0#]
+0x104acb0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x104acb0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x104adf0: ch,glue = <<Unknown Node #229>> 0x104b390; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b390:1 Node TypeID: [ 0#]
+0x104adf0: ch,glue = <<Unknown Node #229>> 0x104b390; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b390:1 Node TypeID: [ 1#37#5#0#0#0#37#5#16544192#16561680#18446744073709551615#16561680#16544192#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0x104adf0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b390; 0x104b390:1 Node TypeID: [ 1#37#5#0#0#0#37#5#16544192#16561680#18446744073709551615#16561680#16544192#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#16544192#16561680#18446744073709551615#16561680#16544192#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#16722120#3368523464000242366#2501942056580049717#35#55#16462496#16550304#2#16550304#16462496#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#35#55#16722120#3368523464000242366#2501942056580049717#35#55#16462496#16550304#2#16550304#16462496#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#16544192#16561680#18446744073709551615#16561680#16544192#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#37#5#0#0#0#37#5#16544192#16561680#18446744073709551615#16561680#16544192#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+Calle Node: 0x1036230: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x104b4d0: i64,ch,glue = CopyFromReg 0x10360f0; Register:i64 %physreg35; 0x10360f0:1 Node TypeID: [ 0#]
+Second Node: 0x104b4d0: i64,ch,glue = CopyFromReg 0x10360f0; Register:i64 %physreg35; 0x10360f0:1 Node TypeID: [ 0#]
+0x104b4d0: i64,ch,glue = CopyFromReg 0x10360f0; Register:i64 %physreg35; 0x10360f0:1 Node TypeID: [ 1#55#55#16677992#18272993694778026663#17113089607461981850#55#55#16608032#16617792#3#16617792#16608032#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][Location: 18272993694778026663,17113089607461981850][Inlined Location: 55,55][BB ID: 16608032][Inst ID: 16617792][Prev. Inst ID: 55]
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+X86DAGToDAGISel:: 3
+Node: 0x104b4d0: i64,ch,glue = CopyFromReg 0x10360f0; Register:i64 %physreg35; 0x10360f0:1 Node TypeID: [ 1#55#55#16677992#18272993694778026663#17113089607461981850#55#55#16608032#16617792#3#16617792#16608032#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x10360f0: ch,glue = callseq_end 0x104bbb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104bbb0:1 Node TypeID: [ 0#]
+0x104ba70: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x10360f0: ch,glue = callseq_end 0x104bbb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104bbb0:1 Node TypeID: [ 0#]
+0x104bbb0: ch,glue = <<Unknown Node #229>> 0x104b930; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b930:1 Node TypeID: [ 0#]
+0x104bbb0: ch,glue = <<Unknown Node #229>> 0x104b930; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b930:1 Node TypeID: [ 1#55#55#16677992#18272993694778026663#17113089607461981850#55#55#16608032#16617792#3#16617792#16608032#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0x104bbb0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b930; 0x104b930:1 Node TypeID: [ 1#55#55#16677992#18272993694778026663#17113089607461981850#55#55#16608032#16617792#3#16617792#16608032#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#16677992#18272993694778026663#17113089607461981850#55#55#16608032#16617792#3#16617792#16608032#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+Calle Node: 0x104b070: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x1036190: ch,glue = callseq_end 0x104b930; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104b930:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 57,5][BB ID: 16621104][Inst ID: 16625552][Prev. Inst ID: 57]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+0x1036190: ch,glue = callseq_end 0x104b930; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104b930:1 Node TypeID: [ 1#57#5#0#0#0#57#5#16621104#16625552#18446744073709551615#16625552#16621104#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+X86DAGToDAGISel:: 4
+Node: 0x1036190: ch,glue = callseq_end 0x104b930; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x104b930:1 Node TypeID: [ 1#57#5#0#0#0#57#5#16621104#16625552#18446744073709551615#16625552#16621104#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x104b930: ch,glue = <<Unknown Node #229>> 0x104b4d0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b4d0:1 Node TypeID: [ 0#]
+0x1036230: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1036230: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x104b930: ch,glue = <<Unknown Node #229>> 0x104b4d0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b4d0:1 Node TypeID: [ 0#]
+0x104b930: ch,glue = <<Unknown Node #229>> 0x104b4d0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b4d0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#16621104#16625552#18446744073709551615#16625552#16621104#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0x104b930: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x104b4d0; 0x104b4d0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#16621104#16625552#18446744073709551615#16625552#16621104#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#16621104#16625552#18446744073709551615#16625552#16621104#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#16677992#18272993694778026663#17113089607461981850#55#55#16608032#16617792#3#16617792#16608032#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#55#55#16677992#18272993694778026663#17113089607461981850#55#55#16608032#16617792#3#16617792#16608032#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#16621104#16625552#18446744073709551615#16625552#16621104#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#57#5#0#0#0#57#5#16621104#16625552#18446744073709551615#16625552#16621104#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 35,55][Inlined Location: 35,55][BB ID: 14295712][Inst ID: 14383520]
+  %4 = call i8* @_Znwm(i64 8) #8, !dbg !308, !effectiveSan !26
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 37,5][Inlined Location: 37,5][BB ID: 14377408][Inst ID: 14394896]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 55,55][Inlined Location: 55,55][BB ID: 14441248][Inst ID: 14451008]
+  %5 = call i8* @_Znwm(i64 8) #8, !dbg !309, !effectiveSan !50
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 57,5][Inlined Location: 57,5][BB ID: 14454320][Inst ID: 14458768]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+Calle Node: 0xe39cb0: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0xe3a390: i64,ch,glue = CopyFromReg 0xe39e90; Register:i64 %physreg35; 0xe39e90:1 Node TypeID: [ 0#]
+Second Node: 0xe3a390: i64,ch,glue = CopyFromReg 0xe39e90; Register:i64 %physreg35; 0xe39e90:1 Node TypeID: [ 0#]
+0xe3a390: i64,ch,glue = CopyFromReg 0xe39e90; Register:i64 %physreg35; 0xe39e90:1 Node TypeID: [ 1#35#55#14555336#3368523464000242366#2501942056580049717#35#55#14295712#14383520#2#14383520#14295712#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][Location: 3368523464000242366,2501942056580049717][Inlined Location: 35,55][BB ID: 14295712][Inst ID: 14383520][Prev. Inst ID: 35]
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !308, !effectiveSan !26, !TYCHE_MD !309
+X86DAGToDAGISel:: 3
+Node: 0xe3a390: i64,ch,glue = CopyFromReg 0xe39e90; Register:i64 %physreg35; 0xe39e90:1 Node TypeID: [ 1#35#55#14555336#3368523464000242366#2501942056580049717#35#55#14295712#14383520#2#14383520#14295712#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0xe39e90: ch,glue = callseq_end 0xe39fd0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe39fd0:1 Node TypeID: [ 0#]
+0xe39d50: i64 = Register %physreg35 Node TypeID: [ 0#]
+0xe39e90: ch,glue = callseq_end 0xe39fd0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe39fd0:1 Node TypeID: [ 0#]
+0xe39fd0: ch,glue = <<Unknown Node #229>> 0xe39df0; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe39df0:1 Node TypeID: [ 0#]
+0xe39fd0: ch,glue = <<Unknown Node #229>> 0xe39df0; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe39df0:1 Node TypeID: [ 1#35#55#14555336#3368523464000242366#2501942056580049717#35#55#14295712#14383520#2#14383520#14295712#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0xe39fd0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe39df0; 0xe39df0:1 Node TypeID: [ 1#35#55#14555336#3368523464000242366#2501942056580049717#35#55#14295712#14383520#2#14383520#14295712#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#14555336#3368523464000242366#2501942056580049717#35#55#14295712#14383520#2#14383520#14295712#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+Calle Node: 0xe3a750: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0xe3a070: ch,glue = callseq_end 0xe39df0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe39df0:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 37,5][BB ID: 14377408][Inst ID: 14394896][Prev. Inst ID: 37]
+  call void @_ZdlPv(i8* %17) #10, !dbg !317, !TYCHE_MD !318
+0xe3a070: ch,glue = callseq_end 0xe39df0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe39df0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#14377408#14394896#18446744073709551615#14394896#14377408#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+X86DAGToDAGISel:: 4
+Node: 0xe3a070: ch,glue = callseq_end 0xe39df0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe39df0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#14377408#14394896#18446744073709551615#14394896#14377408#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0xe39df0: ch,glue = <<Unknown Node #229>> 0xe3a390; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a390:1 Node TypeID: [ 0#]
+0xe39cb0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xe39cb0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xe39df0: ch,glue = <<Unknown Node #229>> 0xe3a390; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a390:1 Node TypeID: [ 0#]
+0xe39df0: ch,glue = <<Unknown Node #229>> 0xe3a390; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a390:1 Node TypeID: [ 1#37#5#0#0#0#37#5#14377408#14394896#18446744073709551615#14394896#14377408#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EmitMachineNode::
+0xe39df0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a390; 0xe3a390:1 Node TypeID: [ 1#37#5#0#0#0#37#5#14377408#14394896#18446744073709551615#14394896#14377408#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#14377408#14394896#18446744073709551615#14394896#14377408#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#14555336#3368523464000242366#2501942056580049717#35#55#14295712#14383520#2#14383520#14295712#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#35#55#14555336#3368523464000242366#2501942056580049717#35#55#14295712#14383520#2#14383520#14295712#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#14377408#14394896#18446744073709551615#14394896#14377408#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#37#5#0#0#0#37#5#14377408#14394896#18446744073709551615#14394896#14377408#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#
+---------------------------------------------------------------------------------------
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+Calle Node: 0xe25230: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0xe3a4d0: i64,ch,glue = CopyFromReg 0xe250f0; Register:i64 %physreg35; 0xe250f0:1 Node TypeID: [ 0#]
+Second Node: 0xe3a4d0: i64,ch,glue = CopyFromReg 0xe250f0; Register:i64 %physreg35; 0xe250f0:1 Node TypeID: [ 0#]
+0xe3a4d0: i64,ch,glue = CopyFromReg 0xe250f0; Register:i64 %physreg35; 0xe250f0:1 Node TypeID: [ 1#55#55#14511208#18272993694778026663#17113089607461981850#55#55#14441248#14451008#3#14451008#14441248#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][Location: 18272993694778026663,17113089607461981850][Inlined Location: 55,55][BB ID: 14441248][Inst ID: 14451008][Prev. Inst ID: 55]
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !309, !effectiveSan !50, !TYCHE_MD !310
+X86DAGToDAGISel:: 3
+Node: 0xe3a4d0: i64,ch,glue = CopyFromReg 0xe250f0; Register:i64 %physreg35; 0xe250f0:1 Node TypeID: [ 1#55#55#14511208#18272993694778026663#17113089607461981850#55#55#14441248#14451008#3#14451008#14441248#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0xe250f0: ch,glue = callseq_end 0xe3abb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe3abb0:1 Node TypeID: [ 0#]
+0xe3aa70: i64 = Register %physreg35 Node TypeID: [ 0#]
+0xe250f0: ch,glue = callseq_end 0xe3abb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe3abb0:1 Node TypeID: [ 0#]
+0xe3abb0: ch,glue = <<Unknown Node #229>> 0xe3a930; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a930:1 Node TypeID: [ 0#]
+0xe3abb0: ch,glue = <<Unknown Node #229>> 0xe3a930; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a930:1 Node TypeID: [ 1#55#55#14511208#18272993694778026663#17113089607461981850#55#55#14441248#14451008#3#14451008#14441248#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0xe3abb0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a930; 0xe3a930:1 Node TypeID: [ 1#55#55#14511208#18272993694778026663#17113089607461981850#55#55#14441248#14451008#3#14451008#14441248#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#14511208#18272993694778026663#17113089607461981850#55#55#14441248#14451008#3#14451008#14441248#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+Calle Node: 0xe3a070: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0xe25190: ch,glue = callseq_end 0xe3a930; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe3a930:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 57,5][BB ID: 14454320][Inst ID: 14458768][Prev. Inst ID: 57]
+  call void @_ZdlPv(i8* %18) #10, !dbg !318, !TYCHE_MD !319
+0xe25190: ch,glue = callseq_end 0xe3a930; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe3a930:1 Node TypeID: [ 1#57#5#0#0#0#57#5#14454320#14458768#18446744073709551615#14458768#14454320#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+X86DAGToDAGISel:: 4
+Node: 0xe25190: ch,glue = callseq_end 0xe3a930; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xe3a930:1 Node TypeID: [ 1#57#5#0#0#0#57#5#14454320#14458768#18446744073709551615#14458768#14454320#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0xe3a930: ch,glue = <<Unknown Node #229>> 0xe3a4d0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a4d0:1 Node TypeID: [ 0#]
+0xe25230: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xe25230: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xe3a930: ch,glue = <<Unknown Node #229>> 0xe3a4d0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a4d0:1 Node TypeID: [ 0#]
+0xe3a930: ch,glue = <<Unknown Node #229>> 0xe3a4d0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a4d0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#14454320#14458768#18446744073709551615#14458768#14454320#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EmitMachineNode::
+0xe3a930: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xe3a4d0; 0xe3a4d0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#14454320#14458768#18446744073709551615#14458768#14454320#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#14454320#14458768#18446744073709551615#14458768#14454320#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#14511208#18272993694778026663#17113089607461981850#55#55#14441248#14451008#3#14451008#14441248#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#55#55#14511208#18272993694778026663#17113089607461981850#55#55#14441248#14451008#3#14451008#14441248#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#14454320#14458768#18446744073709551615#14458768#14454320#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#57#5#0#0#0#57#5#14454320#14458768#18446744073709551615#14458768#14454320#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+---------------------------------------------------------------------------------------
