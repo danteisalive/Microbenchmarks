@@ -1,394 +1,636 @@
-AllocationPointsTypeInfo[TypeId] Size: 1
-<0xb79d98> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
-TYCHE[0] = [18446744056529682432..17179869184] = FileName: ../../testcasesupport/io.c
-	<0xb79d98> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
-AllocationPointsTypeInfo[TypeId] Size: 1
-<0x13c4988> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
-TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x13c4988> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
-AllocationPointsTypeInfo[TypeId] Size: 18
-<0x16e7e90> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_key_compare<std::less<int> >", scope: <0x131ba88>, file: <0x13d9268>, line: 142, size: 8, elements: <0x16e8e08>, templateParams: <0x16e80a8>, identifier: "_ZTSSt20_Rb_tree_key_compareISt4lessIiEE")
-TYCHE[0] = [0..1] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16e8c78> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e7e90>)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-<0x13c98a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "new_allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x13d1498>, file: <0x160f768>, line: 58, size: 8, elements: <0x16e0630>, templateParams: <0x13c9738>, identifier: "_ZTSN9__gnu_cxx13new_allocatorISt13_Rb_tree_nodeISt4pairIKiPvEEEE")
-TYCHE[0] = [0..1] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16e7fd8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e7f68>)
-	<0x13d95b0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x162e848>, line: 108, size: 8, elements: <0x16e70b0>, templateParams: <0x13c9738>, identifier: "_ZTSSaISt13_Rb_tree_nodeISt4pairIKiPvEEE")
-	<0x16e6298> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d95b0>, baseType: <0x13c98a0>, flags: DIFlagPublic)
-	<0x13d95b0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x162e848>, line: 108, size: 8, elements: <0x16e70b0>, templateParams: <0x13c9738>, identifier: "_ZTSSaISt13_Rb_tree_nodeISt4pairIKiPvEEE")
-<0x1626ad0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "binary_function<int, int, bool>", scope: <0x131ba88>, file: <0x1534ec8>, line: 118, size: 8, elements: <0x12983f0>, templateParams: <0x16275c8>, identifier: "_ZTSSt15binary_functionIiibE")
-TYCHE[0] = [0..1] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16e8c78> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e7e90>)
-	<0x16e7e90> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_key_compare<std::less<int> >", scope: <0x131ba88>, file: <0x13d9268>, line: 142, size: 8, elements: <0x16e8e08>, templateParams: <0x16e80a8>, identifier: "_ZTSSt20_Rb_tree_key_compareISt4lessIiEE")
-	<0x16e80f8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_key_compare", scope: <0x16e7e90>, file: <0x13d9268>, line: 144, baseType: <0x1626a20>, size: 8)
-	<0x1626a20> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "less<int>", scope: <0x131ba88>, file: <0x1534ec8>, line: 381, size: 8, elements: <0x16375c0>, templateParams: <0x16231e8>, identifier: "_ZTSSt4lessIiE")
-	<0x1590898> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1626a20>, baseType: <0x1626ad0>)
-	<0x1626a20> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "less<int>", scope: <0x131ba88>, file: <0x1534ec8>, line: 381, size: 8, elements: <0x16375c0>, templateParams: <0x16231e8>, identifier: "_ZTSSt4lessIiE")
-<0x13d95b0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x162e848>, line: 108, size: 8, elements: <0x16e70b0>, templateParams: <0x13c9738>, identifier: "_ZTSSaISt13_Rb_tree_nodeISt4pairIKiPvEEE")
-TYCHE[0] = [0..1] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16e7fd8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e7f68>)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-<0x1626a20> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "less<int>", scope: <0x131ba88>, file: <0x1534ec8>, line: 381, size: 8, elements: <0x16375c0>, templateParams: <0x16231e8>, identifier: "_ZTSSt4lessIiE")
-TYCHE[0] = [0..1] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16e8c78> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e7e90>)
-	<0x16e7e90> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_key_compare<std::less<int> >", scope: <0x131ba88>, file: <0x13d9268>, line: 142, size: 8, elements: <0x16e8e08>, templateParams: <0x16e80a8>, identifier: "_ZTSSt20_Rb_tree_key_compareISt4lessIiEE")
-	<0x16e80f8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_key_compare", scope: <0x16e7e90>, file: <0x13d9268>, line: 144, baseType: <0x1626a20>, size: 8)
-	<0x16e7e90> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_key_compare<std::less<int> >", scope: <0x131ba88>, file: <0x13d9268>, line: 142, size: 8, elements: <0x16e8e08>, templateParams: <0x16e80a8>, identifier: "_ZTSSt20_Rb_tree_key_compareISt4lessIiEE")
-<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-TYCHE[0] = [0..48] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-TYCHE[0] = [0..48] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-TYCHE[8] = [8..48] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-TYCHE[8] = [8..40] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d08d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_header", scope: <0x16e8060>, file: <0x13d9268>, line: 170, baseType: <0x16e8e70>, size: 256)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-<0x134fbf8> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
-TYCHE[8] = [8..12] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d08d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_header", scope: <0x16e8060>, file: <0x13d9268>, line: 170, baseType: <0x16e8e70>, size: 256)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e91f8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_color", scope: <0x16e8e70>, file: <0x13d9268>, line: 106, baseType: <0x16e8ef0>, size: 32)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[16] = [16..24] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d08d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_header", scope: <0x16e8060>, file: <0x13d9268>, line: 170, baseType: <0x16e8e70>, size: 256)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e9348> = !DIDerivedType(tag: DW_TAG_member, name: "_M_parent", scope: <0x16e8e70>, file: <0x13d9268>, line: 107, baseType: <0x16e92d8>, size: 64, offset: 64)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[16] = [16..24] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d08d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_header", scope: <0x16e8060>, file: <0x13d9268>, line: 170, baseType: <0x16e8e70>, size: 256)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e9348> = !DIDerivedType(tag: DW_TAG_member, name: "_M_parent", scope: <0x16e8e70>, file: <0x13d9268>, line: 107, baseType: <0x16e92d8>, size: 64, offset: 64)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[24] = [24..32] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d08d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_header", scope: <0x16e8060>, file: <0x13d9268>, line: 170, baseType: <0x16e8e70>, size: 256)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e93b8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_left", scope: <0x16e8e70>, file: <0x13d9268>, line: 108, baseType: <0x16e92d8>, size: 64, offset: 128)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[24] = [24..32] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d08d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_header", scope: <0x16e8060>, file: <0x13d9268>, line: 170, baseType: <0x16e8e70>, size: 256)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e93b8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_left", scope: <0x16e8e70>, file: <0x13d9268>, line: 108, baseType: <0x16e92d8>, size: 64, offset: 128)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[32] = [32..40] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d08d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_header", scope: <0x16e8060>, file: <0x13d9268>, line: 170, baseType: <0x16e8e70>, size: 256)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16d0358> = !DIDerivedType(tag: DW_TAG_member, name: "_M_right", scope: <0x16e8e70>, file: <0x13d9268>, line: 109, baseType: <0x16e92d8>, size: 64, offset: 192)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[32] = [32..40] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d08d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_header", scope: <0x16e8060>, file: <0x13d9268>, line: 170, baseType: <0x16e8e70>, size: 256)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16d0358> = !DIDerivedType(tag: DW_TAG_member, name: "_M_right", scope: <0x16e8e70>, file: <0x13d9268>, line: 109, baseType: <0x16e92d8>, size: 64, offset: 192)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x13d12b8> = !DIBasicType(name: "long long int", size: 64, encoding: DW_ATE_signed)
-TYCHE[40] = [40..48] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x16269a0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x131ba08>, line: 100, size: 384, elements: <0x123ff60>, templateParams: <0x13d91d0>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
-	<0x16eb6d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_t", scope: <0x16269a0>, file: <0x131ba08>, line: 151, baseType: <0x170e098>, size: 384)
-	<0x13cf280> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x131ba88>, file: <0x13d9268>, line: 444, size: 384, elements: <0x1317a78>, templateParams: <0x1535d88>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
-	<0x16d73d8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_impl", scope: <0x13cf280>, file: <0x13d9268>, line: 713, baseType: <0x13d9530>, size: 384, flags: DIFlagProtected)
-	<0x13d9530> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x13cf280>, file: <0x13d9268>, line: 681, size: 384, elements: <0x16d7580>, templateParams: <0x13c95b0>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
-	<0x16d0cb8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x13d9530>, baseType: <0x16e8060>, offset: 64)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-	<0x16d0948> = !DIDerivedType(tag: DW_TAG_member, name: "_M_node_count", scope: <0x16e8060>, file: <0x13d9268>, line: 171, baseType: <0x13761e8>, size: 64, offset: 256)
-	<0x16e8060> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x131ba88>, file: <0x13d9268>, line: 168, size: 320, elements: <0x16d0ee8>, identifier: "_ZTSSt15_Rb_tree_header")
-CWE843_Type_Confusion__short_74_V1a.cpp#33_34##139696643219539#1
-AllocationPointsDIInfo[24351832] Size: 19
---------------------------------------------------------------------------------------------------------------
-AllocationPointsTypeInfo[TypeId] Size: 14
-<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-TYCHE[0] = [0..32] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1741498> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x17459f0>, baseType: <0x16e8e70>)
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-<0x134fbf8> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
-TYCHE[0] = [0..4] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1741498> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x17459f0>, baseType: <0x16e8e70>)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e91f8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_color", scope: <0x16e8e70>, file: <0x13d9268>, line: 106, baseType: <0x16e8ef0>, size: 32)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[8] = [8..16] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1741498> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x17459f0>, baseType: <0x16e8e70>)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e9348> = !DIDerivedType(tag: DW_TAG_member, name: "_M_parent", scope: <0x16e8e70>, file: <0x13d9268>, line: 107, baseType: <0x16e92d8>, size: 64, offset: 64)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[8] = [8..16] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1741498> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x17459f0>, baseType: <0x16e8e70>)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e9348> = !DIDerivedType(tag: DW_TAG_member, name: "_M_parent", scope: <0x16e8e70>, file: <0x13d9268>, line: 107, baseType: <0x16e92d8>, size: 64, offset: 64)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[16] = [16..24] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1741498> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x17459f0>, baseType: <0x16e8e70>)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e93b8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_left", scope: <0x16e8e70>, file: <0x13d9268>, line: 108, baseType: <0x16e92d8>, size: 64, offset: 128)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[16] = [16..24] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1741498> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x17459f0>, baseType: <0x16e8e70>)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16e93b8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_left", scope: <0x16e8e70>, file: <0x13d9268>, line: 108, baseType: <0x16e92d8>, size: 64, offset: 128)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[24] = [24..32] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1741498> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x17459f0>, baseType: <0x16e8e70>)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16d0358> = !DIDerivedType(tag: DW_TAG_member, name: "_M_right", scope: <0x16e8e70>, file: <0x13d9268>, line: 109, baseType: <0x16e92d8>, size: 64, offset: 192)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x16e9268> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x16e8e70>, size: 64)
-TYCHE[24] = [24..32] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1741498> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x17459f0>, baseType: <0x16e8e70>)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x16d0358> = !DIDerivedType(tag: DW_TAG_member, name: "_M_right", scope: <0x16e8e70>, file: <0x13d9268>, line: 109, baseType: <0x16e92d8>, size: 64, offset: 192)
-	<0x16e8e70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x131ba88>, file: <0x13d9268>, line: 101, size: 256, elements: <0x16d0890>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-TYCHE[32] = [32..48] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1746228> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x17459f0>, file: <0x13d9268>, line: 221, baseType: <0x1534990>, size: 128, offset: 256)
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-<0x134fbf8> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
-TYCHE[32] = [32..36] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1746228> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x17459f0>, file: <0x13d9268>, line: 221, baseType: <0x1534990>, size: 128, offset: 256)
-	<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-	<0x162e208> = !DIDerivedType(tag: DW_TAG_member, name: "first", scope: <0x1534990>, file: <0x1534a78>, line: 214, baseType: <0x15f03e8>, size: 32)
-	<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-<0x1534ae0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "__pair_base<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 190, size: 8, elements: <0x12983f0>, templateParams: <0x162e1c0>, identifier: "_ZTSSt11__pair_baseIKiPvE")
-TYCHE[32] = [32..33] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1746228> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x17459f0>, file: <0x13d9268>, line: 221, baseType: <0x1534990>, size: 128, offset: 256)
-	<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-	<0x162e7e8> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1534990>, baseType: <0x1534ae0>, flags: DIFlagPrivate)
-	<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-<0x125f828> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x13c4988>, size: 64)
-TYCHE[40] = [40..48] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1746228> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x17459f0>, file: <0x13d9268>, line: 221, baseType: <0x1534990>, size: 128, offset: 256)
-	<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-	<0x162e278> = !DIDerivedType(tag: DW_TAG_member, name: "second", scope: <0x1534990>, file: <0x1534a78>, line: 215, baseType: <0x13c6188>, size: 64, offset: 64)
-	<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-<0x125f828> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x13c4988>, size: 64)
-TYCHE[40] = [40..48] = FileName: CWE843_Type_Confusion__short_74_V1a.cpp
-	<0x17459f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x131ba88>, file: <0x13d9268>, line: 216, size: 384, elements: <0x17468c0>, templateParams: <0x17417d8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1746228> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x17459f0>, file: <0x13d9268>, line: 221, baseType: <0x1534990>, size: 128, offset: 256)
-	<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-	<0x162e278> = !DIDerivedType(tag: DW_TAG_member, name: "second", scope: <0x1534990>, file: <0x1534a78>, line: 215, baseType: <0x13c6188>, size: 64, offset: 64)
-	<0x1534990> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x131ba88>, file: <0x1534a78>, line: 208, size: 128, elements: <0x1631de8>, templateParams: <0x1539650>, identifier: "_ZTSSt4pairIKiPvE")
-CWE843_Type_Confusion__short_74_V1a.cpp#111_27##139696643219539#1
-AllocationPointsDIInfo[24765640] Size: 33
---------------------------------------------------------------------------------------------------------------
-AllocationPointsTypeInfo[TypeId] Size: 1
-<0x18e6418> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
-TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x18e6418> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
-AllocationPointsTypeInfo[TypeId] Size: 14
-<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-TYCHE[0] = [0..32] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c68a48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c684f0>, baseType: <0x1c0aa40>)
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-<0x1871688> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
-TYCHE[0] = [0..4] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c68a48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c684f0>, baseType: <0x1c0aa40>)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x1c0abb8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_color", scope: <0x1c0aa40>, file: <0x1bfad48>, line: 106, baseType: <0x1c0aac0>, size: 32)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-TYCHE[0] = [18446744056529682432..17179869184] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-<0x1c0ac28> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1c0aa40>, size: 64)
-TYCHE[8] = [8..16] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c68a48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c684f0>, baseType: <0x1c0aa40>)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x1c0ad08> = !DIDerivedType(tag: DW_TAG_member, name: "_M_parent", scope: <0x1c0aa40>, file: <0x1bfad48>, line: 107, baseType: <0x1c0ac98>, size: 64, offset: 64)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x1c0ac28> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1c0aa40>, size: 64)
-TYCHE[8] = [8..16] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c68a48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c684f0>, baseType: <0x1c0aa40>)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x1c0ad08> = !DIDerivedType(tag: DW_TAG_member, name: "_M_parent", scope: <0x1c0aa40>, file: <0x1bfad48>, line: 107, baseType: <0x1c0ac98>, size: 64, offset: 64)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x1c0ac28> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1c0aa40>, size: 64)
-TYCHE[16] = [16..24] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c68a48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c684f0>, baseType: <0x1c0aa40>)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x1c0ad78> = !DIDerivedType(tag: DW_TAG_member, name: "_M_left", scope: <0x1c0aa40>, file: <0x1bfad48>, line: 108, baseType: <0x1c0ac98>, size: 64, offset: 128)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x1c0ac28> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1c0aa40>, size: 64)
-TYCHE[16] = [16..24] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c68a48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c684f0>, baseType: <0x1c0aa40>)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x1c0ad78> = !DIDerivedType(tag: DW_TAG_member, name: "_M_left", scope: <0x1c0aa40>, file: <0x1bfad48>, line: 108, baseType: <0x1c0ac98>, size: 64, offset: 128)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x1c0ac28> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1c0aa40>, size: 64)
-TYCHE[24] = [24..32] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c68a48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c684f0>, baseType: <0x1c0aa40>)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x1c0b5f8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_right", scope: <0x1c0aa40>, file: <0x1bfad48>, line: 109, baseType: <0x1c0ac98>, size: 64, offset: 192)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x1c0ac28> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1c0aa40>, size: 64)
-TYCHE[24] = [24..32] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c68a48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c684f0>, baseType: <0x1c0aa40>)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-	<0x1c0b5f8> = !DIDerivedType(tag: DW_TAG_member, name: "_M_right", scope: <0x1c0aa40>, file: <0x1bfad48>, line: 109, baseType: <0x1c0ac98>, size: 64, offset: 192)
-	<0x1c0aa40> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x183d518>, file: <0x1bfad48>, line: 101, size: 256, elements: <0x1c0bb30>, identifier: "_ZTSSt18_Rb_tree_node_base")
-<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-TYCHE[32] = [32..48] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c6ad88> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x1c684f0>, file: <0x1bfad48>, line: 221, baseType: <0x1c68180>, size: 128, offset: 256)
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-<0x1871688> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
-TYCHE[32] = [32..36] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c6ad88> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x1c684f0>, file: <0x1bfad48>, line: 221, baseType: <0x1c68180>, size: 128, offset: 256)
-	<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-	<0x1c685e8> = !DIDerivedType(tag: DW_TAG_member, name: "first", scope: <0x1c68180>, file: <0x1b48568>, line: 214, baseType: <0x1897ce8>, size: 32)
-	<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-<0x1c68200> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "__pair_base<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 190, size: 8, elements: <0x1785ba0>, templateParams: <0x1c685a0>, identifier: "_ZTSSt11__pair_baseIKiPvE")
-TYCHE[32] = [32..33] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c6ad88> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x1c684f0>, file: <0x1bfad48>, line: 221, baseType: <0x1c68180>, size: 128, offset: 256)
-	<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-	<0x1c62d48> = !DIDerivedType(tag: DW_TAG_inheritance, scope: <0x1c68180>, baseType: <0x1c68200>, flags: DIFlagPrivate)
-	<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-<0x1781828> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x18e6418>, size: 64)
-TYCHE[40] = [40..48] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c6ad88> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x1c684f0>, file: <0x1bfad48>, line: 221, baseType: <0x1c68180>, size: 128, offset: 256)
-	<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-	<0x1c68658> = !DIDerivedType(tag: DW_TAG_member, name: "second", scope: <0x1c68180>, file: <0x1b48568>, line: 215, baseType: <0x18e7c18>, size: 64, offset: 64)
-	<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-<0x1781828> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x18e6418>, size: 64)
-TYCHE[40] = [40..48] = FileName: CWE843_Type_Confusion__short_74_V1b.cpp
-	<0x1c684f0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x183d518>, file: <0x1bfad48>, line: 216, size: 384, elements: <0x1c6c6d0>, templateParams: <0x1c6ab28>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
-	<0x1c6ad88> = !DIDerivedType(tag: DW_TAG_member, name: "_M_value_field", scope: <0x1c684f0>, file: <0x1bfad48>, line: 221, baseType: <0x1c68180>, size: 128, offset: 256)
-	<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-	<0x1c68658> = !DIDerivedType(tag: DW_TAG_member, name: "second", scope: <0x1c68180>, file: <0x1b48568>, line: 215, baseType: <0x18e7c18>, size: 64, offset: 64)
-	<0x1c68180> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x183d518>, file: <0x1b48568>, line: 208, size: 128, elements: <0x1c67dd8>, templateParams: <0x1c68280>, identifier: "_ZTSSt4pairIKiPvE")
-CWE843_Type_Confusion__short_74_V1b.cpp#111_27##139979541952874#0
-AllocationPointsDIInfo[30444376] Size: 15
---------------------------------------------------------------------------------------------------------------
+FILENAME CWE843_Type_Confusion__short_74_V1a.cpp
+APSIZE 18
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME struct std::_Rb_tree_key_compare<std::less<int> >
+VPTR N
+METATYPE <0x1dbb390> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_key_compare<std::less<int> >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 142, size: 8, elements: <0x1dbc308>, templateParams: <0x1dbb5a8>, identifier: "_ZTSSt20_Rb_tree_key_compareISt4lessIiEE")
+PARENTTYPE <0x1aac9b0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x1aa2700>, file: <0x1aac6e8>, line: 681, size: 384, elements: <0x1daaa80>, templateParams: <0x1a9ca30>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME class __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<int const, void*> > >
+VPTR N
+METATYPE <0x1a9cd20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "new_allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x1aa4918>, file: <0x1ce2858>, line: 58, size: 8, elements: <0x1db3b30>, templateParams: <0x1a9cbb8>, identifier: "_ZTSN9__gnu_cxx13new_allocatorISt13_Rb_tree_nodeISt4pairIKiPvEEEE")
+PARENTTYPE <0x1aaca30> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x1d0a668>, line: 108, size: 8, elements: <0x1dba5b0>, templateParams: <0x1a9cbb8>, identifier: "_ZTSSaISt13_Rb_tree_nodeISt4pairIKiPvEEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME struct std::binary_function<int, int, bool>
+VPTR N
+METATYPE <0x1c07f70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "binary_function<int, int, bool>", scope: <0x19eef08>, file: <0x1cf62e8>, line: 118, size: 8, elements: <0x196b700>, templateParams: <0x1cf9ba8>, identifier: "_ZTSSt15binary_functionIiibE")
+PARENTTYPE <0x1c07e60> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "less<int>", scope: <0x19eef08>, file: <0x1cf62e8>, line: 381, size: 8, elements: <0x1d0a530>, templateParams: <0x1cf9a58>, identifier: "_ZTSSt4lessIiE")
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME class std::allocator<std::_Rb_tree_node<std::pair<int const, void*> > >
+VPTR N
+METATYPE <0x1aaca30> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x1d0a668>, line: 108, size: 8, elements: <0x1dba5b0>, templateParams: <0x1a9cbb8>, identifier: "_ZTSSaISt13_Rb_tree_nodeISt4pairIKiPvEEE")
+PARENTTYPE <0x1aac9b0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x1aa2700>, file: <0x1aac6e8>, line: 681, size: 384, elements: <0x1daaa80>, templateParams: <0x1a9ca30>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME struct std::less<int>
+VPTR N
+METATYPE <0x1c07e60> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "less<int>", scope: <0x19eef08>, file: <0x1cf62e8>, line: 381, size: 8, elements: <0x1d0a530>, templateParams: <0x1cf9a58>, identifier: "_ZTSSt4lessIiE")
+PARENTTYPE <0x1dbb390> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_key_compare<std::less<int> >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 142, size: 8, elements: <0x1dbc308>, templateParams: <0x1dbb5a8>, identifier: "_ZTSSt20_Rb_tree_key_compareISt4lessIiEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 48
+FAM N
+NAME struct std::_Rb_tree<int, std::pair<int const, void*>, std::_Select1st<std::pair<int const, void*> >, std::less<int>, std::allocator<std::pair<int const, void*> > >::_Rb_tree_impl<std::less<int>, false>
+VPTR N
+METATYPE <0x1aac9b0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x1aa2700>, file: <0x1aac6e8>, line: 681, size: 384, elements: <0x1daaa80>, templateParams: <0x1a9ca30>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
+PARENTTYPE <0x1aa2700> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 444, size: 384, elements: <0x19eaef8>, templateParams: <0x1c09418>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class std::map<int, void*, std::less<int>, std::allocator<std::pair<int const, void*> > >
+VPTR N
+METATYPE <0x1cf6290> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x19eee88>, line: 100, size: 384, elements: <0x1912fb0>, templateParams: <0x1aac650>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 48
+FAM N
+NAME class std::_Rb_tree<int, std::pair<int const, void*>, std::_Select1st<std::pair<int const, void*> >, std::less<int>, std::allocator<std::pair<int const, void*> > >
+VPTR N
+METATYPE <0x1aa2700> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 444, size: 384, elements: <0x19eaef8>, templateParams: <0x1c09418>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
+PARENTTYPE <0x1cf6290> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x19eee88>, line: 100, size: 384, elements: <0x1912fb0>, templateParams: <0x1aac650>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
+OFFSET 8
+CORECED N
+LB 8
+UB 48
+FAM N
+NAME struct std::_Rb_tree_header
+VPTR N
+METATYPE <0x1dbb560> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x19eef08>, file: <0x1aac6e8>, line: 168, size: 320, elements: <0x1da83f8>, identifier: "_ZTSSt15_Rb_tree_header")
+PARENTTYPE <0x1aac9b0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x1aa2700>, file: <0x1aac6e8>, line: 681, size: 384, elements: <0x1daaa80>, templateParams: <0x1a9ca30>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
+OFFSET 8
+CORECED N
+LB 8
+UB 40
+FAM N
+NAME struct std::_Rb_tree_node_base
+VPTR N
+METATYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+PARENTTYPE <0x1dbb560> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x19eef08>, file: <0x1aac6e8>, line: 168, size: 320, elements: <0x1da83f8>, identifier: "_ZTSSt15_Rb_tree_header")
+OFFSET 8
+CORECED N
+LB 8
+UB 12
+FAM N
+NAME int32_t
+VPTR N
+METATYPE <0x1a23078> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 16
+CORECED Y
+LB 16
+UB 24
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 16
+CORECED N
+LB 16
+UB 24
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 24
+CORECED Y
+LB 24
+UB 32
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 24
+CORECED N
+LB 24
+UB 32
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 32
+CORECED N
+LB 32
+UB 40
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 32
+CORECED Y
+LB 32
+UB 40
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 40
+CORECED N
+LB 40
+UB 48
+FAM N
+NAME int64_t
+VPTR N
+METATYPE <0x1aa4738> = !DIBasicType(name: "long long int", size: 64, encoding: DW_ATE_signed)
+PARENTTYPE <0x1dbb560> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x19eef08>, file: <0x1aac6e8>, line: 168, size: 320, elements: <0x1da83f8>, identifier: "_ZTSSt15_Rb_tree_header")
+METAID CWE843_Type_Confusion__short_74_V1a.cpp#33#34#class std::map<int, void*, std::less<int>, std::allocator<std::pair<int const, void*> > >#31058216#16700497324719820221#16136677432966186739#_Znwm#_ZN31CWE843_Type_Confusion__short_743badEv#33#34#29397456#31500576#2
+FILENAME CWE843_Type_Confusion__short_74_V1a.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID CWE843_Type_Confusion__short_74_V1a.cpp#33#34#FREE#0#0#0#_ZdlPv#_ZN31CWE843_Type_Confusion__short_743badEv#33#34#31501616#31504432#18446744073709551615
+FILENAME CWE843_Type_Confusion__short_74_V1a.cpp
+APSIZE 18
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME struct std::_Rb_tree_key_compare<std::less<int> >
+VPTR N
+METATYPE <0x1dbb390> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_key_compare<std::less<int> >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 142, size: 8, elements: <0x1dbc308>, templateParams: <0x1dbb5a8>, identifier: "_ZTSSt20_Rb_tree_key_compareISt4lessIiEE")
+PARENTTYPE <0x1aac9b0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x1aa2700>, file: <0x1aac6e8>, line: 681, size: 384, elements: <0x1daaa80>, templateParams: <0x1a9ca30>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME class __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<int const, void*> > >
+VPTR N
+METATYPE <0x1a9cd20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "new_allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x1aa4918>, file: <0x1ce2858>, line: 58, size: 8, elements: <0x1db3b30>, templateParams: <0x1a9cbb8>, identifier: "_ZTSN9__gnu_cxx13new_allocatorISt13_Rb_tree_nodeISt4pairIKiPvEEEE")
+PARENTTYPE <0x1aaca30> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x1d0a668>, line: 108, size: 8, elements: <0x1dba5b0>, templateParams: <0x1a9cbb8>, identifier: "_ZTSSaISt13_Rb_tree_nodeISt4pairIKiPvEEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME struct std::binary_function<int, int, bool>
+VPTR N
+METATYPE <0x1c07f70> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "binary_function<int, int, bool>", scope: <0x19eef08>, file: <0x1cf62e8>, line: 118, size: 8, elements: <0x196b700>, templateParams: <0x1cf9ba8>, identifier: "_ZTSSt15binary_functionIiibE")
+PARENTTYPE <0x1c07e60> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "less<int>", scope: <0x19eef08>, file: <0x1cf62e8>, line: 381, size: 8, elements: <0x1d0a530>, templateParams: <0x1cf9a58>, identifier: "_ZTSSt4lessIiE")
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME class std::allocator<std::_Rb_tree_node<std::pair<int const, void*> > >
+VPTR N
+METATYPE <0x1aaca30> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "allocator<std::_Rb_tree_node<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x1d0a668>, line: 108, size: 8, elements: <0x1dba5b0>, templateParams: <0x1a9cbb8>, identifier: "_ZTSSaISt13_Rb_tree_nodeISt4pairIKiPvEEE")
+PARENTTYPE <0x1aac9b0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x1aa2700>, file: <0x1aac6e8>, line: 681, size: 384, elements: <0x1daaa80>, templateParams: <0x1a9ca30>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 1
+FAM N
+NAME struct std::less<int>
+VPTR N
+METATYPE <0x1c07e60> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "less<int>", scope: <0x19eef08>, file: <0x1cf62e8>, line: 381, size: 8, elements: <0x1d0a530>, templateParams: <0x1cf9a58>, identifier: "_ZTSSt4lessIiE")
+PARENTTYPE <0x1dbb390> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_key_compare<std::less<int> >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 142, size: 8, elements: <0x1dbc308>, templateParams: <0x1dbb5a8>, identifier: "_ZTSSt20_Rb_tree_key_compareISt4lessIiEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 48
+FAM N
+NAME struct std::_Rb_tree<int, std::pair<int const, void*>, std::_Select1st<std::pair<int const, void*> >, std::less<int>, std::allocator<std::pair<int const, void*> > >::_Rb_tree_impl<std::less<int>, false>
+VPTR N
+METATYPE <0x1aac9b0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x1aa2700>, file: <0x1aac6e8>, line: 681, size: 384, elements: <0x1daaa80>, templateParams: <0x1a9ca30>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
+PARENTTYPE <0x1aa2700> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 444, size: 384, elements: <0x19eaef8>, templateParams: <0x1c09418>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class std::map<int, void*, std::less<int>, std::allocator<std::pair<int const, void*> > >
+VPTR N
+METATYPE <0x1cf6290> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x19eee88>, line: 100, size: 384, elements: <0x1912fb0>, templateParams: <0x1aac650>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 48
+FAM N
+NAME class std::_Rb_tree<int, std::pair<int const, void*>, std::_Select1st<std::pair<int const, void*> >, std::less<int>, std::allocator<std::pair<int const, void*> > >
+VPTR N
+METATYPE <0x1aa2700> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "_Rb_tree<int, std::pair<const int, void *>, std::_Select1st<std::pair<const int, void *> >, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 444, size: 384, elements: <0x19eaef8>, templateParams: <0x1c09418>, identifier: "_ZTSSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE")
+PARENTTYPE <0x1cf6290> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "map<int, void *, std::less<int>, std::allocator<std::pair<const int, void *> > >", scope: <0x19eef08>, file: <0x19eee88>, line: 100, size: 384, elements: <0x1912fb0>, templateParams: <0x1aac650>, identifier: "_ZTSSt3mapIiPvSt4lessIiESaISt4pairIKiS0_EEE")
+OFFSET 8
+CORECED N
+LB 8
+UB 48
+FAM N
+NAME struct std::_Rb_tree_header
+VPTR N
+METATYPE <0x1dbb560> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x19eef08>, file: <0x1aac6e8>, line: 168, size: 320, elements: <0x1da83f8>, identifier: "_ZTSSt15_Rb_tree_header")
+PARENTTYPE <0x1aac9b0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_impl<std::less<int>, false>", scope: <0x1aa2700>, file: <0x1aac6e8>, line: 681, size: 384, elements: <0x1daaa80>, templateParams: <0x1a9ca30>, identifier: "_ZTSNSt8_Rb_treeIiSt4pairIKiPvESt10_Select1stIS3_ESt4lessIiESaIS3_EE13_Rb_tree_implIS7_Lb0EEE")
+OFFSET 8
+CORECED N
+LB 8
+UB 40
+FAM N
+NAME struct std::_Rb_tree_node_base
+VPTR N
+METATYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+PARENTTYPE <0x1dbb560> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x19eef08>, file: <0x1aac6e8>, line: 168, size: 320, elements: <0x1da83f8>, identifier: "_ZTSSt15_Rb_tree_header")
+OFFSET 8
+CORECED N
+LB 8
+UB 12
+FAM N
+NAME int32_t
+VPTR N
+METATYPE <0x1a23078> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 16
+CORECED Y
+LB 16
+UB 24
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 16
+CORECED N
+LB 16
+UB 24
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 24
+CORECED Y
+LB 24
+UB 32
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 24
+CORECED N
+LB 24
+UB 32
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 32
+CORECED N
+LB 32
+UB 40
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 32
+CORECED Y
+LB 32
+UB 40
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 40
+CORECED N
+LB 40
+UB 48
+FAM N
+NAME int64_t
+VPTR N
+METATYPE <0x1aa4738> = !DIBasicType(name: "long long int", size: 64, encoding: DW_ATE_signed)
+PARENTTYPE <0x1dbb560> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_header", scope: <0x19eef08>, file: <0x1aac6e8>, line: 168, size: 320, elements: <0x1da83f8>, identifier: "_ZTSSt15_Rb_tree_header")
+METAID CWE843_Type_Confusion__short_74_V1a.cpp#60#34#class std::map<int, void*, std::less<int>, std::allocator<std::pair<int const, void*> > >#31058216#16700497324719820221#16136677432966186739#_Znwm#_ZN31CWE843_Type_Confusion__short_74L7goodG2BEv#60#34#31942048#31945248#2
+FILENAME CWE843_Type_Confusion__short_74_V1a.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID CWE843_Type_Confusion__short_74_V1a.cpp#60#34#FREE#0#0#0#_ZdlPv#_ZN31CWE843_Type_Confusion__short_74L7goodG2BEv#60#34#31834064#31835696#18446744073709551615
+FILENAME CWE843_Type_Confusion__short_74_V1a.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID CWE843_Type_Confusion__short_74_V1a.cpp#125#2#FREE#0#0#0#_ZdlPv#_ZN9__gnu_cxx13new_allocatorISt13_Rb_tree_nodeISt4pairIKiPvEEE10deallocateEPS6_m#125#2#31904080#31921952#18446744073709551615
+FILENAME CWE843_Type_Confusion__short_74_V1a.cpp
+APSIZE 14
+OFFSET 0
+CORECED N
+LB 0
+UB 32
+FAM N
+NAME struct std::_Rb_tree_node_base
+VPTR N
+METATYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+PARENTTYPE <0x1dc6da0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 216, size: 384, elements: <0x1e1c960>, templateParams: <0x1dc6ca8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 4
+FAM N
+NAME int32_t
+VPTR N
+METATYPE <0x1a23078> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME struct std::_Rb_tree_node<std::pair<int const, void*> >
+VPTR N
+METATYPE <0x1dc6da0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 216, size: 384, elements: <0x1e1c960>, templateParams: <0x1dc6ca8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
+PARENTTYPE NOPARENT
+OFFSET 8
+CORECED Y
+LB 8
+UB 16
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 8
+CORECED N
+LB 8
+UB 16
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 16
+CORECED N
+LB 16
+UB 24
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 16
+CORECED Y
+LB 16
+UB 24
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 24
+CORECED N
+LB 24
+UB 32
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 24
+CORECED Y
+LB 24
+UB 32
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1dbcd78> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1dbc980>, size: 64)
+PARENTTYPE <0x1dbc980> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0x19eef08>, file: <0x1aac6e8>, line: 101, size: 256, elements: <0x1da7da0>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 32
+CORECED N
+LB 32
+UB 48
+FAM N
+NAME struct std::pair<int const, void*>
+VPTR N
+METATYPE <0x1d01800> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x19eef08>, file: <0x1d0a6a8>, line: 208, size: 128, elements: <0x1c08e58>, templateParams: <0x1c07a80>, identifier: "_ZTSSt4pairIKiPvE")
+PARENTTYPE <0x1dc6da0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0x19eef08>, file: <0x1aac6e8>, line: 216, size: 384, elements: <0x1e1c960>, templateParams: <0x1dc6ca8>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
+OFFSET 32
+CORECED N
+LB 32
+UB 36
+FAM N
+NAME int32_t
+VPTR N
+METATYPE <0x1a23078> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
+PARENTTYPE <0x1d01800> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x19eef08>, file: <0x1d0a6a8>, line: 208, size: 128, elements: <0x1c08e58>, templateParams: <0x1c07a80>, identifier: "_ZTSSt4pairIKiPvE")
+OFFSET 32
+CORECED N
+LB 32
+UB 33
+FAM N
+NAME class std::__pair_base<int const, void*>
+VPTR N
+METATYPE <0x1d01910> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "__pair_base<const int, void *>", scope: <0x19eef08>, file: <0x1d0a6a8>, line: 190, size: 8, elements: <0x196b700>, templateParams: <0x1c0c710>, identifier: "_ZTSSt11__pair_baseIKiPvE")
+PARENTTYPE <0x1d01800> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x19eef08>, file: <0x1d0a6a8>, line: 208, size: 128, elements: <0x1c08e58>, templateParams: <0x1c07a80>, identifier: "_ZTSSt4pairIKiPvE")
+OFFSET 40
+CORECED Y
+LB 40
+UB 48
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1932918> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1a97e08>, size: 64)
+PARENTTYPE <0x1d01800> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x19eef08>, file: <0x1d0a6a8>, line: 208, size: 128, elements: <0x1c08e58>, templateParams: <0x1c07a80>, identifier: "_ZTSSt4pairIKiPvE")
+OFFSET 40
+CORECED N
+LB 40
+UB 48
+FAM N
+NAME int8_t *
+VPTR N
+METATYPE <0x1932918> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1a97e08>, size: 64)
+PARENTTYPE <0x1d01800> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0x19eef08>, file: <0x1d0a6a8>, line: 208, size: 128, elements: <0x1c08e58>, templateParams: <0x1c07a80>, identifier: "_ZTSSt4pairIKiPvE")
+METAID CWE843_Type_Confusion__short_74_V1a.cpp#111#27#struct std::_Rb_tree_node<std::pair<int const, void*> >#31400040#592341151609468542#11511130885413776720#_Znwm#_ZN9__gnu_cxx13new_allocatorISt13_Rb_tree_nodeISt4pairIKiPvEEE8allocateEmPKv#111#27#32428848#32435536#3
+FILENAME CWE843_Type_Confusion__short_74_V1b.cpp
+APSIZE 14
+OFFSET 0
+CORECED N
+LB 0
+UB 32
+FAM N
+NAME struct std::_Rb_tree_node_base
+VPTR N
+METATYPE <0x1066b30> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0xc99998>, file: <0x1056e38>, line: 101, size: 256, elements: <0x1067c20>, identifier: "_ZTSSt18_Rb_tree_node_base")
+PARENTTYPE <0x10c54c0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0xc99998>, file: <0x1056e38>, line: 216, size: 384, elements: <0x10cd6b0>, templateParams: <0x10cbb08>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
+OFFSET 0
+CORECED N
+LB 0
+UB 4
+FAM N
+NAME int32_t
+VPTR N
+METATYPE <0xccdb08> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
+PARENTTYPE <0x1066b30> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0xc99998>, file: <0x1056e38>, line: 101, size: 256, elements: <0x1067c20>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME struct std::_Rb_tree_node<std::pair<int const, void*> >
+VPTR N
+METATYPE <0x10c54c0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0xc99998>, file: <0x1056e38>, line: 216, size: 384, elements: <0x10cd6b0>, templateParams: <0x10cbb08>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
+PARENTTYPE NOPARENT
+OFFSET 8
+CORECED Y
+LB 8
+UB 16
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1066d18> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1066b30>, size: 64)
+PARENTTYPE <0x1066b30> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0xc99998>, file: <0x1056e38>, line: 101, size: 256, elements: <0x1067c20>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 8
+CORECED N
+LB 8
+UB 16
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1066d18> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1066b30>, size: 64)
+PARENTTYPE <0x1066b30> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0xc99998>, file: <0x1056e38>, line: 101, size: 256, elements: <0x1067c20>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 16
+CORECED N
+LB 16
+UB 24
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1066d18> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1066b30>, size: 64)
+PARENTTYPE <0x1066b30> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0xc99998>, file: <0x1056e38>, line: 101, size: 256, elements: <0x1067c20>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 16
+CORECED Y
+LB 16
+UB 24
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1066d18> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1066b30>, size: 64)
+PARENTTYPE <0x1066b30> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0xc99998>, file: <0x1056e38>, line: 101, size: 256, elements: <0x1067c20>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 24
+CORECED N
+LB 24
+UB 32
+FAM N
+NAME struct std::_Rb_tree_node_base *
+VPTR N
+METATYPE <0x1066d18> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1066b30>, size: 64)
+PARENTTYPE <0x1066b30> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0xc99998>, file: <0x1056e38>, line: 101, size: 256, elements: <0x1067c20>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 24
+CORECED Y
+LB 24
+UB 32
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x1066d18> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1066b30>, size: 64)
+PARENTTYPE <0x1066b30> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node_base", scope: <0xc99998>, file: <0x1056e38>, line: 101, size: 256, elements: <0x1067c20>, identifier: "_ZTSSt18_Rb_tree_node_base")
+OFFSET 32
+CORECED N
+LB 32
+UB 48
+FAM N
+NAME struct std::pair<int const, void*>
+VPTR N
+METATYPE <0x10c5150> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0xc99998>, file: <0xfa4658>, line: 208, size: 128, elements: <0x10c4da8>, templateParams: <0x10c5250>, identifier: "_ZTSSt4pairIKiPvE")
+PARENTTYPE <0x10c54c0> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "_Rb_tree_node<std::pair<const int, void *> >", scope: <0xc99998>, file: <0x1056e38>, line: 216, size: 384, elements: <0x10cd6b0>, templateParams: <0x10cbb08>, identifier: "_ZTSSt13_Rb_tree_nodeISt4pairIKiPvEE")
+OFFSET 32
+CORECED N
+LB 32
+UB 36
+FAM N
+NAME int32_t
+VPTR N
+METATYPE <0xccdb08> = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
+PARENTTYPE <0x10c5150> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0xc99998>, file: <0xfa4658>, line: 208, size: 128, elements: <0x10c4da8>, templateParams: <0x10c5250>, identifier: "_ZTSSt4pairIKiPvE")
+OFFSET 32
+CORECED N
+LB 32
+UB 33
+FAM N
+NAME class std::__pair_base<int const, void*>
+VPTR N
+METATYPE <0x10c51d0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "__pair_base<const int, void *>", scope: <0xc99998>, file: <0xfa4658>, line: 190, size: 8, elements: <0xbe1c90>, templateParams: <0x10c5570>, identifier: "_ZTSSt11__pair_baseIKiPvE")
+PARENTTYPE <0x10c5150> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0xc99998>, file: <0xfa4658>, line: 208, size: 128, elements: <0x10c4da8>, templateParams: <0x10c5250>, identifier: "_ZTSSt4pairIKiPvE")
+OFFSET 40
+CORECED Y
+LB 40
+UB 48
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0xbdd918> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xd42898>, size: 64)
+PARENTTYPE <0x10c5150> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0xc99998>, file: <0xfa4658>, line: 208, size: 128, elements: <0x10c4da8>, templateParams: <0x10c5250>, identifier: "_ZTSSt4pairIKiPvE")
+OFFSET 40
+CORECED N
+LB 40
+UB 48
+FAM N
+NAME int8_t *
+VPTR N
+METATYPE <0xbdd918> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xd42898>, size: 64)
+PARENTTYPE <0x10c5150> = distinct !DICompositeType(tag: DW_TAG_structure_type, name: "pair<const int, void *>", scope: <0xc99998>, file: <0xfa4658>, line: 208, size: 128, elements: <0x10c4da8>, templateParams: <0x10c5250>, identifier: "_ZTSSt4pairIKiPvE")
+METAID CWE843_Type_Confusion__short_74_V1b.cpp#111#27#struct std::_Rb_tree_node<std::pair<int const, void*> >#18081464#592341151609468542#11511130885413776720#_Znwm#_ZN9__gnu_cxx13new_allocatorISt13_Rb_tree_nodeISt4pairIKiPvEEE8allocateEmPKv#111#27#18255104#18259648#2
+FILENAME CWE843_Type_Confusion__short_74_V1b.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID CWE843_Type_Confusion__short_74_V1b.cpp#125#2#FREE#0#0#0#_ZdlPv#_ZN9__gnu_cxx13new_allocatorISt13_Rb_tree_nodeISt4pairIKiPvEEE10deallocateEPS6_m#125#2#18344848#18355104#18446744073709551615
