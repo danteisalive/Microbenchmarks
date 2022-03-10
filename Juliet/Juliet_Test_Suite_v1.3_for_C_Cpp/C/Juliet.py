@@ -7,8 +7,10 @@
 #
 #
 from os import path
+from pathlib import Path
 from bs4 import BeautifulSoup
 import sys,os,re
+import shutil
 
 # add parent directory to search path so we can use py_common
 sys.path.append("..")
@@ -59,6 +61,17 @@ def update_main_cpp_and_testcases_h(testcaseregexes):
     testcase_files = build_list_of_primary_c_cpp_testcase_files(testcase_location, testcaseregexes)
     return testcase_files
 
+
+
+def find_folder_path(file_name, testcase_files):
+
+    for testcase_file in testcase_files:
+        head, tail = os.path.split(testcase_file)
+        if tail == file_name:
+            return head
+    
+    return None
+
 if __name__ == "__main__":
 
 
@@ -74,46 +87,122 @@ if __name__ == "__main__":
         testcaseregexes=sys.argv[1:]
 
     testcase_files = update_main_cpp_and_testcases_h(testcaseregexes)
-    print(testcase_files)
-    # with open('manifest.xml', 'r') as f:
-    #     xmlData = f.read()
+    # print(testcase_files)
+
+
+    with open('manifest.xml', 'r') as f:
+        xmlData = f.read()
     
-    # # Passing the stored data inside
-    # # the beautifulsoup parser, storing
-    # # the returned object
-    # Bs_data = BeautifulSoup(xmlData, "xml")
+    # Passing the stored data inside
+    # the beautifulsoup parser, storing
+    # the returned object
+    Bs_data = BeautifulSoup(xmlData, "xml")
 
-    # # Finding all instances of tag
-    # # `testcase`
-    # testcase_tags = Bs_data.find_all('testcase')
-    # file_tags = Bs_data.find_all('file')
+    # Finding all instances of tag
+    # `testcase`
+    testcase_tags = Bs_data.find_all('testcase')
+    file_tags = Bs_data.find_all('file')
 
 
-    # for files in Bs_data.find_all('testcase'):
-    #     result = []            
-    #     for file in files.find_all('file'):
-    #         result.append(file['path'])
+    for files in Bs_data.find_all('testcase'):
+        result = []            
+        for file in files.find_all('file'):
+            result.append(file['path'])
 
-    #     if len(result) == 1:
+        if len(result) == 1:
             
-    #         z = re.match("(CWE\w+)(.cpp)|(CWE\w+)(.c)", result[0])
+            z = re.match("(CWE)(\d+)(_\w+)(.cpp)|(CWE)(\d+)(_\w+)(.c)", result[0])
             
-    #         if z and z.groups()[1] == ".cpp":
-    #             # print("C++: " + (z.groups()[0]))
-    #             folder_name = z.groups()[0]
+            if z.groups()[1] not in testcaseregexes and z.groups()[5] not in testcaseregexes: 
+                continue
+
+            if z.groups()[3] == ".cpp":
+                folder_name = z.groups()[0] + z.groups()[1] + z.groups()[2]
+                # print("C++: " + folder_name)
+                file_name = result[0]
+                # print("C++: " + file_name)
+
+                #creat the folders
+                path = find_folder_path(file_name, testcase_files)
+                assert(path != None)
+                dir_path = path + "/" + folder_name
+                src_path = path + "/" + file_name
+                if os.path.isdir(dir_path):
+                    shutil.rmtree(dir_path)
+                    os.makedirs(dir_path)
+                else:
+                    os.makedirs(dir_path)
                 
+                # make sure the file exists
+                if not os.path.isfile(src_path):
+                    assert(0)
+                #now copy the files 
+                shutil.copy(src_path, dir_path)
 
-    #         elif z and z.groups()[3] == ".c":
-    #             # print("C: " + (z.groups()[2]))
-    #             folder_name = z.groups()[2]
+            elif z.groups()[7] == ".c":
+                folder_name = z.groups()[4] + z.groups()[5] + z.groups()[6]
+                # print("C: " + folder_name)
+                file_name = result[0]
+                # print("C: " + file_name)
 
-    #         else:
-    #             print(result[0])
-    #             assert(0)
+                #creat the folders
+                path = find_folder_path(file_name, testcase_files)
+                assert(path != None)
+                dir_path = path + "/" + folder_name
+                src_path = path + "/" + file_name
+                if os.path.isdir(dir_path):
+                    shutil.rmtree(dir_path)
+                    os.makedirs(dir_path)
+                else:
+                    os.makedirs(dir_path)
+                
+                # make sure the file exists
+                if not os.path.isfile(src_path):
+                    assert(0)
+                #now copy the files 
+                shutil.copy(src_path, dir_path)
 
-    #     elif len(result) >= 2:
-    #         folder_name = common_start(result[0], result[1])
-        
-    #     else:
-    #         assert(0)
+            else:
+                print(result[0])
+                assert(0)
+
+        elif len(result) >= 2:
+
+            folder_name = common_start(result[0], result[1])
+
+            z = None
+            path = None
+            file_name = None
+            for res in result:
+                z = re.match("(CWE)(\d+)(_\w+)(.cpp)|(CWE)(\d+)(_\w+)(.c)", res)
+                if z != None:
+                    #create the folders
+                    path = find_folder_path(res, testcase_files)
+                    if path != None:
+                        file_name = res
+                        break
+
+            if z.groups()[1] not in testcaseregexes and z.groups()[5] not in testcaseregexes: 
+                continue
+
+            assert(file_name != None and path != None)
+
+            dir_path = path + "/" + folder_name
+            if os.path.isdir(dir_path):
+                shutil.rmtree(dir_path)
+                os.makedirs(dir_path)
+            else:
+                os.makedirs(dir_path)
+
+
+            for res in result:
+                src_path = path + "/" + res
+                # make sure the file exists
+                if not os.path.isfile(src_path):
+                    assert(0)
+                #now copy the files 
+                shutil.copy(src_path, dir_path) 
+
+        else:
+            assert(0)
 
