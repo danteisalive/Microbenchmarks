@@ -7,8 +7,8 @@ UB 8
 FAM N
 NAME coerced
 VPTR Y
-METATYPE <0xe68958> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xfcdc48>, size: 64)
-PARENTTYPE <0x10b1eb0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 21, size: 64, elements: <0x10b4000>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+METATYPE <0x1fb4948> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x2119a08>, size: 64)
+PARENTTYPE <0x21fdc70> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x21f7fa8>, file: <0x21f7f68>, line: 21, size: 64, elements: <0x21ffdc0>, vtableHolder: <0x21fdc70>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
 OFFSET 0
 CORECED N
 LB 18446744056529682432
@@ -16,7 +16,7 @@ UB 17179869184
 FAM N
 NAME class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_bad
 VPTR N
-METATYPE <0x10b1f30> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 30, size: 64, elements: <0x10b3be0>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+METATYPE <0x21fdcf0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x21f7fa8>, file: <0x21f7f68>, line: 30, size: 64, elements: <0x21ff9a0>, vtableHolder: <0x21fdc70>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
 PARENTTYPE NOPARENT
 OFFSET 0
 CORECED N
@@ -25,8 +25,8 @@ UB 8
 FAM N
 NAME int8_t *
 VPTR Y
-METATYPE <0xe68958> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xfcdc48>, size: 64)
-PARENTTYPE <0x10b1eb0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 21, size: 64, elements: <0x10b4000>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+METATYPE <0x1fb4948> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x2119a08>, size: 64)
+PARENTTYPE <0x21fdc70> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x21f7fa8>, file: <0x21f7f68>, line: 21, size: 64, elements: <0x21ffdc0>, vtableHolder: <0x21fdc70>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
 OFFSET 0
 CORECED N
 LB 0
@@ -34,9 +34,9 @@ UB 8
 FAM N
 NAME class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_base
 VPTR N
-METATYPE <0x10b1eb0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 21, size: 64, elements: <0x10b4000>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
-PARENTTYPE <0x10b1f30> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 30, size: 64, elements: <0x10b3be0>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
-METAID CWE843_Type_Confusion__short_82a.cpp#35#56#class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_bad#17662936#9133878391642089031#15357951381731305093#_Znwm#_ZN31CWE843_Type_Confusion__short_823badEv#35#56#16397824#17518784#2
+METATYPE <0x21fdc70> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x21f7fa8>, file: <0x21f7f68>, line: 21, size: 64, elements: <0x21ffdc0>, vtableHolder: <0x21fdc70>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+PARENTTYPE <0x21fdcf0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x21f7fa8>, file: <0x21f7f68>, line: 30, size: 64, elements: <0x21ff9a0>, vtableHolder: <0x21fdc70>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+METAID CWE843_Type_Confusion__short_82a.cpp#35#56#class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_bad#35798872#9133878391642089031#15357951381731305093#_Znwm#_ZN31CWE843_Type_Confusion__short_823badEv#35#56#34534336#35655296#2
 FILENAME CWE843_Type_Confusion__short_82a.cpp
 APSIZE 1
 OFFSET 0
@@ -48,4 +48,4 @@ NAME int8_t
 VPTR N
 METATYPE NOMETA
 PARENTTYPE NOPARENT
-METAID CWE843_Type_Confusion__short_82a.cpp#37#5#FREE#0#0#0#_ZdlPv#_ZN31CWE843_Type_Confusion__short_823badEv#37#5#17512512#17531760#18446744073709551615
+METAID CWE843_Type_Confusion__short_82a.cpp#37#5#FREE#0#0#0#_ZdlPv#_ZN31CWE843_Type_Confusion__short_823badEv#37#5#35649024#35668272#18446744073709551615

@@ -1,0 +1,106 @@
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_73a.cpp][Caller Name: _ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 111,27][Inlined Location: 111,27][BB ID: 29617632][Inst ID: 29861808]
+  %15 = call i8* @_Znwm(i64 %14), !dbg !881, !effectiveSan !0
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_73a.cpp][Caller Name: _ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 125,2][Inlined Location: 125,2][BB ID: 29914592][Inst ID: 29931072]
+  call void @_ZdlPv(i8* %9) #10, !dbg !874
+  %15 = call i8* @_Znwm(i64 %14), !dbg !881, !effectiveSan !0, !TYCHE_MD !882
+Calle Node: 0x1d42d70: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x1d25860: i64,ch,glue = CopyFromReg 0x1d25f40; Register:i64 %physreg35; 0x1d25f40:1 Node TypeID: [ 0#]
+Second Node: 0x1d25860: i64,ch,glue = CopyFromReg 0x1d25f40; Register:i64 %physreg35; 0x1d25f40:1 Node TypeID: [ 0#]
+0x1d25860: i64,ch,glue = CopyFromReg 0x1d25f40; Register:i64 %physreg35; 0x1d25f40:1 Node TypeID: [ 1#111#27#30173592#17209094468811339711#3045336847299406727#111#27#29617632#29861808#2#29861808#29617632#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_73a.cpp][Caller Name: _ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv][Allocator Name: _Znwm][Location: 17209094468811339711,3045336847299406727][Inlined Location: 111,27][BB ID: 29617632][Inst ID: 29861808][Prev. Inst ID: 111]
+  %15 = call i8* @_Znwm(i64 %14), !dbg !881, !effectiveSan !0, !TYCHE_MD !882
+X86DAGToDAGISel:: 3
+Node: 0x1d25860: i64,ch,glue = CopyFromReg 0x1d25f40; Register:i64 %physreg35; 0x1d25f40:1 Node TypeID: [ 1#111#27#30173592#17209094468811339711#3045336847299406727#111#27#29617632#29861808#2#29861808#29617632#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+0x1d25f40: ch,glue = callseq_end 0x1d25d60; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1d25d60:1 Node TypeID: [ 0#]
+0x1d431d0: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x1d25f40: ch,glue = callseq_end 0x1d25d60; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1d25d60:1 Node TypeID: [ 0#]
+0x1d25d60: ch,glue = <<Unknown Node #229>> 0x1d43310; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1d43310:1 Node TypeID: [ 0#]
+0x1d25d60: ch,glue = <<Unknown Node #229>> 0x1d43310; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1d43310:1 Node TypeID: [ 1#111#27#30173592#17209094468811339711#3045336847299406727#111#27#29617632#29861808#2#29861808#29617632#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+EmitMachineNode::
+0x1d25d60: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1d43310; 0x1d43310:1 Node TypeID: [ 1#111#27#30173592#17209094468811339711#3045336847299406727#111#27#29617632#29861808#2#29861808#29617632#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/ext/new_allocator.h:111:27 Node Type ID: [111#27#30173592#17209094468811339711#3045336847299406727#111#27#29617632#29861808#2#29861808#29617632#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/ext/new_allocator.h:111:27 Node Type ID: [111#27#30173592#17209094468811339711#3045336847299406727#111#27#29617632#29861808#2#29861808#29617632#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_73a.cpp#111#27#30173592#17209094468811339711#3045336847299406727#111#27#29617632#29861808#2#29861808#29617632#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#
+---------------------------------------------------------------------------------------
+  call void @_ZdlPv(i8* %9) #10, !dbg !874, !TYCHE_MD !875
+Calle Node: 0x1d42d70: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x1d433b0: ch,glue = callseq_end 0x1d25d60; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1d25d60:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_73a.cpp][Caller Name: _ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 125,2][BB ID: 29914592][Inst ID: 29931072][Prev. Inst ID: 125]
+  call void @_ZdlPv(i8* %9) #10, !dbg !874, !TYCHE_MD !875
+0x1d433b0: ch,glue = callseq_end 0x1d25d60; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1d25d60:1 Node TypeID: [ 1#125#2#0#0#0#125#2#29914592#29931072#18446744073709551615#29931072#29914592#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+X86DAGToDAGISel:: 4
+Node: 0x1d433b0: ch,glue = callseq_end 0x1d25d60; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1d25d60:1 Node TypeID: [ 1#125#2#0#0#0#125#2#29914592#29931072#18446744073709551615#29931072#29914592#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+0x1d25d60: ch,glue = <<Unknown Node #229>> 0x1d42eb0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1d42eb0:1 Node TypeID: [ 0#]
+0x1d493c0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1d493c0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1d25d60: ch,glue = <<Unknown Node #229>> 0x1d42eb0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1d42eb0:1 Node TypeID: [ 0#]
+0x1d25d60: ch,glue = <<Unknown Node #229>> 0x1d42eb0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1d42eb0:1 Node TypeID: [ 1#125#2#0#0#0#125#2#29914592#29931072#18446744073709551615#29931072#29914592#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+EmitMachineNode::
+0x1d25d60: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1d42eb0; 0x1d42eb0:1 Node TypeID: [ 1#125#2#0#0#0#125#2#29914592#29931072#18446744073709551615#29931072#29914592#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/ext/new_allocator.h:125:2 Node Type ID: [125#2#0#0#0#125#2#29914592#29931072#18446744073709551615#29931072#29914592#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/ext/new_allocator.h:125:2 Node Type ID: [125#2#0#0#0#125#2#29914592#29931072#18446744073709551615#29931072#29914592#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_73a.cpp#125#2#0#0#0#125#2#29914592#29931072#18446744073709551615#29931072#29914592#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#
+---------------------------------------------------------------------------------------
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_73a.cpp][Caller Name: _ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 125,2][Inlined Location: 125,2][BB ID: 17889568][Inst ID: 17907424]
+  call void @_ZdlPv(i8* %9) #10, !dbg !874
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_73a.cpp][Caller Name: _ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 111,27][Inlined Location: 111,27][BB ID: 18017680][Inst ID: 18021872]
+  %15 = call i8* @_Znwm(i64 %14), !dbg !881, !effectiveSan !0
+  call void @_ZdlPv(i8* %9) #10, !dbg !874, !TYCHE_MD !875
+Calle Node: 0x11c5270: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x11c1d50: ch,glue = callseq_end 0x11c24d0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x11c24d0:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_73a.cpp][Caller Name: _ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 125,2][BB ID: 17889568][Inst ID: 17907424][Prev. Inst ID: 125]
+  call void @_ZdlPv(i8* %9) #10, !dbg !874, !TYCHE_MD !875
+0x11c1d50: ch,glue = callseq_end 0x11c24d0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x11c24d0:1 Node TypeID: [ 1#125#2#0#0#0#125#2#17889568#17907424#18446744073709551615#17907424#17889568#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+X86DAGToDAGISel:: 4
+Node: 0x11c1d50: ch,glue = callseq_end 0x11c24d0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x11c24d0:1 Node TypeID: [ 1#125#2#0#0#0#125#2#17889568#17907424#18446744073709551615#17907424#17889568#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+0x11c24d0: ch,glue = <<Unknown Node #229>> 0x11c5b30; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x11c5b30:1 Node TypeID: [ 0#]
+0x11c2430: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x11c2430: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x11c24d0: ch,glue = <<Unknown Node #229>> 0x11c5b30; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x11c5b30:1 Node TypeID: [ 0#]
+0x11c24d0: ch,glue = <<Unknown Node #229>> 0x11c5b30; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x11c5b30:1 Node TypeID: [ 1#125#2#0#0#0#125#2#17889568#17907424#18446744073709551615#17907424#17889568#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+EmitMachineNode::
+0x11c24d0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x11c5b30; 0x11c5b30:1 Node TypeID: [ 1#125#2#0#0#0#125#2#17889568#17907424#18446744073709551615#17907424#17889568#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/ext/new_allocator.h:125:2 Node Type ID: [125#2#0#0#0#125#2#17889568#17907424#18446744073709551615#17907424#17889568#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/ext/new_allocator.h:125:2 Node Type ID: [125#2#0#0#0#125#2#17889568#17907424#18446744073709551615#17907424#17889568#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_73a.cpp#125#2#0#0#0#125#2#17889568#17907424#18446744073709551615#17907424#17889568#_ZdlPv#FREE#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#
+---------------------------------------------------------------------------------------
+  %15 = call i8* @_Znwm(i64 %14), !dbg !881, !effectiveSan !0, !TYCHE_MD !882
+Calle Node: 0x11c5bd0: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x11c6030: i64,ch,glue = CopyFromReg 0x11c59f0; Register:i64 %physreg35; 0x11c59f0:1 Node TypeID: [ 0#]
+Second Node: 0x11c6030: i64,ch,glue = CopyFromReg 0x11c59f0; Register:i64 %physreg35; 0x11c59f0:1 Node TypeID: [ 0#]
+0x11c6030: i64,ch,glue = CopyFromReg 0x11c59f0; Register:i64 %physreg35; 0x11c59f0:1 Node TypeID: [ 1#111#27#15021304#17209094468811339711#3045336847299406727#111#27#18017680#18021872#2#18021872#18017680#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_73a.cpp][Caller Name: _ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv][Allocator Name: _Znwm][Location: 17209094468811339711,3045336847299406727][Inlined Location: 111,27][BB ID: 18017680][Inst ID: 18021872][Prev. Inst ID: 111]
+  %15 = call i8* @_Znwm(i64 %14), !dbg !881, !effectiveSan !0, !TYCHE_MD !882
+X86DAGToDAGISel:: 3
+Node: 0x11c6030: i64,ch,glue = CopyFromReg 0x11c59f0; Register:i64 %physreg35; 0x11c59f0:1 Node TypeID: [ 1#111#27#15021304#17209094468811339711#3045336847299406727#111#27#18017680#18021872#2#18021872#18017680#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+0x11c59f0: ch,glue = callseq_end 0x11c51d0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x11c51d0:1 Node TypeID: [ 0#]
+0x11aaae0: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x11c59f0: ch,glue = callseq_end 0x11c51d0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x11c51d0:1 Node TypeID: [ 0#]
+0x11c51d0: ch,glue = <<Unknown Node #229>> 0x11c5590; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x11c5590:1 Node TypeID: [ 0#]
+0x11c51d0: ch,glue = <<Unknown Node #229>> 0x11c5590; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x11c5590:1 Node TypeID: [ 1#111#27#15021304#17209094468811339711#3045336847299406727#111#27#18017680#18021872#2#18021872#18017680#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+EmitMachineNode::
+0x11c51d0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x11c5590; 0x11c5590:1 Node TypeID: [ 1#111#27#15021304#17209094468811339711#3045336847299406727#111#27#18017680#18021872#2#18021872#18017680#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/ext/new_allocator.h:111:27 Node Type ID: [111#27#15021304#17209094468811339711#3045336847299406727#111#27#18017680#18021872#2#18021872#18017680#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/ext/new_allocator.h:111:27 Node Type ID: [111#27#15021304#17209094468811339711#3045336847299406727#111#27#18017680#18021872#2#18021872#18017680#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_73a.cpp#111#27#15021304#17209094468811339711#3045336847299406727#111#27#18017680#18021872#2#18021872#18017680#_Znwm#struct std::_List_node<void*>#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#
+---------------------------------------------------------------------------------------

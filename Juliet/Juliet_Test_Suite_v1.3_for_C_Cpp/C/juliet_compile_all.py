@@ -11,6 +11,8 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 import sys,os,re
 import shutil
+import subprocess
+
 
 # add parent directory to search path so we can use py_common
 sys.path.append("..")
@@ -138,7 +140,13 @@ if __name__ == "__main__":
                     assert(0)
                 #now copy the files 
                 shutil.copy(src_path, dir_path)
-                shutil.copy("./run_compile.sh", dir_path)
+                shutil.copy("./run_compile_cpp.sh", dir_path)
+
+                #now compile the CWE
+                os.chmod(dir_path + "/run_compile_cpp.sh", 0o755)
+                # rc = subprocess.call(dir_path + "/run_compile_cpp.sh", shell=True)
+                print(dir_path + '/run_compile_cpp.sh')
+                rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path])
 
             elif z.groups()[7] == ".c":
                 folder_name = z.groups()[4] + z.groups()[5] + z.groups()[6]
@@ -162,7 +170,11 @@ if __name__ == "__main__":
                     assert(0)
                 #now copy the files 
                 shutil.copy(src_path, dir_path)
-                shutil.copy("./run_compile.sh", dir_path)
+                shutil.copy("./run_compile_c.sh", dir_path)
+                os.chmod(dir_path + "/run_compile_c.sh", 0o755)
+                print(dir_path + '/run_compile_c.sh')
+                # rc = subprocess.call(dir_path + "/run_compile_c.sh", shell=True)
+                rc = subprocess.call(['sh', dir_path + '/run_compile_c.sh', dir_path])
 
             else:
                 print(result[0])
@@ -206,7 +218,12 @@ if __name__ == "__main__":
                 shutil.copy(src_path, dir_path) 
             
             #copy one time
-            shutil.copy("./run_compile.sh", dir_path)
+            shutil.copy("./run_compile_cpp.sh", dir_path)
+            #now compile the CWE
+            os.chmod(dir_path + "/run_compile_cpp.sh", 0o755)
+            # rc = subprocess.call(dir_path + "/run_compile_cpp.sh", shell=True)
+            print(dir_path + '/run_compile_cpp.sh')
+            rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path])
 
         else:
             assert(0)
