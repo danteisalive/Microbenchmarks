@@ -1,0 +1,61 @@
+clang-4.0: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+warning: EffectiveSan assumes -O2 optimization level; got -O0
+       __  __           _   _           ____
+  ___ / _|/ _| ___  ___| |_(_)_   _____/ ___|  __ _ _ __
+ / _ \ |_| |_ / _ \/ __| __| \ \ / / _ \___ \ / _` | '_ \
+|  __/  _|  _|  __/ (__| |_| |\ V /  __/___) | (_| | | | |
+ \___|_| |_|  \___|\___|\__|_| \_/ \___|____/ \__,_|_| |_|
+
+	int8_t [+0] (-17179869184..17179869184) <703EDF97BC60677D> {8088147823597479805} <0x1d42148> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+ADD(0x703EDF97BC60677D, 0x703EDF97BC60677D, 0) = 0x00000000B79F915E {3080687966} [-17179869184..17179869184] index=0 name: int8_t
+1.000000 0 0 1
+1 warning generated.
+warning: EffectiveSan assumes -O2 optimization level; got -O0
+       __  __           _   _           ____
+  ___ / _|/ _| ___  ___| |_(_)_   _____/ ___|  __ _ _ __
+ / _ \ |_| |_ / _ \/ __| __| \ \ / / _ \___ \ / _` | '_ \
+|  __/  _|  _|  __/ (__| |_| |\ V /  __/___) | (_| | | | |
+ \___|_| |_|  \___|\___|\__|_| \_/ \___|____/ \__,_|_| |_|
+
+	int8_t [+0] (-17179869184..17179869184) <703EDF97BC60677D> {8088147823597479805} <0x16d4688> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+ADD(0x703EDF97BC60677D, 0x703EDF97BC60677D, 0) = 0x00000000B79F915E {3080687966} [-17179869184..17179869184] index=0 name: int8_t
+1.000000 0 0 1
+1 warning generated.
+warning: EffectiveSan assumes -O2 optimization level; got -O0
+       __  __           _   _           ____
+  ___ / _|/ _| ___  ___| |_(_)_   _____/ ___|  __ _ _ __
+ / _ \ |_| |_ / _ \/ __| __| \ \ / / _ \___ \ / _` | '_ \
+|  __/  _|  _|  __/ (__| |_| |\ V /  __/___) | (_| | | | |
+ \___|_| |_|  \___|\___|\__|_| \_/ \___|____/ \__,_|_| |_|
+
+	int8_t [+0] (-17179869184..17179869184) <703EDF97BC60677D> {8088147823597479805} <0x19f54e8> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+ADD(0x703EDF97BC60677D, 0x703EDF97BC60677D, 0) = 0x00000000B79F915E {3080687966} [-17179869184..17179869184] index=0 name: int8_t
+1.000000 0 0 1
+1 warning generated.
+CWE843_Type_Confusion__short_82a.cpp:37:5: warning: delete called on 'CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_base' that is abstract but has non-virtual destructor [-Wdelete-non-virtual-dtor]
+    delete baseObject;
+    ^
+warning: EffectiveSan assumes -O2 optimization level; got -O0
+       __  __           _   _           ____
+  ___ / _|/ _| ___  ___| |_(_)_   _____/ ___|  __ _ _ __
+ / _ \ |_| |_ / _ \/ __| __| \ \ / / _ \___ \ / _` | '_ \
+|  __/  _|  _|  __/ (__| |_| |\ V /  __/___) | (_| | | | |
+ \___|_| |_|  \___|\___|\__|_| \_/ \___|____/ \__,_|_| |_|
+
+	int8_t [+0] (-17179869184..17179869184) <703EDF97BC60677D> {8088147823597479805} <0xfcdc48> = !DIBasicType(name: "char", size: 8, encoding: DW_ATE_signed_char)
+ADD(0x703EDF97BC60677D, 0x703EDF97BC60677D, 0) = 0x00000000B79F915E {3080687966} [-17179869184..17179869184] index=0 name: int8_t
+1.000000 0 0 1
+	class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_bad [+0] (-17179869184..17179869184) <476671FB000EC27E> {5144924947169067646} <0x10b1f30> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 30, size: 64, elements: <0x10b3be0>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_bad:
+	class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_base [+0] (0..8) <66041C4FC0F8FCEB> {7351031620641029355} <0x10b1eb0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 21, size: 64, elements: <0x10b4000>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+<0x10b1f30> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_bad", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 30, size: 64, elements: <0x10b3be0>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8235CWE843_Type_Confusion__short_82_badE")
+	int8_t * [+0] (0..8) <8D0DECDF6C6A8711> {-8282703695323691247} <0xe68958> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xfcdc48>, size: 64)
+<0x10b1eb0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_Type_Confusion__short_82_base", scope: <0x10ac1e8>, file: <0x10ac1a8>, line: 21, size: 64, elements: <0x10b4000>, vtableHolder: <0x10b1eb0>, identifier: "_ZTSN31CWE843_Type_Confusion__short_8236CWE843_Type_Confusion__short_82_baseE")
+	+coerced <2317E969C295951D> {2528746356237243677}
+
+ADD(0x476671FB000EC27E, 0x476671FB000EC27E, 0) = 0x0000000034880453 {881329235} [-17179869184..17179869184] index=3 name: class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_bad
+ADD(0x476671FB000EC27E, 0x66041C4FC0F8FCEB, 0) = 0x21626DB4D19DA09D {2405605774347575453} [0..8] index=13 name: class CWE843_Type_Confusion__short_82::CWE843_Type_Confusion__short_82_base
+ADD(0x476671FB000EC27E, 0x8D0DECDF6C6A8711, 0) = 0xCA6B9D24700410E3 {-3860819475716370205} [0..8] index=4 name: int8_t *
+ADD(0x476671FB000EC27E, 0x2317E969C295951D, 0) = 0x6471989260310320 {7237733830607569696} [0..8] index=0 name: coerced
+1.000000 0 0 4
+2 warnings generated.

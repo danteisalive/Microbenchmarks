@@ -138,6 +138,7 @@ if __name__ == "__main__":
                     assert(0)
                 #now copy the files 
                 shutil.copy(src_path, dir_path)
+                shutil.copy("./run_compile.sh", dir_path)
 
             elif z.groups()[7] == ".c":
                 folder_name = z.groups()[4] + z.groups()[5] + z.groups()[6]
@@ -161,6 +162,7 @@ if __name__ == "__main__":
                     assert(0)
                 #now copy the files 
                 shutil.copy(src_path, dir_path)
+                shutil.copy("./run_compile.sh", dir_path)
 
             else:
                 print(result[0])
@@ -202,6 +204,9 @@ if __name__ == "__main__":
                     assert(0)
                 #now copy the files 
                 shutil.copy(src_path, dir_path) 
+            
+            #copy one time
+            shutil.copy("./run_compile.sh", dir_path)
 
         else:
             assert(0)
