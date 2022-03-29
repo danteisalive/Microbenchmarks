@@ -16,6 +16,42 @@ target triple = "x86_64-unknown-linux-gnu"
 %EFFECTIVE_INFO = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [0 x %EFFECTIVE_INFO_ENTRY] }
 %EFFECTIVE_INFO_ENTRY = type { %EFFECTIVE_INFO*, i32, i64, i64 }
 %EFFECTIVE_ENTRY = type { i8*, i64, i64, i64, <2 x i64> }
+%TYCHE_META_CACHELINE107 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE106 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE105 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE104 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE103 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE102 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE101 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE100 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_3 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [3 x %EFFECTIVE_ENTRY] }
+%EFFECTIVE_INFO_1 = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [1 x %EFFECTIVE_INFO_ENTRY] }
+%EFFECTIVE_INFO_4 = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [4 x %EFFECTIVE_INFO_ENTRY] }
+%TYCHE_META_CACHELINE207 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE206 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE205 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE204 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE203 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE202 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE201 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE200 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_12 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [12 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE307 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE306 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE305 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE304 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE303 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE302 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE301 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE300 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE407 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE406 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE405 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE404 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE403 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE402 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE401 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE400 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %"class.std::vector" = type { %"struct.std::_Vector_base" }
 %"struct.std::_Vector_base" = type { %"struct.std::_Vector_base<void *, std::allocator<void *> >::_Vector_impl" }
 %"struct.std::_Vector_base<void *, std::allocator<void *> >::_Vector_impl" = type { i8**, i8**, i8** }
@@ -33,41 +69,109 @@ $_ZNSt6vectorIPvSaIS0_EEixEm = comdat any
 @TYCHE_META_SECTION_TID_0_SEC_1_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE001* null }>], section "tyche_symbols_section_1", align 64
 @TYCHE_META_SECTION_TID_0_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE000* null }>], section "tyche_symbols_section_0", align 64
 @EFFECTIVE_TYPE_INT8 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_0_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp, i64 8088147823597479805, i64 8088147823597479805, i32 1, i32 1, i32 0, i32 1340864923, i64 -9223372036854775808, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([7 x i8], [7 x i8]* @TYCHE_TYPE_ENTRY_int8_t_3080687966_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 0, i64 3080687966, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING = private unnamed_addr constant [9 x i8] c"int8_t *\00"
+@EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @EFFECTIVE_STRING, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_int8_t *_476075404_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [9 x i8] c"int8_t *\00"
+@TYCHE_TYPE_ENTRY_coerced_12545345991443039823_FILE_CWE843_Type_Confusion__char_72b.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_1 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE107* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_1_SEC_6_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE106* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_1_SEC_5_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE105* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_1_SEC_4_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE104* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_1_SEC_3_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE103* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_1_SEC_2_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE102* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_1_SEC_1_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE101* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_1_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE100* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_a481e2de8ae4613074fac0bfec5c40a = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_1_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp, i64 -8282703695323691247, i64 -8282703695323691247, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a, i64 2528746356237243677, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @"TYCHE_TYPE_ENTRY_int8_t *_476075404_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 0, i64 476075404, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_12545345991443039823_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 0, i64 -5901398082266511793, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.1 = private unnamed_addr constant [49 x i8] c"class std::vector<void*, std::allocator<void*> >\00"
+@EFFECTIVE_STRING.2 = private unnamed_addr constant [56 x i8] c"struct std::_Vector_base<void*, std::allocator<void*> >\00"
+@EFFECTIVE_STRING.3 = private unnamed_addr constant [70 x i8] c"struct std::_Vector_base<void*, std::allocator<void*> >::_Vector_impl\00"
+@EFFECTIVE_STRING.4 = private unnamed_addr constant [28 x i8] c"class std::allocator<void*>\00"
+@EFFECTIVE_STRING.5 = private unnamed_addr constant [38 x i8] c"class __gnu_cxx::new_allocator<void*>\00"
+@EFFECTIVE_INFO_94591624010de6324bf1ae65ced0cbff = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @EFFECTIVE_STRING.5, i32 0, i32 0), i32 1, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@EFFECTIVE_INFO_edbba724603bb863d1e13801496a5fa2 = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([28 x i8], [28 x i8]* @EFFECTIVE_STRING.4, i32 0, i32 0), i32 1, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_94591624010de6324bf1ae65ced0cbff, i32 1, i64 0, i64 1 }] }
+@EFFECTIVE_STRING.6 = private unnamed_addr constant [11 x i8] c"int8_t * *\00"
+@EFFECTIVE_INFO_8f8a1df20324c5f26a4b670d9445ac81 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([11 x i8], [11 x i8]* @EFFECTIVE_STRING.6, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@EFFECTIVE_INFO_596531d05f3a1c98268d34ef0d745dd8 = weak constant %EFFECTIVE_INFO_4 { i8* getelementptr inbounds ([70 x i8], [70 x i8]* @EFFECTIVE_STRING.3, i32 0, i32 0), i32 24, i32 4, i32 0, %EFFECTIVE_INFO* null, [4 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_edbba724603bb863d1e13801496a5fa2 to %EFFECTIVE_INFO*), i32 1, i64 0, i64 1 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_8f8a1df20324c5f26a4b670d9445ac81, i32 0, i64 0, i64 8 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_8f8a1df20324c5f26a4b670d9445ac81, i32 0, i64 8, i64 16 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_8f8a1df20324c5f26a4b670d9445ac81, i32 0, i64 16, i64 24 }] }
+@EFFECTIVE_INFO_28eefcdcbc393c75e448e48700edcee = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @EFFECTIVE_STRING.2, i32 0, i32 0), i32 24, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_4* @EFFECTIVE_INFO_596531d05f3a1c98268d34ef0d745dd8 to %EFFECTIVE_INFO*), i32 0, i64 0, i64 24 }] }
+@EFFECTIVE_INFO_fe74adc6bc696a28af942e4376e1267d = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([49 x i8], [49 x i8]* @EFFECTIVE_STRING.1, i32 0, i32 0), i32 24, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_28eefcdcbc393c75e448e48700edcee to %EFFECTIVE_INFO*), i32 1, i64 0, i64 24 }] }
+@"TYCHE_TYPE_ENTRY_class std::allocator<void*>_16103055047053781824_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [28 x i8] c"class std::allocator<void*>\00"
+@TYCHE_TYPE_ENTRY_coerced_6787215045469625413_FILE_CWE843_Type_Confusion__char_72b.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::_Vector_base<void*, std::allocator<void*> >_10663097878355834215_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [56 x i8] c"struct std::_Vector_base<void*, std::allocator<void*> >\00"
+@TYCHE_TYPE_ENTRY_coerced_6787215044291219755_FILE_CWE843_Type_Confusion__char_72b.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<void*>_9434251463020466477_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [38 x i8] c"class __gnu_cxx::new_allocator<void*>\00"
+@"TYCHE_TYPE_ENTRY_int8_t * *_18197538535267855309_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [11 x i8] c"int8_t * *\00"
+@TYCHE_TYPE_ENTRY_coerced_6787215043249395185_FILE_CWE843_Type_Confusion__char_72b.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_int8_t * *_18197538536375480087_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [11 x i8] c"int8_t * *\00"
+@"TYCHE_TYPE_ENTRY_struct std::_Vector_base<void*, std::allocator<void*> >::_Vector_impl_11924288797071114297_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [70 x i8] c"struct std::_Vector_base<void*, std::allocator<void*> >::_Vector_impl\00"
+@"TYCHE_TYPE_ENTRY_int8_t * *_18197538537353077369_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [11 x i8] c"int8_t * *\00"
+@"TYCHE_TYPE_ENTRY_class std::vector<void*, std::allocator<void*> >_3193929948_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [49 x i8] c"class std::vector<void*, std::allocator<void*> >\00"
+@TYCHE_META_SECTION_TID_2 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE207* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_2_SEC_6_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE206* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_2_SEC_5_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE205* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_2_SEC_4_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE204* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_2_SEC_3_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE203* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_2_SEC_2_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE202* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_2_SEC_1_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE201* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_2_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 8, i32 8, i32 16, i32 16, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE200* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_fe74adc6bc696a28af942e4376e1267d = weak constant %EFFECTIVE_TYPE_12 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_2_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp, i64 9018143201905513647, i64 9018143201905513647, i32 24, i32 24, i32 0, i32 1340864923, i64 384307168202282326, i64 31, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_fe74adc6bc696a28af942e4376e1267d to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 12, [12 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([28 x i8], [28 x i8]* @"TYCHE_TYPE_ENTRY_class std::allocator<void*>_16103055047053781824_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 0, i64 -2343689026655769792, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_6787215045469625413_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 16, i64 6787215045469625413, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_Vector_base<void*, std::allocator<void*> >_10663097878355834215_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 0, i64 -7783646195353717401, i64 0, <2 x i64> <i64 0, i64 24> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_6787215044291219755_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 8, i64 6787215044291219755, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<void*>_9434251463020466477_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 0, i64 -9012492610689085139, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([11 x i8], [11 x i8]* @"TYCHE_TYPE_ENTRY_int8_t * *_18197538535267855309_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 0, i64 -249205538441696307, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_6787215043249395185_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 0, i64 6787215043249395185, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([11 x i8], [11 x i8]* @"TYCHE_TYPE_ENTRY_int8_t * *_18197538536375480087_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 8, i64 -249205537334071529, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([70 x i8], [70 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_Vector_base<void*, std::allocator<void*> >::_Vector_impl_11924288797071114297_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 0, i64 -6522455276638437319, i64 0, <2 x i64> <i64 0, i64 24> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([11 x i8], [11 x i8]* @"TYCHE_TYPE_ENTRY_int8_t * *_18197538537353077369_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 16, i64 -249205536356474247, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([49 x i8], [49 x i8]* @"TYCHE_TYPE_ENTRY_class std::vector<void*, std::allocator<void*> >_3193929948_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 0, i64 3193929948, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.7 = private unnamed_addr constant [51 x i8] c"class std::vector<void*, std::allocator<void*> > *\00"
+@EFFECTIVE_INFO_95a8045608218ecf88dd9e9f2991b7b0 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([51 x i8], [51 x i8]* @EFFECTIVE_STRING.7, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@TYCHE_TYPE_ENTRY_coerced_10637634540411100374_FILE_CWE843_Type_Confusion__char_72b.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_class std::vector<void*, std::allocator<void*> > *_3214724293_FILE_CWE843_Type_Confusion__char_72b.cpp" = private unnamed_addr constant [51 x i8] c"class std::vector<void*, std::allocator<void*> > *\00"
+@TYCHE_META_SECTION_TID_3 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE307* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_3_SEC_6_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE306* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_3_SEC_5_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE305* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_3_SEC_4_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE304* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_3_SEC_3_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE303* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_3_SEC_2_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE302* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_3_SEC_1_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE301* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_3_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE300* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_95a8045608218ecf88dd9e9f2991b7b0 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_3_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp, i64 -5712937994338509432, i64 -5712937994338509432, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_95a8045608218ecf88dd9e9f2991b7b0, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_10637634540411100374_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 0, i64 -7809109533298451242, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([51 x i8], [51 x i8]* @"TYCHE_TYPE_ENTRY_class std::vector<void*, std::allocator<void*> > *_3214724293_FILE_CWE843_Type_Confusion__char_72b.cpp", i32 0, i32 0), i64 0, i64 3214724293, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_TYPE_ENTRY_int64_t_1076545243_FILE_CWE843_Type_Confusion__char_72b.cpp = private unnamed_addr constant [8 x i8] c"int64_t\00"
+@TYCHE_META_SECTION_TID_4 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE407* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_4_SEC_6_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE406* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_4_SEC_5_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE405* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_4_SEC_4_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE404* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_4_SEC_3_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE403* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_4_SEC_2_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE402* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_4_SEC_1_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE401* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_4_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE400* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_INT64 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_4_SEC_0_FILE_CWE843_Type_Confusion__char_72b.cpp, i64 -8660233842727106565, i64 -8660233842727106565, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int64_t_1076545243_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 0, i64 1076545243, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_72b.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
 
 ; Function Attrs: noinline uwtable
-define void @_ZN30CWE843_Type_Confusion__char_727badSinkESt6vectorIPvSaIS1_EE(%"class.std::vector"*) #0 !dbg !567 !effectiveSanArgs !571 {
-  %2 = alloca i8*, align 8, !effectiveSan !6
-  call void @llvm.dbg.declare(metadata %"class.std::vector"* %0, metadata !572, metadata !573), !dbg !574
-  call void @llvm.dbg.declare(metadata i8** %2, metadata !575, metadata !576), !dbg !577
-  %3 = call dereferenceable(8) i8** @_ZNSt6vectorIPvSaIS0_EEixEm(%"class.std::vector"* %0, i64 2), !dbg !578, !effectiveSan !8
-  %4 = load i8*, i8** %3, align 8, !dbg !578, !effectiveSan !7
-  store i8* %4, i8** %2, align 8, !dbg !577
-  %5 = load i8*, i8** %2, align 8, !dbg !579, !effectiveSan !7
-  %6 = bitcast i8* %5 to i32*, !dbg !580, !effectiveSan !4
-  %7 = load i32, i32* %6, align 4, !dbg !581, !effectiveSan !5
-  call void @printIntLine(i32 %7), !dbg !582
-  ret void, !dbg !583
+define void @_ZN30CWE843_Type_Confusion__char_727badSinkESt6vectorIPvSaIS1_EE(%"class.std::vector"*) #0 !dbg !567 !effectiveSanArgs !571 !TYCHE_MD_ARGS !572 {
+  %2 = alloca i8*, align 8, !effectiveSan !6, !TYCHE_MD !573
+  call void @llvm.dbg.declare(metadata %"class.std::vector"* %0, metadata !574, metadata !575), !dbg !576
+  call void @llvm.dbg.declare(metadata i8** %2, metadata !577, metadata !578), !dbg !579
+  %3 = call dereferenceable(8) i8** @_ZNSt6vectorIPvSaIS0_EEixEm(%"class.std::vector"* %0, i64 2), !dbg !580, !effectiveSan !8
+  %4 = load i8*, i8** %3, align 8, !dbg !580, !effectiveSan !7
+  store i8* %4, i8** %2, align 8, !dbg !579
+  %5 = load i8*, i8** %2, align 8, !dbg !581, !effectiveSan !7
+  %6 = bitcast i8* %5 to i32*, !dbg !582, !effectiveSan !4
+  %7 = load i32, i32* %6, align 4, !dbg !583, !effectiveSan !5
+  call void @printIntLine(i32 %7), !dbg !584
+  ret void, !dbg !585, !TYCHE_MD !586
 }
 
 ; Function Attrs: nounwind readnone
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr dereferenceable(8) i8** @_ZNSt6vectorIPvSaIS0_EEixEm(%"class.std::vector"*, i64) #2 comdat align 2 !dbg !584 !effectiveSanArgs !585 {
-  %3 = alloca %"class.std::vector"*, align 8, !effectiveSan !319
-  %4 = alloca i64, align 8, !effectiveSan !320
+define linkonce_odr dereferenceable(8) i8** @_ZNSt6vectorIPvSaIS0_EEixEm(%"class.std::vector"*, i64) #2 comdat align 2 !dbg !587 !effectiveSanArgs !588 !TYCHE_MD_ARGS !589 {
+  %3 = alloca %"class.std::vector"*, align 8, !effectiveSan !319, !TYCHE_MD !590
+  %4 = alloca i64, align 8, !effectiveSan !320, !TYCHE_MD !591
   store %"class.std::vector"* %0, %"class.std::vector"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::vector"** %3, metadata !586, metadata !576), !dbg !587
+  call void @llvm.dbg.declare(metadata %"class.std::vector"** %3, metadata !592, metadata !578), !dbg !593
   store i64 %1, i64* %4, align 8
-  call void @llvm.dbg.declare(metadata i64* %4, metadata !588, metadata !576), !dbg !589
+  call void @llvm.dbg.declare(metadata i64* %4, metadata !594, metadata !578), !dbg !595
   %5 = load %"class.std::vector"*, %"class.std::vector"** %3, align 8, !effectiveSan !9
-  %6 = bitcast %"class.std::vector"* %5 to %"struct.std::_Vector_base"*, !dbg !590, !effectiveSan !321
-  %7 = getelementptr inbounds %"struct.std::_Vector_base", %"struct.std::_Vector_base"* %6, i32 0, i32 0, !dbg !590, !effectiveSan !322
-  %8 = getelementptr inbounds %"struct.std::_Vector_base<void *, std::allocator<void *> >::_Vector_impl", %"struct.std::_Vector_base<void *, std::allocator<void *> >::_Vector_impl"* %7, i32 0, i32 0, !dbg !591, !effectiveSan !323
-  %9 = load i8**, i8*** %8, align 8, !dbg !591, !effectiveSan !123
-  %10 = load i64, i64* %4, align 8, !dbg !592, !effectiveSan !189
-  %11 = getelementptr inbounds i8*, i8** %9, i64 %10, !dbg !593
-  ret i8** %11, !dbg !594
+  %6 = bitcast %"class.std::vector"* %5 to %"struct.std::_Vector_base"*, !dbg !596, !effectiveSan !321
+  %7 = getelementptr inbounds %"struct.std::_Vector_base", %"struct.std::_Vector_base"* %6, i32 0, i32 0, !dbg !596, !effectiveSan !322
+  %8 = getelementptr inbounds %"struct.std::_Vector_base<void *, std::allocator<void *> >::_Vector_impl", %"struct.std::_Vector_base<void *, std::allocator<void *> >::_Vector_impl"* %7, i32 0, i32 0, !dbg !597, !effectiveSan !323
+  %9 = load i8**, i8*** %8, align 8, !dbg !597, !effectiveSan !123
+  %10 = load i64, i64* %4, align 8, !dbg !598, !effectiveSan !189
+  %11 = getelementptr inbounds i8*, i8** %9, i64 %10, !dbg !599
+  ret i8** %11, !dbg !600, !TYCHE_MD !601
 }
 
 declare void @printIntLine(i32) #3
@@ -653,26 +757,33 @@ attributes #3 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-
 !569 = !DISubroutineType(types: !570)
 !570 = !{null, !10}
 !571 = !{!9}
-!572 = !DILocalVariable(name: "dataVector", arg: 1, scope: !567, file: !1, line: 27, type: !10)
-!573 = !DIExpression(DW_OP_deref)
-!574 = !DILocation(line: 27, column: 29, scope: !567)
-!575 = !DILocalVariable(name: "data", scope: !567, file: !1, line: 30, type: !7)
-!576 = !DIExpression()
-!577 = !DILocation(line: 30, column: 12, scope: !567)
-!578 = !DILocation(line: 30, column: 19, scope: !567)
-!579 = !DILocation(line: 32, column: 26, scope: !567)
-!580 = !DILocation(line: 32, column: 20, scope: !567)
-!581 = !DILocation(line: 32, column: 18, scope: !567)
-!582 = !DILocation(line: 32, column: 5, scope: !567)
-!583 = !DILocation(line: 33, column: 1, scope: !567)
-!584 = distinct !DISubprogram(name: "operator[]", linkageName: "_ZNSt6vectorIPvSaIS0_EEixEm", scope: !10, file: !11, line: 930, type: !248, isLocal: false, isDefinition: true, scopeLine: 931, flags: DIFlagPrototyped, isOptimized: false, unit: !0, declaration: !247, variables: !2)
-!585 = !{!9, null}
-!586 = !DILocalVariable(name: "this", arg: 1, scope: !584, type: !9, flags: DIFlagArtificial | DIFlagObjectPointer)
-!587 = !DILocation(line: 0, scope: !584)
-!588 = !DILocalVariable(name: "__n", arg: 2, scope: !584, file: !11, line: 930, type: !189)
-!589 = !DILocation(line: 930, column: 28, scope: !584)
-!590 = !DILocation(line: 933, column: 17, scope: !584)
-!591 = !DILocation(line: 933, column: 25, scope: !584)
-!592 = !DILocation(line: 933, column: 36, scope: !584)
-!593 = !DILocation(line: 933, column: 34, scope: !584)
-!594 = !DILocation(line: 933, column: 2, scope: !584)
+!572 = !{!"CWE843_Type_Confusion__char_72b.cpp#18446744073709551615#18446744073709551615#class std::vector<void*, std::allocator<void*> >#40587368#12651788120482719357#18335471052008286760#Argument#_ZN30CWE843_Type_Confusion__char_727badSinkESt6vectorIPvSaIS1_EE#0#0#40091648#40091648#3#"}
+!573 = !{!"CWE843_Type_Confusion__char_72b.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"40567672", !"526828848944628746", !"11854005139656696112", !"Alloca", !"_ZN30CWE843_Type_Confusion__char_727badSinkESt6vectorIPvSaIS1_EE", !"0", !"0", !"38832688", !"39649688", !"2"}
+!574 = !DILocalVariable(name: "dataVector", arg: 1, scope: !567, file: !1, line: 27, type: !10)
+!575 = !DIExpression(DW_OP_deref)
+!576 = !DILocation(line: 27, column: 29, scope: !567)
+!577 = !DILocalVariable(name: "data", scope: !567, file: !1, line: 30, type: !7)
+!578 = !DIExpression()
+!579 = !DILocation(line: 30, column: 12, scope: !567)
+!580 = !DILocation(line: 30, column: 19, scope: !567)
+!581 = !DILocation(line: 32, column: 26, scope: !567)
+!582 = !DILocation(line: 32, column: 20, scope: !567)
+!583 = !DILocation(line: 32, column: 18, scope: !567)
+!584 = !DILocation(line: 32, column: 5, scope: !567)
+!585 = !DILocation(line: 33, column: 1, scope: !567)
+!586 = !{!"CWE843_Type_Confusion__char_72b.cpp", !"33", !"1", !"int8_t", !"40532968", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN30CWE843_Type_Confusion__char_727badSinkESt6vectorIPvSaIS1_EE", !"33", !"1", !"38832688", !"39925984", !"1"}
+!587 = distinct !DISubprogram(name: "operator[]", linkageName: "_ZNSt6vectorIPvSaIS0_EEixEm", scope: !10, file: !11, line: 930, type: !248, isLocal: false, isDefinition: true, scopeLine: 931, flags: DIFlagPrototyped, isOptimized: false, unit: !0, declaration: !247, variables: !2)
+!588 = !{!9, null}
+!589 = !{!"CWE843_Type_Confusion__char_72b.cpp#18446744073709551615#18446744073709551615#class std::vector<void*, std::allocator<void*> >#40587368#12651788120482719357#18335471052008286760#Argument#_ZNSt6vectorIPvSaIS0_EEixEm#0#0#40091648#40091648#3#", !"CWE843_Type_Confusion__char_72b.cpp#18446744073709551615#18446744073709551615#int64_t#40537704#18106563096879026311#17544793107196451347#Argument#_ZNSt6vectorIPvSaIS0_EEixEm#0#0#37501144#37501144#5#"}
+!590 = !{!"CWE843_Type_Confusion__char_72b.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::vector<void*, std::allocator<void*> > *", !"40634136", !"9862213165445658544", !"10783874075288768207", !"Alloca", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"0", !"0", !"40524880", !"40519416", !"4"}
+!591 = !{!"CWE843_Type_Confusion__char_72b.cpp", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"40537704", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"0", !"0", !"40524880", !"40519640", !"5"}
+!592 = !DILocalVariable(name: "this", arg: 1, scope: !587, type: !9, flags: DIFlagArtificial | DIFlagObjectPointer)
+!593 = !DILocation(line: 0, scope: !587)
+!594 = !DILocalVariable(name: "__n", arg: 2, scope: !587, file: !11, line: 930, type: !189)
+!595 = !DILocation(line: 930, column: 28, scope: !587)
+!596 = !DILocation(line: 933, column: 17, scope: !587)
+!597 = !DILocation(line: 933, column: 25, scope: !587)
+!598 = !DILocation(line: 933, column: 36, scope: !587)
+!599 = !DILocation(line: 933, column: 34, scope: !587)
+!600 = !DILocation(line: 933, column: 2, scope: !587)
+!601 = !{!"CWE843_Type_Confusion__char_72b.cpp", !"933", !"2", !"int8_t", !"40532968", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"933", !"2", !"40524880", !"40527944", !"1"}

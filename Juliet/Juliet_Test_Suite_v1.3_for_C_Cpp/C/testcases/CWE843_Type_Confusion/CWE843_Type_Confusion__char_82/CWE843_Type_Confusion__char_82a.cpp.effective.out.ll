@@ -26,6 +26,56 @@ target triple = "x86_64-unknown-linux-gnu"
 %TYCHE_META_CACHELINE101 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %TYCHE_META_CACHELINE100 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %EFFECTIVE_TYPE_5 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [5 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE207 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE206 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE205 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE204 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE203 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE202 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE201 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE200 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_3 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [3 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE307 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE306 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE305 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE304 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE303 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE302 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE301 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE300 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE407 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE406 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE405 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE404 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE403 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE402 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE401 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE400 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE507 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE506 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE505 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE504 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE503 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE502 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE501 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE500 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE607 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE606 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE605 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE604 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE603 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE602 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE601 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE600 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE707 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE706 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE705 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE704 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE703 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE702 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE701 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE700 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_4 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [4 x %EFFECTIVE_ENTRY] }
 %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base" = type { i32 (...)** }
 %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad" = type { %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base" }
 
@@ -76,41 +126,113 @@ $_ZTIN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseE = c
 @TYCHE_META_SECTION_TID_1_SEC_1_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE101* null }>], section "tyche_symbols_section_1", align 64
 @TYCHE_META_SECTION_TID_1_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE100* null }>], section "tyche_symbols_section_0", align 64
 @EFFECTIVE_TYPE_22b8af0b6b106b352ebf663e494d82be = weak constant %EFFECTIVE_TYPE_5 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_1_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp, i64 -4719124482555986130, i64 -4719124482555986130, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 15, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_22b8af0b6b106b352ebf663e494d82be to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 5, [5 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11355162494413405808_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 0, i64 -7091581579296145808, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @"TYCHE_TYPE_ENTRY_int8_t *_3715365884536843699_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 3715365884536843699, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([73 x i8], [73 x i8]* @"TYCHE_TYPE_ENTRY_class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad_3640346490_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 3640346490, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([74 x i8], [74 x i8]* @"TYCHE_TYPE_ENTRY_class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base_9479108826582327196_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 -8967635247127224420, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_int8_t *_476075404_FILE_CWE843_Type_Confusion__char_82a.cpp" = private unnamed_addr constant [9 x i8] c"int8_t *\00"
+@TYCHE_TYPE_ENTRY_coerced_12545345991443039823_FILE_CWE843_Type_Confusion__char_82a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_2 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE207* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_2_SEC_6_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE206* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_2_SEC_5_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE205* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_2_SEC_4_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE204* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_2_SEC_3_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE203* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_2_SEC_2_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE202* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_2_SEC_1_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE201* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_2_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE200* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_a481e2de8ae4613074fac0bfec5c40a = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_2_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp, i64 -8282703695323691247, i64 -8282703695323691247, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a, i64 2528746356237243677, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @"TYCHE_TYPE_ENTRY_int8_t *_476075404_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 476075404, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_12545345991443039823_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 0, i64 -5901398082266511793, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.4 = private unnamed_addr constant [76 x i8] c"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base *\00"
+@EFFECTIVE_INFO_bb9e8d6aec044e2e6789f280079341fa = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([76 x i8], [76 x i8]* @EFFECTIVE_STRING.4, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base *_3703819217_FILE_CWE843_Type_Confusion__char_82a.cpp" = private unnamed_addr constant [76 x i8] c"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base *\00"
+@TYCHE_TYPE_ENTRY_coerced_15660839370864019513_FILE_CWE843_Type_Confusion__char_82a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_3 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE307* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_3_SEC_6_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE306* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_3_SEC_5_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE305* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_3_SEC_4_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE304* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_3_SEC_3_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE303* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_3_SEC_2_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE302* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_3_SEC_1_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE301* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_3_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE300* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_bb9e8d6aec044e2e6789f280079341fa = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_3_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp, i64 -413888030303942297, i64 -413888030303942297, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_bb9e8d6aec044e2e6789f280079341fa, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([76 x i8], [76 x i8]* @"TYCHE_TYPE_ENTRY_class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base *_3703819217_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 3703819217, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_15660839370864019513_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 0, i64 -2785904702845532103, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.5 = private unnamed_addr constant [75 x i8] c"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad *\00"
+@EFFECTIVE_INFO_58d850be1dd4062943a35014307a2e34 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([75 x i8], [75 x i8]* @EFFECTIVE_STRING.5, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad *_270205180_FILE_CWE843_Type_Confusion__char_82a.cpp" = private unnamed_addr constant [75 x i8] c"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad *\00"
+@TYCHE_TYPE_ENTRY_coerced_1673530748959679005_FILE_CWE843_Type_Confusion__char_82a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_4 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE407* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_4_SEC_6_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE406* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_4_SEC_5_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE405* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_4_SEC_4_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE404* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_4_SEC_3_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE403* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_4_SEC_2_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE402* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_4_SEC_1_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE401* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_4_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE400* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_58d850be1dd4062943a35014307a2e34 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_4_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp, i64 3760077085818790723, i64 3760077085818790723, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_58d850be1dd4062943a35014307a2e34, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([75 x i8], [75 x i8]* @"TYCHE_TYPE_ENTRY_class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad *_270205180_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 270205180, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_1673530748959679005_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 0, i64 1673530748959679005, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_TYPE_ENTRY_int32_t_1319304013_FILE_CWE843_Type_Confusion__char_82a.cpp = private unnamed_addr constant [8 x i8] c"int32_t\00"
+@TYCHE_META_SECTION_TID_5 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE507* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_5_SEC_6_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE506* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_5_SEC_5_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE505* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_5_SEC_4_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE504* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_5_SEC_3_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE503* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_5_SEC_2_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE502* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_5_SEC_1_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE501* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_5_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE500* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_INT32 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_5_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp, i64 7706858352182509634, i64 7706858352182509634, i32 4, i32 4, i32 0, i32 1340864923, i64 2305843009213693952, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int32_t_1319304013_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 0, i64 1319304013, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.6 = private unnamed_addr constant [11 x i8] c"int8_t * *\00"
+@EFFECTIVE_INFO_8f8a1df20324c5f26a4b670d9445ac81 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([11 x i8], [11 x i8]* @EFFECTIVE_STRING.6, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_int8_t * *_1532408840_FILE_CWE843_Type_Confusion__char_82a.cpp" = private unnamed_addr constant [11 x i8] c"int8_t * *\00"
+@TYCHE_TYPE_ENTRY_coerced_11726156259250440756_FILE_CWE843_Type_Confusion__char_82a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_6 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE607* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_6_SEC_6_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE606* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_6_SEC_5_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE605* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_6_SEC_4_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE604* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_6_SEC_3_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE603* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_6_SEC_2_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE602* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_6_SEC_1_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE601* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_6_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE600* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_8f8a1df20324c5f26a4b670d9445ac81 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_6_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp, i64 -9102824244640265366, i64 -9102824244640265366, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_8f8a1df20324c5f26a4b670d9445ac81, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([11 x i8], [11 x i8]* @"TYCHE_TYPE_ENTRY_int8_t * *_1532408840_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 1532408840, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11726156259250440756_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 0, i64 -6720587814459110860, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_TYPE_ENTRY_coerced_2168812392214444436_FILE_CWE843_Type_Confusion__char_82a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_int8_t *_12683032477336152663_FILE_CWE843_Type_Confusion__char_82a.cpp" = private unnamed_addr constant [9 x i8] c"int8_t *\00"
+@"TYCHE_TYPE_ENTRY_class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base_998561912_FILE_CWE843_Type_Confusion__char_82a.cpp" = private unnamed_addr constant [74 x i8] c"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base\00"
+@TYCHE_META_SECTION_TID_7 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE707* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_7_SEC_6_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE706* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_7_SEC_5_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE705* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_7_SEC_4_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE704* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_7_SEC_3_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE703* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_7_SEC_2_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE702* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_7_SEC_1_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE701* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_7_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE700* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_aecd8e1151429c21caf8575e08c20e3d = weak constant %EFFECTIVE_TYPE_4 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_7_SEC_0_FILE_CWE843_Type_Confusion__char_82a.cpp, i64 4399667227185903818, i64 4399667227185903818, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 15, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_aecd8e1151429c21caf8575e08c20e3d to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 4, [4 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_2168812392214444436_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 0, i64 2168812392214444436, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @"TYCHE_TYPE_ENTRY_int8_t *_12683032477336152663_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 -5763711596373398953, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([74 x i8], [74 x i8]* @"TYCHE_TYPE_ENTRY_class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base_998561912_FILE_CWE843_Type_Confusion__char_82a.cpp", i32 0, i32 0), i64 0, i64 998561912, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__char_82a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
 
 ; Function Attrs: noinline uwtable
-define void @_ZN30CWE843_Type_Confusion__char_823badEv() #0 !dbg !286 !effectiveSanArgs !4 {
-  %1 = alloca i8*, align 8, !effectiveSan !7
-  %2 = alloca i8, align 1, !effectiveSan !0
-  %3 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, align 8, !effectiveSan !9
-  call void @llvm.dbg.declare(metadata i8** %1, metadata !287, metadata !288), !dbg !289
-  store i8* null, i8** %1, align 8, !dbg !290
-  call void @llvm.dbg.declare(metadata i8* %2, metadata !291, metadata !288), !dbg !293
-  store i8 97, i8* %2, align 1, !dbg !293
-  store i8* %2, i8** %1, align 8, !dbg !294
-  call void @llvm.dbg.declare(metadata %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %3, metadata !295, metadata !288), !dbg !296
-  %4 = call i8* @_Znwm(i64 8) #8, !dbg !297, !effectiveSan !25, !TYCHE_MD !298
-  %5 = bitcast i8* %4 to %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*, !dbg !297, !effectiveSan !25
-  call void @_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %5) #9, !dbg !299
-  %6 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %5 to %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, !dbg !297, !effectiveSan !10
-  store %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %6, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %3, align 8, !dbg !296
-  %7 = load %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %3, align 8, !dbg !301, !effectiveSan !10
-  %8 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %7 to void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)***, !dbg !302, !effectiveSan !33
-  %9 = load void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)**, void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)*** %8, align 8, !dbg !302, !effectiveSan !34
-  %10 = getelementptr inbounds void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)*, void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)** %9, i64 0, !dbg !302
-  %11 = load void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)*, void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)** %10, align 8, !dbg !302, !effectiveSan !35
-  %12 = load i8*, i8** %1, align 8, !dbg !303, !effectiveSan !0
-  call void %11(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %7, i8* %12), !dbg !302
-  %13 = load %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %3, align 8, !dbg !304, !effectiveSan !10
-  %14 = icmp eq %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %13, null, !dbg !305
-  br i1 %14, label %17, label %15, !dbg !305
+define void @_ZN30CWE843_Type_Confusion__char_823badEv() #0 !dbg !286 !effectiveSanArgs !4 !TYCHE_MD_ARGS !4 {
+  %1 = alloca i8*, align 8, !effectiveSan !7, !TYCHE_MD !287
+  %2 = alloca i8, align 1, !effectiveSan !0, !TYCHE_MD !288
+  %3 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, align 8, !effectiveSan !9, !TYCHE_MD !289
+  call void @llvm.dbg.declare(metadata i8** %1, metadata !290, metadata !291), !dbg !292
+  store i8* null, i8** %1, align 8, !dbg !293
+  call void @llvm.dbg.declare(metadata i8* %2, metadata !294, metadata !291), !dbg !296
+  store i8 97, i8* %2, align 1, !dbg !296
+  store i8* %2, i8** %1, align 8, !dbg !297
+  call void @llvm.dbg.declare(metadata %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %3, metadata !298, metadata !291), !dbg !299
+  %4 = call i8* @_Znwm(i64 8) #8, !dbg !300, !effectiveSan !25, !TYCHE_MD !301
+  %5 = bitcast i8* %4 to %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*, !dbg !300, !effectiveSan !25
+  call void @_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %5) #9, !dbg !302
+  %6 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %5 to %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, !dbg !300, !effectiveSan !10
+  store %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %6, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %3, align 8, !dbg !299
+  %7 = load %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %3, align 8, !dbg !304, !effectiveSan !10
+  %8 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %7 to void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)***, !dbg !305, !effectiveSan !33
+  %9 = load void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)**, void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)*** %8, align 8, !dbg !305, !effectiveSan !34
+  %10 = getelementptr inbounds void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)*, void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)** %9, i64 0, !dbg !305
+  %11 = load void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)*, void (%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, i8*)** %10, align 8, !dbg !305, !effectiveSan !35
+  %12 = load i8*, i8** %1, align 8, !dbg !306, !effectiveSan !0
+  call void %11(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %7, i8* %12), !dbg !305
+  %13 = load %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %3, align 8, !dbg !307, !effectiveSan !10
+  %14 = icmp eq %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %13, null, !dbg !308
+  br i1 %14, label %17, label %15, !dbg !308
 
 ; <label>:15:                                     ; preds = %0
-  %16 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %13 to i8*, !dbg !306, !effectiveSan !0
-  call void @_ZdlPv(i8* %16) #10, !dbg !306, !TYCHE_MD !307
-  br label %17, !dbg !306
+  %16 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %13 to i8*, !dbg !309, !effectiveSan !0
+  call void @_ZdlPv(i8* %16) #10, !dbg !309, !TYCHE_MD !310
+  br label %17, !dbg !309
 
 ; <label>:17:                                     ; preds = %15, %0
-  ret void, !dbg !308
+  ret void, !dbg !311, !TYCHE_MD !312
 }
 
 ; Function Attrs: nounwind readnone
@@ -120,38 +242,38 @@ declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 declare noalias i8* @_Znwm(i64) #2
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*) unnamed_addr #3 comdat align 2 !dbg !309 !effectiveSanArgs !313 {
-  %2 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*, align 8, !effectiveSan !42
+define linkonce_odr void @_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*) unnamed_addr #3 comdat align 2 !dbg !313 !effectiveSanArgs !317 !TYCHE_MD_ARGS !318 {
+  %2 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*, align 8, !effectiveSan !42, !TYCHE_MD !319
   store %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %0, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"** %2, metadata !314, metadata !288), !dbg !315
+  call void @llvm.dbg.declare(metadata %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"** %2, metadata !320, metadata !291), !dbg !321
   %3 = load %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"** %2, align 8, !effectiveSan !25
-  %4 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %3 to %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, !dbg !316, !effectiveSan !10
-  call void @_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %4) #9, !dbg !316
-  %5 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %3 to i32 (...)***, !dbg !316, !effectiveSan !43
-  store i32 (...)** bitcast (i8** getelementptr inbounds ({ [3 x i8*] }, { [3 x i8*] }* @_ZTVN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badE, i32 0, inrange i32 0, i32 2) to i32 (...)**), i32 (...)*** %5, align 8, !dbg !316
-  ret void, !dbg !316
+  %4 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %3 to %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, !dbg !322, !effectiveSan !10
+  call void @_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %4) #9, !dbg !322
+  %5 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"* %3 to i32 (...)***, !dbg !322, !effectiveSan !43
+  store i32 (...)** bitcast (i8** getelementptr inbounds ({ [3 x i8*] }, { [3 x i8*] }* @_ZTVN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badE, i32 0, inrange i32 0, i32 2) to i32 (...)**), i32 (...)*** %5, align 8, !dbg !322
+  ret void, !dbg !322, !TYCHE_MD !323
 }
 
 ; Function Attrs: nobuiltin nounwind
 declare void @_ZdlPv(i8*) #4
 
 ; Function Attrs: noinline norecurse uwtable
-define i32 @main(i32, i8**) #5 !dbg !317 !effectiveSanArgs !320 {
-  %3 = alloca i32, align 4, !effectiveSan !38
-  %4 = alloca i32, align 4, !effectiveSan !38
-  %5 = alloca i8**, align 8, !effectiveSan !39
+define i32 @main(i32, i8**) #5 !dbg !324 !effectiveSanArgs !327 !TYCHE_MD_ARGS !328 {
+  %3 = alloca i32, align 4, !effectiveSan !38, !TYCHE_MD !329
+  %4 = alloca i32, align 4, !effectiveSan !38, !TYCHE_MD !330
+  %5 = alloca i8**, align 8, !effectiveSan !39, !TYCHE_MD !331
   store i32 0, i32* %3, align 4
   store i32 %0, i32* %4, align 4
-  call void @llvm.dbg.declare(metadata i32* %4, metadata !321, metadata !288), !dbg !322
+  call void @llvm.dbg.declare(metadata i32* %4, metadata !332, metadata !291), !dbg !333
   store i8** %1, i8*** %5, align 8
-  call void @llvm.dbg.declare(metadata i8*** %5, metadata !323, metadata !288), !dbg !324
-  %6 = call i64 @time(i64* null) #9, !dbg !325, !effectiveSan !41
-  %7 = trunc i64 %6 to i32, !dbg !325
-  call void @srand(i32 %7) #9, !dbg !326
-  call void @printLine(i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str, i32 0, i32 0)), !dbg !328
-  call void @_ZN30CWE843_Type_Confusion__char_823badEv(), !dbg !329
-  call void @printLine(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.1, i32 0, i32 0)), !dbg !330
-  ret i32 0, !dbg !331
+  call void @llvm.dbg.declare(metadata i8*** %5, metadata !334, metadata !291), !dbg !335
+  %6 = call i64 @time(i64* null) #9, !dbg !336, !effectiveSan !41
+  %7 = trunc i64 %6 to i32, !dbg !336
+  call void @srand(i32 %7) #9, !dbg !337
+  call void @printLine(i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str, i32 0, i32 0)), !dbg !339
+  call void @_ZN30CWE843_Type_Confusion__char_823badEv(), !dbg !340
+  call void @printLine(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.1, i32 0, i32 0)), !dbg !341
+  ret i32 0, !dbg !342, !TYCHE_MD !343
 }
 
 ; Function Attrs: nounwind
@@ -163,14 +285,14 @@ declare i64 @time(i64*) #6
 declare void @printLine(i8*) #7
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*) unnamed_addr #3 comdat align 2 !dbg !332 !effectiveSanArgs !336 {
-  %2 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, align 8, !effectiveSan !9
+define linkonce_odr void @_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev(%"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*) unnamed_addr #3 comdat align 2 !dbg !344 !effectiveSanArgs !348 !TYCHE_MD_ARGS !349 {
+  %2 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, align 8, !effectiveSan !9, !TYCHE_MD !350
   store %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %0, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %2, metadata !337, metadata !288), !dbg !338
+  call void @llvm.dbg.declare(metadata %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %2, metadata !351, metadata !291), !dbg !352
   %3 = load %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"** %2, align 8, !effectiveSan !10
-  %4 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %3 to i32 (...)***, !dbg !339, !effectiveSan !43
-  store i32 (...)** bitcast (i8** getelementptr inbounds ({ [3 x i8*] }, { [3 x i8*] }* @_ZTVN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseE, i32 0, inrange i32 0, i32 2) to i32 (...)**), i32 (...)*** %4, align 8, !dbg !339
-  ret void, !dbg !339
+  %4 = bitcast %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"* %3 to i32 (...)***, !dbg !353, !effectiveSan !43
+  store i32 (...)** bitcast (i8** getelementptr inbounds ({ [3 x i8*] }, { [3 x i8*] }* @_ZTVN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseE, i32 0, inrange i32 0, i32 2) to i32 (...)**), i32 (...)*** %4, align 8, !dbg !353
+  ret void, !dbg !353, !TYCHE_MD !354
 }
 
 declare void @__cxa_pure_virtual() unnamed_addr
@@ -473,61 +595,76 @@ attributes #10 = { builtin nounwind }
 !279 = !DIImportedEntity(tag: DW_TAG_imported_declaration, scope: !2, entity: !181, line: 78)
 !280 = !DIImportedEntity(tag: DW_TAG_imported_declaration, scope: !2, entity: !183, line: 80)
 !281 = !DIImportedEntity(tag: DW_TAG_imported_declaration, scope: !2, entity: !191, line: 81)
-!282 = !DIImportedEntity(tag: DW_TAG_imported_module, scope: !2, entity: !13, line: 77)
+!282 = !DIImportedEntity(tag: DW_TAG_imported_module, scope: !2, entity: !13, line: 78)
 !283 = !{i32 2, !"Dwarf Version", i32 4}
 !284 = !{i32 2, !"Debug Info Version", i32 3}
 !285 = !{!"clang version 4.0.1 (tags/RELEASE_401/final)"}
 !286 = distinct !DISubprogram(name: "bad", linkageName: "_ZN30CWE843_Type_Confusion__char_823badEv", scope: !13, file: !3, line: 25, type: !70, isLocal: false, isDefinition: true, scopeLine: 26, flags: DIFlagPrototyped, isOptimized: false, unit: !2, variables: !4)
-!287 = !DILocalVariable(name: "data", scope: !286, file: !3, line: 27, type: !0)
-!288 = !DIExpression()
-!289 = !DILocation(line: 27, column: 12, scope: !286)
-!290 = !DILocation(line: 29, column: 10, scope: !286)
-!291 = !DILocalVariable(name: "charBuffer", scope: !292, file: !3, line: 32, type: !1)
-!292 = distinct !DILexicalBlock(scope: !286, file: !3, line: 30, column: 5)
-!293 = !DILocation(line: 32, column: 14, scope: !292)
-!294 = !DILocation(line: 33, column: 14, scope: !292)
-!295 = !DILocalVariable(name: "baseObject", scope: !286, file: !3, line: 35, type: !10)
-!296 = !DILocation(line: 35, column: 42, scope: !286)
-!297 = !DILocation(line: 35, column: 55, scope: !286)
-!298 = !{!"35", !"55", !"34798120", !"3368523464000242366", !"2501942056580049717", !"35", !"55", !"34613808", !"34654896", !"2", !"_Znwm", !"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad", !"_ZN30CWE843_Type_Confusion__char_823badEv"}
-!299 = !DILocation(line: 35, column: 59, scope: !300)
-!300 = !DILexicalBlockFile(scope: !286, file: !3, discriminator: 1)
-!301 = !DILocation(line: 36, column: 5, scope: !286)
-!302 = !DILocation(line: 36, column: 17, scope: !286)
-!303 = !DILocation(line: 36, column: 24, scope: !286)
-!304 = !DILocation(line: 37, column: 12, scope: !286)
-!305 = !DILocation(line: 37, column: 5, scope: !286)
-!306 = !DILocation(line: 37, column: 5, scope: !300)
-!307 = !{!"37", !"5", !"0", !"0", !"0", !"37", !"5", !"34654576", !"34668928", !"18446744073709551615", !"_ZdlPv", !"FREE", !"_ZN30CWE843_Type_Confusion__char_823badEv"}
-!308 = !DILocation(line: 38, column: 1, scope: !286)
-!309 = distinct !DISubprogram(name: "CWE843_Type_Confusion__char_82_bad", linkageName: "_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev", scope: !26, file: !12, line: 30, type: !310, isLocal: false, isDefinition: true, scopeLine: 30, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false, unit: !2, declaration: !312, variables: !4)
-!310 = !DISubroutineType(types: !311)
-!311 = !{null, !32}
-!312 = !DISubprogram(name: "CWE843_Type_Confusion__char_82_bad", scope: !26, type: !310, isLocal: false, isDefinition: false, flags: DIFlagPublic | DIFlagArtificial | DIFlagPrototyped, isOptimized: false)
-!313 = !{!25}
-!314 = !DILocalVariable(name: "this", arg: 1, scope: !309, type: !25, flags: DIFlagArtificial | DIFlagObjectPointer)
-!315 = !DILocation(line: 0, scope: !309)
-!316 = !DILocation(line: 30, column: 7, scope: !309)
-!317 = distinct !DISubprogram(name: "main", scope: !3, file: !3, line: 79, type: !318, isLocal: false, isDefinition: true, scopeLine: 80, flags: DIFlagPrototyped, isOptimized: false, unit: !2, variables: !4)
-!318 = !DISubroutineType(types: !319)
-!319 = !{!20, !20, !40}
-!320 = !{null, !40}
-!321 = !DILocalVariable(name: "argc", arg: 1, scope: !317, file: !3, line: 79, type: !20)
-!322 = !DILocation(line: 79, column: 14, scope: !317)
-!323 = !DILocalVariable(name: "argv", arg: 2, scope: !317, file: !3, line: 79, type: !40)
-!324 = !DILocation(line: 79, column: 27, scope: !317)
-!325 = !DILocation(line: 82, column: 22, scope: !317)
-!326 = !DILocation(line: 82, column: 5, scope: !327)
-!327 = !DILexicalBlockFile(scope: !317, file: !3, discriminator: 1)
-!328 = !DILocation(line: 89, column: 5, scope: !317)
-!329 = !DILocation(line: 90, column: 5, scope: !317)
-!330 = !DILocation(line: 91, column: 5, scope: !317)
-!331 = !DILocation(line: 93, column: 5, scope: !317)
-!332 = distinct !DISubprogram(name: "CWE843_Type_Confusion__char_82_base", linkageName: "_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev", scope: !11, file: !12, line: 21, type: !333, isLocal: false, isDefinition: true, scopeLine: 21, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false, unit: !2, declaration: !335, variables: !4)
-!333 = !DISubroutineType(types: !334)
-!334 = !{null, !24}
-!335 = !DISubprogram(name: "CWE843_Type_Confusion__char_82_base", scope: !11, type: !333, isLocal: false, isDefinition: false, flags: DIFlagPublic | DIFlagArtificial | DIFlagPrototyped, isOptimized: false)
-!336 = !{!10}
-!337 = !DILocalVariable(name: "this", arg: 1, scope: !332, type: !10, flags: DIFlagArtificial | DIFlagObjectPointer)
-!338 = !DILocation(line: 0, scope: !332)
-!339 = !DILocation(line: 21, column: 7, scope: !332)
+!287 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"31161864", !"526828848944628746", !"11854005139656696112", !"Alloca", !"_ZN30CWE843_Type_Confusion__char_823badEv", !"0", !"0", !"30960224", !"30960024", !"3"}
+!288 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"31060184", !"18058093552324746023", !"94541214677173297", !"Alloca", !"_ZN30CWE843_Type_Confusion__char_823badEv", !"0", !"0", !"30960224", !"30959320", !"1"}
+!289 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"18446744073709551615", !"18446744073709551615", !"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base *", !"31102664", !"7460760889412764154", !"13519398621778562606", !"Alloca", !"_ZN30CWE843_Type_Confusion__char_823badEv", !"0", !"0", !"30960224", !"30920696", !"4"}
+!290 = !DILocalVariable(name: "data", scope: !286, file: !3, line: 27, type: !0)
+!291 = !DIExpression()
+!292 = !DILocation(line: 27, column: 12, scope: !286)
+!293 = !DILocation(line: 29, column: 10, scope: !286)
+!294 = !DILocalVariable(name: "charBuffer", scope: !295, file: !3, line: 32, type: !1)
+!295 = distinct !DILexicalBlock(scope: !286, file: !3, line: 30, column: 5)
+!296 = !DILocation(line: 32, column: 14, scope: !295)
+!297 = !DILocation(line: 33, column: 14, scope: !295)
+!298 = !DILocalVariable(name: "baseObject", scope: !286, file: !3, line: 35, type: !10)
+!299 = !DILocation(line: 35, column: 42, scope: !286)
+!300 = !DILocation(line: 35, column: 55, scope: !286)
+!301 = !{!"35", !"55", !"31144808", !"3368523464000242366", !"2501942056580049717", !"35", !"55", !"30960224", !"31001312", !"2", !"_Znwm", !"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad", !"_ZN30CWE843_Type_Confusion__char_823badEv"}
+!302 = !DILocation(line: 35, column: 59, scope: !303)
+!303 = !DILexicalBlockFile(scope: !286, file: !3, discriminator: 1)
+!304 = !DILocation(line: 36, column: 5, scope: !286)
+!305 = !DILocation(line: 36, column: 17, scope: !286)
+!306 = !DILocation(line: 36, column: 24, scope: !286)
+!307 = !DILocation(line: 37, column: 12, scope: !286)
+!308 = !DILocation(line: 37, column: 5, scope: !286)
+!309 = !DILocation(line: 37, column: 5, scope: !303)
+!310 = !{!"37", !"5", !"0", !"0", !"0", !"37", !"5", !"31000992", !"31015344", !"18446744073709551615", !"_ZdlPv", !"FREE", !"_ZN30CWE843_Type_Confusion__char_823badEv"}
+!311 = !DILocation(line: 38, column: 1, scope: !286)
+!312 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"38", !"1", !"int8_t", !"31060184", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN30CWE843_Type_Confusion__char_823badEv", !"38", !"1", !"31001936", !"30965536", !"1"}
+!313 = distinct !DISubprogram(name: "CWE843_Type_Confusion__char_82_bad", linkageName: "_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev", scope: !26, file: !12, line: 30, type: !314, isLocal: false, isDefinition: true, scopeLine: 30, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false, unit: !2, declaration: !316, variables: !4)
+!314 = !DISubroutineType(types: !315)
+!315 = !{null, !32}
+!316 = !DISubprogram(name: "CWE843_Type_Confusion__char_82_bad", scope: !26, type: !314, isLocal: false, isDefinition: false, flags: DIFlagPublic | DIFlagArtificial | DIFlagPrototyped, isOptimized: false)
+!317 = !{!25}
+!318 = !{!"CWE843_Type_Confusion__char_82a.cpp#18446744073709551615#18446744073709551615#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#31144808#3368523464000242366#2501942056580049717#Argument#_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev#0#0#30988240#30988240#2#"}
+!319 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"18446744073709551615", !"18446744073709551615", !"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad *", !"31104024", !"4873827269387890228", !"6401955647781602857", !"Alloca", !"_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev", !"0", !"0", !"31027952", !"31027096", !"5"}
+!320 = !DILocalVariable(name: "this", arg: 1, scope: !313, type: !25, flags: DIFlagArtificial | DIFlagObjectPointer)
+!321 = !DILocation(line: 0, scope: !313)
+!322 = !DILocation(line: 30, column: 7, scope: !313)
+!323 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"30", !"7", !"int8_t", !"31060184", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev", !"30", !"7", !"31027952", !"31035504", !"1"}
+!324 = distinct !DISubprogram(name: "main", scope: !3, file: !3, line: 80, type: !325, isLocal: false, isDefinition: true, scopeLine: 81, flags: DIFlagPrototyped, isOptimized: false, unit: !2, variables: !4)
+!325 = !DISubroutineType(types: !326)
+!326 = !{!20, !20, !40}
+!327 = !{null, !40}
+!328 = !{!"CWE843_Type_Confusion__char_82a.cpp#18446744073709551615#18446744073709551615#int32_t#31110056#4773841653289120874#2358335501509695672#Argument#main#0#0#29576584#29576584#6#", !"CWE843_Type_Confusion__char_82a.cpp#18446744073709551615#18446744073709551615#int8_t *#31161864#526828848944628746#11854005139656696112#Argument#main#0#0#28592504#28592504#3#"}
+!329 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"31110056", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"main", !"0", !"0", !"31000416", !"31014536", !"6"}
+!330 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"31110056", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"main", !"0", !"0", !"31000416", !"31005688", !"6"}
+!331 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"31110952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"main", !"0", !"0", !"31000416", !"28456312", !"7"}
+!332 = !DILocalVariable(name: "argc", arg: 1, scope: !324, file: !3, line: 80, type: !20)
+!333 = !DILocation(line: 80, column: 14, scope: !324)
+!334 = !DILocalVariable(name: "argv", arg: 2, scope: !324, file: !3, line: 80, type: !40)
+!335 = !DILocation(line: 80, column: 27, scope: !324)
+!336 = !DILocation(line: 83, column: 22, scope: !324)
+!337 = !DILocation(line: 83, column: 5, scope: !338)
+!338 = !DILexicalBlockFile(scope: !324, file: !3, discriminator: 1)
+!339 = !DILocation(line: 90, column: 5, scope: !324)
+!340 = !DILocation(line: 91, column: 5, scope: !324)
+!341 = !DILocation(line: 92, column: 5, scope: !324)
+!342 = !DILocation(line: 94, column: 5, scope: !324)
+!343 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"94", !"5", !"int8_t", !"31060184", !"18058093552324746023", !"94541214677173297", !"Return", !"main", !"94", !"5", !"31000416", !"31032088", !"1"}
+!344 = distinct !DISubprogram(name: "CWE843_Type_Confusion__char_82_base", linkageName: "_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev", scope: !11, file: !12, line: 21, type: !345, isLocal: false, isDefinition: true, scopeLine: 21, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false, unit: !2, declaration: !347, variables: !4)
+!345 = !DISubroutineType(types: !346)
+!346 = !{null, !24}
+!347 = !DISubprogram(name: "CWE843_Type_Confusion__char_82_base", scope: !11, type: !345, isLocal: false, isDefinition: false, flags: DIFlagPublic | DIFlagArtificial | DIFlagPrototyped, isOptimized: false)
+!348 = !{!10}
+!349 = !{!"CWE843_Type_Confusion__char_82a.cpp#18446744073709551615#18446744073709551615#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base#31242520#14625535851271163453#12595879937854053409#Argument#_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev#0#0#30988112#30988112#8#"}
+!350 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"18446744073709551615", !"18446744073709551615", !"class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base *", !"31102664", !"7460760889412764154", !"13519398621778562606", !"Alloca", !"_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev", !"0", !"0", !"31041184", !"31040600", !"4"}
+!351 = !DILocalVariable(name: "this", arg: 1, scope: !344, type: !10, flags: DIFlagArtificial | DIFlagObjectPointer)
+!352 = !DILocation(line: 0, scope: !344)
+!353 = !DILocation(line: 21, column: 7, scope: !344)
+!354 = !{!"CWE843_Type_Confusion__char_82a.cpp", !"21", !"7", !"int8_t", !"31060184", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev", !"21", !"7", !"31041184", !"31041600", !"1"}

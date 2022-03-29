@@ -59,6 +59,7 @@ static void goodG2B()
 
 void good()
 {
+
     goodG2B();
 }
 

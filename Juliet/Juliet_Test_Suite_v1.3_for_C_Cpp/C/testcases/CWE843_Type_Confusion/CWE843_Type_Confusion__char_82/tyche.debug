@@ -1,106 +1,707 @@
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 55,55][Inlined Location: 55,55][BB ID: 20605584][Inst ID: 20627536]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 17467968][Inst ID: 18912488]
+  %2 = alloca i8*, align 8, !effectiveSan !8
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 17468048][Inst ID: 17468048]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Return][Location: 17,1][Inlined Location: 17,1][BB ID: 18931248][Inst ID: 17743840]
+  ret void, !dbg !324
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18927904][Inst ID: 18934360]
+  %2 = alloca i32*, align 8, !effectiveSan !13
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18938432][Inst ID: 18938432]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Return][Location: 25,1][Inlined Location: 25,1][BB ID: 18933920][Inst ID: 18928320]
+  ret void, !dbg !324
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18939888][Inst ID: 18943192]
+  %2 = alloca i32, align 4, !effectiveSan !17
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18944896][Inst ID: 18944896]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Return][Location: 30,1][Inlined Location: 30,1][BB ID: 18939888][Inst ID: 18945552]
+  ret void, !dbg !315
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18957120][Inst ID: 18946104]
+  %2 = alloca i16, align 2, !effectiveSan !18
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18945488][Inst ID: 18945488]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Return][Location: 35,1][Inlined Location: 35,1][BB ID: 18957120][Inst ID: 18957200]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18958656][Inst ID: 18957848]
+  %2 = alloca float, align 4, !effectiveSan !20
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18959776][Inst ID: 18959776]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Return][Location: 40,1][Inlined Location: 40,1][BB ID: 18958656][Inst ID: 17898480]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18964256][Inst ID: 18958760]
+  %2 = alloca i64, align 8, !effectiveSan !22
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18966672][Inst ID: 18966672]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Return][Location: 45,1][Inlined Location: 45,1][BB ID: 18964256][Inst ID: 18967328]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18968816][Inst ID: 18969144]
+  %2 = alloca i64, align 8, !effectiveSan !24
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18969952][Inst ID: 18969952]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Return][Location: 50,1][Inlined Location: 50,1][BB ID: 18968816][Inst ID: 18970192]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18972064][Inst ID: 18968728]
+  %2 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18964080][Inst ID: 18964080]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Return][Location: 55,1][Inlined Location: 55,1][BB ID: 18972064][Inst ID: 18973216]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18975376][Inst ID: 18971976]
+  %2 = alloca i8, align 1, !effectiveSan !33
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18973008][Inst ID: 18973008]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Return][Location: 60,1][Inlined Location: 60,1][BB ID: 18975376][Inst ID: 18977408]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18978512][Inst ID: 18975016]
+  %2 = alloca i32, align 4, !effectiveSan !35
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18978512][Inst ID: 18972552]
+  %3 = alloca [2 x i32], align 4, !effectiveSan !36
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18977200][Inst ID: 18977200]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Return][Location: 70,1][Inlined Location: 70,1][BB ID: 18978512][Inst ID: 18979088]
+  ret void, !dbg !325
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18981680][Inst ID: 18978424]
+  %2 = alloca i32, align 4, !effectiveSan !40
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18987008][Inst ID: 18987008]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Return][Location: 75,1][Inlined Location: 75,1][BB ID: 18981680][Inst ID: 18982096]
+  ret void, !dbg !315
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18993264][Inst ID: 18981784]
+  %2 = alloca i8, align 1, !effectiveSan !42
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18993152][Inst ID: 18993152]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Return][Location: 80,1][Inlined Location: 80,1][BB ID: 18993264][Inst ID: 18993344]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18998576][Inst ID: 17903912]
+  %2 = alloca double, align 8, !effectiveSan !43
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19001968][Inst ID: 19001968]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Return][Location: 85,1][Inlined Location: 85,1][BB ID: 18998576][Inst ID: 19002512]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19003872][Inst ID: 19003976]
+  %2 = alloca %struct._twoIntsStruct*, align 8, !effectiveSan !45
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19016256][Inst ID: 19016256]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Return][Location: 90,1][Inlined Location: 90,1][BB ID: 19003872][Inst ID: 19004288]
+  ret void, !dbg !321
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18923184][Inst ID: 18923400]
+  %3 = alloca i8*, align 8, !effectiveSan !56
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18923184][Inst ID: 19024632]
+  %4 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18923184][Inst ID: 18923096]
+  %5 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18924608][Inst ID: 18924608]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18924672][Inst ID: 18924672]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Return][Location: 100,1][Inlined Location: 100,1][BB ID: 19035024][Inst ID: 18924432]
+  ret void, !dbg !344
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18925280][Inst ID: 18925608]
+  %4 = alloca i8*, align 8, !effectiveSan !59
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18925280][Inst ID: 19039384]
+  %5 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18925280][Inst ID: 19038968]
+  %6 = alloca i8*, align 8, !effectiveSan !8
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18925280][Inst ID: 18925192]
+  %7 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18925280][Inst ID: 19049944]
+  %8 = alloca i32, align 4, !effectiveSan !17
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19043072][Inst ID: 19043072]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19043136][Inst ID: 19043136]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19043200][Inst ID: 19043200]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Return][Location: 121,5][Inlined Location: 121,5][BB ID: 19048288][Inst ID: 19061496]
+  ret i64 %48, !dbg !363
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19057872][Inst ID: 19050392]
+  %4 = alloca i8*, align 8, !effectiveSan !59
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19057872][Inst ID: 19057400]
+  %5 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19057872][Inst ID: 19057240]
+  %6 = alloca i32*, align 8, !effectiveSan !13
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19057872][Inst ID: 19040440]
+  %7 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19057872][Inst ID: 19080824]
+  %8 = alloca i32, align 4, !effectiveSan !17
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19071056][Inst ID: 19071056]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19071120][Inst ID: 19071120]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 19071184][Inst ID: 19071184]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Return][Location: 143,5][Inlined Location: 143,5][BB ID: 19079280][Inst ID: 19033432]
+  ret i64 %46, !dbg !363
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrue][Allocator Name: Return][Location: 150,5][Inlined Location: 150,5][BB ID: 19034336][Inst ID: 19071976]
+  ret i32 1, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsFalse][Allocator Name: Return][Location: 155,5][Inlined Location: 155,5][BB ID: 19072192][Inst ID: 19100120]
+  ret i32 0, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrueOrFalse][Allocator Name: Return][Location: 160,5][Inlined Location: 160,5][BB ID: 19100336][Inst ID: 19102344]
+  ret i32 %2, !dbg !310
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good1v][Allocator Name: Return][Location: 179,16][Inlined Location: 179,16][BB ID: 19109520][Inst ID: 19110144]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good2v][Allocator Name: Return][Location: 180,16][Inlined Location: 180,16][BB ID: 19110352][Inst ID: 19110432]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good3v][Allocator Name: Return][Location: 181,16][Inlined Location: 181,16][BB ID: 19111792][Inst ID: 19112464]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good4v][Allocator Name: Return][Location: 182,16][Inlined Location: 182,16][BB ID: 19112624][Inst ID: 19112704]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good5v][Allocator Name: Return][Location: 183,16][Inlined Location: 183,16][BB ID: 19113488][Inst ID: 17941088]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good6v][Allocator Name: Return][Location: 184,16][Inlined Location: 184,16][BB ID: 17941248][Inst ID: 17941328]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good7v][Allocator Name: Return][Location: 185,16][Inlined Location: 185,16][BB ID: 17942048][Inst ID: 17942128]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good8v][Allocator Name: Return][Location: 186,16][Inlined Location: 186,16][BB ID: 18717776][Inst ID: 18917152]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good9v][Allocator Name: Return][Location: 187,16][Inlined Location: 187,16][BB ID: 18917312][Inst ID: 18917392]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad1v][Allocator Name: Return][Location: 190,15][Inlined Location: 190,15][BB ID: 18918144][Inst ID: 18918224]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad2v][Allocator Name: Return][Location: 191,15][Inlined Location: 191,15][BB ID: 18918976][Inst ID: 18919056]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad3v][Allocator Name: Return][Location: 192,15][Inlined Location: 192,15][BB ID: 18920112][Inst ID: 19128448]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad4v][Allocator Name: Return][Location: 193,15][Inlined Location: 193,15][BB ID: 19128688][Inst ID: 19128768]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad5v][Allocator Name: Return][Location: 194,15][Inlined Location: 194,15][BB ID: 19129552][Inst ID: 19129632]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad6v][Allocator Name: Return][Location: 195,15][Inlined Location: 195,15][BB ID: 19130416][Inst ID: 19130496]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad7v][Allocator Name: Return][Location: 196,15][Inlined Location: 196,15][BB ID: 19131280][Inst ID: 19131360]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad8v][Allocator Name: Return][Location: 197,15][Inlined Location: 197,15][BB ID: 19140288][Inst ID: 19140368]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad9v][Allocator Name: Return][Location: 198,15][Inlined Location: 198,15][BB ID: 19141120][Inst ID: 19141200]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_goodG2B.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8238CWE843_Type_Confusion__char_82_goodG2B6actionEPv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18413600][Inst ID: 18420024]
+  %3 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B"*, align 8, !effectiveSan !8
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_goodG2B.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8238CWE843_Type_Confusion__char_82_goodG2B6actionEPv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18413600][Inst ID: 18419352]
+  %4 = alloca i8*, align 8, !effectiveSan !30
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_goodG2B.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8238CWE843_Type_Confusion__char_82_goodG2B6actionEPv][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18420352][Inst ID: 18420352]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_goodG2B.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8238CWE843_Type_Confusion__char_82_goodG2B6actionEPv][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18422928][Inst ID: 18422928]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_goodG2B.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8238CWE843_Type_Confusion__char_82_goodG2B6actionEPv][Allocator Name: Return][Location: 28,1][Inlined Location: 28,1][BB ID: 18413600][Inst ID: 18420112]
+  ret void, !dbg !286
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_824goodEv][Allocator Name: Return][Location: 64,1][Inlined Location: 64,1][BB ID: 23677536][Inst ID: 23682912]
+  ret void, !dbg !288
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 55,55][Inlined Location: 55,55][BB ID: 23710400][Inst ID: 23732352]
   %5 = call i8* @_Znwm(i64 8) #8, !dbg !298, !effectiveSan !29
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 57,5][Inlined Location: 57,5][BB ID: 19711760][Inst ID: 20650816]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 57,5][Inlined Location: 57,5][BB ID: 22816576][Inst ID: 23755632]
   call void @_ZdlPv(i8* %17) #10, !dbg !307
-  %5 = call i8* @_Znwm(i64 8) #9, !dbg !298, !effectiveSan !29, !TYCHE_MD !299
-Calle Node: 0x140b8f0: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
-First Node: 0x140bfd0: i64,ch,glue = CopyFromReg 0x140ba30; Register:i64 %physreg35; 0x140ba30:1 Node TypeID: [ 0#]
-Second Node: 0x140bfd0: i64,ch,glue = CopyFromReg 0x140ba30; Register:i64 %physreg35; 0x140ba30:1 Node TypeID: [ 0#]
-0x140bfd0: i64,ch,glue = CopyFromReg 0x140ba30; Register:i64 %physreg35; 0x140ba30:1 Node TypeID: [ 1#55#55#20759928#18272993694778026663#17113089607461981850#55#55#20605584#20627536#2#20627536#20605584#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23710400][Inst ID: 23712744]
+  %1 = alloca i8*, align 8, !effectiveSan !13
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23710400][Inst ID: 23709736]
+  %2 = alloca i32, align 4, !effectiveSan !7
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23710400][Inst ID: 23713128]
+  %3 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, align 8, !effectiveSan !14
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: Return][Location: 58,1][Inlined Location: 58,1][BB ID: 22817184][Inst ID: 23713216]
+  ret void, !dbg !312
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23689808][Inst ID: 23682504]
+  %3 = alloca i32, align 4, !effectiveSan !7
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23689808][Inst ID: 23677640]
+  %4 = alloca i32, align 4, !effectiveSan !7
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23689808][Inst ID: 21173624]
+  %5 = alloca i8**, align 8, !effectiveSan !9
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23676720][Inst ID: 23676720]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23676576][Inst ID: 23676576]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Return][Location: 94,5][Inlined Location: 94,5][BB ID: 23689808][Inst ID: 23717000]
+  ret i32 0, !dbg !305
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8238CWE843_Type_Confusion__char_82_goodG2BC2Ev][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23721584][Inst ID: 23742872]
+  %2 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B"*, align 8, !effectiveSan !42
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8238CWE843_Type_Confusion__char_82_goodG2BC2Ev][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23756624][Inst ID: 23756624]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8238CWE843_Type_Confusion__char_82_goodG2BC2Ev][Allocator Name: Return][Location: 40,7][Inlined Location: 40,7][BB ID: 23721584][Inst ID: 23743440]
+  ret void, !dbg !296
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23757920][Inst ID: 23757336]
+  %2 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, align 8, !effectiveSan !14
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 23764000][Inst ID: 23764000]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev][Allocator Name: Return][Location: 21,7][Inlined Location: 21,7][BB ID: 23757920][Inst ID: 23763472]
+  ret void, !dbg !296
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !301, !effectiveSan !29, !TYCHE_MD !302
+Calle Node: 0x1719ce0: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x171a3c0: i64,ch,glue = CopyFromReg 0x1719e20; Register:i64 %physreg35; 0x1719e20:1 Node TypeID: [ 0#]
+Second Node: 0x171a3c0: i64,ch,glue = CopyFromReg 0x1719e20; Register:i64 %physreg35; 0x1719e20:1 Node TypeID: [ 0#]
+0x171a3c0: i64,ch,glue = CopyFromReg 0x1719e20; Register:i64 %physreg35; 0x1719e20:1 Node TypeID: [ 1#55#55#23866408#18272993694778026663#17113089607461981850#55#55#23710400#23732352#2#23732352#23710400#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
 LowerCallTo::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][Location: 18272993694778026663,17113089607461981850][Inlined Location: 55,55][BB ID: 20605584][Inst ID: 20627536][Prev. Inst ID: 55]
-  %5 = call i8* @_Znwm(i64 8) #9, !dbg !298, !effectiveSan !29, !TYCHE_MD !299
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _Znwm][Location: 18272993694778026663,17113089607461981850][Inlined Location: 55,55][BB ID: 23710400][Inst ID: 23732352][Prev. Inst ID: 55]
+  %5 = call i8* @_Znwm(i64 8) #9, !dbg !301, !effectiveSan !29, !TYCHE_MD !302
 X86DAGToDAGISel:: 3
-Node: 0x140bfd0: i64,ch,glue = CopyFromReg 0x140ba30; Register:i64 %physreg35; 0x140ba30:1 Node TypeID: [ 1#55#55#20759928#18272993694778026663#17113089607461981850#55#55#20605584#20627536#2#20627536#20605584#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
-0x140ba30: ch,glue = callseq_end 0x140bad0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x140bad0:1 Node TypeID: [ 0#]
-0x140bcb0: i64 = Register %physreg35 Node TypeID: [ 0#]
-0x140ba30: ch,glue = callseq_end 0x140bad0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x140bad0:1 Node TypeID: [ 0#]
-0x140bad0: ch,glue = <<Unknown Node #229>> 0x140bc10; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x140bc10:1 Node TypeID: [ 0#]
-0x140bad0: ch,glue = <<Unknown Node #229>> 0x140bc10; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x140bc10:1 Node TypeID: [ 1#55#55#20759928#18272993694778026663#17113089607461981850#55#55#20605584#20627536#2#20627536#20605584#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+Node: 0x171a3c0: i64,ch,glue = CopyFromReg 0x1719e20; Register:i64 %physreg35; 0x1719e20:1 Node TypeID: [ 1#55#55#23866408#18272993694778026663#17113089607461981850#55#55#23710400#23732352#2#23732352#23710400#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x1719e20: ch,glue = callseq_end 0x1719ec0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1719ec0:1 Node TypeID: [ 0#]
+0x171a0a0: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x1719e20: ch,glue = callseq_end 0x1719ec0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1719ec0:1 Node TypeID: [ 0#]
+0x1719ec0: ch,glue = <<Unknown Node #229>> 0x171a000; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x171a000:1 Node TypeID: [ 0#]
+0x1719ec0: ch,glue = <<Unknown Node #229>> 0x171a000; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x171a000:1 Node TypeID: [ 1#55#55#23866408#18272993694778026663#17113089607461981850#55#55#23710400#23732352#2#23732352#23710400#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
 EmitMachineNode::
-0x140bad0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x140bc10; 0x140bc10:1 Node TypeID: [ 1#55#55#20759928#18272993694778026663#17113089607461981850#55#55#20605584#20627536#2#20627536#20605584#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
-CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, ...; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#20759928#18272993694778026663#17113089607461981850#55#55#20605584#20627536#2#20627536#20605584#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x1719ec0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x171a000; 0x171a000:1 Node TypeID: [ 1#55#55#23866408#18272993694778026663#17113089607461981850#55#55#23710400#23732352#2#23732352#23710400#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, ...; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#23866408#18272993694778026663#17113089607461981850#55#55#23710400#23732352#2#23732352#23710400#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
 
-  call void @_ZdlPv(i8* %17) #10, !dbg !307, !TYCHE_MD !308
-Calle Node: 0x140c390: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
-Second Node: 0x140b990: ch,glue = callseq_end 0x140bc10; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x140bc10:1 Node TypeID: [ 0#]
+  call void @_ZdlPv(i8* %17) #10, !dbg !310, !TYCHE_MD !311
+Calle Node: 0x171a780: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x1719d80: ch,glue = callseq_end 0x171a000; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x171a000:1 Node TypeID: [ 0#]
 LowerCallTo::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 57,5][BB ID: 19711760][Inst ID: 20650816][Prev. Inst ID: 57]
-  call void @_ZdlPv(i8* %17) #10, !dbg !307, !TYCHE_MD !308
-0x140b990: ch,glue = callseq_end 0x140bc10; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x140bc10:1 Node TypeID: [ 1#57#5#0#0#0#57#5#19711760#20650816#18446744073709551615#20650816#19711760#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_82L7goodG2BEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 57,5][BB ID: 22816576][Inst ID: 23755632][Prev. Inst ID: 57]
+  call void @_ZdlPv(i8* %17) #10, !dbg !310, !TYCHE_MD !311
+0x1719d80: ch,glue = callseq_end 0x171a000; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x171a000:1 Node TypeID: [ 1#57#5#0#0#0#57#5#22816576#23755632#18446744073709551615#23755632#22816576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
 X86DAGToDAGISel:: 4
-Node: 0x140b990: ch,glue = callseq_end 0x140bc10; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x140bc10:1 Node TypeID: [ 1#57#5#0#0#0#57#5#19711760#20650816#18446744073709551615#20650816#19711760#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
-0x140bc10: ch,glue = <<Unknown Node #229>> 0x140bfd0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x140bfd0:1 Node TypeID: [ 0#]
-0x140b8f0: i64 = TargetConstant<0> Node TypeID: [ 0#]
-0x140b8f0: i64 = TargetConstant<0> Node TypeID: [ 0#]
-0x140bc10: ch,glue = <<Unknown Node #229>> 0x140bfd0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x140bfd0:1 Node TypeID: [ 0#]
-0x140bc10: ch,glue = <<Unknown Node #229>> 0x140bfd0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x140bfd0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#19711760#20650816#18446744073709551615#20650816#19711760#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+Node: 0x1719d80: ch,glue = callseq_end 0x171a000; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x171a000:1 Node TypeID: [ 1#57#5#0#0#0#57#5#22816576#23755632#18446744073709551615#23755632#22816576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x171a000: ch,glue = <<Unknown Node #229>> 0x171a3c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x171a3c0:1 Node TypeID: [ 0#]
+0x1719ce0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1719ce0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x171a000: ch,glue = <<Unknown Node #229>> 0x171a3c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x171a3c0:1 Node TypeID: [ 0#]
+0x171a000: ch,glue = <<Unknown Node #229>> 0x171a3c0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x171a3c0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#22816576#23755632#18446744073709551615#23755632#22816576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
 EmitMachineNode::
-0x140bc10: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x140bfd0; 0x140bfd0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#19711760#20650816#18446744073709551615#20650816#19711760#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
-CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#19711760#20650816#18446744073709551615#20650816#19711760#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+0x171a000: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x171a3c0; 0x171a3c0:1 Node TypeID: [ 1#57#5#0#0#0#57#5#22816576#23755632#18446744073709551615#23755632#22816576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#22816576#23755632#18446744073709551615#23755632#22816576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
 
 EmitFunctionBody::
-CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#20759928#18272993694778026663#17113089607461981850#55#55#20605584#20627536#2#20627536#20605584#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:55:55 Node Type ID: [55#55#23866408#18272993694778026663#17113089607461981850#55#55#23710400#23732352#2#23732352#23710400#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
 
-Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#55#55#20759928#18272993694778026663#17113089607461981850#55#55#20605584#20627536#2#20627536#20605584#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#55#55#23866408#18272993694778026663#17113089607461981850#55#55#23710400#23732352#2#23732352#23710400#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_goodG2B#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
 ---------------------------------------------------------------------------------------
 EmitFunctionBody::
-CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#19711760#20650816#18446744073709551615#20650816#19711760#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:57:5 Node Type ID: [57#5#0#0#0#57#5#22816576#23755632#18446744073709551615#23755632#22816576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#]
 
-Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#57#5#0#0#0#57#5#19711760#20650816#18446744073709551615#20650816#19711760#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#57#5#0#0#0#57#5#22816576#23755632#18446744073709551615#23755632#22816576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_82L7goodG2BEv#
 ---------------------------------------------------------------------------------------
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 35,55][Inlined Location: 35,55][BB ID: 34613808][Inst ID: 34654896]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 35289664][Inst ID: 36734184]
+  %2 = alloca i8*, align 8, !effectiveSan !8
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 35289744][Inst ID: 35289744]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Return][Location: 17,1][Inlined Location: 17,1][BB ID: 36752944][Inst ID: 35565536]
+  ret void, !dbg !324
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36749600][Inst ID: 36756056]
+  %2 = alloca i32*, align 8, !effectiveSan !13
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36760128][Inst ID: 36760128]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Return][Location: 25,1][Inlined Location: 25,1][BB ID: 36755616][Inst ID: 36750016]
+  ret void, !dbg !324
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36761584][Inst ID: 36764888]
+  %2 = alloca i32, align 4, !effectiveSan !17
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36766592][Inst ID: 36766592]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Return][Location: 30,1][Inlined Location: 30,1][BB ID: 36761584][Inst ID: 36767248]
+  ret void, !dbg !315
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36778816][Inst ID: 36767800]
+  %2 = alloca i16, align 2, !effectiveSan !18
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36767184][Inst ID: 36767184]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Return][Location: 35,1][Inlined Location: 35,1][BB ID: 36778816][Inst ID: 36778896]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36780352][Inst ID: 36779544]
+  %2 = alloca float, align 4, !effectiveSan !20
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36781472][Inst ID: 36781472]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Return][Location: 40,1][Inlined Location: 40,1][BB ID: 36780352][Inst ID: 35720176]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36785952][Inst ID: 36780456]
+  %2 = alloca i64, align 8, !effectiveSan !22
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36788368][Inst ID: 36788368]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Return][Location: 45,1][Inlined Location: 45,1][BB ID: 36785952][Inst ID: 36789024]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36790512][Inst ID: 36790840]
+  %2 = alloca i64, align 8, !effectiveSan !24
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36791648][Inst ID: 36791648]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Return][Location: 50,1][Inlined Location: 50,1][BB ID: 36790512][Inst ID: 36791888]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36793760][Inst ID: 36790424]
+  %2 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36785776][Inst ID: 36785776]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Return][Location: 55,1][Inlined Location: 55,1][BB ID: 36793760][Inst ID: 36794912]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36797072][Inst ID: 36793672]
+  %2 = alloca i8, align 1, !effectiveSan !33
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36794704][Inst ID: 36794704]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Return][Location: 60,1][Inlined Location: 60,1][BB ID: 36797072][Inst ID: 36799104]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36800208][Inst ID: 36796712]
+  %2 = alloca i32, align 4, !effectiveSan !35
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36800208][Inst ID: 36794248]
+  %3 = alloca [2 x i32], align 4, !effectiveSan !36
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36798896][Inst ID: 36798896]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Return][Location: 70,1][Inlined Location: 70,1][BB ID: 36800208][Inst ID: 36800784]
+  ret void, !dbg !325
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36803376][Inst ID: 36800120]
+  %2 = alloca i32, align 4, !effectiveSan !40
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36808704][Inst ID: 36808704]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Return][Location: 75,1][Inlined Location: 75,1][BB ID: 36803376][Inst ID: 36803792]
+  ret void, !dbg !315
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36814960][Inst ID: 36803480]
+  %2 = alloca i8, align 1, !effectiveSan !42
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36814848][Inst ID: 36814848]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Return][Location: 80,1][Inlined Location: 80,1][BB ID: 36814960][Inst ID: 36815040]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36820272][Inst ID: 35725608]
+  %2 = alloca double, align 8, !effectiveSan !43
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36823664][Inst ID: 36823664]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Return][Location: 85,1][Inlined Location: 85,1][BB ID: 36820272][Inst ID: 36824208]
+  ret void, !dbg !317
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36825568][Inst ID: 36825672]
+  %2 = alloca %struct._twoIntsStruct*, align 8, !effectiveSan !45
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36837952][Inst ID: 36837952]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Return][Location: 90,1][Inlined Location: 90,1][BB ID: 36825568][Inst ID: 36825984]
+  ret void, !dbg !321
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36744880][Inst ID: 36745096]
+  %3 = alloca i8*, align 8, !effectiveSan !56
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36744880][Inst ID: 36846328]
+  %4 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36744880][Inst ID: 36744792]
+  %5 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36746304][Inst ID: 36746304]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36746368][Inst ID: 36746368]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Return][Location: 100,1][Inlined Location: 100,1][BB ID: 36856720][Inst ID: 36746128]
+  ret void, !dbg !344
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36746976][Inst ID: 36747304]
+  %4 = alloca i8*, align 8, !effectiveSan !59
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36746976][Inst ID: 36861080]
+  %5 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36746976][Inst ID: 36860664]
+  %6 = alloca i8*, align 8, !effectiveSan !8
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36746976][Inst ID: 36746888]
+  %7 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36746976][Inst ID: 36871640]
+  %8 = alloca i32, align 4, !effectiveSan !17
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36864768][Inst ID: 36864768]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36864832][Inst ID: 36864832]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36864896][Inst ID: 36864896]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Return][Location: 121,5][Inlined Location: 121,5][BB ID: 36869984][Inst ID: 36883192]
+  ret i64 %48, !dbg !363
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36879568][Inst ID: 36872088]
+  %4 = alloca i8*, align 8, !effectiveSan !59
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36879568][Inst ID: 36879096]
+  %5 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36879568][Inst ID: 36878936]
+  %6 = alloca i32*, align 8, !effectiveSan !13
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36879568][Inst ID: 36862136]
+  %7 = alloca i64, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36879568][Inst ID: 36902520]
+  %8 = alloca i32, align 4, !effectiveSan !17
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36892752][Inst ID: 36892752]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36892816][Inst ID: 36892816]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36892880][Inst ID: 36892880]
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Return][Location: 143,5][Inlined Location: 143,5][BB ID: 36900976][Inst ID: 36855128]
+  ret i64 %46, !dbg !363
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrue][Allocator Name: Return][Location: 150,5][Inlined Location: 150,5][BB ID: 36856032][Inst ID: 36893672]
+  ret i32 1, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsFalse][Allocator Name: Return][Location: 155,5][Inlined Location: 155,5][BB ID: 36893888][Inst ID: 36921816]
+  ret i32 0, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrueOrFalse][Allocator Name: Return][Location: 160,5][Inlined Location: 160,5][BB ID: 36922032][Inst ID: 36924040]
+  ret i32 %2, !dbg !310
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good1v][Allocator Name: Return][Location: 179,16][Inlined Location: 179,16][BB ID: 36931216][Inst ID: 36931840]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good2v][Allocator Name: Return][Location: 180,16][Inlined Location: 180,16][BB ID: 36932048][Inst ID: 36932128]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good3v][Allocator Name: Return][Location: 181,16][Inlined Location: 181,16][BB ID: 36933488][Inst ID: 36934160]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good4v][Allocator Name: Return][Location: 182,16][Inlined Location: 182,16][BB ID: 36934320][Inst ID: 36934400]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good5v][Allocator Name: Return][Location: 183,16][Inlined Location: 183,16][BB ID: 36935184][Inst ID: 35762784]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good6v][Allocator Name: Return][Location: 184,16][Inlined Location: 184,16][BB ID: 35762944][Inst ID: 35763024]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good7v][Allocator Name: Return][Location: 185,16][Inlined Location: 185,16][BB ID: 35763744][Inst ID: 35763824]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good8v][Allocator Name: Return][Location: 186,16][Inlined Location: 186,16][BB ID: 36539472][Inst ID: 36738848]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z5good9v][Allocator Name: Return][Location: 187,16][Inlined Location: 187,16][BB ID: 36739008][Inst ID: 36739088]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad1v][Allocator Name: Return][Location: 190,15][Inlined Location: 190,15][BB ID: 36739840][Inst ID: 36739920]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad2v][Allocator Name: Return][Location: 191,15][Inlined Location: 191,15][BB ID: 36740672][Inst ID: 36740752]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad3v][Allocator Name: Return][Location: 192,15][Inlined Location: 192,15][BB ID: 36741808][Inst ID: 36950144]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad4v][Allocator Name: Return][Location: 193,15][Inlined Location: 193,15][BB ID: 36950384][Inst ID: 36950464]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad5v][Allocator Name: Return][Location: 194,15][Inlined Location: 194,15][BB ID: 36951248][Inst ID: 36951328]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad6v][Allocator Name: Return][Location: 195,15][Inlined Location: 195,15][BB ID: 36952112][Inst ID: 36952192]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad7v][Allocator Name: Return][Location: 196,15][Inlined Location: 196,15][BB ID: 36952976][Inst ID: 36953056]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad8v][Allocator Name: Return][Location: 197,15][Inlined Location: 197,15][BB ID: 36961984][Inst ID: 36962064]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: _Z4bad9v][Allocator Name: Return][Location: 198,15][Inlined Location: 198,15][BB ID: 36962816][Inst ID: 36962896]
+  ret void, !dbg !308
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_bad.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_bad6actionEPv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18139072][Inst ID: 18145496]
+  %3 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*, align 8, !effectiveSan !8
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_bad.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_bad6actionEPv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18139072][Inst ID: 18144824]
+  %4 = alloca i8*, align 8, !effectiveSan !30
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_bad.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_bad6actionEPv][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18145824][Inst ID: 18145824]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_bad.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_bad6actionEPv][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 18148400][Inst ID: 18148400]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82_bad.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_bad6actionEPv][Allocator Name: Return][Location: 28,1][Inlined Location: 28,1][BB ID: 18139072][Inst ID: 18145584]
+  ret void, !dbg !286
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 35,55][Inlined Location: 35,55][BB ID: 30960224][Inst ID: 31001312]
   %4 = call i8* @_Znwm(i64 8) #8, !dbg !297, !effectiveSan !25
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 37,5][Inlined Location: 37,5][BB ID: 34654576][Inst ID: 34668928]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 37,5][Inlined Location: 37,5][BB ID: 31000992][Inst ID: 31015344]
   call void @_ZdlPv(i8* %16) #10, !dbg !306
-  %4 = call i8* @_Znwm(i64 8) #9, !dbg !297, !effectiveSan !25, !TYCHE_MD !298
-Calle Node: 0x2182490: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
-First Node: 0x2182b70: i64,ch,glue = CopyFromReg 0x2182670; Register:i64 %physreg35; 0x2182670:1 Node TypeID: [ 0#]
-Second Node: 0x2182b70: i64,ch,glue = CopyFromReg 0x2182670; Register:i64 %physreg35; 0x2182670:1 Node TypeID: [ 0#]
-0x2182b70: i64,ch,glue = CopyFromReg 0x2182670; Register:i64 %physreg35; 0x2182670:1 Node TypeID: [ 1#35#55#34798120#3368523464000242366#2501942056580049717#35#55#34613808#34654896#2#34654896#34613808#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 30960224][Inst ID: 30960024]
+  %1 = alloca i8*, align 8, !effectiveSan !7
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 30960224][Inst ID: 30959320]
+  %2 = alloca i8, align 1, !effectiveSan !0
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 30960224][Inst ID: 30920696]
+  %3 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, align 8, !effectiveSan !9
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: Return][Location: 38,1][Inlined Location: 38,1][BB ID: 31001936][Inst ID: 30965536]
+  ret void, !dbg !311
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31027952][Inst ID: 31027096]
+  %2 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad"*, align 8, !effectiveSan !42
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31027872][Inst ID: 31027872]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8234CWE843_Type_Confusion__char_82_badC2Ev][Allocator Name: Return][Location: 30,7][Inlined Location: 30,7][BB ID: 31027952][Inst ID: 31035504]
+  ret void, !dbg !296
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31000416][Inst ID: 31014536]
+  %3 = alloca i32, align 4, !effectiveSan !38
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31000416][Inst ID: 31005688]
+  %4 = alloca i32, align 4, !effectiveSan !38
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31000416][Inst ID: 28456312]
+  %5 = alloca i8**, align 8, !effectiveSan !39
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31024352][Inst ID: 31024352]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31024416][Inst ID: 31024416]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: main][Allocator Name: Return][Location: 94,5][Inlined Location: 94,5][BB ID: 31000416][Inst ID: 31032088]
+  ret i32 0, !dbg !305
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31041184][Inst ID: 31040600]
+  %2 = alloca %"class.CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_base"*, align 8, !effectiveSan !9
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31047424][Inst ID: 31047424]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_8235CWE843_Type_Confusion__char_82_baseC2Ev][Allocator Name: Return][Location: 21,7][Inlined Location: 21,7][BB ID: 31041184][Inst ID: 31041600]
+  ret void, !dbg !296
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !300, !effectiveSan !25, !TYCHE_MD !301
+Calle Node: 0x1e1f010: i64 = GlobalAddress<i8* (i64)* @_Znwm> 0 Node TypeID: [ 0#]
+First Node: 0x1e1f6f0: i64,ch,glue = CopyFromReg 0x1e1f1f0; Register:i64 %physreg35; 0x1e1f1f0:1 Node TypeID: [ 0#]
+Second Node: 0x1e1f6f0: i64,ch,glue = CopyFromReg 0x1e1f1f0; Register:i64 %physreg35; 0x1e1f1f0:1 Node TypeID: [ 0#]
+0x1e1f6f0: i64,ch,glue = CopyFromReg 0x1e1f1f0; Register:i64 %physreg35; 0x1e1f1f0:1 Node TypeID: [ 1#35#55#31144808#3368523464000242366#2501942056580049717#35#55#30960224#31001312#2#31001312#30960224#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
 LowerCallTo::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][Location: 3368523464000242366,2501942056580049717][Inlined Location: 35,55][BB ID: 34613808][Inst ID: 34654896][Prev. Inst ID: 35]
-  %4 = call i8* @_Znwm(i64 8) #9, !dbg !297, !effectiveSan !25, !TYCHE_MD !298
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _Znwm][Location: 3368523464000242366,2501942056580049717][Inlined Location: 35,55][BB ID: 30960224][Inst ID: 31001312][Prev. Inst ID: 35]
+  %4 = call i8* @_Znwm(i64 8) #9, !dbg !300, !effectiveSan !25, !TYCHE_MD !301
 X86DAGToDAGISel:: 3
-Node: 0x2182b70: i64,ch,glue = CopyFromReg 0x2182670; Register:i64 %physreg35; 0x2182670:1 Node TypeID: [ 1#35#55#34798120#3368523464000242366#2501942056580049717#35#55#34613808#34654896#2#34654896#34613808#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
-0x2182670: ch,glue = callseq_end 0x21827b0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x21827b0:1 Node TypeID: [ 0#]
-0x2182530: i64 = Register %physreg35 Node TypeID: [ 0#]
-0x2182670: ch,glue = callseq_end 0x21827b0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x21827b0:1 Node TypeID: [ 0#]
-0x21827b0: ch,glue = <<Unknown Node #229>> 0x21825d0; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x21825d0:1 Node TypeID: [ 0#]
-0x21827b0: ch,glue = <<Unknown Node #229>> 0x21825d0; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x21825d0:1 Node TypeID: [ 1#35#55#34798120#3368523464000242366#2501942056580049717#35#55#34613808#34654896#2#34654896#34613808#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+Node: 0x1e1f6f0: i64,ch,glue = CopyFromReg 0x1e1f1f0; Register:i64 %physreg35; 0x1e1f1f0:1 Node TypeID: [ 1#35#55#31144808#3368523464000242366#2501942056580049717#35#55#30960224#31001312#2#31001312#30960224#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x1e1f1f0: ch,glue = callseq_end 0x1e1f330; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1e1f330:1 Node TypeID: [ 0#]
+0x1e1f0b0: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x1e1f1f0: ch,glue = callseq_end 0x1e1f330; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1e1f330:1 Node TypeID: [ 0#]
+0x1e1f330: ch,glue = <<Unknown Node #229>> 0x1e1f150; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1e1f150:1 Node TypeID: [ 0#]
+0x1e1f330: ch,glue = <<Unknown Node #229>> 0x1e1f150; TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1e1f150:1 Node TypeID: [ 1#35#55#31144808#3368523464000242366#2501942056580049717#35#55#30960224#31001312#2#31001312#30960224#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
 EmitMachineNode::
-0x21827b0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x21825d0; 0x21825d0:1 Node TypeID: [ 1#35#55#34798120#3368523464000242366#2501942056580049717#35#55#34613808#34654896#2#34654896#34613808#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
-CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, ...; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#34798120#3368523464000242366#2501942056580049717#35#55#34613808#34654896#2#34654896#34613808#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x1e1f330: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @_Znwm> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1e1f150; 0x1e1f150:1 Node TypeID: [ 1#35#55#31144808#3368523464000242366#2501942056580049717#35#55#30960224#31001312#2#31001312#30960224#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, ...; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#31144808#3368523464000242366#2501942056580049717#35#55#30960224#31001312#2#31001312#30960224#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
 
-  call void @_ZdlPv(i8* %16) #10, !dbg !306, !TYCHE_MD !307
-Calle Node: 0x2182f30: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
-Second Node: 0x2182850: ch,glue = callseq_end 0x21825d0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x21825d0:1 Node TypeID: [ 0#]
+  call void @_ZdlPv(i8* %16) #10, !dbg !309, !TYCHE_MD !310
+Calle Node: 0x1e1fab0: i64 = GlobalAddress<void (i8*)* @_ZdlPv> 0 Node TypeID: [ 0#]
+Second Node: 0x1e1f3d0: ch,glue = callseq_end 0x1e1f150; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1e1f150:1 Node TypeID: [ 0#]
 LowerCallTo::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 37,5][BB ID: 34654576][Inst ID: 34668928][Prev. Inst ID: 37]
-  call void @_ZdlPv(i8* %16) #10, !dbg !306, !TYCHE_MD !307
-0x2182850: ch,glue = callseq_end 0x21825d0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x21825d0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#34654576#34668928#18446744073709551615#34668928#34654576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_82a.cpp][Caller Name: _ZN30CWE843_Type_Confusion__char_823badEv][Allocator Name: _ZdlPv][Location: 0,0][Inlined Location: 37,5][BB ID: 31000992][Inst ID: 31015344][Prev. Inst ID: 37]
+  call void @_ZdlPv(i8* %16) #10, !dbg !309, !TYCHE_MD !310
+0x1e1f3d0: ch,glue = callseq_end 0x1e1f150; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1e1f150:1 Node TypeID: [ 1#37#5#0#0#0#37#5#31000992#31015344#18446744073709551615#31015344#31000992#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
 X86DAGToDAGISel:: 4
-Node: 0x2182850: ch,glue = callseq_end 0x21825d0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x21825d0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#34654576#34668928#18446744073709551615#34668928#34654576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
-0x21825d0: ch,glue = <<Unknown Node #229>> 0x2182b70; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2182b70:1 Node TypeID: [ 0#]
-0x2182490: i64 = TargetConstant<0> Node TypeID: [ 0#]
-0x2182490: i64 = TargetConstant<0> Node TypeID: [ 0#]
-0x21825d0: ch,glue = <<Unknown Node #229>> 0x2182b70; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2182b70:1 Node TypeID: [ 0#]
-0x21825d0: ch,glue = <<Unknown Node #229>> 0x2182b70; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2182b70:1 Node TypeID: [ 1#37#5#0#0#0#37#5#34654576#34668928#18446744073709551615#34668928#34654576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+Node: 0x1e1f3d0: ch,glue = callseq_end 0x1e1f150; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x1e1f150:1 Node TypeID: [ 1#37#5#0#0#0#37#5#31000992#31015344#18446744073709551615#31015344#31000992#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x1e1f150: ch,glue = <<Unknown Node #229>> 0x1e1f6f0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1e1f6f0:1 Node TypeID: [ 0#]
+0x1e1f010: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1e1f010: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x1e1f150: ch,glue = <<Unknown Node #229>> 0x1e1f6f0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1e1f6f0:1 Node TypeID: [ 0#]
+0x1e1f150: ch,glue = <<Unknown Node #229>> 0x1e1f6f0; TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1e1f6f0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#31000992#31015344#18446744073709551615#31015344#31000992#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
 EmitMachineNode::
-0x21825d0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x2182b70; 0x2182b70:1 Node TypeID: [ 1#37#5#0#0#0#37#5#34654576#34668928#18446744073709551615#34668928#34654576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
-CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#34654576#34668928#18446744073709551615#34668928#34654576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+0x1e1f150: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @_ZdlPv> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x1e1f6f0; 0x1e1f6f0:1 Node TypeID: [ 1#37#5#0#0#0#37#5#31000992#31015344#18446744073709551615#31015344#31000992#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#31000992#31015344#18446744073709551615#31015344#31000992#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
 
 EmitFunctionBody::
-CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#34798120#3368523464000242366#2501942056580049717#35#55#34613808#34654896#2#34654896#34613808#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_Znwm>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:35:55 Node Type ID: [35#55#31144808#3368523464000242366#2501942056580049717#35#55#30960224#31001312#2#31001312#30960224#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#]
 
-Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#35#55#34798120#3368523464000242366#2501942056580049717#35#55#34613808#34654896#2#34654896#34613808#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#35#55#31144808#3368523464000242366#2501942056580049717#35#55#30960224#31001312#2#31001312#30960224#_Znwm#class CWE843_Type_Confusion__char_82::CWE843_Type_Confusion__char_82_bad#_ZN30CWE843_Type_Confusion__char_823badEv#
 ---------------------------------------------------------------------------------------
 EmitFunctionBody::
-CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#34654576#34668928#18446744073709551615#34668928#34654576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
+CALL64pcrel32 <ga:@_ZdlPv>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE843_Type_Confusion__char_82a.cpp:37:5 Node Type ID: [37#5#0#0#0#37#5#31000992#31015344#18446744073709551615#31015344#31000992#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#]
 
-Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#37#5#0#0#0#37#5#34654576#34668928#18446744073709551615#34668928#34654576#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#
+Dumping Symbol Name: TYCHE_SYMS#CWE843_Type_Confusion__char_82a.cpp#37#5#0#0#0#37#5#31000992#31015344#18446744073709551615#31015344#31000992#_ZdlPv#FREE#_ZN30CWE843_Type_Confusion__char_823badEv#
 ---------------------------------------------------------------------------------------

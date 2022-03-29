@@ -1,0 +1,474 @@
+FILENAME test.cpp
+APSIZE 4
+OFFSET 0
+CORECED Y
+LB 0
+UB 8
+FAM N
+NAME coerced
+VPTR Y
+METATYPE <0x244d618> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x241daf8>, size: 64)
+PARENTTYPE <0x241ec00> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x2347168>, line: 11, size: 64, elements: <0x235a680>, vtableHolder: <0x241ec00>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME int8_t *
+VPTR Y
+METATYPE <0x244d618> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x241daf8>, size: 64)
+PARENTTYPE <0x241ec00> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x2347168>, line: 11, size: 64, elements: <0x235a680>, vtableHolder: <0x241ec00>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class CWE843_bad
+VPTR N
+METATYPE <0x241ec80> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x2347168>, line: 23, size: 64, elements: <0x23f8f60>, vtableHolder: <0x241ec00>, identifier: "_ZTS10CWE843_bad")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME class CWE843_base
+VPTR N
+METATYPE <0x241ec00> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x2347168>, line: 11, size: 64, elements: <0x235a680>, vtableHolder: <0x241ec00>, identifier: "_ZTS11CWE843_base")
+PARENTTYPE <0x241ec80> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x2347168>, line: 23, size: 64, elements: <0x23f8f60>, vtableHolder: <0x241ec00>, identifier: "_ZTS10CWE843_bad")
+METAID test.cpp#38#31#class CWE843_bad#38162152#7996980728488718250#2769108292725333437#_Znwm#main#38#31#37867232#37883920#3
+FILENAME test.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test.cpp#40#5#FREE#0#0#0#_ZdlPv#main#40#5#37882464#37898192#18446744073709551615
+FILENAME test.cpp
+APSIZE 4
+OFFSET 0
+CORECED Y
+LB 0
+UB 8
+FAM N
+NAME coerced
+VPTR Y
+METATYPE <0x1f31db8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1effb98>, size: 64)
+PARENTTYPE <0x1f00ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x1e29208>, line: 11, size: 64, elements: <0x1e3c720>, vtableHolder: <0x1f00ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME int8_t *
+VPTR Y
+METATYPE <0x1f31db8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1effb98>, size: 64)
+PARENTTYPE <0x1f00ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x1e29208>, line: 11, size: 64, elements: <0x1e3c720>, vtableHolder: <0x1f00ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class CWE843_bad
+VPTR N
+METATYPE <0x1f00d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x1e29208>, line: 23, size: 64, elements: <0x1edb000>, vtableHolder: <0x1f00ca0>, identifier: "_ZTS10CWE843_bad")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME class CWE843_base
+VPTR N
+METATYPE <0x1f00ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x1e29208>, line: 11, size: 64, elements: <0x1e3c720>, vtableHolder: <0x1f00ca0>, identifier: "_ZTS11CWE843_base")
+PARENTTYPE <0x1f00d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x1e29208>, line: 23, size: 64, elements: <0x1edb000>, vtableHolder: <0x1f00ca0>, identifier: "_ZTS10CWE843_bad")
+METAID test.cpp#38#31#class CWE843_bad#32805048#7996980728488718250#2769108292725333437#_Znwm#main#38#31#32501632#32518320#3
+FILENAME test.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test.cpp#40#5#FREE#0#0#0#_ZdlPv#main#40#5#32516864#32532592#18446744073709551615
+FILENAME test.cpp
+APSIZE 4
+OFFSET 0
+CORECED Y
+LB 0
+UB 8
+FAM N
+NAME coerced
+VPTR Y
+METATYPE <0x17c5db8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1793b98>, size: 64)
+PARENTTYPE <0x1794ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x16bd208>, line: 11, size: 64, elements: <0x16d0720>, vtableHolder: <0x1794ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME int8_t *
+VPTR Y
+METATYPE <0x17c5db8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x1793b98>, size: 64)
+PARENTTYPE <0x1794ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x16bd208>, line: 11, size: 64, elements: <0x16d0720>, vtableHolder: <0x1794ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class CWE843_bad
+VPTR N
+METATYPE <0x1794d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x16bd208>, line: 23, size: 64, elements: <0x176f000>, vtableHolder: <0x1794ca0>, identifier: "_ZTS10CWE843_bad")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME class CWE843_base
+VPTR N
+METATYPE <0x1794ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x16bd208>, line: 11, size: 64, elements: <0x16d0720>, vtableHolder: <0x1794ca0>, identifier: "_ZTS11CWE843_base")
+PARENTTYPE <0x1794d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x16bd208>, line: 23, size: 64, elements: <0x176f000>, vtableHolder: <0x1794ca0>, identifier: "_ZTS10CWE843_bad")
+METAID test.cpp#38#31#class CWE843_bad#25022648#7996980728488718250#2769108292725333437#_Znwm#main#38#31#24719232#24735920#3
+FILENAME test.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test.cpp#40#5#FREE#0#0#0#_ZdlPv#main#40#5#24734464#24750192#18446744073709551615
+FILENAME test.cpp
+APSIZE 4
+OFFSET 0
+CORECED Y
+LB 0
+UB 8
+FAM N
+NAME coerced
+VPTR Y
+METATYPE <0xda3bc8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xd71b98>, size: 64)
+PARENTTYPE <0xd72ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0xc9b208>, line: 11, size: 64, elements: <0xcae720>, vtableHolder: <0xd72ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME int8_t *
+VPTR Y
+METATYPE <0xda3bc8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xd71b98>, size: 64)
+PARENTTYPE <0xd72ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0xc9b208>, line: 11, size: 64, elements: <0xcae720>, vtableHolder: <0xd72ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class CWE843_bad
+VPTR N
+METATYPE <0xd72d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0xc9b208>, line: 23, size: 64, elements: <0xd4d000>, vtableHolder: <0xd72ca0>, identifier: "_ZTS10CWE843_bad")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME class CWE843_base
+VPTR N
+METATYPE <0xd72ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0xc9b208>, line: 11, size: 64, elements: <0xcae720>, vtableHolder: <0xd72ca0>, identifier: "_ZTS11CWE843_base")
+PARENTTYPE <0xd72d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0xc9b208>, line: 23, size: 64, elements: <0xd4d000>, vtableHolder: <0xd72ca0>, identifier: "_ZTS10CWE843_bad")
+METAID test.cpp#38#31#class CWE843_bad#14397096#7996980728488718250#2769108292725333437#_Znwm#main#38#31#14094208#14110896#3
+FILENAME test.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test.cpp#40#5#FREE#0#0#0#_ZdlPv#main#40#5#14109440#14125168#18446744073709551615
+FILENAME test.cpp
+APSIZE 4
+OFFSET 0
+CORECED Y
+LB 0
+UB 8
+FAM N
+NAME coerced
+VPTR Y
+METATYPE <0x2462bc8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x2430b98>, size: 64)
+PARENTTYPE <0x2431ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x235a208>, line: 11, size: 64, elements: <0x236d720>, vtableHolder: <0x2431ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME int8_t *
+VPTR Y
+METATYPE <0x2462bc8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x2430b98>, size: 64)
+PARENTTYPE <0x2431ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x235a208>, line: 11, size: 64, elements: <0x236d720>, vtableHolder: <0x2431ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class CWE843_bad
+VPTR N
+METATYPE <0x2431d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x235a208>, line: 23, size: 64, elements: <0x240c000>, vtableHolder: <0x2431ca0>, identifier: "_ZTS10CWE843_bad")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME class CWE843_base
+VPTR N
+METATYPE <0x2431ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x235a208>, line: 11, size: 64, elements: <0x236d720>, vtableHolder: <0x2431ca0>, identifier: "_ZTS11CWE843_base")
+PARENTTYPE <0x2431d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x235a208>, line: 23, size: 64, elements: <0x240c000>, vtableHolder: <0x2431ca0>, identifier: "_ZTS10CWE843_bad")
+METAID test.cpp#38#31#class CWE843_bad#38248136#7996980728488718250#2769108292725333437#_Znwm#main#38#31#37945216#37961904#3
+FILENAME test.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test.cpp#40#5#FREE#0#0#0#_ZdlPv#main#40#5#37960448#37976176#18446744073709551615
+FILENAME test.cpp
+APSIZE 4
+OFFSET 0
+CORECED Y
+LB 0
+UB 8
+FAM N
+NAME coerced
+VPTR Y
+METATYPE <0x22c5448> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x2292b98>, size: 64)
+PARENTTYPE <0x2293ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x21bc208>, line: 11, size: 64, elements: <0x21cf720>, vtableHolder: <0x2293ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME int8_t *
+VPTR Y
+METATYPE <0x22c5448> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x2292b98>, size: 64)
+PARENTTYPE <0x2293ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x21bc208>, line: 11, size: 64, elements: <0x21cf720>, vtableHolder: <0x2293ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class CWE843_bad
+VPTR N
+METATYPE <0x2293d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x21bc208>, line: 23, size: 64, elements: <0x226e000>, vtableHolder: <0x2293ca0>, identifier: "_ZTS10CWE843_bad")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME class CWE843_base
+VPTR N
+METATYPE <0x2293ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x21bc208>, line: 11, size: 64, elements: <0x21cf720>, vtableHolder: <0x2293ca0>, identifier: "_ZTS11CWE843_base")
+PARENTTYPE <0x2293d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x21bc208>, line: 23, size: 64, elements: <0x226e000>, vtableHolder: <0x2293ca0>, identifier: "_ZTS10CWE843_bad")
+METAID test.cpp#38#31#class CWE843_bad#36554568#7996980728488718250#2769108292725333437#_Znwm#main#38#31#36249472#36266160#3
+FILENAME test.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test.cpp#40#5#FREE#0#0#0#_ZdlPv#main#40#5#36264704#36280432#18446744073709551615
+FILENAME test.cpp
+APSIZE 4
+OFFSET 0
+CORECED Y
+LB 0
+UB 8
+FAM N
+NAME coerced
+VPTR Y
+METATYPE <0xf54bc8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xf22b98>, size: 64)
+PARENTTYPE <0xf23ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0xe4c208>, line: 11, size: 64, elements: <0xe5f720>, vtableHolder: <0xf23ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME int8_t *
+VPTR Y
+METATYPE <0xf54bc8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0xf22b98>, size: 64)
+PARENTTYPE <0xf23ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0xe4c208>, line: 11, size: 64, elements: <0xe5f720>, vtableHolder: <0xf23ca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class CWE843_bad
+VPTR N
+METATYPE <0xf23d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0xe4c208>, line: 23, size: 64, elements: <0xefe000>, vtableHolder: <0xf23ca0>, identifier: "_ZTS10CWE843_bad")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME class CWE843_base
+VPTR N
+METATYPE <0xf23ca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0xe4c208>, line: 11, size: 64, elements: <0xe5f720>, vtableHolder: <0xf23ca0>, identifier: "_ZTS11CWE843_base")
+PARENTTYPE <0xf23d20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0xe4c208>, line: 23, size: 64, elements: <0xefe000>, vtableHolder: <0xf23ca0>, identifier: "_ZTS10CWE843_bad")
+METAID test.cpp#38#31#class CWE843_bad#16170664#7996980728488718250#2769108292725333437#_Znwm#main#38#31#15867776#15884464#3
+FILENAME test.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test.cpp#40#5#FREE#0#0#0#_ZdlPv#main#40#5#15883008#15898736#18446744073709551615
+FILENAME test_cpp.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test_cpp.cpp#125#2#FREE#0#0#0#_ZdlPv#_ZN9__gnu_cxx13new_allocatorIPvE10deallocateEPS1_m#125#2#24432832#24493088#18446744073709551615
+FILENAME test_cpp.cpp
+APSIZE 2
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t *
+VPTR N
+METATYPE <0x17c7be8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x163fa38>, size: 64)
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED Y
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x17c7be8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x163fa38>, size: 64)
+PARENTTYPE NOPARENT
+METAID test_cpp.cpp#111#27#int8_t *#25046792#526828848944628746#11854005139656696112#_Znwm#_ZN9__gnu_cxx13new_allocatorIPvE8allocateEmPKv#111#27#24641744#24653648#3
+FILENAME test.cpp
+APSIZE 4
+OFFSET 0
+CORECED Y
+LB 0
+UB 8
+FAM N
+NAME coerced
+VPTR Y
+METATYPE <0x175ebc8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x172cb98>, size: 64)
+PARENTTYPE <0x172dca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x1656208>, line: 11, size: 64, elements: <0x1669720>, vtableHolder: <0x172dca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME int8_t *
+VPTR Y
+METATYPE <0x175ebc8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x172cb98>, size: 64)
+PARENTTYPE <0x172dca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x1656208>, line: 11, size: 64, elements: <0x1669720>, vtableHolder: <0x172dca0>, identifier: "_ZTS11CWE843_base")
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME class CWE843_bad
+VPTR N
+METATYPE <0x172dd20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x1656208>, line: 23, size: 64, elements: <0x1708000>, vtableHolder: <0x172dca0>, identifier: "_ZTS10CWE843_bad")
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED N
+LB 0
+UB 8
+FAM N
+NAME class CWE843_base
+VPTR N
+METATYPE <0x172dca0> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_base", file: <0x1656208>, line: 11, size: 64, elements: <0x1669720>, vtableHolder: <0x172dca0>, identifier: "_ZTS11CWE843_base")
+PARENTTYPE <0x172dd20> = distinct !DICompositeType(tag: DW_TAG_class_type, name: "CWE843_bad", file: <0x1656208>, line: 23, size: 64, elements: <0x1708000>, vtableHolder: <0x172dca0>, identifier: "_ZTS10CWE843_bad")
+METAID test.cpp#38#31#class CWE843_bad#24600264#7996980728488718250#2769108292725333437#_Znwm#main#38#31#24297344#24314032#3
+FILENAME test.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test.cpp#40#5#FREE#0#0#0#_ZdlPv#main#40#5#24312576#24328304#18446744073709551615
+FILENAME test_cpp.cpp
+APSIZE 1
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t
+VPTR N
+METATYPE NOMETA
+PARENTTYPE NOPARENT
+METAID test_cpp.cpp#125#2#FREE#0#0#0#_ZdlPv#_ZN9__gnu_cxx13new_allocatorIPvE10deallocateEPS1_m#125#2#37646528#37706784#18446744073709551615
+FILENAME test_cpp.cpp
+APSIZE 2
+OFFSET 0
+CORECED N
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME int8_t *
+VPTR N
+METATYPE <0x2461be8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x22d9a38>, size: 64)
+PARENTTYPE NOPARENT
+OFFSET 0
+CORECED Y
+LB 18446744056529682432
+UB 17179869184
+FAM N
+NAME coerced
+VPTR N
+METATYPE <0x2461be8> = !DIDerivedType(tag: DW_TAG_pointer_type, baseType: <0x22d9a38>, size: 64)
+PARENTTYPE NOPARENT
+METAID test_cpp.cpp#111#27#int8_t *#38260888#526828848944628746#11854005139656696112#_Znwm#_ZN9__gnu_cxx13new_allocatorIPvE8allocateEmPKv#111#27#37855440#37867344#3

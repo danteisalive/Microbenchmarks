@@ -1,0 +1,507 @@
+
+test.out:     file format elf64-x86-64
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .interp       0000001c  0000000000400238  0000000000400238  00000238  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .note.ABI-tag 00000020  0000000000400254  0000000000400254  00000254  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .hash         00000038  0000000000400278  0000000000400278  00000278  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .gnu.hash     00000030  00000000004002b0  00000000004002b0  000002b0  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .dynsym       000000d8  00000000004002e0  00000000004002e0  000002e0  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .dynstr       000000ec  00000000004003b8  00000000004003b8  000003b8  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 .gnu.version  00000012  00000000004004a4  00000000004004a4  000004a4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .gnu.version_r 00000050  00000000004004b8  00000000004004b8  000004b8  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 .rela.dyn     00000060  0000000000400508  0000000000400508  00000508  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  9 .rela.plt     00000060  0000000000400568  0000000000400568  00000568  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 10 .init         00000017  00000000004005c8  00000000004005c8  000005c8  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 11 .plt          00000050  00000000004005e0  00000000004005e0  000005e0  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .text         000002b2  0000000000400630  0000000000400630  00000630  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .fini         00000009  00000000004008e4  00000000004008e4  000008e4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .rodata       00000800  00000000004008f0  00000000004008f0  000008f0  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 15 tyche_symbols_section_7 000001c0  0000000000401100  0000000000401100  00001100  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 16 tyche_symbols_section_6 000001c0  00000000004012c0  00000000004012c0  000012c0  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 17 tyche_symbols_section_5 000001c0  0000000000401480  0000000000401480  00001480  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 18 tyche_symbols_section_4 000001c0  0000000000401640  0000000000401640  00001640  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 19 tyche_symbols_section_3 000001c0  0000000000401800  0000000000401800  00001800  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 20 tyche_symbols_section_2 000001c0  00000000004019c0  00000000004019c0  000019c0  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 21 tyche_symbols_section_1 000001c0  0000000000401b80  0000000000401b80  00001b80  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 22 tyche_symbols_section_0 000001c0  0000000000401d40  0000000000401d40  00001d40  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 23 .eh_frame_hdr 0000005c  0000000000401f00  0000000000401f00  00001f00  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 24 .eh_frame     00000170  0000000000401f60  0000000000401f60  00001f60  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 25 .init_array   00000008  0000000000602d20  0000000000602d20  00002d20  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 26 .fini_array   00000008  0000000000602d28  0000000000602d28  00002d28  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 27 .data.rel.ro  000000b0  0000000000602d30  0000000000602d30  00002d30  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 28 .dynamic      00000210  0000000000602de0  0000000000602de0  00002de0  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 29 .got          00000010  0000000000602ff0  0000000000602ff0  00002ff0  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 30 .got.plt      00000038  0000000000603000  0000000000603000  00003000  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 31 .data         00000010  0000000000603038  0000000000603038  00003038  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 32 .bss          00000008  0000000000603048  0000000000603048  00003048  2**0
+                  ALLOC
+ 33 .comment      00000056  0000000000000000  0000000000000000  00003048  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+0000000000400238 l    d  .interp	0000000000000000              .interp
+0000000000400254 l    d  .note.ABI-tag	0000000000000000              .note.ABI-tag
+0000000000400278 l    d  .hash	0000000000000000              .hash
+00000000004002b0 l    d  .gnu.hash	0000000000000000              .gnu.hash
+00000000004002e0 l    d  .dynsym	0000000000000000              .dynsym
+00000000004003b8 l    d  .dynstr	0000000000000000              .dynstr
+00000000004004a4 l    d  .gnu.version	0000000000000000              .gnu.version
+00000000004004b8 l    d  .gnu.version_r	0000000000000000              .gnu.version_r
+0000000000400508 l    d  .rela.dyn	0000000000000000              .rela.dyn
+0000000000400568 l    d  .rela.plt	0000000000000000              .rela.plt
+00000000004005c8 l    d  .init	0000000000000000              .init
+00000000004005e0 l    d  .plt	0000000000000000              .plt
+0000000000400630 l    d  .text	0000000000000000              .text
+00000000004008e4 l    d  .fini	0000000000000000              .fini
+00000000004008f0 l    d  .rodata	0000000000000000              .rodata
+0000000000401100 l    d  tyche_symbols_section_7	0000000000000000              tyche_symbols_section_7
+00000000004012c0 l    d  tyche_symbols_section_6	0000000000000000              tyche_symbols_section_6
+0000000000401480 l    d  tyche_symbols_section_5	0000000000000000              tyche_symbols_section_5
+0000000000401640 l    d  tyche_symbols_section_4	0000000000000000              tyche_symbols_section_4
+0000000000401800 l    d  tyche_symbols_section_3	0000000000000000              tyche_symbols_section_3
+00000000004019c0 l    d  tyche_symbols_section_2	0000000000000000              tyche_symbols_section_2
+0000000000401b80 l    d  tyche_symbols_section_1	0000000000000000              tyche_symbols_section_1
+0000000000401d40 l    d  tyche_symbols_section_0	0000000000000000              tyche_symbols_section_0
+0000000000401f00 l    d  .eh_frame_hdr	0000000000000000              .eh_frame_hdr
+0000000000401f60 l    d  .eh_frame	0000000000000000              .eh_frame
+0000000000602d20 l    d  .init_array	0000000000000000              .init_array
+0000000000602d28 l    d  .fini_array	0000000000000000              .fini_array
+0000000000602d30 l    d  .data.rel.ro	0000000000000000              .data.rel.ro
+0000000000602de0 l    d  .dynamic	0000000000000000              .dynamic
+0000000000602ff0 l    d  .got	0000000000000000              .got
+0000000000603000 l    d  .got.plt	0000000000000000              .got.plt
+0000000000603038 l    d  .data	0000000000000000              .data
+0000000000603048 l    d  .bss	0000000000000000              .bss
+0000000000000000 l    d  .comment	0000000000000000              .comment
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000400670 l     F .text	0000000000000000              deregister_tm_clones
+00000000004006a0 l     F .text	0000000000000000              register_tm_clones
+00000000004006e0 l     F .text	0000000000000000              __do_global_dtors_aux
+0000000000603048 l     O .bss	0000000000000001              completed.7997
+0000000000602d28 l     O .fini_array	0000000000000000              __do_global_dtors_aux_fini_array_entry
+0000000000400710 l     F .text	0000000000000000              frame_dummy
+0000000000602d20 l     O .init_array	0000000000000000              __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*	0000000000000000              test.cpp
+0000000000400787 l       .text	0000000000000000              .internal TYCHE_SYMS#test.cpp#38#31#36554568#7996980728488718250#2769108292725333437#38#31#36249472#36266160#3#36266160#36249472#_Znwm#class CWE843_bad#main#
+00000000004007cc l       .text	0000000000000000              .internal TYCHE_SYMS#test.cpp#40#5#0#0#0#40#5#36264704#36280432#18446744073709551615#36280432#36264704#_ZdlPv#FREE#main#
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+00000000004020cc l     O .eh_frame	0000000000000000              __FRAME_END__
+0000000000000000 l    df *ABS*	0000000000000000              
+0000000000401f00 l       .eh_frame_hdr	0000000000000000              __GNU_EH_FRAME_HDR
+0000000000602de0 l     O .dynamic	0000000000000000              _DYNAMIC
+0000000000602d28 l       .init_array	0000000000000000              __init_array_end
+0000000000602d20 l       .init_array	0000000000000000              __init_array_start
+0000000000603000 l     O .got.plt	0000000000000000              _GLOBAL_OFFSET_TABLE_
+0000000000401e80  w    O tyche_symbols_section_0	0000000000000040              TYCHE_META_SECTION_TID_5_SEC_0_FILE_test.cpp
+0000000000000000       F *UND*	0000000000000000              printf@@GLIBC_2.2.5
+0000000000401a40  w    O tyche_symbols_section_2	0000000000000040              TYCHE_META_SECTION_TID_2_SEC_2_FILE_test.cpp
+0000000000400938  w    O .rodata	000000000000000d              typeinfo name for CWE843_bad
+0000000000401300  w    O tyche_symbols_section_6	0000000000000040              TYCHE_META_SECTION_TID_1_SEC_6_FILE_test.cpp
+0000000000401c00  w    O tyche_symbols_section_1	0000000000000040              TYCHE_META_SECTION_TID_2_SEC_1_FILE_test.cpp
+0000000000401200  w    O tyche_symbols_section_7	0000000000000040              TYCHE_META_SECTION_TID_4
+00000000004007e0  w    F .text	0000000000000034              CWE843_bad::CWE843_bad()
+00000000004014c0  w    O tyche_symbols_section_5	0000000000000040              TYCHE_META_SECTION_TID_1_SEC_5_FILE_test.cpp
+0000000000400e90  w    O .rodata	00000000000000e0              EFFECTIVE_TYPE_ed60b739ccacd9a0daab85ccb4fd40f7
+0000000000603048 g       .data	0000000000000000              _edata
+0000000000400b60  w    O .rodata	0000000000000040              EFFECTIVE_INFO_266dd952247b5dbd6efafb9a4d36efaa
+0000000000401980  w    O tyche_symbols_section_3	0000000000000040              TYCHE_META_SECTION_TID_6_SEC_3_FILE_test.cpp
+0000000000400958  w    O .rodata	0000000000000010              typeinfo for CWE843_base
+0000000000401b00  w    O tyche_symbols_section_2	0000000000000040              TYCHE_META_SECTION_TID_5_SEC_2_FILE_test.cpp
+0000000000401540  w    O tyche_symbols_section_5	0000000000000040              TYCHE_META_SECTION_TID_3_SEC_5_FILE_test.cpp
+0000000000603038  w      .data	0000000000000000              data_start
+0000000000401700  w    O tyche_symbols_section_4	0000000000000040              TYCHE_META_SECTION_TID_3_SEC_4_FILE_test.cpp
+0000000000401340  w    O tyche_symbols_section_6	0000000000000040              TYCHE_META_SECTION_TID_2_SEC_6_FILE_test.cpp
+00000000004008f0 g     O .rodata	0000000000000004              _IO_stdin_used
+0000000000401ac0  w    O tyche_symbols_section_2	0000000000000040              TYCHE_META_SECTION_TID_4_SEC_2_FILE_test.cpp
+0000000000400720 g     F .text	000000000000002c              printIntLine(int)
+0000000000401a80  w    O tyche_symbols_section_2	0000000000000040              TYCHE_META_SECTION_TID_3_SEC_2_FILE_test.cpp
+0000000000401d40  w    O tyche_symbols_section_0	0000000000000040              TYCHE_META_SECTION_TID_0_SEC_0_FILE_test.cpp
+0000000000401880  w    O tyche_symbols_section_3	0000000000000040              TYCHE_META_SECTION_TID_2_SEC_3_FILE_test.cpp
+0000000000401840  w    O tyche_symbols_section_3	0000000000000040              TYCHE_META_SECTION_TID_1_SEC_3_FILE_test.cpp
+0000000000401b40  w    O tyche_symbols_section_2	0000000000000040              TYCHE_META_SECTION_TID_6_SEC_2_FILE_test.cpp
+0000000000400dc0  w    O .rodata	00000000000000b0              EFFECTIVE_TYPE_INT16
+0000000000401240  w    O tyche_symbols_section_7	0000000000000040              TYCHE_META_SECTION_TID_5
+0000000000400970  w    O .rodata	0000000000000018              typeinfo for CWE843_bad
+0000000000401b80  w    O tyche_symbols_section_1	0000000000000040              TYCHE_META_SECTION_TID_0_SEC_1_FILE_test.cpp
+0000000000400750 g     F .text	0000000000000089              main
+0000000000400e70  w    O .rodata	0000000000000020              EFFECTIVE_INFO_ed60b739ccacd9a0daab85ccb4fd40f7
+0000000000400ce0  w    O .rodata	00000000000000e0              EFFECTIVE_TYPE_a481e2de8ae4613074fac0bfec5c40a
+00000000004013c0  w    O tyche_symbols_section_6	0000000000000040              TYCHE_META_SECTION_TID_4_SEC_6_FILE_test.cpp
+0000000000401c40  w    O tyche_symbols_section_1	0000000000000040              TYCHE_META_SECTION_TID_3_SEC_1_FILE_test.cpp
+0000000000603040 g     O .data	0000000000000000              .hidden __dso_handle
+0000000000400b00  w    O .rodata	0000000000000020              EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a
+0000000000401bc0  w    O tyche_symbols_section_1	0000000000000040              TYCHE_META_SECTION_TID_1_SEC_1_FILE_test.cpp
+0000000000401cc0  w    O tyche_symbols_section_1	0000000000000040              TYCHE_META_SECTION_TID_5_SEC_1_FILE_test.cpp
+0000000000401280  w    O tyche_symbols_section_7	0000000000000040              TYCHE_META_SECTION_TID_6
+0000000000602d30  w    O .data.rel.ro	0000000000000058              vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+00000000004019c0  w    O tyche_symbols_section_2	0000000000000040              TYCHE_META_SECTION_TID_0_SEC_2_FILE_test.cpp
+00000000004008e4 g     F .fini	0000000000000000              _fini
+0000000000400840  w    F .text	0000000000000021              CWE843_bad::action(void*)
+0000000000400660 g     F .text	0000000000000002              .hidden _dl_relocate_static_pie
+0000000000401800  w    O tyche_symbols_section_3	0000000000000040              TYCHE_META_SECTION_TID_0_SEC_3_FILE_test.cpp
+0000000000401dc0  w    O tyche_symbols_section_0	0000000000000040              TYCHE_META_SECTION_TID_2_SEC_0_FILE_test.cpp
+0000000000401e00  w    O tyche_symbols_section_0	0000000000000040              TYCHE_META_SECTION_TID_3_SEC_0_FILE_test.cpp
+0000000000401e40  w    O tyche_symbols_section_0	0000000000000040              TYCHE_META_SECTION_TID_4_SEC_0_FILE_test.cpp
+0000000000000000       F *UND*	0000000000000000              operator delete(void*)@@GLIBCXX_3.4
+0000000000400f70  w    O .rodata	0000000000000020              EFFECTIVE_INFO_e59ec6a4a4e43e7dd932dccc6c726777
+0000000000400630 g     F .text	000000000000002b              _start
+0000000000000000       F *UND*	0000000000000000              operator new(unsigned long)@@GLIBCXX_3.4
+0000000000400ba0  w    O .rodata	0000000000000140              EFFECTIVE_TYPE_266dd952247b5dbd6efafb9a4d36efaa
+00000000004005c8 g     F .init	0000000000000000              _init
+0000000000400a50  w    O .rodata	00000000000000b0              EFFECTIVE_TYPE_INT32
+0000000000603048 g     O .data	0000000000000000              .hidden __TMC_END__
+0000000000401100  w    O tyche_symbols_section_7	0000000000000040              TYCHE_META_SECTION_TID_0
+0000000000401480  w    O tyche_symbols_section_5	0000000000000040              TYCHE_META_SECTION_TID_0_SEC_5_FILE_test.cpp
+00000000004018c0  w    O tyche_symbols_section_3	0000000000000040              TYCHE_META_SECTION_TID_3_SEC_3_FILE_test.cpp
+0000000000401940  w    O tyche_symbols_section_3	0000000000000040              TYCHE_META_SECTION_TID_5_SEC_3_FILE_test.cpp
+0000000000401900  w    O tyche_symbols_section_3	0000000000000040              TYCHE_META_SECTION_TID_4_SEC_3_FILE_test.cpp
+0000000000401500  w    O tyche_symbols_section_5	0000000000000040              TYCHE_META_SECTION_TID_2_SEC_5_FILE_test.cpp
+0000000000401780  w    O tyche_symbols_section_4	0000000000000040              TYCHE_META_SECTION_TID_5_SEC_4_FILE_test.cpp
+0000000000401400  w    O tyche_symbols_section_6	0000000000000040              TYCHE_META_SECTION_TID_5_SEC_6_FILE_test.cpp
+0000000000401ec0  w    O tyche_symbols_section_0	0000000000000040              TYCHE_META_SECTION_TID_6_SEC_0_FILE_test.cpp
+0000000000602d88  w    O .data.rel.ro	0000000000000058              vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+00000000004012c0  w    O tyche_symbols_section_6	0000000000000040              TYCHE_META_SECTION_TID_0_SEC_6_FILE_test.cpp
+00000000004009a0  w    O .rodata	00000000000000b0              EFFECTIVE_TYPE_INT8
+0000000000401740  w    O tyche_symbols_section_4	0000000000000040              TYCHE_META_SECTION_TID_4_SEC_4_FILE_test.cpp
+0000000000400b20  w    O .rodata	0000000000000040              EFFECTIVE_INFO_2238a2c5e3cb25a1d89a51099106b98e
+0000000000603038 g       .data	0000000000000000              __data_start
+0000000000401a00  w    O tyche_symbols_section_2	0000000000000040              TYCHE_META_SECTION_TID_1_SEC_2_FILE_test.cpp
+0000000000603050 g       .bss	0000000000000000              _end
+0000000000401140  w    O tyche_symbols_section_7	0000000000000040              TYCHE_META_SECTION_TID_1
+00000000004016c0  w    O tyche_symbols_section_4	0000000000000040              TYCHE_META_SECTION_TID_2_SEC_4_FILE_test.cpp
+0000000000400945  w    O .rodata	000000000000000e              typeinfo name for CWE843_base
+0000000000401380  w    O tyche_symbols_section_6	0000000000000040              TYCHE_META_SECTION_TID_3_SEC_6_FILE_test.cpp
+0000000000400920  w    O .rodata	0000000000000018              vtable for CWE843_bad
+00000000004017c0  w    O tyche_symbols_section_4	0000000000000040              TYCHE_META_SECTION_TID_6_SEC_4_FILE_test.cpp
+0000000000401d00  w    O tyche_symbols_section_1	0000000000000040              TYCHE_META_SECTION_TID_6_SEC_1_FILE_test.cpp
+0000000000603048 g       .bss	0000000000000000              __bss_start
+0000000000400870 g     F .text	0000000000000065              __libc_csu_init
+00000000004015c0  w    O tyche_symbols_section_5	0000000000000040              TYCHE_META_SECTION_TID_5_SEC_5_FILE_test.cpp
+0000000000401640  w    O tyche_symbols_section_4	0000000000000040              TYCHE_META_SECTION_TID_0_SEC_4_FILE_test.cpp
+0000000000401180  w    O tyche_symbols_section_7	0000000000000040              TYCHE_META_SECTION_TID_2
+0000000000401440  w    O tyche_symbols_section_6	0000000000000040              TYCHE_META_SECTION_TID_6_SEC_6_FILE_test.cpp
+0000000000401c80  w    O tyche_symbols_section_1	0000000000000040              TYCHE_META_SECTION_TID_4_SEC_1_FILE_test.cpp
+0000000000401d80  w    O tyche_symbols_section_0	0000000000000040              TYCHE_META_SECTION_TID_1_SEC_0_FILE_test.cpp
+0000000000401680  w    O tyche_symbols_section_4	0000000000000040              TYCHE_META_SECTION_TID_1_SEC_4_FILE_test.cpp
+0000000000401600  w    O tyche_symbols_section_5	0000000000000040              TYCHE_META_SECTION_TID_6_SEC_5_FILE_test.cpp
+00000000004008e0 g     F .text	0000000000000002              __libc_csu_fini
+0000000000000000       F *UND*	0000000000000000              __libc_start_main@@GLIBC_2.2.5
+00000000004011c0  w    O tyche_symbols_section_7	0000000000000040              TYCHE_META_SECTION_TID_3
+0000000000400988  w    O .rodata	0000000000000018              vtable for CWE843_base
+0000000000000000  w      *UND*	0000000000000000              __gmon_start__
+0000000000400f90  w    O .rodata	00000000000000e0              EFFECTIVE_TYPE_e59ec6a4a4e43e7dd932dccc6c726777
+0000000000400620       F *UND*	0000000000000000              __cxa_pure_virtual@@CXXABI_1.3
+0000000000401580  w    O tyche_symbols_section_5	0000000000000040              TYCHE_META_SECTION_TID_4_SEC_5_FILE_test.cpp
+0000000000400820  w    F .text	000000000000001f              CWE843_base::CWE843_base()
+
+
+
+Disassembly of section .init:
+
+00000000004005c8 <_init>:
+  4005c8:	48 83 ec 08          	sub    rsp,0x8
+  4005cc:	48 8b 05 25 2a 20 00 	mov    rax,QWORD PTR [rip+0x202a25]        # 602ff8 <__gmon_start__>
+  4005d3:	48 85 c0             	test   rax,rax
+  4005d6:	74 02                	je     4005da <_init+0x12>
+  4005d8:	ff d0                	call   rax
+  4005da:	48 83 c4 08          	add    rsp,0x8
+  4005de:	c3                   	ret    
+
+Disassembly of section .plt:
+
+00000000004005e0 <.plt>:
+  4005e0:	ff 35 22 2a 20 00    	push   QWORD PTR [rip+0x202a22]        # 603008 <_GLOBAL_OFFSET_TABLE_+0x8>
+  4005e6:	ff 25 24 2a 20 00    	jmp    QWORD PTR [rip+0x202a24]        # 603010 <_GLOBAL_OFFSET_TABLE_+0x10>
+  4005ec:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+
+00000000004005f0 <printf@plt>:
+  4005f0:	ff 25 22 2a 20 00    	jmp    QWORD PTR [rip+0x202a22]        # 603018 <printf@GLIBC_2.2.5>
+  4005f6:	68 00 00 00 00       	push   0x0
+  4005fb:	e9 e0 ff ff ff       	jmp    4005e0 <.plt>
+
+0000000000400600 <operator delete(void*)@plt>:
+  400600:	ff 25 1a 2a 20 00    	jmp    QWORD PTR [rip+0x202a1a]        # 603020 <operator delete(void*)@GLIBCXX_3.4>
+  400606:	68 01 00 00 00       	push   0x1
+  40060b:	e9 d0 ff ff ff       	jmp    4005e0 <.plt>
+
+0000000000400610 <operator new(unsigned long)@plt>:
+  400610:	ff 25 12 2a 20 00    	jmp    QWORD PTR [rip+0x202a12]        # 603028 <operator new(unsigned long)@GLIBCXX_3.4>
+  400616:	68 02 00 00 00       	push   0x2
+  40061b:	e9 c0 ff ff ff       	jmp    4005e0 <.plt>
+
+0000000000400620 <__cxa_pure_virtual@plt>:
+  400620:	ff 25 0a 2a 20 00    	jmp    QWORD PTR [rip+0x202a0a]        # 603030 <__cxa_pure_virtual@CXXABI_1.3>
+  400626:	68 03 00 00 00       	push   0x3
+  40062b:	e9 b0 ff ff ff       	jmp    4005e0 <.plt>
+
+Disassembly of section .text:
+
+0000000000400630 <_start>:
+  400630:	31 ed                	xor    ebp,ebp
+  400632:	49 89 d1             	mov    r9,rdx
+  400635:	5e                   	pop    rsi
+  400636:	48 89 e2             	mov    rdx,rsp
+  400639:	48 83 e4 f0          	and    rsp,0xfffffffffffffff0
+  40063d:	50                   	push   rax
+  40063e:	54                   	push   rsp
+  40063f:	49 c7 c0 e0 08 40 00 	mov    r8,0x4008e0
+  400646:	48 c7 c1 70 08 40 00 	mov    rcx,0x400870
+  40064d:	48 c7 c7 50 07 40 00 	mov    rdi,0x400750
+  400654:	ff 15 96 29 20 00    	call   QWORD PTR [rip+0x202996]        # 602ff0 <__libc_start_main@GLIBC_2.2.5>
+  40065a:	f4                   	hlt    
+  40065b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000400660 <_dl_relocate_static_pie>:
+  400660:	f3 c3                	repz ret 
+  400662:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  400669:	00 00 00 
+  40066c:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+
+0000000000400670 <deregister_tm_clones>:
+  400670:	b8 48 30 60 00       	mov    eax,0x603048
+  400675:	48 3d 48 30 60 00    	cmp    rax,0x603048
+  40067b:	74 13                	je     400690 <deregister_tm_clones+0x20>
+  40067d:	b8 00 00 00 00       	mov    eax,0x0
+  400682:	48 85 c0             	test   rax,rax
+  400685:	74 09                	je     400690 <deregister_tm_clones+0x20>
+  400687:	bf 48 30 60 00       	mov    edi,0x603048
+  40068c:	ff e0                	jmp    rax
+  40068e:	66 90                	xchg   ax,ax
+  400690:	c3                   	ret    
+  400691:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+  400696:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  40069d:	00 00 00 
+
+00000000004006a0 <register_tm_clones>:
+  4006a0:	be 48 30 60 00       	mov    esi,0x603048
+  4006a5:	48 81 ee 48 30 60 00 	sub    rsi,0x603048
+  4006ac:	48 c1 fe 03          	sar    rsi,0x3
+  4006b0:	48 89 f0             	mov    rax,rsi
+  4006b3:	48 c1 e8 3f          	shr    rax,0x3f
+  4006b7:	48 01 c6             	add    rsi,rax
+  4006ba:	48 d1 fe             	sar    rsi,1
+  4006bd:	74 11                	je     4006d0 <register_tm_clones+0x30>
+  4006bf:	b8 00 00 00 00       	mov    eax,0x0
+  4006c4:	48 85 c0             	test   rax,rax
+  4006c7:	74 07                	je     4006d0 <register_tm_clones+0x30>
+  4006c9:	bf 48 30 60 00       	mov    edi,0x603048
+  4006ce:	ff e0                	jmp    rax
+  4006d0:	c3                   	ret    
+  4006d1:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+  4006d6:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  4006dd:	00 00 00 
+
+00000000004006e0 <__do_global_dtors_aux>:
+  4006e0:	80 3d 61 29 20 00 00 	cmp    BYTE PTR [rip+0x202961],0x0        # 603048 <__TMC_END__>
+  4006e7:	75 17                	jne    400700 <__do_global_dtors_aux+0x20>
+  4006e9:	55                   	push   rbp
+  4006ea:	48 89 e5             	mov    rbp,rsp
+  4006ed:	e8 7e ff ff ff       	call   400670 <deregister_tm_clones>
+  4006f2:	c6 05 4f 29 20 00 01 	mov    BYTE PTR [rip+0x20294f],0x1        # 603048 <__TMC_END__>
+  4006f9:	5d                   	pop    rbp
+  4006fa:	c3                   	ret    
+  4006fb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+  400700:	c3                   	ret    
+  400701:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+  400706:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  40070d:	00 00 00 
+
+0000000000400710 <frame_dummy>:
+  400710:	eb 8e                	jmp    4006a0 <register_tm_clones>
+  400712:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  400719:	00 00 00 
+  40071c:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+
+0000000000400720 <printIntLine(int)>:
+  400720:	55                   	push   rbp
+  400721:	48 89 e5             	mov    rbp,rsp
+  400724:	48 83 ec 10          	sub    rsp,0x10
+  400728:	89 7d fc             	mov    DWORD PTR [rbp-0x4],edi
+  40072b:	8b 75 fc             	mov    esi,DWORD PTR [rbp-0x4]
+  40072e:	48 bf f4 08 40 00 00 	movabs rdi,0x4008f4
+  400735:	00 00 00 
+  400738:	31 c0                	xor    eax,eax
+  40073a:	88 c1                	mov    cl,al
+  40073c:	88 c8                	mov    al,cl
+  40073e:	e8 ad fe ff ff       	call   4005f0 <printf@plt>
+  400743:	89 45 f8             	mov    DWORD PTR [rbp-0x8],eax
+  400746:	48 83 c4 10          	add    rsp,0x10
+  40074a:	5d                   	pop    rbp
+  40074b:	c3                   	ret    
+  40074c:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+
+0000000000400750 <main>:
+  400750:	55                   	push   rbp
+  400751:	48 89 e5             	mov    rbp,rsp
+  400754:	48 83 ec 40          	sub    rsp,0x40
+  400758:	b8 08 00 00 00       	mov    eax,0x8
+  40075d:	89 c1                	mov    ecx,eax
+  40075f:	48 8d 55 ee          	lea    rdx,[rbp-0x12]            rdx = &shortBuffer
+  400763:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0   data = NULL;
+  40076a:	48 c7 45 f0 00 00 00 	mov    QWORD PTR [rbp-0x10],0x0  
+  400771:	00 
+  400772:	66 c7 45 ee 08 00    	mov    WORD PTR [rbp-0x12],0x8   shortBuffer = 8
+  400778:	48 89 55 f0          	mov    QWORD PTR [rbp-0x10],rdx  data = &shortBuffer
+  40077c:	b8 08 00 00 00       	mov    eax,0x8
+  400781:	89 c7                	mov    edi,eax
+  400783:	48 89 4d d8          	mov    QWORD PTR [rbp-0x28],rcx
+
+0000000000400787 <TYCHE_SYMS#test.cpp#38#31#36554568#7996980728488718250#2769108292725333437#38#31#36249472#36266160#3#36266160#36249472#_Znwm#class CWE843_bad#main#>:
+  400787:	e8 84 fe ff ff       	call   400610 <operator new(unsigned long)@plt>
+  40078c:	48 89 c7             	mov    rdi,rax
+  40078f:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+  400793:	e8 48 00 00 00       	call   4007e0 <CWE843_bad::CWE843_bad()>
+  400798:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+  40079c:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+  4007a0:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  4007a4:	48 8b 08             	mov    rcx,QWORD PTR [rax]
+  4007a7:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  4007aa:	48 8b 75 f0          	mov    rsi,QWORD PTR [rbp-0x10]
+  4007ae:	48 89 c7             	mov    rdi,rax
+  4007b1:	ff d1                	call   rcx
+  4007b3:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  4007b7:	48 83 f8 00          	cmp    rax,0x0
+  4007bb:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+  4007bf:	0f 84 0c 00 00 00    	je     4007d1 <TYCHE_SYMS#test.cpp#40#5#0#0#0#40#5#36264704#36280432#18446744073709551615#36280432#36264704#_ZdlPv#FREE#main#+0x5>
+  4007c5:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  4007c9:	48 89 c7             	mov    rdi,rax
+
+00000000004007cc <TYCHE_SYMS#test.cpp#40#5#0#0#0#40#5#36264704#36280432#18446744073709551615#36280432#36264704#_ZdlPv#FREE#main#>:
+  4007cc:	e8 2f fe ff ff       	call   400600 <operator delete(void*)@plt>
+  4007d1:	31 c0                	xor    eax,eax
+  4007d3:	48 83 c4 40          	add    rsp,0x40
+  4007d7:	5d                   	pop    rbp
+  4007d8:	c3                   	ret    
+  4007d9:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+00000000004007e0 <CWE843_bad::CWE843_bad()>:
+  4007e0:	55                   	push   rbp
+  4007e1:	48 89 e5             	mov    rbp,rsp
+  4007e4:	48 83 ec 10          	sub    rsp,0x10
+  4007e8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+  4007ec:	48 8b 7d f8          	mov    rdi,QWORD PTR [rbp-0x8]
+  4007f0:	48 89 7d f0          	mov    QWORD PTR [rbp-0x10],rdi
+  4007f4:	e8 27 00 00 00       	call   400820 <CWE843_base::CWE843_base()>
+  4007f9:	48 bf 20 09 40 00 00 	movabs rdi,0x400920
+  400800:	00 00 00 
+  400803:	48 83 c7 10          	add    rdi,0x10
+  400807:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  40080b:	48 89 38             	mov    QWORD PTR [rax],rdi
+  40080e:	48 83 c4 10          	add    rsp,0x10
+  400812:	5d                   	pop    rbp
+  400813:	c3                   	ret    
+  400814:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  40081b:	00 00 00 
+  40081e:	66 90                	xchg   ax,ax
+
+0000000000400820 <CWE843_base::CWE843_base()>:
+  400820:	55                   	push   rbp
+  400821:	48 89 e5             	mov    rbp,rsp
+  400824:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+  400828:	48 8b 7d f8          	mov    rdi,QWORD PTR [rbp-0x8]
+  40082c:	48 b8 88 09 40 00 00 	movabs rax,0x400988
+  400833:	00 00 00 
+  400836:	48 83 c0 10          	add    rax,0x10
+  40083a:	48 89 07             	mov    QWORD PTR [rdi],rax
+  40083d:	5d                   	pop    rbp
+  40083e:	c3                   	ret    
+  40083f:	90                   	nop
+
+0000000000400840 <CWE843_bad::action(void*)>:
+  400840:	55                   	push   rbp
+  400841:	48 89 e5             	mov    rbp,rsp
+  400844:	48 83 ec 10          	sub    rsp,0x10
+  400848:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+  40084c:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+  400850:	48 8b 75 f0          	mov    rsi,QWORD PTR [rbp-0x10]
+  400854:	8b 3e                	mov    edi,DWORD PTR [rsi]
+  400856:	e8 c5 fe ff ff       	call   400720 <printIntLine(int)>
+  40085b:	48 83 c4 10          	add    rsp,0x10
+  40085f:	5d                   	pop    rbp
+  400860:	c3                   	ret    
+  400861:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  400868:	00 00 00 
+  40086b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000400870 <__libc_csu_init>:
+  400870:	41 57                	push   r15
+  400872:	41 56                	push   r14
+  400874:	49 89 d7             	mov    r15,rdx
+  400877:	41 55                	push   r13
+  400879:	41 54                	push   r12
+  40087b:	4c 8d 25 9e 24 20 00 	lea    r12,[rip+0x20249e]        # 602d20 <__frame_dummy_init_array_entry>
+  400882:	55                   	push   rbp
+  400883:	48 8d 2d 9e 24 20 00 	lea    rbp,[rip+0x20249e]        # 602d28 <__init_array_end>
+  40088a:	53                   	push   rbx
+  40088b:	41 89 fd             	mov    r13d,edi
+  40088e:	49 89 f6             	mov    r14,rsi
+  400891:	4c 29 e5             	sub    rbp,r12
+  400894:	48 83 ec 08          	sub    rsp,0x8
+  400898:	48 c1 fd 03          	sar    rbp,0x3
+  40089c:	e8 27 fd ff ff       	call   4005c8 <_init>
+  4008a1:	48 85 ed             	test   rbp,rbp
+  4008a4:	74 20                	je     4008c6 <__libc_csu_init+0x56>
+  4008a6:	31 db                	xor    ebx,ebx
+  4008a8:	0f 1f 84 00 00 00 00 	nop    DWORD PTR [rax+rax*1+0x0]
+  4008af:	00 
+  4008b0:	4c 89 fa             	mov    rdx,r15
+  4008b3:	4c 89 f6             	mov    rsi,r14
+  4008b6:	44 89 ef             	mov    edi,r13d
+  4008b9:	41 ff 14 dc          	call   QWORD PTR [r12+rbx*8]
+  4008bd:	48 83 c3 01          	add    rbx,0x1
+  4008c1:	48 39 dd             	cmp    rbp,rbx
+  4008c4:	75 ea                	jne    4008b0 <__libc_csu_init+0x40>
+  4008c6:	48 83 c4 08          	add    rsp,0x8
+  4008ca:	5b                   	pop    rbx
+  4008cb:	5d                   	pop    rbp
+  4008cc:	41 5c                	pop    r12
+  4008ce:	41 5d                	pop    r13
+  4008d0:	41 5e                	pop    r14
+  4008d2:	41 5f                	pop    r15
+  4008d4:	c3                   	ret    
+  4008d5:	90                   	nop
+  4008d6:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  4008dd:	00 00 00 
+
+00000000004008e0 <__libc_csu_fini>:
+  4008e0:	f3 c3                	repz ret 
+
+Disassembly of section .fini:
+
+00000000004008e4 <_fini>:
+  4008e4:	48 83 ec 08          	sub    rsp,0x8
+  4008e8:	48 83 c4 08          	add    rsp,0x8
+  4008ec:	c3                   	ret    

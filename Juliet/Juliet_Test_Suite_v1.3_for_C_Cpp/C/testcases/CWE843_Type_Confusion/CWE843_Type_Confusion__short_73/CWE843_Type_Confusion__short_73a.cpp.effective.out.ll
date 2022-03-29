@@ -16,7 +16,6 @@ target triple = "x86_64-unknown-linux-gnu"
 %EFFECTIVE_INFO = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [0 x %EFFECTIVE_INFO_ENTRY] }
 %EFFECTIVE_INFO_ENTRY = type { %EFFECTIVE_INFO*, i32, i64, i64 }
 %EFFECTIVE_ENTRY = type { i8*, i64, i64, i64, <2 x i64> }
-%EFFECTIVE_INFO_2 = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [2 x %EFFECTIVE_INFO_ENTRY] }
 %TYCHE_META_CACHELINE107 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %TYCHE_META_CACHELINE106 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %TYCHE_META_CACHELINE105 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
@@ -25,7 +24,248 @@ target triple = "x86_64-unknown-linux-gnu"
 %TYCHE_META_CACHELINE102 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %TYCHE_META_CACHELINE101 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %TYCHE_META_CACHELINE100 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_3 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [3 x %EFFECTIVE_ENTRY] }
+%EFFECTIVE_INFO_1 = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [1 x %EFFECTIVE_INFO_ENTRY] }
+%EFFECTIVE_INFO_2 = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [2 x %EFFECTIVE_INFO_ENTRY] }
+%TYCHE_META_CACHELINE207 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE206 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE205 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE204 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE203 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE202 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE201 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE200 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_13 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [13 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE307 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE306 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE305 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE304 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE303 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE302 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE301 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE300 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE407 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE406 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE405 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE404 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE403 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE402 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE401 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE400 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE507 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE506 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE505 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE504 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE503 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE502 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE501 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE500 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE607 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE606 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE605 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE604 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE603 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE602 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE601 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE600 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE707 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE706 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE705 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE704 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE703 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE702 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE701 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE700 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_4 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [4 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE807 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE806 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE805 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE804 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE803 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE802 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE801 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE800 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE907 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE906 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE905 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE904 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE903 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE902 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE901 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE900 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1007 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1006 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1005 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1004 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1003 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1002 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1001 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1000 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1107 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1106 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1105 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1104 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1103 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1102 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1101 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1100 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_12 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [12 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE1207 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1206 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1205 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1204 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1203 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1202 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1201 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1200 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1307 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1306 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1305 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1304 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1303 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1302 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1301 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1300 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1407 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1406 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1405 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1404 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1403 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1402 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1401 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1400 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1507 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1506 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1505 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1504 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1503 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1502 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1501 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1500 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1607 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1606 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1605 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1604 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1603 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1602 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1601 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1600 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_11 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [11 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE1707 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1706 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1705 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1704 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1703 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1702 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1701 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1700 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %EFFECTIVE_TYPE_9 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [9 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE1807 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1806 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1805 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1804 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1803 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1802 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1801 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1800 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1907 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1906 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1905 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1904 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1903 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1902 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1901 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE1900 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2007 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2006 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2005 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2004 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2003 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2002 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2001 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2000 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2107 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2106 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2105 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2104 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2103 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2102 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2101 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2100 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2207 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2206 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2205 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2204 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2203 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2202 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2201 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2200 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2307 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2306 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2305 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2304 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2303 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2302 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2301 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2300 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2407 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2406 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2405 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2404 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2403 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2402 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2401 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2400 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2507 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2506 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2505 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2504 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2503 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2502 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2501 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2500 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2607 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2606 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2605 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2604 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2603 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2602 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2601 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2600 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2707 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2706 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2705 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2704 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2703 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2702 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2701 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2700 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_8 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [8 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE2807 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2806 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2805 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2804 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2803 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2802 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2801 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2800 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_6 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [6 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE2907 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2906 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2905 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2904 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2903 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2902 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2901 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE2900 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE3007 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE3006 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE3005 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE3004 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE3003 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE3002 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE3001 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE3000 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
 %"class.std::__cxx11::list" = type { %"class.std::__cxx11::_List_base" }
 %"class.std::__cxx11::_List_base" = type { %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl" }
 %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl" = type { %"struct.std::__detail::_List_node_header" }
@@ -157,14 +397,248 @@ $_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE = comdat any
 @TYCHE_META_SECTION_TID_0_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE001* null }>], section "tyche_symbols_section_1", align 64
 @TYCHE_META_SECTION_TID_0_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE000* null }>], section "tyche_symbols_section_0", align 64
 @EFFECTIVE_TYPE_INT8 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_0_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 8088147823597479805, i64 8088147823597479805, i32 1, i32 1, i32 0, i32 1340864923, i64 -9223372036854775808, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([7 x i8], [7 x i8]* @TYCHE_TYPE_ENTRY_int8_t_3080687966_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 3080687966, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
-@EFFECTIVE_STRING = private unnamed_addr constant [30 x i8] c"struct std::_List_node<void*>\00"
-@EFFECTIVE_STRING.2 = private unnamed_addr constant [38 x i8] c"struct std::__detail::_List_node_base\00"
-@EFFECTIVE_STRING.3 = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
-@EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @EFFECTIVE_STRING.3, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
-@EFFECTIVE_INFO_334172dfddbb8f81d6978d07c378c24c = weak constant %EFFECTIVE_INFO_2 { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @EFFECTIVE_STRING.2, i32 0, i32 0), i32 16, i32 2, i32 0, %EFFECTIVE_INFO* null, [2 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d, i32 0, i64 0, i64 8 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d, i32 0, i64 8, i64 16 }] }
-@EFFECTIVE_STRING.4 = private unnamed_addr constant [9 x i8] c"int8_t *\00"
-@EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @EFFECTIVE_STRING.4, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
-@EFFECTIVE_INFO_2a4335ba4cb06b87eed2fc3ddfa3b7bf = weak constant %EFFECTIVE_INFO_2 { i8* getelementptr inbounds ([30 x i8], [30 x i8]* @EFFECTIVE_STRING, i32 0, i32 0), i32 24, i32 2, i32 0, %EFFECTIVE_INFO* null, [2 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_334172dfddbb8f81d6978d07c378c24c to %EFFECTIVE_INFO*), i32 1, i64 0, i64 16 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a, i32 0, i64 16, i64 24 }] }
+@EFFECTIVE_STRING = private unnamed_addr constant [9 x i8] c"int8_t *\00"
+@EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @EFFECTIVE_STRING, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_int8_t *_476075404_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [9 x i8] c"int8_t *\00"
+@TYCHE_TYPE_ENTRY_coerced_12545345991443039823_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_1 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE107* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_1_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE106* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_1_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE105* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_1_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE104* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_1_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE103* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_1_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE102* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_1_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE101* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_1_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE100* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_a481e2de8ae4613074fac0bfec5c40a = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_1_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -8282703695323691247, i64 -8282703695323691247, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a, i64 2528746356237243677, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @"TYCHE_TYPE_ENTRY_int8_t *_476075404_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 476075404, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_12545345991443039823_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -5901398082266511793, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.2 = private unnamed_addr constant [56 x i8] c"class std::__cxx11::list<void*, std::allocator<void*> >\00"
+@EFFECTIVE_STRING.3 = private unnamed_addr constant [62 x i8] c"class std::__cxx11::_List_base<void*, std::allocator<void*> >\00"
+@EFFECTIVE_STRING.4 = private unnamed_addr constant [75 x i8] c"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl\00"
+@EFFECTIVE_STRING.5 = private unnamed_addr constant [46 x i8] c"class std::allocator<std::_List_node<void*> >\00"
+@EFFECTIVE_STRING.6 = private unnamed_addr constant [56 x i8] c"class __gnu_cxx::new_allocator<std::_List_node<void*> >\00"
+@EFFECTIVE_INFO_3001efdab9d4bb7e94e1b4015c583c61 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @EFFECTIVE_STRING.6, i32 0, i32 0), i32 1, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@EFFECTIVE_INFO_f9a488891e2fa85b2fb03c3a6f2adef9 = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([46 x i8], [46 x i8]* @EFFECTIVE_STRING.5, i32 0, i32 0), i32 1, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_3001efdab9d4bb7e94e1b4015c583c61, i32 1, i64 0, i64 1 }] }
+@EFFECTIVE_STRING.7 = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_header\00"
+@EFFECTIVE_STRING.8 = private unnamed_addr constant [38 x i8] c"struct std::__detail::_List_node_base\00"
+@EFFECTIVE_STRING.9 = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @EFFECTIVE_STRING.9, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@EFFECTIVE_INFO_334172dfddbb8f81d6978d07c378c24c = weak constant %EFFECTIVE_INFO_2 { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @EFFECTIVE_STRING.8, i32 0, i32 0), i32 16, i32 2, i32 0, %EFFECTIVE_INFO* null, [2 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d, i32 0, i64 0, i64 8 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d, i32 0, i64 8, i64 16 }] }
+@EFFECTIVE_INFO_ef5372ab725a67382f7156b3bcb18068 = weak constant %EFFECTIVE_INFO_2 { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @EFFECTIVE_STRING.7, i32 0, i32 0), i32 24, i32 2, i32 0, %EFFECTIVE_INFO* null, [2 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_334172dfddbb8f81d6978d07c378c24c to %EFFECTIVE_INFO*), i32 1, i64 0, i64 16 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* null, i32 0, i64 16, i64 24 }] }
+@EFFECTIVE_INFO_b7436d17e7d1b7fe2804bab447226767 = weak constant %EFFECTIVE_INFO_2 { i8* getelementptr inbounds ([75 x i8], [75 x i8]* @EFFECTIVE_STRING.4, i32 0, i32 0), i32 24, i32 2, i32 0, %EFFECTIVE_INFO* null, [2 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_f9a488891e2fa85b2fb03c3a6f2adef9 to %EFFECTIVE_INFO*), i32 1, i64 0, i64 1 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_ef5372ab725a67382f7156b3bcb18068 to %EFFECTIVE_INFO*), i32 0, i64 0, i64 24 }] }
+@EFFECTIVE_INFO_d410839a1ef590e9dc621e463ddb392 = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([62 x i8], [62 x i8]* @EFFECTIVE_STRING.3, i32 0, i32 0), i32 24, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_b7436d17e7d1b7fe2804bab447226767 to %EFFECTIVE_INFO*), i32 0, i64 0, i64 24 }] }
+@EFFECTIVE_INFO_a5d2a2851adb76a5c6966b1ba4a1d489 = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @EFFECTIVE_STRING.2, i32 0, i32 0), i32 24, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_d410839a1ef590e9dc621e463ddb392 to %EFFECTIVE_INFO*), i32 1, i64 0, i64 24 }] }
+@TYCHE_TYPE_ENTRY_coerced_12304758653175419714_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header_16236620254988573770_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_header\00"
+@TYCHE_TYPE_ENTRY_int64_t_1009943833977822802_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"int64_t\00"
+@"TYCHE_TYPE_ENTRY_class std::__cxx11::_List_base<void*, std::allocator<void*> >_1974684159653050133_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [62 x i8] c"class std::__cxx11::_List_base<void*, std::allocator<void*> >\00"
+@"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> >_8073418987999804631_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [46 x i8] c"class std::allocator<std::_List_node<void*> >\00"
+@TYCHE_TYPE_ENTRY_coerced_12304758654280947608_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_14201777515535111401_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [38 x i8] c"struct std::__detail::_List_node_base\00"
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_16782938857126495658_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [56 x i8] c"class __gnu_cxx::new_allocator<std::_List_node<void*> >\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_301255053429322153_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@"TYCHE_TYPE_ENTRY_struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl_17200236416011706541_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [75 x i8] c"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl\00"
+@"TYCHE_TYPE_ENTRY_class std::__cxx11::list<void*, std::allocator<void*> >_1552615795_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [56 x i8] c"class std::__cxx11::list<void*, std::allocator<void*> >\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_301255052319339891_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_META_SECTION_TID_2 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE207* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_2_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE206* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_2_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE205* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_2_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE204* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_2_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE203* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_2_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE202* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_2_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE201* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_2_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 8, i32 8, i32 16, i32 -1, i32 -1, %TYCHE_META_CACHELINE200* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_a5d2a2851adb76a5c6966b1ba4a1d489 = weak constant %EFFECTIVE_TYPE_13 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_2_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -8515003269244021050, i64 -8515003269244021050, i32 24, i32 24, i32 0, i32 1340864923, i64 384307168202282326, i64 63, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_a5d2a2851adb76a5c6966b1ba4a1d489 to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 13, [13 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_12304758653175419714_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 8, i64 -6141985420534131902, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header_16236620254988573770_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -2210123818720977846, i64 0, <2 x i64> <i64 0, i64 24> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int64_t_1009943833977822802_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 16, i64 1009943833977822802, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([62 x i8], [62 x i8]* @"TYCHE_TYPE_ENTRY_class std::__cxx11::_List_base<void*, std::allocator<void*> >_1974684159653050133_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1974684159653050133, i64 0, <2 x i64> <i64 0, i64 24> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([46 x i8], [46 x i8]* @"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> >_8073418987999804631_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 8073418987999804631, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_12304758654280947608_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -6141985419428604008, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_14201777515535111401_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -4244966558174440215, i64 0, <2 x i64> <i64 0, i64 16> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_16782938857126495658_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -1663805216583055958, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_301255053429322153_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 8, i64 301255053429322153, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([75 x i8], [75 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl_17200236416011706541_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -1246507657697845075, i64 0, <2 x i64> <i64 0, i64 24> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @"TYCHE_TYPE_ENTRY_class std::__cxx11::list<void*, std::allocator<void*> >_1552615795_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1552615795, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_301255052319339891_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 301255052319339891, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_TYPE_ENTRY_int16_t_2925875906_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"int16_t\00"
+@TYCHE_META_SECTION_TID_3 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE307* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_3_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE306* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_3_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE305* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_3_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE304* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_3_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE303* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_3_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE302* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_3_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE301* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_3_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE300* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_INT16 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_3_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -607088869328460574, i64 -607088869328460574, i32 2, i32 2, i32 0, i32 1340864923, i64 4611686018427387904, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int16_t_2925875906_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 2925875906, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_TYPE_ENTRY_int32_t_1319304013_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"int32_t\00"
+@TYCHE_META_SECTION_TID_4 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE407* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_4_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE406* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_4_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE405* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_4_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE404* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_4_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE403* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_4_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE402* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_4_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE401* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_4_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE400* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_INT32 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_4_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 7706858352182509634, i64 7706858352182509634, i32 4, i32 4, i32 0, i32 1340864923, i64 2305843009213693952, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int32_t_1319304013_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 1319304013, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.10 = private unnamed_addr constant [58 x i8] c"class std::__cxx11::list<void*, std::allocator<void*> > *\00"
+@EFFECTIVE_INFO_22c43688991196c78cba238101428f63 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([58 x i8], [58 x i8]* @EFFECTIVE_STRING.10, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_class std::__cxx11::list<void*, std::allocator<void*> > *_2056889432_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [58 x i8] c"class std::__cxx11::list<void*, std::allocator<void*> > *\00"
+@TYCHE_TYPE_ENTRY_coerced_4654658681829096402_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_5 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE507* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_5_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE506* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_5_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE505* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_5_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE504* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_5_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE503* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_5_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE502* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_5_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE501* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_5_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE500* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_22c43688991196c78cba238101428f63 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_5_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 7174025305653492364, i64 7174025305653492364, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_22c43688991196c78cba238101428f63, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([58 x i8], [58 x i8]* @"TYCHE_TYPE_ENTRY_class std::__cxx11::list<void*, std::allocator<void*> > *_2056889432_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2056889432, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_4654658681829096402_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 4654658681829096402, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.11 = private unnamed_addr constant [11 x i8] c"int8_t * *\00"
+@EFFECTIVE_INFO_8f8a1df20324c5f26a4b670d9445ac81 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([11 x i8], [11 x i8]* @EFFECTIVE_STRING.11, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_int8_t * *_1532408840_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [11 x i8] c"int8_t * *\00"
+@TYCHE_TYPE_ENTRY_coerced_11726156259250440756_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_6 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE607* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_6_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE606* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_6_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE605* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_6_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE604* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_6_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE603* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_6_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE602* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_6_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE601* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_6_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE600* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_8f8a1df20324c5f26a4b670d9445ac81 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_6_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -9102824244640265366, i64 -9102824244640265366, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_8f8a1df20324c5f26a4b670d9445ac81, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([11 x i8], [11 x i8]* @"TYCHE_TYPE_ENTRY_int8_t * *_1532408840_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1532408840, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11726156259250440756_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -6720587814459110860, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.12 = private unnamed_addr constant [34 x i8] c"struct std::_List_iterator<void*>\00"
+@EFFECTIVE_INFO_5cda7e80533e6bdf6b218a996a406fc4 = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([34 x i8], [34 x i8]* @EFFECTIVE_STRING.12, i32 0, i32 0), i32 8, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d, i32 0, i64 0, i64 8 }] }
+@"TYCHE_TYPE_ENTRY_struct std::_List_iterator<void*>_1616076245_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [34 x i8] c"struct std::_List_iterator<void*>\00"
+@TYCHE_TYPE_ENTRY_coerced_16679267054506074165_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_5302324530271257310_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_META_SECTION_TID_7 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE707* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_7_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE706* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_7_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE705* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_7_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE704* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_7_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE703* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_7_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE702* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_7_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE701* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_7_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE700* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_5cda7e80533e6bdf6b218a996a406fc4 = weak constant %EFFECTIVE_TYPE_4 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_7_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -4292141093274115733, i64 -4292141093274115733, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 15, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_5cda7e80533e6bdf6b218a996a406fc4 to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 4, [4 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([34 x i8], [34 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_List_iterator<void*>_1616076245_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1616076245, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_16679267054506074165_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -1767477019203477451, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_5302324530271257310_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 5302324530271257310, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.13 = private unnamed_addr constant [40 x i8] c"struct std::_List_const_iterator<void*>\00"
+@EFFECTIVE_INFO_c3d6097d51bffe5a877b00d265df4476 = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @EFFECTIVE_STRING.13, i32 0, i32 0), i32 8, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d, i32 0, i64 0, i64 8 }] }
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_18140001351095212082_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@"TYCHE_TYPE_ENTRY_struct std::_List_const_iterator<void*>_1161061491_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::_List_const_iterator<void*>\00"
+@TYCHE_TYPE_ENTRY_coerced_6148317344448887513_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_8 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE807* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_8_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE806* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_8_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE805* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_8_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE804* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_8_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE803* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_8_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE802* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_8_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE801* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_8_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE800* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_c3d6097d51bffe5a877b00d265df4476 = weak constant %EFFECTIVE_TYPE_4 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_8_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 8522182023299758983, i64 8522182023299758983, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 15, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_c3d6097d51bffe5a877b00d265df4476 to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 4, [4 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_18140001351095212082_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -306742722614339534, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_List_const_iterator<void*>_1161061491_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1161061491, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_6148317344448887513_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 6148317344448887513, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.14 = private unnamed_addr constant [25 x i8] c"struct std::__false_type\00"
+@EFFECTIVE_INFO_7f23ce239df7910ffa0ad04d5848570d = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([25 x i8], [25 x i8]* @EFFECTIVE_STRING.14, i32 0, i32 0), i32 1, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_struct std::__false_type_293406476_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [25 x i8] c"struct std::__false_type\00"
+@TYCHE_META_SECTION_TID_9 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE907* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_9_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE906* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_9_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE905* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_9_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE904* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_9_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE903* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_9_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE902* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_9_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE901* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_9_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE900* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_7f23ce239df7910ffa0ad04d5848570d = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_9_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 961316589566692090, i64 961316589566692090, i32 1, i32 1, i32 0, i32 1340864923, i64 -9223372036854775808, i64 3, %EFFECTIVE_INFO* @EFFECTIVE_INFO_7f23ce239df7910ffa0ad04d5848570d, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([25 x i8], [25 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__false_type_293406476_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 293406476, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.15 = private unnamed_addr constant [64 x i8] c"class std::__cxx11::_List_base<void*, std::allocator<void*> > *\00"
+@EFFECTIVE_INFO_797f2ab9bd38be3480dbe3a8a17f985e = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([64 x i8], [64 x i8]* @EFFECTIVE_STRING.15, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@TYCHE_TYPE_ENTRY_coerced_9047615965518109406_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_class std::__cxx11::_List_base<void*, std::allocator<void*> > *_3263346615_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [64 x i8] c"class std::__cxx11::_List_base<void*, std::allocator<void*> > *\00"
+@TYCHE_META_SECTION_TID_10 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1007* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_10_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1006* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_10_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1005* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_10_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1004* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_10_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1003* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_10_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1002* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_10_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1001* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_10_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1000* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_797f2ab9bd38be3480dbe3a8a17f985e = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_10_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 6816338368325213056, i64 6816338368325213056, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_797f2ab9bd38be3480dbe3a8a17f985e, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_9047615965518109406_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 9047615965518109406, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([64 x i8], [64 x i8]* @"TYCHE_TYPE_ENTRY_class std::__cxx11::_List_base<void*, std::allocator<void*> > *_3263346615_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 3263346615, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_17550392780619666785_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [56 x i8] c"class __gnu_cxx::new_allocator<std::_List_node<void*> >\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header_18028873439481941121_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_header\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_16028774655532975138_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [38 x i8] c"struct std::__detail::_List_node_base\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_2254395863738114402_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@"TYCHE_TYPE_ENTRY_struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl_17714063765551968358_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [75 x i8] c"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl\00"
+@TYCHE_TYPE_ENTRY_coerced_12800413261772424073_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_TYPE_ENTRY_coerced_12800413260664670035_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_2254395864841938360_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_TYPE_ENTRY_int64_t_1541205613861818009_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"int64_t\00"
+@"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> >_7741114967743884316_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [46 x i8] c"class std::allocator<std::_List_node<void*> >\00"
+@"TYCHE_TYPE_ENTRY_class std::__cxx11::_List_base<void*, std::allocator<void*> >_419407838_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [62 x i8] c"class std::__cxx11::_List_base<void*, std::allocator<void*> >\00"
+@TYCHE_META_SECTION_TID_11 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1107* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_11_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1106* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_11_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1105* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_11_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1104* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_11_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1103* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_11_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1102* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_11_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1101* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_11_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 8, i32 8, i32 16, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1100* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_d410839a1ef590e9dc621e463ddb392 = weak constant %EFFECTIVE_TYPE_12 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_11_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -7875707902241946099, i64 -7875707902241946099, i32 24, i32 24, i32 0, i32 1340864923, i64 384307168202282326, i64 31, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_d410839a1ef590e9dc621e463ddb392 to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 12, [12 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_17550392780619666785_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -896351293089884831, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header_18028873439481941121_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -417870634227610495, i64 0, <2 x i64> <i64 0, i64 24> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_16028774655532975138_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -2417969418176576478, i64 0, <2 x i64> <i64 0, i64 16> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_2254395863738114402_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 8, i64 2254395863738114402, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([75 x i8], [75 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl_17714063765551968358_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -732680308157583258, i64 0, <2 x i64> <i64 0, i64 24> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_12800413261772424073_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 8, i64 -5646330811937127543, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_12800413260664670035_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -5646330813044881581, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_2254395864841938360_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2254395864841938360, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int64_t_1541205613861818009_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 16, i64 1541205613861818009, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([46 x i8], [46 x i8]* @"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> >_7741114967743884316_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 7741114967743884316, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([62 x i8], [62 x i8]* @"TYCHE_TYPE_ENTRY_class std::__cxx11::_List_base<void*, std::allocator<void*> >_419407838_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 419407838, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_TYPE_ENTRY_coerced_12604745304776236830_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_2691218933_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_META_SECTION_TID_12 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1207* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_12_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1206* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_12_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1205* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_12_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1204* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_12_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1203* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_12_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1202* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_12_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1201* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_12_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1200* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_39bbb5df88f9805d401e4a077be4fa8d = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_12_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -8216003353129640384, i64 -8216003353129640384, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_39bbb5df88f9805d401e4a077be4fa8d, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_12604745304776236830_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -5841998768933314786, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_2691218933_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2691218933, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.16 = private unnamed_addr constant [32 x i8] c"struct std::_List_node<void*> *\00"
+@EFFECTIVE_INFO_f07b5afadfd96309fabda52c895c61b5 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([32 x i8], [32 x i8]* @EFFECTIVE_STRING.16, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@TYCHE_TYPE_ENTRY_coerced_10842053127903542436_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::_List_node<void*> *_1512526089_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [32 x i8] c"struct std::_List_node<void*> *\00"
+@TYCHE_META_SECTION_TID_13 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1307* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_13_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1306* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_13_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1305* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_13_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1304* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_13_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1303* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_13_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1302* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_13_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1301* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_13_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1300* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_f07b5afadfd96309fabda52c895c61b5 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_13_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -5376914735874327046, i64 -5376914735874327046, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_f07b5afadfd96309fabda52c895c61b5, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_10842053127903542436_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -7604690945806009180, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([32 x i8], [32 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_List_node<void*> *_1512526089_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1512526089, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.17 = private unnamed_addr constant [28 x i8] c"class std::allocator<void*>\00"
+@EFFECTIVE_STRING.18 = private unnamed_addr constant [38 x i8] c"class __gnu_cxx::new_allocator<void*>\00"
+@EFFECTIVE_INFO_94591624010de6324bf1ae65ced0cbff = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @EFFECTIVE_STRING.18, i32 0, i32 0), i32 1, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@EFFECTIVE_INFO_edbba724603bb863d1e13801496a5fa2 = weak constant %EFFECTIVE_INFO_1 { i8* getelementptr inbounds ([28 x i8], [28 x i8]* @EFFECTIVE_STRING.17, i32 0, i32 0), i32 1, i32 1, i32 0, %EFFECTIVE_INFO* null, [1 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_94591624010de6324bf1ae65ced0cbff, i32 1, i64 0, i64 1 }] }
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<void*>_6743219634370847827_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [38 x i8] c"class __gnu_cxx::new_allocator<void*>\00"
+@"TYCHE_TYPE_ENTRY_class std::allocator<void*>_606461502_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [28 x i8] c"class std::allocator<void*>\00"
+@TYCHE_META_SECTION_TID_14 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1407* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_14_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1406* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_14_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1405* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_14_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1404* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_14_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1403* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_14_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1402* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_14_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1401* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_14_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1400* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_edbba724603bb863d1e13801496a5fa2 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_14_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -6746556854992051759, i64 -6746556854992051759, i32 1, i32 1, i32 0, i32 1340864923, i64 -9223372036854775808, i64 7, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_edbba724603bb863d1e13801496a5fa2 to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<void*>_6743219634370847827_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 6743219634370847827, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([28 x i8], [28 x i8]* @"TYCHE_TYPE_ENTRY_class std::allocator<void*>_606461502_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 606461502, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.19 = private unnamed_addr constant [77 x i8] c"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl *\00"
+@EFFECTIVE_INFO_78d036678cf3727550901c9af0b7be3b = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([77 x i8], [77 x i8]* @EFFECTIVE_STRING.19, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl *_2977515972_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [77 x i8] c"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl *\00"
+@TYCHE_TYPE_ENTRY_coerced_1777055543393997070_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_15 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1507* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_15_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1506* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_15_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1505* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_15_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1504* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_15_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1503* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_15_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1502* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_15_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1501* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_15_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1500* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_78d036678cf3727550901c9af0b7be3b = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_15_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 4305080537818370128, i64 4305080537818370128, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_78d036678cf3727550901c9af0b7be3b, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([77 x i8], [77 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl *_2977515972_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2977515972, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_1777055543393997070_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 1777055543393997070, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl_315372099_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [75 x i8] c"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl\00"
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_458094044261750596_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [56 x i8] c"class __gnu_cxx::new_allocator<std::_List_node<void*> >\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header_1146047336775945892_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_header\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_3145019439234680327_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [38 x i8] c"struct std::__detail::_List_node_base\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_16905886538588726087_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_TYPE_ENTRY_coerced_4931664992928711084_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_TYPE_ENTRY_coerced_4931664993965163894_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> >_11437181700221611577_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [46 x i8] c"class std::allocator<std::_List_node<void*> >\00"
+@TYCHE_TYPE_ENTRY_int64_t_16192562113398017212_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"int64_t\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_16905886537547818909_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_META_SECTION_TID_16 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1607* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_16_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1606* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_16_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1605* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_16_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1604* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_16_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1603* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_16_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1602* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_16_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1601* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_16_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 8, i32 8, i32 16, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1600* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_b7436d17e7d1b7fe2804bab447226767 = weak constant %EFFECTIVE_TYPE_11 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_16_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 7450961799877887016, i64 7450961799877887016, i32 24, i32 24, i32 0, i32 1340864923, i64 384307168202282326, i64 31, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_b7436d17e7d1b7fe2804bab447226767 to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 11, [11 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([75 x i8], [75 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl_315372099_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 315372099, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_458094044261750596_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 458094044261750596, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header_1146047336775945892_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1146047336775945892, i64 0, <2 x i64> <i64 0, i64 24> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_3145019439234680327_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 3145019439234680327, i64 0, <2 x i64> <i64 0, i64 16> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_16905886538588726087_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 8, i64 -1540857535120825529, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_4931664992928711084_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 8, i64 4931664992928711084, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_4931664993965163894_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 4931664993965163894, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([46 x i8], [46 x i8]* @"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> >_11437181700221611577_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -7009562373487940039, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int64_t_16192562113398017212_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 16, i64 -2254181960311534404, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_16905886537547818909_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -1540857536161732707, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.20 = private unnamed_addr constant [30 x i8] c"struct std::_List_node<void*>\00"
+@EFFECTIVE_INFO_2a4335ba4cb06b87eed2fc3ddfa3b7bf = weak constant %EFFECTIVE_INFO_2 { i8* getelementptr inbounds ([30 x i8], [30 x i8]* @EFFECTIVE_STRING.20, i32 0, i32 0), i32 24, i32 2, i32 0, %EFFECTIVE_INFO* null, [2 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_334172dfddbb8f81d6978d07c378c24c to %EFFECTIVE_INFO*), i32 1, i64 0, i64 16 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* @EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a, i32 0, i64 16, i64 24 }] }
 @"TYCHE_TYPE_ENTRY_struct std::_List_node<void*>_493159777_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [30 x i8] c"struct std::_List_node<void*>\00"
 @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_17543168840522715329_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [38 x i8] c"struct std::__detail::_List_node_base\00"
 @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_3624632048442242433_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
@@ -173,135 +647,297 @@ $_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE = comdat any
 @TYCHE_TYPE_ENTRY_coerced_11286102812271318890_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
 @TYCHE_TYPE_ENTRY_coerced_11286102813308031920_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
 @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_3624632047401595227_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
-@TYCHE_META_SECTION_TID_1 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE107* null }>], section "tyche_symbols_section_7", align 64
-@TYCHE_META_SECTION_TID_1_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE106* null }>], section "tyche_symbols_section_6", align 64
-@TYCHE_META_SECTION_TID_1_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE105* null }>], section "tyche_symbols_section_5", align 64
-@TYCHE_META_SECTION_TID_1_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE104* null }>], section "tyche_symbols_section_4", align 64
-@TYCHE_META_SECTION_TID_1_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE103* null }>], section "tyche_symbols_section_3", align 64
-@TYCHE_META_SECTION_TID_1_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE102* null }>], section "tyche_symbols_section_2", align 64
-@TYCHE_META_SECTION_TID_1_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE101* null }>], section "tyche_symbols_section_1", align 64
-@TYCHE_META_SECTION_TID_1_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 0, i32 8, i32 8, i32 16, i32 16, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE100* null }>], section "tyche_symbols_section_0", align 64
-@EFFECTIVE_TYPE_2a4335ba4cb06b87eed2fc3ddfa3b7bf = weak constant %EFFECTIVE_TYPE_9 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_1_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -4632053512514252050, i64 -4632053512514252050, i32 24, i32 24, i32 0, i32 1340864923, i64 384307168202282326, i64 31, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_2a4335ba4cb06b87eed2fc3ddfa3b7bf to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 9, [9 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([30 x i8], [30 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_List_node<void*>_493159777_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 493159777, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_17543168840522715329_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -903575233186836287, i64 0, <2 x i64> <i64 0, i64 16> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_3624632048442242433_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 8, i64 3624632048442242433, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11286102815387490820_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 16, i64 -7160641258322060796, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @"TYCHE_TYPE_ENTRY_int8_t *_3655320912363784647_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 16, i64 3655320912363784647, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11286102812271318890_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 8, i64 -7160641261438232726, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11286102813308031920_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -7160641260401519696, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_3624632047401595227_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 3624632047401595227, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_META_SECTION_TID_17 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1707* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_17_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1706* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_17_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1705* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_17_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1704* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_17_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1703* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_17_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1702* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_17_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1701* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_17_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 0, i32 8, i32 8, i32 16, i32 16, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1700* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_2a4335ba4cb06b87eed2fc3ddfa3b7bf = weak constant %EFFECTIVE_TYPE_9 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_17_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -4632053512514252050, i64 -4632053512514252050, i32 24, i32 24, i32 0, i32 1340864923, i64 384307168202282326, i64 31, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_2a4335ba4cb06b87eed2fc3ddfa3b7bf to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 9, [9 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([30 x i8], [30 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_List_node<void*>_493159777_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 493159777, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_17543168840522715329_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -903575233186836287, i64 0, <2 x i64> <i64 0, i64 16> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_3624632048442242433_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 8, i64 3624632048442242433, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11286102815387490820_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 16, i64 -7160641258322060796, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @"TYCHE_TYPE_ENTRY_int8_t *_3655320912363784647_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 16, i64 3655320912363784647, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11286102812271318890_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 8, i64 -7160641261438232726, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_11286102813308031920_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -7160641260401519696, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_3624632047401595227_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 3624632047401595227, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.21 = private unnamed_addr constant [30 x i8] c"class std::allocator<void*> *\00"
+@EFFECTIVE_INFO_efdf880aeffd482e6541d4c08bff3f = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([30 x i8], [30 x i8]* @EFFECTIVE_STRING.21, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_class std::allocator<void*> *_2901492036_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [30 x i8] c"class std::allocator<void*> *\00"
+@TYCHE_TYPE_ENTRY_coerced_2083023308676047952_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_18 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1807* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_18_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1806* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_18_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1805* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_18_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1804* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_18_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1803* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_18_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1802* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_18_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1801* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_18_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1800* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_efdf880aeffd482e6541d4c08bff3f = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_18_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 4611558203761714446, i64 4611558203761714446, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_efdf880aeffd482e6541d4c08bff3f, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([30 x i8], [30 x i8]* @"TYCHE_TYPE_ENTRY_class std::allocator<void*> *_2901492036_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2901492036, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_2083023308676047952_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 2083023308676047952, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.22 = private unnamed_addr constant [48 x i8] c"class std::allocator<std::_List_node<void*> > *\00"
+@EFFECTIVE_INFO_2654291d00585f0aeb86717a9446365 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([48 x i8], [48 x i8]* @EFFECTIVE_STRING.22, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> > *_4176600036_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [48 x i8] c"class std::allocator<std::_List_node<void*> > *\00"
+@TYCHE_TYPE_ENTRY_coerced_5076873722101004784_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_19 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1907* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_19_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1906* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_19_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1905* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_19_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1904* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_19_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1903* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_19_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1902* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_19_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1901* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_19_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE1900* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_2654291d00585f0aeb86717a9446365 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_19_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 7305758513557911726, i64 7305758513557911726, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_2654291d00585f0aeb86717a9446365, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([48 x i8], [48 x i8]* @"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> > *_4176600036_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 4176600036, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_5076873722101004784_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 5076873722101004784, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_11016493204613047107_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [56 x i8] c"class __gnu_cxx::new_allocator<std::_List_node<void*> >\00"
+@"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> >_1472731710_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [46 x i8] c"class std::allocator<std::_List_node<void*> >\00"
+@TYCHE_META_SECTION_TID_20 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2007* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_20_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2006* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_20_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2005* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_20_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2004* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_20_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2003* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_20_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2002* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_20_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2001* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_20_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2000* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_f9a488891e2fa85b2fb03c3a6f2adef9 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_20_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -441869056228937681, i64 -441869056228937681, i32 1, i32 1, i32 0, i32 1340864923, i64 -9223372036854775808, i64 7, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_1* @EFFECTIVE_INFO_f9a488891e2fa85b2fb03c3a6f2adef9 to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_11016493204613047107_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -7430250869096504509, i64 0, <2 x i64> <i64 0, i64 1> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([46 x i8], [46 x i8]* @"TYCHE_TYPE_ENTRY_class std::allocator<std::_List_node<void*> >_1472731710_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1472731710, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.23 = private unnamed_addr constant [40 x i8] c"class __gnu_cxx::new_allocator<void*> *\00"
+@EFFECTIVE_INFO_83641939116a9fe7ca82558ead72e57a = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @EFFECTIVE_STRING.23, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<void*> *_1933933624_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"class __gnu_cxx::new_allocator<void*> *\00"
+@TYCHE_TYPE_ENTRY_coerced_6481414083855401876_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_21 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2107* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_21_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2106* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_21_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2105* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_21_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2104* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_21_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2103* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_21_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2102* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_21_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2101* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_21_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2100* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_83641939116a9fe7ca82558ead72e57a = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_21_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 8855610332036825802, i64 8855610332036825802, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_83641939116a9fe7ca82558ead72e57a, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<void*> *_1933933624_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1933933624, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_6481414083855401876_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 6481414083855401876, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<void*>_2710254793_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [38 x i8] c"class __gnu_cxx::new_allocator<void*>\00"
+@TYCHE_META_SECTION_TID_22 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2207* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_22_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2206* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_22_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2205* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_22_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2204* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_22_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2203* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_22_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2202* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_22_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2201* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_22_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2200* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_94591624010de6324bf1ae65ced0cbff = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_22_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -14688588877860533, i64 -14688588877860533, i32 1, i32 1, i32 0, i32 1340864923, i64 -9223372036854775808, i64 3, %EFFECTIVE_INFO* @EFFECTIVE_INFO_94591624010de6324bf1ae65ced0cbff, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<void*>_2710254793_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2710254793, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_TYPE_ENTRY_int64_t_1076545243_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"int64_t\00"
+@TYCHE_META_SECTION_TID_23 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2307* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_23_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2306* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_23_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2305* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_23_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2304* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_23_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2303* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_23_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2302* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_23_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2301* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_23_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2300* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_INT64 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_23_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -8660233842727106565, i64 -8660233842727106565, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int64_t_1076545243_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 1076545243, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.24 = private unnamed_addr constant [58 x i8] c"class __gnu_cxx::new_allocator<std::_List_node<void*> > *\00"
+@EFFECTIVE_INFO_506dc5bddd9283918641121aaa698807 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([58 x i8], [58 x i8]* @EFFECTIVE_STRING.24, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> > *_3023560722_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [58 x i8] c"class __gnu_cxx::new_allocator<std::_List_node<void*> > *\00"
+@TYCHE_TYPE_ENTRY_coerced_2638969483719180504_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_24 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2407* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_24_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2406* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_24_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2405* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_24_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2404* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_24_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2403* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_24_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2402* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_24_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2401* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_24_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2400* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_506dc5bddd9283918641121aaa698807 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_24_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 542799934400905606, i64 542799934400905606, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_506dc5bddd9283918641121aaa698807, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([58 x i8], [58 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> > *_3023560722_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 3023560722, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_2638969483719180504_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 2638969483719180504, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_2566877944_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [56 x i8] c"class __gnu_cxx::new_allocator<std::_List_node<void*> >\00"
+@TYCHE_META_SECTION_TID_25 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2507* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_25_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2506* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_25_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2505* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_25_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2504* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_25_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2503* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_25_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2502* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_25_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2501* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_25_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2500* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_3001efdab9d4bb7e94e1b4015c583c61 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_25_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 7006572272470516116, i64 7006572272470516116, i32 1, i32 1, i32 0, i32 1340864923, i64 -9223372036854775808, i64 3, %EFFECTIVE_INFO* @EFFECTIVE_INFO_3001efdab9d4bb7e94e1b4015c583c61, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([56 x i8], [56 x i8]* @"TYCHE_TYPE_ENTRY_class __gnu_cxx::new_allocator<std::_List_node<void*> >_2566877944_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2566877944, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.25 = private unnamed_addr constant [42 x i8] c"struct std::__detail::_List_node_header *\00"
+@EFFECTIVE_INFO_5344254e42dac3f14873ad77dfa150d1 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([42 x i8], [42 x i8]* @EFFECTIVE_STRING.25, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@TYCHE_TYPE_ENTRY_coerced_17458002427441754646_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header *_2484834709_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [42 x i8] c"struct std::__detail::_List_node_header *\00"
+@TYCHE_META_SECTION_TID_26 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2607* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_26_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2606* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_26_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2605* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_26_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2604* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_26_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2603* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_26_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2602* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_26_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2601* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_26_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2600* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_5344254e42dac3f14873ad77dfa150d1 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_26_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 -3364010940488125624, i64 -3364010940488125624, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_5344254e42dac3f14873ad77dfa150d1, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_17458002427441754646_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 -988741646267796970, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([42 x i8], [42 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header *_2484834709_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2484834709, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_2612872282479293184_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [38 x i8] c"struct std::__detail::_List_node_base\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_16535623296479123008_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header_331119523_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_header\00"
+@TYCHE_TYPE_ENTRY_coerced_5446919948617299115_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_TYPE_ENTRY_coerced_5446919949726101617_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_16535623295374250650_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_TYPE_ENTRY_int64_t_17244312145750260155_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"int64_t\00"
+@TYCHE_META_SECTION_TID_27 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2707* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_27_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2706* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_27_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2705* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_27_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2704* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_27_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2703* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_27_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2702* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_27_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2701* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_27_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 0, i32 8, i32 8, i32 16, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2700* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_ef5372ab725a67382f7156b3bcb18068 = weak constant %EFFECTIVE_TYPE_8 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_27_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 7530214000984224047, i64 7530214000984224047, i32 24, i32 24, i32 0, i32 1340864923, i64 384307168202282326, i64 31, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_ef5372ab725a67382f7156b3bcb18068 to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 8, [8 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_2612872282479293184_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2612872282479293184, i64 0, <2 x i64> <i64 0, i64 16> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_16535623296479123008_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 8, i64 -1911120777230428608, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_header_331119523_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 331119523, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_5446919948617299115_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 8, i64 5446919948617299115, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_5446919949726101617_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 5446919949726101617, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_16535623295374250650_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -1911120778335300966, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_int64_t_17244312145750260155_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 16, i64 -1202431927959291461, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@TYCHE_TYPE_ENTRY_coerced_8058507268209594962_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_13923050564799640675_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_TYPE_ENTRY_coerced_8058507269319579272_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_3833566713_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [38 x i8] c"struct std::__detail::_List_node_base\00"
+@"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_13923050565905166521_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [40 x i8] c"struct std::__detail::_List_node_base *\00"
+@TYCHE_META_SECTION_TID_28 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2807* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_28_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2806* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_28_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2805* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_28_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2804* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_28_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2803* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_28_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2802* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_28_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2801* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_28_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 0, i32 8, i32 8, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2800* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_334172dfddbb8f81d6978d07c378c24c = weak constant %EFFECTIVE_TYPE_6 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_28_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 5531116071405066198, i64 5531116071405066198, i32 16, i32 16, i32 0, i32 1340864923, i64 576460752303423488, i64 15, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_334172dfddbb8f81d6978d07c378c24c to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 6, [6 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_8058507268209594962_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 8, i64 8058507268209594962, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_13923050564799640675_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 -4523693508909910941, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_8058507269319579272_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 8058507269319579272, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([38 x i8], [38 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base_3833566713_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 3833566713, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([40 x i8], [40 x i8]* @"TYCHE_TYPE_ENTRY_struct std::__detail::_List_node_base *_13923050565905166521_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 8, i64 -4523693507804385095, i64 0, <2 x i64> <i64 0, i64 8> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.26 = private unnamed_addr constant [36 x i8] c"struct std::_List_iterator<void*> *\00"
+@EFFECTIVE_INFO_689c16444bc300ae376ef320f4e10414 = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([36 x i8], [36 x i8]* @EFFECTIVE_STRING.26, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_struct std::_List_iterator<void*> *_2011707647_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [36 x i8] c"struct std::_List_iterator<void*> *\00"
+@TYCHE_TYPE_ENTRY_coerced_3968525168133582697_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_29 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2907* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_29_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2906* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_29_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2905* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_29_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2904* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_29_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2903* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_29_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2902* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_29_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2901* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_29_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE2900* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_689c16444bc300ae376ef320f4e10414 = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_29_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 1442526219306495543, i64 1442526219306495543, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_689c16444bc300ae376ef320f4e10414, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([36 x i8], [36 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_List_iterator<void*> *_2011707647_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 2011707647, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_3968525168133582697_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 3968525168133582697, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.27 = private unnamed_addr constant [42 x i8] c"struct std::_List_const_iterator<void*> *\00"
+@EFFECTIVE_INFO_52a286cc7896734b865aec653e7d355f = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([42 x i8], [42 x i8]* @EFFECTIVE_STRING.27, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@TYCHE_TYPE_ENTRY_coerced_8944874911392046040_FILE_CWE843_Type_Confusion__short_73a.cpp = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_struct std::_List_const_iterator<void*> *_1308978277_FILE_CWE843_Type_Confusion__short_73a.cpp" = private unnamed_addr constant [42 x i8] c"struct std::_List_const_iterator<void*> *\00"
+@TYCHE_META_SECTION_TID_30 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE3007* null }>], section "tyche_symbols_section_7", align 64
+@TYCHE_META_SECTION_TID_30_SEC_6_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE3006* null }>], section "tyche_symbols_section_6", align 64
+@TYCHE_META_SECTION_TID_30_SEC_5_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE3005* null }>], section "tyche_symbols_section_5", align 64
+@TYCHE_META_SECTION_TID_30_SEC_4_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE3004* null }>], section "tyche_symbols_section_4", align 64
+@TYCHE_META_SECTION_TID_30_SEC_3_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE3003* null }>], section "tyche_symbols_section_3", align 64
+@TYCHE_META_SECTION_TID_30_SEC_2_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE3002* null }>], section "tyche_symbols_section_2", align 64
+@TYCHE_META_SECTION_TID_30_SEC_1_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE3001* null }>], section "tyche_symbols_section_1", align 64
+@TYCHE_META_SECTION_TID_30_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE3000* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_52a286cc7896734b865aec653e7d355f = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @TYCHE_META_SECTION_TID_30_SEC_0_FILE_CWE843_Type_Confusion__short_73a.cpp, i64 6860527314320251526, i64 6860527314320251526, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_52a286cc7896734b865aec653e7d355f, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @TYCHE_TYPE_ENTRY_coerced_8944874911392046040_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 0, i64 8944874911392046040, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([42 x i8], [42 x i8]* @"TYCHE_TYPE_ENTRY_struct std::_List_const_iterator<void*> *_1308978277_FILE_CWE843_Type_Confusion__short_73a.cpp", i32 0, i32 0), i64 0, i64 1308978277, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @TYCHE_TYPE_ENTRY_NULL_FILE_CWE843_Type_Confusion__short_73a.cpp, i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
 
 ; Function Attrs: noinline uwtable
-define void @_ZN31CWE843_Type_Confusion__short_733badEv() #0 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !866 !effectiveSanArgs !3 {
-  %1 = alloca i8*, align 8, !effectiveSan !53
-  %2 = alloca %"class.std::__cxx11::list", align 8, !effectiveSan !543
-  %3 = alloca i16, align 2, !effectiveSan !544
-  %4 = alloca i8*
-  %5 = alloca i32
-  %6 = alloca %"class.std::__cxx11::list", align 8, !effectiveSan !543
-  call void @llvm.dbg.declare(metadata i8** %1, metadata !867, metadata !868), !dbg !869
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"* %2, metadata !870, metadata !868), !dbg !871
-  call void @_ZNSt7__cxx114listIPvSaIS1_EEC2Ev(%"class.std::__cxx11::list"* %2), !dbg !871
-  store i8* null, i8** %1, align 8, !dbg !872
-  call void @llvm.dbg.declare(metadata i16* %3, metadata !873, metadata !868), !dbg !875
-  store i16 8, i16* %3, align 2, !dbg !875
-  %7 = bitcast i16* %3 to i8*, !dbg !876, !effectiveSan !0
-  store i8* %7, i8** %1, align 8, !dbg !877
+define void @_ZN31CWE843_Type_Confusion__short_733badEv() #0 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !866 !effectiveSanArgs !3 !TYCHE_MD_ARGS !3 {
+  %1 = alloca i8*, align 8, !effectiveSan !53, !TYCHE_MD !867
+  %2 = alloca %"class.std::__cxx11::list", align 8, !effectiveSan !543, !TYCHE_MD !868
+  %3 = alloca i16, align 2, !effectiveSan !544, !TYCHE_MD !869
+  %4 = alloca i8*, !TYCHE_MD !870
+  %5 = alloca i32, !TYCHE_MD !871
+  %6 = alloca %"class.std::__cxx11::list", align 8, !effectiveSan !543, !TYCHE_MD !872
+  call void @llvm.dbg.declare(metadata i8** %1, metadata !873, metadata !874), !dbg !875
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"* %2, metadata !876, metadata !874), !dbg !877
+  call void @_ZNSt7__cxx114listIPvSaIS1_EEC2Ev(%"class.std::__cxx11::list"* %2), !dbg !877
+  store i8* null, i8** %1, align 8, !dbg !878
+  call void @llvm.dbg.declare(metadata i16* %3, metadata !879, metadata !874), !dbg !881
+  store i16 8, i16* %3, align 2, !dbg !881
+  %7 = bitcast i16* %3 to i8*, !dbg !882, !effectiveSan !0
+  store i8* %7, i8** %1, align 8, !dbg !883
   invoke void @_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_(%"class.std::__cxx11::list"* %2, i8** dereferenceable(8) %1)
-          to label %8 unwind label %14, !dbg !878
+          to label %8 unwind label %14, !dbg !884
 
 ; <label>:8:                                      ; preds = %0
   invoke void @_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_(%"class.std::__cxx11::list"* %2, i8** dereferenceable(8) %1)
-          to label %9 unwind label %14, !dbg !879
+          to label %9 unwind label %14, !dbg !885
 
 ; <label>:9:                                      ; preds = %8
   invoke void @_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_(%"class.std::__cxx11::list"* %2, i8** dereferenceable(8) %1)
-          to label %10 unwind label %14, !dbg !880
+          to label %10 unwind label %14, !dbg !886
 
 ; <label>:10:                                     ; preds = %9
   invoke void @_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_(%"class.std::__cxx11::list"* %6, %"class.std::__cxx11::list"* dereferenceable(24) %2)
-          to label %11 unwind label %14, !dbg !881
+          to label %11 unwind label %14, !dbg !887
 
 ; <label>:11:                                     ; preds = %10
   invoke void @_ZN31CWE843_Type_Confusion__short_737badSinkENSt7__cxx114listIPvSaIS2_EEE(%"class.std::__cxx11::list"* %6)
-          to label %12 unwind label %18, !dbg !882
+          to label %12 unwind label %18, !dbg !888
 
 ; <label>:12:                                     ; preds = %11
   invoke void @_ZNSt7__cxx114listIPvSaIS1_EED2Ev(%"class.std::__cxx11::list"* %6)
-          to label %13 unwind label %14, !dbg !884
+          to label %13 unwind label %14, !dbg !890
 
 ; <label>:13:                                     ; preds = %12
-  call void @_ZNSt7__cxx114listIPvSaIS1_EED2Ev(%"class.std::__cxx11::list"* %2), !dbg !886
-  ret void, !dbg !886
+  call void @_ZNSt7__cxx114listIPvSaIS1_EED2Ev(%"class.std::__cxx11::list"* %2), !dbg !892
+  ret void, !dbg !892, !TYCHE_MD !893
 
 ; <label>:14:                                     ; preds = %12, %10, %9, %8, %0
   %15 = landingpad { i8*, i32 }
-          cleanup, !dbg !887
-  %16 = extractvalue { i8*, i32 } %15, 0, !dbg !887
-  store i8* %16, i8** %4, align 8, !dbg !887
-  %17 = extractvalue { i8*, i32 } %15, 1, !dbg !887
-  store i32 %17, i32* %5, align 4, !dbg !887
-  br label %23, !dbg !887
+          cleanup, !dbg !894
+  %16 = extractvalue { i8*, i32 } %15, 0, !dbg !894
+  store i8* %16, i8** %4, align 8, !dbg !894
+  %17 = extractvalue { i8*, i32 } %15, 1, !dbg !894
+  store i32 %17, i32* %5, align 4, !dbg !894
+  br label %23, !dbg !894
 
 ; <label>:18:                                     ; preds = %11
   %19 = landingpad { i8*, i32 }
-          cleanup, !dbg !888
-  %20 = extractvalue { i8*, i32 } %19, 0, !dbg !888
-  store i8* %20, i8** %4, align 8, !dbg !888
-  %21 = extractvalue { i8*, i32 } %19, 1, !dbg !888
-  store i32 %21, i32* %5, align 4, !dbg !888
+          cleanup, !dbg !895
+  %20 = extractvalue { i8*, i32 } %19, 0, !dbg !895
+  store i8* %20, i8** %4, align 8, !dbg !895
+  %21 = extractvalue { i8*, i32 } %19, 1, !dbg !895
+  store i32 %21, i32* %5, align 4, !dbg !895
   invoke void @_ZNSt7__cxx114listIPvSaIS1_EED2Ev(%"class.std::__cxx11::list"* %6)
-          to label %22 unwind label %30, !dbg !889
+          to label %22 unwind label %30, !dbg !896
 
 ; <label>:22:                                     ; preds = %18
-  br label %23, !dbg !891
+  br label %23, !dbg !898
 
 ; <label>:23:                                     ; preds = %22, %14
   invoke void @_ZNSt7__cxx114listIPvSaIS1_EED2Ev(%"class.std::__cxx11::list"* %2)
-          to label %24 unwind label %30, !dbg !893
+          to label %24 unwind label %30, !dbg !900
 
 ; <label>:24:                                     ; preds = %23
-  br label %25, !dbg !894
+  br label %25, !dbg !901
 
 ; <label>:25:                                     ; preds = %24
-  %26 = load i8*, i8** %4, align 8, !dbg !895, !effectiveSan !0
-  %27 = load i32, i32* %5, align 4, !dbg !895, !effectiveSan !371
-  %28 = insertvalue { i8*, i32 } undef, i8* %26, 0, !dbg !895
-  %29 = insertvalue { i8*, i32 } %28, i32 %27, 1, !dbg !895
-  resume { i8*, i32 } %29, !dbg !895
+  %26 = load i8*, i8** %4, align 8, !dbg !902, !effectiveSan !0
+  %27 = load i32, i32* %5, align 4, !dbg !902, !effectiveSan !371
+  %28 = insertvalue { i8*, i32 } undef, i8* %26, 0, !dbg !902
+  %29 = insertvalue { i8*, i32 } %28, i32 %27, 1, !dbg !902
+  resume { i8*, i32 } %29, !dbg !902
 
 ; <label>:30:                                     ; preds = %23, %18
   %31 = landingpad { i8*, i32 }
-          catch i8* null, !dbg !897
-  %32 = extractvalue { i8*, i32 } %31, 0, !dbg !897
-  call void @__clang_call_terminate(i8* %32) #10, !dbg !897
-  unreachable, !dbg !897
+          catch i8* null, !dbg !904
+  %32 = extractvalue { i8*, i32 } %31, 0, !dbg !904
+  call void @__clang_call_terminate(i8* %32) #10, !dbg !904
+  unreachable, !dbg !904
 }
 
 ; Function Attrs: nounwind readnone
 declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EEC2Ev(%"class.std::__cxx11::list"*) unnamed_addr #0 comdat align 2 !dbg !898 !effectiveSanArgs !899 {
-  %2 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552
+define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EEC2Ev(%"class.std::__cxx11::list"*) unnamed_addr #0 comdat align 2 !dbg !905 !effectiveSanArgs !906 !TYCHE_MD_ARGS !907 {
+  %2 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552, !TYCHE_MD !908
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %2, metadata !900, metadata !868), !dbg !901
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %2, metadata !909, metadata !874), !dbg !910
   %3 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %2, align 8, !effectiveSan !543
-  %4 = bitcast %"class.std::__cxx11::list"* %3 to %"class.std::__cxx11::_List_base"*, !dbg !902, !effectiveSan !553
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev(%"class.std::__cxx11::_List_base"* %4), !dbg !903
-  ret void, !dbg !904
+  %4 = bitcast %"class.std::__cxx11::list"* %3 to %"class.std::__cxx11::_List_base"*, !dbg !911, !effectiveSan !553
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev(%"class.std::__cxx11::_List_base"* %4), !dbg !912
+  ret void, !dbg !913, !TYCHE_MD !914
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_(%"class.std::__cxx11::list"*, i8** dereferenceable(8)) #0 comdat align 2 !dbg !905 !effectiveSanArgs !906 {
-  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552
-  %4 = alloca i8**, align 8, !effectiveSan !589
-  %5 = alloca %"struct.std::_List_iterator", align 8, !effectiveSan !590
+define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_(%"class.std::__cxx11::list"*, i8** dereferenceable(8)) #0 comdat align 2 !dbg !915 !effectiveSanArgs !916 !TYCHE_MD_ARGS !917 {
+  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552, !TYCHE_MD !918
+  %4 = alloca i8**, align 8, !effectiveSan !589, !TYCHE_MD !919
+  %5 = alloca %"struct.std::_List_iterator", align 8, !effectiveSan !590, !TYCHE_MD !920
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !907, metadata !868), !dbg !908
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !921, metadata !874), !dbg !922
   store i8** %1, i8*** %4, align 8
-  call void @llvm.dbg.declare(metadata i8*** %4, metadata !909, metadata !868), !dbg !910
+  call void @llvm.dbg.declare(metadata i8*** %4, metadata !923, metadata !874), !dbg !924
   %6 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %3, align 8, !effectiveSan !543
-  %7 = call %"struct.std::__detail::_List_node_base"* @_ZNSt7__cxx114listIPvSaIS1_EE3endEv(%"class.std::__cxx11::list"* %6), !dbg !911, !effectiveSan !340
-  %8 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %5, i32 0, i32 0, !dbg !911
-  store %"struct.std::__detail::_List_node_base"* %7, %"struct.std::__detail::_List_node_base"** %8, align 8, !dbg !911
-  %9 = load i8**, i8*** %4, align 8, !dbg !912, !effectiveSan !318
-  %10 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %5, i32 0, i32 0, !dbg !913
-  %11 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %10, align 8, !dbg !913, !effectiveSan !340
-  call void @_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_(%"class.std::__cxx11::list"* %6, %"struct.std::__detail::_List_node_base"* %11, i8** dereferenceable(8) %9), !dbg !914
-  ret void, !dbg !916
+  %7 = call %"struct.std::__detail::_List_node_base"* @_ZNSt7__cxx114listIPvSaIS1_EE3endEv(%"class.std::__cxx11::list"* %6), !dbg !925, !effectiveSan !340
+  %8 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %5, i32 0, i32 0, !dbg !925
+  store %"struct.std::__detail::_List_node_base"* %7, %"struct.std::__detail::_List_node_base"** %8, align 8, !dbg !925
+  %9 = load i8**, i8*** %4, align 8, !dbg !926, !effectiveSan !318
+  %10 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %5, i32 0, i32 0, !dbg !927
+  %11 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %10, align 8, !dbg !927, !effectiveSan !340
+  call void @_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_(%"class.std::__cxx11::list"* %6, %"struct.std::__detail::_List_node_base"* %11, i8** dereferenceable(8) %9), !dbg !928
+  ret void, !dbg !930, !TYCHE_MD !931
 }
 
 declare i32 @__gxx_personality_v0(...)
@@ -309,91 +945,91 @@ declare i32 @__gxx_personality_v0(...)
 declare void @_ZN31CWE843_Type_Confusion__short_737badSinkENSt7__cxx114listIPvSaIS2_EEE(%"class.std::__cxx11::list"*) #2
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_(%"class.std::__cxx11::list"*, %"class.std::__cxx11::list"* dereferenceable(24)) unnamed_addr #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !917 !effectiveSanArgs !918 {
-  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552
-  %4 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !600
-  %5 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !601
-  %6 = alloca i8*
-  %7 = alloca i32
-  %8 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !601
-  %9 = alloca %"struct.std::__false_type", align 1, !effectiveSan !602
+define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_(%"class.std::__cxx11::list"*, %"class.std::__cxx11::list"* dereferenceable(24)) unnamed_addr #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !932 !effectiveSanArgs !933 !TYCHE_MD_ARGS !934 {
+  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552, !TYCHE_MD !935
+  %4 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !600, !TYCHE_MD !936
+  %5 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !601, !TYCHE_MD !937
+  %6 = alloca i8*, !TYCHE_MD !938
+  %7 = alloca i32, !TYCHE_MD !939
+  %8 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !601, !TYCHE_MD !940
+  %9 = alloca %"struct.std::__false_type", align 1, !effectiveSan !602, !TYCHE_MD !941
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !919, metadata !868), !dbg !920
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !942, metadata !874), !dbg !943
   store %"class.std::__cxx11::list"* %1, %"class.std::__cxx11::list"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %4, metadata !921, metadata !868), !dbg !922
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %4, metadata !944, metadata !874), !dbg !945
   %10 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %3, align 8, !effectiveSan !543
-  %11 = bitcast %"class.std::__cxx11::list"* %10 to %"class.std::__cxx11::_List_base"*, !dbg !923, !effectiveSan !553
-  %12 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %4, align 8, !dbg !924, !effectiveSan !414
-  %13 = bitcast %"class.std::__cxx11::list"* %12 to %"class.std::__cxx11::_List_base"*, !dbg !924, !effectiveSan !553
-  %14 = call dereferenceable(1) %"class.std::allocator"* @_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"* %13), !dbg !925, !effectiveSan !211
-  %15 = call dereferenceable(1) %"class.std::allocator"* @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_(%"class.std::allocator"* dereferenceable(1) %14), !dbg !926, !effectiveSan !211
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE(%"class.std::__cxx11::_List_base"* %11, %"class.std::allocator"* dereferenceable(1) %15), !dbg !927
-  %16 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %4, align 8, !dbg !929, !effectiveSan !414
+  %11 = bitcast %"class.std::__cxx11::list"* %10 to %"class.std::__cxx11::_List_base"*, !dbg !946, !effectiveSan !553
+  %12 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %4, align 8, !dbg !947, !effectiveSan !414
+  %13 = bitcast %"class.std::__cxx11::list"* %12 to %"class.std::__cxx11::_List_base"*, !dbg !947, !effectiveSan !553
+  %14 = call dereferenceable(1) %"class.std::allocator"* @_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"* %13), !dbg !948, !effectiveSan !211
+  %15 = call dereferenceable(1) %"class.std::allocator"* @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_(%"class.std::allocator"* dereferenceable(1) %14), !dbg !949, !effectiveSan !211
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE(%"class.std::__cxx11::_List_base"* %11, %"class.std::allocator"* dereferenceable(1) %15), !dbg !950
+  %16 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %4, align 8, !dbg !952, !effectiveSan !414
   %17 = invoke %"struct.std::__detail::_List_node_base"* @_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv(%"class.std::__cxx11::list"* %16)
-          to label %18 unwind label %29, !dbg !931, !effectiveSan !324
+          to label %18 unwind label %29, !dbg !954, !effectiveSan !324
 
 ; <label>:18:                                     ; preds = %2
-  %19 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0, !dbg !932
-  store %"struct.std::__detail::_List_node_base"* %17, %"struct.std::__detail::_List_node_base"** %19, align 8, !dbg !932
-  %20 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %4, align 8, !dbg !934, !effectiveSan !414
+  %19 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0, !dbg !955
+  store %"struct.std::__detail::_List_node_base"* %17, %"struct.std::__detail::_List_node_base"** %19, align 8, !dbg !955
+  %20 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %4, align 8, !dbg !957, !effectiveSan !414
   %21 = invoke %"struct.std::__detail::_List_node_base"* @_ZNKSt7__cxx114listIPvSaIS1_EE3endEv(%"class.std::__cxx11::list"* %20)
-          to label %22 unwind label %29, !dbg !935, !effectiveSan !324
+          to label %22 unwind label %29, !dbg !958, !effectiveSan !324
 
 ; <label>:22:                                     ; preds = %18
-  %23 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %8, i32 0, i32 0, !dbg !936
-  store %"struct.std::__detail::_List_node_base"* %21, %"struct.std::__detail::_List_node_base"** %23, align 8, !dbg !936
-  %24 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0, !dbg !938
-  %25 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %24, align 8, !dbg !938, !effectiveSan !324
-  %26 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %8, i32 0, i32 0, !dbg !938
-  %27 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %26, align 8, !dbg !938, !effectiveSan !324
+  %23 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %8, i32 0, i32 0, !dbg !959
+  store %"struct.std::__detail::_List_node_base"* %21, %"struct.std::__detail::_List_node_base"** %23, align 8, !dbg !959
+  %24 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0, !dbg !961
+  %25 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %24, align 8, !dbg !961, !effectiveSan !324
+  %26 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %8, i32 0, i32 0, !dbg !961
+  %27 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %26, align 8, !dbg !961, !effectiveSan !324
   invoke void @_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type(%"class.std::__cxx11::list"* %10, %"struct.std::__detail::_List_node_base"* %25, %"struct.std::__detail::_List_node_base"* %27)
-          to label %28 unwind label %29, !dbg !938
+          to label %28 unwind label %29, !dbg !961
 
 ; <label>:28:                                     ; preds = %22
-  ret void, !dbg !939
+  ret void, !dbg !962, !TYCHE_MD !964
 
 ; <label>:29:                                     ; preds = %22, %18, %2
   %30 = landingpad { i8*, i32 }
-          cleanup, !dbg !941
-  %31 = extractvalue { i8*, i32 } %30, 0, !dbg !941
-  store i8* %31, i8** %6, align 8, !dbg !941
-  %32 = extractvalue { i8*, i32 } %30, 1, !dbg !941
-  store i32 %32, i32* %7, align 4, !dbg !941
-  %33 = bitcast %"class.std::__cxx11::list"* %10 to %"class.std::__cxx11::_List_base"*, !dbg !941, !effectiveSan !553
+          cleanup, !dbg !965
+  %31 = extractvalue { i8*, i32 } %30, 0, !dbg !965
+  store i8* %31, i8** %6, align 8, !dbg !965
+  %32 = extractvalue { i8*, i32 } %30, 1, !dbg !965
+  store i32 %32, i32* %7, align 4, !dbg !965
+  %33 = bitcast %"class.std::__cxx11::list"* %10 to %"class.std::__cxx11::_List_base"*, !dbg !965, !effectiveSan !553
   invoke void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev(%"class.std::__cxx11::_List_base"* %33)
-          to label %34 unwind label %40, !dbg !941
+          to label %34 unwind label %40, !dbg !965
 
 ; <label>:34:                                     ; preds = %29
-  br label %35, !dbg !943
+  br label %35, !dbg !967
 
 ; <label>:35:                                     ; preds = %34
-  %36 = load i8*, i8** %6, align 8, !dbg !945, !effectiveSan !0
-  %37 = load i32, i32* %7, align 4, !dbg !945, !effectiveSan !371
-  %38 = insertvalue { i8*, i32 } undef, i8* %36, 0, !dbg !945
-  %39 = insertvalue { i8*, i32 } %38, i32 %37, 1, !dbg !945
-  resume { i8*, i32 } %39, !dbg !945
+  %36 = load i8*, i8** %6, align 8, !dbg !969, !effectiveSan !0
+  %37 = load i32, i32* %7, align 4, !dbg !969, !effectiveSan !371
+  %38 = insertvalue { i8*, i32 } undef, i8* %36, 0, !dbg !969
+  %39 = insertvalue { i8*, i32 } %38, i32 %37, 1, !dbg !969
+  resume { i8*, i32 } %39, !dbg !969
 
 ; <label>:40:                                     ; preds = %29
   %41 = landingpad { i8*, i32 }
-          catch i8* null, !dbg !947
-  %42 = extractvalue { i8*, i32 } %41, 0, !dbg !947
-  call void @__clang_call_terminate(i8* %42) #10, !dbg !947
-  unreachable, !dbg !947
+          catch i8* null, !dbg !971
+  %42 = extractvalue { i8*, i32 } %41, 0, !dbg !971
+  call void @__clang_call_terminate(i8* %42) #10, !dbg !971
+  unreachable, !dbg !971
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EED2Ev(%"class.std::__cxx11::list"*) unnamed_addr #0 comdat align 2 !dbg !949 !effectiveSanArgs !899 {
-  %2 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552
+define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EED2Ev(%"class.std::__cxx11::list"*) unnamed_addr #0 comdat align 2 !dbg !973 !effectiveSanArgs !906 !TYCHE_MD_ARGS !975 {
+  %2 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552, !TYCHE_MD !976
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %2, metadata !951, metadata !868), !dbg !952
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %2, metadata !977, metadata !874), !dbg !978
   %3 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %2, align 8, !effectiveSan !543
-  %4 = bitcast %"class.std::__cxx11::list"* %3 to %"class.std::__cxx11::_List_base"*, !dbg !953, !effectiveSan !553
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev(%"class.std::__cxx11::_List_base"* %4), !dbg !953
-  ret void, !dbg !955
+  %4 = bitcast %"class.std::__cxx11::list"* %3 to %"class.std::__cxx11::_List_base"*, !dbg !979, !effectiveSan !553
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev(%"class.std::__cxx11::_List_base"* %4), !dbg !979
+  ret void, !dbg !981, !TYCHE_MD !982
 }
 
 ; Function Attrs: noinline noreturn nounwind
-define linkonce_odr hidden void @__clang_call_terminate(i8*) #3 comdat {
+define linkonce_odr hidden void @__clang_call_terminate(i8*) #3 comdat !TYCHE_MD_ARGS !983 {
   %2 = call i8* @__cxa_begin_catch(i8* %0) #11
   call void @_ZSt9terminatev() #10
   unreachable
@@ -404,22 +1040,22 @@ declare i8* @__cxa_begin_catch(i8*)
 declare void @_ZSt9terminatev()
 
 ; Function Attrs: noinline norecurse uwtable
-define i32 @main(i32, i8**) #4 !dbg !956 !effectiveSanArgs !959 {
-  %3 = alloca i32, align 4, !effectiveSan !546
-  %4 = alloca i32, align 4, !effectiveSan !546
-  %5 = alloca i8**, align 8, !effectiveSan !547
+define i32 @main(i32, i8**) #4 !dbg !984 !effectiveSanArgs !987 !TYCHE_MD_ARGS !988 {
+  %3 = alloca i32, align 4, !effectiveSan !546, !TYCHE_MD !989
+  %4 = alloca i32, align 4, !effectiveSan !546, !TYCHE_MD !990
+  %5 = alloca i8**, align 8, !effectiveSan !547, !TYCHE_MD !991
   store i32 0, i32* %3, align 4
   store i32 %0, i32* %4, align 4
-  call void @llvm.dbg.declare(metadata i32* %4, metadata !960, metadata !868), !dbg !961
+  call void @llvm.dbg.declare(metadata i32* %4, metadata !992, metadata !874), !dbg !993
   store i8** %1, i8*** %5, align 8
-  call void @llvm.dbg.declare(metadata i8*** %5, metadata !962, metadata !868), !dbg !963
-  %6 = call i64 @time(i64* null) #11, !dbg !964, !effectiveSan !551
-  %7 = trunc i64 %6 to i32, !dbg !964
-  call void @srand(i32 %7) #11, !dbg !965
-  call void @printLine(i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str, i32 0, i32 0)), !dbg !967
-  call void @_ZN31CWE843_Type_Confusion__short_733badEv(), !dbg !968
-  call void @printLine(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.1, i32 0, i32 0)), !dbg !969
-  ret i32 0, !dbg !970
+  call void @llvm.dbg.declare(metadata i8*** %5, metadata !994, metadata !874), !dbg !995
+  %6 = call i64 @time(i64* null) #11, !dbg !996, !effectiveSan !551
+  %7 = trunc i64 %6 to i32, !dbg !996
+  call void @srand(i32 %7) #11, !dbg !997
+  call void @printLine(i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str, i32 0, i32 0)), !dbg !999
+  call void @_ZN31CWE843_Type_Confusion__short_733badEv(), !dbg !1000
+  call void @printLine(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.1, i32 0, i32 0)), !dbg !1001
+  ret i32 0, !dbg !1002, !TYCHE_MD !1003
 }
 
 ; Function Attrs: nounwind
@@ -431,530 +1067,530 @@ declare i64 @time(i64*) #5
 declare void @printLine(i8*) #2
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev(%"class.std::__cxx11::_List_base"*) unnamed_addr #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !971 !effectiveSanArgs !972 {
-  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554
-  %3 = alloca i8*
-  %4 = alloca i32
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev(%"class.std::__cxx11::_List_base"*) unnamed_addr #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !1004 !effectiveSanArgs !1005 !TYCHE_MD_ARGS !1006 {
+  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554, !TYCHE_MD !1007
+  %3 = alloca i8*, !TYCHE_MD !1008
+  %4 = alloca i32, !TYCHE_MD !1009
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !973, metadata !868), !dbg !974
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1010, metadata !874), !dbg !1011
   %5 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %2, align 8, !effectiveSan !553
   invoke void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv(%"class.std::__cxx11::_List_base"* %5)
-          to label %6 unwind label %8, !dbg !975
+          to label %6 unwind label %8, !dbg !1012
 
 ; <label>:6:                                      ; preds = %1
-  %7 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !977, !effectiveSan !555
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7) #11, !dbg !977
-  ret void, !dbg !979
+  %7 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1014, !effectiveSan !555
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7) #11, !dbg !1014
+  ret void, !dbg !1016, !TYCHE_MD !1018
 
 ; <label>:8:                                      ; preds = %1
   %9 = landingpad { i8*, i32 }
-          cleanup, !dbg !981
-  %10 = extractvalue { i8*, i32 } %9, 0, !dbg !981
-  store i8* %10, i8** %3, align 8, !dbg !981
-  %11 = extractvalue { i8*, i32 } %9, 1, !dbg !981
-  store i32 %11, i32* %4, align 4, !dbg !981
-  %12 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !981, !effectiveSan !555
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %12) #11, !dbg !981
-  br label %13, !dbg !981
+          cleanup, !dbg !1019
+  %10 = extractvalue { i8*, i32 } %9, 0, !dbg !1019
+  store i8* %10, i8** %3, align 8, !dbg !1019
+  %11 = extractvalue { i8*, i32 } %9, 1, !dbg !1019
+  store i32 %11, i32* %4, align 4, !dbg !1019
+  %12 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1019, !effectiveSan !555
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %12) #11, !dbg !1019
+  br label %13, !dbg !1019
 
 ; <label>:13:                                     ; preds = %8
-  %14 = load i8*, i8** %3, align 8, !dbg !983, !effectiveSan !0
-  %15 = load i32, i32* %4, align 4, !dbg !983, !effectiveSan !371
-  %16 = insertvalue { i8*, i32 } undef, i8* %14, 0, !dbg !983
-  %17 = insertvalue { i8*, i32 } %16, i32 %15, 1, !dbg !983
-  resume { i8*, i32 } %17, !dbg !983
+  %14 = load i8*, i8** %3, align 8, !dbg !1021, !effectiveSan !0
+  %15 = load i32, i32* %4, align 4, !dbg !1021, !effectiveSan !371
+  %16 = insertvalue { i8*, i32 } undef, i8* %14, 0, !dbg !1021
+  %17 = insertvalue { i8*, i32 } %16, i32 %15, 1, !dbg !1021
+  resume { i8*, i32 } %17, !dbg !1021
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv(%"class.std::__cxx11::_List_base"*) #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !9 !effectiveSanArgs !972 {
-  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554
-  %3 = alloca %"struct.std::__detail::_List_node_base"*, align 8, !effectiveSan !556
-  %4 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !558
-  %5 = alloca i8**, align 8, !effectiveSan !559
-  %6 = alloca %"class.std::allocator.0", align 1, !effectiveSan !560
-  %7 = alloca i8*
-  %8 = alloca i32
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv(%"class.std::__cxx11::_List_base"*) #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !9 !effectiveSanArgs !1005 !TYCHE_MD_ARGS !1023 {
+  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554, !TYCHE_MD !1024
+  %3 = alloca %"struct.std::__detail::_List_node_base"*, align 8, !effectiveSan !556, !TYCHE_MD !1025
+  %4 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !558, !TYCHE_MD !1026
+  %5 = alloca i8**, align 8, !effectiveSan !559, !TYCHE_MD !1027
+  %6 = alloca %"class.std::allocator.0", align 1, !effectiveSan !560, !TYCHE_MD !1028
+  %7 = alloca i8*, !TYCHE_MD !1029
+  %8 = alloca i32, !TYCHE_MD !1030
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !985, metadata !868), !dbg !986
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1031, metadata !874), !dbg !1032
   %9 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %2, align 8, !effectiveSan !553
-  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_base"** %3, metadata !987, metadata !868), !dbg !988
-  %10 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %9, i32 0, i32 0, !dbg !989, !effectiveSan !555
-  %11 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %10, i32 0, i32 0, !dbg !990, !effectiveSan !557
-  %12 = bitcast %"struct.std::__detail::_List_node_header"* %11 to %"struct.std::__detail::_List_node_base"*, !dbg !989, !effectiveSan !127
-  %13 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %12, i32 0, i32 0, !dbg !991, !effectiveSan !556
-  %14 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %13, align 8, !dbg !991, !effectiveSan !127
-  store %"struct.std::__detail::_List_node_base"* %14, %"struct.std::__detail::_List_node_base"** %3, align 8, !dbg !988
-  br label %15, !dbg !992
+  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_base"** %3, metadata !1033, metadata !874), !dbg !1034
+  %10 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %9, i32 0, i32 0, !dbg !1035, !effectiveSan !555
+  %11 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %10, i32 0, i32 0, !dbg !1036, !effectiveSan !557
+  %12 = bitcast %"struct.std::__detail::_List_node_header"* %11 to %"struct.std::__detail::_List_node_base"*, !dbg !1035, !effectiveSan !127
+  %13 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %12, i32 0, i32 0, !dbg !1037, !effectiveSan !556
+  %14 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %13, align 8, !dbg !1037, !effectiveSan !127
+  store %"struct.std::__detail::_List_node_base"* %14, %"struct.std::__detail::_List_node_base"** %3, align 8, !dbg !1034
+  br label %15, !dbg !1038
 
 ; <label>:15:                                     ; preds = %33, %1
-  %16 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %3, align 8, !dbg !993, !effectiveSan !127
-  %17 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %9, i32 0, i32 0, !dbg !995, !effectiveSan !555
-  %18 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %17, i32 0, i32 0, !dbg !996, !effectiveSan !557
-  %19 = bitcast %"struct.std::__detail::_List_node_header"* %18 to %"struct.std::__detail::_List_node_base"*, !dbg !997, !effectiveSan !127
-  %20 = icmp ne %"struct.std::__detail::_List_node_base"* %16, %19, !dbg !998
-  br i1 %20, label %21, label %39, !dbg !999
+  %16 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %3, align 8, !dbg !1039, !effectiveSan !127
+  %17 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %9, i32 0, i32 0, !dbg !1041, !effectiveSan !555
+  %18 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %17, i32 0, i32 0, !dbg !1042, !effectiveSan !557
+  %19 = bitcast %"struct.std::__detail::_List_node_header"* %18 to %"struct.std::__detail::_List_node_base"*, !dbg !1043, !effectiveSan !127
+  %20 = icmp ne %"struct.std::__detail::_List_node_base"* %16, %19, !dbg !1044
+  br i1 %20, label %21, label %39, !dbg !1045
 
 ; <label>:21:                                     ; preds = %15
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %4, metadata !1000, metadata !868), !dbg !1002
-  %22 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %3, align 8, !dbg !1003, !effectiveSan !127
-  %23 = bitcast %"struct.std::__detail::_List_node_base"* %22 to %"struct.std::_List_node"*, !dbg !1004, !effectiveSan !178
-  store %"struct.std::_List_node"* %23, %"struct.std::_List_node"** %4, align 8, !dbg !1002
-  %24 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %4, align 8, !dbg !1005, !effectiveSan !6
-  %25 = bitcast %"struct.std::_List_node"* %24 to %"struct.std::__detail::_List_node_base"*, !dbg !1006, !effectiveSan !127
-  %26 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %25, i32 0, i32 0, !dbg !1006, !effectiveSan !556
-  %27 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %26, align 8, !dbg !1006, !effectiveSan !127
-  store %"struct.std::__detail::_List_node_base"* %27, %"struct.std::__detail::_List_node_base"** %3, align 8, !dbg !1007
-  call void @llvm.dbg.declare(metadata i8*** %5, metadata !1008, metadata !868), !dbg !1009
-  %28 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %4, align 8, !dbg !1010, !effectiveSan !6
-  %29 = call i8** @_ZNSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"* %28), !dbg !1011, !effectiveSan !53
-  store i8** %29, i8*** %5, align 8, !dbg !1009
-  %30 = call dereferenceable(1) %"class.std::allocator"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"* %9), !dbg !1012, !effectiveSan !265
-  call void @_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E(%"class.std::allocator.0"* %6, %"class.std::allocator"* dereferenceable(1) %30) #11, !dbg !1013
-  %31 = bitcast %"class.std::allocator.0"* %6 to %"class.__gnu_cxx::new_allocator.1"*, !dbg !1015, !effectiveSan !568
-  %32 = load i8**, i8*** %5, align 8, !dbg !1016, !effectiveSan !53
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %4, metadata !1046, metadata !874), !dbg !1048
+  %22 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %3, align 8, !dbg !1049, !effectiveSan !127
+  %23 = bitcast %"struct.std::__detail::_List_node_base"* %22 to %"struct.std::_List_node"*, !dbg !1050, !effectiveSan !178
+  store %"struct.std::_List_node"* %23, %"struct.std::_List_node"** %4, align 8, !dbg !1048
+  %24 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %4, align 8, !dbg !1051, !effectiveSan !6
+  %25 = bitcast %"struct.std::_List_node"* %24 to %"struct.std::__detail::_List_node_base"*, !dbg !1052, !effectiveSan !127
+  %26 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %25, i32 0, i32 0, !dbg !1052, !effectiveSan !556
+  %27 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %26, align 8, !dbg !1052, !effectiveSan !127
+  store %"struct.std::__detail::_List_node_base"* %27, %"struct.std::__detail::_List_node_base"** %3, align 8, !dbg !1053
+  call void @llvm.dbg.declare(metadata i8*** %5, metadata !1054, metadata !874), !dbg !1055
+  %28 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %4, align 8, !dbg !1056, !effectiveSan !6
+  %29 = call i8** @_ZNSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"* %28), !dbg !1057, !effectiveSan !53
+  store i8** %29, i8*** %5, align 8, !dbg !1055
+  %30 = call dereferenceable(1) %"class.std::allocator"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"* %9), !dbg !1058, !effectiveSan !265
+  call void @_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E(%"class.std::allocator.0"* %6, %"class.std::allocator"* dereferenceable(1) %30) #11, !dbg !1059
+  %31 = bitcast %"class.std::allocator.0"* %6 to %"class.__gnu_cxx::new_allocator.1"*, !dbg !1061, !effectiveSan !568
+  %32 = load i8**, i8*** %5, align 8, !dbg !1062, !effectiveSan !53
   invoke void @_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_(%"class.__gnu_cxx::new_allocator.1"* %31, i8** %32)
-          to label %33 unwind label %35, !dbg !1017
+          to label %33 unwind label %35, !dbg !1063
 
 ; <label>:33:                                     ; preds = %21
-  call void @_ZNSaIPvED2Ev(%"class.std::allocator.0"* %6) #11, !dbg !1018
-  %34 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %4, align 8, !dbg !1020, !effectiveSan !6
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E(%"class.std::__cxx11::_List_base"* %9, %"struct.std::_List_node"* %34), !dbg !1021
-  br label %15, !dbg !1022, !llvm.loop !1024
+  call void @_ZNSaIPvED2Ev(%"class.std::allocator.0"* %6) #11, !dbg !1064
+  %34 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %4, align 8, !dbg !1066, !effectiveSan !6
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E(%"class.std::__cxx11::_List_base"* %9, %"struct.std::_List_node"* %34), !dbg !1067
+  br label %15, !dbg !1068, !llvm.loop !1070
 
 ; <label>:35:                                     ; preds = %21
   %36 = landingpad { i8*, i32 }
-          cleanup, !dbg !1026
-  %37 = extractvalue { i8*, i32 } %36, 0, !dbg !1026
-  store i8* %37, i8** %7, align 8, !dbg !1026
-  %38 = extractvalue { i8*, i32 } %36, 1, !dbg !1026
-  store i32 %38, i32* %8, align 4, !dbg !1026
-  call void @_ZNSaIPvED2Ev(%"class.std::allocator.0"* %6) #11, !dbg !1027
-  br label %40, !dbg !1027
+          cleanup, !dbg !1072
+  %37 = extractvalue { i8*, i32 } %36, 0, !dbg !1072
+  store i8* %37, i8** %7, align 8, !dbg !1072
+  %38 = extractvalue { i8*, i32 } %36, 1, !dbg !1072
+  store i32 %38, i32* %8, align 4, !dbg !1072
+  call void @_ZNSaIPvED2Ev(%"class.std::allocator.0"* %6) #11, !dbg !1073
+  br label %40, !dbg !1073
 
 ; <label>:39:                                     ; preds = %15
-  ret void, !dbg !1029
+  ret void, !dbg !1075, !TYCHE_MD !1076
 
 ; <label>:40:                                     ; preds = %35
-  %41 = load i8*, i8** %7, align 8, !dbg !1030, !effectiveSan !0
-  %42 = load i32, i32* %8, align 4, !dbg !1030, !effectiveSan !371
-  %43 = insertvalue { i8*, i32 } undef, i8* %41, 0, !dbg !1030
-  %44 = insertvalue { i8*, i32 } %43, i32 %42, 1, !dbg !1030
-  resume { i8*, i32 } %44, !dbg !1030
+  %41 = load i8*, i8** %7, align 8, !dbg !1077, !effectiveSan !0
+  %42 = load i32, i32* %8, align 4, !dbg !1077, !effectiveSan !371
+  %43 = insertvalue { i8*, i32 } undef, i8* %41, 0, !dbg !1077
+  %44 = insertvalue { i8*, i32 } %43, i32 %42, 1, !dbg !1077
+  resume { i8*, i32 } %44, !dbg !1077
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*) unnamed_addr #6 comdat align 2 !dbg !1032 !effectiveSanArgs !1034 {
-  %2 = alloca %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, align 8, !effectiveSan !584
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*) unnamed_addr #6 comdat align 2 !dbg !1079 !effectiveSanArgs !1081 !TYCHE_MD_ARGS !1082 {
+  %2 = alloca %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, align 8, !effectiveSan !584, !TYCHE_MD !1083
   store %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %0, %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %2, metadata !1035, metadata !868), !dbg !1036
+  call void @llvm.dbg.declare(metadata %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %2, metadata !1084, metadata !874), !dbg !1085
   %3 = load %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %2, align 8, !effectiveSan !555
-  %4 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %3 to %"class.std::allocator"*, !dbg !1037, !effectiveSan !265
-  call void @_ZNSaISt10_List_nodeIPvEED2Ev(%"class.std::allocator"* %4) #11, !dbg !1037
-  ret void, !dbg !1039
+  %4 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %3 to %"class.std::allocator"*, !dbg !1086, !effectiveSan !265
+  call void @_ZNSaISt10_List_nodeIPvEED2Ev(%"class.std::allocator"* %4) #11, !dbg !1086
+  ret void, !dbg !1088, !TYCHE_MD !1089
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr i8** @_ZNSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"*) #0 comdat align 2 !dbg !1040 !effectiveSanArgs !1041 {
-  %2 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !569
+define linkonce_odr i8** @_ZNSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"*) #0 comdat align 2 !dbg !1090 !effectiveSanArgs !1091 !TYCHE_MD_ARGS !1092 {
+  %2 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !569, !TYCHE_MD !1093
   store %"struct.std::_List_node"* %0, %"struct.std::_List_node"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %2, metadata !1042, metadata !868), !dbg !1043
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %2, metadata !1094, metadata !874), !dbg !1095
   %3 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %2, align 8, !effectiveSan !178
-  %4 = getelementptr inbounds %"struct.std::_List_node", %"struct.std::_List_node"* %3, i32 0, i32 1, !dbg !1044, !effectiveSan !53
-  %5 = call i8** @_ZSt11__addressofIPvEPT_RS1_(i8** dereferenceable(8) %4), !dbg !1045, !effectiveSan !53
-  ret i8** %5, !dbg !1046
+  %4 = getelementptr inbounds %"struct.std::_List_node", %"struct.std::_List_node"* %3, i32 0, i32 1, !dbg !1096, !effectiveSan !53
+  %5 = call i8** @_ZSt11__addressofIPvEPT_RS1_(i8** dereferenceable(8) %4), !dbg !1097, !effectiveSan !53
+  ret i8** %5, !dbg !1098, !TYCHE_MD !1099
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr dereferenceable(1) %"class.std::allocator"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"*) #6 comdat align 2 !dbg !1047 !effectiveSanArgs !972 {
-  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554
+define linkonce_odr dereferenceable(1) %"class.std::allocator"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"*) #6 comdat align 2 !dbg !1100 !effectiveSanArgs !1005 !TYCHE_MD_ARGS !1101 {
+  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554, !TYCHE_MD !1102
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1048, metadata !868), !dbg !1049
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1103, metadata !874), !dbg !1104
   %3 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %2, align 8, !effectiveSan !553
-  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0, !dbg !1050, !effectiveSan !555
-  %5 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %4 to %"class.std::allocator"*, !dbg !1050, !effectiveSan !265
-  ret %"class.std::allocator"* %5, !dbg !1051
+  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0, !dbg !1105, !effectiveSan !555
+  %5 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %4 to %"class.std::allocator"*, !dbg !1105, !effectiveSan !265
+  ret %"class.std::allocator"* %5, !dbg !1106, !TYCHE_MD !1107
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E(%"class.std::allocator.0"*, %"class.std::allocator"* dereferenceable(1)) unnamed_addr #6 comdat align 2 !dbg !1052 !effectiveSanArgs !1056 {
-  %3 = alloca %"class.std::allocator.0"*, align 8, !effectiveSan !572
-  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !574
+define linkonce_odr void @_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E(%"class.std::allocator.0"*, %"class.std::allocator"* dereferenceable(1)) unnamed_addr #6 comdat align 2 !dbg !1108 !effectiveSanArgs !1112 !TYCHE_MD_ARGS !1113 {
+  %3 = alloca %"class.std::allocator.0"*, align 8, !effectiveSan !572, !TYCHE_MD !1114
+  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !574, !TYCHE_MD !1115
   store %"class.std::allocator.0"* %0, %"class.std::allocator.0"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator.0"** %3, metadata !1057, metadata !868), !dbg !1058
+  call void @llvm.dbg.declare(metadata %"class.std::allocator.0"** %3, metadata !1116, metadata !874), !dbg !1117
   store %"class.std::allocator"* %1, %"class.std::allocator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1059, metadata !868), !dbg !1060
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1118, metadata !874), !dbg !1119
   %5 = load %"class.std::allocator.0"*, %"class.std::allocator.0"** %3, align 8, !effectiveSan !573
-  %6 = bitcast %"class.std::allocator.0"* %5 to %"class.__gnu_cxx::new_allocator.1"*, !dbg !1061, !effectiveSan !568
-  call void @_ZN9__gnu_cxx13new_allocatorIPvEC2Ev(%"class.__gnu_cxx::new_allocator.1"* %6) #11, !dbg !1062
-  ret void, !dbg !1063
+  %6 = bitcast %"class.std::allocator.0"* %5 to %"class.__gnu_cxx::new_allocator.1"*, !dbg !1120, !effectiveSan !568
+  call void @_ZN9__gnu_cxx13new_allocatorIPvEC2Ev(%"class.__gnu_cxx::new_allocator.1"* %6) #11, !dbg !1121
+  ret void, !dbg !1122, !TYCHE_MD !1123
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_(%"class.__gnu_cxx::new_allocator.1"*, i8**) #6 comdat align 2 !dbg !1064 !effectiveSanArgs !1065 {
-  %3 = alloca %"class.__gnu_cxx::new_allocator.1"*, align 8, !effectiveSan !575
-  %4 = alloca i8**, align 8, !effectiveSan !576
+define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_(%"class.__gnu_cxx::new_allocator.1"*, i8**) #6 comdat align 2 !dbg !1124 !effectiveSanArgs !1125 !TYCHE_MD_ARGS !1126 {
+  %3 = alloca %"class.__gnu_cxx::new_allocator.1"*, align 8, !effectiveSan !575, !TYCHE_MD !1127
+  %4 = alloca i8**, align 8, !effectiveSan !576, !TYCHE_MD !1128
   store %"class.__gnu_cxx::new_allocator.1"* %0, %"class.__gnu_cxx::new_allocator.1"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator.1"** %3, metadata !1066, metadata !868), !dbg !1067
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator.1"** %3, metadata !1129, metadata !874), !dbg !1130
   store i8** %1, i8*** %4, align 8
-  call void @llvm.dbg.declare(metadata i8*** %4, metadata !1068, metadata !868), !dbg !1069
+  call void @llvm.dbg.declare(metadata i8*** %4, metadata !1131, metadata !874), !dbg !1132
   %5 = load %"class.__gnu_cxx::new_allocator.1"*, %"class.__gnu_cxx::new_allocator.1"** %3, align 8, !effectiveSan !568
-  ret void, !dbg !1070
+  ret void, !dbg !1133, !TYCHE_MD !1134
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSaIPvED2Ev(%"class.std::allocator.0"*) unnamed_addr #6 comdat align 2 !dbg !1071 !effectiveSanArgs !1072 {
-  %2 = alloca %"class.std::allocator.0"*, align 8, !effectiveSan !572
+define linkonce_odr void @_ZNSaIPvED2Ev(%"class.std::allocator.0"*) unnamed_addr #6 comdat align 2 !dbg !1135 !effectiveSanArgs !1136 !TYCHE_MD_ARGS !1137 {
+  %2 = alloca %"class.std::allocator.0"*, align 8, !effectiveSan !572, !TYCHE_MD !1138
   store %"class.std::allocator.0"* %0, %"class.std::allocator.0"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator.0"** %2, metadata !1073, metadata !868), !dbg !1074
+  call void @llvm.dbg.declare(metadata %"class.std::allocator.0"** %2, metadata !1139, metadata !874), !dbg !1140
   %3 = load %"class.std::allocator.0"*, %"class.std::allocator.0"** %2, align 8, !effectiveSan !573
-  %4 = bitcast %"class.std::allocator.0"* %3 to %"class.__gnu_cxx::new_allocator.1"*, !dbg !1075, !effectiveSan !568
-  call void @_ZN9__gnu_cxx13new_allocatorIPvED2Ev(%"class.__gnu_cxx::new_allocator.1"* %4) #11, !dbg !1075
-  ret void, !dbg !1077
+  %4 = bitcast %"class.std::allocator.0"* %3 to %"class.__gnu_cxx::new_allocator.1"*, !dbg !1141, !effectiveSan !568
+  call void @_ZN9__gnu_cxx13new_allocatorIPvED2Ev(%"class.__gnu_cxx::new_allocator.1"* %4) #11, !dbg !1141
+  ret void, !dbg !1143, !TYCHE_MD !1144
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E(%"class.std::__cxx11::_List_base"*, %"struct.std::_List_node"*) #0 comdat align 2 !dbg !1078 !effectiveSanArgs !1079 {
-  %3 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554
-  %4 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !577
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E(%"class.std::__cxx11::_List_base"*, %"struct.std::_List_node"*) #0 comdat align 2 !dbg !1145 !effectiveSanArgs !1146 !TYCHE_MD_ARGS !1147 {
+  %3 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554, !TYCHE_MD !1148
+  %4 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !577, !TYCHE_MD !1149
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %3, metadata !1080, metadata !868), !dbg !1081
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %3, metadata !1150, metadata !874), !dbg !1151
   store %"struct.std::_List_node"* %1, %"struct.std::_List_node"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %4, metadata !1082, metadata !868), !dbg !1083
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %4, metadata !1152, metadata !874), !dbg !1153
   %5 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %3, align 8, !effectiveSan !553
-  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1084, !effectiveSan !555
-  %7 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6 to %"class.std::allocator"*, !dbg !1084, !effectiveSan !265
-  %8 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %4, align 8, !dbg !1085, !effectiveSan !259
-  call void @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m(%"class.std::allocator"* dereferenceable(1) %7, %"struct.std::_List_node"* %8, i64 1), !dbg !1086
-  ret void, !dbg !1087
+  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1154, !effectiveSan !555
+  %7 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6 to %"class.std::allocator"*, !dbg !1154, !effectiveSan !265
+  %8 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %4, align 8, !dbg !1155, !effectiveSan !259
+  call void @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m(%"class.std::allocator"* dereferenceable(1) %7, %"struct.std::_List_node"* %8, i64 1), !dbg !1156
+  ret void, !dbg !1157, !TYCHE_MD !1158
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr i8** @_ZSt11__addressofIPvEPT_RS1_(i8** dereferenceable(8)) #6 comdat !dbg !1088 !effectiveSanArgs !1092 {
-  %2 = alloca i8**, align 8, !effectiveSan !570
+define linkonce_odr i8** @_ZSt11__addressofIPvEPT_RS1_(i8** dereferenceable(8)) #6 comdat !dbg !1159 !effectiveSanArgs !1163 !TYCHE_MD_ARGS !1164 {
+  %2 = alloca i8**, align 8, !effectiveSan !570, !TYCHE_MD !1165
   store i8** %0, i8*** %2, align 8
-  call void @llvm.dbg.declare(metadata i8*** %2, metadata !1093, metadata !868), !dbg !1094
-  %3 = load i8**, i8*** %2, align 8, !dbg !1095, !effectiveSan !0
-  ret i8** %3, !dbg !1096
+  call void @llvm.dbg.declare(metadata i8*** %2, metadata !1166, metadata !874), !dbg !1167
+  %3 = load i8**, i8*** %2, align 8, !dbg !1168, !effectiveSan !0
+  ret i8** %3, !dbg !1169, !TYCHE_MD !1170
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorIPvEC2Ev(%"class.__gnu_cxx::new_allocator.1"*) unnamed_addr #6 comdat align 2 !dbg !1097 !effectiveSanArgs !1098 {
-  %2 = alloca %"class.__gnu_cxx::new_allocator.1"*, align 8, !effectiveSan !575
+define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorIPvEC2Ev(%"class.__gnu_cxx::new_allocator.1"*) unnamed_addr #6 comdat align 2 !dbg !1171 !effectiveSanArgs !1172 !TYCHE_MD_ARGS !1173 {
+  %2 = alloca %"class.__gnu_cxx::new_allocator.1"*, align 8, !effectiveSan !575, !TYCHE_MD !1174
   store %"class.__gnu_cxx::new_allocator.1"* %0, %"class.__gnu_cxx::new_allocator.1"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator.1"** %2, metadata !1099, metadata !868), !dbg !1100
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator.1"** %2, metadata !1175, metadata !874), !dbg !1176
   %3 = load %"class.__gnu_cxx::new_allocator.1"*, %"class.__gnu_cxx::new_allocator.1"** %2, align 8, !effectiveSan !568
-  ret void, !dbg !1101
+  ret void, !dbg !1177, !TYCHE_MD !1178
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorIPvED2Ev(%"class.__gnu_cxx::new_allocator.1"*) unnamed_addr #6 comdat align 2 !dbg !1102 !effectiveSanArgs !1098 {
-  %2 = alloca %"class.__gnu_cxx::new_allocator.1"*, align 8, !effectiveSan !575
+define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorIPvED2Ev(%"class.__gnu_cxx::new_allocator.1"*) unnamed_addr #6 comdat align 2 !dbg !1179 !effectiveSanArgs !1172 !TYCHE_MD_ARGS !1180 {
+  %2 = alloca %"class.__gnu_cxx::new_allocator.1"*, align 8, !effectiveSan !575, !TYCHE_MD !1181
   store %"class.__gnu_cxx::new_allocator.1"* %0, %"class.__gnu_cxx::new_allocator.1"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator.1"** %2, metadata !1103, metadata !868), !dbg !1104
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator.1"** %2, metadata !1182, metadata !874), !dbg !1183
   %3 = load %"class.__gnu_cxx::new_allocator.1"*, %"class.__gnu_cxx::new_allocator.1"** %2, align 8, !effectiveSan !568
-  ret void, !dbg !1105
+  ret void, !dbg !1184, !TYCHE_MD !1185
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m(%"class.std::allocator"* dereferenceable(1), %"struct.std::_List_node"*, i64) #0 comdat align 2 !dbg !1106 !effectiveSanArgs !1107 {
-  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !578
-  %5 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !577
-  %6 = alloca i64, align 8, !effectiveSan !579
+define linkonce_odr void @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m(%"class.std::allocator"* dereferenceable(1), %"struct.std::_List_node"*, i64) #0 comdat align 2 !dbg !1186 !effectiveSanArgs !1187 !TYCHE_MD_ARGS !1188 {
+  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !578, !TYCHE_MD !1189
+  %5 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !577, !TYCHE_MD !1190
+  %6 = alloca i64, align 8, !effectiveSan !579, !TYCHE_MD !1191
   store %"class.std::allocator"* %0, %"class.std::allocator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1108, metadata !868), !dbg !1109
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1192, metadata !874), !dbg !1193
   store %"struct.std::_List_node"* %1, %"struct.std::_List_node"** %5, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %5, metadata !1110, metadata !868), !dbg !1111
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %5, metadata !1194, metadata !874), !dbg !1195
   store i64 %2, i64* %6, align 8
-  call void @llvm.dbg.declare(metadata i64* %6, metadata !1112, metadata !868), !dbg !1113
-  %7 = load %"class.std::allocator"*, %"class.std::allocator"** %4, align 8, !dbg !1114, !effectiveSan !159
-  %8 = bitcast %"class.std::allocator"* %7 to %"class.__gnu_cxx::new_allocator"*, !dbg !1114, !effectiveSan !580
-  %9 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1115, !effectiveSan !259
-  %10 = load i64, i64* %6, align 8, !dbg !1116, !effectiveSan !266
-  call void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m(%"class.__gnu_cxx::new_allocator"* %8, %"struct.std::_List_node"* %9, i64 %10), !dbg !1117
-  ret void, !dbg !1118
+  call void @llvm.dbg.declare(metadata i64* %6, metadata !1196, metadata !874), !dbg !1197
+  %7 = load %"class.std::allocator"*, %"class.std::allocator"** %4, align 8, !dbg !1198, !effectiveSan !159
+  %8 = bitcast %"class.std::allocator"* %7 to %"class.__gnu_cxx::new_allocator"*, !dbg !1198, !effectiveSan !580
+  %9 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1199, !effectiveSan !259
+  %10 = load i64, i64* %6, align 8, !dbg !1200, !effectiveSan !266
+  call void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m(%"class.__gnu_cxx::new_allocator"* %8, %"struct.std::_List_node"* %9, i64 %10), !dbg !1201
+  ret void, !dbg !1202, !TYCHE_MD !1203
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m(%"class.__gnu_cxx::new_allocator"*, %"struct.std::_List_node"*, i64) #6 comdat align 2 !dbg !1119 !effectiveSanArgs !1120 {
-  %4 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581
-  %5 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !582
-  %6 = alloca i64, align 8, !effectiveSan !583
+define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m(%"class.__gnu_cxx::new_allocator"*, %"struct.std::_List_node"*, i64) #6 comdat align 2 !dbg !1204 !effectiveSanArgs !1205 !TYCHE_MD_ARGS !1206 {
+  %4 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581, !TYCHE_MD !1207
+  %5 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !582, !TYCHE_MD !1208
+  %6 = alloca i64, align 8, !effectiveSan !583, !TYCHE_MD !1209
   store %"class.__gnu_cxx::new_allocator"* %0, %"class.__gnu_cxx::new_allocator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %4, metadata !1121, metadata !868), !dbg !1122
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %4, metadata !1210, metadata !874), !dbg !1211
   store %"struct.std::_List_node"* %1, %"struct.std::_List_node"** %5, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %5, metadata !1123, metadata !868), !dbg !1124
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %5, metadata !1212, metadata !874), !dbg !1213
   store i64 %2, i64* %6, align 8
-  call void @llvm.dbg.declare(metadata i64* %6, metadata !1125, metadata !868), !dbg !1126
+  call void @llvm.dbg.declare(metadata i64* %6, metadata !1214, metadata !874), !dbg !1215
   %7 = load %"class.__gnu_cxx::new_allocator"*, %"class.__gnu_cxx::new_allocator"** %4, align 8, !effectiveSan !580
-  %8 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1127, !effectiveSan !177
-  %9 = bitcast %"struct.std::_List_node"* %8 to i8*, !dbg !1127, !effectiveSan !0
-  call void @_ZdlPv(i8* %9) #11, !dbg !1128, !TYCHE_MD !1129
-  ret void, !dbg !1130
+  %8 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1216, !effectiveSan !177
+  %9 = bitcast %"struct.std::_List_node"* %8 to i8*, !dbg !1216, !effectiveSan !0
+  call void @_ZdlPv(i8* %9) #11, !dbg !1217, !TYCHE_MD !1218
+  ret void, !dbg !1219, !TYCHE_MD !1220
 }
 
 ; Function Attrs: nobuiltin nounwind
 declare void @_ZdlPv(i8*) #7
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSaISt10_List_nodeIPvEED2Ev(%"class.std::allocator"*) unnamed_addr #6 comdat align 2 !dbg !1131 !effectiveSanArgs !1132 {
-  %2 = alloca %"class.std::allocator"*, align 8, !effectiveSan !585
+define linkonce_odr void @_ZNSaISt10_List_nodeIPvEED2Ev(%"class.std::allocator"*) unnamed_addr #6 comdat align 2 !dbg !1221 !effectiveSanArgs !1222 !TYCHE_MD_ARGS !1223 {
+  %2 = alloca %"class.std::allocator"*, align 8, !effectiveSan !585, !TYCHE_MD !1224
   store %"class.std::allocator"* %0, %"class.std::allocator"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %2, metadata !1133, metadata !868), !dbg !1134
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %2, metadata !1225, metadata !874), !dbg !1226
   %3 = load %"class.std::allocator"*, %"class.std::allocator"** %2, align 8, !effectiveSan !265
-  %4 = bitcast %"class.std::allocator"* %3 to %"class.__gnu_cxx::new_allocator"*, !dbg !1135, !effectiveSan !580
-  call void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev(%"class.__gnu_cxx::new_allocator"* %4) #11, !dbg !1135
-  ret void, !dbg !1137
+  %4 = bitcast %"class.std::allocator"* %3 to %"class.__gnu_cxx::new_allocator"*, !dbg !1227, !effectiveSan !580
+  call void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev(%"class.__gnu_cxx::new_allocator"* %4) #11, !dbg !1227
+  ret void, !dbg !1229, !TYCHE_MD !1230
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev(%"class.__gnu_cxx::new_allocator"*) unnamed_addr #6 comdat align 2 !dbg !1138 !effectiveSanArgs !1139 {
-  %2 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581
+define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev(%"class.__gnu_cxx::new_allocator"*) unnamed_addr #6 comdat align 2 !dbg !1231 !effectiveSanArgs !1232 !TYCHE_MD_ARGS !1233 {
+  %2 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581, !TYCHE_MD !1234
   store %"class.__gnu_cxx::new_allocator"* %0, %"class.__gnu_cxx::new_allocator"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %2, metadata !1140, metadata !868), !dbg !1141
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %2, metadata !1235, metadata !874), !dbg !1236
   %3 = load %"class.__gnu_cxx::new_allocator"*, %"class.__gnu_cxx::new_allocator"** %2, align 8, !effectiveSan !580
-  ret void, !dbg !1142
+  ret void, !dbg !1237, !TYCHE_MD !1238
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev(%"class.std::__cxx11::_List_base"*) unnamed_addr #0 comdat align 2 !dbg !1143 !effectiveSanArgs !972 {
-  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev(%"class.std::__cxx11::_List_base"*) unnamed_addr #0 comdat align 2 !dbg !1239 !effectiveSanArgs !1005 !TYCHE_MD_ARGS !1240 {
+  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554, !TYCHE_MD !1241
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1144, metadata !868), !dbg !1145
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1242, metadata !874), !dbg !1243
   %3 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %2, align 8, !effectiveSan !553
-  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0, !dbg !1146, !effectiveSan !555
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %4), !dbg !1146
-  ret void, !dbg !1147
+  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0, !dbg !1244, !effectiveSan !555
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %4), !dbg !1244
+  ret void, !dbg !1245, !TYCHE_MD !1246
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*) unnamed_addr #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !1148 !effectiveSanArgs !1034 {
-  %2 = alloca %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, align 8, !effectiveSan !584
-  %3 = alloca i8*
-  %4 = alloca i32
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*) unnamed_addr #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !1247 !effectiveSanArgs !1081 !TYCHE_MD_ARGS !1248 {
+  %2 = alloca %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, align 8, !effectiveSan !584, !TYCHE_MD !1249
+  %3 = alloca i8*, !TYCHE_MD !1250
+  %4 = alloca i32, !TYCHE_MD !1251
   store %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %0, %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %2, metadata !1149, metadata !868), !dbg !1150
+  call void @llvm.dbg.declare(metadata %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %2, metadata !1252, metadata !874), !dbg !1253
   %5 = load %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %2, align 8, !effectiveSan !555
-  %6 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %5 to %"class.std::allocator"*, !dbg !1151, !effectiveSan !265
-  call void @_ZNSaISt10_List_nodeIPvEEC2Ev(%"class.std::allocator"* %6) #11, !dbg !1152
-  %7 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %5, i32 0, i32 0, !dbg !1153, !effectiveSan !557
+  %6 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %5 to %"class.std::allocator"*, !dbg !1254, !effectiveSan !265
+  call void @_ZNSaISt10_List_nodeIPvEEC2Ev(%"class.std::allocator"* %6) #11, !dbg !1255
+  %7 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %5, i32 0, i32 0, !dbg !1256, !effectiveSan !557
   invoke void @_ZNSt8__detail17_List_node_headerC2Ev(%"struct.std::__detail::_List_node_header"* %7)
-          to label %8 unwind label %9, !dbg !1153
+          to label %8 unwind label %9, !dbg !1256
 
 ; <label>:8:                                      ; preds = %1
-  ret void, !dbg !1154
+  ret void, !dbg !1257, !TYCHE_MD !1259
 
 ; <label>:9:                                      ; preds = %1
   %10 = landingpad { i8*, i32 }
-          cleanup, !dbg !1156
-  %11 = extractvalue { i8*, i32 } %10, 0, !dbg !1156
-  store i8* %11, i8** %3, align 8, !dbg !1156
-  %12 = extractvalue { i8*, i32 } %10, 1, !dbg !1156
-  store i32 %12, i32* %4, align 4, !dbg !1156
-  %13 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %5 to %"class.std::allocator"*, !dbg !1158, !effectiveSan !265
-  call void @_ZNSaISt10_List_nodeIPvEED2Ev(%"class.std::allocator"* %13) #11, !dbg !1158
-  br label %14, !dbg !1158
+          cleanup, !dbg !1260
+  %11 = extractvalue { i8*, i32 } %10, 0, !dbg !1260
+  store i8* %11, i8** %3, align 8, !dbg !1260
+  %12 = extractvalue { i8*, i32 } %10, 1, !dbg !1260
+  store i32 %12, i32* %4, align 4, !dbg !1260
+  %13 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %5 to %"class.std::allocator"*, !dbg !1262, !effectiveSan !265
+  call void @_ZNSaISt10_List_nodeIPvEED2Ev(%"class.std::allocator"* %13) #11, !dbg !1262
+  br label %14, !dbg !1262
 
 ; <label>:14:                                     ; preds = %9
-  %15 = load i8*, i8** %3, align 8, !dbg !1161, !effectiveSan !0
-  %16 = load i32, i32* %4, align 4, !dbg !1161, !effectiveSan !371
-  %17 = insertvalue { i8*, i32 } undef, i8* %15, 0, !dbg !1161
-  %18 = insertvalue { i8*, i32 } %17, i32 %16, 1, !dbg !1161
-  resume { i8*, i32 } %18, !dbg !1161
+  %15 = load i8*, i8** %3, align 8, !dbg !1265, !effectiveSan !0
+  %16 = load i32, i32* %4, align 4, !dbg !1265, !effectiveSan !371
+  %17 = insertvalue { i8*, i32 } undef, i8* %15, 0, !dbg !1265
+  %18 = insertvalue { i8*, i32 } %17, i32 %16, 1, !dbg !1265
+  resume { i8*, i32 } %18, !dbg !1265
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSaISt10_List_nodeIPvEEC2Ev(%"class.std::allocator"*) unnamed_addr #6 comdat align 2 !dbg !1163 !effectiveSanArgs !1132 {
-  %2 = alloca %"class.std::allocator"*, align 8, !effectiveSan !585
+define linkonce_odr void @_ZNSaISt10_List_nodeIPvEEC2Ev(%"class.std::allocator"*) unnamed_addr #6 comdat align 2 !dbg !1267 !effectiveSanArgs !1222 !TYCHE_MD_ARGS !1268 {
+  %2 = alloca %"class.std::allocator"*, align 8, !effectiveSan !585, !TYCHE_MD !1269
   store %"class.std::allocator"* %0, %"class.std::allocator"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %2, metadata !1164, metadata !868), !dbg !1165
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %2, metadata !1270, metadata !874), !dbg !1271
   %3 = load %"class.std::allocator"*, %"class.std::allocator"** %2, align 8, !effectiveSan !265
-  %4 = bitcast %"class.std::allocator"* %3 to %"class.__gnu_cxx::new_allocator"*, !dbg !1166, !effectiveSan !580
-  call void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev(%"class.__gnu_cxx::new_allocator"* %4) #11, !dbg !1167
-  ret void, !dbg !1168
+  %4 = bitcast %"class.std::allocator"* %3 to %"class.__gnu_cxx::new_allocator"*, !dbg !1272, !effectiveSan !580
+  call void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev(%"class.__gnu_cxx::new_allocator"* %4) #11, !dbg !1273
+  ret void, !dbg !1274, !TYCHE_MD !1275
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt8__detail17_List_node_headerC2Ev(%"struct.std::__detail::_List_node_header"*) unnamed_addr #0 comdat align 2 !dbg !1169 !effectiveSanArgs !1170 {
-  %2 = alloca %"struct.std::__detail::_List_node_header"*, align 8, !effectiveSan !587
+define linkonce_odr void @_ZNSt8__detail17_List_node_headerC2Ev(%"struct.std::__detail::_List_node_header"*) unnamed_addr #0 comdat align 2 !dbg !1276 !effectiveSanArgs !1277 !TYCHE_MD_ARGS !1278 {
+  %2 = alloca %"struct.std::__detail::_List_node_header"*, align 8, !effectiveSan !587, !TYCHE_MD !1279
   store %"struct.std::__detail::_List_node_header"* %0, %"struct.std::__detail::_List_node_header"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_header"** %2, metadata !1171, metadata !868), !dbg !1172
+  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_header"** %2, metadata !1280, metadata !874), !dbg !1281
   %3 = load %"struct.std::__detail::_List_node_header"*, %"struct.std::__detail::_List_node_header"** %2, align 8, !effectiveSan !557
-  %4 = bitcast %"struct.std::__detail::_List_node_header"* %3 to %"struct.std::__detail::_List_node_base"*, !dbg !1173, !effectiveSan !127
-  call void @_ZNSt8__detail17_List_node_header7_M_initEv(%"struct.std::__detail::_List_node_header"* %3), !dbg !1174
-  ret void, !dbg !1176
+  %4 = bitcast %"struct.std::__detail::_List_node_header"* %3 to %"struct.std::__detail::_List_node_base"*, !dbg !1282, !effectiveSan !127
+  call void @_ZNSt8__detail17_List_node_header7_M_initEv(%"struct.std::__detail::_List_node_header"* %3), !dbg !1283
+  ret void, !dbg !1285, !TYCHE_MD !1286
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev(%"class.__gnu_cxx::new_allocator"*) unnamed_addr #6 comdat align 2 !dbg !1177 !effectiveSanArgs !1139 {
-  %2 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581
+define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev(%"class.__gnu_cxx::new_allocator"*) unnamed_addr #6 comdat align 2 !dbg !1287 !effectiveSanArgs !1232 !TYCHE_MD_ARGS !1288 {
+  %2 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581, !TYCHE_MD !1289
   store %"class.__gnu_cxx::new_allocator"* %0, %"class.__gnu_cxx::new_allocator"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %2, metadata !1178, metadata !868), !dbg !1179
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %2, metadata !1290, metadata !874), !dbg !1291
   %3 = load %"class.__gnu_cxx::new_allocator"*, %"class.__gnu_cxx::new_allocator"** %2, align 8, !effectiveSan !580
-  ret void, !dbg !1180
+  ret void, !dbg !1292, !TYCHE_MD !1293
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSt8__detail17_List_node_header7_M_initEv(%"struct.std::__detail::_List_node_header"*) #6 comdat align 2 !dbg !1181 !effectiveSanArgs !1170 {
-  %2 = alloca %"struct.std::__detail::_List_node_header"*, align 8, !effectiveSan !587
+define linkonce_odr void @_ZNSt8__detail17_List_node_header7_M_initEv(%"struct.std::__detail::_List_node_header"*) #6 comdat align 2 !dbg !1294 !effectiveSanArgs !1277 !TYCHE_MD_ARGS !1295 {
+  %2 = alloca %"struct.std::__detail::_List_node_header"*, align 8, !effectiveSan !587, !TYCHE_MD !1296
   store %"struct.std::__detail::_List_node_header"* %0, %"struct.std::__detail::_List_node_header"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_header"** %2, metadata !1182, metadata !868), !dbg !1183
+  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_header"** %2, metadata !1297, metadata !874), !dbg !1298
   %3 = load %"struct.std::__detail::_List_node_header"*, %"struct.std::__detail::_List_node_header"** %2, align 8, !effectiveSan !557
-  %4 = bitcast %"struct.std::__detail::_List_node_header"* %3 to %"struct.std::__detail::_List_node_base"*, !dbg !1184, !effectiveSan !127
-  %5 = bitcast %"struct.std::__detail::_List_node_header"* %3 to %"struct.std::__detail::_List_node_base"*, !dbg !1185, !effectiveSan !127
-  %6 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %5, i32 0, i32 1, !dbg !1185, !effectiveSan !556
-  store %"struct.std::__detail::_List_node_base"* %4, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1186
-  %7 = bitcast %"struct.std::__detail::_List_node_header"* %3 to %"struct.std::__detail::_List_node_base"*, !dbg !1187, !effectiveSan !127
-  %8 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %7, i32 0, i32 0, !dbg !1187, !effectiveSan !556
-  store %"struct.std::__detail::_List_node_base"* %4, %"struct.std::__detail::_List_node_base"** %8, align 8, !dbg !1188
-  %9 = getelementptr inbounds %"struct.std::__detail::_List_node_header", %"struct.std::__detail::_List_node_header"* %3, i32 0, i32 1, !dbg !1189, !effectiveSan !588
-  store i64 0, i64* %9, align 8, !dbg !1190
-  ret void, !dbg !1191
+  %4 = bitcast %"struct.std::__detail::_List_node_header"* %3 to %"struct.std::__detail::_List_node_base"*, !dbg !1299, !effectiveSan !127
+  %5 = bitcast %"struct.std::__detail::_List_node_header"* %3 to %"struct.std::__detail::_List_node_base"*, !dbg !1300, !effectiveSan !127
+  %6 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %5, i32 0, i32 1, !dbg !1300, !effectiveSan !556
+  store %"struct.std::__detail::_List_node_base"* %4, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1301
+  %7 = bitcast %"struct.std::__detail::_List_node_header"* %3 to %"struct.std::__detail::_List_node_base"*, !dbg !1302, !effectiveSan !127
+  %8 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %7, i32 0, i32 0, !dbg !1302, !effectiveSan !556
+  store %"struct.std::__detail::_List_node_base"* %4, %"struct.std::__detail::_List_node_base"** %8, align 8, !dbg !1303
+  %9 = getelementptr inbounds %"struct.std::__detail::_List_node_header", %"struct.std::__detail::_List_node_header"* %3, i32 0, i32 1, !dbg !1304, !effectiveSan !588
+  store i64 0, i64* %9, align 8, !dbg !1305
+  ret void, !dbg !1306, !TYCHE_MD !1307
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_(%"class.std::__cxx11::list"*, %"struct.std::__detail::_List_node_base"*, i8** dereferenceable(8)) #0 comdat align 2 !dbg !1192 !effectiveSanArgs !1193 {
-  %4 = alloca %"struct.std::_List_iterator", align 8, !effectiveSan !591
-  %5 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552
-  %6 = alloca i8**, align 8, !effectiveSan !589
-  %7 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !592
+define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_(%"class.std::__cxx11::list"*, %"struct.std::__detail::_List_node_base"*, i8** dereferenceable(8)) #0 comdat align 2 !dbg !1308 !effectiveSanArgs !1309 !TYCHE_MD_ARGS !1310 {
+  %4 = alloca %"struct.std::_List_iterator", align 8, !effectiveSan !591, !TYCHE_MD !1311
+  %5 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552, !TYCHE_MD !1312
+  %6 = alloca i8**, align 8, !effectiveSan !589, !TYCHE_MD !1313
+  %7 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !592, !TYCHE_MD !1314
   %8 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %4, i32 0, i32 0
   store %"struct.std::__detail::_List_node_base"* %1, %"struct.std::__detail::_List_node_base"** %8, align 8
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %5, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %5, metadata !1194, metadata !868), !dbg !1195
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_iterator"* %4, metadata !1196, metadata !868), !dbg !1197
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %5, metadata !1315, metadata !874), !dbg !1316
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_iterator"* %4, metadata !1317, metadata !874), !dbg !1318
   store i8** %2, i8*** %6, align 8
-  call void @llvm.dbg.declare(metadata i8*** %6, metadata !1198, metadata !868), !dbg !1199
+  call void @llvm.dbg.declare(metadata i8*** %6, metadata !1319, metadata !874), !dbg !1320
   %9 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %5, align 8, !effectiveSan !543
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %7, metadata !1200, metadata !868), !dbg !1201
-  %10 = load i8**, i8*** %6, align 8, !dbg !1202, !effectiveSan !318
-  %11 = call %"struct.std::_List_node"* @_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_(%"class.std::__cxx11::list"* %9, i8** dereferenceable(8) %10), !dbg !1203, !effectiveSan !178
-  store %"struct.std::_List_node"* %11, %"struct.std::_List_node"** %7, align 8, !dbg !1201
-  %12 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %7, align 8, !dbg !1204, !effectiveSan !314
-  %13 = bitcast %"struct.std::_List_node"* %12 to %"struct.std::__detail::_List_node_base"*, !dbg !1205, !effectiveSan !127
-  %14 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %4, i32 0, i32 0, !dbg !1206, !effectiveSan !556
-  %15 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %14, align 8, !dbg !1206, !effectiveSan !127
-  call void @_ZNSt8__detail15_List_node_base7_M_hookEPS0_(%"struct.std::__detail::_List_node_base"* %13, %"struct.std::__detail::_List_node_base"* %15) #11, !dbg !1205
-  %16 = bitcast %"class.std::__cxx11::list"* %9 to %"class.std::__cxx11::_List_base"*, !dbg !1207, !effectiveSan !553
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm(%"class.std::__cxx11::_List_base"* %16, i64 1), !dbg !1207
-  ret void, !dbg !1208
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %7, metadata !1321, metadata !874), !dbg !1322
+  %10 = load i8**, i8*** %6, align 8, !dbg !1323, !effectiveSan !318
+  %11 = call %"struct.std::_List_node"* @_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_(%"class.std::__cxx11::list"* %9, i8** dereferenceable(8) %10), !dbg !1324, !effectiveSan !178
+  store %"struct.std::_List_node"* %11, %"struct.std::_List_node"** %7, align 8, !dbg !1322
+  %12 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %7, align 8, !dbg !1325, !effectiveSan !314
+  %13 = bitcast %"struct.std::_List_node"* %12 to %"struct.std::__detail::_List_node_base"*, !dbg !1326, !effectiveSan !127
+  %14 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %4, i32 0, i32 0, !dbg !1327, !effectiveSan !556
+  %15 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %14, align 8, !dbg !1327, !effectiveSan !127
+  call void @_ZNSt8__detail15_List_node_base7_M_hookEPS0_(%"struct.std::__detail::_List_node_base"* %13, %"struct.std::__detail::_List_node_base"* %15) #11, !dbg !1326
+  %16 = bitcast %"class.std::__cxx11::list"* %9 to %"class.std::__cxx11::_List_base"*, !dbg !1328, !effectiveSan !553
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm(%"class.std::__cxx11::_List_base"* %16, i64 1), !dbg !1328
+  ret void, !dbg !1329, !TYCHE_MD !1330
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr %"struct.std::__detail::_List_node_base"* @_ZNSt7__cxx114listIPvSaIS1_EE3endEv(%"class.std::__cxx11::list"*) #0 comdat align 2 !dbg !1209 !effectiveSanArgs !899 {
-  %2 = alloca %"struct.std::_List_iterator", align 8, !effectiveSan !590
-  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552
+define linkonce_odr %"struct.std::__detail::_List_node_base"* @_ZNSt7__cxx114listIPvSaIS1_EE3endEv(%"class.std::__cxx11::list"*) #0 comdat align 2 !dbg !1331 !effectiveSanArgs !906 !TYCHE_MD_ARGS !1332 {
+  %2 = alloca %"struct.std::_List_iterator", align 8, !effectiveSan !590, !TYCHE_MD !1333
+  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552, !TYCHE_MD !1334
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !1210, metadata !868), !dbg !1211
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !1335, metadata !874), !dbg !1336
   %4 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %3, align 8, !effectiveSan !543
-  %5 = bitcast %"class.std::__cxx11::list"* %4 to %"class.std::__cxx11::_List_base"*, !dbg !1212, !effectiveSan !553
-  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1212, !effectiveSan !555
-  %7 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6, i32 0, i32 0, !dbg !1213, !effectiveSan !557
-  %8 = bitcast %"struct.std::__detail::_List_node_header"* %7 to %"struct.std::__detail::_List_node_base"*, !dbg !1214, !effectiveSan !127
-  call void @_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE(%"struct.std::_List_iterator"* %2, %"struct.std::__detail::_List_node_base"* %8), !dbg !1215
-  %9 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %2, i32 0, i32 0, !dbg !1216
-  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8, !dbg !1216, !effectiveSan !340
-  ret %"struct.std::__detail::_List_node_base"* %10, !dbg !1216
+  %5 = bitcast %"class.std::__cxx11::list"* %4 to %"class.std::__cxx11::_List_base"*, !dbg !1337, !effectiveSan !553
+  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1337, !effectiveSan !555
+  %7 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6, i32 0, i32 0, !dbg !1338, !effectiveSan !557
+  %8 = bitcast %"struct.std::__detail::_List_node_header"* %7 to %"struct.std::__detail::_List_node_base"*, !dbg !1339, !effectiveSan !127
+  call void @_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE(%"struct.std::_List_iterator"* %2, %"struct.std::__detail::_List_node_base"* %8), !dbg !1340
+  %9 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %2, i32 0, i32 0, !dbg !1341
+  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8, !dbg !1341, !effectiveSan !340
+  ret %"struct.std::__detail::_List_node_base"* %10, !dbg !1341, !TYCHE_MD !1342
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr %"struct.std::_List_node"* @_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_(%"class.std::__cxx11::list"*, i8** dereferenceable(8)) #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !1217 !effectiveSanArgs !906 {
-  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552
-  %4 = alloca i8**, align 8, !effectiveSan !589
-  %5 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !592
-  %6 = alloca %"class.std::allocator.0", align 1, !effectiveSan !593
-  %7 = alloca i8*
-  %8 = alloca i32
+define linkonce_odr %"struct.std::_List_node"* @_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_(%"class.std::__cxx11::list"*, i8** dereferenceable(8)) #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !1343 !effectiveSanArgs !916 !TYCHE_MD_ARGS !1344 {
+  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552, !TYCHE_MD !1345
+  %4 = alloca i8**, align 8, !effectiveSan !589, !TYCHE_MD !1346
+  %5 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !592, !TYCHE_MD !1347
+  %6 = alloca %"class.std::allocator.0", align 1, !effectiveSan !593, !TYCHE_MD !1348
+  %7 = alloca i8*, !TYCHE_MD !1349
+  %8 = alloca i32, !TYCHE_MD !1350
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !1218, metadata !868), !dbg !1219
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !1351, metadata !874), !dbg !1352
   store i8** %1, i8*** %4, align 8
-  call void @llvm.dbg.declare(metadata i8*** %4, metadata !1220, metadata !868), !dbg !1221
+  call void @llvm.dbg.declare(metadata i8*** %4, metadata !1353, metadata !874), !dbg !1354
   %9 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %3, align 8, !effectiveSan !543
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %5, metadata !1222, metadata !868), !dbg !1223
-  %10 = bitcast %"class.std::__cxx11::list"* %9 to %"class.std::__cxx11::_List_base"*, !dbg !1224, !effectiveSan !553
-  %11 = call %"struct.std::_List_node"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv(%"class.std::__cxx11::_List_base"* %10), !dbg !1224, !effectiveSan !178
-  store %"struct.std::_List_node"* %11, %"struct.std::_List_node"** %5, align 8, !dbg !1223
-  call void @llvm.dbg.declare(metadata %"class.std::allocator.0"* %6, metadata !1225, metadata !868), !dbg !1227
-  %12 = bitcast %"class.std::__cxx11::list"* %9 to %"class.std::__cxx11::_List_base"*, !dbg !1228, !effectiveSan !553
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %5, metadata !1355, metadata !874), !dbg !1356
+  %10 = bitcast %"class.std::__cxx11::list"* %9 to %"class.std::__cxx11::_List_base"*, !dbg !1357, !effectiveSan !553
+  %11 = call %"struct.std::_List_node"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv(%"class.std::__cxx11::_List_base"* %10), !dbg !1357, !effectiveSan !178
+  store %"struct.std::_List_node"* %11, %"struct.std::_List_node"** %5, align 8, !dbg !1356
+  call void @llvm.dbg.declare(metadata %"class.std::allocator.0"* %6, metadata !1358, metadata !874), !dbg !1360
+  %12 = bitcast %"class.std::__cxx11::list"* %9 to %"class.std::__cxx11::_List_base"*, !dbg !1361, !effectiveSan !553
   %13 = invoke dereferenceable(1) %"class.std::allocator"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"* %12)
-          to label %14 unwind label %21, !dbg !1228, !effectiveSan !265
+          to label %14 unwind label %21, !dbg !1361, !effectiveSan !265
 
 ; <label>:14:                                     ; preds = %2
-  call void @_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E(%"class.std::allocator.0"* %6, %"class.std::allocator"* dereferenceable(1) %13) #11, !dbg !1229
-  %15 = bitcast %"class.std::allocator.0"* %6 to %"class.__gnu_cxx::new_allocator.1"*, !dbg !1231, !effectiveSan !568
-  %16 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1232, !effectiveSan !314
+  call void @_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E(%"class.std::allocator.0"* %6, %"class.std::allocator"* dereferenceable(1) %13) #11, !dbg !1362
+  %15 = bitcast %"class.std::allocator.0"* %6 to %"class.__gnu_cxx::new_allocator.1"*, !dbg !1364, !effectiveSan !568
+  %16 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1365, !effectiveSan !314
   %17 = invoke i8** @_ZNSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"* %16)
-          to label %18 unwind label %25, !dbg !1233, !effectiveSan !53
+          to label %18 unwind label %25, !dbg !1366, !effectiveSan !53
 
 ; <label>:18:                                     ; preds = %14
-  %19 = load i8**, i8*** %4, align 8, !dbg !1234, !effectiveSan !318
+  %19 = load i8**, i8*** %4, align 8, !dbg !1367, !effectiveSan !318
   invoke void @_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_(%"class.__gnu_cxx::new_allocator.1"* %15, i8** %17, i8** dereferenceable(8) %19)
-          to label %20 unwind label %25, !dbg !1235
+          to label %20 unwind label %25, !dbg !1368
 
 ; <label>:20:                                     ; preds = %18
-  call void @_ZNSaIPvED2Ev(%"class.std::allocator.0"* %6) #11, !dbg !1236
-  br label %40, !dbg !1237
+  call void @_ZNSaIPvED2Ev(%"class.std::allocator.0"* %6) #11, !dbg !1369
+  br label %40, !dbg !1370
 
 ; <label>:21:                                     ; preds = %2
   %22 = landingpad { i8*, i32 }
-          catch i8* null, !dbg !1238
-  %23 = extractvalue { i8*, i32 } %22, 0, !dbg !1238
-  store i8* %23, i8** %7, align 8, !dbg !1238
-  %24 = extractvalue { i8*, i32 } %22, 1, !dbg !1238
-  store i32 %24, i32* %8, align 4, !dbg !1238
-  br label %29, !dbg !1238
+          catch i8* null, !dbg !1371
+  %23 = extractvalue { i8*, i32 } %22, 0, !dbg !1371
+  store i8* %23, i8** %7, align 8, !dbg !1371
+  %24 = extractvalue { i8*, i32 } %22, 1, !dbg !1371
+  store i32 %24, i32* %8, align 4, !dbg !1371
+  br label %29, !dbg !1371
 
 ; <label>:25:                                     ; preds = %18, %14
   %26 = landingpad { i8*, i32 }
-          catch i8* null, !dbg !1239
-  %27 = extractvalue { i8*, i32 } %26, 0, !dbg !1239
-  store i8* %27, i8** %7, align 8, !dbg !1239
-  %28 = extractvalue { i8*, i32 } %26, 1, !dbg !1239
-  store i32 %28, i32* %8, align 4, !dbg !1239
-  call void @_ZNSaIPvED2Ev(%"class.std::allocator.0"* %6) #11, !dbg !1240
-  br label %29, !dbg !1240
+          catch i8* null, !dbg !1372
+  %27 = extractvalue { i8*, i32 } %26, 0, !dbg !1372
+  store i8* %27, i8** %7, align 8, !dbg !1372
+  %28 = extractvalue { i8*, i32 } %26, 1, !dbg !1372
+  store i32 %28, i32* %8, align 4, !dbg !1372
+  call void @_ZNSaIPvED2Ev(%"class.std::allocator.0"* %6) #11, !dbg !1373
+  br label %29, !dbg !1373
 
 ; <label>:29:                                     ; preds = %25, %21
-  %30 = load i8*, i8** %7, align 8, !dbg !1242, !effectiveSan !0
-  %31 = call i8* @__cxa_begin_catch(i8* %30) #11, !dbg !1242
-  %32 = bitcast %"class.std::__cxx11::list"* %9 to %"class.std::__cxx11::_List_base"*, !dbg !1244, !effectiveSan !553
-  %33 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1246, !effectiveSan !314
+  %30 = load i8*, i8** %7, align 8, !dbg !1375, !effectiveSan !0
+  %31 = call i8* @__cxa_begin_catch(i8* %30) #11, !dbg !1375
+  %32 = bitcast %"class.std::__cxx11::list"* %9 to %"class.std::__cxx11::_List_base"*, !dbg !1377, !effectiveSan !553
+  %33 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1379, !effectiveSan !314
   invoke void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E(%"class.std::__cxx11::_List_base"* %32, %"struct.std::_List_node"* %33)
-          to label %34 unwind label %35, !dbg !1244
+          to label %34 unwind label %35, !dbg !1377
 
 ; <label>:34:                                     ; preds = %29
   invoke void @__cxa_rethrow() #12
-          to label %50 unwind label %35, !dbg !1247
+          to label %50 unwind label %35, !dbg !1380
 
 ; <label>:35:                                     ; preds = %34, %29
   %36 = landingpad { i8*, i32 }
-          cleanup, !dbg !1248
-  %37 = extractvalue { i8*, i32 } %36, 0, !dbg !1248
-  store i8* %37, i8** %7, align 8, !dbg !1248
-  %38 = extractvalue { i8*, i32 } %36, 1, !dbg !1248
-  store i32 %38, i32* %8, align 4, !dbg !1248
+          cleanup, !dbg !1381
+  %37 = extractvalue { i8*, i32 } %36, 0, !dbg !1381
+  store i8* %37, i8** %7, align 8, !dbg !1381
+  %38 = extractvalue { i8*, i32 } %36, 1, !dbg !1381
+  store i32 %38, i32* %8, align 4, !dbg !1381
   invoke void @__cxa_end_catch()
-          to label %39 unwind label %47, !dbg !1250
+          to label %39 unwind label %47, !dbg !1383
 
 ; <label>:39:                                     ; preds = %35
-  br label %42, !dbg !1251
+  br label %42, !dbg !1384
 
 ; <label>:40:                                     ; preds = %20
-  %41 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1253, !effectiveSan !314
-  ret %"struct.std::_List_node"* %41, !dbg !1254
+  %41 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %5, align 8, !dbg !1386, !effectiveSan !314
+  ret %"struct.std::_List_node"* %41, !dbg !1387, !TYCHE_MD !1388
 
 ; <label>:42:                                     ; preds = %39
-  %43 = load i8*, i8** %7, align 8, !dbg !1255, !effectiveSan !0
-  %44 = load i32, i32* %8, align 4, !dbg !1255, !effectiveSan !371
-  %45 = insertvalue { i8*, i32 } undef, i8* %43, 0, !dbg !1255
-  %46 = insertvalue { i8*, i32 } %45, i32 %44, 1, !dbg !1255
-  resume { i8*, i32 } %46, !dbg !1255
+  %43 = load i8*, i8** %7, align 8, !dbg !1389, !effectiveSan !0
+  %44 = load i32, i32* %8, align 4, !dbg !1389, !effectiveSan !371
+  %45 = insertvalue { i8*, i32 } undef, i8* %43, 0, !dbg !1389
+  %46 = insertvalue { i8*, i32 } %45, i32 %44, 1, !dbg !1389
+  resume { i8*, i32 } %46, !dbg !1389
 
 ; <label>:47:                                     ; preds = %35
   %48 = landingpad { i8*, i32 }
-          catch i8* null, !dbg !1256
-  %49 = extractvalue { i8*, i32 } %48, 0, !dbg !1256
-  call void @__clang_call_terminate(i8* %49) #10, !dbg !1256
-  unreachable, !dbg !1256
+          catch i8* null, !dbg !1390
+  %49 = extractvalue { i8*, i32 } %48, 0, !dbg !1390
+  call void @__clang_call_terminate(i8* %49) #10, !dbg !1390
+  unreachable, !dbg !1390
 
 ; <label>:50:                                     ; preds = %34
   unreachable
@@ -964,55 +1600,55 @@ define linkonce_odr %"struct.std::_List_node"* @_ZNSt7__cxx114listIPvSaIS1_EE14_
 declare void @_ZNSt8__detail15_List_node_base7_M_hookEPS0_(%"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"*) #5
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm(%"class.std::__cxx11::_List_base"*, i64) #6 comdat align 2 !dbg !1258 !effectiveSanArgs !1259 {
-  %3 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554
-  %4 = alloca i64, align 8, !effectiveSan !588
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm(%"class.std::__cxx11::_List_base"*, i64) #6 comdat align 2 !dbg !1392 !effectiveSanArgs !1393 !TYCHE_MD_ARGS !1394 {
+  %3 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554, !TYCHE_MD !1395
+  %4 = alloca i64, align 8, !effectiveSan !588, !TYCHE_MD !1396
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %3, metadata !1260, metadata !868), !dbg !1261
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %3, metadata !1397, metadata !874), !dbg !1398
   store i64 %1, i64* %4, align 8
-  call void @llvm.dbg.declare(metadata i64* %4, metadata !1262, metadata !868), !dbg !1263
+  call void @llvm.dbg.declare(metadata i64* %4, metadata !1399, metadata !874), !dbg !1400
   %5 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %3, align 8, !effectiveSan !553
-  %6 = load i64, i64* %4, align 8, !dbg !1264, !effectiveSan !69
-  %7 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1265, !effectiveSan !555
-  %8 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7, i32 0, i32 0, !dbg !1266, !effectiveSan !557
-  %9 = getelementptr inbounds %"struct.std::__detail::_List_node_header", %"struct.std::__detail::_List_node_header"* %8, i32 0, i32 1, !dbg !1267, !effectiveSan !588
-  %10 = load i64, i64* %9, align 8, !dbg !1268, !effectiveSan !69
-  %11 = add i64 %10, %6, !dbg !1268
-  store i64 %11, i64* %9, align 8, !dbg !1268
-  ret void, !dbg !1269
+  %6 = load i64, i64* %4, align 8, !dbg !1401, !effectiveSan !69
+  %7 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1402, !effectiveSan !555
+  %8 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7, i32 0, i32 0, !dbg !1403, !effectiveSan !557
+  %9 = getelementptr inbounds %"struct.std::__detail::_List_node_header", %"struct.std::__detail::_List_node_header"* %8, i32 0, i32 1, !dbg !1404, !effectiveSan !588
+  %10 = load i64, i64* %9, align 8, !dbg !1405, !effectiveSan !69
+  %11 = add i64 %10, %6, !dbg !1405
+  store i64 %11, i64* %9, align 8, !dbg !1405
+  ret void, !dbg !1406, !TYCHE_MD !1407
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr %"struct.std::_List_node"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv(%"class.std::__cxx11::_List_base"*) #0 comdat align 2 !dbg !1270 !effectiveSanArgs !972 {
-  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554
+define linkonce_odr %"struct.std::_List_node"* @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv(%"class.std::__cxx11::_List_base"*) #0 comdat align 2 !dbg !1408 !effectiveSanArgs !1005 !TYCHE_MD_ARGS !1409 {
+  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554, !TYCHE_MD !1410
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1271, metadata !868), !dbg !1272
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1411, metadata !874), !dbg !1412
   %3 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %2, align 8, !effectiveSan !553
-  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0, !dbg !1273, !effectiveSan !555
-  %5 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %4 to %"class.std::allocator"*, !dbg !1273, !effectiveSan !265
-  %6 = call %"struct.std::_List_node"* @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m(%"class.std::allocator"* dereferenceable(1) %5, i64 1), !dbg !1274, !effectiveSan !178
-  ret %"struct.std::_List_node"* %6, !dbg !1275
+  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0, !dbg !1413, !effectiveSan !555
+  %5 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %4 to %"class.std::allocator"*, !dbg !1413, !effectiveSan !265
+  %6 = call %"struct.std::_List_node"* @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m(%"class.std::allocator"* dereferenceable(1) %5, i64 1), !dbg !1414, !effectiveSan !178
+  ret %"struct.std::_List_node"* %6, !dbg !1415, !TYCHE_MD !1416
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_(%"class.__gnu_cxx::new_allocator.1"*, i8**, i8** dereferenceable(8)) #6 comdat align 2 !dbg !1276 !effectiveSanArgs !1277 {
-  %4 = alloca %"class.__gnu_cxx::new_allocator.1"*, align 8, !effectiveSan !575
-  %5 = alloca i8**, align 8, !effectiveSan !576
-  %6 = alloca i8**, align 8, !effectiveSan !598
+define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_(%"class.__gnu_cxx::new_allocator.1"*, i8**, i8** dereferenceable(8)) #6 comdat align 2 !dbg !1417 !effectiveSanArgs !1418 !TYCHE_MD_ARGS !1419 {
+  %4 = alloca %"class.__gnu_cxx::new_allocator.1"*, align 8, !effectiveSan !575, !TYCHE_MD !1420
+  %5 = alloca i8**, align 8, !effectiveSan !576, !TYCHE_MD !1421
+  %6 = alloca i8**, align 8, !effectiveSan !598, !TYCHE_MD !1422
   store %"class.__gnu_cxx::new_allocator.1"* %0, %"class.__gnu_cxx::new_allocator.1"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator.1"** %4, metadata !1278, metadata !868), !dbg !1279
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator.1"** %4, metadata !1423, metadata !874), !dbg !1424
   store i8** %1, i8*** %5, align 8
-  call void @llvm.dbg.declare(metadata i8*** %5, metadata !1280, metadata !868), !dbg !1281
+  call void @llvm.dbg.declare(metadata i8*** %5, metadata !1425, metadata !874), !dbg !1426
   store i8** %2, i8*** %6, align 8
-  call void @llvm.dbg.declare(metadata i8*** %6, metadata !1282, metadata !868), !dbg !1283
+  call void @llvm.dbg.declare(metadata i8*** %6, metadata !1427, metadata !874), !dbg !1428
   %7 = load %"class.__gnu_cxx::new_allocator.1"*, %"class.__gnu_cxx::new_allocator.1"** %4, align 8, !effectiveSan !568
-  %8 = load i8**, i8*** %5, align 8, !dbg !1284, !effectiveSan !52
-  %9 = bitcast i8** %8 to i8*, !dbg !1284, !effectiveSan !53
-  %10 = bitcast i8* %9 to i8**, !dbg !1285, !effectiveSan !53
-  %11 = load i8**, i8*** %6, align 8, !dbg !1286, !effectiveSan !62
-  %12 = load i8*, i8** %11, align 8, !dbg !1286, !effectiveSan !62
-  store i8* %12, i8** %10, align 8, !dbg !1285
-  ret void, !dbg !1287
+  %8 = load i8**, i8*** %5, align 8, !dbg !1429, !effectiveSan !52
+  %9 = bitcast i8** %8 to i8*, !dbg !1429, !effectiveSan !53
+  %10 = bitcast i8* %9 to i8**, !dbg !1430, !effectiveSan !53
+  %11 = load i8**, i8*** %6, align 8, !dbg !1431, !effectiveSan !62
+  %12 = load i8*, i8** %11, align 8, !dbg !1431, !effectiveSan !62
+  store i8* %12, i8** %10, align 8, !dbg !1430
+  ret void, !dbg !1432, !TYCHE_MD !1433
 }
 
 declare void @__cxa_rethrow()
@@ -1020,56 +1656,56 @@ declare void @__cxa_rethrow()
 declare void @__cxa_end_catch()
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr %"struct.std::_List_node"* @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m(%"class.std::allocator"* dereferenceable(1), i64) #0 comdat align 2 !dbg !1288 !effectiveSanArgs !1289 {
-  %3 = alloca %"class.std::allocator"*, align 8, !effectiveSan !578
-  %4 = alloca i64, align 8, !effectiveSan !579
+define linkonce_odr %"struct.std::_List_node"* @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m(%"class.std::allocator"* dereferenceable(1), i64) #0 comdat align 2 !dbg !1434 !effectiveSanArgs !1435 !TYCHE_MD_ARGS !1436 {
+  %3 = alloca %"class.std::allocator"*, align 8, !effectiveSan !578, !TYCHE_MD !1437
+  %4 = alloca i64, align 8, !effectiveSan !579, !TYCHE_MD !1438
   store %"class.std::allocator"* %0, %"class.std::allocator"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %3, metadata !1290, metadata !868), !dbg !1291
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %3, metadata !1439, metadata !874), !dbg !1440
   store i64 %1, i64* %4, align 8
-  call void @llvm.dbg.declare(metadata i64* %4, metadata !1292, metadata !868), !dbg !1293
-  %5 = load %"class.std::allocator"*, %"class.std::allocator"** %3, align 8, !dbg !1294, !effectiveSan !159
-  %6 = bitcast %"class.std::allocator"* %5 to %"class.__gnu_cxx::new_allocator"*, !dbg !1294, !effectiveSan !580
-  %7 = load i64, i64* %4, align 8, !dbg !1295, !effectiveSan !266
-  %8 = call %"struct.std::_List_node"* @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv(%"class.__gnu_cxx::new_allocator"* %6, i64 %7, i8* null), !dbg !1296, !effectiveSan !178
-  ret %"struct.std::_List_node"* %8, !dbg !1297
+  call void @llvm.dbg.declare(metadata i64* %4, metadata !1441, metadata !874), !dbg !1442
+  %5 = load %"class.std::allocator"*, %"class.std::allocator"** %3, align 8, !dbg !1443, !effectiveSan !159
+  %6 = bitcast %"class.std::allocator"* %5 to %"class.__gnu_cxx::new_allocator"*, !dbg !1443, !effectiveSan !580
+  %7 = load i64, i64* %4, align 8, !dbg !1444, !effectiveSan !266
+  %8 = call %"struct.std::_List_node"* @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv(%"class.__gnu_cxx::new_allocator"* %6, i64 %7, i8* null), !dbg !1445, !effectiveSan !178
+  ret %"struct.std::_List_node"* %8, !dbg !1446, !TYCHE_MD !1447
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr %"struct.std::_List_node"* @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv(%"class.__gnu_cxx::new_allocator"*, i64, i8*) #0 comdat align 2 !dbg !1298 !effectiveSanArgs !1299 {
-  %4 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581
-  %5 = alloca i64, align 8, !effectiveSan !583
-  %6 = alloca i8*, align 8, !effectiveSan !595
+define linkonce_odr %"struct.std::_List_node"* @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv(%"class.__gnu_cxx::new_allocator"*, i64, i8*) #0 comdat align 2 !dbg !1448 !effectiveSanArgs !1449 !TYCHE_MD_ARGS !1450 {
+  %4 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581, !TYCHE_MD !1451
+  %5 = alloca i64, align 8, !effectiveSan !583, !TYCHE_MD !1452
+  %6 = alloca i8*, align 8, !effectiveSan !595, !TYCHE_MD !1453
   store %"class.__gnu_cxx::new_allocator"* %0, %"class.__gnu_cxx::new_allocator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %4, metadata !1300, metadata !868), !dbg !1301
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %4, metadata !1454, metadata !874), !dbg !1455
   store i64 %1, i64* %5, align 8
-  call void @llvm.dbg.declare(metadata i64* %5, metadata !1302, metadata !868), !dbg !1303
+  call void @llvm.dbg.declare(metadata i64* %5, metadata !1456, metadata !874), !dbg !1457
   store i8* %2, i8** %6, align 8
-  call void @llvm.dbg.declare(metadata i8** %6, metadata !1304, metadata !868), !dbg !1305
+  call void @llvm.dbg.declare(metadata i8** %6, metadata !1458, metadata !874), !dbg !1459
   %7 = load %"class.__gnu_cxx::new_allocator"*, %"class.__gnu_cxx::new_allocator"** %4, align 8, !effectiveSan !596
-  %8 = load i64, i64* %5, align 8, !dbg !1306, !effectiveSan !68
-  %9 = call i64 @_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv(%"class.__gnu_cxx::new_allocator"* %7) #11, !dbg !1308, !effectiveSan !70
-  %10 = icmp ugt i64 %8, %9, !dbg !1309
-  br i1 %10, label %11, label %12, !dbg !1310
+  %8 = load i64, i64* %5, align 8, !dbg !1460, !effectiveSan !68
+  %9 = call i64 @_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv(%"class.__gnu_cxx::new_allocator"* %7) #11, !dbg !1462, !effectiveSan !70
+  %10 = icmp ugt i64 %8, %9, !dbg !1463
+  br i1 %10, label %11, label %12, !dbg !1464
 
 ; <label>:11:                                     ; preds = %3
-  call void @_ZSt17__throw_bad_allocv() #12, !dbg !1311
-  unreachable, !dbg !1311
+  call void @_ZSt17__throw_bad_allocv() #12, !dbg !1465
+  unreachable, !dbg !1465
 
 ; <label>:12:                                     ; preds = %3
-  %13 = load i64, i64* %5, align 8, !dbg !1312, !effectiveSan !68
-  %14 = mul i64 %13, 24, !dbg !1313
-  %15 = call i8* @_Znwm(i64 %14), !dbg !1314, !effectiveSan !0, !TYCHE_MD !1315
-  %16 = bitcast i8* %15 to %"struct.std::_List_node"*, !dbg !1316, !effectiveSan !178
-  ret %"struct.std::_List_node"* %16, !dbg !1317
+  %13 = load i64, i64* %5, align 8, !dbg !1466, !effectiveSan !68
+  %14 = mul i64 %13, 24, !dbg !1467
+  %15 = call i8* @_Znwm(i64 %14), !dbg !1468, !effectiveSan !0, !TYCHE_MD !1469
+  %16 = bitcast i8* %15 to %"struct.std::_List_node"*, !dbg !1470, !effectiveSan !178
+  ret %"struct.std::_List_node"* %16, !dbg !1471, !TYCHE_MD !1472
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr i64 @_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv(%"class.__gnu_cxx::new_allocator"*) #6 comdat align 2 !dbg !1318 !effectiveSanArgs !1139 {
-  %2 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !597
+define linkonce_odr i64 @_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv(%"class.__gnu_cxx::new_allocator"*) #6 comdat align 2 !dbg !1473 !effectiveSanArgs !1232 !TYCHE_MD_ARGS !1474 {
+  %2 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !597, !TYCHE_MD !1475
   store %"class.__gnu_cxx::new_allocator"* %0, %"class.__gnu_cxx::new_allocator"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %2, metadata !1319, metadata !868), !dbg !1320
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %2, metadata !1476, metadata !874), !dbg !1477
   %3 = load %"class.__gnu_cxx::new_allocator"*, %"class.__gnu_cxx::new_allocator"** %2, align 8, !effectiveSan !580
-  ret i64 768614336404564650, !dbg !1321
+  ret i64 768614336404564650, !dbg !1478, !TYCHE_MD !1479
 }
 
 ; Function Attrs: noreturn
@@ -1079,273 +1715,273 @@ declare void @_ZSt17__throw_bad_allocv() #8
 declare noalias i8* @_Znwm(i64) #9
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE(%"struct.std::_List_iterator"*, %"struct.std::__detail::_List_node_base"*) unnamed_addr #6 comdat align 2 !dbg !1322 !effectiveSanArgs !1323 {
-  %3 = alloca %"struct.std::_List_iterator"*, align 8, !effectiveSan !599
-  %4 = alloca %"struct.std::__detail::_List_node_base"*, align 8, !effectiveSan !556
+define linkonce_odr void @_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE(%"struct.std::_List_iterator"*, %"struct.std::__detail::_List_node_base"*) unnamed_addr #6 comdat align 2 !dbg !1480 !effectiveSanArgs !1481 !TYCHE_MD_ARGS !1482 {
+  %3 = alloca %"struct.std::_List_iterator"*, align 8, !effectiveSan !599, !TYCHE_MD !1483
+  %4 = alloca %"struct.std::__detail::_List_node_base"*, align 8, !effectiveSan !556, !TYCHE_MD !1484
   store %"struct.std::_List_iterator"* %0, %"struct.std::_List_iterator"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_iterator"** %3, metadata !1324, metadata !868), !dbg !1325
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_iterator"** %3, metadata !1485, metadata !874), !dbg !1486
   store %"struct.std::__detail::_List_node_base"* %1, %"struct.std::__detail::_List_node_base"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_base"** %4, metadata !1326, metadata !868), !dbg !1327
+  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_base"** %4, metadata !1487, metadata !874), !dbg !1488
   %5 = load %"struct.std::_List_iterator"*, %"struct.std::_List_iterator"** %3, align 8, !effectiveSan !591
-  %6 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %5, i32 0, i32 0, !dbg !1328, !effectiveSan !556
-  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8, !dbg !1329, !effectiveSan !127
-  store %"struct.std::__detail::_List_node_base"* %7, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1328
-  ret void, !dbg !1330
+  %6 = getelementptr inbounds %"struct.std::_List_iterator", %"struct.std::_List_iterator"* %5, i32 0, i32 0, !dbg !1489, !effectiveSan !556
+  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8, !dbg !1490, !effectiveSan !127
+  store %"struct.std::__detail::_List_node_base"* %7, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1489
+  ret void, !dbg !1491, !TYCHE_MD !1492
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr dereferenceable(1) %"class.std::allocator"* @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_(%"class.std::allocator"* dereferenceable(1)) #6 comdat align 2 !dbg !1331 !effectiveSanArgs !1132 {
-  %2 = alloca %"class.std::allocator"*, align 8, !effectiveSan !574
+define linkonce_odr dereferenceable(1) %"class.std::allocator"* @_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_(%"class.std::allocator"* dereferenceable(1)) #6 comdat align 2 !dbg !1493 !effectiveSanArgs !1222 !TYCHE_MD_ARGS !1494 {
+  %2 = alloca %"class.std::allocator"*, align 8, !effectiveSan !574, !TYCHE_MD !1495
   store %"class.std::allocator"* %0, %"class.std::allocator"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %2, metadata !1332, metadata !868), !dbg !1333
-  %3 = load %"class.std::allocator"*, %"class.std::allocator"** %2, align 8, !dbg !1334, !effectiveSan !212
-  ret %"class.std::allocator"* %3, !dbg !1335
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %2, metadata !1496, metadata !874), !dbg !1497
+  %3 = load %"class.std::allocator"*, %"class.std::allocator"** %2, align 8, !dbg !1498, !effectiveSan !212
+  ret %"class.std::allocator"* %3, !dbg !1499, !TYCHE_MD !1500
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr dereferenceable(1) %"class.std::allocator"* @_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"*) #6 comdat align 2 !dbg !1336 !effectiveSanArgs !972 {
-  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !606
+define linkonce_odr dereferenceable(1) %"class.std::allocator"* @_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv(%"class.std::__cxx11::_List_base"*) #6 comdat align 2 !dbg !1501 !effectiveSanArgs !1005 !TYCHE_MD_ARGS !1502 {
+  %2 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !606, !TYCHE_MD !1503
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1337, metadata !868), !dbg !1338
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %2, metadata !1504, metadata !874), !dbg !1505
   %3 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %2, align 8, !effectiveSan !553
-  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0, !dbg !1339, !effectiveSan !555
-  %5 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %4 to %"class.std::allocator"*, !dbg !1339, !effectiveSan !265
-  ret %"class.std::allocator"* %5, !dbg !1340
+  %4 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %3, i32 0, i32 0, !dbg !1506, !effectiveSan !555
+  %5 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %4 to %"class.std::allocator"*, !dbg !1506, !effectiveSan !265
+  ret %"class.std::allocator"* %5, !dbg !1507, !TYCHE_MD !1508
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE(%"class.std::__cxx11::_List_base"*, %"class.std::allocator"* dereferenceable(1)) unnamed_addr #0 comdat align 2 !dbg !1341 !effectiveSanArgs !1342 {
-  %3 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554
-  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !605
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE(%"class.std::__cxx11::_List_base"*, %"class.std::allocator"* dereferenceable(1)) unnamed_addr #0 comdat align 2 !dbg !1509 !effectiveSanArgs !1510 !TYCHE_MD_ARGS !1511 {
+  %3 = alloca %"class.std::__cxx11::_List_base"*, align 8, !effectiveSan !554, !TYCHE_MD !1512
+  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !605, !TYCHE_MD !1513
   store %"class.std::__cxx11::_List_base"* %0, %"class.std::__cxx11::_List_base"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %3, metadata !1343, metadata !868), !dbg !1344
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::_List_base"** %3, metadata !1514, metadata !874), !dbg !1515
   store %"class.std::allocator"* %1, %"class.std::allocator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1345, metadata !868), !dbg !1346
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1516, metadata !874), !dbg !1517
   %5 = load %"class.std::__cxx11::_List_base"*, %"class.std::__cxx11::_List_base"** %3, align 8, !effectiveSan !553
-  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1347, !effectiveSan !555
-  %7 = load %"class.std::allocator"*, %"class.std::allocator"** %4, align 8, !dbg !1348, !effectiveSan !235
-  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6, %"class.std::allocator"* dereferenceable(1) %7), !dbg !1347
-  ret void, !dbg !1349
+  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1518, !effectiveSan !555
+  %7 = load %"class.std::allocator"*, %"class.std::allocator"** %4, align 8, !dbg !1519, !effectiveSan !235
+  call void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6, %"class.std::allocator"* dereferenceable(1) %7), !dbg !1518
+  ret void, !dbg !1520, !TYCHE_MD !1521
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type(%"class.std::__cxx11::list"*, %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"*) #0 comdat align 2 !dbg !1350 !effectiveSanArgs !1356 {
-  %4 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !601
-  %5 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !601
-  %6 = alloca %"struct.std::__false_type", align 1, !effectiveSan !602
-  %7 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552
+define linkonce_odr void @_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type(%"class.std::__cxx11::list"*, %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"*) #0 comdat align 2 !dbg !1522 !effectiveSanArgs !1528 !TYCHE_MD_ARGS !1529 {
+  %4 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !601, !TYCHE_MD !1530
+  %5 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !601, !TYCHE_MD !1531
+  %6 = alloca %"struct.std::__false_type", align 1, !effectiveSan !602, !TYCHE_MD !1532
+  %7 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !552, !TYCHE_MD !1533
   %8 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %4, i32 0, i32 0
   store %"struct.std::__detail::_List_node_base"* %1, %"struct.std::__detail::_List_node_base"** %8, align 8
   %9 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0
   store %"struct.std::__detail::_List_node_base"* %2, %"struct.std::__detail::_List_node_base"** %9, align 8
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %7, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %7, metadata !1357, metadata !868), !dbg !1358
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"* %4, metadata !1359, metadata !868), !dbg !1360
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"* %5, metadata !1361, metadata !868), !dbg !1362
-  call void @llvm.dbg.declare(metadata %"struct.std::__false_type"* %6, metadata !1363, metadata !868), !dbg !1364
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %7, metadata !1534, metadata !874), !dbg !1535
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"* %4, metadata !1536, metadata !874), !dbg !1537
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"* %5, metadata !1538, metadata !874), !dbg !1539
+  call void @llvm.dbg.declare(metadata %"struct.std::__false_type"* %6, metadata !1540, metadata !874), !dbg !1541
   %10 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %7, align 8, !effectiveSan !543
-  br label %11, !dbg !1365
+  br label %11, !dbg !1542
 
 ; <label>:11:                                     ; preds = %15, %3
-  %12 = call zeroext i1 @_ZNKSt20_List_const_iteratorIPvEneERKS1_(%"struct.std::_List_const_iterator"* %4, %"struct.std::_List_const_iterator"* dereferenceable(8) %5), !dbg !1366, !effectiveSan !377
-  br i1 %12, label %13, label %17, !dbg !1370
+  %12 = call zeroext i1 @_ZNKSt20_List_const_iteratorIPvEneERKS1_(%"struct.std::_List_const_iterator"* %4, %"struct.std::_List_const_iterator"* dereferenceable(8) %5), !dbg !1543, !effectiveSan !377
+  br i1 %12, label %13, label %17, !dbg !1547
 
 ; <label>:13:                                     ; preds = %11
-  %14 = call dereferenceable(8) i8** @_ZNKSt20_List_const_iteratorIPvEdeEv(%"struct.std::_List_const_iterator"* %4), !dbg !1372, !effectiveSan !64
-  call void @_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_(%"class.std::__cxx11::list"* %10, i8** dereferenceable(8) %14), !dbg !1373
-  br label %15, !dbg !1374
+  %14 = call dereferenceable(8) i8** @_ZNKSt20_List_const_iteratorIPvEdeEv(%"struct.std::_List_const_iterator"* %4), !dbg !1549, !effectiveSan !64
+  call void @_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_(%"class.std::__cxx11::list"* %10, i8** dereferenceable(8) %14), !dbg !1550
+  br label %15, !dbg !1551
 
 ; <label>:15:                                     ; preds = %13
-  %16 = call dereferenceable(8) %"struct.std::_List_const_iterator"* @_ZNSt20_List_const_iteratorIPvEppEv(%"struct.std::_List_const_iterator"* %4), !dbg !1375, !effectiveSan !609
-  br label %11, !dbg !1377, !llvm.loop !1378
+  %16 = call dereferenceable(8) %"struct.std::_List_const_iterator"* @_ZNSt20_List_const_iteratorIPvEppEv(%"struct.std::_List_const_iterator"* %4), !dbg !1552, !effectiveSan !609
+  br label %11, !dbg !1554, !llvm.loop !1555
 
 ; <label>:17:                                     ; preds = %11
-  ret void, !dbg !1381
+  ret void, !dbg !1558, !TYCHE_MD !1559
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr %"struct.std::__detail::_List_node_base"* @_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv(%"class.std::__cxx11::list"*) #0 comdat align 2 !dbg !1382 !effectiveSanArgs !899 {
-  %2 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !620
-  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !621
+define linkonce_odr %"struct.std::__detail::_List_node_base"* @_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv(%"class.std::__cxx11::list"*) #0 comdat align 2 !dbg !1560 !effectiveSanArgs !906 !TYCHE_MD_ARGS !1561 {
+  %2 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !620, !TYCHE_MD !1562
+  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !621, !TYCHE_MD !1563
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !1383, metadata !868), !dbg !1384
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !1564, metadata !874), !dbg !1565
   %4 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %3, align 8, !effectiveSan !543
-  %5 = bitcast %"class.std::__cxx11::list"* %4 to %"class.std::__cxx11::_List_base"*, !dbg !1385, !effectiveSan !553
-  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1385, !effectiveSan !555
-  %7 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6, i32 0, i32 0, !dbg !1386, !effectiveSan !557
-  %8 = bitcast %"struct.std::__detail::_List_node_header"* %7 to %"struct.std::__detail::_List_node_base"*, !dbg !1387, !effectiveSan !127
-  %9 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %8, i32 0, i32 0, !dbg !1388, !effectiveSan !556
-  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8, !dbg !1388, !effectiveSan !127
-  call void @_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE(%"struct.std::_List_const_iterator"* %2, %"struct.std::__detail::_List_node_base"* %10), !dbg !1389
-  %11 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %2, i32 0, i32 0, !dbg !1390
-  %12 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %11, align 8, !dbg !1390, !effectiveSan !324
-  ret %"struct.std::__detail::_List_node_base"* %12, !dbg !1390
+  %5 = bitcast %"class.std::__cxx11::list"* %4 to %"class.std::__cxx11::_List_base"*, !dbg !1566, !effectiveSan !553
+  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1566, !effectiveSan !555
+  %7 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6, i32 0, i32 0, !dbg !1567, !effectiveSan !557
+  %8 = bitcast %"struct.std::__detail::_List_node_header"* %7 to %"struct.std::__detail::_List_node_base"*, !dbg !1568, !effectiveSan !127
+  %9 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %8, i32 0, i32 0, !dbg !1569, !effectiveSan !556
+  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8, !dbg !1569, !effectiveSan !127
+  call void @_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE(%"struct.std::_List_const_iterator"* %2, %"struct.std::__detail::_List_node_base"* %10), !dbg !1570
+  %11 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %2, i32 0, i32 0, !dbg !1571
+  %12 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %11, align 8, !dbg !1571, !effectiveSan !324
+  ret %"struct.std::__detail::_List_node_base"* %12, !dbg !1571, !TYCHE_MD !1572
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr %"struct.std::__detail::_List_node_base"* @_ZNKSt7__cxx114listIPvSaIS1_EE3endEv(%"class.std::__cxx11::list"*) #0 comdat align 2 !dbg !1391 !effectiveSanArgs !899 {
-  %2 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !620
-  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !621
+define linkonce_odr %"struct.std::__detail::_List_node_base"* @_ZNKSt7__cxx114listIPvSaIS1_EE3endEv(%"class.std::__cxx11::list"*) #0 comdat align 2 !dbg !1573 !effectiveSanArgs !906 !TYCHE_MD_ARGS !1574 {
+  %2 = alloca %"struct.std::_List_const_iterator", align 8, !effectiveSan !620, !TYCHE_MD !1575
+  %3 = alloca %"class.std::__cxx11::list"*, align 8, !effectiveSan !621, !TYCHE_MD !1576
   store %"class.std::__cxx11::list"* %0, %"class.std::__cxx11::list"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !1392, metadata !868), !dbg !1393
+  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::list"** %3, metadata !1577, metadata !874), !dbg !1578
   %4 = load %"class.std::__cxx11::list"*, %"class.std::__cxx11::list"** %3, align 8, !effectiveSan !543
-  %5 = bitcast %"class.std::__cxx11::list"* %4 to %"class.std::__cxx11::_List_base"*, !dbg !1394, !effectiveSan !553
-  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1394, !effectiveSan !555
-  %7 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6, i32 0, i32 0, !dbg !1395, !effectiveSan !557
-  %8 = bitcast %"struct.std::__detail::_List_node_header"* %7 to %"struct.std::__detail::_List_node_base"*, !dbg !1396, !effectiveSan !127
-  call void @_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE(%"struct.std::_List_const_iterator"* %2, %"struct.std::__detail::_List_node_base"* %8), !dbg !1397
-  %9 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %2, i32 0, i32 0, !dbg !1398
-  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8, !dbg !1398, !effectiveSan !324
-  ret %"struct.std::__detail::_List_node_base"* %10, !dbg !1398
+  %5 = bitcast %"class.std::__cxx11::list"* %4 to %"class.std::__cxx11::_List_base"*, !dbg !1579, !effectiveSan !553
+  %6 = getelementptr inbounds %"class.std::__cxx11::_List_base", %"class.std::__cxx11::_List_base"* %5, i32 0, i32 0, !dbg !1579, !effectiveSan !555
+  %7 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %6, i32 0, i32 0, !dbg !1580, !effectiveSan !557
+  %8 = bitcast %"struct.std::__detail::_List_node_header"* %7 to %"struct.std::__detail::_List_node_base"*, !dbg !1581, !effectiveSan !127
+  call void @_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE(%"struct.std::_List_const_iterator"* %2, %"struct.std::__detail::_List_node_base"* %8), !dbg !1582
+  %9 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %2, i32 0, i32 0, !dbg !1583
+  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8, !dbg !1583, !effectiveSan !324
+  ret %"struct.std::__detail::_List_node_base"* %10, !dbg !1583, !TYCHE_MD !1584
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, %"class.std::allocator"* dereferenceable(1)) unnamed_addr #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !1399 !effectiveSanArgs !1400 {
-  %3 = alloca %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, align 8, !effectiveSan !584
-  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !605
-  %5 = alloca i8*
-  %6 = alloca i32
+define linkonce_odr void @_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE(%"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, %"class.std::allocator"* dereferenceable(1)) unnamed_addr #0 comdat align 2 personality i8* bitcast (i32 (...)* @__gxx_personality_v0 to i8*) !dbg !1585 !effectiveSanArgs !1586 !TYCHE_MD_ARGS !1587 {
+  %3 = alloca %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, align 8, !effectiveSan !584, !TYCHE_MD !1588
+  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !605, !TYCHE_MD !1589
+  %5 = alloca i8*, !TYCHE_MD !1590
+  %6 = alloca i32, !TYCHE_MD !1591
   store %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %0, %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %3, metadata !1401, metadata !868), !dbg !1402
+  call void @llvm.dbg.declare(metadata %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %3, metadata !1592, metadata !874), !dbg !1593
   store %"class.std::allocator"* %1, %"class.std::allocator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1403, metadata !868), !dbg !1404
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1594, metadata !874), !dbg !1595
   %7 = load %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"*, %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"** %3, align 8, !effectiveSan !555
-  %8 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7 to %"class.std::allocator"*, !dbg !1405, !effectiveSan !265
-  %9 = load %"class.std::allocator"*, %"class.std::allocator"** %4, align 8, !dbg !1406, !effectiveSan !235
-  call void @_ZNSaISt10_List_nodeIPvEEC2ERKS2_(%"class.std::allocator"* %8, %"class.std::allocator"* dereferenceable(1) %9) #11, !dbg !1407
-  %10 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7, i32 0, i32 0, !dbg !1408, !effectiveSan !557
+  %8 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7 to %"class.std::allocator"*, !dbg !1596, !effectiveSan !265
+  %9 = load %"class.std::allocator"*, %"class.std::allocator"** %4, align 8, !dbg !1597, !effectiveSan !235
+  call void @_ZNSaISt10_List_nodeIPvEEC2ERKS2_(%"class.std::allocator"* %8, %"class.std::allocator"* dereferenceable(1) %9) #11, !dbg !1598
+  %10 = getelementptr inbounds %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl", %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7, i32 0, i32 0, !dbg !1599, !effectiveSan !557
   invoke void @_ZNSt8__detail17_List_node_headerC2Ev(%"struct.std::__detail::_List_node_header"* %10)
-          to label %11 unwind label %12, !dbg !1408
+          to label %11 unwind label %12, !dbg !1599
 
 ; <label>:11:                                     ; preds = %2
-  ret void, !dbg !1409
+  ret void, !dbg !1600, !TYCHE_MD !1602
 
 ; <label>:12:                                     ; preds = %2
   %13 = landingpad { i8*, i32 }
-          cleanup, !dbg !1411
-  %14 = extractvalue { i8*, i32 } %13, 0, !dbg !1411
-  store i8* %14, i8** %5, align 8, !dbg !1411
-  %15 = extractvalue { i8*, i32 } %13, 1, !dbg !1411
-  store i32 %15, i32* %6, align 4, !dbg !1411
-  %16 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7 to %"class.std::allocator"*, !dbg !1413, !effectiveSan !265
-  call void @_ZNSaISt10_List_nodeIPvEED2Ev(%"class.std::allocator"* %16) #11, !dbg !1413
-  br label %17, !dbg !1413
+          cleanup, !dbg !1603
+  %14 = extractvalue { i8*, i32 } %13, 0, !dbg !1603
+  store i8* %14, i8** %5, align 8, !dbg !1603
+  %15 = extractvalue { i8*, i32 } %13, 1, !dbg !1603
+  store i32 %15, i32* %6, align 4, !dbg !1603
+  %16 = bitcast %"struct.std::__cxx11::_List_base<void *, std::allocator<void *> >::_List_impl"* %7 to %"class.std::allocator"*, !dbg !1605, !effectiveSan !265
+  call void @_ZNSaISt10_List_nodeIPvEED2Ev(%"class.std::allocator"* %16) #11, !dbg !1605
+  br label %17, !dbg !1605
 
 ; <label>:17:                                     ; preds = %12
-  %18 = load i8*, i8** %5, align 8, !dbg !1416, !effectiveSan !0
-  %19 = load i32, i32* %6, align 4, !dbg !1416, !effectiveSan !371
-  %20 = insertvalue { i8*, i32 } undef, i8* %18, 0, !dbg !1416
-  %21 = insertvalue { i8*, i32 } %20, i32 %19, 1, !dbg !1416
-  resume { i8*, i32 } %21, !dbg !1416
+  %18 = load i8*, i8** %5, align 8, !dbg !1608, !effectiveSan !0
+  %19 = load i32, i32* %6, align 4, !dbg !1608, !effectiveSan !371
+  %20 = insertvalue { i8*, i32 } undef, i8* %18, 0, !dbg !1608
+  %21 = insertvalue { i8*, i32 } %20, i32 %19, 1, !dbg !1608
+  resume { i8*, i32 } %21, !dbg !1608
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSaISt10_List_nodeIPvEEC2ERKS2_(%"class.std::allocator"*, %"class.std::allocator"* dereferenceable(1)) unnamed_addr #6 comdat align 2 !dbg !1418 !effectiveSanArgs !1419 {
-  %3 = alloca %"class.std::allocator"*, align 8, !effectiveSan !585
-  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !574
+define linkonce_odr void @_ZNSaISt10_List_nodeIPvEEC2ERKS2_(%"class.std::allocator"*, %"class.std::allocator"* dereferenceable(1)) unnamed_addr #6 comdat align 2 !dbg !1610 !effectiveSanArgs !1611 !TYCHE_MD_ARGS !1612 {
+  %3 = alloca %"class.std::allocator"*, align 8, !effectiveSan !585, !TYCHE_MD !1613
+  %4 = alloca %"class.std::allocator"*, align 8, !effectiveSan !574, !TYCHE_MD !1614
   store %"class.std::allocator"* %0, %"class.std::allocator"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %3, metadata !1420, metadata !868), !dbg !1421
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %3, metadata !1615, metadata !874), !dbg !1616
   store %"class.std::allocator"* %1, %"class.std::allocator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1422, metadata !868), !dbg !1423
+  call void @llvm.dbg.declare(metadata %"class.std::allocator"** %4, metadata !1617, metadata !874), !dbg !1618
   %5 = load %"class.std::allocator"*, %"class.std::allocator"** %3, align 8, !effectiveSan !265
-  %6 = bitcast %"class.std::allocator"* %5 to %"class.__gnu_cxx::new_allocator"*, !dbg !1424, !effectiveSan !580
-  %7 = load %"class.std::allocator"*, %"class.std::allocator"** %4, align 8, !dbg !1425, !effectiveSan !212
-  %8 = bitcast %"class.std::allocator"* %7 to %"class.__gnu_cxx::new_allocator"*, !dbg !1425, !effectiveSan !580
-  call void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_(%"class.__gnu_cxx::new_allocator"* %6, %"class.__gnu_cxx::new_allocator"* dereferenceable(1) %8) #11, !dbg !1426
-  ret void, !dbg !1427
+  %6 = bitcast %"class.std::allocator"* %5 to %"class.__gnu_cxx::new_allocator"*, !dbg !1619, !effectiveSan !580
+  %7 = load %"class.std::allocator"*, %"class.std::allocator"** %4, align 8, !dbg !1620, !effectiveSan !212
+  %8 = bitcast %"class.std::allocator"* %7 to %"class.__gnu_cxx::new_allocator"*, !dbg !1620, !effectiveSan !580
+  call void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_(%"class.__gnu_cxx::new_allocator"* %6, %"class.__gnu_cxx::new_allocator"* dereferenceable(1) %8) #11, !dbg !1621
+  ret void, !dbg !1622, !TYCHE_MD !1623
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_(%"class.__gnu_cxx::new_allocator"*, %"class.__gnu_cxx::new_allocator"* dereferenceable(1)) unnamed_addr #6 comdat align 2 !dbg !1428 !effectiveSanArgs !1429 {
-  %3 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581
-  %4 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !608
+define linkonce_odr void @_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_(%"class.__gnu_cxx::new_allocator"*, %"class.__gnu_cxx::new_allocator"* dereferenceable(1)) unnamed_addr #6 comdat align 2 !dbg !1624 !effectiveSanArgs !1625 !TYCHE_MD_ARGS !1626 {
+  %3 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !581, !TYCHE_MD !1627
+  %4 = alloca %"class.__gnu_cxx::new_allocator"*, align 8, !effectiveSan !608, !TYCHE_MD !1628
   store %"class.__gnu_cxx::new_allocator"* %0, %"class.__gnu_cxx::new_allocator"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %3, metadata !1430, metadata !868), !dbg !1431
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %3, metadata !1629, metadata !874), !dbg !1630
   store %"class.__gnu_cxx::new_allocator"* %1, %"class.__gnu_cxx::new_allocator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %4, metadata !1432, metadata !868), !dbg !1433
+  call void @llvm.dbg.declare(metadata %"class.__gnu_cxx::new_allocator"** %4, metadata !1631, metadata !874), !dbg !1632
   %5 = load %"class.__gnu_cxx::new_allocator"*, %"class.__gnu_cxx::new_allocator"** %3, align 8, !effectiveSan !580
-  ret void, !dbg !1434
+  ret void, !dbg !1633, !TYCHE_MD !1634
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr zeroext i1 @_ZNKSt20_List_const_iteratorIPvEneERKS1_(%"struct.std::_List_const_iterator"*, %"struct.std::_List_const_iterator"* dereferenceable(8)) #6 comdat align 2 !dbg !1435 !effectiveSanArgs !1436 {
-  %3 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !611
-  %4 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !613
+define linkonce_odr zeroext i1 @_ZNKSt20_List_const_iteratorIPvEneERKS1_(%"struct.std::_List_const_iterator"*, %"struct.std::_List_const_iterator"* dereferenceable(8)) #6 comdat align 2 !dbg !1635 !effectiveSanArgs !1636 !TYCHE_MD_ARGS !1637 {
+  %3 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !611, !TYCHE_MD !1638
+  %4 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !613, !TYCHE_MD !1639
   store %"struct.std::_List_const_iterator"* %0, %"struct.std::_List_const_iterator"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %3, metadata !1437, metadata !868), !dbg !1438
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %3, metadata !1640, metadata !874), !dbg !1641
   store %"struct.std::_List_const_iterator"* %1, %"struct.std::_List_const_iterator"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %4, metadata !1439, metadata !868), !dbg !1440
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %4, metadata !1642, metadata !874), !dbg !1643
   %5 = load %"struct.std::_List_const_iterator"*, %"struct.std::_List_const_iterator"** %3, align 8, !effectiveSan !601
-  %6 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0, !dbg !1441, !effectiveSan !614
-  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1441, !effectiveSan !239
-  %8 = load %"struct.std::_List_const_iterator"*, %"struct.std::_List_const_iterator"** %4, align 8, !dbg !1442, !effectiveSan !408
-  %9 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %8, i32 0, i32 0, !dbg !1443, !effectiveSan !614
-  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8, !dbg !1443, !effectiveSan !239
-  %11 = icmp ne %"struct.std::__detail::_List_node_base"* %7, %10, !dbg !1444
-  ret i1 %11, !dbg !1445
+  %6 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0, !dbg !1644, !effectiveSan !614
+  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1644, !effectiveSan !239
+  %8 = load %"struct.std::_List_const_iterator"*, %"struct.std::_List_const_iterator"** %4, align 8, !dbg !1645, !effectiveSan !408
+  %9 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %8, i32 0, i32 0, !dbg !1646, !effectiveSan !614
+  %10 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %9, align 8, !dbg !1646, !effectiveSan !239
+  %11 = icmp ne %"struct.std::__detail::_List_node_base"* %7, %10, !dbg !1647
+  ret i1 %11, !dbg !1648, !TYCHE_MD !1649
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr dereferenceable(8) i8** @_ZNKSt20_List_const_iteratorIPvEdeEv(%"struct.std::_List_const_iterator"*) #0 comdat align 2 !dbg !1446 !effectiveSanArgs !1447 {
-  %2 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !611
+define linkonce_odr dereferenceable(8) i8** @_ZNKSt20_List_const_iteratorIPvEdeEv(%"struct.std::_List_const_iterator"*) #0 comdat align 2 !dbg !1650 !effectiveSanArgs !1651 !TYCHE_MD_ARGS !1652 {
+  %2 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !611, !TYCHE_MD !1653
   store %"struct.std::_List_const_iterator"* %0, %"struct.std::_List_const_iterator"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %2, metadata !1448, metadata !868), !dbg !1449
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %2, metadata !1654, metadata !874), !dbg !1655
   %3 = load %"struct.std::_List_const_iterator"*, %"struct.std::_List_const_iterator"** %2, align 8, !effectiveSan !601
-  %4 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %3, i32 0, i32 0, !dbg !1450, !effectiveSan !614
-  %5 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8, !dbg !1450, !effectiveSan !239
-  %6 = bitcast %"struct.std::__detail::_List_node_base"* %5 to %"struct.std::_List_node"*, !dbg !1451, !effectiveSan !178
-  %7 = call i8** @_ZNKSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"* %6), !dbg !1452, !effectiveSan !61
-  ret i8** %7, !dbg !1453
+  %4 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %3, i32 0, i32 0, !dbg !1656, !effectiveSan !614
+  %5 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8, !dbg !1656, !effectiveSan !239
+  %6 = bitcast %"struct.std::__detail::_List_node_base"* %5 to %"struct.std::_List_node"*, !dbg !1657, !effectiveSan !178
+  %7 = call i8** @_ZNKSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"* %6), !dbg !1658, !effectiveSan !61
+  ret i8** %7, !dbg !1659, !TYCHE_MD !1660
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr dereferenceable(8) %"struct.std::_List_const_iterator"* @_ZNSt20_List_const_iteratorIPvEppEv(%"struct.std::_List_const_iterator"*) #6 comdat align 2 !dbg !1454 !effectiveSanArgs !1447 {
-  %2 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !619
+define linkonce_odr dereferenceable(8) %"struct.std::_List_const_iterator"* @_ZNSt20_List_const_iteratorIPvEppEv(%"struct.std::_List_const_iterator"*) #6 comdat align 2 !dbg !1661 !effectiveSanArgs !1651 !TYCHE_MD_ARGS !1662 {
+  %2 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !619, !TYCHE_MD !1663
   store %"struct.std::_List_const_iterator"* %0, %"struct.std::_List_const_iterator"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %2, metadata !1455, metadata !868), !dbg !1456
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %2, metadata !1664, metadata !874), !dbg !1665
   %3 = load %"struct.std::_List_const_iterator"*, %"struct.std::_List_const_iterator"** %2, align 8, !effectiveSan !601
-  %4 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %3, i32 0, i32 0, !dbg !1457, !effectiveSan !614
-  %5 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8, !dbg !1457, !effectiveSan !239
-  %6 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %5, i32 0, i32 0, !dbg !1458, !effectiveSan !556
-  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1458, !effectiveSan !127
-  %8 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %3, i32 0, i32 0, !dbg !1459, !effectiveSan !614
-  store %"struct.std::__detail::_List_node_base"* %7, %"struct.std::__detail::_List_node_base"** %8, align 8, !dbg !1460
-  ret %"struct.std::_List_const_iterator"* %3, !dbg !1461
+  %4 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %3, i32 0, i32 0, !dbg !1666, !effectiveSan !614
+  %5 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8, !dbg !1666, !effectiveSan !239
+  %6 = getelementptr inbounds %"struct.std::__detail::_List_node_base", %"struct.std::__detail::_List_node_base"* %5, i32 0, i32 0, !dbg !1667, !effectiveSan !556
+  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1667, !effectiveSan !127
+  %8 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %3, i32 0, i32 0, !dbg !1668, !effectiveSan !614
+  store %"struct.std::__detail::_List_node_base"* %7, %"struct.std::__detail::_List_node_base"** %8, align 8, !dbg !1669
+  ret %"struct.std::_List_const_iterator"* %3, !dbg !1670, !TYCHE_MD !1671
 }
 
 ; Function Attrs: noinline uwtable
-define linkonce_odr i8** @_ZNKSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"*) #0 comdat align 2 !dbg !1462 !effectiveSanArgs !1041 {
-  %2 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !617
+define linkonce_odr i8** @_ZNKSt10_List_nodeIPvE9_M_valptrEv(%"struct.std::_List_node"*) #0 comdat align 2 !dbg !1672 !effectiveSanArgs !1091 !TYCHE_MD_ARGS !1673 {
+  %2 = alloca %"struct.std::_List_node"*, align 8, !effectiveSan !617, !TYCHE_MD !1674
   store %"struct.std::_List_node"* %0, %"struct.std::_List_node"** %2, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %2, metadata !1463, metadata !868), !dbg !1464
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_node"** %2, metadata !1675, metadata !874), !dbg !1676
   %3 = load %"struct.std::_List_node"*, %"struct.std::_List_node"** %2, align 8, !effectiveSan !178
-  %4 = getelementptr inbounds %"struct.std::_List_node", %"struct.std::_List_node"* %3, i32 0, i32 1, !dbg !1465, !effectiveSan !53
-  %5 = call i8** @_ZSt11__addressofIKPvEPT_RS2_(i8** dereferenceable(8) %4), !dbg !1466, !effectiveSan !61
-  ret i8** %5, !dbg !1467
+  %4 = getelementptr inbounds %"struct.std::_List_node", %"struct.std::_List_node"* %3, i32 0, i32 1, !dbg !1677, !effectiveSan !53
+  %5 = call i8** @_ZSt11__addressofIKPvEPT_RS2_(i8** dereferenceable(8) %4), !dbg !1678, !effectiveSan !61
+  ret i8** %5, !dbg !1679, !TYCHE_MD !1680
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr i8** @_ZSt11__addressofIKPvEPT_RS2_(i8** dereferenceable(8)) #6 comdat !dbg !1468 !effectiveSanArgs !1092 {
-  %2 = alloca i8**, align 8, !effectiveSan !598
+define linkonce_odr i8** @_ZSt11__addressofIKPvEPT_RS2_(i8** dereferenceable(8)) #6 comdat !dbg !1681 !effectiveSanArgs !1163 !TYCHE_MD_ARGS !1686 {
+  %2 = alloca i8**, align 8, !effectiveSan !598, !TYCHE_MD !1687
   store i8** %0, i8*** %2, align 8
-  call void @llvm.dbg.declare(metadata i8*** %2, metadata !1473, metadata !868), !dbg !1474
-  %3 = load i8**, i8*** %2, align 8, !dbg !1475, !effectiveSan !62
-  ret i8** %3, !dbg !1476
+  call void @llvm.dbg.declare(metadata i8*** %2, metadata !1688, metadata !874), !dbg !1689
+  %3 = load i8**, i8*** %2, align 8, !dbg !1690, !effectiveSan !62
+  ret i8** %3, !dbg !1691, !TYCHE_MD !1692
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define linkonce_odr void @_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE(%"struct.std::_List_const_iterator"*, %"struct.std::__detail::_List_node_base"*) unnamed_addr #6 comdat align 2 !dbg !1477 !effectiveSanArgs !1478 {
-  %3 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !619
-  %4 = alloca %"struct.std::__detail::_List_node_base"*, align 8, !effectiveSan !614
+define linkonce_odr void @_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE(%"struct.std::_List_const_iterator"*, %"struct.std::__detail::_List_node_base"*) unnamed_addr #6 comdat align 2 !dbg !1693 !effectiveSanArgs !1694 !TYCHE_MD_ARGS !1695 {
+  %3 = alloca %"struct.std::_List_const_iterator"*, align 8, !effectiveSan !619, !TYCHE_MD !1696
+  %4 = alloca %"struct.std::__detail::_List_node_base"*, align 8, !effectiveSan !614, !TYCHE_MD !1697
   store %"struct.std::_List_const_iterator"* %0, %"struct.std::_List_const_iterator"** %3, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %3, metadata !1479, metadata !868), !dbg !1480
+  call void @llvm.dbg.declare(metadata %"struct.std::_List_const_iterator"** %3, metadata !1698, metadata !874), !dbg !1699
   store %"struct.std::__detail::_List_node_base"* %1, %"struct.std::__detail::_List_node_base"** %4, align 8
-  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_base"** %4, metadata !1481, metadata !868), !dbg !1482
+  call void @llvm.dbg.declare(metadata %"struct.std::__detail::_List_node_base"** %4, metadata !1700, metadata !874), !dbg !1701
   %5 = load %"struct.std::_List_const_iterator"*, %"struct.std::_List_const_iterator"** %3, align 8, !effectiveSan !601
-  %6 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0, !dbg !1483, !effectiveSan !614
-  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8, !dbg !1484, !effectiveSan !239
-  store %"struct.std::__detail::_List_node_base"* %7, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1483
-  ret void, !dbg !1485
+  %6 = getelementptr inbounds %"struct.std::_List_const_iterator", %"struct.std::_List_const_iterator"* %5, i32 0, i32 0, !dbg !1702, !effectiveSan !614
+  %7 = load %"struct.std::__detail::_List_node_base"*, %"struct.std::__detail::_List_node_base"** %4, align 8, !dbg !1703, !effectiveSan !239
+  store %"struct.std::__detail::_List_node_base"* %7, %"struct.std::__detail::_List_node_base"** %6, align 8, !dbg !1702
+  ret void, !dbg !1704, !TYCHE_MD !1705
 }
 
 attributes #0 = { noinline uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+fxsr,+mmx,+popcnt,+sse,+sse2,+sse3,+sse4.1,+sse4.2,+ssse3,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
@@ -2233,622 +2869,842 @@ attributes #12 = { noreturn }
 !864 = !{i32 2, !"Debug Info Version", i32 3}
 !865 = !{!"clang version 4.0.1 (tags/RELEASE_401/final)"}
 !866 = distinct !DISubprogram(name: "bad", linkageName: "_ZN31CWE843_Type_Confusion__short_733badEv", scope: !862, file: !2, line: 30, type: !643, isLocal: false, isDefinition: true, scopeLine: 31, flags: DIFlagPrototyped, isOptimized: false, unit: !1, variables: !3)
-!867 = !DILocalVariable(name: "data", scope: !866, file: !2, line: 32, type: !0)
-!868 = !DIExpression()
-!869 = !DILocation(line: 32, column: 12, scope: !866)
-!870 = !DILocalVariable(name: "dataList", scope: !866, file: !2, line: 33, type: !308)
-!871 = !DILocation(line: 33, column: 18, scope: !866)
-!872 = !DILocation(line: 35, column: 10, scope: !866)
-!873 = !DILocalVariable(name: "shortBuffer", scope: !874, file: !2, line: 38, type: !545)
-!874 = distinct !DILexicalBlock(scope: !866, file: !2, line: 36, column: 5)
-!875 = !DILocation(line: 38, column: 15, scope: !874)
-!876 = !DILocation(line: 39, column: 16, scope: !874)
-!877 = !DILocation(line: 39, column: 14, scope: !874)
-!878 = !DILocation(line: 42, column: 14, scope: !866)
-!879 = !DILocation(line: 43, column: 14, scope: !866)
-!880 = !DILocation(line: 44, column: 14, scope: !866)
-!881 = !DILocation(line: 45, column: 13, scope: !866)
-!882 = !DILocation(line: 45, column: 5, scope: !883)
-!883 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 1)
-!884 = !DILocation(line: 45, column: 5, scope: !885)
-!885 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 2)
-!886 = !DILocation(line: 46, column: 1, scope: !866)
-!887 = !DILocation(line: 46, column: 1, scope: !883)
-!888 = !DILocation(line: 46, column: 1, scope: !885)
-!889 = !DILocation(line: 45, column: 5, scope: !890)
-!890 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 3)
-!891 = !DILocation(line: 45, column: 5, scope: !892)
-!892 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 4)
-!893 = !DILocation(line: 46, column: 1, scope: !890)
-!894 = !DILocation(line: 46, column: 1, scope: !892)
-!895 = !DILocation(line: 46, column: 1, scope: !896)
-!896 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 5)
-!897 = !DILocation(line: 45, column: 5, scope: !896)
-!898 = distinct !DISubprogram(name: "list", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EEC2Ev", scope: !308, file: !11, line: 683, type: !416, isLocal: false, isDefinition: true, scopeLine: 683, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !415, variables: !3)
-!899 = !{!543}
-!900 = !DILocalVariable(name: "this", arg: 1, scope: !898, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
-!901 = !DILocation(line: 0, scope: !898)
-!902 = !DILocation(line: 683, column: 14, scope: !898)
-!903 = !DILocation(line: 683, column: 7, scope: !898)
-!904 = !DILocation(line: 683, column: 16, scope: !898)
-!905 = distinct !DISubprogram(name: "push_back", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_", scope: !308, file: !11, line: 1219, type: !488, isLocal: false, isDefinition: true, scopeLine: 1220, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !491, variables: !3)
-!906 = !{!543, !64}
-!907 = !DILocalVariable(name: "this", arg: 1, scope: !905, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
-!908 = !DILocation(line: 0, scope: !905)
-!909 = !DILocalVariable(name: "__x", arg: 2, scope: !905, file: !11, line: 1219, type: !317)
-!910 = !DILocation(line: 1219, column: 35, scope: !905)
-!911 = !DILocation(line: 1220, column: 25, scope: !905)
-!912 = !DILocation(line: 1220, column: 32, scope: !905)
-!913 = !DILocation(line: 1220, column: 15, scope: !905)
-!914 = !DILocation(line: 1220, column: 15, scope: !915)
-!915 = !DILexicalBlockFile(scope: !905, file: !11, discriminator: 1)
-!916 = !DILocation(line: 1220, column: 38, scope: !905)
-!917 = distinct !DISubprogram(name: "list", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", scope: !308, file: !11, line: 743, type: !429, isLocal: false, isDefinition: true, scopeLine: 746, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !428, variables: !3)
-!918 = !{!543, !543}
-!919 = !DILocalVariable(name: "this", arg: 1, scope: !917, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
-!920 = !DILocation(line: 0, scope: !917)
-!921 = !DILocalVariable(name: "__x", arg: 2, scope: !917, file: !11, line: 743, type: !431)
-!922 = !DILocation(line: 743, column: 24, scope: !917)
-!923 = !DILocation(line: 746, column: 7, scope: !917)
-!924 = !DILocation(line: 745, column: 26, scope: !917)
-!925 = !DILocation(line: 745, column: 30, scope: !917)
-!926 = !DILocation(line: 744, column: 15, scope: !917)
-!927 = !DILocation(line: 744, column: 9, scope: !928)
-!928 = !DILexicalBlockFile(scope: !917, file: !11, discriminator: 1)
-!929 = !DILocation(line: 746, column: 32, scope: !930)
-!930 = distinct !DILexicalBlock(scope: !917, file: !11, line: 746, column: 7)
-!931 = !DILocation(line: 746, column: 36, scope: !930)
-!932 = !DILocation(line: 746, column: 36, scope: !933)
-!933 = !DILexicalBlockFile(scope: !930, file: !11, discriminator: 1)
-!934 = !DILocation(line: 746, column: 45, scope: !933)
-!935 = !DILocation(line: 746, column: 49, scope: !933)
-!936 = !DILocation(line: 746, column: 49, scope: !937)
-!937 = !DILexicalBlockFile(scope: !930, file: !11, discriminator: 2)
-!938 = !DILocation(line: 746, column: 9, scope: !937)
-!939 = !DILocation(line: 746, column: 73, scope: !940)
-!940 = !DILexicalBlockFile(scope: !917, file: !11, discriminator: 3)
-!941 = !DILocation(line: 746, column: 73, scope: !942)
-!942 = !DILexicalBlockFile(scope: !930, file: !11, discriminator: 4)
-!943 = !DILocation(line: 746, column: 73, scope: !944)
-!944 = !DILexicalBlockFile(scope: !930, file: !11, discriminator: 5)
-!945 = !DILocation(line: 746, column: 73, scope: !946)
-!946 = !DILexicalBlockFile(scope: !930, file: !11, discriminator: 6)
-!947 = !DILocation(line: 746, column: 73, scope: !948)
-!948 = !DILexicalBlockFile(scope: !930, file: !11, discriminator: 7)
-!949 = distinct !DISubprogram(name: "~list", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EED2Ev", scope: !308, file: !11, line: 564, type: !416, isLocal: false, isDefinition: true, scopeLine: 564, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !950, variables: !3)
-!950 = !DISubprogram(name: "~list", scope: !308, type: !416, isLocal: false, isDefinition: false, flags: DIFlagPublic | DIFlagArtificial | DIFlagPrototyped, isOptimized: false)
-!951 = !DILocalVariable(name: "this", arg: 1, scope: !949, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
-!952 = !DILocation(line: 0, scope: !949)
-!953 = !DILocation(line: 564, column: 11, scope: !954)
-!954 = distinct !DILexicalBlock(scope: !949, file: !11, line: 564, column: 11)
-!955 = !DILocation(line: 564, column: 11, scope: !949)
-!956 = distinct !DISubprogram(name: "main", scope: !2, file: !2, line: 94, type: !957, isLocal: false, isDefinition: true, scopeLine: 95, flags: DIFlagPrototyped, isOptimized: false, unit: !1, variables: !3)
-!957 = !DISubroutineType(types: !958)
-!958 = !{!371, !371, !548}
-!959 = !{null, !64}
-!960 = !DILocalVariable(name: "argc", arg: 1, scope: !956, file: !2, line: 94, type: !371)
-!961 = !DILocation(line: 94, column: 14, scope: !956)
-!962 = !DILocalVariable(name: "argv", arg: 2, scope: !956, file: !2, line: 94, type: !548)
-!963 = !DILocation(line: 94, column: 27, scope: !956)
-!964 = !DILocation(line: 97, column: 22, scope: !956)
-!965 = !DILocation(line: 97, column: 5, scope: !966)
-!966 = !DILexicalBlockFile(scope: !956, file: !2, discriminator: 1)
-!967 = !DILocation(line: 104, column: 5, scope: !956)
-!968 = !DILocation(line: 105, column: 5, scope: !956)
-!969 = !DILocation(line: 106, column: 5, scope: !956)
-!970 = !DILocation(line: 108, column: 5, scope: !956)
-!971 = distinct !DISubprogram(name: "~_List_base", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev", scope: !10, file: !11, line: 506, type: !298, isLocal: false, isDefinition: true, scopeLine: 507, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !303, variables: !3)
-!972 = !{!553}
-!973 = !DILocalVariable(name: "this", arg: 1, scope: !971, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
-!974 = !DILocation(line: 0, scope: !971)
-!975 = !DILocation(line: 507, column: 9, scope: !976)
-!976 = distinct !DILexicalBlock(scope: !971, file: !11, line: 507, column: 7)
-!977 = !DILocation(line: 507, column: 21, scope: !978)
-!978 = !DILexicalBlockFile(scope: !976, file: !11, discriminator: 1)
-!979 = !DILocation(line: 507, column: 21, scope: !980)
-!980 = !DILexicalBlockFile(scope: !971, file: !11, discriminator: 1)
-!981 = !DILocation(line: 507, column: 21, scope: !982)
-!982 = !DILexicalBlockFile(scope: !976, file: !11, discriminator: 2)
-!983 = !DILocation(line: 507, column: 21, scope: !984)
-!984 = !DILexicalBlockFile(scope: !976, file: !11, discriminator: 3)
-!985 = !DILocalVariable(name: "this", arg: 1, scope: !9, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
-!986 = !DILocation(line: 0, scope: !9)
-!987 = !DILocalVariable(name: "__cur", scope: !9, file: !8, line: 70, type: !127)
-!988 = !DILocation(line: 70, column: 34, scope: !9)
-!989 = !DILocation(line: 70, column: 42, scope: !9)
-!990 = !DILocation(line: 70, column: 50, scope: !9)
-!991 = !DILocation(line: 70, column: 58, scope: !9)
-!992 = !DILocation(line: 71, column: 7, scope: !9)
-!993 = !DILocation(line: 71, column: 14, scope: !994)
-!994 = !DILexicalBlockFile(scope: !9, file: !8, discriminator: 1)
-!995 = !DILocation(line: 71, column: 24, scope: !994)
-!996 = !DILocation(line: 71, column: 32, scope: !994)
-!997 = !DILocation(line: 71, column: 23, scope: !994)
-!998 = !DILocation(line: 71, column: 20, scope: !994)
-!999 = !DILocation(line: 71, column: 7, scope: !994)
-!1000 = !DILocalVariable(name: "__tmp", scope: !1001, file: !8, line: 73, type: !6)
-!1001 = distinct !DILexicalBlock(scope: !9, file: !8, line: 72, column: 2)
-!1002 = !DILocation(line: 73, column: 11, scope: !1001)
-!1003 = !DILocation(line: 73, column: 39, scope: !1001)
-!1004 = !DILocation(line: 73, column: 19, scope: !1001)
-!1005 = !DILocation(line: 74, column: 12, scope: !1001)
-!1006 = !DILocation(line: 74, column: 19, scope: !1001)
-!1007 = !DILocation(line: 74, column: 10, scope: !1001)
-!1008 = !DILocalVariable(name: "__val", scope: !1001, file: !8, line: 75, type: !53)
-!1009 = !DILocation(line: 75, column: 9, scope: !1001)
-!1010 = !DILocation(line: 75, column: 17, scope: !1001)
-!1011 = !DILocation(line: 75, column: 24, scope: !1001)
-!1012 = !DILocation(line: 79, column: 19, scope: !1001)
-!1013 = !DILocation(line: 79, column: 4, scope: !1014)
-!1014 = !DILexicalBlockFile(scope: !1001, file: !8, discriminator: 4)
-!1015 = !DILocation(line: 79, column: 4, scope: !1001)
-!1016 = !DILocation(line: 79, column: 52, scope: !1001)
-!1017 = !DILocation(line: 79, column: 44, scope: !1001)
-!1018 = !DILocation(line: 79, column: 4, scope: !1019)
-!1019 = !DILexicalBlockFile(scope: !1001, file: !8, discriminator: 1)
-!1020 = !DILocation(line: 81, column: 16, scope: !1001)
-!1021 = !DILocation(line: 81, column: 4, scope: !1001)
-!1022 = !DILocation(line: 71, column: 7, scope: !1023)
-!1023 = !DILexicalBlockFile(scope: !9, file: !8, discriminator: 2)
-!1024 = distinct !{!1024, !992, !1025}
-!1025 = !DILocation(line: 82, column: 2, scope: !9)
-!1026 = !DILocation(line: 83, column: 5, scope: !1001)
-!1027 = !DILocation(line: 79, column: 4, scope: !1028)
-!1028 = !DILexicalBlockFile(scope: !1001, file: !8, discriminator: 2)
-!1029 = !DILocation(line: 83, column: 5, scope: !994)
-!1030 = !DILocation(line: 79, column: 4, scope: !1031)
-!1031 = !DILexicalBlockFile(scope: !1001, file: !8, discriminator: 3)
-!1032 = distinct !DISubprogram(name: "~_List_impl", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev", scope: !17, file: !11, line: 382, type: !228, isLocal: false, isDefinition: true, scopeLine: 382, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !1033, variables: !3)
-!1033 = !DISubprogram(name: "~_List_impl", scope: !17, type: !228, isLocal: false, isDefinition: false, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false)
-!1034 = !{!555}
-!1035 = !DILocalVariable(name: "this", arg: 1, scope: !1032, type: !555, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1036 = !DILocation(line: 0, scope: !1032)
-!1037 = !DILocation(line: 382, column: 14, scope: !1038)
-!1038 = distinct !DILexicalBlock(scope: !1032, file: !11, line: 382, column: 14)
-!1039 = !DILocation(line: 382, column: 14, scope: !1032)
-!1040 = distinct !DISubprogram(name: "_M_valptr", linkageName: "_ZNSt10_List_nodeIPvE9_M_valptrEv", scope: !120, file: !11, line: 174, type: !147, isLocal: false, isDefinition: true, scopeLine: 174, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !146, variables: !3)
-!1041 = !{!178}
-!1042 = !DILocalVariable(name: "this", arg: 1, scope: !1040, type: !178, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1043 = !DILocation(line: 0, scope: !1040)
-!1044 = !DILocation(line: 174, column: 62, scope: !1040)
-!1045 = !DILocation(line: 174, column: 45, scope: !1040)
-!1046 = !DILocation(line: 174, column: 38, scope: !1040)
-!1047 = distinct !DISubprogram(name: "_M_get_Node_allocator", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv", scope: !10, file: !11, line: 460, type: !291, isLocal: false, isDefinition: true, scopeLine: 461, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !290, variables: !3)
-!1048 = !DILocalVariable(name: "this", arg: 1, scope: !1047, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1049 = !DILocation(line: 0, scope: !1047)
-!1050 = !DILocation(line: 461, column: 16, scope: !1047)
-!1051 = !DILocation(line: 461, column: 9, scope: !1047)
-!1052 = distinct !DISubprogram(name: "allocator<std::_List_node<void *> >", linkageName: "_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E", scope: !33, file: !32, line: 137, type: !1053, isLocal: false, isDefinition: true, scopeLine: 137, flags: DIFlagPrototyped, isOptimized: false, unit: !1, templateParams: !157, declaration: !1055, variables: !3)
-!1053 = !DISubroutineType(types: !1054)
-!1054 = !{null, !90, !211}
-!1055 = !DISubprogram(name: "allocator<std::_List_node<void *> >", scope: !33, file: !32, line: 137, type: !1053, isLocal: false, isDefinition: false, scopeLine: 137, flags: DIFlagPublic | DIFlagPrototyped, isOptimized: false, templateParams: !157)
-!1056 = !{!573, !265}
-!1057 = !DILocalVariable(name: "this", arg: 1, scope: !1052, type: !573, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1058 = !DILocation(line: 0, scope: !1052)
-!1059 = !DILocalVariable(arg: 2, scope: !1052, file: !32, line: 137, type: !211)
-!1060 = !DILocation(line: 137, column: 34, scope: !1052)
-!1061 = !DILocation(line: 137, column: 44, scope: !1052)
-!1062 = !DILocation(line: 137, column: 2, scope: !1052)
-!1063 = !DILocation(line: 137, column: 46, scope: !1052)
-!1064 = distinct !DISubprogram(name: "destroy", linkageName: "_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_", scope: !36, file: !37, line: 149, type: !83, isLocal: false, isDefinition: true, scopeLine: 149, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !82, variables: !3)
-!1065 = !{!568, !64}
-!1066 = !DILocalVariable(name: "this", arg: 1, scope: !1064, type: !568, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1067 = !DILocation(line: 0, scope: !1064)
-!1068 = !DILocalVariable(name: "__p", arg: 2, scope: !1064, file: !37, line: 149, type: !52)
-!1069 = !DILocation(line: 149, column: 23, scope: !1064)
-!1070 = !DILocation(line: 149, column: 43, scope: !1064)
-!1071 = distinct !DISubprogram(name: "~allocator", linkageName: "_ZNSaIPvED2Ev", scope: !33, file: !32, line: 139, type: !88, isLocal: false, isDefinition: true, scopeLine: 139, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !96, variables: !3)
-!1072 = !{!573}
-!1073 = !DILocalVariable(name: "this", arg: 1, scope: !1071, type: !573, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1074 = !DILocation(line: 0, scope: !1071)
-!1075 = !DILocation(line: 139, column: 30, scope: !1076)
-!1076 = distinct !DILexicalBlock(scope: !1071, file: !32, line: 139, column: 28)
-!1077 = !DILocation(line: 139, column: 30, scope: !1071)
-!1078 = distinct !DISubprogram(name: "_M_put_node", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E", scope: !10, file: !11, line: 453, type: !288, isLocal: false, isDefinition: true, scopeLine: 454, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !287, variables: !3)
-!1079 = !{!553, !178}
-!1080 = !DILocalVariable(name: "this", arg: 1, scope: !1078, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1081 = !DILocation(line: 0, scope: !1078)
-!1082 = !DILocalVariable(name: "__p", arg: 2, scope: !1078, file: !11, line: 453, type: !259)
-!1083 = !DILocation(line: 453, column: 56, scope: !1078)
-!1084 = !DILocation(line: 454, column: 40, scope: !1078)
-!1085 = !DILocation(line: 454, column: 49, scope: !1078)
-!1086 = !DILocation(line: 454, column: 9, scope: !1078)
-!1087 = !DILocation(line: 454, column: 58, scope: !1078)
-!1088 = distinct !DISubprogram(name: "__addressof<void *>", linkageName: "_ZSt11__addressofIPvEPT_RS1_", scope: !14, file: !1089, line: 47, type: !1090, isLocal: false, isDefinition: true, scopeLine: 48, flags: DIFlagPrototyped, isOptimized: false, unit: !1, templateParams: !85, variables: !3)
-!1089 = !DIFile(filename: "/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/bits/move.h", directory: "/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_73")
-!1090 = !DISubroutineType(types: !1091)
-!1091 = !{!53, !56}
-!1092 = !{!64}
-!1093 = !DILocalVariable(name: "__r", arg: 1, scope: !1088, file: !1089, line: 47, type: !56)
-!1094 = !DILocation(line: 47, column: 22, scope: !1088)
-!1095 = !DILocation(line: 48, column: 34, scope: !1088)
-!1096 = !DILocation(line: 48, column: 7, scope: !1088)
-!1097 = distinct !DISubprogram(name: "new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorIPvEC2Ev", scope: !36, file: !37, line: 79, type: !40, isLocal: false, isDefinition: true, scopeLine: 79, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !39, variables: !3)
-!1098 = !{!568}
-!1099 = !DILocalVariable(name: "this", arg: 1, scope: !1097, type: !568, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1100 = !DILocation(line: 0, scope: !1097)
-!1101 = !DILocation(line: 79, column: 47, scope: !1097)
-!1102 = distinct !DISubprogram(name: "~new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorIPvED2Ev", scope: !36, file: !37, line: 86, type: !40, isLocal: false, isDefinition: true, scopeLine: 86, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !48, variables: !3)
-!1103 = !DILocalVariable(name: "this", arg: 1, scope: !1102, type: !568, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1104 = !DILocation(line: 0, scope: !1102)
-!1105 = !DILocation(line: 86, column: 48, scope: !1102)
-!1106 = distinct !DISubprogram(name: "deallocate", linkageName: "_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m", scope: !260, file: !22, line: 132, type: !269, isLocal: false, isDefinition: true, scopeLine: 133, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !268, variables: !3)
-!1107 = !{!265, !178, null}
-!1108 = !DILocalVariable(name: "__a", arg: 1, scope: !1106, file: !22, line: 132, type: !265)
-!1109 = !DILocation(line: 132, column: 36, scope: !1106)
-!1110 = !DILocalVariable(name: "__p", arg: 2, scope: !1106, file: !22, line: 132, type: !259)
-!1111 = !DILocation(line: 132, column: 49, scope: !1106)
-!1112 = !DILocalVariable(name: "__n", arg: 3, scope: !1106, file: !22, line: 132, type: !266)
-!1113 = !DILocation(line: 132, column: 64, scope: !1106)
-!1114 = !DILocation(line: 133, column: 7, scope: !1106)
-!1115 = !DILocation(line: 133, column: 22, scope: !1106)
-!1116 = !DILocation(line: 133, column: 27, scope: !1106)
-!1117 = !DILocation(line: 133, column: 11, scope: !1106)
-!1118 = !DILocation(line: 133, column: 33, scope: !1106)
-!1119 = distinct !DISubprogram(name: "deallocate", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m", scope: !162, file: !37, line: 116, type: !193, isLocal: false, isDefinition: true, scopeLine: 117, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !192, variables: !3)
-!1120 = !{!580, !178, null}
-!1121 = !DILocalVariable(name: "this", arg: 1, scope: !1119, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1122 = !DILocation(line: 0, scope: !1119)
-!1123 = !DILocalVariable(name: "__p", arg: 2, scope: !1119, file: !37, line: 116, type: !177)
-!1124 = !DILocation(line: 116, column: 26, scope: !1119)
-!1125 = !DILocalVariable(arg: 3, scope: !1119, file: !37, line: 116, type: !68)
-!1126 = !DILocation(line: 116, column: 40, scope: !1119)
-!1127 = !DILocation(line: 125, column: 20, scope: !1119)
-!1128 = !DILocation(line: 125, column: 2, scope: !1119)
-!1129 = !{!"125", !"2", !"0", !"0", !"0", !"125", !"2", !"12169568", !"12575328", !"18446744073709551615", !"_ZdlPv", !"FREE", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m"}
-!1130 = !DILocation(line: 126, column: 7, scope: !1119)
-!1131 = distinct !DISubprogram(name: "~allocator", linkageName: "_ZNSaISt10_List_nodeIPvEED2Ev", scope: !159, file: !32, line: 139, type: !205, isLocal: false, isDefinition: true, scopeLine: 139, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !213, variables: !3)
-!1132 = !{!265}
-!1133 = !DILocalVariable(name: "this", arg: 1, scope: !1131, type: !586, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1134 = !DILocation(line: 0, scope: !1131)
-!1135 = !DILocation(line: 139, column: 30, scope: !1136)
-!1136 = distinct !DILexicalBlock(scope: !1131, file: !32, line: 139, column: 28)
-!1137 = !DILocation(line: 139, column: 30, scope: !1131)
-!1138 = distinct !DISubprogram(name: "~new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev", scope: !162, file: !37, line: 86, type: !165, isLocal: false, isDefinition: true, scopeLine: 86, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !173, variables: !3)
-!1139 = !{!580}
-!1140 = !DILocalVariable(name: "this", arg: 1, scope: !1138, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1141 = !DILocation(line: 0, scope: !1138)
-!1142 = !DILocation(line: 86, column: 48, scope: !1138)
-!1143 = distinct !DISubprogram(name: "_List_base", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev", scope: !10, file: !11, line: 470, type: !298, isLocal: false, isDefinition: true, scopeLine: 470, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !297, variables: !3)
-!1144 = !DILocalVariable(name: "this", arg: 1, scope: !1143, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1145 = !DILocation(line: 0, scope: !1143)
-!1146 = !DILocation(line: 470, column: 7, scope: !1143)
-!1147 = !DILocation(line: 470, column: 22, scope: !1143)
-!1148 = distinct !DISubprogram(name: "_List_impl", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev", scope: !17, file: !11, line: 387, type: !228, isLocal: false, isDefinition: true, scopeLine: 390, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !227, variables: !3)
-!1149 = !DILocalVariable(name: "this", arg: 1, scope: !1148, type: !555, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1150 = !DILocation(line: 0, scope: !1148)
-!1151 = !DILocation(line: 390, column: 2, scope: !1148)
-!1152 = !DILocation(line: 389, column: 4, scope: !1148)
-!1153 = !DILocation(line: 387, column: 2, scope: !1148)
-!1154 = !DILocation(line: 390, column: 4, scope: !1155)
-!1155 = !DILexicalBlockFile(scope: !1148, file: !11, discriminator: 1)
-!1156 = !DILocation(line: 390, column: 4, scope: !1157)
-!1157 = !DILexicalBlockFile(scope: !1148, file: !11, discriminator: 2)
-!1158 = !DILocation(line: 390, column: 4, scope: !1159)
-!1159 = !DILexicalBlockFile(scope: !1160, file: !11, discriminator: 2)
-!1160 = distinct !DILexicalBlock(scope: !1148, file: !11, line: 390, column: 2)
-!1161 = !DILocation(line: 390, column: 4, scope: !1162)
-!1162 = !DILexicalBlockFile(scope: !1160, file: !11, discriminator: 3)
-!1163 = distinct !DISubprogram(name: "allocator", linkageName: "_ZNSaISt10_List_nodeIPvEEC2Ev", scope: !159, file: !32, line: 131, type: !205, isLocal: false, isDefinition: true, scopeLine: 131, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !204, variables: !3)
-!1164 = !DILocalVariable(name: "this", arg: 1, scope: !1163, type: !586, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1165 = !DILocation(line: 0, scope: !1163)
-!1166 = !DILocation(line: 131, column: 27, scope: !1163)
-!1167 = !DILocation(line: 131, column: 7, scope: !1163)
-!1168 = !DILocation(line: 131, column: 29, scope: !1163)
-!1169 = distinct !DISubprogram(name: "_List_node_header", linkageName: "_ZNSt8__detail17_List_node_headerC2Ev", scope: !215, file: !11, line: 109, type: !220, isLocal: false, isDefinition: true, scopeLine: 110, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !219, variables: !3)
-!1170 = !{!557}
-!1171 = !DILocalVariable(name: "this", arg: 1, scope: !1169, type: !557, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1172 = !DILocation(line: 0, scope: !1169)
-!1173 = !DILocation(line: 110, column: 7, scope: !1169)
-!1174 = !DILocation(line: 110, column: 9, scope: !1175)
-!1175 = distinct !DILexicalBlock(scope: !1169, file: !11, line: 110, column: 7)
-!1176 = !DILocation(line: 110, column: 20, scope: !1169)
-!1177 = distinct !DISubprogram(name: "new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev", scope: !162, file: !37, line: 79, type: !165, isLocal: false, isDefinition: true, scopeLine: 79, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !164, variables: !3)
-!1178 = !DILocalVariable(name: "this", arg: 1, scope: !1177, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1179 = !DILocation(line: 0, scope: !1177)
-!1180 = !DILocation(line: 79, column: 47, scope: !1177)
-!1181 = distinct !DISubprogram(name: "_M_init", linkageName: "_ZNSt8__detail17_List_node_header7_M_initEv", scope: !215, file: !11, line: 149, type: !220, isLocal: false, isDefinition: true, scopeLine: 150, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !223, variables: !3)
-!1182 = !DILocalVariable(name: "this", arg: 1, scope: !1181, type: !557, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1183 = !DILocation(line: 0, scope: !1181)
-!1184 = !DILocation(line: 151, column: 34, scope: !1181)
-!1185 = !DILocation(line: 151, column: 24, scope: !1181)
-!1186 = !DILocation(line: 151, column: 32, scope: !1181)
-!1187 = !DILocation(line: 151, column: 8, scope: !1181)
-!1188 = !DILocation(line: 151, column: 16, scope: !1181)
-!1189 = !DILocation(line: 153, column: 8, scope: !1181)
-!1190 = !DILocation(line: 153, column: 16, scope: !1181)
-!1191 = !DILocation(line: 155, column: 7, scope: !1181)
-!1192 = distinct !DISubprogram(name: "_M_insert", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_", scope: !308, file: !11, line: 1892, type: !531, isLocal: false, isDefinition: true, scopeLine: 1893, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !530, variables: !3)
-!1193 = !{!543, !127, !64}
-!1194 = !DILocalVariable(name: "this", arg: 1, scope: !1192, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1195 = !DILocation(line: 0, scope: !1192)
-!1196 = !DILocalVariable(name: "__position", arg: 2, scope: !1192, file: !11, line: 1892, type: !307)
-!1197 = !DILocation(line: 1892, column: 26, scope: !1192)
-!1198 = !DILocalVariable(name: "__x", arg: 3, scope: !1192, file: !11, line: 1892, type: !317)
-!1199 = !DILocation(line: 1892, column: 56, scope: !1192)
-!1200 = !DILocalVariable(name: "__tmp", scope: !1192, file: !11, line: 1894, type: !314)
-!1201 = !DILocation(line: 1894, column: 9, scope: !1192)
-!1202 = !DILocation(line: 1894, column: 32, scope: !1192)
-!1203 = !DILocation(line: 1894, column: 17, scope: !1192)
-!1204 = !DILocation(line: 1895, column: 2, scope: !1192)
-!1205 = !DILocation(line: 1895, column: 9, scope: !1192)
-!1206 = !DILocation(line: 1895, column: 28, scope: !1192)
-!1207 = !DILocation(line: 1896, column: 8, scope: !1192)
-!1208 = !DILocation(line: 1897, column: 7, scope: !1192)
-!1209 = distinct !DISubprogram(name: "end", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE3endEv", scope: !308, file: !11, line: 971, type: !443, isLocal: false, isDefinition: true, scopeLine: 972, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !448, variables: !3)
-!1210 = !DILocalVariable(name: "this", arg: 1, scope: !1209, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1211 = !DILocation(line: 0, scope: !1209)
-!1212 = !DILocation(line: 972, column: 32, scope: !1209)
-!1213 = !DILocation(line: 972, column: 40, scope: !1209)
-!1214 = !DILocation(line: 972, column: 25, scope: !1209)
-!1215 = !DILocation(line: 972, column: 16, scope: !1209)
-!1216 = !DILocation(line: 972, column: 9, scope: !1209)
-!1217 = distinct !DISubprogram(name: "_M_create_node", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", scope: !308, file: !11, line: 622, type: !312, isLocal: false, isDefinition: true, scopeLine: 623, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !311, variables: !3)
-!1218 = !DILocalVariable(name: "this", arg: 1, scope: !1217, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1219 = !DILocation(line: 0, scope: !1217)
-!1220 = !DILocalVariable(name: "__x", arg: 2, scope: !1217, file: !11, line: 622, type: !317)
-!1221 = !DILocation(line: 622, column: 40, scope: !1217)
-!1222 = !DILocalVariable(name: "__p", scope: !1217, file: !11, line: 624, type: !314)
-!1223 = !DILocation(line: 624, column: 9, scope: !1217)
-!1224 = !DILocation(line: 624, column: 21, scope: !1217)
-!1225 = !DILocalVariable(name: "__alloc", scope: !1226, file: !11, line: 627, type: !594)
-!1226 = distinct !DILexicalBlock(scope: !1217, file: !11, line: 626, column: 4)
-!1227 = !DILocation(line: 627, column: 21, scope: !1226)
-!1228 = !DILocation(line: 627, column: 29, scope: !1226)
-!1229 = !DILocation(line: 627, column: 21, scope: !1230)
-!1230 = !DILexicalBlockFile(scope: !1226, file: !11, discriminator: 1)
-!1231 = !DILocation(line: 628, column: 6, scope: !1226)
-!1232 = !DILocation(line: 628, column: 24, scope: !1226)
-!1233 = !DILocation(line: 628, column: 29, scope: !1226)
-!1234 = !DILocation(line: 628, column: 42, scope: !1230)
-!1235 = !DILocation(line: 628, column: 14, scope: !1230)
-!1236 = !DILocation(line: 629, column: 4, scope: !1217)
-!1237 = !DILocation(line: 629, column: 4, scope: !1226)
-!1238 = !DILocation(line: 636, column: 7, scope: !1226)
-!1239 = !DILocation(line: 636, column: 7, scope: !1230)
-!1240 = !DILocation(line: 629, column: 4, scope: !1241)
-!1241 = !DILexicalBlockFile(scope: !1217, file: !11, discriminator: 1)
-!1242 = !DILocation(line: 629, column: 4, scope: !1243)
-!1243 = !DILexicalBlockFile(scope: !1226, file: !11, discriminator: 2)
-!1244 = !DILocation(line: 632, column: 6, scope: !1245)
-!1245 = distinct !DILexicalBlock(scope: !1217, file: !11, line: 631, column: 4)
-!1246 = !DILocation(line: 632, column: 18, scope: !1245)
-!1247 = !DILocation(line: 633, column: 6, scope: !1245)
-!1248 = !DILocation(line: 636, column: 7, scope: !1249)
-!1249 = !DILexicalBlockFile(scope: !1245, file: !11, discriminator: 2)
-!1250 = !DILocation(line: 634, column: 4, scope: !1245)
-!1251 = !DILocation(line: 634, column: 4, scope: !1252)
-!1252 = !DILexicalBlockFile(scope: !1245, file: !11, discriminator: 1)
-!1253 = !DILocation(line: 635, column: 9, scope: !1217)
-!1254 = !DILocation(line: 635, column: 2, scope: !1217)
-!1255 = !DILocation(line: 634, column: 4, scope: !1249)
-!1256 = !DILocation(line: 634, column: 4, scope: !1257)
-!1257 = !DILexicalBlockFile(scope: !1245, file: !11, discriminator: 3)
-!1258 = distinct !DISubprogram(name: "_M_inc_size", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm", scope: !10, file: !11, line: 416, type: !247, isLocal: false, isDefinition: true, scopeLine: 416, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !250, variables: !3)
-!1259 = !{!553, null}
-!1260 = !DILocalVariable(name: "this", arg: 1, scope: !1258, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1261 = !DILocation(line: 0, scope: !1258)
-!1262 = !DILocalVariable(name: "__n", arg: 2, scope: !1258, file: !11, line: 416, type: !69)
-!1263 = !DILocation(line: 416, column: 31, scope: !1258)
-!1264 = !DILocation(line: 416, column: 65, scope: !1258)
-!1265 = !DILocation(line: 416, column: 38, scope: !1258)
-!1266 = !DILocation(line: 416, column: 46, scope: !1258)
-!1267 = !DILocation(line: 416, column: 54, scope: !1258)
-!1268 = !DILocation(line: 416, column: 62, scope: !1258)
-!1269 = !DILocation(line: 416, column: 70, scope: !1258)
-!1270 = distinct !DISubprogram(name: "_M_get_node", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv", scope: !10, file: !11, line: 449, type: !257, isLocal: false, isDefinition: true, scopeLine: 450, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !256, variables: !3)
-!1271 = !DILocalVariable(name: "this", arg: 1, scope: !1270, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1272 = !DILocation(line: 0, scope: !1270)
-!1273 = !DILocation(line: 450, column: 45, scope: !1270)
-!1274 = !DILocation(line: 450, column: 16, scope: !1270)
-!1275 = !DILocation(line: 450, column: 9, scope: !1270)
-!1276 = distinct !DISubprogram(name: "construct", linkageName: "_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_", scope: !36, file: !37, line: 145, type: !80, isLocal: false, isDefinition: true, scopeLine: 146, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !79, variables: !3)
-!1277 = !{!568, !64, !64}
-!1278 = !DILocalVariable(name: "this", arg: 1, scope: !1276, type: !568, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1279 = !DILocation(line: 0, scope: !1276)
-!1280 = !DILocalVariable(name: "__p", arg: 2, scope: !1276, file: !37, line: 145, type: !52)
-!1281 = !DILocation(line: 145, column: 25, scope: !1276)
-!1282 = !DILocalVariable(name: "__val", arg: 3, scope: !1276, file: !37, line: 145, type: !64)
-!1283 = !DILocation(line: 145, column: 41, scope: !1276)
-!1284 = !DILocation(line: 146, column: 23, scope: !1276)
-!1285 = !DILocation(line: 146, column: 9, scope: !1276)
-!1286 = !DILocation(line: 146, column: 32, scope: !1276)
-!1287 = !DILocation(line: 146, column: 40, scope: !1276)
-!1288 = distinct !DISubprogram(name: "allocate", linkageName: "_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m", scope: !260, file: !22, line: 129, type: !263, isLocal: false, isDefinition: true, scopeLine: 130, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !262, variables: !3)
-!1289 = !{!265, null}
-!1290 = !DILocalVariable(name: "__a", arg: 1, scope: !1288, file: !22, line: 129, type: !265)
-!1291 = !DILocation(line: 129, column: 22, scope: !1288)
-!1292 = !DILocalVariable(name: "__n", arg: 2, scope: !1288, file: !22, line: 129, type: !266)
-!1293 = !DILocation(line: 129, column: 37, scope: !1288)
-!1294 = !DILocation(line: 130, column: 14, scope: !1288)
-!1295 = !DILocation(line: 130, column: 27, scope: !1288)
-!1296 = !DILocation(line: 130, column: 18, scope: !1288)
-!1297 = !DILocation(line: 130, column: 7, scope: !1288)
-!1298 = distinct !DISubprogram(name: "allocate", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv", scope: !162, file: !37, line: 99, type: !190, isLocal: false, isDefinition: true, scopeLine: 100, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !189, variables: !3)
-!1299 = !{!580, null, !0}
-!1300 = !DILocalVariable(name: "this", arg: 1, scope: !1298, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1301 = !DILocation(line: 0, scope: !1298)
-!1302 = !DILocalVariable(name: "__n", arg: 2, scope: !1298, file: !37, line: 99, type: !68)
-!1303 = !DILocation(line: 99, column: 26, scope: !1298)
-!1304 = !DILocalVariable(arg: 3, scope: !1298, file: !37, line: 99, type: !71)
-!1305 = !DILocation(line: 99, column: 43, scope: !1298)
-!1306 = !DILocation(line: 101, column: 6, scope: !1307)
-!1307 = distinct !DILexicalBlock(scope: !1298, file: !37, line: 101, column: 6)
-!1308 = !DILocation(line: 101, column: 18, scope: !1307)
-!1309 = !DILocation(line: 101, column: 10, scope: !1307)
-!1310 = !DILocation(line: 101, column: 6, scope: !1298)
-!1311 = !DILocation(line: 102, column: 4, scope: !1307)
-!1312 = !DILocation(line: 111, column: 42, scope: !1298)
-!1313 = !DILocation(line: 111, column: 46, scope: !1298)
-!1314 = !DILocation(line: 111, column: 27, scope: !1298)
-!1315 = !{!"111", !"27", !"9687240", !"17209094468811339711", !"3045336847299406727", !"111", !"27", !"12686960", !"12691152", !"2", !"_Znwm", !"struct std::_List_node<void*>", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv"}
-!1316 = !DILocation(line: 111, column: 9, scope: !1298)
-!1317 = !DILocation(line: 111, column: 2, scope: !1298)
-!1318 = distinct !DISubprogram(name: "max_size", linkageName: "_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv", scope: !162, file: !37, line: 129, type: !196, isLocal: false, isDefinition: true, scopeLine: 130, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !195, variables: !3)
-!1319 = !DILocalVariable(name: "this", arg: 1, scope: !1318, type: !596, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1320 = !DILocation(line: 0, scope: !1318)
-!1321 = !DILocation(line: 130, column: 9, scope: !1318)
-!1322 = distinct !DISubprogram(name: "_List_iterator", linkageName: "_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE", scope: !340, file: !11, line: 200, type: !348, isLocal: false, isDefinition: true, scopeLine: 201, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !347, variables: !3)
-!1323 = !{!591, !127}
-!1324 = !DILocalVariable(name: "this", arg: 1, scope: !1322, type: !591, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1325 = !DILocation(line: 0, scope: !1322)
-!1326 = !DILocalVariable(name: "__x", arg: 2, scope: !1322, file: !11, line: 200, type: !127)
-!1327 = !DILocation(line: 200, column: 49, scope: !1322)
-!1328 = !DILocation(line: 201, column: 9, scope: !1322)
-!1329 = !DILocation(line: 201, column: 17, scope: !1322)
-!1330 = !DILocation(line: 201, column: 24, scope: !1322)
-!1331 = distinct !DISubprogram(name: "_S_select_on_copy", linkageName: "_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_", scope: !260, file: !22, line: 145, type: !278, isLocal: false, isDefinition: true, scopeLine: 145, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !277, variables: !3)
-!1332 = !DILocalVariable(name: "__a", arg: 1, scope: !1331, file: !22, line: 145, type: !211)
-!1333 = !DILocation(line: 145, column: 58, scope: !1331)
-!1334 = !DILocation(line: 145, column: 72, scope: !1331)
-!1335 = !DILocation(line: 145, column: 65, scope: !1331)
-!1336 = distinct !DISubprogram(name: "_M_get_Node_allocator", linkageName: "_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv", scope: !10, file: !11, line: 464, type: !295, isLocal: false, isDefinition: true, scopeLine: 465, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !294, variables: !3)
-!1337 = !DILocalVariable(name: "this", arg: 1, scope: !1336, type: !607, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1338 = !DILocation(line: 0, scope: !1336)
-!1339 = !DILocation(line: 465, column: 16, scope: !1336)
-!1340 = !DILocation(line: 465, column: 9, scope: !1336)
-!1341 = distinct !DISubprogram(name: "_List_base", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE", scope: !10, file: !11, line: 473, type: !301, isLocal: false, isDefinition: true, scopeLine: 475, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !300, variables: !3)
-!1342 = !{!553, !265}
-!1343 = !DILocalVariable(name: "this", arg: 1, scope: !1341, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1344 = !DILocation(line: 0, scope: !1341)
-!1345 = !DILocalVariable(name: "__a", arg: 2, scope: !1341, file: !11, line: 473, type: !234)
-!1346 = !DILocation(line: 473, column: 42, scope: !1341)
-!1347 = !DILocation(line: 474, column: 9, scope: !1341)
-!1348 = !DILocation(line: 474, column: 17, scope: !1341)
-!1349 = !DILocation(line: 475, column: 9, scope: !1341)
-!1350 = distinct !DISubprogram(name: "_M_initialize_dispatch<std::_List_const_iterator<void *> >", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", scope: !308, file: !11, line: 1827, type: !1351, isLocal: false, isDefinition: true, scopeLine: 1829, flags: DIFlagPrototyped, isOptimized: false, unit: !1, templateParams: !1353, declaration: !1355, variables: !3)
-!1351 = !DISubroutineType(types: !1352)
-!1352 = !{null, !316, !324, !324, !603}
-!1353 = !{!1354}
-!1354 = !DITemplateTypeParameter(name: "_InputIterator", type: !324)
-!1355 = !DISubprogram(name: "_M_initialize_dispatch<std::_List_const_iterator<void *> >", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", scope: !308, file: !11, line: 1827, type: !1351, isLocal: false, isDefinition: false, scopeLine: 1827, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, templateParams: !1353)
-!1356 = !{!543, !127, !127}
-!1357 = !DILocalVariable(name: "this", arg: 1, scope: !1350, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1358 = !DILocation(line: 0, scope: !1350)
-!1359 = !DILocalVariable(name: "__first", arg: 2, scope: !1350, file: !11, line: 1827, type: !324)
-!1360 = !DILocation(line: 1827, column: 40, scope: !1350)
-!1361 = !DILocalVariable(name: "__last", arg: 3, scope: !1350, file: !11, line: 1827, type: !324)
-!1362 = !DILocation(line: 1827, column: 64, scope: !1350)
-!1363 = !DILocalVariable(arg: 4, scope: !1350, file: !11, line: 1828, type: !603)
-!1364 = !DILocation(line: 1828, column: 23, scope: !1350)
-!1365 = !DILocation(line: 1830, column: 4, scope: !1350)
-!1366 = !DILocation(line: 1830, column: 19, scope: !1367)
-!1367 = !DILexicalBlockFile(scope: !1368, file: !11, discriminator: 1)
-!1368 = distinct !DILexicalBlock(scope: !1369, file: !11, line: 1830, column: 4)
-!1369 = distinct !DILexicalBlock(scope: !1350, file: !11, line: 1830, column: 4)
-!1370 = !DILocation(line: 1830, column: 4, scope: !1371)
-!1371 = !DILexicalBlockFile(scope: !1369, file: !11, discriminator: 1)
-!1372 = !DILocation(line: 1834, column: 16, scope: !1368)
-!1373 = !DILocation(line: 1834, column: 6, scope: !1367)
-!1374 = !DILocation(line: 1834, column: 6, scope: !1368)
-!1375 = !DILocation(line: 1830, column: 30, scope: !1376)
-!1376 = !DILexicalBlockFile(scope: !1368, file: !11, discriminator: 2)
-!1377 = !DILocation(line: 1830, column: 4, scope: !1376)
-!1378 = distinct !{!1378, !1379, !1380}
-!1379 = !DILocation(line: 1830, column: 4, scope: !1369)
-!1380 = !DILocation(line: 1834, column: 24, scope: !1369)
-!1381 = !DILocation(line: 1836, column: 2, scope: !1350)
-!1382 = distinct !DISubprogram(name: "begin", linkageName: "_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv", scope: !308, file: !11, line: 962, type: !446, isLocal: false, isDefinition: true, scopeLine: 963, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !445, variables: !3)
-!1383 = !DILocalVariable(name: "this", arg: 1, scope: !1382, type: !622, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1384 = !DILocation(line: 0, scope: !1382)
-!1385 = !DILocation(line: 963, column: 37, scope: !1382)
-!1386 = !DILocation(line: 963, column: 45, scope: !1382)
-!1387 = !DILocation(line: 963, column: 31, scope: !1382)
-!1388 = !DILocation(line: 963, column: 53, scope: !1382)
-!1389 = !DILocation(line: 963, column: 16, scope: !1382)
-!1390 = !DILocation(line: 963, column: 9, scope: !1382)
-!1391 = distinct !DISubprogram(name: "end", linkageName: "_ZNKSt7__cxx114listIPvSaIS1_EE3endEv", scope: !308, file: !11, line: 980, type: !446, isLocal: false, isDefinition: true, scopeLine: 981, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !449, variables: !3)
-!1392 = !DILocalVariable(name: "this", arg: 1, scope: !1391, type: !622, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1393 = !DILocation(line: 0, scope: !1391)
-!1394 = !DILocation(line: 981, column: 38, scope: !1391)
-!1395 = !DILocation(line: 981, column: 46, scope: !1391)
-!1396 = !DILocation(line: 981, column: 31, scope: !1391)
-!1397 = !DILocation(line: 981, column: 16, scope: !1391)
-!1398 = !DILocation(line: 981, column: 9, scope: !1391)
-!1399 = distinct !DISubprogram(name: "_List_impl", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE", scope: !17, file: !11, line: 392, type: !232, isLocal: false, isDefinition: true, scopeLine: 394, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !231, variables: !3)
-!1400 = !{!555, !265}
-!1401 = !DILocalVariable(name: "this", arg: 1, scope: !1399, type: !555, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1402 = !DILocation(line: 0, scope: !1399)
-!1403 = !DILocalVariable(name: "__a", arg: 2, scope: !1399, file: !11, line: 392, type: !234)
-!1404 = !DILocation(line: 392, column: 37, scope: !1399)
-!1405 = !DILocation(line: 394, column: 2, scope: !1399)
-!1406 = !DILocation(line: 393, column: 21, scope: !1399)
-!1407 = !DILocation(line: 393, column: 4, scope: !1399)
-!1408 = !DILocation(line: 392, column: 2, scope: !1399)
-!1409 = !DILocation(line: 394, column: 4, scope: !1410)
-!1410 = !DILexicalBlockFile(scope: !1399, file: !11, discriminator: 1)
-!1411 = !DILocation(line: 394, column: 4, scope: !1412)
-!1412 = !DILexicalBlockFile(scope: !1399, file: !11, discriminator: 2)
-!1413 = !DILocation(line: 394, column: 4, scope: !1414)
-!1414 = !DILexicalBlockFile(scope: !1415, file: !11, discriminator: 2)
-!1415 = distinct !DILexicalBlock(scope: !1399, file: !11, line: 394, column: 2)
-!1416 = !DILocation(line: 394, column: 4, scope: !1417)
-!1417 = !DILexicalBlockFile(scope: !1415, file: !11, discriminator: 3)
-!1418 = distinct !DISubprogram(name: "allocator", linkageName: "_ZNSaISt10_List_nodeIPvEEC2ERKS2_", scope: !159, file: !32, line: 133, type: !209, isLocal: false, isDefinition: true, scopeLine: 134, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !208, variables: !3)
-!1419 = !{!265, !265}
-!1420 = !DILocalVariable(name: "this", arg: 1, scope: !1418, type: !586, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1421 = !DILocation(line: 0, scope: !1418)
-!1422 = !DILocalVariable(name: "__a", arg: 2, scope: !1418, file: !32, line: 133, type: !211)
-!1423 = !DILocation(line: 133, column: 34, scope: !1418)
-!1424 = !DILocation(line: 134, column: 36, scope: !1418)
-!1425 = !DILocation(line: 134, column: 31, scope: !1418)
-!1426 = !DILocation(line: 134, column: 9, scope: !1418)
-!1427 = !DILocation(line: 134, column: 38, scope: !1418)
-!1428 = distinct !DISubprogram(name: "new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_", scope: !162, file: !37, line: 81, type: !169, isLocal: false, isDefinition: true, scopeLine: 81, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !168, variables: !3)
-!1429 = !{!580, !580}
-!1430 = !DILocalVariable(name: "this", arg: 1, scope: !1428, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1431 = !DILocation(line: 0, scope: !1428)
-!1432 = !DILocalVariable(arg: 2, scope: !1428, file: !37, line: 81, type: !171)
-!1433 = !DILocation(line: 81, column: 41, scope: !1428)
-!1434 = !DILocation(line: 81, column: 67, scope: !1428)
-!1435 = distinct !DISubprogram(name: "operator!=", linkageName: "_ZNKSt20_List_const_iteratorIPvEneERKS1_", scope: !324, file: !11, line: 335, type: !405, isLocal: false, isDefinition: true, scopeLine: 336, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !409, variables: !3)
-!1436 = !{!601, !601}
-!1437 = !DILocalVariable(name: "this", arg: 1, scope: !1435, type: !612, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1438 = !DILocation(line: 0, scope: !1435)
-!1439 = !DILocalVariable(name: "__x", arg: 2, scope: !1435, file: !11, line: 335, type: !407)
-!1440 = !DILocation(line: 335, column: 31, scope: !1435)
-!1441 = !DILocation(line: 336, column: 16, scope: !1435)
-!1442 = !DILocation(line: 336, column: 27, scope: !1435)
-!1443 = !DILocation(line: 336, column: 31, scope: !1435)
-!1444 = !DILocation(line: 336, column: 24, scope: !1435)
-!1445 = !DILocation(line: 336, column: 9, scope: !1435)
-!1446 = distinct !DISubprogram(name: "operator*", linkageName: "_ZNKSt20_List_const_iteratorIPvEdeEv", scope: !324, file: !11, line: 293, type: !387, isLocal: false, isDefinition: true, scopeLine: 294, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !386, variables: !3)
-!1447 = !{!601}
-!1448 = !DILocalVariable(name: "this", arg: 1, scope: !1446, type: !612, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1449 = !DILocation(line: 0, scope: !1446)
-!1450 = !DILocation(line: 294, column: 37, scope: !1446)
-!1451 = !DILocation(line: 294, column: 17, scope: !1446)
-!1452 = !DILocation(line: 294, column: 47, scope: !1446)
-!1453 = !DILocation(line: 294, column: 9, scope: !1446)
-!1454 = distinct !DISubprogram(name: "operator++", linkageName: "_ZNSt20_List_const_iteratorIPvEppEv", scope: !324, file: !11, line: 301, type: !395, isLocal: false, isDefinition: true, scopeLine: 302, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !394, variables: !3)
-!1455 = !DILocalVariable(name: "this", arg: 1, scope: !1454, type: !601, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1456 = !DILocation(line: 0, scope: !1454)
-!1457 = !DILocation(line: 303, column: 12, scope: !1454)
-!1458 = !DILocation(line: 303, column: 21, scope: !1454)
-!1459 = !DILocation(line: 303, column: 2, scope: !1454)
-!1460 = !DILocation(line: 303, column: 10, scope: !1454)
-!1461 = !DILocation(line: 304, column: 2, scope: !1454)
-!1462 = distinct !DISubprogram(name: "_M_valptr", linkageName: "_ZNKSt10_List_nodeIPvE9_M_valptrEv", scope: !120, file: !11, line: 175, type: !151, isLocal: false, isDefinition: true, scopeLine: 175, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !150, variables: !3)
-!1463 = !DILocalVariable(name: "this", arg: 1, scope: !1462, type: !186, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1464 = !DILocation(line: 0, scope: !1462)
-!1465 = !DILocation(line: 175, column: 62, scope: !1462)
-!1466 = !DILocation(line: 175, column: 45, scope: !1462)
-!1467 = !DILocation(line: 175, column: 38, scope: !1462)
-!1468 = distinct !DISubprogram(name: "__addressof<void *const>", linkageName: "_ZSt11__addressofIKPvEPT_RS2_", scope: !14, file: !1089, line: 47, type: !1469, isLocal: false, isDefinition: true, scopeLine: 48, flags: DIFlagPrototyped, isOptimized: false, unit: !1, templateParams: !1471, variables: !3)
-!1469 = !DISubroutineType(types: !1470)
-!1470 = !{!61, !64}
-!1471 = !{!1472}
-!1472 = !DITemplateTypeParameter(name: "_Tp", type: !62)
-!1473 = !DILocalVariable(name: "__r", arg: 1, scope: !1468, file: !1089, line: 47, type: !64)
-!1474 = !DILocation(line: 47, column: 22, scope: !1468)
-!1475 = !DILocation(line: 48, column: 34, scope: !1468)
-!1476 = !DILocation(line: 48, column: 7, scope: !1468)
-!1477 = distinct !DISubprogram(name: "_List_const_iterator", linkageName: "_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE", scope: !324, file: !11, line: 280, type: !332, isLocal: false, isDefinition: true, scopeLine: 282, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !331, variables: !3)
-!1478 = !{!601, !127}
-!1479 = !DILocalVariable(name: "this", arg: 1, scope: !1477, type: !601, flags: DIFlagArtificial | DIFlagObjectPointer)
-!1480 = !DILocation(line: 0, scope: !1477)
-!1481 = !DILocalVariable(name: "__x", arg: 2, scope: !1477, file: !11, line: 280, type: !239)
-!1482 = !DILocation(line: 280, column: 61, scope: !1477)
-!1483 = !DILocation(line: 282, column: 9, scope: !1477)
-!1484 = !DILocation(line: 282, column: 17, scope: !1477)
-!1485 = !DILocation(line: 282, column: 24, scope: !1477)
+!867 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"39620568", !"526828848944628746", !"11854005139656696112", !"Alloca", !"_ZN31CWE843_Type_Confusion__short_733badEv", !"0", !"0", !"41692496", !"41689416", !"2"}
+!868 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> >", !"42836072", !"14309742632486687881", !"11948791453932287653", !"Alloca", !"_ZN31CWE843_Type_Confusion__short_733badEv", !"0", !"0", !"41692496", !"41762168", !"3"}
+!869 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int16_t", !"42309192", !"16313328457460192247", !"472910413246718651", !"Alloca", !"_ZN31CWE843_Type_Confusion__short_733badEv", !"0", !"0", !"41692496", !"42311048", !"4"}
+!870 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Alloca", !"_ZN31CWE843_Type_Confusion__short_733badEv", !"0", !"0", !"41692496", !"42310216", !"1"}
+!871 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"_ZN31CWE843_Type_Confusion__short_733badEv", !"0", !"0", !"41692496", !"42310776", !"5"}
+!872 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> >", !"42836072", !"14309742632486687881", !"11948791453932287653", !"Alloca", !"_ZN31CWE843_Type_Confusion__short_733badEv", !"0", !"0", !"41692496", !"42316712", !"3"}
+!873 = !DILocalVariable(name: "data", scope: !866, file: !2, line: 32, type: !0)
+!874 = !DIExpression()
+!875 = !DILocation(line: 32, column: 12, scope: !866)
+!876 = !DILocalVariable(name: "dataList", scope: !866, file: !2, line: 33, type: !308)
+!877 = !DILocation(line: 33, column: 18, scope: !866)
+!878 = !DILocation(line: 35, column: 10, scope: !866)
+!879 = !DILocalVariable(name: "shortBuffer", scope: !880, file: !2, line: 38, type: !545)
+!880 = distinct !DILexicalBlock(scope: !866, file: !2, line: 36, column: 5)
+!881 = !DILocation(line: 38, column: 15, scope: !880)
+!882 = !DILocation(line: 39, column: 16, scope: !880)
+!883 = !DILocation(line: 39, column: 14, scope: !880)
+!884 = !DILocation(line: 42, column: 14, scope: !866)
+!885 = !DILocation(line: 43, column: 14, scope: !866)
+!886 = !DILocation(line: 44, column: 14, scope: !866)
+!887 = !DILocation(line: 45, column: 13, scope: !866)
+!888 = !DILocation(line: 45, column: 5, scope: !889)
+!889 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 1)
+!890 = !DILocation(line: 45, column: 5, scope: !891)
+!891 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 2)
+!892 = !DILocation(line: 46, column: 1, scope: !866)
+!893 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"46", !"1", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN31CWE843_Type_Confusion__short_733badEv", !"46", !"1", !"42319072", !"41770544", !"1"}
+!894 = !DILocation(line: 46, column: 1, scope: !889)
+!895 = !DILocation(line: 46, column: 1, scope: !891)
+!896 = !DILocation(line: 45, column: 5, scope: !897)
+!897 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 3)
+!898 = !DILocation(line: 45, column: 5, scope: !899)
+!899 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 4)
+!900 = !DILocation(line: 46, column: 1, scope: !897)
+!901 = !DILocation(line: 46, column: 1, scope: !899)
+!902 = !DILocation(line: 46, column: 1, scope: !903)
+!903 = !DILexicalBlockFile(scope: !866, file: !2, discriminator: 5)
+!904 = !DILocation(line: 45, column: 5, scope: !903)
+!905 = distinct !DISubprogram(name: "list", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EEC2Ev", scope: !308, file: !11, line: 683, type: !416, isLocal: false, isDefinition: true, scopeLine: 683, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !415, variables: !3)
+!906 = !{!543}
+!907 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EEC2Ev#0#0#41603904#41603904#3#"}
+!908 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EEC2Ev", !"0", !"0", !"42442272", !"42470808", !"6"}
+!909 = !DILocalVariable(name: "this", arg: 1, scope: !905, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
+!910 = !DILocation(line: 0, scope: !905)
+!911 = !DILocation(line: 683, column: 14, scope: !905)
+!912 = !DILocation(line: 683, column: 7, scope: !905)
+!913 = !DILocation(line: 683, column: 16, scope: !905)
+!914 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"683", !"16", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx114listIPvSaIS1_EEC2Ev", !"683", !"16", !"42442272", !"42472080", !"1"}
+!915 = distinct !DISubprogram(name: "push_back", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_", scope: !308, file: !11, line: 1219, type: !488, isLocal: false, isDefinition: true, scopeLine: 1220, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !491, variables: !3)
+!916 = !{!543, !64}
+!917 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_#0#0#41603904#41603904#3#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_#0#0#42043320#42043320#2#"}
+!918 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_", !"0", !"0", !"42588352", !"42587304", !"6"}
+!919 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_", !"0", !"0", !"42588352", !"42393704", !"7"}
+!920 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_iterator<void*>", !"42916072", !"7719603627806977988", !"6690799286029806559", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_", !"0", !"0", !"42588352", !"42596440", !"8"}
+!921 = !DILocalVariable(name: "this", arg: 1, scope: !915, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
+!922 = !DILocation(line: 0, scope: !915)
+!923 = !DILocalVariable(name: "__x", arg: 2, scope: !915, file: !11, line: 1219, type: !317)
+!924 = !DILocation(line: 1219, column: 35, scope: !915)
+!925 = !DILocation(line: 1220, column: 25, scope: !915)
+!926 = !DILocation(line: 1220, column: 32, scope: !915)
+!927 = !DILocation(line: 1220, column: 15, scope: !915)
+!928 = !DILocation(line: 1220, column: 15, scope: !929)
+!929 = !DILexicalBlockFile(scope: !915, file: !11, discriminator: 1)
+!930 = !DILocation(line: 1220, column: 38, scope: !915)
+!931 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"1220", !"38", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx114listIPvSaIS1_EE9push_backERKS1_", !"1220", !"38", !"42588352", !"42588432", !"1"}
+!932 = distinct !DISubprogram(name: "list", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", scope: !308, file: !11, line: 743, type: !429, isLocal: false, isDefinition: true, scopeLine: 746, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !428, variables: !3)
+!933 = !{!543, !543}
+!934 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_#0#0#41603904#41603904#3#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_#0#0#41603904#41603904#3#"}
+!935 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", !"0", !"0", !"42698512", !"42701256", !"6"}
+!936 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", !"0", !"0", !"42698512", !"42701368", !"6"}
+!937 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*>", !"39656168", !"9762397520907945078", !"14111476916259126874", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", !"0", !"0", !"42698512", !"42704744", !"9"}
+!938 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", !"0", !"0", !"42698512", !"42705720", !"1"}
+!939 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", !"0", !"0", !"42698512", !"42704520", !"5"}
+!940 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*>", !"39656168", !"9762397520907945078", !"14111476916259126874", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", !"0", !"0", !"42698512", !"42705016", !"9"}
+!941 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__false_type", !"42079368", !"18017442289861285645", !"9161392719371145487", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", !"0", !"0", !"42698512", !"42700232", !"10"}
+!942 = !DILocalVariable(name: "this", arg: 1, scope: !932, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
+!943 = !DILocation(line: 0, scope: !932)
+!944 = !DILocalVariable(name: "__x", arg: 2, scope: !932, file: !11, line: 743, type: !431)
+!945 = !DILocation(line: 743, column: 24, scope: !932)
+!946 = !DILocation(line: 746, column: 7, scope: !932)
+!947 = !DILocation(line: 745, column: 26, scope: !932)
+!948 = !DILocation(line: 745, column: 30, scope: !932)
+!949 = !DILocation(line: 744, column: 15, scope: !932)
+!950 = !DILocation(line: 744, column: 9, scope: !951)
+!951 = !DILexicalBlockFile(scope: !932, file: !11, discriminator: 1)
+!952 = !DILocation(line: 746, column: 32, scope: !953)
+!953 = distinct !DILexicalBlock(scope: !932, file: !11, line: 746, column: 7)
+!954 = !DILocation(line: 746, column: 36, scope: !953)
+!955 = !DILocation(line: 746, column: 36, scope: !956)
+!956 = !DILexicalBlockFile(scope: !953, file: !11, discriminator: 1)
+!957 = !DILocation(line: 746, column: 45, scope: !956)
+!958 = !DILocation(line: 746, column: 49, scope: !956)
+!959 = !DILocation(line: 746, column: 49, scope: !960)
+!960 = !DILexicalBlockFile(scope: !953, file: !11, discriminator: 2)
+!961 = !DILocation(line: 746, column: 9, scope: !960)
+!962 = !DILocation(line: 746, column: 73, scope: !963)
+!963 = !DILexicalBlockFile(scope: !932, file: !11, discriminator: 3)
+!964 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"746", !"73", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx114listIPvSaIS1_EEC2ERKS3_", !"746", !"73", !"42712096", !"42698592", !"1"}
+!965 = !DILocation(line: 746, column: 73, scope: !966)
+!966 = !DILexicalBlockFile(scope: !953, file: !11, discriminator: 4)
+!967 = !DILocation(line: 746, column: 73, scope: !968)
+!968 = !DILexicalBlockFile(scope: !953, file: !11, discriminator: 5)
+!969 = !DILocation(line: 746, column: 73, scope: !970)
+!970 = !DILexicalBlockFile(scope: !953, file: !11, discriminator: 6)
+!971 = !DILocation(line: 746, column: 73, scope: !972)
+!972 = !DILexicalBlockFile(scope: !953, file: !11, discriminator: 7)
+!973 = distinct !DISubprogram(name: "~list", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EED2Ev", scope: !308, file: !11, line: 564, type: !416, isLocal: false, isDefinition: true, scopeLine: 564, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !974, variables: !3)
+!974 = !DISubprogram(name: "~list", scope: !308, type: !416, isLocal: false, isDefinition: false, flags: DIFlagPublic | DIFlagArtificial | DIFlagPrototyped, isOptimized: false)
+!975 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EED2Ev#0#0#41603904#41603904#3#"}
+!976 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EED2Ev", !"0", !"0", !"42395216", !"42392840", !"6"}
+!977 = !DILocalVariable(name: "this", arg: 1, scope: !973, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
+!978 = !DILocation(line: 0, scope: !973)
+!979 = !DILocation(line: 564, column: 11, scope: !980)
+!980 = distinct !DILexicalBlock(scope: !973, file: !11, line: 564, column: 11)
+!981 = !DILocation(line: 564, column: 11, scope: !973)
+!982 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"564", !"11", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx114listIPvSaIS1_EED2Ev", !"564", !"11", !"42395216", !"42395824", !"1"}
+!983 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t#39692632#18058093552324746023#94541214677173297#Argument#__clang_call_terminate#0#0#39525112#39525112#1#"}
+!984 = distinct !DISubprogram(name: "main", scope: !2, file: !2, line: 94, type: !985, isLocal: false, isDefinition: true, scopeLine: 95, flags: DIFlagPrototyped, isOptimized: false, unit: !1, variables: !3)
+!985 = !DISubroutineType(types: !986)
+!986 = !{!371, !371, !548}
+!987 = !{null, !64}
+!988 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int32_t#39527320#4773841653289120874#2358335501509695672#Argument#main#0#0#39046744#39046744#5#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#main#0#0#42043320#42043320#2#"}
+!989 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"main", !"0", !"0", !"42011216", !"42316440", !"5"}
+!990 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"main", !"0", !"0", !"42011216", !"42309992", !"5"}
+!991 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"main", !"0", !"0", !"42011216", !"42317752", !"7"}
+!992 = !DILocalVariable(name: "argc", arg: 1, scope: !984, file: !2, line: 94, type: !371)
+!993 = !DILocation(line: 94, column: 14, scope: !984)
+!994 = !DILocalVariable(name: "argv", arg: 2, scope: !984, file: !2, line: 94, type: !548)
+!995 = !DILocation(line: 94, column: 27, scope: !984)
+!996 = !DILocation(line: 97, column: 22, scope: !984)
+!997 = !DILocation(line: 97, column: 5, scope: !998)
+!998 = !DILexicalBlockFile(scope: !984, file: !2, discriminator: 1)
+!999 = !DILocation(line: 104, column: 5, scope: !984)
+!1000 = !DILocation(line: 105, column: 5, scope: !984)
+!1001 = !DILocation(line: 106, column: 5, scope: !984)
+!1002 = !DILocation(line: 108, column: 5, scope: !984)
+!1003 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"108", !"5", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"main", !"108", !"5", !"42011216", !"42332808", !"1"}
+!1004 = distinct !DISubprogram(name: "~_List_base", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev", scope: !10, file: !11, line: 506, type: !298, isLocal: false, isDefinition: true, scopeLine: 507, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !303, variables: !3)
+!1005 = !{!553}
+!1006 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev#0#0#42017696#42017696#12#"}
+!1007 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev", !"0", !"0", !"42425024", !"42436632", !"11"}
+!1008 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev", !"0", !"0", !"42425024", !"42436264", !"1"}
+!1009 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev", !"0", !"0", !"42425024", !"37991256", !"5"}
+!1010 = !DILocalVariable(name: "this", arg: 1, scope: !1004, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1011 = !DILocation(line: 0, scope: !1004)
+!1012 = !DILocation(line: 507, column: 9, scope: !1013)
+!1013 = distinct !DILexicalBlock(scope: !1004, file: !11, line: 507, column: 7)
+!1014 = !DILocation(line: 507, column: 21, scope: !1015)
+!1015 = !DILexicalBlockFile(scope: !1013, file: !11, discriminator: 1)
+!1016 = !DILocation(line: 507, column: 21, scope: !1017)
+!1017 = !DILexicalBlockFile(scope: !1004, file: !11, discriminator: 1)
+!1018 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"507", !"21", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EED2Ev", !"507", !"21", !"42440272", !"42435168", !"1"}
+!1019 = !DILocation(line: 507, column: 21, scope: !1020)
+!1020 = !DILexicalBlockFile(scope: !1013, file: !11, discriminator: 2)
+!1021 = !DILocation(line: 507, column: 21, scope: !1022)
+!1022 = !DILexicalBlockFile(scope: !1013, file: !11, discriminator: 3)
+!1023 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv#0#0#42017696#42017696#12#"}
+!1024 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv", !"0", !"0", !"42438016", !"42441960", !"11"}
+!1025 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__detail::_List_node_base *", !"42876760", !"4620211663732537997", !"4160118652487172189", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv", !"0", !"0", !"42438016", !"42442072", !"13"}
+!1026 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_node<void*> *", !"42896344", !"18067778890781974965", !"17328544024782005001", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv", !"0", !"0", !"42438016", !"42436904", !"14"}
+!1027 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv", !"0", !"0", !"42438016", !"42454728", !"7"}
+!1028 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<void*>", !"42915272", !"15123430601864667042", !"17130469382309001315", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv", !"0", !"0", !"42438016", !"42457032", !"15"}
+!1029 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv", !"0", !"0", !"42438016", !"42459864", !"1"}
+!1030 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv", !"0", !"0", !"42438016", !"42459640", !"5"}
+!1031 = !DILocalVariable(name: "this", arg: 1, scope: !9, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1032 = !DILocation(line: 0, scope: !9)
+!1033 = !DILocalVariable(name: "__cur", scope: !9, file: !8, line: 70, type: !127)
+!1034 = !DILocation(line: 70, column: 34, scope: !9)
+!1035 = !DILocation(line: 70, column: 42, scope: !9)
+!1036 = !DILocation(line: 70, column: 50, scope: !9)
+!1037 = !DILocation(line: 70, column: 58, scope: !9)
+!1038 = !DILocation(line: 71, column: 7, scope: !9)
+!1039 = !DILocation(line: 71, column: 14, scope: !1040)
+!1040 = !DILexicalBlockFile(scope: !9, file: !8, discriminator: 1)
+!1041 = !DILocation(line: 71, column: 24, scope: !1040)
+!1042 = !DILocation(line: 71, column: 32, scope: !1040)
+!1043 = !DILocation(line: 71, column: 23, scope: !1040)
+!1044 = !DILocation(line: 71, column: 20, scope: !1040)
+!1045 = !DILocation(line: 71, column: 7, scope: !1040)
+!1046 = !DILocalVariable(name: "__tmp", scope: !1047, file: !8, line: 73, type: !6)
+!1047 = distinct !DILexicalBlock(scope: !9, file: !8, line: 72, column: 2)
+!1048 = !DILocation(line: 73, column: 11, scope: !1047)
+!1049 = !DILocation(line: 73, column: 39, scope: !1047)
+!1050 = !DILocation(line: 73, column: 19, scope: !1047)
+!1051 = !DILocation(line: 74, column: 12, scope: !1047)
+!1052 = !DILocation(line: 74, column: 19, scope: !1047)
+!1053 = !DILocation(line: 74, column: 10, scope: !1047)
+!1054 = !DILocalVariable(name: "__val", scope: !1047, file: !8, line: 75, type: !53)
+!1055 = !DILocation(line: 75, column: 9, scope: !1047)
+!1056 = !DILocation(line: 75, column: 17, scope: !1047)
+!1057 = !DILocation(line: 75, column: 24, scope: !1047)
+!1058 = !DILocation(line: 79, column: 19, scope: !1047)
+!1059 = !DILocation(line: 79, column: 4, scope: !1060)
+!1060 = !DILexicalBlockFile(scope: !1047, file: !8, discriminator: 4)
+!1061 = !DILocation(line: 79, column: 4, scope: !1047)
+!1062 = !DILocation(line: 79, column: 52, scope: !1047)
+!1063 = !DILocation(line: 79, column: 44, scope: !1047)
+!1064 = !DILocation(line: 79, column: 4, scope: !1065)
+!1065 = !DILexicalBlockFile(scope: !1047, file: !8, discriminator: 1)
+!1066 = !DILocation(line: 81, column: 16, scope: !1047)
+!1067 = !DILocation(line: 81, column: 4, scope: !1047)
+!1068 = !DILocation(line: 71, column: 7, scope: !1069)
+!1069 = !DILexicalBlockFile(scope: !9, file: !8, discriminator: 2)
+!1070 = distinct !{!1070, !1038, !1071}
+!1071 = !DILocation(line: 82, column: 2, scope: !9)
+!1072 = !DILocation(line: 83, column: 5, scope: !1047)
+!1073 = !DILocation(line: 79, column: 4, scope: !1074)
+!1074 = !DILexicalBlockFile(scope: !1047, file: !8, discriminator: 2)
+!1075 = !DILocation(line: 83, column: 5, scope: !1040)
+!1076 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"83", !"5", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE8_M_clearEv", !"83", !"5", !"42447312", !"42443648", !"1"}
+!1077 = !DILocation(line: 79, column: 4, scope: !1078)
+!1078 = !DILexicalBlockFile(scope: !1047, file: !8, discriminator: 3)
+!1079 = distinct !DISubprogram(name: "~_List_impl", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev", scope: !17, file: !11, line: 382, type: !228, isLocal: false, isDefinition: true, scopeLine: 382, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !1080, variables: !3)
+!1080 = !DISubprogram(name: "~_List_impl", scope: !17, type: !228, isLocal: false, isDefinition: false, flags: DIFlagArtificial | DIFlagPrototyped, isOptimized: false)
+!1081 = !{!555}
+!1082 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl#43079736#2883634944874276711#13205518481821382654#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev#0#0#39566816#39566816#17#"}
+!1083 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl *", !"42835240", !"5805171371469684283", !"8705517898081464949", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev", !"0", !"0", !"42536416", !"42535896", !"16"}
+!1084 = !DILocalVariable(name: "this", arg: 1, scope: !1079, type: !555, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1085 = !DILocation(line: 0, scope: !1079)
+!1086 = !DILocation(line: 382, column: 14, scope: !1087)
+!1087 = distinct !DILexicalBlock(scope: !1079, file: !11, line: 382, column: 14)
+!1088 = !DILocation(line: 382, column: 14, scope: !1079)
+!1089 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"382", !"14", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implD2Ev", !"382", !"14", !"42536416", !"42532384", !"1"}
+!1090 = distinct !DISubprogram(name: "_M_valptr", linkageName: "_ZNSt10_List_nodeIPvE9_M_valptrEv", scope: !120, file: !11, line: 174, type: !147, isLocal: false, isDefinition: true, scopeLine: 174, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !146, variables: !3)
+!1091 = !{!178}
+!1092 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_node<void*>#43126488#17209094468811339711#3045336847299406727#Argument#_ZNSt10_List_nodeIPvE9_M_valptrEv#0#0#42332720#42332720#18#"}
+!1093 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_node<void*> *", !"42896344", !"18067778890781974965", !"17328544024782005001", !"Alloca", !"_ZNSt10_List_nodeIPvE9_M_valptrEv", !"0", !"0", !"42460816", !"42007176", !"14"}
+!1094 = !DILocalVariable(name: "this", arg: 1, scope: !1090, type: !178, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1095 = !DILocation(line: 0, scope: !1090)
+!1096 = !DILocation(line: 174, column: 62, scope: !1090)
+!1097 = !DILocation(line: 174, column: 45, scope: !1090)
+!1098 = !DILocation(line: 174, column: 38, scope: !1090)
+!1099 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"174", !"38", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt10_List_nodeIPvE9_M_valptrEv", !"174", !"38", !"42460816", !"42475160", !"1"}
+!1100 = distinct !DISubprogram(name: "_M_get_Node_allocator", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv", scope: !10, file: !11, line: 460, type: !291, isLocal: false, isDefinition: true, scopeLine: 461, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !290, variables: !3)
+!1101 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv#0#0#42017696#42017696#12#"}
+!1102 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv", !"0", !"0", !"42481152", !"42480744", !"11"}
+!1103 = !DILocalVariable(name: "this", arg: 1, scope: !1100, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1104 = !DILocation(line: 0, scope: !1100)
+!1105 = !DILocation(line: 461, column: 16, scope: !1100)
+!1106 = !DILocation(line: 461, column: 9, scope: !1100)
+!1107 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"461", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv", !"461", !"9", !"42481152", !"42483592", !"1"}
+!1108 = distinct !DISubprogram(name: "allocator<std::_List_node<void *> >", linkageName: "_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E", scope: !33, file: !32, line: 137, type: !1109, isLocal: false, isDefinition: true, scopeLine: 137, flags: DIFlagPrototyped, isOptimized: false, unit: !1, templateParams: !157, declaration: !1111, variables: !3)
+!1109 = !DISubroutineType(types: !1110)
+!1110 = !{null, !90, !211}
+!1111 = !DISubprogram(name: "allocator<std::_List_node<void *> >", scope: !33, file: !32, line: 137, type: !1109, isLocal: false, isDefinition: false, scopeLine: 137, flags: DIFlagPublic | DIFlagPrototyped, isOptimized: false, templateParams: !157)
+!1112 = !{!573, !265}
+!1113 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<void*>#42915272#15123430601864667042#17130469382309001315#Argument#_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E#0#0#40903616#40903616#15#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E#0#0#42046240#42046240#21#"}
+!1114 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<void*> *", !"42875144", !"1037307671198039871", !"1080292717214291074", !"Alloca", !"_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E", !"0", !"0", !"42485056", !"42484456", !"19"}
+!1115 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E", !"0", !"0", !"42485056", !"42007288", !"20"}
+!1116 = !DILocalVariable(name: "this", arg: 1, scope: !1108, type: !573, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1117 = !DILocation(line: 0, scope: !1108)
+!1118 = !DILocalVariable(arg: 2, scope: !1108, file: !32, line: 137, type: !211)
+!1119 = !DILocation(line: 137, column: 34, scope: !1108)
+!1120 = !DILocation(line: 137, column: 44, scope: !1108)
+!1121 = !DILocation(line: 137, column: 2, scope: !1108)
+!1122 = !DILocation(line: 137, column: 46, scope: !1108)
+!1123 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"137", !"46", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSaIPvEC2ISt10_List_nodeIS_EEERKSaIT_E", !"137", !"46", !"42485056", !"42485408", !"1"}
+!1124 = distinct !DISubprogram(name: "destroy", linkageName: "_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_", scope: !36, file: !37, line: 149, type: !83, isLocal: false, isDefinition: true, scopeLine: 149, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !82, variables: !3)
+!1125 = !{!568, !64}
+!1126 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<void*>#43191816#5472346774516583423#10689599534432904754#Argument#_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_#0#0#40903904#40903904#23#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_#0#0#42043320#42043320#2#"}
+!1127 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<void*> *", !"43056712", !"14592319813917533562", !"9467720049535655911", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_", !"0", !"0", !"42492880", !"42489096", !"22"}
+!1128 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_", !"0", !"0", !"42492880", !"42491224", !"7"}
+!1129 = !DILocalVariable(name: "this", arg: 1, scope: !1124, type: !568, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1130 = !DILocation(line: 0, scope: !1124)
+!1131 = !DILocalVariable(name: "__p", arg: 2, scope: !1124, file: !37, line: 149, type: !52)
+!1132 = !DILocation(line: 149, column: 23, scope: !1124)
+!1133 = !DILocation(line: 149, column: 43, scope: !1124)
+!1134 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"149", !"43", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorIPvE7destroyEPS1_", !"149", !"43", !"42492880", !"42492960", !"1"}
+!1135 = distinct !DISubprogram(name: "~allocator", linkageName: "_ZNSaIPvED2Ev", scope: !33, file: !32, line: 139, type: !88, isLocal: false, isDefinition: true, scopeLine: 139, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !96, variables: !3)
+!1136 = !{!573}
+!1137 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<void*>#42915272#15123430601864667042#17130469382309001315#Argument#_ZNSaIPvED2Ev#0#0#40903616#40903616#15#"}
+!1138 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<void*> *", !"42875144", !"1037307671198039871", !"1080292717214291074", !"Alloca", !"_ZNSaIPvED2Ev", !"0", !"0", !"42493552", !"42107528", !"19"}
+!1139 = !DILocalVariable(name: "this", arg: 1, scope: !1135, type: !573, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1140 = !DILocation(line: 0, scope: !1135)
+!1141 = !DILocation(line: 139, column: 30, scope: !1142)
+!1142 = distinct !DILexicalBlock(scope: !1135, file: !32, line: 139, column: 28)
+!1143 = !DILocation(line: 139, column: 30, scope: !1135)
+!1144 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"139", !"30", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSaIPvED2Ev", !"139", !"30", !"42493552", !"42107968", !"1"}
+!1145 = distinct !DISubprogram(name: "_M_put_node", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E", scope: !10, file: !11, line: 453, type: !288, isLocal: false, isDefinition: true, scopeLine: 454, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !287, variables: !3)
+!1146 = !{!553, !178}
+!1147 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E#0#0#42017696#42017696#12#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_node<void*>#43126488#17209094468811339711#3045336847299406727#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E#0#0#42332720#42332720#18#"}
+!1148 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E", !"0", !"0", !"42320416", !"42111672", !"11"}
+!1149 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_node<void*> *", !"42896344", !"18067778890781974965", !"17328544024782005001", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E", !"0", !"0", !"42320416", !"42489256", !"14"}
+!1150 = !DILocalVariable(name: "this", arg: 1, scope: !1145, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1151 = !DILocation(line: 0, scope: !1145)
+!1152 = !DILocalVariable(name: "__p", arg: 2, scope: !1145, file: !11, line: 453, type: !259)
+!1153 = !DILocation(line: 453, column: 56, scope: !1145)
+!1154 = !DILocation(line: 454, column: 40, scope: !1145)
+!1155 = !DILocation(line: 454, column: 49, scope: !1145)
+!1156 = !DILocation(line: 454, column: 9, scope: !1145)
+!1157 = !DILocation(line: 454, column: 58, scope: !1145)
+!1158 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"454", !"58", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_put_nodeEPSt10_List_nodeIS1_E", !"454", !"58", !"42320416", !"42508464", !"1"}
+!1159 = distinct !DISubprogram(name: "__addressof<void *>", linkageName: "_ZSt11__addressofIPvEPT_RS1_", scope: !14, file: !1160, line: 47, type: !1161, isLocal: false, isDefinition: true, scopeLine: 48, flags: DIFlagPrototyped, isOptimized: false, unit: !1, templateParams: !85, variables: !3)
+!1160 = !DIFile(filename: "/usr/lib/gcc/x86_64-linux-gnu/8/../../../../include/c++/8/bits/move.h", directory: "/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_73")
+!1161 = !DISubroutineType(types: !1162)
+!1162 = !{!53, !56}
+!1163 = !{!64}
+!1164 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#_ZSt11__addressofIPvEPT_RS1_#0#0#42043320#42043320#2#"}
+!1165 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZSt11__addressofIPvEPT_RS1_", !"0", !"0", !"42477296", !"42007016", !"7"}
+!1166 = !DILocalVariable(name: "__r", arg: 1, scope: !1159, file: !1160, line: 47, type: !56)
+!1167 = !DILocation(line: 47, column: 22, scope: !1159)
+!1168 = !DILocation(line: 48, column: 34, scope: !1159)
+!1169 = !DILocation(line: 48, column: 7, scope: !1159)
+!1170 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"48", !"7", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZSt11__addressofIPvEPT_RS1_", !"48", !"7", !"42477296", !"42443896", !"1"}
+!1171 = distinct !DISubprogram(name: "new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorIPvEC2Ev", scope: !36, file: !37, line: 79, type: !40, isLocal: false, isDefinition: true, scopeLine: 79, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !39, variables: !3)
+!1172 = !{!568}
+!1173 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<void*>#43191816#5472346774516583423#10689599534432904754#Argument#_ZN9__gnu_cxx13new_allocatorIPvEC2Ev#0#0#40903904#40903904#23#"}
+!1174 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<void*> *", !"43056712", !"14592319813917533562", !"9467720049535655911", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorIPvEC2Ev", !"0", !"0", !"42487088", !"42489368", !"22"}
+!1175 = !DILocalVariable(name: "this", arg: 1, scope: !1171, type: !568, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1176 = !DILocation(line: 0, scope: !1171)
+!1177 = !DILocation(line: 79, column: 47, scope: !1171)
+!1178 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"79", !"47", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorIPvEC2Ev", !"79", !"47", !"42487088", !"42490352", !"1"}
+!1179 = distinct !DISubprogram(name: "~new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorIPvED2Ev", scope: !36, file: !37, line: 86, type: !40, isLocal: false, isDefinition: true, scopeLine: 86, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !48, variables: !3)
+!1180 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<void*>#43191816#5472346774516583423#10689599534432904754#Argument#_ZN9__gnu_cxx13new_allocatorIPvED2Ev#0#0#40903904#40903904#23#"}
+!1181 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<void*> *", !"43056712", !"14592319813917533562", !"9467720049535655911", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorIPvED2Ev", !"0", !"0", !"42111024", !"42110664", !"22"}
+!1182 = !DILocalVariable(name: "this", arg: 1, scope: !1179, type: !568, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1183 = !DILocation(line: 0, scope: !1179)
+!1184 = !DILocation(line: 86, column: 48, scope: !1179)
+!1185 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"86", !"48", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorIPvED2Ev", !"86", !"48", !"42111024", !"42111760", !"1"}
+!1186 = distinct !DISubprogram(name: "deallocate", linkageName: "_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m", scope: !260, file: !22, line: 132, type: !269, isLocal: false, isDefinition: true, scopeLine: 133, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !268, variables: !3)
+!1187 = !{!265, !178, null}
+!1188 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m#0#0#42046240#42046240#21#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_node<void*>#43126488#17209094468811339711#3045336847299406727#Argument#_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m#0#0#42332720#42332720#18#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int64_t#43099480#18106563096879026311#17544793107196451347#Argument#_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m#0#0#39575064#39575064#24#"}
+!1189 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m", !"0", !"0", !"42515968", !"42514584", !"20"}
+!1190 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_node<void*> *", !"42896344", !"18067778890781974965", !"17328544024782005001", !"Alloca", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m", !"0", !"0", !"42515968", !"42514040", !"14"}
+!1191 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"43099480", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m", !"0", !"0", !"42515968", !"42515016", !"24"}
+!1192 = !DILocalVariable(name: "__a", arg: 1, scope: !1186, file: !22, line: 132, type: !265)
+!1193 = !DILocation(line: 132, column: 36, scope: !1186)
+!1194 = !DILocalVariable(name: "__p", arg: 2, scope: !1186, file: !22, line: 132, type: !259)
+!1195 = !DILocation(line: 132, column: 49, scope: !1186)
+!1196 = !DILocalVariable(name: "__n", arg: 3, scope: !1186, file: !22, line: 132, type: !266)
+!1197 = !DILocation(line: 132, column: 64, scope: !1186)
+!1198 = !DILocation(line: 133, column: 7, scope: !1186)
+!1199 = !DILocation(line: 133, column: 22, scope: !1186)
+!1200 = !DILocation(line: 133, column: 27, scope: !1186)
+!1201 = !DILocation(line: 133, column: 11, scope: !1186)
+!1202 = !DILocation(line: 133, column: 33, scope: !1186)
+!1203 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"133", !"33", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E10deallocateERS4_PS3_m", !"133", !"33", !"42515968", !"42516048", !"1"}
+!1204 = distinct !DISubprogram(name: "deallocate", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m", scope: !162, file: !37, line: 116, type: !193, isLocal: false, isDefinition: true, scopeLine: 117, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !192, variables: !3)
+!1205 = !{!580, !178, null}
+!1206 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<std::_List_node<void*> >#43138600#10728053705310485601#3459309711496887166#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#0#0#42065376#42065376#26#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_node<void*>#43126488#17209094468811339711#3045336847299406727#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#0#0#42332720#42332720#18#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int64_t#43099480#18106563096879026311#17544793107196451347#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m#0#0#39575064#39575064#24#"}
+!1207 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<std::_List_node<void*> > *", !"43125688", !"9674033380306028551", !"5795505714752553873", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m", !"0", !"0", !"42132848", !"42530312", !"25"}
+!1208 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_node<void*> *", !"42896344", !"18067778890781974965", !"17328544024782005001", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m", !"0", !"0", !"42132848", !"42529768", !"14"}
+!1209 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"43099480", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m", !"0", !"0", !"42132848", !"42530424", !"24"}
+!1210 = !DILocalVariable(name: "this", arg: 1, scope: !1204, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1211 = !DILocation(line: 0, scope: !1204)
+!1212 = !DILocalVariable(name: "__p", arg: 2, scope: !1204, file: !37, line: 116, type: !177)
+!1213 = !DILocation(line: 116, column: 26, scope: !1204)
+!1214 = !DILocalVariable(arg: 3, scope: !1204, file: !37, line: 116, type: !68)
+!1215 = !DILocation(line: 116, column: 40, scope: !1204)
+!1216 = !DILocation(line: 125, column: 20, scope: !1204)
+!1217 = !DILocation(line: 125, column: 2, scope: !1204)
+!1218 = !{!"125", !"2", !"0", !"0", !"0", !"125", !"2", !"42132848", !"42537056", !"18446744073709551615", !"_ZdlPv", !"FREE", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m"}
+!1219 = !DILocation(line: 126, column: 7, scope: !1204)
+!1220 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"126", !"7", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE10deallocateEPS3_m", !"126", !"7", !"42132848", !"42133232", !"1"}
+!1221 = distinct !DISubprogram(name: "~allocator", linkageName: "_ZNSaISt10_List_nodeIPvEED2Ev", scope: !159, file: !32, line: 139, type: !205, isLocal: false, isDefinition: true, scopeLine: 139, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !213, variables: !3)
+!1222 = !{!265}
+!1223 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZNSaISt10_List_nodeIPvEED2Ev#0#0#42046240#42046240#21#"}
+!1224 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZNSaISt10_List_nodeIPvEED2Ev", !"0", !"0", !"42467408", !"42466680", !"20"}
+!1225 = !DILocalVariable(name: "this", arg: 1, scope: !1221, type: !586, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1226 = !DILocation(line: 0, scope: !1221)
+!1227 = !DILocation(line: 139, column: 30, scope: !1228)
+!1228 = distinct !DILexicalBlock(scope: !1221, file: !32, line: 139, column: 28)
+!1229 = !DILocation(line: 139, column: 30, scope: !1221)
+!1230 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"139", !"30", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSaISt10_List_nodeIPvEED2Ev", !"139", !"30", !"42467408", !"42467808", !"1"}
+!1231 = distinct !DISubprogram(name: "~new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev", scope: !162, file: !37, line: 86, type: !165, isLocal: false, isDefinition: true, scopeLine: 86, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !173, variables: !3)
+!1232 = !{!580}
+!1233 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<std::_List_node<void*> >#43138600#10728053705310485601#3459309711496887166#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev#0#0#42065376#42065376#26#"}
+!1234 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<std::_List_node<void*> > *", !"43125688", !"9674033380306028551", !"5795505714752553873", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev", !"0", !"0", !"42468160", !"42470536", !"25"}
+!1235 = !DILocalVariable(name: "this", arg: 1, scope: !1231, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1236 = !DILocation(line: 0, scope: !1231)
+!1237 = !DILocation(line: 86, column: 48, scope: !1231)
+!1238 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"86", !"48", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEED2Ev", !"86", !"48", !"42468160", !"42468352", !"1"}
+!1239 = distinct !DISubprogram(name: "_List_base", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev", scope: !10, file: !11, line: 470, type: !298, isLocal: false, isDefinition: true, scopeLine: 470, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !297, variables: !3)
+!1240 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev#0#0#42017696#42017696#12#"}
+!1241 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev", !"0", !"0", !"42556880", !"42558328", !"11"}
+!1242 = !DILocalVariable(name: "this", arg: 1, scope: !1239, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1243 = !DILocation(line: 0, scope: !1239)
+!1244 = !DILocation(line: 470, column: 7, scope: !1239)
+!1245 = !DILocation(line: 470, column: 22, scope: !1239)
+!1246 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"470", !"22", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2Ev", !"470", !"22", !"42556880", !"42556960", !"1"}
+!1247 = distinct !DISubprogram(name: "_List_impl", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev", scope: !17, file: !11, line: 387, type: !228, isLocal: false, isDefinition: true, scopeLine: 390, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !227, variables: !3)
+!1248 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl#43079736#2883634944874276711#13205518481821382654#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev#0#0#39566816#39566816#17#"}
+!1249 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl *", !"42835240", !"5805171371469684283", !"8705517898081464949", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev", !"0", !"0", !"42328384", !"42565832", !"16"}
+!1250 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev", !"0", !"0", !"42328384", !"42566152", !"1"}
+!1251 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev", !"0", !"0", !"42328384", !"42568712", !"5"}
+!1252 = !DILocalVariable(name: "this", arg: 1, scope: !1247, type: !555, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1253 = !DILocation(line: 0, scope: !1247)
+!1254 = !DILocation(line: 390, column: 2, scope: !1247)
+!1255 = !DILocation(line: 389, column: 4, scope: !1247)
+!1256 = !DILocation(line: 387, column: 2, scope: !1247)
+!1257 = !DILocation(line: 390, column: 4, scope: !1258)
+!1258 = !DILexicalBlockFile(scope: !1247, file: !11, discriminator: 1)
+!1259 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"390", !"4", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2Ev", !"390", !"4", !"42571360", !"42563952", !"1"}
+!1260 = !DILocation(line: 390, column: 4, scope: !1261)
+!1261 = !DILexicalBlockFile(scope: !1247, file: !11, discriminator: 2)
+!1262 = !DILocation(line: 390, column: 4, scope: !1263)
+!1263 = !DILexicalBlockFile(scope: !1264, file: !11, discriminator: 2)
+!1264 = distinct !DILexicalBlock(scope: !1247, file: !11, line: 390, column: 2)
+!1265 = !DILocation(line: 390, column: 4, scope: !1266)
+!1266 = !DILexicalBlockFile(scope: !1264, file: !11, discriminator: 3)
+!1267 = distinct !DISubprogram(name: "allocator", linkageName: "_ZNSaISt10_List_nodeIPvEEC2Ev", scope: !159, file: !32, line: 131, type: !205, isLocal: false, isDefinition: true, scopeLine: 131, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !204, variables: !3)
+!1268 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZNSaISt10_List_nodeIPvEEC2Ev#0#0#42046240#42046240#21#"}
+!1269 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZNSaISt10_List_nodeIPvEEC2Ev", !"0", !"0", !"42567024", !"42564104", !"20"}
+!1270 = !DILocalVariable(name: "this", arg: 1, scope: !1267, type: !586, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1271 = !DILocation(line: 0, scope: !1267)
+!1272 = !DILocation(line: 131, column: 27, scope: !1267)
+!1273 = !DILocation(line: 131, column: 7, scope: !1267)
+!1274 = !DILocation(line: 131, column: 29, scope: !1267)
+!1275 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"131", !"29", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSaISt10_List_nodeIPvEEC2Ev", !"131", !"29", !"42567024", !"42572576", !"1"}
+!1276 = distinct !DISubprogram(name: "_List_node_header", linkageName: "_ZNSt8__detail17_List_node_headerC2Ev", scope: !215, file: !11, line: 109, type: !220, isLocal: false, isDefinition: true, scopeLine: 110, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !219, variables: !3)
+!1277 = !{!557}
+!1278 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__detail::_List_node_header#43314312#3418608922115801192#17245253478815262520#Argument#_ZNSt8__detail17_List_node_headerC2Ev#0#0#42120352#42120352#28#"}
+!1279 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__detail::_List_node_header *", !"43154504", !"5220707123417141457", !"5999961621623653361", !"Alloca", !"_ZNSt8__detail17_List_node_headerC2Ev", !"0", !"0", !"42576992", !"42575544", !"27"}
+!1280 = !DILocalVariable(name: "this", arg: 1, scope: !1276, type: !557, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1281 = !DILocation(line: 0, scope: !1276)
+!1282 = !DILocation(line: 110, column: 7, scope: !1276)
+!1283 = !DILocation(line: 110, column: 9, scope: !1284)
+!1284 = distinct !DILexicalBlock(scope: !1276, file: !11, line: 110, column: 7)
+!1285 = !DILocation(line: 110, column: 20, scope: !1276)
+!1286 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"110", !"20", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt8__detail17_List_node_headerC2Ev", !"110", !"20", !"42576992", !"42577952", !"1"}
+!1287 = distinct !DISubprogram(name: "new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev", scope: !162, file: !37, line: 79, type: !165, isLocal: false, isDefinition: true, scopeLine: 79, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !164, variables: !3)
+!1288 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<std::_List_node<void*> >#43138600#10728053705310485601#3459309711496887166#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev#0#0#42065376#42065376#26#"}
+!1289 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<std::_List_node<void*> > *", !"43125688", !"9674033380306028551", !"5795505714752553873", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev", !"0", !"0", !"42573296", !"42575272", !"25"}
+!1290 = !DILocalVariable(name: "this", arg: 1, scope: !1287, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1291 = !DILocation(line: 0, scope: !1287)
+!1292 = !DILocation(line: 79, column: 47, scope: !1287)
+!1293 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"79", !"47", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2Ev", !"79", !"47", !"42573296", !"42573488", !"1"}
+!1294 = distinct !DISubprogram(name: "_M_init", linkageName: "_ZNSt8__detail17_List_node_header7_M_initEv", scope: !215, file: !11, line: 149, type: !220, isLocal: false, isDefinition: true, scopeLine: 150, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !223, variables: !3)
+!1295 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__detail::_List_node_header#43314312#3418608922115801192#17245253478815262520#Argument#_ZNSt8__detail17_List_node_header7_M_initEv#0#0#42120352#42120352#28#"}
+!1296 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__detail::_List_node_header *", !"43154504", !"5220707123417141457", !"5999961621623653361", !"Alloca", !"_ZNSt8__detail17_List_node_header7_M_initEv", !"0", !"0", !"42476832", !"42475368", !"27"}
+!1297 = !DILocalVariable(name: "this", arg: 1, scope: !1294, type: !557, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1298 = !DILocation(line: 0, scope: !1294)
+!1299 = !DILocation(line: 151, column: 34, scope: !1294)
+!1300 = !DILocation(line: 151, column: 24, scope: !1294)
+!1301 = !DILocation(line: 151, column: 32, scope: !1294)
+!1302 = !DILocation(line: 151, column: 8, scope: !1294)
+!1303 = !DILocation(line: 151, column: 16, scope: !1294)
+!1304 = !DILocation(line: 153, column: 8, scope: !1294)
+!1305 = !DILocation(line: 153, column: 16, scope: !1294)
+!1306 = !DILocation(line: 155, column: 7, scope: !1294)
+!1307 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"155", !"7", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt8__detail17_List_node_header7_M_initEv", !"155", !"7", !"42476832", !"42579104", !"1"}
+!1308 = distinct !DISubprogram(name: "_M_insert", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_", scope: !308, file: !11, line: 1892, type: !531, isLocal: false, isDefinition: true, scopeLine: 1893, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !530, variables: !3)
+!1309 = !{!543, !127, !64}
+!1310 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_#0#0#41603904#41603904#3#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__detail::_List_node_base#43339720#15462982910083646028#3693359475243847553#Argument#_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_#0#0#42120880#42120880#29#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_#0#0#42043320#42043320#2#"}
+!1311 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_iterator<void*>", !"42916072", !"7719603627806977988", !"6690799286029806559", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_", !"0", !"0", !"42600464", !"42599000", !"8"}
+!1312 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_", !"0", !"0", !"42600464", !"42587992", !"6"}
+!1313 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_", !"0", !"0", !"42600464", !"42587880", !"7"}
+!1314 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_node<void*> *", !"42896344", !"18067778890781974965", !"17328544024782005001", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_", !"0", !"0", !"42600464", !"42599352", !"14"}
+!1315 = !DILocalVariable(name: "this", arg: 1, scope: !1308, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1316 = !DILocation(line: 0, scope: !1308)
+!1317 = !DILocalVariable(name: "__position", arg: 2, scope: !1308, file: !11, line: 1892, type: !307)
+!1318 = !DILocation(line: 1892, column: 26, scope: !1308)
+!1319 = !DILocalVariable(name: "__x", arg: 3, scope: !1308, file: !11, line: 1892, type: !317)
+!1320 = !DILocation(line: 1892, column: 56, scope: !1308)
+!1321 = !DILocalVariable(name: "__tmp", scope: !1308, file: !11, line: 1894, type: !314)
+!1322 = !DILocation(line: 1894, column: 9, scope: !1308)
+!1323 = !DILocation(line: 1894, column: 32, scope: !1308)
+!1324 = !DILocation(line: 1894, column: 17, scope: !1308)
+!1325 = !DILocation(line: 1895, column: 2, scope: !1308)
+!1326 = !DILocation(line: 1895, column: 9, scope: !1308)
+!1327 = !DILocation(line: 1895, column: 28, scope: !1308)
+!1328 = !DILocation(line: 1896, column: 8, scope: !1308)
+!1329 = !DILocation(line: 1897, column: 7, scope: !1308)
+!1330 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"1897", !"7", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx114listIPvSaIS1_EE9_M_insertESt14_List_iteratorIS1_ERKS1_", !"1897", !"7", !"42600464", !"42600544", !"1"}
+!1331 = distinct !DISubprogram(name: "end", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE3endEv", scope: !308, file: !11, line: 971, type: !443, isLocal: false, isDefinition: true, scopeLine: 972, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !448, variables: !3)
+!1332 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EE3endEv#0#0#41603904#41603904#3#"}
+!1333 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_iterator<void*>", !"42916072", !"7719603627806977988", !"6690799286029806559", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE3endEv", !"0", !"0", !"42543328", !"42546520", !"8"}
+!1334 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE3endEv", !"0", !"0", !"42543328", !"42543160", !"6"}
+!1335 = !DILocalVariable(name: "this", arg: 1, scope: !1331, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1336 = !DILocation(line: 0, scope: !1331)
+!1337 = !DILocation(line: 972, column: 32, scope: !1331)
+!1338 = !DILocation(line: 972, column: 40, scope: !1331)
+!1339 = !DILocation(line: 972, column: 25, scope: !1331)
+!1340 = !DILocation(line: 972, column: 16, scope: !1331)
+!1341 = !DILocation(line: 972, column: 9, scope: !1331)
+!1342 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"972", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx114listIPvSaIS1_EE3endEv", !"972", !"9", !"42543328", !"42554872", !"1"}
+!1343 = distinct !DISubprogram(name: "_M_create_node", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", scope: !308, file: !11, line: 622, type: !312, isLocal: false, isDefinition: true, scopeLine: 623, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !311, variables: !3)
+!1344 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_#0#0#41603904#41603904#3#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_#0#0#42043320#42043320#2#"}
+!1345 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", !"0", !"0", !"42601280", !"42612616", !"6"}
+!1346 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", !"0", !"0", !"42601280", !"42605352", !"7"}
+!1347 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_node<void*> *", !"42896344", !"18067778890781974965", !"17328544024782005001", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", !"0", !"0", !"42601280", !"42595880", !"14"}
+!1348 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<void*>", !"42915272", !"15123430601864667042", !"17130469382309001315", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", !"0", !"0", !"42601280", !"42510360", !"15"}
+!1349 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", !"0", !"0", !"42601280", !"42510632", !"1"}
+!1350 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", !"0", !"0", !"42601280", !"42521816", !"5"}
+!1351 = !DILocalVariable(name: "this", arg: 1, scope: !1343, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1352 = !DILocation(line: 0, scope: !1343)
+!1353 = !DILocalVariable(name: "__x", arg: 2, scope: !1343, file: !11, line: 622, type: !317)
+!1354 = !DILocation(line: 622, column: 40, scope: !1343)
+!1355 = !DILocalVariable(name: "__p", scope: !1343, file: !11, line: 624, type: !314)
+!1356 = !DILocation(line: 624, column: 9, scope: !1343)
+!1357 = !DILocation(line: 624, column: 21, scope: !1343)
+!1358 = !DILocalVariable(name: "__alloc", scope: !1359, file: !11, line: 627, type: !594)
+!1359 = distinct !DILexicalBlock(scope: !1343, file: !11, line: 626, column: 4)
+!1360 = !DILocation(line: 627, column: 21, scope: !1359)
+!1361 = !DILocation(line: 627, column: 29, scope: !1359)
+!1362 = !DILocation(line: 627, column: 21, scope: !1363)
+!1363 = !DILexicalBlockFile(scope: !1359, file: !11, discriminator: 1)
+!1364 = !DILocation(line: 628, column: 6, scope: !1359)
+!1365 = !DILocation(line: 628, column: 24, scope: !1359)
+!1366 = !DILocation(line: 628, column: 29, scope: !1359)
+!1367 = !DILocation(line: 628, column: 42, scope: !1363)
+!1368 = !DILocation(line: 628, column: 14, scope: !1363)
+!1369 = !DILocation(line: 629, column: 4, scope: !1343)
+!1370 = !DILocation(line: 629, column: 4, scope: !1359)
+!1371 = !DILocation(line: 636, column: 7, scope: !1359)
+!1372 = !DILocation(line: 636, column: 7, scope: !1363)
+!1373 = !DILocation(line: 629, column: 4, scope: !1374)
+!1374 = !DILexicalBlockFile(scope: !1343, file: !11, discriminator: 1)
+!1375 = !DILocation(line: 629, column: 4, scope: !1376)
+!1376 = !DILexicalBlockFile(scope: !1359, file: !11, discriminator: 2)
+!1377 = !DILocation(line: 632, column: 6, scope: !1378)
+!1378 = distinct !DILexicalBlock(scope: !1343, file: !11, line: 631, column: 4)
+!1379 = !DILocation(line: 632, column: 18, scope: !1378)
+!1380 = !DILocation(line: 633, column: 6, scope: !1378)
+!1381 = !DILocation(line: 636, column: 7, scope: !1382)
+!1382 = !DILexicalBlockFile(scope: !1378, file: !11, discriminator: 2)
+!1383 = !DILocation(line: 634, column: 4, scope: !1378)
+!1384 = !DILocation(line: 634, column: 4, scope: !1385)
+!1385 = !DILexicalBlockFile(scope: !1378, file: !11, discriminator: 1)
+!1386 = !DILocation(line: 635, column: 9, scope: !1343)
+!1387 = !DILocation(line: 635, column: 2, scope: !1343)
+!1388 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"635", !"2", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx114listIPvSaIS1_EE14_M_create_nodeERKS1_", !"635", !"2", !"42630320", !"42635192", !"1"}
+!1389 = !DILocation(line: 634, column: 4, scope: !1382)
+!1390 = !DILocation(line: 634, column: 4, scope: !1391)
+!1391 = !DILexicalBlockFile(scope: !1378, file: !11, discriminator: 3)
+!1392 = distinct !DISubprogram(name: "_M_inc_size", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm", scope: !10, file: !11, line: 416, type: !247, isLocal: false, isDefinition: true, scopeLine: 416, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !250, variables: !3)
+!1393 = !{!553, null}
+!1394 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm#0#0#42017696#42017696#12#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int64_t#43099480#18106563096879026311#17544793107196451347#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm#0#0#39575064#39575064#24#"}
+!1395 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm", !"0", !"0", !"42629152", !"42542360", !"11"}
+!1396 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"43099480", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm", !"0", !"0", !"42629152", !"42650552", !"24"}
+!1397 = !DILocalVariable(name: "this", arg: 1, scope: !1392, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1398 = !DILocation(line: 0, scope: !1392)
+!1399 = !DILocalVariable(name: "__n", arg: 2, scope: !1392, file: !11, line: 416, type: !69)
+!1400 = !DILocation(line: 416, column: 31, scope: !1392)
+!1401 = !DILocation(line: 416, column: 65, scope: !1392)
+!1402 = !DILocation(line: 416, column: 38, scope: !1392)
+!1403 = !DILocation(line: 416, column: 46, scope: !1392)
+!1404 = !DILocation(line: 416, column: 54, scope: !1392)
+!1405 = !DILocation(line: 416, column: 62, scope: !1392)
+!1406 = !DILocation(line: 416, column: 70, scope: !1392)
+!1407 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"416", !"70", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_inc_sizeEm", !"416", !"70", !"42629152", !"42655712", !"1"}
+!1408 = distinct !DISubprogram(name: "_M_get_node", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv", scope: !10, file: !11, line: 449, type: !257, isLocal: false, isDefinition: true, scopeLine: 450, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !256, variables: !3)
+!1409 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv#0#0#42017696#42017696#12#"}
+!1410 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv", !"0", !"0", !"42632720", !"42605688", !"11"}
+!1411 = !DILocalVariable(name: "this", arg: 1, scope: !1408, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1412 = !DILocation(line: 0, scope: !1408)
+!1413 = !DILocation(line: 450, column: 45, scope: !1408)
+!1414 = !DILocation(line: 450, column: 16, scope: !1408)
+!1415 = !DILocation(line: 450, column: 9, scope: !1408)
+!1416 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"450", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE11_M_get_nodeEv", !"450", !"9", !"42632720", !"42638152", !"1"}
+!1417 = distinct !DISubprogram(name: "construct", linkageName: "_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_", scope: !36, file: !37, line: 145, type: !80, isLocal: false, isDefinition: true, scopeLine: 146, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !79, variables: !3)
+!1418 = !{!568, !64, !64}
+!1419 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<void*>#43191816#5472346774516583423#10689599534432904754#Argument#_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_#0#0#40903904#40903904#23#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_#0#0#42043320#42043320#2#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_#0#0#42043320#42043320#2#"}
+!1420 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<void*> *", !"43056712", !"14592319813917533562", !"9467720049535655911", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_", !"0", !"0", !"42654592", !"42652360", !"22"}
+!1421 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_", !"0", !"0", !"42654592", !"42654056", !"7"}
+!1422 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_", !"0", !"0", !"42654592", !"42653944", !"7"}
+!1423 = !DILocalVariable(name: "this", arg: 1, scope: !1417, type: !568, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1424 = !DILocation(line: 0, scope: !1417)
+!1425 = !DILocalVariable(name: "__p", arg: 2, scope: !1417, file: !37, line: 145, type: !52)
+!1426 = !DILocation(line: 145, column: 25, scope: !1417)
+!1427 = !DILocalVariable(name: "__val", arg: 3, scope: !1417, file: !37, line: 145, type: !64)
+!1428 = !DILocation(line: 145, column: 41, scope: !1417)
+!1429 = !DILocation(line: 146, column: 23, scope: !1417)
+!1430 = !DILocation(line: 146, column: 9, scope: !1417)
+!1431 = !DILocation(line: 146, column: 32, scope: !1417)
+!1432 = !DILocation(line: 146, column: 40, scope: !1417)
+!1433 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"146", !"40", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorIPvE9constructEPS1_RKS1_", !"146", !"40", !"42654592", !"42655104", !"1"}
+!1434 = distinct !DISubprogram(name: "allocate", linkageName: "_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m", scope: !260, file: !22, line: 129, type: !263, isLocal: false, isDefinition: true, scopeLine: 130, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !262, variables: !3)
+!1435 = !{!265, null}
+!1436 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m#0#0#42046240#42046240#21#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int64_t#43099480#18106563096879026311#17544793107196451347#Argument#_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m#0#0#39575064#39575064#24#"}
+!1437 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m", !"0", !"0", !"42637312", !"42616584", !"20"}
+!1438 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"43099480", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m", !"0", !"0", !"42637312", !"42616472", !"24"}
+!1439 = !DILocalVariable(name: "__a", arg: 1, scope: !1434, file: !22, line: 129, type: !265)
+!1440 = !DILocation(line: 129, column: 22, scope: !1434)
+!1441 = !DILocalVariable(name: "__n", arg: 2, scope: !1434, file: !22, line: 129, type: !266)
+!1442 = !DILocation(line: 129, column: 37, scope: !1434)
+!1443 = !DILocation(line: 130, column: 14, scope: !1434)
+!1444 = !DILocation(line: 130, column: 27, scope: !1434)
+!1445 = !DILocation(line: 130, column: 18, scope: !1434)
+!1446 = !DILocation(line: 130, column: 7, scope: !1434)
+!1447 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"130", !"7", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E8allocateERS4_m", !"130", !"7", !"42637312", !"42644888", !"1"}
+!1448 = distinct !DISubprogram(name: "allocate", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv", scope: !162, file: !37, line: 99, type: !190, isLocal: false, isDefinition: true, scopeLine: 100, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !189, variables: !3)
+!1449 = !{!580, null, !0}
+!1450 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<std::_List_node<void*> >#43138600#10728053705310485601#3459309711496887166#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#0#0#42065376#42065376#26#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int64_t#43099480#18106563096879026311#17544793107196451347#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#0#0#39575064#39575064#24#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t#39692632#18058093552324746023#94541214677173297#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv#0#0#39525112#39525112#1#"}
+!1451 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<std::_List_node<void*> > *", !"43125688", !"9674033380306028551", !"5795505714752553873", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv", !"0", !"0", !"42643856", !"42628792", !"25"}
+!1452 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"43099480", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv", !"0", !"0", !"42643856", !"42643224", !"24"}
+!1453 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"39620568", !"526828848944628746", !"11854005139656696112", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv", !"0", !"0", !"42643856", !"42643112", !"2"}
+!1454 = !DILocalVariable(name: "this", arg: 1, scope: !1448, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1455 = !DILocation(line: 0, scope: !1448)
+!1456 = !DILocalVariable(name: "__n", arg: 2, scope: !1448, file: !37, line: 99, type: !68)
+!1457 = !DILocation(line: 99, column: 26, scope: !1448)
+!1458 = !DILocalVariable(arg: 3, scope: !1448, file: !37, line: 99, type: !71)
+!1459 = !DILocation(line: 99, column: 43, scope: !1448)
+!1460 = !DILocation(line: 101, column: 6, scope: !1461)
+!1461 = distinct !DILexicalBlock(scope: !1448, file: !37, line: 101, column: 6)
+!1462 = !DILocation(line: 101, column: 18, scope: !1461)
+!1463 = !DILocation(line: 101, column: 10, scope: !1461)
+!1464 = !DILocation(line: 101, column: 6, scope: !1448)
+!1465 = !DILocation(line: 102, column: 4, scope: !1461)
+!1466 = !DILocation(line: 111, column: 42, scope: !1448)
+!1467 = !DILocation(line: 111, column: 46, scope: !1448)
+!1468 = !DILocation(line: 111, column: 27, scope: !1448)
+!1469 = !{!"111", !"27", !"43126488", !"17209094468811339711", !"3045336847299406727", !"111", !"27", !"42648688", !"42652880", !"18", !"_Znwm", !"struct std::_List_node<void*>", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv"}
+!1470 = !DILocation(line: 111, column: 9, scope: !1448)
+!1471 = !DILocation(line: 111, column: 2, scope: !1448)
+!1472 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"111", !"2", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8allocateEmPKv", !"111", !"2", !"42648688", !"42653848", !"1"}
+!1473 = distinct !DISubprogram(name: "max_size", linkageName: "_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv", scope: !162, file: !37, line: 129, type: !196, isLocal: false, isDefinition: true, scopeLine: 130, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !195, variables: !3)
+!1474 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<std::_List_node<void*> >#43138600#10728053705310485601#3459309711496887166#Argument#_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv#0#0#42065376#42065376#26#"}
+!1475 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<std::_List_node<void*> > *", !"43125688", !"9674033380306028551", !"5795505714752553873", !"Alloca", !"_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv", !"0", !"0", !"42652720", !"42643496", !"25"}
+!1476 = !DILocalVariable(name: "this", arg: 1, scope: !1473, type: !596, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1477 = !DILocation(line: 0, scope: !1473)
+!1478 = !DILocation(line: 130, column: 9, scope: !1473)
+!1479 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"130", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNK9__gnu_cxx13new_allocatorISt10_List_nodeIPvEE8max_sizeEv", !"130", !"9", !"42652720", !"42647688", !"1"}
+!1480 = distinct !DISubprogram(name: "_List_iterator", linkageName: "_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE", scope: !340, file: !11, line: 200, type: !348, isLocal: false, isDefinition: true, scopeLine: 201, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !347, variables: !3)
+!1481 = !{!591, !127}
+!1482 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_iterator<void*>#42916072#7719603627806977988#6690799286029806559#Argument#_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE#0#0#42334288#42334288#8#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__detail::_List_node_base#43339720#15462982910083646028#3693359475243847553#Argument#_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE#0#0#42120880#42120880#29#"}
+!1483 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_iterator<void*> *", !"43000120", !"3994397242397099028", !"7537924358896025774", !"Alloca", !"_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE", !"0", !"0", !"42338144", !"42649224", !"30"}
+!1484 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__detail::_List_node_base *", !"42876760", !"4620211663732537997", !"4160118652487172189", !"Alloca", !"_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE", !"0", !"0", !"42338144", !"42547096", !"13"}
+!1485 = !DILocalVariable(name: "this", arg: 1, scope: !1480, type: !591, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1486 = !DILocation(line: 0, scope: !1480)
+!1487 = !DILocalVariable(name: "__x", arg: 2, scope: !1480, file: !11, line: 200, type: !127)
+!1488 = !DILocation(line: 200, column: 49, scope: !1480)
+!1489 = !DILocation(line: 201, column: 9, scope: !1480)
+!1490 = !DILocation(line: 201, column: 17, scope: !1480)
+!1491 = !DILocation(line: 201, column: 24, scope: !1480)
+!1492 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"201", !"24", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt14_List_iteratorIPvEC2EPNSt8__detail15_List_node_baseE", !"201", !"24", !"42338144", !"42554128", !"1"}
+!1493 = distinct !DISubprogram(name: "_S_select_on_copy", linkageName: "_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_", scope: !260, file: !22, line: 145, type: !278, isLocal: false, isDefinition: true, scopeLine: 145, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !277, variables: !3)
+!1494 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_#0#0#42046240#42046240#21#"}
+!1495 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_", !"0", !"0", !"42713872", !"42705288", !"20"}
+!1496 = !DILocalVariable(name: "__a", arg: 1, scope: !1493, file: !22, line: 145, type: !211)
+!1497 = !DILocation(line: 145, column: 58, scope: !1493)
+!1498 = !DILocation(line: 145, column: 72, scope: !1493)
+!1499 = !DILocation(line: 145, column: 65, scope: !1493)
+!1500 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"145", !"65", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx14__alloc_traitsISaISt10_List_nodeIPvEES3_E17_S_select_on_copyERKS4_", !"145", !"65", !"42713872", !"42716296", !"1"}
+!1501 = distinct !DISubprogram(name: "_M_get_Node_allocator", linkageName: "_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv", scope: !10, file: !11, line: 464, type: !295, isLocal: false, isDefinition: true, scopeLine: 465, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !294, variables: !3)
+!1502 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv#0#0#42017696#42017696#12#"}
+!1503 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv", !"0", !"0", !"42714640", !"42717336", !"11"}
+!1504 = !DILocalVariable(name: "this", arg: 1, scope: !1501, type: !607, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1505 = !DILocation(line: 0, scope: !1501)
+!1506 = !DILocation(line: 465, column: 16, scope: !1501)
+!1507 = !DILocation(line: 465, column: 9, scope: !1501)
+!1508 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"465", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNKSt7__cxx1110_List_baseIPvSaIS1_EE21_M_get_Node_allocatorEv", !"465", !"9", !"42714640", !"42720344", !"1"}
+!1509 = distinct !DISubprogram(name: "_List_base", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE", scope: !10, file: !11, line: 473, type: !301, isLocal: false, isDefinition: true, scopeLine: 475, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !300, variables: !3)
+!1510 = !{!553, !265}
+!1511 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::_List_base<void*, std::allocator<void*> >#42875256#992518032693506962#15280858233635705065#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE#0#0#42017696#42017696#12#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE#0#0#42046240#42046240#21#"}
+!1512 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::_List_base<void*, std::allocator<void*> > *", !"42846328", !"9285265370157914206", !"8754763177863462452", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE", !"0", !"0", !"42718624", !"42720824", !"11"}
+!1513 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE", !"0", !"0", !"42718624", !"42716616", !"20"}
+!1514 = !DILocalVariable(name: "this", arg: 1, scope: !1509, type: !553, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1515 = !DILocation(line: 0, scope: !1509)
+!1516 = !DILocalVariable(name: "__a", arg: 2, scope: !1509, file: !11, line: 473, type: !234)
+!1517 = !DILocation(line: 473, column: 42, scope: !1509)
+!1518 = !DILocation(line: 474, column: 9, scope: !1509)
+!1519 = !DILocation(line: 474, column: 17, scope: !1509)
+!1520 = !DILocation(line: 475, column: 9, scope: !1509)
+!1521 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"475", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EEC2ERKSaISt10_List_nodeIS1_EE", !"475", !"9", !"42718624", !"42718704", !"1"}
+!1522 = distinct !DISubprogram(name: "_M_initialize_dispatch<std::_List_const_iterator<void *> >", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", scope: !308, file: !11, line: 1827, type: !1523, isLocal: false, isDefinition: true, scopeLine: 1829, flags: DIFlagPrototyped, isOptimized: false, unit: !1, templateParams: !1525, declaration: !1527, variables: !3)
+!1523 = !DISubroutineType(types: !1524)
+!1524 = !{null, !316, !324, !324, !603}
+!1525 = !{!1526}
+!1526 = !DITemplateTypeParameter(name: "_InputIterator", type: !324)
+!1527 = !DISubprogram(name: "_M_initialize_dispatch<std::_List_const_iterator<void *> >", linkageName: "_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", scope: !308, file: !11, line: 1827, type: !1523, isLocal: false, isDefinition: false, scopeLine: 1827, flags: DIFlagProtected | DIFlagPrototyped, isOptimized: false, templateParams: !1525)
+!1528 = !{!543, !127, !127}
+!1529 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type#0#0#41603904#41603904#3#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__detail::_List_node_base#43339720#15462982910083646028#3693359475243847553#Argument#_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type#0#0#42120880#42120880#29#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__detail::_List_node_base#43339720#15462982910083646028#3693359475243847553#Argument#_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type#0#0#42120880#42120880#29#"}
+!1530 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*>", !"39656168", !"9762397520907945078", !"14111476916259126874", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", !"0", !"0", !"42742656", !"42583608", !"9"}
+!1531 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*>", !"39656168", !"9762397520907945078", !"14111476916259126874", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", !"0", !"0", !"42742656", !"42742072", !"9"}
+!1532 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__false_type", !"42079368", !"18017442289861285645", !"9161392719371145487", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", !"0", !"0", !"42742656", !"42741960", !"10"}
+!1533 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", !"0", !"0", !"42742656", !"42741848", !"6"}
+!1534 = !DILocalVariable(name: "this", arg: 1, scope: !1522, type: !543, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1535 = !DILocation(line: 0, scope: !1522)
+!1536 = !DILocalVariable(name: "__first", arg: 2, scope: !1522, file: !11, line: 1827, type: !324)
+!1537 = !DILocation(line: 1827, column: 40, scope: !1522)
+!1538 = !DILocalVariable(name: "__last", arg: 3, scope: !1522, file: !11, line: 1827, type: !324)
+!1539 = !DILocation(line: 1827, column: 64, scope: !1522)
+!1540 = !DILocalVariable(arg: 4, scope: !1522, file: !11, line: 1828, type: !603)
+!1541 = !DILocation(line: 1828, column: 23, scope: !1522)
+!1542 = !DILocation(line: 1830, column: 4, scope: !1522)
+!1543 = !DILocation(line: 1830, column: 19, scope: !1544)
+!1544 = !DILexicalBlockFile(scope: !1545, file: !11, discriminator: 1)
+!1545 = distinct !DILexicalBlock(scope: !1546, file: !11, line: 1830, column: 4)
+!1546 = distinct !DILexicalBlock(scope: !1522, file: !11, line: 1830, column: 4)
+!1547 = !DILocation(line: 1830, column: 4, scope: !1548)
+!1548 = !DILexicalBlockFile(scope: !1546, file: !11, discriminator: 1)
+!1549 = !DILocation(line: 1834, column: 16, scope: !1545)
+!1550 = !DILocation(line: 1834, column: 6, scope: !1544)
+!1551 = !DILocation(line: 1834, column: 6, scope: !1545)
+!1552 = !DILocation(line: 1830, column: 30, scope: !1553)
+!1553 = !DILexicalBlockFile(scope: !1545, file: !11, discriminator: 2)
+!1554 = !DILocation(line: 1830, column: 4, scope: !1553)
+!1555 = distinct !{!1555, !1556, !1557}
+!1556 = !DILocation(line: 1830, column: 4, scope: !1546)
+!1557 = !DILocation(line: 1834, column: 24, scope: !1546)
+!1558 = !DILocation(line: 1836, column: 2, scope: !1522)
+!1559 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"1836", !"2", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx114listIPvSaIS1_EE22_M_initialize_dispatchISt20_List_const_iteratorIS1_EEEvT_S7_St12__false_type", !"1836", !"2", !"41042032", !"42742960", !"1"}
+!1560 = distinct !DISubprogram(name: "begin", linkageName: "_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv", scope: !308, file: !11, line: 962, type: !446, isLocal: false, isDefinition: true, scopeLine: 963, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !445, variables: !3)
+!1561 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv#0#0#41603904#41603904#3#"}
+!1562 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*>", !"39656168", !"9762397520907945078", !"14111476916259126874", !"Alloca", !"_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv", !"0", !"0", !"42796768", !"42799272", !"9"}
+!1563 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv", !"0", !"0", !"42796768", !"42799992", !"6"}
+!1564 = !DILocalVariable(name: "this", arg: 1, scope: !1560, type: !622, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1565 = !DILocation(line: 0, scope: !1560)
+!1566 = !DILocation(line: 963, column: 37, scope: !1560)
+!1567 = !DILocation(line: 963, column: 45, scope: !1560)
+!1568 = !DILocation(line: 963, column: 31, scope: !1560)
+!1569 = !DILocation(line: 963, column: 53, scope: !1560)
+!1570 = !DILocation(line: 963, column: 16, scope: !1560)
+!1571 = !DILocation(line: 963, column: 9, scope: !1560)
+!1572 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"963", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNKSt7__cxx114listIPvSaIS1_EE5beginEv", !"963", !"9", !"42796768", !"42620120", !"1"}
+!1573 = distinct !DISubprogram(name: "end", linkageName: "_ZNKSt7__cxx114listIPvSaIS1_EE3endEv", scope: !308, file: !11, line: 980, type: !446, isLocal: false, isDefinition: true, scopeLine: 981, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !449, variables: !3)
+!1574 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::__cxx11::list<void*, std::allocator<void*> >#42836072#14309742632486687881#11948791453932287653#Argument#_ZNKSt7__cxx114listIPvSaIS1_EE3endEv#0#0#41603904#41603904#3#"}
+!1575 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*>", !"39656168", !"9762397520907945078", !"14111476916259126874", !"Alloca", !"_ZNKSt7__cxx114listIPvSaIS1_EE3endEv", !"0", !"0", !"42811984", !"42799544", !"9"}
+!1576 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::__cxx11::list<void*, std::allocator<void*> > *", !"39694344", !"10140456547956985699", !"2505187253036357319", !"Alloca", !"_ZNKSt7__cxx114listIPvSaIS1_EE3endEv", !"0", !"0", !"42811984", !"42815176", !"6"}
+!1577 = !DILocalVariable(name: "this", arg: 1, scope: !1573, type: !622, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1578 = !DILocation(line: 0, scope: !1573)
+!1579 = !DILocation(line: 981, column: 38, scope: !1573)
+!1580 = !DILocation(line: 981, column: 46, scope: !1573)
+!1581 = !DILocation(line: 981, column: 31, scope: !1573)
+!1582 = !DILocation(line: 981, column: 16, scope: !1573)
+!1583 = !DILocation(line: 981, column: 9, scope: !1573)
+!1584 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"981", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNKSt7__cxx114listIPvSaIS1_EE3endEv", !"981", !"9", !"42811984", !"42819032", !"1"}
+!1585 = distinct !DISubprogram(name: "_List_impl", linkageName: "_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE", scope: !17, file: !11, line: 392, type: !232, isLocal: false, isDefinition: true, scopeLine: 394, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !231, variables: !3)
+!1586 = !{!555, !265}
+!1587 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl#43079736#2883634944874276711#13205518481821382654#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE#0#0#39566816#39566816#17#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE#0#0#42046240#42046240#21#"}
+!1588 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__cxx11::_List_base<void*, std::allocator<void*> >::_List_impl *", !"42835240", !"5805171371469684283", !"8705517898081464949", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE", !"0", !"0", !"42721984", !"42724504", !"16"}
+!1589 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE", !"0", !"0", !"42721984", !"42724776", !"20"}
+!1590 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE", !"0", !"0", !"42721984", !"42729912", !"1"}
+!1591 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"39527320", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE", !"0", !"0", !"42721984", !"42721096", !"5"}
+!1592 = !DILocalVariable(name: "this", arg: 1, scope: !1585, type: !555, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1593 = !DILocation(line: 0, scope: !1585)
+!1594 = !DILocalVariable(name: "__a", arg: 2, scope: !1585, file: !11, line: 392, type: !234)
+!1595 = !DILocation(line: 392, column: 37, scope: !1585)
+!1596 = !DILocation(line: 394, column: 2, scope: !1585)
+!1597 = !DILocation(line: 393, column: 21, scope: !1585)
+!1598 = !DILocation(line: 393, column: 4, scope: !1585)
+!1599 = !DILocation(line: 392, column: 2, scope: !1585)
+!1600 = !DILocation(line: 394, column: 4, scope: !1601)
+!1601 = !DILexicalBlockFile(scope: !1585, file: !11, discriminator: 1)
+!1602 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"394", !"4", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt7__cxx1110_List_baseIPvSaIS1_EE10_List_implC2ERKSaISt10_List_nodeIS1_EE", !"394", !"4", !"42731440", !"42726096", !"1"}
+!1603 = !DILocation(line: 394, column: 4, scope: !1604)
+!1604 = !DILexicalBlockFile(scope: !1585, file: !11, discriminator: 2)
+!1605 = !DILocation(line: 394, column: 4, scope: !1606)
+!1606 = !DILexicalBlockFile(scope: !1607, file: !11, discriminator: 2)
+!1607 = distinct !DILexicalBlock(scope: !1585, file: !11, line: 394, column: 2)
+!1608 = !DILocation(line: 394, column: 4, scope: !1609)
+!1609 = !DILexicalBlockFile(scope: !1607, file: !11, discriminator: 3)
+!1610 = distinct !DISubprogram(name: "allocator", linkageName: "_ZNSaISt10_List_nodeIPvEEC2ERKS2_", scope: !159, file: !32, line: 133, type: !209, isLocal: false, isDefinition: true, scopeLine: 134, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !208, variables: !3)
+!1611 = !{!265, !265}
+!1612 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZNSaISt10_List_nodeIPvEEC2ERKS2_#0#0#42046240#42046240#21#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class std::allocator<std::_List_node<void*> >#43039272#3436312737354538745#17988652934122940507#Argument#_ZNSaISt10_List_nodeIPvEEC2ERKS2_#0#0#42046240#42046240#21#"}
+!1613 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZNSaISt10_List_nodeIPvEEC2ERKS2_", !"0", !"0", !"42727520", !"42726936", !"20"}
+!1614 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::allocator<std::_List_node<void*> > *", !"43025816", !"12589926109635961701", !"172617354751346160", !"Alloca", !"_ZNSaISt10_List_nodeIPvEEC2ERKS2_", !"0", !"0", !"42727520", !"42726824", !"20"}
+!1615 = !DILocalVariable(name: "this", arg: 1, scope: !1610, type: !586, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1616 = !DILocation(line: 0, scope: !1610)
+!1617 = !DILocalVariable(name: "__a", arg: 2, scope: !1610, file: !32, line: 133, type: !211)
+!1618 = !DILocation(line: 133, column: 34, scope: !1610)
+!1619 = !DILocation(line: 134, column: 36, scope: !1610)
+!1620 = !DILocation(line: 134, column: 31, scope: !1610)
+!1621 = !DILocation(line: 134, column: 9, scope: !1610)
+!1622 = !DILocation(line: 134, column: 38, scope: !1610)
+!1623 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"134", !"38", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSaISt10_List_nodeIPvEEC2ERKS2_", !"134", !"38", !"42727520", !"42580368", !"1"}
+!1624 = distinct !DISubprogram(name: "new_allocator", linkageName: "_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_", scope: !162, file: !37, line: 81, type: !169, isLocal: false, isDefinition: true, scopeLine: 81, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !168, variables: !3)
+!1625 = !{!580, !580}
+!1626 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<std::_List_node<void*> >#43138600#10728053705310485601#3459309711496887166#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_#0#0#42065376#42065376#26#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#class __gnu_cxx::new_allocator<std::_List_node<void*> >#43138600#10728053705310485601#3459309711496887166#Argument#_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_#0#0#42065376#42065376#26#"}
+!1627 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<std::_List_node<void*> > *", !"43125688", !"9674033380306028551", !"5795505714752553873", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_", !"0", !"0", !"42581232", !"42583992", !"25"}
+!1628 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"class __gnu_cxx::new_allocator<std::_List_node<void*> > *", !"43125688", !"9674033380306028551", !"5795505714752553873", !"Alloca", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_", !"0", !"0", !"42581232", !"42740184", !"25"}
+!1629 = !DILocalVariable(name: "this", arg: 1, scope: !1624, type: !580, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1630 = !DILocation(line: 0, scope: !1624)
+!1631 = !DILocalVariable(arg: 2, scope: !1624, file: !37, line: 81, type: !171)
+!1632 = !DILocation(line: 81, column: 41, scope: !1624)
+!1633 = !DILocation(line: 81, column: 67, scope: !1624)
+!1634 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"81", !"67", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN9__gnu_cxx13new_allocatorISt10_List_nodeIPvEEC2ERKS4_", !"81", !"67", !"42581232", !"42741008", !"1"}
+!1635 = distinct !DISubprogram(name: "operator!=", linkageName: "_ZNKSt20_List_const_iteratorIPvEneERKS1_", scope: !324, file: !11, line: 335, type: !405, isLocal: false, isDefinition: true, scopeLine: 336, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !409, variables: !3)
+!1636 = !{!601, !601}
+!1637 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_const_iterator<void*>#39656168#9762397520907945078#14111476916259126874#Argument#_ZNKSt20_List_const_iteratorIPvEneERKS1_#0#0#42368416#42368416#9#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_const_iterator<void*>#39656168#9762397520907945078#14111476916259126874#Argument#_ZNKSt20_List_const_iteratorIPvEneERKS1_#0#0#42368416#42368416#9#"}
+!1638 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*> *", !"43253640", !"9681310268570547551", !"5954469870091793227", !"Alloca", !"_ZNKSt20_List_const_iteratorIPvEneERKS1_", !"0", !"0", !"42759776", !"42756984", !"31"}
+!1639 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*> *", !"43253640", !"9681310268570547551", !"5954469870091793227", !"Alloca", !"_ZNKSt20_List_const_iteratorIPvEneERKS1_", !"0", !"0", !"42759776", !"42756680", !"31"}
+!1640 = !DILocalVariable(name: "this", arg: 1, scope: !1635, type: !612, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1641 = !DILocation(line: 0, scope: !1635)
+!1642 = !DILocalVariable(name: "__x", arg: 2, scope: !1635, file: !11, line: 335, type: !407)
+!1643 = !DILocation(line: 335, column: 31, scope: !1635)
+!1644 = !DILocation(line: 336, column: 16, scope: !1635)
+!1645 = !DILocation(line: 336, column: 27, scope: !1635)
+!1646 = !DILocation(line: 336, column: 31, scope: !1635)
+!1647 = !DILocation(line: 336, column: 24, scope: !1635)
+!1648 = !DILocation(line: 336, column: 9, scope: !1635)
+!1649 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"336", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNKSt20_List_const_iteratorIPvEneERKS1_", !"336", !"9", !"42759776", !"42001736", !"1"}
+!1650 = distinct !DISubprogram(name: "operator*", linkageName: "_ZNKSt20_List_const_iteratorIPvEdeEv", scope: !324, file: !11, line: 293, type: !387, isLocal: false, isDefinition: true, scopeLine: 294, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !386, variables: !3)
+!1651 = !{!601}
+!1652 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_const_iterator<void*>#39656168#9762397520907945078#14111476916259126874#Argument#_ZNKSt20_List_const_iteratorIPvEdeEv#0#0#42368416#42368416#9#"}
+!1653 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*> *", !"43253640", !"9681310268570547551", !"5954469870091793227", !"Alloca", !"_ZNKSt20_List_const_iteratorIPvEdeEv", !"0", !"0", !"41998912", !"41029304", !"31"}
+!1654 = !DILocalVariable(name: "this", arg: 1, scope: !1650, type: !612, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1655 = !DILocation(line: 0, scope: !1650)
+!1656 = !DILocation(line: 294, column: 37, scope: !1650)
+!1657 = !DILocation(line: 294, column: 17, scope: !1650)
+!1658 = !DILocation(line: 294, column: 47, scope: !1650)
+!1659 = !DILocation(line: 294, column: 9, scope: !1650)
+!1660 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"294", !"9", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNKSt20_List_const_iteratorIPvEdeEv", !"294", !"9", !"41998912", !"42787032", !"1"}
+!1661 = distinct !DISubprogram(name: "operator++", linkageName: "_ZNSt20_List_const_iteratorIPvEppEv", scope: !324, file: !11, line: 301, type: !395, isLocal: false, isDefinition: true, scopeLine: 302, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !394, variables: !3)
+!1662 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_const_iterator<void*>#39656168#9762397520907945078#14111476916259126874#Argument#_ZNSt20_List_const_iteratorIPvEppEv#0#0#42368416#42368416#9#"}
+!1663 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*> *", !"43253640", !"9681310268570547551", !"5954469870091793227", !"Alloca", !"_ZNSt20_List_const_iteratorIPvEppEv", !"0", !"0", !"42792464", !"42794552", !"31"}
+!1664 = !DILocalVariable(name: "this", arg: 1, scope: !1661, type: !601, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1665 = !DILocation(line: 0, scope: !1661)
+!1666 = !DILocation(line: 303, column: 12, scope: !1661)
+!1667 = !DILocation(line: 303, column: 21, scope: !1661)
+!1668 = !DILocation(line: 303, column: 2, scope: !1661)
+!1669 = !DILocation(line: 303, column: 10, scope: !1661)
+!1670 = !DILocation(line: 304, column: 2, scope: !1661)
+!1671 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"304", !"2", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt20_List_const_iteratorIPvEppEv", !"304", !"2", !"42792464", !"42798584", !"1"}
+!1672 = distinct !DISubprogram(name: "_M_valptr", linkageName: "_ZNKSt10_List_nodeIPvE9_M_valptrEv", scope: !120, file: !11, line: 175, type: !151, isLocal: false, isDefinition: true, scopeLine: 175, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !150, variables: !3)
+!1673 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_node<void*>#43126488#17209094468811339711#3045336847299406727#Argument#_ZNKSt10_List_nodeIPvE9_M_valptrEv#0#0#42332720#42332720#18#"}
+!1674 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_node<void*> *", !"42896344", !"18067778890781974965", !"17328544024782005001", !"Alloca", !"_ZNKSt10_List_nodeIPvE9_M_valptrEv", !"0", !"0", !"41030016", !"41034248", !"14"}
+!1675 = !DILocalVariable(name: "this", arg: 1, scope: !1672, type: !186, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1676 = !DILocation(line: 0, scope: !1672)
+!1677 = !DILocation(line: 175, column: 62, scope: !1672)
+!1678 = !DILocation(line: 175, column: 45, scope: !1672)
+!1679 = !DILocation(line: 175, column: 38, scope: !1672)
+!1680 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"175", !"38", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNKSt10_List_nodeIPvE9_M_valptrEv", !"175", !"38", !"41030016", !"42791912", !"1"}
+!1681 = distinct !DISubprogram(name: "__addressof<void *const>", linkageName: "_ZSt11__addressofIKPvEPT_RS2_", scope: !14, file: !1160, line: 47, type: !1682, isLocal: false, isDefinition: true, scopeLine: 48, flags: DIFlagPrototyped, isOptimized: false, unit: !1, templateParams: !1684, variables: !3)
+!1682 = !DISubroutineType(types: !1683)
+!1683 = !{!61, !64}
+!1684 = !{!1685}
+!1685 = !DITemplateTypeParameter(name: "_Tp", type: !62)
+!1686 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#int8_t *#39620568#526828848944628746#11854005139656696112#Argument#_ZSt11__addressofIKPvEPT_RS2_#0#0#42043320#42043320#2#"}
+!1687 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t * *", !"39528952", !"7659328899293490305", !"10343112419481798130", !"Alloca", !"_ZSt11__addressofIKPvEPT_RS2_", !"0", !"0", !"42791264", !"41034520", !"7"}
+!1688 = !DILocalVariable(name: "__r", arg: 1, scope: !1681, file: !1160, line: 47, type: !64)
+!1689 = !DILocation(line: 47, column: 22, scope: !1681)
+!1690 = !DILocation(line: 48, column: 34, scope: !1681)
+!1691 = !DILocation(line: 48, column: 7, scope: !1681)
+!1692 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"48", !"7", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZSt11__addressofIKPvEPT_RS2_", !"48", !"7", !"42791264", !"42794072", !"1"}
+!1693 = distinct !DISubprogram(name: "_List_const_iterator", linkageName: "_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE", scope: !324, file: !11, line: 280, type: !332, isLocal: false, isDefinition: true, scopeLine: 282, flags: DIFlagPrototyped, isOptimized: false, unit: !1, declaration: !331, variables: !3)
+!1694 = !{!601, !127}
+!1695 = !{!"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::_List_const_iterator<void*>#39656168#9762397520907945078#14111476916259126874#Argument#_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE#0#0#42368416#42368416#9#", !"CWE843_Type_Confusion__short_73a.cpp#18446744073709551615#18446744073709551615#struct std::__detail::_List_node_base#43339720#15462982910083646028#3693359475243847553#Argument#_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE#0#0#42120880#42120880#29#"}
+!1696 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::_List_const_iterator<void*> *", !"43253640", !"9681310268570547551", !"5954469870091793227", !"Alloca", !"_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE", !"0", !"0", !"42393264", !"42618632", !"31"}
+!1697 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"18446744073709551615", !"18446744073709551615", !"struct std::__detail::_List_node_base *", !"42876760", !"4620211663732537997", !"4160118652487172189", !"Alloca", !"_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE", !"0", !"0", !"42393264", !"42620312", !"13"}
+!1698 = !DILocalVariable(name: "this", arg: 1, scope: !1693, type: !601, flags: DIFlagArtificial | DIFlagObjectPointer)
+!1699 = !DILocation(line: 0, scope: !1693)
+!1700 = !DILocalVariable(name: "__x", arg: 2, scope: !1693, file: !11, line: 280, type: !239)
+!1701 = !DILocation(line: 280, column: 61, scope: !1693)
+!1702 = !DILocation(line: 282, column: 9, scope: !1693)
+!1703 = !DILocation(line: 282, column: 17, scope: !1693)
+!1704 = !DILocation(line: 282, column: 24, scope: !1693)
+!1705 = !{!"CWE843_Type_Confusion__short_73a.cpp", !"282", !"24", !"int8_t", !"39692632", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt20_List_const_iteratorIPvEC2EPKNSt8__detail15_List_node_baseE", !"282", !"24", !"42393264", !"42619376", !"1"}

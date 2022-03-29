@@ -16,6 +16,81 @@ target triple = "x86_64-unknown-linux-gnu"
 %EFFECTIVE_INFO = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [0 x %EFFECTIVE_INFO_ENTRY] }
 %EFFECTIVE_INFO_ENTRY = type { %EFFECTIVE_INFO*, i32, i64, i64 }
 %EFFECTIVE_ENTRY = type { i8*, i64, i64, i64, <2 x i64> }
+%TYCHE_META_CACHELINE107 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE106 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE105 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE104 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE103 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE102 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE101 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE100 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_3 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [3 x %EFFECTIVE_ENTRY] }
+%TYCHE_META_CACHELINE207 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE206 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE205 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE204 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE203 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE202 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE201 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE200 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE307 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE306 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE305 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE304 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE303 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE302 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE301 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE300 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE407 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE406 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE405 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE404 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE403 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE402 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE401 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE400 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE507 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE506 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE505 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE504 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE503 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE502 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE501 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE500 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE607 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE606 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE605 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE604 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE603 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE602 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE601 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE600 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE707 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE706 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE705 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE704 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE703 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE702 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE701 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE700 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE807 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE806 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE805 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE804 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE803 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE802 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE801 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE800 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_INFO_2 = type { i8*, i32, i32, i32, %EFFECTIVE_INFO*, [2 x %EFFECTIVE_INFO_ENTRY] }
+%TYCHE_META_CACHELINE907 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE906 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE905 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE904 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE903 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE902 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE901 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%TYCHE_META_CACHELINE900 = type <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %TYCHE_META_CACHELINE* }>
+%EFFECTIVE_TYPE_4 = type { [1 x %TYCHE_META_CACHELINE]*, i64, i64, i32, i32, i32, i32, i64, i64, %EFFECTIVE_INFO*, i64, i32, [4 x %EFFECTIVE_ENTRY] }
 %struct._twoIntsStruct = type { i32, i32 }
 
 @.str = private unnamed_addr constant [4 x i8] c"%s\0A\00", align 1, !effectiveSan !0
@@ -52,23 +127,126 @@ target triple = "x86_64-unknown-linux-gnu"
 @"TYCHE_META_SECTION_TID_0_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE001* null }>], section "tyche_symbols_section_1", align 64
 @"TYCHE_META_SECTION_TID_0_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE000* null }>], section "tyche_symbols_section_0", align 64
 @EFFECTIVE_TYPE_INT8 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_0_SEC_0_FILE_../../../testcasesupport/io.c", i64 8088147823597479805, i64 8088147823597479805, i32 1, i32 1, i32 0, i32 1340864923, i64 -9223372036854775808, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([7 x i8], [7 x i8]* @"TYCHE_TYPE_ENTRY_int8_t_3080687966_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 3080687966, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING = private unnamed_addr constant [9 x i8] c"int8_t *\00"
+@EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @EFFECTIVE_STRING, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_int8_t *_476075404_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [9 x i8] c"int8_t *\00"
+@"TYCHE_TYPE_ENTRY_coerced_12545345991443039823_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_1 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE107* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_1_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE106* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_1_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE105* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_1_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE104* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_1_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE103* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_1_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE102* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_1_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE101* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_1_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE100* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_a481e2de8ae4613074fac0bfec5c40a = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_1_SEC_0_FILE_../../../testcasesupport/io.c", i64 -8282703695323691247, i64 -8282703695323691247, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_a481e2de8ae4613074fac0bfec5c40a, i64 2528746356237243677, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([9 x i8], [9 x i8]* @"TYCHE_TYPE_ENTRY_int8_t *_476075404_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 476075404, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @"TYCHE_TYPE_ENTRY_coerced_12545345991443039823_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 -5901398082266511793, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.15 = private unnamed_addr constant [10 x i8] c"int32_t *\00"
+@EFFECTIVE_INFO_2c3f80df5a39183f66ee695815bfb76d = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([10 x i8], [10 x i8]* @EFFECTIVE_STRING.15, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_coerced_5665623422753189688_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [8 x i8] c"coerced\00"
+@"TYCHE_TYPE_ENTRY_int32_t *_1425933093_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [10 x i8] c"int32_t *\00"
+@TYCHE_META_SECTION_TID_2 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE207* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_2_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE206* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_2_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE205* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_2_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE204* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_2_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE203* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_2_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE202* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_2_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE201* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_2_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE200* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_2c3f80df5a39183f66ee695815bfb76d = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_2_SEC_0_FILE_../../../testcasesupport/io.c", i64 7905997769270750822, i64 7905997769270750822, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_2c3f80df5a39183f66ee695815bfb76d, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @"TYCHE_TYPE_ENTRY_coerced_5665623422753189688_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 5665623422753189688, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([10 x i8], [10 x i8]* @"TYCHE_TYPE_ENTRY_int32_t *_1425933093_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 1425933093, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_int32_t_1319304013_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [8 x i8] c"int32_t\00"
+@TYCHE_META_SECTION_TID_3 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE307* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_3_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE306* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_3_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE305* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_3_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE304* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_3_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE303* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_3_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE302* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_3_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE301* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_3_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE300* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_INT32 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_3_SEC_0_FILE_../../../testcasesupport/io.c", i64 7706858352182509634, i64 7706858352182509634, i32 4, i32 4, i32 0, i32 1340864923, i64 2305843009213693952, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @"TYCHE_TYPE_ENTRY_int32_t_1319304013_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 1319304013, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_int16_t_2925875906_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [8 x i8] c"int16_t\00"
+@TYCHE_META_SECTION_TID_4 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE407* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_4_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE406* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_4_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE405* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_4_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE404* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_4_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE403* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_4_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE402* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_4_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE401* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_4_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE400* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_INT16 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_4_SEC_0_FILE_../../../testcasesupport/io.c", i64 -607088869328460574, i64 -607088869328460574, i32 2, i32 2, i32 0, i32 1340864923, i64 4611686018427387904, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @"TYCHE_TYPE_ENTRY_int16_t_2925875906_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 2925875906, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_float32_t_2939194632_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [10 x i8] c"float32_t\00"
+@TYCHE_META_SECTION_TID_5 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE507* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_5_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE506* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_5_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE505* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_5_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE504* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_5_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE503* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_5_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE502* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_5_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE501* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_5_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE500* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_FLOAT32 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_5_SEC_0_FILE_../../../testcasesupport/io.c", i64 3297444852735857771, i64 3297444852735857771, i32 4, i32 4, i32 0, i32 1340864923, i64 2305843009213693952, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([10 x i8], [10 x i8]* @"TYCHE_TYPE_ENTRY_float32_t_2939194632_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 2939194632, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_int64_t_1076545243_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [8 x i8] c"int64_t\00"
+@TYCHE_META_SECTION_TID_6 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE607* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_6_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE606* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_6_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE605* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_6_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE604* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_6_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE603* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_6_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE602* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_6_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE601* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_6_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE600* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_INT64 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_6_SEC_0_FILE_../../../testcasesupport/io.c", i64 -8660233842727106565, i64 -8660233842727106565, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @"TYCHE_TYPE_ENTRY_int64_t_1076545243_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 1076545243, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@"TYCHE_TYPE_ENTRY_float64_t_2870471550_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [10 x i8] c"float64_t\00"
+@TYCHE_META_SECTION_TID_7 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE707* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_7_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE706* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_7_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE705* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_7_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE704* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_7_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE703* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_7_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE702* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_7_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE701* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_7_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE700* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_FLOAT64 = weak constant %EFFECTIVE_TYPE_2 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_7_SEC_0_FILE_../../../testcasesupport/io.c", i64 -3399084293635617453, i64 -3399084293635617453, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* null, i64 8088147823597479805, i32 2, [2 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([10 x i8], [10 x i8]* @"TYCHE_TYPE_ENTRY_float64_t_2870471550_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 2870471550, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.16 = private unnamed_addr constant [24 x i8] c"struct _twoIntsStruct *\00"
+@EFFECTIVE_INFO_9884cf182fe8bc136a38b3067193b78f = weak constant %EFFECTIVE_INFO { i8* getelementptr inbounds ([24 x i8], [24 x i8]* @EFFECTIVE_STRING.16, i32 0, i32 0), i32 8, i32 0, i32 0, %EFFECTIVE_INFO* null, [0 x %EFFECTIVE_INFO_ENTRY] zeroinitializer }
+@"TYCHE_TYPE_ENTRY_struct _twoIntsStruct *_3578130208_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [24 x i8] c"struct _twoIntsStruct *\00"
+@"TYCHE_TYPE_ENTRY_coerced_12439076416015628596_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [8 x i8] c"coerced\00"
+@TYCHE_META_SECTION_TID_8 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE807* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_8_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE806* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_8_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE805* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_8_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE804* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_8_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE803* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_8_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE802* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_8_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE801* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_8_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE800* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_9884cf182fe8bc136a38b3067193b78f = weak constant %EFFECTIVE_TYPE_3 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_8_SEC_0_FILE_../../../testcasesupport/io.c", i64 -8090836091894810518, i64 -8090836091894810518, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 1, %EFFECTIVE_INFO* @EFFECTIVE_INFO_9884cf182fe8bc136a38b3067193b78f, i64 -8282703695323691247, i32 3, [3 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([24 x i8], [24 x i8]* @"TYCHE_TYPE_ENTRY_struct _twoIntsStruct *_3578130208_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 3578130208, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @"TYCHE_TYPE_ENTRY_coerced_12439076416015628596_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 -6007667657693923020, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
+@EFFECTIVE_STRING.17 = private unnamed_addr constant [22 x i8] c"struct _twoIntsStruct\00"
+@EFFECTIVE_INFO_a1b32f7eda9ca5db282be31a080dd31c = weak constant %EFFECTIVE_INFO_2 { i8* getelementptr inbounds ([22 x i8], [22 x i8]* @EFFECTIVE_STRING.17, i32 0, i32 0), i32 8, i32 2, i32 0, %EFFECTIVE_INFO* null, [2 x %EFFECTIVE_INFO_ENTRY] [%EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* null, i32 0, i64 0, i64 4 }, %EFFECTIVE_INFO_ENTRY { %EFFECTIVE_INFO* null, i32 0, i64 4, i64 8 }] }
+@"TYCHE_TYPE_ENTRY_struct _twoIntsStruct_493612677_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [22 x i8] c"struct _twoIntsStruct\00"
+@"TYCHE_TYPE_ENTRY_int32_t_8513861439299424295_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [8 x i8] c"int32_t\00"
+@"TYCHE_TYPE_ENTRY_int32_t_8513861438778577482_FILE_../../../testcasesupport/io.c" = private unnamed_addr constant [8 x i8] c"int32_t\00"
+@TYCHE_META_SECTION_TID_9 = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE907* null }>], section "tyche_symbols_section_7", align 64
+@"TYCHE_META_SECTION_TID_9_SEC_6_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE906* null }>], section "tyche_symbols_section_6", align 64
+@"TYCHE_META_SECTION_TID_9_SEC_5_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE905* null }>], section "tyche_symbols_section_5", align 64
+@"TYCHE_META_SECTION_TID_9_SEC_4_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE904* null }>], section "tyche_symbols_section_4", align 64
+@"TYCHE_META_SECTION_TID_9_SEC_3_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE903* null }>], section "tyche_symbols_section_3", align 64
+@"TYCHE_META_SECTION_TID_9_SEC_2_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE902* null }>], section "tyche_symbols_section_2", align 64
+@"TYCHE_META_SECTION_TID_9_SEC_1_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE901* null }>], section "tyche_symbols_section_1", align 64
+@"TYCHE_META_SECTION_TID_9_SEC_0_FILE_../../../testcasesupport/io.c" = weak constant [1 x %TYCHE_META_CACHELINE] [%TYCHE_META_CACHELINE <{ i32 0, i32 0, i32 4, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, i32 -1, %TYCHE_META_CACHELINE900* null }>], section "tyche_symbols_section_0", align 64
+@EFFECTIVE_TYPE_a1b32f7eda9ca5db282be31a080dd31c = weak constant %EFFECTIVE_TYPE_4 { [1 x %TYCHE_META_CACHELINE]* @"TYCHE_META_SECTION_TID_9_SEC_0_FILE_../../../testcasesupport/io.c", i64 2077018181609925416, i64 2077018181609925416, i32 8, i32 8, i32 0, i32 1340864923, i64 1152921504606846976, i64 15, %EFFECTIVE_INFO* bitcast (%EFFECTIVE_INFO_2* @EFFECTIVE_INFO_a1b32f7eda9ca5db282be31a080dd31c to %EFFECTIVE_INFO*), i64 8088147823597479805, i32 4, [4 x %EFFECTIVE_ENTRY] [%EFFECTIVE_ENTRY { i8* getelementptr inbounds ([22 x i8], [22 x i8]* @"TYCHE_TYPE_ENTRY_struct _twoIntsStruct_493612677_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 493612677, i64 0, <2 x i64> <i64 -17179869184, i64 17179869184> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @"TYCHE_TYPE_ENTRY_int32_t_8513861439299424295_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 0, i64 8513861439299424295, i64 0, <2 x i64> <i64 0, i64 4> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @"TYCHE_TYPE_ENTRY_int32_t_8513861438778577482_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 4, i64 8513861438778577482, i64 0, <2 x i64> <i64 0, i64 4> }, %EFFECTIVE_ENTRY { i8* getelementptr inbounds ([1 x i8], [1 x i8]* @"TYCHE_TYPE_ENTRY_NULL_FILE_../../../testcasesupport/io.c", i32 0, i32 0), i64 -1, i64 -1, i64 0, <2 x i64> zeroinitializer }] }
 
 ; Function Attrs: noinline uwtable
-define void @printLine(i8*) #0 !dbg !307 !effectiveSanArgs !310 {
-  %2 = alloca i8*, align 8, !effectiveSan !8
+define void @printLine(i8*) #0 !dbg !307 !effectiveSanArgs !310 !TYCHE_MD_ARGS !311 {
+  %2 = alloca i8*, align 8, !effectiveSan !8, !TYCHE_MD !312
   store i8* %0, i8** %2, align 8
-  call void @llvm.dbg.declare(metadata i8** %2, metadata !311, metadata !312), !dbg !313
-  %3 = load i8*, i8** %2, align 8, !dbg !314, !effectiveSan !9
-  %4 = icmp ne i8* %3, null, !dbg !316
-  br i1 %4, label %5, label %8, !dbg !317
+  call void @llvm.dbg.declare(metadata i8** %2, metadata !313, metadata !314), !dbg !315
+  %3 = load i8*, i8** %2, align 8, !dbg !316, !effectiveSan !9
+  %4 = icmp ne i8* %3, null, !dbg !318
+  br i1 %4, label %5, label %8, !dbg !319
 
 ; <label>:5:                                      ; preds = %1
-  %6 = load i8*, i8** %2, align 8, !dbg !318, !effectiveSan !9
-  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i8* %6), !dbg !320, !effectiveSan !12
-  br label %8, !dbg !321
+  %6 = load i8*, i8** %2, align 8, !dbg !320, !effectiveSan !9
+  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str, i32 0, i32 0), i8* %6), !dbg !322, !effectiveSan !12
+  br label %8, !dbg !323
 
 ; <label>:8:                                      ; preds = %5, %1
-  ret void, !dbg !322
+  ret void, !dbg !324, !TYCHE_MD !325
 }
 
 ; Function Attrs: nounwind readnone
@@ -77,273 +255,273 @@ declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
 declare i32 @printf(i8*, ...) #2
 
 ; Function Attrs: noinline uwtable
-define void @printWLine(i32*) #0 !dbg !323 !effectiveSanArgs !326 {
-  %2 = alloca i32*, align 8, !effectiveSan !13
+define void @printWLine(i32*) #0 !dbg !326 !effectiveSanArgs !329 !TYCHE_MD_ARGS !330 {
+  %2 = alloca i32*, align 8, !effectiveSan !13, !TYCHE_MD !331
   store i32* %0, i32** %2, align 8
-  call void @llvm.dbg.declare(metadata i32** %2, metadata !327, metadata !312), !dbg !328
-  %3 = load i32*, i32** %2, align 8, !dbg !329, !effectiveSan !14
-  %4 = icmp ne i32* %3, null, !dbg !331
-  br i1 %4, label %5, label %8, !dbg !332
+  call void @llvm.dbg.declare(metadata i32** %2, metadata !332, metadata !314), !dbg !333
+  %3 = load i32*, i32** %2, align 8, !dbg !334, !effectiveSan !14
+  %4 = icmp ne i32* %3, null, !dbg !336
+  br i1 %4, label %5, label %8, !dbg !337
 
 ; <label>:5:                                      ; preds = %1
-  %6 = load i32*, i32** %2, align 8, !dbg !333, !effectiveSan !14
-  %7 = call i32 (i32*, ...) @wprintf(i32* getelementptr inbounds ([5 x i32], [5 x i32]* @.str.1, i32 0, i32 0), i32* %6), !dbg !335, !effectiveSan !12
-  br label %8, !dbg !336
+  %6 = load i32*, i32** %2, align 8, !dbg !338, !effectiveSan !14
+  %7 = call i32 (i32*, ...) @wprintf(i32* getelementptr inbounds ([5 x i32], [5 x i32]* @.str.1, i32 0, i32 0), i32* %6), !dbg !340, !effectiveSan !12
+  br label %8, !dbg !341
 
 ; <label>:8:                                      ; preds = %5, %1
-  ret void, !dbg !337
+  ret void, !dbg !342, !TYCHE_MD !343
 }
 
 declare i32 @wprintf(i32*, ...) #2
 
 ; Function Attrs: noinline uwtable
-define void @printIntLine(i32) #0 !dbg !338 !effectiveSanArgs !102 {
-  %2 = alloca i32, align 4, !effectiveSan !17
+define void @printIntLine(i32) #0 !dbg !344 !effectiveSanArgs !102 !TYCHE_MD_ARGS !345 {
+  %2 = alloca i32, align 4, !effectiveSan !17, !TYCHE_MD !346
   store i32 %0, i32* %2, align 4
-  call void @llvm.dbg.declare(metadata i32* %2, metadata !339, metadata !312), !dbg !340
-  %3 = load i32, i32* %2, align 4, !dbg !341, !effectiveSan !12
-  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.2, i32 0, i32 0), i32 %3), !dbg !342, !effectiveSan !12
-  ret void, !dbg !343
+  call void @llvm.dbg.declare(metadata i32* %2, metadata !347, metadata !314), !dbg !348
+  %3 = load i32, i32* %2, align 4, !dbg !349, !effectiveSan !12
+  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.2, i32 0, i32 0), i32 %3), !dbg !350, !effectiveSan !12
+  ret void, !dbg !351, !TYCHE_MD !352
 }
 
 ; Function Attrs: noinline uwtable
-define void @printShortLine(i16 signext) #0 !dbg !344 !effectiveSanArgs !102 {
-  %2 = alloca i16, align 2, !effectiveSan !18
+define void @printShortLine(i16 signext) #0 !dbg !353 !effectiveSanArgs !102 !TYCHE_MD_ARGS !356 {
+  %2 = alloca i16, align 2, !effectiveSan !18, !TYCHE_MD !357
   store i16 %0, i16* %2, align 2
-  call void @llvm.dbg.declare(metadata i16* %2, metadata !347, metadata !312), !dbg !348
-  %3 = load i16, i16* %2, align 2, !dbg !349, !effectiveSan !19
-  %4 = sext i16 %3 to i32, !dbg !349
-  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.3, i32 0, i32 0), i32 %4), !dbg !350, !effectiveSan !12
-  ret void, !dbg !351
+  call void @llvm.dbg.declare(metadata i16* %2, metadata !358, metadata !314), !dbg !359
+  %3 = load i16, i16* %2, align 2, !dbg !360, !effectiveSan !19
+  %4 = sext i16 %3 to i32, !dbg !360
+  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.3, i32 0, i32 0), i32 %4), !dbg !361, !effectiveSan !12
+  ret void, !dbg !362, !TYCHE_MD !363
 }
 
 ; Function Attrs: noinline uwtable
-define void @printFloatLine(float) #0 !dbg !352 !effectiveSanArgs !102 {
-  %2 = alloca float, align 4, !effectiveSan !20
+define void @printFloatLine(float) #0 !dbg !364 !effectiveSanArgs !102 !TYCHE_MD_ARGS !367 {
+  %2 = alloca float, align 4, !effectiveSan !20, !TYCHE_MD !368
   store float %0, float* %2, align 4
-  call void @llvm.dbg.declare(metadata float* %2, metadata !355, metadata !312), !dbg !356
-  %3 = load float, float* %2, align 4, !dbg !357, !effectiveSan !21
-  %4 = fpext float %3 to double, !dbg !357
-  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.4, i32 0, i32 0), double %4), !dbg !358, !effectiveSan !12
-  ret void, !dbg !359
+  call void @llvm.dbg.declare(metadata float* %2, metadata !369, metadata !314), !dbg !370
+  %3 = load float, float* %2, align 4, !dbg !371, !effectiveSan !21
+  %4 = fpext float %3 to double, !dbg !371
+  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.4, i32 0, i32 0), double %4), !dbg !372, !effectiveSan !12
+  ret void, !dbg !373, !TYCHE_MD !374
 }
 
 ; Function Attrs: noinline uwtable
-define void @printLongLine(i64) #0 !dbg !360 !effectiveSanArgs !102 {
-  %2 = alloca i64, align 8, !effectiveSan !22
+define void @printLongLine(i64) #0 !dbg !375 !effectiveSanArgs !102 !TYCHE_MD_ARGS !378 {
+  %2 = alloca i64, align 8, !effectiveSan !22, !TYCHE_MD !379
   store i64 %0, i64* %2, align 8
-  call void @llvm.dbg.declare(metadata i64* %2, metadata !363, metadata !312), !dbg !364
-  %3 = load i64, i64* %2, align 8, !dbg !365, !effectiveSan !23
-  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i32 0, i32 0), i64 %3), !dbg !366, !effectiveSan !12
-  ret void, !dbg !367
+  call void @llvm.dbg.declare(metadata i64* %2, metadata !380, metadata !314), !dbg !381
+  %3 = load i64, i64* %2, align 8, !dbg !382, !effectiveSan !23
+  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i32 0, i32 0), i64 %3), !dbg !383, !effectiveSan !12
+  ret void, !dbg !384, !TYCHE_MD !385
 }
 
 ; Function Attrs: noinline uwtable
-define void @printLongLongLine(i64) #0 !dbg !368 !effectiveSanArgs !102 {
-  %2 = alloca i64, align 8, !effectiveSan !24
+define void @printLongLongLine(i64) #0 !dbg !386 !effectiveSanArgs !102 !TYCHE_MD_ARGS !389 {
+  %2 = alloca i64, align 8, !effectiveSan !24, !TYCHE_MD !390
   store i64 %0, i64* %2, align 8
-  call void @llvm.dbg.declare(metadata i64* %2, metadata !371, metadata !312), !dbg !372
-  %3 = load i64, i64* %2, align 8, !dbg !373, !effectiveSan !25
-  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i32 0, i32 0), i64 %3), !dbg !374, !effectiveSan !12
-  ret void, !dbg !375
+  call void @llvm.dbg.declare(metadata i64* %2, metadata !391, metadata !314), !dbg !392
+  %3 = load i64, i64* %2, align 8, !dbg !393, !effectiveSan !25
+  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i32 0, i32 0), i64 %3), !dbg !394, !effectiveSan !12
+  ret void, !dbg !395, !TYCHE_MD !396
 }
 
 ; Function Attrs: noinline uwtable
-define void @printSizeTLine(i64) #0 !dbg !376 !effectiveSanArgs !102 {
-  %2 = alloca i64, align 8, !effectiveSan !29
+define void @printSizeTLine(i64) #0 !dbg !397 !effectiveSanArgs !102 !TYCHE_MD_ARGS !400 {
+  %2 = alloca i64, align 8, !effectiveSan !29, !TYCHE_MD !401
   store i64 %0, i64* %2, align 8
-  call void @llvm.dbg.declare(metadata i64* %2, metadata !379, metadata !312), !dbg !380
-  %3 = load i64, i64* %2, align 8, !dbg !381, !effectiveSan !30
-  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.6, i32 0, i32 0), i64 %3), !dbg !382, !effectiveSan !12
-  ret void, !dbg !383
+  call void @llvm.dbg.declare(metadata i64* %2, metadata !402, metadata !314), !dbg !403
+  %3 = load i64, i64* %2, align 8, !dbg !404, !effectiveSan !30
+  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.6, i32 0, i32 0), i64 %3), !dbg !405, !effectiveSan !12
+  ret void, !dbg !406, !TYCHE_MD !407
 }
 
 ; Function Attrs: noinline uwtable
-define void @printHexCharLine(i8 signext) #0 !dbg !384 !effectiveSanArgs !102 {
-  %2 = alloca i8, align 1, !effectiveSan !33
+define void @printHexCharLine(i8 signext) #0 !dbg !408 !effectiveSanArgs !102 !TYCHE_MD_ARGS !411 {
+  %2 = alloca i8, align 1, !effectiveSan !33, !TYCHE_MD !412
   store i8 %0, i8* %2, align 1
-  call void @llvm.dbg.declare(metadata i8* %2, metadata !387, metadata !312), !dbg !388
-  %3 = load i8, i8* %2, align 1, !dbg !389, !effectiveSan !11
-  %4 = sext i8 %3 to i32, !dbg !389
-  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.7, i32 0, i32 0), i32 %4), !dbg !390, !effectiveSan !12
-  ret void, !dbg !391
+  call void @llvm.dbg.declare(metadata i8* %2, metadata !413, metadata !314), !dbg !414
+  %3 = load i8, i8* %2, align 1, !dbg !415, !effectiveSan !11
+  %4 = sext i8 %3 to i32, !dbg !415
+  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.7, i32 0, i32 0), i32 %4), !dbg !416, !effectiveSan !12
+  ret void, !dbg !417, !TYCHE_MD !418
 }
 
 ; Function Attrs: noinline uwtable
-define void @printWcharLine(i32 signext) #0 !dbg !392 !effectiveSanArgs !102 {
-  %2 = alloca i32, align 4, !effectiveSan !35
-  %3 = alloca [2 x i32], align 4, !effectiveSan !36
+define void @printWcharLine(i32 signext) #0 !dbg !419 !effectiveSanArgs !102 !TYCHE_MD_ARGS !422 {
+  %2 = alloca i32, align 4, !effectiveSan !35, !TYCHE_MD !423
+  %3 = alloca [2 x i32], align 4, !effectiveSan !36, !TYCHE_MD !424
   store i32 %0, i32* %2, align 4
-  call void @llvm.dbg.declare(metadata i32* %2, metadata !395, metadata !312), !dbg !396
-  call void @llvm.dbg.declare(metadata [2 x i32]* %3, metadata !397, metadata !312), !dbg !398
-  %4 = load i32, i32* %2, align 4, !dbg !399, !effectiveSan !16
-  %5 = getelementptr inbounds [2 x i32], [2 x i32]* %3, i64 0, i64 0, !dbg !400
-  store i32 %4, i32* %5, align 4, !dbg !401
-  %6 = getelementptr inbounds [2 x i32], [2 x i32]* %3, i64 0, i64 1, !dbg !402
-  store i32 0, i32* %6, align 4, !dbg !403
-  %7 = getelementptr inbounds [2 x i32], [2 x i32]* %3, i32 0, i32 0, !dbg !404, !effectiveSan !35
-  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.8, i32 0, i32 0), i32* %7), !dbg !405, !effectiveSan !12
-  ret void, !dbg !406
+  call void @llvm.dbg.declare(metadata i32* %2, metadata !425, metadata !314), !dbg !426
+  call void @llvm.dbg.declare(metadata [2 x i32]* %3, metadata !427, metadata !314), !dbg !428
+  %4 = load i32, i32* %2, align 4, !dbg !429, !effectiveSan !16
+  %5 = getelementptr inbounds [2 x i32], [2 x i32]* %3, i64 0, i64 0, !dbg !430
+  store i32 %4, i32* %5, align 4, !dbg !431
+  %6 = getelementptr inbounds [2 x i32], [2 x i32]* %3, i64 0, i64 1, !dbg !432
+  store i32 0, i32* %6, align 4, !dbg !433
+  %7 = getelementptr inbounds [2 x i32], [2 x i32]* %3, i32 0, i32 0, !dbg !434, !effectiveSan !35
+  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.8, i32 0, i32 0), i32* %7), !dbg !435, !effectiveSan !12
+  ret void, !dbg !436, !TYCHE_MD !437
 }
 
 ; Function Attrs: noinline uwtable
-define void @printUnsignedLine(i32) #0 !dbg !407 !effectiveSanArgs !102 {
-  %2 = alloca i32, align 4, !effectiveSan !40
+define void @printUnsignedLine(i32) #0 !dbg !438 !effectiveSanArgs !102 !TYCHE_MD_ARGS !439 {
+  %2 = alloca i32, align 4, !effectiveSan !40, !TYCHE_MD !440
   store i32 %0, i32* %2, align 4
-  call void @llvm.dbg.declare(metadata i32* %2, metadata !408, metadata !312), !dbg !409
-  %3 = load i32, i32* %2, align 4, !dbg !410, !effectiveSan !41
-  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.9, i32 0, i32 0), i32 %3), !dbg !411, !effectiveSan !12
-  ret void, !dbg !412
+  call void @llvm.dbg.declare(metadata i32* %2, metadata !441, metadata !314), !dbg !442
+  %3 = load i32, i32* %2, align 4, !dbg !443, !effectiveSan !41
+  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.9, i32 0, i32 0), i32 %3), !dbg !444, !effectiveSan !12
+  ret void, !dbg !445, !TYCHE_MD !446
 }
 
 ; Function Attrs: noinline uwtable
-define void @printHexUnsignedCharLine(i8 zeroext) #0 !dbg !413 !effectiveSanArgs !102 {
-  %2 = alloca i8, align 1, !effectiveSan !42
+define void @printHexUnsignedCharLine(i8 zeroext) #0 !dbg !447 !effectiveSanArgs !102 !TYCHE_MD_ARGS !450 {
+  %2 = alloca i8, align 1, !effectiveSan !42, !TYCHE_MD !451
   store i8 %0, i8* %2, align 1
-  call void @llvm.dbg.declare(metadata i8* %2, metadata !416, metadata !312), !dbg !417
-  %3 = load i8, i8* %2, align 1, !dbg !418, !effectiveSan !7
-  %4 = zext i8 %3 to i32, !dbg !418
-  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.7, i32 0, i32 0), i32 %4), !dbg !419, !effectiveSan !12
-  ret void, !dbg !420
+  call void @llvm.dbg.declare(metadata i8* %2, metadata !452, metadata !314), !dbg !453
+  %3 = load i8, i8* %2, align 1, !dbg !454, !effectiveSan !7
+  %4 = zext i8 %3 to i32, !dbg !454
+  %5 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.7, i32 0, i32 0), i32 %4), !dbg !455, !effectiveSan !12
+  ret void, !dbg !456, !TYCHE_MD !457
 }
 
 ; Function Attrs: noinline uwtable
-define void @printDoubleLine(double) #0 !dbg !421 !effectiveSanArgs !102 {
-  %2 = alloca double, align 8, !effectiveSan !43
+define void @printDoubleLine(double) #0 !dbg !458 !effectiveSanArgs !102 !TYCHE_MD_ARGS !461 {
+  %2 = alloca double, align 8, !effectiveSan !43, !TYCHE_MD !462
   store double %0, double* %2, align 8
-  call void @llvm.dbg.declare(metadata double* %2, metadata !424, metadata !312), !dbg !425
-  %3 = load double, double* %2, align 8, !dbg !426, !effectiveSan !44
-  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.10, i32 0, i32 0), double %3), !dbg !427, !effectiveSan !12
-  ret void, !dbg !428
+  call void @llvm.dbg.declare(metadata double* %2, metadata !463, metadata !314), !dbg !464
+  %3 = load double, double* %2, align 8, !dbg !465, !effectiveSan !44
+  %4 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.10, i32 0, i32 0), double %3), !dbg !466, !effectiveSan !12
+  ret void, !dbg !467, !TYCHE_MD !468
 }
 
 ; Function Attrs: noinline uwtable
-define void @printStructLine(%struct._twoIntsStruct*) #0 !dbg !429 !effectiveSanArgs !432 {
-  %2 = alloca %struct._twoIntsStruct*, align 8, !effectiveSan !45
+define void @printStructLine(%struct._twoIntsStruct*) #0 !dbg !469 !effectiveSanArgs !472 !TYCHE_MD_ARGS !473 {
+  %2 = alloca %struct._twoIntsStruct*, align 8, !effectiveSan !45, !TYCHE_MD !474
   store %struct._twoIntsStruct* %0, %struct._twoIntsStruct** %2, align 8
-  call void @llvm.dbg.declare(metadata %struct._twoIntsStruct** %2, metadata !433, metadata !312), !dbg !434
-  %3 = load %struct._twoIntsStruct*, %struct._twoIntsStruct** %2, align 8, !dbg !435, !effectiveSan !46
-  %4 = getelementptr inbounds %struct._twoIntsStruct, %struct._twoIntsStruct* %3, i32 0, i32 0, !dbg !436, !effectiveSan !17
-  %5 = load i32, i32* %4, align 4, !dbg !436, !effectiveSan !12
-  %6 = load %struct._twoIntsStruct*, %struct._twoIntsStruct** %2, align 8, !dbg !437, !effectiveSan !46
-  %7 = getelementptr inbounds %struct._twoIntsStruct, %struct._twoIntsStruct* %6, i32 0, i32 1, !dbg !438, !effectiveSan !17
-  %8 = load i32, i32* %7, align 4, !dbg !438, !effectiveSan !12
-  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.11, i32 0, i32 0), i32 %5, i32 %8), !dbg !439, !effectiveSan !12
-  ret void, !dbg !440
+  call void @llvm.dbg.declare(metadata %struct._twoIntsStruct** %2, metadata !475, metadata !314), !dbg !476
+  %3 = load %struct._twoIntsStruct*, %struct._twoIntsStruct** %2, align 8, !dbg !477, !effectiveSan !46
+  %4 = getelementptr inbounds %struct._twoIntsStruct, %struct._twoIntsStruct* %3, i32 0, i32 0, !dbg !478, !effectiveSan !17
+  %5 = load i32, i32* %4, align 4, !dbg !478, !effectiveSan !12
+  %6 = load %struct._twoIntsStruct*, %struct._twoIntsStruct** %2, align 8, !dbg !479, !effectiveSan !46
+  %7 = getelementptr inbounds %struct._twoIntsStruct, %struct._twoIntsStruct* %6, i32 0, i32 1, !dbg !480, !effectiveSan !17
+  %8 = load i32, i32* %7, align 4, !dbg !480, !effectiveSan !12
+  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.11, i32 0, i32 0), i32 %5, i32 %8), !dbg !481, !effectiveSan !12
+  ret void, !dbg !482, !TYCHE_MD !483
 }
 
 ; Function Attrs: noinline uwtable
-define void @printBytesLine(i8*, i64) #0 !dbg !441 !effectiveSanArgs !444 {
-  %3 = alloca i8*, align 8, !effectiveSan !56
-  %4 = alloca i64, align 8, !effectiveSan !29
-  %5 = alloca i64, align 8, !effectiveSan !29
+define void @printBytesLine(i8*, i64) #0 !dbg !484 !effectiveSanArgs !487 !TYCHE_MD_ARGS !488 {
+  %3 = alloca i8*, align 8, !effectiveSan !56, !TYCHE_MD !489
+  %4 = alloca i64, align 8, !effectiveSan !29, !TYCHE_MD !490
+  %5 = alloca i64, align 8, !effectiveSan !29, !TYCHE_MD !491
   store i8* %0, i8** %3, align 8
-  call void @llvm.dbg.declare(metadata i8** %3, metadata !445, metadata !312), !dbg !446
+  call void @llvm.dbg.declare(metadata i8** %3, metadata !492, metadata !314), !dbg !493
   store i64 %1, i64* %4, align 8
-  call void @llvm.dbg.declare(metadata i64* %4, metadata !447, metadata !312), !dbg !448
-  call void @llvm.dbg.declare(metadata i64* %5, metadata !449, metadata !312), !dbg !450
-  store i64 0, i64* %5, align 8, !dbg !451
-  br label %6, !dbg !453
+  call void @llvm.dbg.declare(metadata i64* %4, metadata !494, metadata !314), !dbg !495
+  call void @llvm.dbg.declare(metadata i64* %5, metadata !496, metadata !314), !dbg !497
+  store i64 0, i64* %5, align 8, !dbg !498
+  br label %6, !dbg !500
 
 ; <label>:6:                                      ; preds = %17, %2
-  %7 = load i64, i64* %5, align 8, !dbg !454, !effectiveSan !30
-  %8 = load i64, i64* %4, align 8, !dbg !457, !effectiveSan !30
-  %9 = icmp ult i64 %7, %8, !dbg !458
-  br i1 %9, label %10, label %20, !dbg !459
+  %7 = load i64, i64* %5, align 8, !dbg !501, !effectiveSan !30
+  %8 = load i64, i64* %4, align 8, !dbg !504, !effectiveSan !30
+  %9 = icmp ult i64 %7, %8, !dbg !505
+  br i1 %9, label %10, label %20, !dbg !506
 
 ; <label>:10:                                     ; preds = %6
-  %11 = load i8*, i8** %3, align 8, !dbg !461, !effectiveSan !57
-  %12 = load i64, i64* %5, align 8, !dbg !463, !effectiveSan !30
-  %13 = getelementptr inbounds i8, i8* %11, i64 %12, !dbg !461
-  %14 = load i8, i8* %13, align 1, !dbg !461, !effectiveSan !58
-  %15 = zext i8 %14 to i32, !dbg !461
-  %16 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i32 0, i32 0), i32 %15), !dbg !464, !effectiveSan !12
-  br label %17, !dbg !465
+  %11 = load i8*, i8** %3, align 8, !dbg !508, !effectiveSan !57
+  %12 = load i64, i64* %5, align 8, !dbg !510, !effectiveSan !30
+  %13 = getelementptr inbounds i8, i8* %11, i64 %12, !dbg !508
+  %14 = load i8, i8* %13, align 1, !dbg !508, !effectiveSan !58
+  %15 = zext i8 %14 to i32, !dbg !508
+  %16 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i32 0, i32 0), i32 %15), !dbg !511, !effectiveSan !12
+  br label %17, !dbg !512
 
 ; <label>:17:                                     ; preds = %10
-  %18 = load i64, i64* %5, align 8, !dbg !466, !effectiveSan !30
-  %19 = add i64 %18, 1, !dbg !466
-  store i64 %19, i64* %5, align 8, !dbg !466
-  br label %6, !dbg !468, !llvm.loop !469
+  %18 = load i64, i64* %5, align 8, !dbg !513, !effectiveSan !30
+  %19 = add i64 %18, 1, !dbg !513
+  store i64 %19, i64* %5, align 8, !dbg !513
+  br label %6, !dbg !515, !llvm.loop !516
 
 ; <label>:20:                                     ; preds = %6
-  %21 = call i32 @puts(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.13, i32 0, i32 0)), !dbg !472, !effectiveSan !12
-  ret void, !dbg !473
+  %21 = call i32 @puts(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.13, i32 0, i32 0)), !dbg !519, !effectiveSan !12
+  ret void, !dbg !520, !TYCHE_MD !521
 }
 
 declare i32 @puts(i8*) #2
 
 ; Function Attrs: noinline nounwind uwtable
-define i64 @decodeHexChars(i8*, i64, i8*) #3 !dbg !474 !effectiveSanArgs !477 {
-  %4 = alloca i8*, align 8, !effectiveSan !59
-  %5 = alloca i64, align 8, !effectiveSan !29
-  %6 = alloca i8*, align 8, !effectiveSan !8
-  %7 = alloca i64, align 8, !effectiveSan !29
-  %8 = alloca i32, align 4, !effectiveSan !17
+define i64 @decodeHexChars(i8*, i64, i8*) #3 !dbg !522 !effectiveSanArgs !525 !TYCHE_MD_ARGS !526 {
+  %4 = alloca i8*, align 8, !effectiveSan !59, !TYCHE_MD !527
+  %5 = alloca i64, align 8, !effectiveSan !29, !TYCHE_MD !528
+  %6 = alloca i8*, align 8, !effectiveSan !8, !TYCHE_MD !529
+  %7 = alloca i64, align 8, !effectiveSan !29, !TYCHE_MD !530
+  %8 = alloca i32, align 4, !effectiveSan !17, !TYCHE_MD !531
   store i8* %0, i8** %4, align 8
-  call void @llvm.dbg.declare(metadata i8** %4, metadata !478, metadata !312), !dbg !479
+  call void @llvm.dbg.declare(metadata i8** %4, metadata !532, metadata !314), !dbg !533
   store i64 %1, i64* %5, align 8
-  call void @llvm.dbg.declare(metadata i64* %5, metadata !480, metadata !312), !dbg !481
+  call void @llvm.dbg.declare(metadata i64* %5, metadata !534, metadata !314), !dbg !535
   store i8* %2, i8** %6, align 8
-  call void @llvm.dbg.declare(metadata i8** %6, metadata !482, metadata !312), !dbg !483
-  call void @llvm.dbg.declare(metadata i64* %7, metadata !484, metadata !312), !dbg !485
-  store i64 0, i64* %7, align 8, !dbg !485
-  br label %9, !dbg !486
+  call void @llvm.dbg.declare(metadata i8** %6, metadata !536, metadata !314), !dbg !537
+  call void @llvm.dbg.declare(metadata i64* %7, metadata !538, metadata !314), !dbg !539
+  store i64 0, i64* %7, align 8, !dbg !539
+  br label %9, !dbg !540
 
 ; <label>:9:                                      ; preds = %34, %3
-  %10 = load i64, i64* %7, align 8, !dbg !487, !effectiveSan !30
-  %11 = load i64, i64* %5, align 8, !dbg !489, !effectiveSan !30
-  %12 = icmp ult i64 %10, %11, !dbg !490
-  br i1 %12, label %13, label %32, !dbg !491
+  %10 = load i64, i64* %7, align 8, !dbg !541, !effectiveSan !30
+  %11 = load i64, i64* %5, align 8, !dbg !543, !effectiveSan !30
+  %12 = icmp ult i64 %10, %11, !dbg !544
+  br i1 %12, label %13, label %32, !dbg !545
 
 ; <label>:13:                                     ; preds = %9
-  %14 = load i8*, i8** %6, align 8, !dbg !492, !effectiveSan !9
-  %15 = load i64, i64* %7, align 8, !dbg !494, !effectiveSan !30
-  %16 = mul i64 2, %15, !dbg !495
-  %17 = getelementptr inbounds i8, i8* %14, i64 %16, !dbg !492
-  %18 = load i8, i8* %17, align 1, !dbg !492, !effectiveSan !10
-  %19 = sext i8 %18 to i32, !dbg !492
-  %20 = call i32 @isxdigit(i32 %19) #6, !dbg !496, !effectiveSan !12
-  %21 = icmp ne i32 %20, 0, !dbg !496
-  br i1 %21, label %22, label %32, !dbg !497
+  %14 = load i8*, i8** %6, align 8, !dbg !546, !effectiveSan !9
+  %15 = load i64, i64* %7, align 8, !dbg !548, !effectiveSan !30
+  %16 = mul i64 2, %15, !dbg !549
+  %17 = getelementptr inbounds i8, i8* %14, i64 %16, !dbg !546
+  %18 = load i8, i8* %17, align 1, !dbg !546, !effectiveSan !10
+  %19 = sext i8 %18 to i32, !dbg !546
+  %20 = call i32 @isxdigit(i32 %19) #6, !dbg !550, !effectiveSan !12
+  %21 = icmp ne i32 %20, 0, !dbg !550
+  br i1 %21, label %22, label %32, !dbg !551
 
 ; <label>:22:                                     ; preds = %13
-  %23 = load i8*, i8** %6, align 8, !dbg !498, !effectiveSan !9
-  %24 = load i64, i64* %7, align 8, !dbg !500, !effectiveSan !30
-  %25 = mul i64 2, %24, !dbg !501
-  %26 = add i64 %25, 1, !dbg !502
-  %27 = getelementptr inbounds i8, i8* %23, i64 %26, !dbg !498
-  %28 = load i8, i8* %27, align 1, !dbg !498, !effectiveSan !10
-  %29 = sext i8 %28 to i32, !dbg !498
-  %30 = call i32 @isxdigit(i32 %29) #6, !dbg !503, !effectiveSan !12
-  %31 = icmp ne i32 %30, 0, !dbg !503
+  %23 = load i8*, i8** %6, align 8, !dbg !552, !effectiveSan !9
+  %24 = load i64, i64* %7, align 8, !dbg !554, !effectiveSan !30
+  %25 = mul i64 2, %24, !dbg !555
+  %26 = add i64 %25, 1, !dbg !556
+  %27 = getelementptr inbounds i8, i8* %23, i64 %26, !dbg !552
+  %28 = load i8, i8* %27, align 1, !dbg !552, !effectiveSan !10
+  %29 = sext i8 %28 to i32, !dbg !552
+  %30 = call i32 @isxdigit(i32 %29) #6, !dbg !557, !effectiveSan !12
+  %31 = icmp ne i32 %30, 0, !dbg !557
   br label %32
 
 ; <label>:32:                                     ; preds = %22, %13, %9
   %33 = phi i1 [ false, %13 ], [ false, %9 ], [ %31, %22 ]
-  br i1 %33, label %34, label %47, !dbg !504
+  br i1 %33, label %34, label %47, !dbg !558
 
 ; <label>:34:                                     ; preds = %32
-  call void @llvm.dbg.declare(metadata i32* %8, metadata !506, metadata !312), !dbg !508
-  %35 = load i8*, i8** %6, align 8, !dbg !509, !effectiveSan !9
-  %36 = load i64, i64* %7, align 8, !dbg !510, !effectiveSan !30
-  %37 = mul i64 2, %36, !dbg !511
-  %38 = getelementptr inbounds i8, i8* %35, i64 %37, !dbg !509
-  %39 = call i32 (i8*, i8*, ...) @sscanf(i8* %38, i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i32 0, i32 0), i32* %8) #7, !dbg !512, !effectiveSan !12
-  %40 = load i32, i32* %8, align 4, !dbg !513, !effectiveSan !12
-  %41 = trunc i32 %40 to i8, !dbg !513
-  %42 = load i8*, i8** %4, align 8, !dbg !514, !effectiveSan !42
-  %43 = load i64, i64* %7, align 8, !dbg !515, !effectiveSan !30
-  %44 = getelementptr inbounds i8, i8* %42, i64 %43, !dbg !514
-  store i8 %41, i8* %44, align 1, !dbg !516
-  %45 = load i64, i64* %7, align 8, !dbg !517, !effectiveSan !30
-  %46 = add i64 %45, 1, !dbg !517
-  store i64 %46, i64* %7, align 8, !dbg !517
-  br label %9, !dbg !518, !llvm.loop !520
+  call void @llvm.dbg.declare(metadata i32* %8, metadata !560, metadata !314), !dbg !562
+  %35 = load i8*, i8** %6, align 8, !dbg !563, !effectiveSan !9
+  %36 = load i64, i64* %7, align 8, !dbg !564, !effectiveSan !30
+  %37 = mul i64 2, %36, !dbg !565
+  %38 = getelementptr inbounds i8, i8* %35, i64 %37, !dbg !563
+  %39 = call i32 (i8*, i8*, ...) @sscanf(i8* %38, i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.12, i32 0, i32 0), i32* %8) #7, !dbg !566, !effectiveSan !12
+  %40 = load i32, i32* %8, align 4, !dbg !567, !effectiveSan !12
+  %41 = trunc i32 %40 to i8, !dbg !567
+  %42 = load i8*, i8** %4, align 8, !dbg !568, !effectiveSan !42
+  %43 = load i64, i64* %7, align 8, !dbg !569, !effectiveSan !30
+  %44 = getelementptr inbounds i8, i8* %42, i64 %43, !dbg !568
+  store i8 %41, i8* %44, align 1, !dbg !570
+  %45 = load i64, i64* %7, align 8, !dbg !571, !effectiveSan !30
+  %46 = add i64 %45, 1, !dbg !571
+  store i64 %46, i64* %7, align 8, !dbg !571
+  br label %9, !dbg !572, !llvm.loop !574
 
 ; <label>:47:                                     ; preds = %32
-  %48 = load i64, i64* %7, align 8, !dbg !522, !effectiveSan !30
-  ret i64 %48, !dbg !523
+  %48 = load i64, i64* %7, align 8, !dbg !576, !effectiveSan !30
+  ret i64 %48, !dbg !577, !TYCHE_MD !578
 }
 
 ; Function Attrs: nounwind readonly
@@ -353,74 +531,74 @@ declare i32 @isxdigit(i32) #4
 declare i32 @sscanf(i8*, i8*, ...) #5
 
 ; Function Attrs: noinline nounwind uwtable
-define i64 @decodeHexWChars(i8*, i64, i32*) #3 !dbg !524 !effectiveSanArgs !527 {
-  %4 = alloca i8*, align 8, !effectiveSan !59
-  %5 = alloca i64, align 8, !effectiveSan !29
-  %6 = alloca i32*, align 8, !effectiveSan !13
-  %7 = alloca i64, align 8, !effectiveSan !29
-  %8 = alloca i32, align 4, !effectiveSan !17
+define i64 @decodeHexWChars(i8*, i64, i32*) #3 !dbg !579 !effectiveSanArgs !582 !TYCHE_MD_ARGS !583 {
+  %4 = alloca i8*, align 8, !effectiveSan !59, !TYCHE_MD !584
+  %5 = alloca i64, align 8, !effectiveSan !29, !TYCHE_MD !585
+  %6 = alloca i32*, align 8, !effectiveSan !13, !TYCHE_MD !586
+  %7 = alloca i64, align 8, !effectiveSan !29, !TYCHE_MD !587
+  %8 = alloca i32, align 4, !effectiveSan !17, !TYCHE_MD !588
   store i8* %0, i8** %4, align 8
-  call void @llvm.dbg.declare(metadata i8** %4, metadata !528, metadata !312), !dbg !529
+  call void @llvm.dbg.declare(metadata i8** %4, metadata !589, metadata !314), !dbg !590
   store i64 %1, i64* %5, align 8
-  call void @llvm.dbg.declare(metadata i64* %5, metadata !530, metadata !312), !dbg !531
+  call void @llvm.dbg.declare(metadata i64* %5, metadata !591, metadata !314), !dbg !592
   store i32* %2, i32** %6, align 8
-  call void @llvm.dbg.declare(metadata i32** %6, metadata !532, metadata !312), !dbg !533
-  call void @llvm.dbg.declare(metadata i64* %7, metadata !534, metadata !312), !dbg !535
-  store i64 0, i64* %7, align 8, !dbg !535
-  br label %9, !dbg !536
+  call void @llvm.dbg.declare(metadata i32** %6, metadata !593, metadata !314), !dbg !594
+  call void @llvm.dbg.declare(metadata i64* %7, metadata !595, metadata !314), !dbg !596
+  store i64 0, i64* %7, align 8, !dbg !596
+  br label %9, !dbg !597
 
 ; <label>:9:                                      ; preds = %32, %3
-  %10 = load i64, i64* %7, align 8, !dbg !537, !effectiveSan !30
-  %11 = load i64, i64* %5, align 8, !dbg !539, !effectiveSan !30
-  %12 = icmp ult i64 %10, %11, !dbg !540
-  br i1 %12, label %13, label %30, !dbg !541
+  %10 = load i64, i64* %7, align 8, !dbg !598, !effectiveSan !30
+  %11 = load i64, i64* %5, align 8, !dbg !600, !effectiveSan !30
+  %12 = icmp ult i64 %10, %11, !dbg !601
+  br i1 %12, label %13, label %30, !dbg !602
 
 ; <label>:13:                                     ; preds = %9
-  %14 = load i32*, i32** %6, align 8, !dbg !542, !effectiveSan !14
-  %15 = load i64, i64* %7, align 8, !dbg !544, !effectiveSan !30
-  %16 = mul i64 2, %15, !dbg !545
-  %17 = getelementptr inbounds i32, i32* %14, i64 %16, !dbg !542
-  %18 = load i32, i32* %17, align 4, !dbg !542, !effectiveSan !15
-  %19 = call i32 @iswxdigit(i32 %18) #7, !dbg !546, !effectiveSan !12
-  %20 = icmp ne i32 %19, 0, !dbg !546
-  br i1 %20, label %21, label %30, !dbg !547
+  %14 = load i32*, i32** %6, align 8, !dbg !603, !effectiveSan !14
+  %15 = load i64, i64* %7, align 8, !dbg !605, !effectiveSan !30
+  %16 = mul i64 2, %15, !dbg !606
+  %17 = getelementptr inbounds i32, i32* %14, i64 %16, !dbg !603
+  %18 = load i32, i32* %17, align 4, !dbg !603, !effectiveSan !15
+  %19 = call i32 @iswxdigit(i32 %18) #7, !dbg !607, !effectiveSan !12
+  %20 = icmp ne i32 %19, 0, !dbg !607
+  br i1 %20, label %21, label %30, !dbg !608
 
 ; <label>:21:                                     ; preds = %13
-  %22 = load i32*, i32** %6, align 8, !dbg !548, !effectiveSan !14
-  %23 = load i64, i64* %7, align 8, !dbg !550, !effectiveSan !30
-  %24 = mul i64 2, %23, !dbg !551
-  %25 = add i64 %24, 1, !dbg !552
-  %26 = getelementptr inbounds i32, i32* %22, i64 %25, !dbg !548
-  %27 = load i32, i32* %26, align 4, !dbg !548, !effectiveSan !15
-  %28 = call i32 @iswxdigit(i32 %27) #7, !dbg !553, !effectiveSan !12
-  %29 = icmp ne i32 %28, 0, !dbg !553
+  %22 = load i32*, i32** %6, align 8, !dbg !609, !effectiveSan !14
+  %23 = load i64, i64* %7, align 8, !dbg !611, !effectiveSan !30
+  %24 = mul i64 2, %23, !dbg !612
+  %25 = add i64 %24, 1, !dbg !613
+  %26 = getelementptr inbounds i32, i32* %22, i64 %25, !dbg !609
+  %27 = load i32, i32* %26, align 4, !dbg !609, !effectiveSan !15
+  %28 = call i32 @iswxdigit(i32 %27) #7, !dbg !614, !effectiveSan !12
+  %29 = icmp ne i32 %28, 0, !dbg !614
   br label %30
 
 ; <label>:30:                                     ; preds = %21, %13, %9
   %31 = phi i1 [ false, %13 ], [ false, %9 ], [ %29, %21 ]
-  br i1 %31, label %32, label %45, !dbg !554
+  br i1 %31, label %32, label %45, !dbg !615
 
 ; <label>:32:                                     ; preds = %30
-  call void @llvm.dbg.declare(metadata i32* %8, metadata !556, metadata !312), !dbg !558
-  %33 = load i32*, i32** %6, align 8, !dbg !559, !effectiveSan !14
-  %34 = load i64, i64* %7, align 8, !dbg !560, !effectiveSan !30
-  %35 = mul i64 2, %34, !dbg !561
-  %36 = getelementptr inbounds i32, i32* %33, i64 %35, !dbg !559
-  %37 = call i32 (i32*, i32*, ...) @swscanf(i32* %36, i32* getelementptr inbounds ([5 x i32], [5 x i32]* @.str.14, i32 0, i32 0), i32* %8) #7, !dbg !562, !effectiveSan !12
-  %38 = load i32, i32* %8, align 4, !dbg !563, !effectiveSan !12
-  %39 = trunc i32 %38 to i8, !dbg !563
-  %40 = load i8*, i8** %4, align 8, !dbg !564, !effectiveSan !42
-  %41 = load i64, i64* %7, align 8, !dbg !565, !effectiveSan !30
-  %42 = getelementptr inbounds i8, i8* %40, i64 %41, !dbg !564
-  store i8 %39, i8* %42, align 1, !dbg !566
-  %43 = load i64, i64* %7, align 8, !dbg !567, !effectiveSan !30
-  %44 = add i64 %43, 1, !dbg !567
-  store i64 %44, i64* %7, align 8, !dbg !567
-  br label %9, !dbg !568, !llvm.loop !570
+  call void @llvm.dbg.declare(metadata i32* %8, metadata !617, metadata !314), !dbg !619
+  %33 = load i32*, i32** %6, align 8, !dbg !620, !effectiveSan !14
+  %34 = load i64, i64* %7, align 8, !dbg !621, !effectiveSan !30
+  %35 = mul i64 2, %34, !dbg !622
+  %36 = getelementptr inbounds i32, i32* %33, i64 %35, !dbg !620
+  %37 = call i32 (i32*, i32*, ...) @swscanf(i32* %36, i32* getelementptr inbounds ([5 x i32], [5 x i32]* @.str.14, i32 0, i32 0), i32* %8) #7, !dbg !623, !effectiveSan !12
+  %38 = load i32, i32* %8, align 4, !dbg !624, !effectiveSan !12
+  %39 = trunc i32 %38 to i8, !dbg !624
+  %40 = load i8*, i8** %4, align 8, !dbg !625, !effectiveSan !42
+  %41 = load i64, i64* %7, align 8, !dbg !626, !effectiveSan !30
+  %42 = getelementptr inbounds i8, i8* %40, i64 %41, !dbg !625
+  store i8 %39, i8* %42, align 1, !dbg !627
+  %43 = load i64, i64* %7, align 8, !dbg !628, !effectiveSan !30
+  %44 = add i64 %43, 1, !dbg !628
+  store i64 %44, i64* %7, align 8, !dbg !628
+  br label %9, !dbg !629, !llvm.loop !631
 
 ; <label>:45:                                     ; preds = %30
-  %46 = load i64, i64* %7, align 8, !dbg !572, !effectiveSan !30
-  ret i64 %46, !dbg !573
+  %46 = load i64, i64* %7, align 8, !dbg !633, !effectiveSan !30
+  ret i64 %46, !dbg !634, !TYCHE_MD !635
 }
 
 ; Function Attrs: nounwind
@@ -430,113 +608,113 @@ declare i32 @iswxdigit(i32) #5
 declare i32 @swscanf(i32*, i32*, ...) #5
 
 ; Function Attrs: noinline nounwind uwtable
-define i32 @globalReturnsTrue() #3 !dbg !574 !effectiveSanArgs !5 {
-  ret i32 1, !dbg !575
+define i32 @globalReturnsTrue() #3 !dbg !636 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret i32 1, !dbg !637, !TYCHE_MD !638
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define i32 @globalReturnsFalse() #3 !dbg !576 !effectiveSanArgs !5 {
-  ret i32 0, !dbg !577
+define i32 @globalReturnsFalse() #3 !dbg !639 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret i32 0, !dbg !640, !TYCHE_MD !641
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define i32 @globalReturnsTrueOrFalse() #3 !dbg !578 !effectiveSanArgs !5 {
-  %1 = call i32 @rand() #7, !dbg !579, !effectiveSan !12
-  %2 = srem i32 %1, 2, !dbg !580
-  ret i32 %2, !dbg !581
+define i32 @globalReturnsTrueOrFalse() #3 !dbg !642 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  %1 = call i32 @rand() #7, !dbg !643, !effectiveSan !12
+  %2 = srem i32 %1, 2, !dbg !644
+  ret i32 %2, !dbg !645, !TYCHE_MD !646
 }
 
 ; Function Attrs: nounwind
 declare i32 @rand() #5
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good1v() #3 !dbg !582 !effectiveSanArgs !5 {
-  ret void, !dbg !583
+define void @_Z5good1v() #3 !dbg !647 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !648, !TYCHE_MD !649
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good2v() #3 !dbg !584 !effectiveSanArgs !5 {
-  ret void, !dbg !585
+define void @_Z5good2v() #3 !dbg !650 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !651, !TYCHE_MD !652
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good3v() #3 !dbg !586 !effectiveSanArgs !5 {
-  ret void, !dbg !587
+define void @_Z5good3v() #3 !dbg !653 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !654, !TYCHE_MD !655
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good4v() #3 !dbg !588 !effectiveSanArgs !5 {
-  ret void, !dbg !589
+define void @_Z5good4v() #3 !dbg !656 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !657, !TYCHE_MD !658
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good5v() #3 !dbg !590 !effectiveSanArgs !5 {
-  ret void, !dbg !591
+define void @_Z5good5v() #3 !dbg !659 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !660, !TYCHE_MD !661
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good6v() #3 !dbg !592 !effectiveSanArgs !5 {
-  ret void, !dbg !593
+define void @_Z5good6v() #3 !dbg !662 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !663, !TYCHE_MD !664
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good7v() #3 !dbg !594 !effectiveSanArgs !5 {
-  ret void, !dbg !595
+define void @_Z5good7v() #3 !dbg !665 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !666, !TYCHE_MD !667
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good8v() #3 !dbg !596 !effectiveSanArgs !5 {
-  ret void, !dbg !597
+define void @_Z5good8v() #3 !dbg !668 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !669, !TYCHE_MD !670
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z5good9v() #3 !dbg !598 !effectiveSanArgs !5 {
-  ret void, !dbg !599
+define void @_Z5good9v() #3 !dbg !671 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !672, !TYCHE_MD !673
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad1v() #3 !dbg !600 !effectiveSanArgs !5 {
-  ret void, !dbg !601
+define void @_Z4bad1v() #3 !dbg !674 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !675, !TYCHE_MD !676
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad2v() #3 !dbg !602 !effectiveSanArgs !5 {
-  ret void, !dbg !603
+define void @_Z4bad2v() #3 !dbg !677 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !678, !TYCHE_MD !679
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad3v() #3 !dbg !604 !effectiveSanArgs !5 {
-  ret void, !dbg !605
+define void @_Z4bad3v() #3 !dbg !680 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !681, !TYCHE_MD !682
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad4v() #3 !dbg !606 !effectiveSanArgs !5 {
-  ret void, !dbg !607
+define void @_Z4bad4v() #3 !dbg !683 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !684, !TYCHE_MD !685
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad5v() #3 !dbg !608 !effectiveSanArgs !5 {
-  ret void, !dbg !609
+define void @_Z4bad5v() #3 !dbg !686 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !687, !TYCHE_MD !688
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad6v() #3 !dbg !610 !effectiveSanArgs !5 {
-  ret void, !dbg !611
+define void @_Z4bad6v() #3 !dbg !689 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !690, !TYCHE_MD !691
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad7v() #3 !dbg !612 !effectiveSanArgs !5 {
-  ret void, !dbg !613
+define void @_Z4bad7v() #3 !dbg !692 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !693, !TYCHE_MD !694
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad8v() #3 !dbg !614 !effectiveSanArgs !5 {
-  ret void, !dbg !615
+define void @_Z4bad8v() #3 !dbg !695 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !696, !TYCHE_MD !697
 }
 
 ; Function Attrs: noinline nounwind uwtable
-define void @_Z4bad9v() #3 !dbg !616 !effectiveSanArgs !5 {
-  ret void, !dbg !617
+define void @_Z4bad9v() #3 !dbg !698 !effectiveSanArgs !5 !TYCHE_MD_ARGS !5 {
+  ret void, !dbg !699, !TYCHE_MD !700
 }
 
 attributes #0 = { noinline uwtable "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-calls"="false" "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-jump-tables"="false" "no-nans-fp-math"="false" "no-signed-zeros-fp-math"="false" "no-trapping-math"="false" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+fxsr,+mmx,+popcnt,+sse,+sse2,+sse3,+sse4.1,+sse4.2,+ssse3,+x87" "unsafe-fp-math"="false" "use-soft-float"="false" }
@@ -863,310 +1041,393 @@ attributes #7 = { nounwind }
 !308 = !DISubroutineType(types: !309)
 !309 = !{null, !9}
 !310 = !{!9}
-!311 = !DILocalVariable(name: "line", arg: 1, scope: !307, file: !4, line: 11, type: !9)
-!312 = !DIExpression()
-!313 = !DILocation(line: 11, column: 30, scope: !307)
-!314 = !DILocation(line: 13, column: 8, scope: !315)
-!315 = distinct !DILexicalBlock(scope: !307, file: !4, line: 13, column: 8)
-!316 = !DILocation(line: 13, column: 13, scope: !315)
-!317 = !DILocation(line: 13, column: 8, scope: !307)
-!318 = !DILocation(line: 15, column: 24, scope: !319)
-!319 = distinct !DILexicalBlock(scope: !315, file: !4, line: 14, column: 5)
-!320 = !DILocation(line: 15, column: 9, scope: !319)
-!321 = !DILocation(line: 16, column: 5, scope: !319)
-!322 = !DILocation(line: 17, column: 1, scope: !307)
-!323 = distinct !DISubprogram(name: "printWLine", scope: !4, file: !4, line: 19, type: !324, isLocal: false, isDefinition: true, scopeLine: 20, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!324 = !DISubroutineType(types: !325)
-!325 = !{null, !14}
-!326 = !{!14}
-!327 = !DILocalVariable(name: "line", arg: 1, scope: !323, file: !4, line: 19, type: !14)
-!328 = !DILocation(line: 19, column: 34, scope: !323)
-!329 = !DILocation(line: 21, column: 8, scope: !330)
-!330 = distinct !DILexicalBlock(scope: !323, file: !4, line: 21, column: 8)
-!331 = !DILocation(line: 21, column: 13, scope: !330)
-!332 = !DILocation(line: 21, column: 8, scope: !323)
-!333 = !DILocation(line: 23, column: 27, scope: !334)
-!334 = distinct !DILexicalBlock(scope: !330, file: !4, line: 22, column: 5)
-!335 = !DILocation(line: 23, column: 9, scope: !334)
-!336 = !DILocation(line: 24, column: 5, scope: !334)
-!337 = !DILocation(line: 25, column: 1, scope: !323)
-!338 = distinct !DISubprogram(name: "printIntLine", scope: !4, file: !4, line: 27, type: !140, isLocal: false, isDefinition: true, scopeLine: 28, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!339 = !DILocalVariable(name: "intNumber", arg: 1, scope: !338, file: !4, line: 27, type: !12)
-!340 = !DILocation(line: 27, column: 24, scope: !338)
-!341 = !DILocation(line: 29, column: 20, scope: !338)
-!342 = !DILocation(line: 29, column: 5, scope: !338)
-!343 = !DILocation(line: 30, column: 1, scope: !338)
-!344 = distinct !DISubprogram(name: "printShortLine", scope: !4, file: !4, line: 32, type: !345, isLocal: false, isDefinition: true, scopeLine: 33, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!345 = !DISubroutineType(types: !346)
-!346 = !{null, !19}
-!347 = !DILocalVariable(name: "shortNumber", arg: 1, scope: !344, file: !4, line: 32, type: !19)
-!348 = !DILocation(line: 32, column: 28, scope: !344)
-!349 = !DILocation(line: 34, column: 21, scope: !344)
-!350 = !DILocation(line: 34, column: 5, scope: !344)
-!351 = !DILocation(line: 35, column: 1, scope: !344)
-!352 = distinct !DISubprogram(name: "printFloatLine", scope: !4, file: !4, line: 37, type: !353, isLocal: false, isDefinition: true, scopeLine: 38, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!353 = !DISubroutineType(types: !354)
-!354 = !{null, !21}
-!355 = !DILocalVariable(name: "floatNumber", arg: 1, scope: !352, file: !4, line: 37, type: !21)
-!356 = !DILocation(line: 37, column: 28, scope: !352)
-!357 = !DILocation(line: 39, column: 20, scope: !352)
-!358 = !DILocation(line: 39, column: 5, scope: !352)
-!359 = !DILocation(line: 40, column: 1, scope: !352)
-!360 = distinct !DISubprogram(name: "printLongLine", scope: !4, file: !4, line: 42, type: !361, isLocal: false, isDefinition: true, scopeLine: 43, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!361 = !DISubroutineType(types: !362)
-!362 = !{null, !23}
-!363 = !DILocalVariable(name: "longNumber", arg: 1, scope: !360, file: !4, line: 42, type: !23)
-!364 = !DILocation(line: 42, column: 26, scope: !360)
-!365 = !DILocation(line: 44, column: 21, scope: !360)
-!366 = !DILocation(line: 44, column: 5, scope: !360)
-!367 = !DILocation(line: 45, column: 1, scope: !360)
-!368 = distinct !DISubprogram(name: "printLongLongLine", scope: !4, file: !4, line: 47, type: !369, isLocal: false, isDefinition: true, scopeLine: 48, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!369 = !DISubroutineType(types: !370)
-!370 = !{null, !25}
-!371 = !DILocalVariable(name: "longLongIntNumber", arg: 1, scope: !368, file: !4, line: 47, type: !25)
-!372 = !DILocation(line: 47, column: 33, scope: !368)
-!373 = !DILocation(line: 49, column: 29, scope: !368)
-!374 = !DILocation(line: 49, column: 5, scope: !368)
-!375 = !DILocation(line: 50, column: 1, scope: !368)
-!376 = distinct !DISubprogram(name: "printSizeTLine", scope: !4, file: !4, line: 52, type: !377, isLocal: false, isDefinition: true, scopeLine: 53, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!377 = !DISubroutineType(types: !378)
-!378 = !{null, !30}
-!379 = !DILocalVariable(name: "sizeTNumber", arg: 1, scope: !376, file: !4, line: 52, type: !30)
-!380 = !DILocation(line: 52, column: 29, scope: !376)
-!381 = !DILocation(line: 54, column: 21, scope: !376)
-!382 = !DILocation(line: 54, column: 5, scope: !376)
-!383 = !DILocation(line: 55, column: 1, scope: !376)
-!384 = distinct !DISubprogram(name: "printHexCharLine", scope: !4, file: !4, line: 57, type: !385, isLocal: false, isDefinition: true, scopeLine: 58, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!385 = !DISubroutineType(types: !386)
-!386 = !{null, !11}
-!387 = !DILocalVariable(name: "charHex", arg: 1, scope: !384, file: !4, line: 57, type: !11)
-!388 = !DILocation(line: 57, column: 29, scope: !384)
-!389 = !DILocation(line: 59, column: 22, scope: !384)
-!390 = !DILocation(line: 59, column: 5, scope: !384)
-!391 = !DILocation(line: 60, column: 1, scope: !384)
-!392 = distinct !DISubprogram(name: "printWcharLine", scope: !4, file: !4, line: 62, type: !393, isLocal: false, isDefinition: true, scopeLine: 63, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!393 = !DISubroutineType(types: !394)
-!394 = !{null, !16}
-!395 = !DILocalVariable(name: "wideChar", arg: 1, scope: !392, file: !4, line: 62, type: !16)
-!396 = !DILocation(line: 62, column: 29, scope: !392)
-!397 = !DILocalVariable(name: "s", scope: !392, file: !4, line: 66, type: !37)
-!398 = !DILocation(line: 66, column: 13, scope: !392)
-!399 = !DILocation(line: 67, column: 16, scope: !392)
-!400 = !DILocation(line: 67, column: 9, scope: !392)
-!401 = !DILocation(line: 67, column: 14, scope: !392)
-!402 = !DILocation(line: 68, column: 9, scope: !392)
-!403 = !DILocation(line: 68, column: 14, scope: !392)
-!404 = !DILocation(line: 69, column: 21, scope: !392)
-!405 = !DILocation(line: 69, column: 5, scope: !392)
-!406 = !DILocation(line: 70, column: 1, scope: !392)
-!407 = distinct !DISubprogram(name: "printUnsignedLine", scope: !4, file: !4, line: 72, type: !190, isLocal: false, isDefinition: true, scopeLine: 73, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!408 = !DILocalVariable(name: "unsignedNumber", arg: 1, scope: !407, file: !4, line: 72, type: !41)
-!409 = !DILocation(line: 72, column: 33, scope: !407)
-!410 = !DILocation(line: 74, column: 20, scope: !407)
-!411 = !DILocation(line: 74, column: 5, scope: !407)
-!412 = !DILocation(line: 75, column: 1, scope: !407)
-!413 = distinct !DISubprogram(name: "printHexUnsignedCharLine", scope: !4, file: !4, line: 77, type: !414, isLocal: false, isDefinition: true, scopeLine: 78, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!414 = !DISubroutineType(types: !415)
-!415 = !{null, !7}
-!416 = !DILocalVariable(name: "unsignedCharacter", arg: 1, scope: !413, file: !4, line: 77, type: !7)
-!417 = !DILocation(line: 77, column: 45, scope: !413)
-!418 = !DILocation(line: 79, column: 22, scope: !413)
-!419 = !DILocation(line: 79, column: 5, scope: !413)
-!420 = !DILocation(line: 80, column: 1, scope: !413)
-!421 = distinct !DISubprogram(name: "printDoubleLine", scope: !4, file: !4, line: 82, type: !422, isLocal: false, isDefinition: true, scopeLine: 83, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!422 = !DISubroutineType(types: !423)
-!423 = !{null, !44}
-!424 = !DILocalVariable(name: "doubleNumber", arg: 1, scope: !421, file: !4, line: 82, type: !44)
-!425 = !DILocation(line: 82, column: 29, scope: !421)
-!426 = !DILocation(line: 84, column: 20, scope: !421)
-!427 = !DILocation(line: 84, column: 5, scope: !421)
-!428 = !DILocation(line: 85, column: 1, scope: !421)
-!429 = distinct !DISubprogram(name: "printStructLine", scope: !4, file: !4, line: 87, type: !430, isLocal: false, isDefinition: true, scopeLine: 88, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!430 = !DISubroutineType(types: !431)
-!431 = !{null, !46}
-!432 = !{!54}
-!433 = !DILocalVariable(name: "structTwoIntsStruct", arg: 1, scope: !429, file: !4, line: 87, type: !46)
-!434 = !DILocation(line: 87, column: 45, scope: !429)
-!435 = !DILocation(line: 89, column: 26, scope: !429)
-!436 = !DILocation(line: 89, column: 47, scope: !429)
-!437 = !DILocation(line: 89, column: 55, scope: !429)
-!438 = !DILocation(line: 89, column: 76, scope: !429)
-!439 = !DILocation(line: 89, column: 5, scope: !429)
-!440 = !DILocation(line: 90, column: 1, scope: !429)
-!441 = distinct !DISubprogram(name: "printBytesLine", scope: !4, file: !4, line: 92, type: !442, isLocal: false, isDefinition: true, scopeLine: 93, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!442 = !DISubroutineType(types: !443)
-!443 = !{null, !57, !30}
-!444 = !{!9, null}
-!445 = !DILocalVariable(name: "bytes", arg: 1, scope: !441, file: !4, line: 92, type: !57)
-!446 = !DILocation(line: 92, column: 43, scope: !441)
-!447 = !DILocalVariable(name: "numBytes", arg: 2, scope: !441, file: !4, line: 92, type: !30)
-!448 = !DILocation(line: 92, column: 57, scope: !441)
-!449 = !DILocalVariable(name: "i", scope: !441, file: !4, line: 94, type: !30)
-!450 = !DILocation(line: 94, column: 12, scope: !441)
-!451 = !DILocation(line: 95, column: 12, scope: !452)
-!452 = distinct !DILexicalBlock(scope: !441, file: !4, line: 95, column: 5)
-!453 = !DILocation(line: 95, column: 10, scope: !452)
-!454 = !DILocation(line: 95, column: 17, scope: !455)
-!455 = !DILexicalBlockFile(scope: !456, file: !4, discriminator: 1)
-!456 = distinct !DILexicalBlock(scope: !452, file: !4, line: 95, column: 5)
-!457 = !DILocation(line: 95, column: 21, scope: !455)
-!458 = !DILocation(line: 95, column: 19, scope: !455)
-!459 = !DILocation(line: 95, column: 5, scope: !460)
-!460 = !DILexicalBlockFile(scope: !452, file: !4, discriminator: 1)
-!461 = !DILocation(line: 97, column: 24, scope: !462)
-!462 = distinct !DILexicalBlock(scope: !456, file: !4, line: 96, column: 5)
-!463 = !DILocation(line: 97, column: 30, scope: !462)
-!464 = !DILocation(line: 97, column: 9, scope: !462)
-!465 = !DILocation(line: 98, column: 5, scope: !462)
-!466 = !DILocation(line: 95, column: 31, scope: !467)
-!467 = !DILexicalBlockFile(scope: !456, file: !4, discriminator: 2)
-!468 = !DILocation(line: 95, column: 5, scope: !467)
-!469 = distinct !{!469, !470, !471}
-!470 = !DILocation(line: 95, column: 5, scope: !452)
-!471 = !DILocation(line: 98, column: 5, scope: !452)
-!472 = !DILocation(line: 99, column: 5, scope: !441)
-!473 = !DILocation(line: 100, column: 1, scope: !441)
-!474 = distinct !DISubprogram(name: "decodeHexChars", scope: !4, file: !4, line: 105, type: !475, isLocal: false, isDefinition: true, scopeLine: 106, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!475 = !DISubroutineType(types: !476)
-!476 = !{!30, !42, !30, !9}
-!477 = !{!9, null, !9}
-!478 = !DILocalVariable(name: "bytes", arg: 1, scope: !474, file: !4, line: 105, type: !42)
-!479 = !DILocation(line: 105, column: 39, scope: !474)
-!480 = !DILocalVariable(name: "numBytes", arg: 2, scope: !474, file: !4, line: 105, type: !30)
-!481 = !DILocation(line: 105, column: 53, scope: !474)
-!482 = !DILocalVariable(name: "hex", arg: 3, scope: !474, file: !4, line: 105, type: !9)
-!483 = !DILocation(line: 105, column: 76, scope: !474)
-!484 = !DILocalVariable(name: "numWritten", scope: !474, file: !4, line: 107, type: !30)
-!485 = !DILocation(line: 107, column: 12, scope: !474)
-!486 = !DILocation(line: 113, column: 5, scope: !474)
-!487 = !DILocation(line: 113, column: 12, scope: !488)
-!488 = !DILexicalBlockFile(scope: !474, file: !4, discriminator: 1)
-!489 = !DILocation(line: 113, column: 25, scope: !488)
-!490 = !DILocation(line: 113, column: 23, scope: !488)
-!491 = !DILocation(line: 113, column: 34, scope: !488)
-!492 = !DILocation(line: 113, column: 46, scope: !493)
-!493 = !DILexicalBlockFile(scope: !474, file: !4, discriminator: 2)
-!494 = !DILocation(line: 113, column: 54, scope: !493)
-!495 = !DILocation(line: 113, column: 52, scope: !493)
-!496 = !DILocation(line: 113, column: 37, scope: !493)
-!497 = !DILocation(line: 113, column: 67, scope: !493)
-!498 = !DILocation(line: 113, column: 79, scope: !499)
-!499 = !DILexicalBlockFile(scope: !474, file: !4, discriminator: 3)
-!500 = !DILocation(line: 113, column: 87, scope: !499)
-!501 = !DILocation(line: 113, column: 85, scope: !499)
-!502 = !DILocation(line: 113, column: 98, scope: !499)
-!503 = !DILocation(line: 113, column: 70, scope: !499)
-!504 = !DILocation(line: 113, column: 5, scope: !505)
-!505 = !DILexicalBlockFile(scope: !474, file: !4, discriminator: 4)
-!506 = !DILocalVariable(name: "byte", scope: !507, file: !4, line: 115, type: !12)
-!507 = distinct !DILexicalBlock(scope: !474, file: !4, line: 114, column: 5)
-!508 = !DILocation(line: 115, column: 13, scope: !507)
-!509 = !DILocation(line: 116, column: 17, scope: !507)
-!510 = !DILocation(line: 116, column: 25, scope: !507)
-!511 = !DILocation(line: 116, column: 23, scope: !507)
-!512 = !DILocation(line: 116, column: 9, scope: !507)
-!513 = !DILocation(line: 117, column: 45, scope: !507)
-!514 = !DILocation(line: 117, column: 9, scope: !507)
-!515 = !DILocation(line: 117, column: 15, scope: !507)
-!516 = !DILocation(line: 117, column: 27, scope: !507)
-!517 = !DILocation(line: 118, column: 9, scope: !507)
-!518 = !DILocation(line: 113, column: 5, scope: !519)
-!519 = !DILexicalBlockFile(scope: !474, file: !4, discriminator: 5)
-!520 = distinct !{!520, !486, !521}
-!521 = !DILocation(line: 119, column: 5, scope: !474)
-!522 = !DILocation(line: 121, column: 12, scope: !474)
-!523 = !DILocation(line: 121, column: 5, scope: !474)
-!524 = distinct !DISubprogram(name: "decodeHexWChars", scope: !4, file: !4, line: 127, type: !525, isLocal: false, isDefinition: true, scopeLine: 128, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!525 = !DISubroutineType(types: !526)
-!526 = !{!30, !42, !30, !14}
-!527 = !{!9, null, !14}
-!528 = !DILocalVariable(name: "bytes", arg: 1, scope: !524, file: !4, line: 127, type: !42)
-!529 = !DILocation(line: 127, column: 41, scope: !524)
-!530 = !DILocalVariable(name: "numBytes", arg: 2, scope: !524, file: !4, line: 127, type: !30)
-!531 = !DILocation(line: 127, column: 55, scope: !524)
-!532 = !DILocalVariable(name: "hex", arg: 3, scope: !524, file: !4, line: 127, type: !14)
-!533 = !DILocation(line: 127, column: 81, scope: !524)
-!534 = !DILocalVariable(name: "numWritten", scope: !524, file: !4, line: 129, type: !30)
-!535 = !DILocation(line: 129, column: 12, scope: !524)
-!536 = !DILocation(line: 135, column: 5, scope: !524)
-!537 = !DILocation(line: 135, column: 12, scope: !538)
-!538 = !DILexicalBlockFile(scope: !524, file: !4, discriminator: 1)
-!539 = !DILocation(line: 135, column: 25, scope: !538)
-!540 = !DILocation(line: 135, column: 23, scope: !538)
-!541 = !DILocation(line: 135, column: 34, scope: !538)
-!542 = !DILocation(line: 135, column: 47, scope: !543)
-!543 = !DILexicalBlockFile(scope: !524, file: !4, discriminator: 2)
-!544 = !DILocation(line: 135, column: 55, scope: !543)
-!545 = !DILocation(line: 135, column: 53, scope: !543)
-!546 = !DILocation(line: 135, column: 37, scope: !543)
-!547 = !DILocation(line: 135, column: 68, scope: !543)
-!548 = !DILocation(line: 135, column: 81, scope: !549)
-!549 = !DILexicalBlockFile(scope: !524, file: !4, discriminator: 3)
-!550 = !DILocation(line: 135, column: 89, scope: !549)
-!551 = !DILocation(line: 135, column: 87, scope: !549)
-!552 = !DILocation(line: 135, column: 100, scope: !549)
-!553 = !DILocation(line: 135, column: 71, scope: !549)
-!554 = !DILocation(line: 135, column: 5, scope: !555)
-!555 = !DILexicalBlockFile(scope: !524, file: !4, discriminator: 4)
-!556 = !DILocalVariable(name: "byte", scope: !557, file: !4, line: 137, type: !12)
-!557 = distinct !DILexicalBlock(scope: !524, file: !4, line: 136, column: 5)
-!558 = !DILocation(line: 137, column: 13, scope: !557)
-!559 = !DILocation(line: 138, column: 18, scope: !557)
-!560 = !DILocation(line: 138, column: 26, scope: !557)
-!561 = !DILocation(line: 138, column: 24, scope: !557)
-!562 = !DILocation(line: 138, column: 9, scope: !557)
-!563 = !DILocation(line: 139, column: 45, scope: !557)
-!564 = !DILocation(line: 139, column: 9, scope: !557)
-!565 = !DILocation(line: 139, column: 15, scope: !557)
-!566 = !DILocation(line: 139, column: 27, scope: !557)
-!567 = !DILocation(line: 140, column: 9, scope: !557)
-!568 = !DILocation(line: 135, column: 5, scope: !569)
-!569 = !DILexicalBlockFile(scope: !524, file: !4, discriminator: 5)
-!570 = distinct !{!570, !536, !571}
-!571 = !DILocation(line: 141, column: 5, scope: !524)
-!572 = !DILocation(line: 143, column: 12, scope: !524)
-!573 = !DILocation(line: 143, column: 5, scope: !524)
-!574 = distinct !DISubprogram(name: "globalReturnsTrue", scope: !4, file: !4, line: 148, type: !182, isLocal: false, isDefinition: true, scopeLine: 149, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!575 = !DILocation(line: 150, column: 5, scope: !574)
-!576 = distinct !DISubprogram(name: "globalReturnsFalse", scope: !4, file: !4, line: 153, type: !182, isLocal: false, isDefinition: true, scopeLine: 154, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!577 = !DILocation(line: 155, column: 5, scope: !576)
-!578 = distinct !DISubprogram(name: "globalReturnsTrueOrFalse", scope: !4, file: !4, line: 158, type: !182, isLocal: false, isDefinition: true, scopeLine: 159, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!579 = !DILocation(line: 160, column: 13, scope: !578)
-!580 = !DILocation(line: 160, column: 20, scope: !578)
-!581 = !DILocation(line: 160, column: 5, scope: !578)
-!582 = distinct !DISubprogram(name: "good1", linkageName: "_Z5good1v", scope: !4, file: !4, line: 179, type: !101, isLocal: false, isDefinition: true, scopeLine: 179, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!583 = !DILocation(line: 179, column: 16, scope: !582)
-!584 = distinct !DISubprogram(name: "good2", linkageName: "_Z5good2v", scope: !4, file: !4, line: 180, type: !101, isLocal: false, isDefinition: true, scopeLine: 180, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!585 = !DILocation(line: 180, column: 16, scope: !584)
-!586 = distinct !DISubprogram(name: "good3", linkageName: "_Z5good3v", scope: !4, file: !4, line: 181, type: !101, isLocal: false, isDefinition: true, scopeLine: 181, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!587 = !DILocation(line: 181, column: 16, scope: !586)
-!588 = distinct !DISubprogram(name: "good4", linkageName: "_Z5good4v", scope: !4, file: !4, line: 182, type: !101, isLocal: false, isDefinition: true, scopeLine: 182, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!589 = !DILocation(line: 182, column: 16, scope: !588)
-!590 = distinct !DISubprogram(name: "good5", linkageName: "_Z5good5v", scope: !4, file: !4, line: 183, type: !101, isLocal: false, isDefinition: true, scopeLine: 183, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!591 = !DILocation(line: 183, column: 16, scope: !590)
-!592 = distinct !DISubprogram(name: "good6", linkageName: "_Z5good6v", scope: !4, file: !4, line: 184, type: !101, isLocal: false, isDefinition: true, scopeLine: 184, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!593 = !DILocation(line: 184, column: 16, scope: !592)
-!594 = distinct !DISubprogram(name: "good7", linkageName: "_Z5good7v", scope: !4, file: !4, line: 185, type: !101, isLocal: false, isDefinition: true, scopeLine: 185, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!595 = !DILocation(line: 185, column: 16, scope: !594)
-!596 = distinct !DISubprogram(name: "good8", linkageName: "_Z5good8v", scope: !4, file: !4, line: 186, type: !101, isLocal: false, isDefinition: true, scopeLine: 186, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!597 = !DILocation(line: 186, column: 16, scope: !596)
-!598 = distinct !DISubprogram(name: "good9", linkageName: "_Z5good9v", scope: !4, file: !4, line: 187, type: !101, isLocal: false, isDefinition: true, scopeLine: 187, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!599 = !DILocation(line: 187, column: 16, scope: !598)
-!600 = distinct !DISubprogram(name: "bad1", linkageName: "_Z4bad1v", scope: !4, file: !4, line: 190, type: !101, isLocal: false, isDefinition: true, scopeLine: 190, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!601 = !DILocation(line: 190, column: 15, scope: !600)
-!602 = distinct !DISubprogram(name: "bad2", linkageName: "_Z4bad2v", scope: !4, file: !4, line: 191, type: !101, isLocal: false, isDefinition: true, scopeLine: 191, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!603 = !DILocation(line: 191, column: 15, scope: !602)
-!604 = distinct !DISubprogram(name: "bad3", linkageName: "_Z4bad3v", scope: !4, file: !4, line: 192, type: !101, isLocal: false, isDefinition: true, scopeLine: 192, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!605 = !DILocation(line: 192, column: 15, scope: !604)
-!606 = distinct !DISubprogram(name: "bad4", linkageName: "_Z4bad4v", scope: !4, file: !4, line: 193, type: !101, isLocal: false, isDefinition: true, scopeLine: 193, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!607 = !DILocation(line: 193, column: 15, scope: !606)
-!608 = distinct !DISubprogram(name: "bad5", linkageName: "_Z4bad5v", scope: !4, file: !4, line: 194, type: !101, isLocal: false, isDefinition: true, scopeLine: 194, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!609 = !DILocation(line: 194, column: 15, scope: !608)
-!610 = distinct !DISubprogram(name: "bad6", linkageName: "_Z4bad6v", scope: !4, file: !4, line: 195, type: !101, isLocal: false, isDefinition: true, scopeLine: 195, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!611 = !DILocation(line: 195, column: 15, scope: !610)
-!612 = distinct !DISubprogram(name: "bad7", linkageName: "_Z4bad7v", scope: !4, file: !4, line: 196, type: !101, isLocal: false, isDefinition: true, scopeLine: 196, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!613 = !DILocation(line: 196, column: 15, scope: !612)
-!614 = distinct !DISubprogram(name: "bad8", linkageName: "_Z4bad8v", scope: !4, file: !4, line: 197, type: !101, isLocal: false, isDefinition: true, scopeLine: 197, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!615 = !DILocation(line: 197, column: 15, scope: !614)
-!616 = distinct !DISubprogram(name: "bad9", linkageName: "_Z4bad9v", scope: !4, file: !4, line: 198, type: !101, isLocal: false, isDefinition: true, scopeLine: 198, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
-!617 = !DILocation(line: 198, column: 15, scope: !616)
+!311 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#printLine#0#0#20873128#20873128#1#"}
+!312 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"22244504", !"526828848944628746", !"11854005139656696112", !"Alloca", !"printLine", !"0", !"0", !"20486720", !"21931240", !"2"}
+!313 = !DILocalVariable(name: "line", arg: 1, scope: !307, file: !4, line: 11, type: !9)
+!314 = !DIExpression()
+!315 = !DILocation(line: 11, column: 30, scope: !307)
+!316 = !DILocation(line: 13, column: 8, scope: !317)
+!317 = distinct !DILexicalBlock(scope: !307, file: !4, line: 13, column: 8)
+!318 = !DILocation(line: 13, column: 13, scope: !317)
+!319 = !DILocation(line: 13, column: 8, scope: !307)
+!320 = !DILocation(line: 15, column: 24, scope: !321)
+!321 = distinct !DILexicalBlock(scope: !317, file: !4, line: 14, column: 5)
+!322 = !DILocation(line: 15, column: 9, scope: !321)
+!323 = !DILocation(line: 16, column: 5, scope: !321)
+!324 = !DILocation(line: 17, column: 1, scope: !307)
+!325 = !{!"../../../testcasesupport/io.c", !"17", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printLine", !"17", !"1", !"21950000", !"20762592", !"1"}
+!326 = distinct !DISubprogram(name: "printWLine", scope: !4, file: !4, line: 19, type: !327, isLocal: false, isDefinition: true, scopeLine: 20, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!327 = !DISubroutineType(types: !328)
+!328 = !{null, !14}
+!329 = !{!14}
+!330 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int32_t#22212536#4773841653289120874#2358335501509695672#Argument#printWLine#0#0#20921064#20921064#4#"}
+!331 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int32_t *", !"22211544", !"7416981463368709997", !"3188408757981354047", !"Alloca", !"printWLine", !"0", !"0", !"21946656", !"21953112", !"3"}
+!332 = !DILocalVariable(name: "line", arg: 1, scope: !326, file: !4, line: 19, type: !14)
+!333 = !DILocation(line: 19, column: 34, scope: !326)
+!334 = !DILocation(line: 21, column: 8, scope: !335)
+!335 = distinct !DILexicalBlock(scope: !326, file: !4, line: 21, column: 8)
+!336 = !DILocation(line: 21, column: 13, scope: !335)
+!337 = !DILocation(line: 21, column: 8, scope: !326)
+!338 = !DILocation(line: 23, column: 27, scope: !339)
+!339 = distinct !DILexicalBlock(scope: !335, file: !4, line: 22, column: 5)
+!340 = !DILocation(line: 23, column: 9, scope: !339)
+!341 = !DILocation(line: 24, column: 5, scope: !339)
+!342 = !DILocation(line: 25, column: 1, scope: !326)
+!343 = !{!"../../../testcasesupport/io.c", !"25", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printWLine", !"25", !"1", !"21952672", !"21947072", !"1"}
+!344 = distinct !DISubprogram(name: "printIntLine", scope: !4, file: !4, line: 27, type: !140, isLocal: false, isDefinition: true, scopeLine: 28, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!345 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int32_t#22212536#4773841653289120874#2358335501509695672#Argument#printIntLine#0#0#20416520#20416520#4#"}
+!346 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"22212536", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"printIntLine", !"0", !"0", !"21958640", !"21961944", !"4"}
+!347 = !DILocalVariable(name: "intNumber", arg: 1, scope: !344, file: !4, line: 27, type: !12)
+!348 = !DILocation(line: 27, column: 24, scope: !344)
+!349 = !DILocation(line: 29, column: 20, scope: !344)
+!350 = !DILocation(line: 29, column: 5, scope: !344)
+!351 = !DILocation(line: 30, column: 1, scope: !344)
+!352 = !{!"../../../testcasesupport/io.c", !"30", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printIntLine", !"30", !"1", !"21958640", !"21964304", !"1"}
+!353 = distinct !DISubprogram(name: "printShortLine", scope: !4, file: !4, line: 32, type: !354, isLocal: false, isDefinition: true, scopeLine: 33, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!354 = !DISubroutineType(types: !355)
+!355 = !{null, !19}
+!356 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int16_t#22229368#16313328457460192247#472910413246718651#Argument#printShortLine#0#0#21957976#21957976#5#"}
+!357 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int16_t", !"22229368", !"16313328457460192247", !"472910413246718651", !"Alloca", !"printShortLine", !"0", !"0", !"21975872", !"21964856", !"5"}
+!358 = !DILocalVariable(name: "shortNumber", arg: 1, scope: !353, file: !4, line: 32, type: !19)
+!359 = !DILocation(line: 32, column: 28, scope: !353)
+!360 = !DILocation(line: 34, column: 21, scope: !353)
+!361 = !DILocation(line: 34, column: 5, scope: !353)
+!362 = !DILocation(line: 35, column: 1, scope: !353)
+!363 = !{!"../../../testcasesupport/io.c", !"35", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printShortLine", !"35", !"1", !"21975872", !"21975952", !"1"}
+!364 = distinct !DISubprogram(name: "printFloatLine", scope: !4, file: !4, line: 37, type: !365, isLocal: false, isDefinition: true, scopeLine: 38, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!365 = !DISubroutineType(types: !366)
+!366 = !{null, !21}
+!367 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#printFloatLine#0#0#0#0#1#"}
+!368 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"float32_t", !"22222008", !"7770049084750086701", !"5951595302546637608", !"Alloca", !"printFloatLine", !"0", !"0", !"21977408", !"21976600", !"6"}
+!369 = !DILocalVariable(name: "floatNumber", arg: 1, scope: !364, file: !4, line: 37, type: !21)
+!370 = !DILocation(line: 37, column: 28, scope: !364)
+!371 = !DILocation(line: 39, column: 20, scope: !364)
+!372 = !DILocation(line: 39, column: 5, scope: !364)
+!373 = !DILocation(line: 40, column: 1, scope: !364)
+!374 = !{!"../../../testcasesupport/io.c", !"40", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printFloatLine", !"40", !"1", !"21977408", !"20917232", !"1"}
+!375 = distinct !DISubprogram(name: "printLongLine", scope: !4, file: !4, line: 42, type: !376, isLocal: false, isDefinition: true, scopeLine: 43, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!376 = !DISubroutineType(types: !377)
+!377 = !{null, !23}
+!378 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int64_t#22222952#18106563096879026311#17544793107196451347#Argument#printLongLine#0#0#20924520#20924520#7#"}
+!379 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"printLongLine", !"0", !"0", !"21983008", !"21977512", !"7"}
+!380 = !DILocalVariable(name: "longNumber", arg: 1, scope: !375, file: !4, line: 42, type: !23)
+!381 = !DILocation(line: 42, column: 26, scope: !375)
+!382 = !DILocation(line: 44, column: 21, scope: !375)
+!383 = !DILocation(line: 44, column: 5, scope: !375)
+!384 = !DILocation(line: 45, column: 1, scope: !375)
+!385 = !{!"../../../testcasesupport/io.c", !"45", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printLongLine", !"45", !"1", !"21983008", !"21986080", !"1"}
+!386 = distinct !DISubprogram(name: "printLongLongLine", scope: !4, file: !4, line: 47, type: !387, isLocal: false, isDefinition: true, scopeLine: 48, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!387 = !DISubroutineType(types: !388)
+!388 = !{null, !25}
+!389 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int64_t#22222952#18106563096879026311#17544793107196451347#Argument#printLongLongLine#0#0#20924520#20924520#7#"}
+!390 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"printLongLongLine", !"0", !"0", !"21987568", !"21987896", !"7"}
+!391 = !DILocalVariable(name: "longLongIntNumber", arg: 1, scope: !386, file: !4, line: 47, type: !25)
+!392 = !DILocation(line: 47, column: 33, scope: !386)
+!393 = !DILocation(line: 49, column: 29, scope: !386)
+!394 = !DILocation(line: 49, column: 5, scope: !386)
+!395 = !DILocation(line: 50, column: 1, scope: !386)
+!396 = !{!"../../../testcasesupport/io.c", !"50", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printLongLongLine", !"50", !"1", !"21987568", !"21988944", !"1"}
+!397 = distinct !DISubprogram(name: "printSizeTLine", scope: !4, file: !4, line: 52, type: !398, isLocal: false, isDefinition: true, scopeLine: 53, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!398 = !DISubroutineType(types: !399)
+!399 = !{null, !30}
+!400 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int64_t#22222952#18106563096879026311#17544793107196451347#Argument#printSizeTLine#0#0#20924520#20924520#7#"}
+!401 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"printSizeTLine", !"0", !"0", !"21990816", !"21987480", !"7"}
+!402 = !DILocalVariable(name: "sizeTNumber", arg: 1, scope: !397, file: !4, line: 52, type: !30)
+!403 = !DILocation(line: 52, column: 29, scope: !397)
+!404 = !DILocation(line: 54, column: 21, scope: !397)
+!405 = !DILocation(line: 54, column: 5, scope: !397)
+!406 = !DILocation(line: 55, column: 1, scope: !397)
+!407 = !{!"../../../testcasesupport/io.c", !"55", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printSizeTLine", !"55", !"1", !"21990816", !"21991968", !"1"}
+!408 = distinct !DISubprogram(name: "printHexCharLine", scope: !4, file: !4, line: 57, type: !409, isLocal: false, isDefinition: true, scopeLine: 58, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!409 = !DISubroutineType(types: !410)
+!410 = !{null, !11}
+!411 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#printHexCharLine#0#0#20873016#20873016#1#"}
+!412 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Alloca", !"printHexCharLine", !"0", !"0", !"21994128", !"21990728", !"1"}
+!413 = !DILocalVariable(name: "charHex", arg: 1, scope: !408, file: !4, line: 57, type: !11)
+!414 = !DILocation(line: 57, column: 29, scope: !408)
+!415 = !DILocation(line: 59, column: 22, scope: !408)
+!416 = !DILocation(line: 59, column: 5, scope: !408)
+!417 = !DILocation(line: 60, column: 1, scope: !408)
+!418 = !{!"../../../testcasesupport/io.c", !"60", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printHexCharLine", !"60", !"1", !"21994128", !"21996160", !"1"}
+!419 = distinct !DISubprogram(name: "printWcharLine", scope: !4, file: !4, line: 62, type: !420, isLocal: false, isDefinition: true, scopeLine: 63, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!420 = !DISubroutineType(types: !421)
+!421 = !{null, !16}
+!422 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int32_t#22212536#4773841653289120874#2358335501509695672#Argument#printWcharLine#0#0#20416520#20416520#4#"}
+!423 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"22212536", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"printWcharLine", !"0", !"0", !"21997264", !"21993768", !"4"}
+!424 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"22212536", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"printWcharLine", !"0", !"0", !"21997264", !"21991304", !"4"}
+!425 = !DILocalVariable(name: "wideChar", arg: 1, scope: !419, file: !4, line: 62, type: !16)
+!426 = !DILocation(line: 62, column: 29, scope: !419)
+!427 = !DILocalVariable(name: "s", scope: !419, file: !4, line: 66, type: !37)
+!428 = !DILocation(line: 66, column: 13, scope: !419)
+!429 = !DILocation(line: 67, column: 16, scope: !419)
+!430 = !DILocation(line: 67, column: 9, scope: !419)
+!431 = !DILocation(line: 67, column: 14, scope: !419)
+!432 = !DILocation(line: 68, column: 9, scope: !419)
+!433 = !DILocation(line: 68, column: 14, scope: !419)
+!434 = !DILocation(line: 69, column: 21, scope: !419)
+!435 = !DILocation(line: 69, column: 5, scope: !419)
+!436 = !DILocation(line: 70, column: 1, scope: !419)
+!437 = !{!"../../../testcasesupport/io.c", !"70", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printWcharLine", !"70", !"1", !"21997264", !"21997840", !"1"}
+!438 = distinct !DISubprogram(name: "printUnsignedLine", scope: !4, file: !4, line: 72, type: !190, isLocal: false, isDefinition: true, scopeLine: 73, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!439 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int32_t#22212536#4773841653289120874#2358335501509695672#Argument#printUnsignedLine#0#0#20416520#20416520#4#"}
+!440 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"22212536", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"printUnsignedLine", !"0", !"0", !"22000432", !"21997176", !"4"}
+!441 = !DILocalVariable(name: "unsignedNumber", arg: 1, scope: !438, file: !4, line: 72, type: !41)
+!442 = !DILocation(line: 72, column: 33, scope: !438)
+!443 = !DILocation(line: 74, column: 20, scope: !438)
+!444 = !DILocation(line: 74, column: 5, scope: !438)
+!445 = !DILocation(line: 75, column: 1, scope: !438)
+!446 = !{!"../../../testcasesupport/io.c", !"75", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printUnsignedLine", !"75", !"1", !"22000432", !"22000848", !"1"}
+!447 = distinct !DISubprogram(name: "printHexUnsignedCharLine", scope: !4, file: !4, line: 77, type: !448, isLocal: false, isDefinition: true, scopeLine: 78, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!448 = !DISubroutineType(types: !449)
+!449 = !{null, !7}
+!450 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#printHexUnsignedCharLine#0#0#20873016#20873016#1#"}
+!451 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Alloca", !"printHexUnsignedCharLine", !"0", !"0", !"22012016", !"22000536", !"1"}
+!452 = !DILocalVariable(name: "unsignedCharacter", arg: 1, scope: !447, file: !4, line: 77, type: !7)
+!453 = !DILocation(line: 77, column: 45, scope: !447)
+!454 = !DILocation(line: 79, column: 22, scope: !447)
+!455 = !DILocation(line: 79, column: 5, scope: !447)
+!456 = !DILocation(line: 80, column: 1, scope: !447)
+!457 = !{!"../../../testcasesupport/io.c", !"80", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printHexUnsignedCharLine", !"80", !"1", !"22012016", !"22012096", !"1"}
+!458 = distinct !DISubprogram(name: "printDoubleLine", scope: !4, file: !4, line: 82, type: !459, isLocal: false, isDefinition: true, scopeLine: 83, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!459 = !DISubroutineType(types: !460)
+!460 = !{null, !44}
+!461 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#printDoubleLine#0#0#0#0#1#"}
+!462 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"float64_t", !"22335416", !"6002521038087705808", !"416169672026697735", !"Alloca", !"printDoubleLine", !"0", !"0", !"22017328", !"20922664", !"8"}
+!463 = !DILocalVariable(name: "doubleNumber", arg: 1, scope: !458, file: !4, line: 82, type: !44)
+!464 = !DILocation(line: 82, column: 29, scope: !458)
+!465 = !DILocation(line: 84, column: 20, scope: !458)
+!466 = !DILocation(line: 84, column: 5, scope: !458)
+!467 = !DILocation(line: 85, column: 1, scope: !458)
+!468 = !{!"../../../testcasesupport/io.c", !"85", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printDoubleLine", !"85", !"1", !"22017328", !"22021264", !"1"}
+!469 = distinct !DISubprogram(name: "printStructLine", scope: !4, file: !4, line: 87, type: !470, isLocal: false, isDefinition: true, scopeLine: 88, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!470 = !DISubroutineType(types: !471)
+!471 = !{null, !46}
+!472 = !{!54}
+!473 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#struct _twoIntsStruct#22378808#2894656886459454236#11651708882817689051#Argument#printStructLine#0#0#22044584#22044584#10#"}
+!474 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"struct _twoIntsStruct *", !"22242920", !"7654064406972839823", !"10990136693480799251", !"Alloca", !"printStructLine", !"0", !"0", !"22022624", !"22022728", !"9"}
+!475 = !DILocalVariable(name: "structTwoIntsStruct", arg: 1, scope: !469, file: !4, line: 87, type: !46)
+!476 = !DILocation(line: 87, column: 45, scope: !469)
+!477 = !DILocation(line: 89, column: 26, scope: !469)
+!478 = !DILocation(line: 89, column: 47, scope: !469)
+!479 = !DILocation(line: 89, column: 55, scope: !469)
+!480 = !DILocation(line: 89, column: 76, scope: !469)
+!481 = !DILocation(line: 89, column: 5, scope: !469)
+!482 = !DILocation(line: 90, column: 1, scope: !469)
+!483 = !{!"../../../testcasesupport/io.c", !"90", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printStructLine", !"90", !"1", !"22022624", !"22023040", !"1"}
+!484 = distinct !DISubprogram(name: "printBytesLine", scope: !4, file: !4, line: 92, type: !485, isLocal: false, isDefinition: true, scopeLine: 93, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!485 = !DISubroutineType(types: !486)
+!486 = !{null, !57, !30}
+!487 = !{!9, null}
+!488 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#printBytesLine#0#0#20873128#20873128#1#", !"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int64_t#22222952#18106563096879026311#17544793107196451347#Argument#printBytesLine#0#0#20924520#20924520#7#"}
+!489 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"22244504", !"526828848944628746", !"11854005139656696112", !"Alloca", !"printBytesLine", !"0", !"0", !"21941936", !"21942152", !"2"}
+!490 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"printBytesLine", !"0", !"0", !"21941936", !"22043384", !"7"}
+!491 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"printBytesLine", !"0", !"0", !"21941936", !"21941848", !"7"}
+!492 = !DILocalVariable(name: "bytes", arg: 1, scope: !484, file: !4, line: 92, type: !57)
+!493 = !DILocation(line: 92, column: 43, scope: !484)
+!494 = !DILocalVariable(name: "numBytes", arg: 2, scope: !484, file: !4, line: 92, type: !30)
+!495 = !DILocation(line: 92, column: 57, scope: !484)
+!496 = !DILocalVariable(name: "i", scope: !484, file: !4, line: 94, type: !30)
+!497 = !DILocation(line: 94, column: 12, scope: !484)
+!498 = !DILocation(line: 95, column: 12, scope: !499)
+!499 = distinct !DILexicalBlock(scope: !484, file: !4, line: 95, column: 5)
+!500 = !DILocation(line: 95, column: 10, scope: !499)
+!501 = !DILocation(line: 95, column: 17, scope: !502)
+!502 = !DILexicalBlockFile(scope: !503, file: !4, discriminator: 1)
+!503 = distinct !DILexicalBlock(scope: !499, file: !4, line: 95, column: 5)
+!504 = !DILocation(line: 95, column: 21, scope: !502)
+!505 = !DILocation(line: 95, column: 19, scope: !502)
+!506 = !DILocation(line: 95, column: 5, scope: !507)
+!507 = !DILexicalBlockFile(scope: !499, file: !4, discriminator: 1)
+!508 = !DILocation(line: 97, column: 24, scope: !509)
+!509 = distinct !DILexicalBlock(scope: !503, file: !4, line: 96, column: 5)
+!510 = !DILocation(line: 97, column: 30, scope: !509)
+!511 = !DILocation(line: 97, column: 9, scope: !509)
+!512 = !DILocation(line: 98, column: 5, scope: !509)
+!513 = !DILocation(line: 95, column: 31, scope: !514)
+!514 = !DILexicalBlockFile(scope: !503, file: !4, discriminator: 2)
+!515 = !DILocation(line: 95, column: 5, scope: !514)
+!516 = distinct !{!516, !517, !518}
+!517 = !DILocation(line: 95, column: 5, scope: !499)
+!518 = !DILocation(line: 98, column: 5, scope: !499)
+!519 = !DILocation(line: 99, column: 5, scope: !484)
+!520 = !DILocation(line: 100, column: 1, scope: !484)
+!521 = !{!"../../../testcasesupport/io.c", !"100", !"1", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"printBytesLine", !"100", !"1", !"22053776", !"21943184", !"1"}
+!522 = distinct !DISubprogram(name: "decodeHexChars", scope: !4, file: !4, line: 105, type: !523, isLocal: false, isDefinition: true, scopeLine: 106, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!523 = !DISubroutineType(types: !524)
+!524 = !{!30, !42, !30, !9}
+!525 = !{!9, null, !9}
+!526 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#decodeHexChars#0#0#20873128#20873128#1#", !"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int64_t#22222952#18106563096879026311#17544793107196451347#Argument#decodeHexChars#0#0#20924520#20924520#7#", !"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#decodeHexChars#0#0#20873128#20873128#1#"}
+!527 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"22244504", !"526828848944628746", !"11854005139656696112", !"Alloca", !"decodeHexChars", !"0", !"0", !"21944032", !"21944360", !"2"}
+!528 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"decodeHexChars", !"0", !"0", !"21944032", !"22058136", !"7"}
+!529 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"22244504", !"526828848944628746", !"11854005139656696112", !"Alloca", !"decodeHexChars", !"0", !"0", !"21944032", !"22057720", !"2"}
+!530 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"decodeHexChars", !"0", !"0", !"21944032", !"21943944", !"7"}
+!531 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"22212536", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"decodeHexChars", !"0", !"0", !"21944032", !"22068696", !"4"}
+!532 = !DILocalVariable(name: "bytes", arg: 1, scope: !522, file: !4, line: 105, type: !42)
+!533 = !DILocation(line: 105, column: 39, scope: !522)
+!534 = !DILocalVariable(name: "numBytes", arg: 2, scope: !522, file: !4, line: 105, type: !30)
+!535 = !DILocation(line: 105, column: 53, scope: !522)
+!536 = !DILocalVariable(name: "hex", arg: 3, scope: !522, file: !4, line: 105, type: !9)
+!537 = !DILocation(line: 105, column: 76, scope: !522)
+!538 = !DILocalVariable(name: "numWritten", scope: !522, file: !4, line: 107, type: !30)
+!539 = !DILocation(line: 107, column: 12, scope: !522)
+!540 = !DILocation(line: 113, column: 5, scope: !522)
+!541 = !DILocation(line: 113, column: 12, scope: !542)
+!542 = !DILexicalBlockFile(scope: !522, file: !4, discriminator: 1)
+!543 = !DILocation(line: 113, column: 25, scope: !542)
+!544 = !DILocation(line: 113, column: 23, scope: !542)
+!545 = !DILocation(line: 113, column: 34, scope: !542)
+!546 = !DILocation(line: 113, column: 46, scope: !547)
+!547 = !DILexicalBlockFile(scope: !522, file: !4, discriminator: 2)
+!548 = !DILocation(line: 113, column: 54, scope: !547)
+!549 = !DILocation(line: 113, column: 52, scope: !547)
+!550 = !DILocation(line: 113, column: 37, scope: !547)
+!551 = !DILocation(line: 113, column: 67, scope: !547)
+!552 = !DILocation(line: 113, column: 79, scope: !553)
+!553 = !DILexicalBlockFile(scope: !522, file: !4, discriminator: 3)
+!554 = !DILocation(line: 113, column: 87, scope: !553)
+!555 = !DILocation(line: 113, column: 85, scope: !553)
+!556 = !DILocation(line: 113, column: 98, scope: !553)
+!557 = !DILocation(line: 113, column: 70, scope: !553)
+!558 = !DILocation(line: 113, column: 5, scope: !559)
+!559 = !DILexicalBlockFile(scope: !522, file: !4, discriminator: 4)
+!560 = !DILocalVariable(name: "byte", scope: !561, file: !4, line: 115, type: !12)
+!561 = distinct !DILexicalBlock(scope: !522, file: !4, line: 114, column: 5)
+!562 = !DILocation(line: 115, column: 13, scope: !561)
+!563 = !DILocation(line: 116, column: 17, scope: !561)
+!564 = !DILocation(line: 116, column: 25, scope: !561)
+!565 = !DILocation(line: 116, column: 23, scope: !561)
+!566 = !DILocation(line: 116, column: 9, scope: !561)
+!567 = !DILocation(line: 117, column: 45, scope: !561)
+!568 = !DILocation(line: 117, column: 9, scope: !561)
+!569 = !DILocation(line: 117, column: 15, scope: !561)
+!570 = !DILocation(line: 117, column: 27, scope: !561)
+!571 = !DILocation(line: 118, column: 9, scope: !561)
+!572 = !DILocation(line: 113, column: 5, scope: !573)
+!573 = !DILexicalBlockFile(scope: !522, file: !4, discriminator: 5)
+!574 = distinct !{!574, !540, !575}
+!575 = !DILocation(line: 119, column: 5, scope: !522)
+!576 = !DILocation(line: 121, column: 12, scope: !522)
+!577 = !DILocation(line: 121, column: 5, scope: !522)
+!578 = !{!"../../../testcasesupport/io.c", !"121", !"5", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"decodeHexChars", !"121", !"5", !"22067040", !"22080248", !"1"}
+!579 = distinct !DISubprogram(name: "decodeHexWChars", scope: !4, file: !4, line: 127, type: !580, isLocal: false, isDefinition: true, scopeLine: 128, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!580 = !DISubroutineType(types: !581)
+!581 = !{!30, !42, !30, !14}
+!582 = !{!9, null, !14}
+!583 = !{!"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int8_t#22203320#18058093552324746023#94541214677173297#Argument#decodeHexWChars#0#0#20873128#20873128#1#", !"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int64_t#22222952#18106563096879026311#17544793107196451347#Argument#decodeHexWChars#0#0#20924520#20924520#7#", !"../../../testcasesupport/io.c#18446744073709551615#18446744073709551615#int32_t#22212536#4773841653289120874#2358335501509695672#Argument#decodeHexWChars#0#0#20921064#20921064#4#"}
+!584 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"22244504", !"526828848944628746", !"11854005139656696112", !"Alloca", !"decodeHexWChars", !"0", !"0", !"22076624", !"22069144", !"2"}
+!585 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"decodeHexWChars", !"0", !"0", !"22076624", !"22076152", !"7"}
+!586 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int32_t *", !"22211544", !"7416981463368709997", !"3188408757981354047", !"Alloca", !"decodeHexWChars", !"0", !"0", !"22076624", !"22075992", !"3"}
+!587 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"22222952", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"decodeHexWChars", !"0", !"0", !"22076624", !"22059192", !"7"}
+!588 = !{!"../../../testcasesupport/io.c", !"18446744073709551615", !"18446744073709551615", !"int32_t", !"22212536", !"4773841653289120874", !"2358335501509695672", !"Alloca", !"decodeHexWChars", !"0", !"0", !"22076624", !"22099576", !"4"}
+!589 = !DILocalVariable(name: "bytes", arg: 1, scope: !579, file: !4, line: 127, type: !42)
+!590 = !DILocation(line: 127, column: 41, scope: !579)
+!591 = !DILocalVariable(name: "numBytes", arg: 2, scope: !579, file: !4, line: 127, type: !30)
+!592 = !DILocation(line: 127, column: 55, scope: !579)
+!593 = !DILocalVariable(name: "hex", arg: 3, scope: !579, file: !4, line: 127, type: !14)
+!594 = !DILocation(line: 127, column: 81, scope: !579)
+!595 = !DILocalVariable(name: "numWritten", scope: !579, file: !4, line: 129, type: !30)
+!596 = !DILocation(line: 129, column: 12, scope: !579)
+!597 = !DILocation(line: 135, column: 5, scope: !579)
+!598 = !DILocation(line: 135, column: 12, scope: !599)
+!599 = !DILexicalBlockFile(scope: !579, file: !4, discriminator: 1)
+!600 = !DILocation(line: 135, column: 25, scope: !599)
+!601 = !DILocation(line: 135, column: 23, scope: !599)
+!602 = !DILocation(line: 135, column: 34, scope: !599)
+!603 = !DILocation(line: 135, column: 47, scope: !604)
+!604 = !DILexicalBlockFile(scope: !579, file: !4, discriminator: 2)
+!605 = !DILocation(line: 135, column: 55, scope: !604)
+!606 = !DILocation(line: 135, column: 53, scope: !604)
+!607 = !DILocation(line: 135, column: 37, scope: !604)
+!608 = !DILocation(line: 135, column: 68, scope: !604)
+!609 = !DILocation(line: 135, column: 81, scope: !610)
+!610 = !DILexicalBlockFile(scope: !579, file: !4, discriminator: 3)
+!611 = !DILocation(line: 135, column: 89, scope: !610)
+!612 = !DILocation(line: 135, column: 87, scope: !610)
+!613 = !DILocation(line: 135, column: 100, scope: !610)
+!614 = !DILocation(line: 135, column: 71, scope: !610)
+!615 = !DILocation(line: 135, column: 5, scope: !616)
+!616 = !DILexicalBlockFile(scope: !579, file: !4, discriminator: 4)
+!617 = !DILocalVariable(name: "byte", scope: !618, file: !4, line: 137, type: !12)
+!618 = distinct !DILexicalBlock(scope: !579, file: !4, line: 136, column: 5)
+!619 = !DILocation(line: 137, column: 13, scope: !618)
+!620 = !DILocation(line: 138, column: 18, scope: !618)
+!621 = !DILocation(line: 138, column: 26, scope: !618)
+!622 = !DILocation(line: 138, column: 24, scope: !618)
+!623 = !DILocation(line: 138, column: 9, scope: !618)
+!624 = !DILocation(line: 139, column: 45, scope: !618)
+!625 = !DILocation(line: 139, column: 9, scope: !618)
+!626 = !DILocation(line: 139, column: 15, scope: !618)
+!627 = !DILocation(line: 139, column: 27, scope: !618)
+!628 = !DILocation(line: 140, column: 9, scope: !618)
+!629 = !DILocation(line: 135, column: 5, scope: !630)
+!630 = !DILexicalBlockFile(scope: !579, file: !4, discriminator: 5)
+!631 = distinct !{!631, !597, !632}
+!632 = !DILocation(line: 141, column: 5, scope: !579)
+!633 = !DILocation(line: 143, column: 12, scope: !579)
+!634 = !DILocation(line: 143, column: 5, scope: !579)
+!635 = !{!"../../../testcasesupport/io.c", !"143", !"5", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"decodeHexWChars", !"143", !"5", !"22098032", !"22052184", !"1"}
+!636 = distinct !DISubprogram(name: "globalReturnsTrue", scope: !4, file: !4, line: 148, type: !182, isLocal: false, isDefinition: true, scopeLine: 149, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!637 = !DILocation(line: 150, column: 5, scope: !636)
+!638 = !{!"../../../testcasesupport/io.c", !"150", !"5", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"globalReturnsTrue", !"150", !"5", !"22053088", !"22090728", !"1"}
+!639 = distinct !DISubprogram(name: "globalReturnsFalse", scope: !4, file: !4, line: 153, type: !182, isLocal: false, isDefinition: true, scopeLine: 154, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!640 = !DILocation(line: 155, column: 5, scope: !639)
+!641 = !{!"../../../testcasesupport/io.c", !"155", !"5", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"globalReturnsFalse", !"155", !"5", !"22090944", !"22118872", !"1"}
+!642 = distinct !DISubprogram(name: "globalReturnsTrueOrFalse", scope: !4, file: !4, line: 158, type: !182, isLocal: false, isDefinition: true, scopeLine: 159, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!643 = !DILocation(line: 160, column: 13, scope: !642)
+!644 = !DILocation(line: 160, column: 20, scope: !642)
+!645 = !DILocation(line: 160, column: 5, scope: !642)
+!646 = !{!"../../../testcasesupport/io.c", !"160", !"5", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"globalReturnsTrueOrFalse", !"160", !"5", !"22119088", !"22121096", !"1"}
+!647 = distinct !DISubprogram(name: "good1", linkageName: "_Z5good1v", scope: !4, file: !4, line: 179, type: !101, isLocal: false, isDefinition: true, scopeLine: 179, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!648 = !DILocation(line: 179, column: 16, scope: !647)
+!649 = !{!"../../../testcasesupport/io.c", !"179", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good1v", !"179", !"16", !"22128272", !"22128896", !"1"}
+!650 = distinct !DISubprogram(name: "good2", linkageName: "_Z5good2v", scope: !4, file: !4, line: 180, type: !101, isLocal: false, isDefinition: true, scopeLine: 180, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!651 = !DILocation(line: 180, column: 16, scope: !650)
+!652 = !{!"../../../testcasesupport/io.c", !"180", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good2v", !"180", !"16", !"22129104", !"22129184", !"1"}
+!653 = distinct !DISubprogram(name: "good3", linkageName: "_Z5good3v", scope: !4, file: !4, line: 181, type: !101, isLocal: false, isDefinition: true, scopeLine: 181, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!654 = !DILocation(line: 181, column: 16, scope: !653)
+!655 = !{!"../../../testcasesupport/io.c", !"181", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good3v", !"181", !"16", !"22130544", !"22131216", !"1"}
+!656 = distinct !DISubprogram(name: "good4", linkageName: "_Z5good4v", scope: !4, file: !4, line: 182, type: !101, isLocal: false, isDefinition: true, scopeLine: 182, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!657 = !DILocation(line: 182, column: 16, scope: !656)
+!658 = !{!"../../../testcasesupport/io.c", !"182", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good4v", !"182", !"16", !"22131376", !"22131456", !"1"}
+!659 = distinct !DISubprogram(name: "good5", linkageName: "_Z5good5v", scope: !4, file: !4, line: 183, type: !101, isLocal: false, isDefinition: true, scopeLine: 183, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!660 = !DILocation(line: 183, column: 16, scope: !659)
+!661 = !{!"../../../testcasesupport/io.c", !"183", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good5v", !"183", !"16", !"22132240", !"20959840", !"1"}
+!662 = distinct !DISubprogram(name: "good6", linkageName: "_Z5good6v", scope: !4, file: !4, line: 184, type: !101, isLocal: false, isDefinition: true, scopeLine: 184, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!663 = !DILocation(line: 184, column: 16, scope: !662)
+!664 = !{!"../../../testcasesupport/io.c", !"184", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good6v", !"184", !"16", !"20960000", !"20960080", !"1"}
+!665 = distinct !DISubprogram(name: "good7", linkageName: "_Z5good7v", scope: !4, file: !4, line: 185, type: !101, isLocal: false, isDefinition: true, scopeLine: 185, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!666 = !DILocation(line: 185, column: 16, scope: !665)
+!667 = !{!"../../../testcasesupport/io.c", !"185", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good7v", !"185", !"16", !"20960800", !"20960880", !"1"}
+!668 = distinct !DISubprogram(name: "good8", linkageName: "_Z5good8v", scope: !4, file: !4, line: 186, type: !101, isLocal: false, isDefinition: true, scopeLine: 186, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!669 = !DILocation(line: 186, column: 16, scope: !668)
+!670 = !{!"../../../testcasesupport/io.c", !"186", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good8v", !"186", !"16", !"21736528", !"21935904", !"1"}
+!671 = distinct !DISubprogram(name: "good9", linkageName: "_Z5good9v", scope: !4, file: !4, line: 187, type: !101, isLocal: false, isDefinition: true, scopeLine: 187, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!672 = !DILocation(line: 187, column: 16, scope: !671)
+!673 = !{!"../../../testcasesupport/io.c", !"187", !"16", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z5good9v", !"187", !"16", !"21936064", !"21936144", !"1"}
+!674 = distinct !DISubprogram(name: "bad1", linkageName: "_Z4bad1v", scope: !4, file: !4, line: 190, type: !101, isLocal: false, isDefinition: true, scopeLine: 190, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!675 = !DILocation(line: 190, column: 15, scope: !674)
+!676 = !{!"../../../testcasesupport/io.c", !"190", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad1v", !"190", !"15", !"21936896", !"21936976", !"1"}
+!677 = distinct !DISubprogram(name: "bad2", linkageName: "_Z4bad2v", scope: !4, file: !4, line: 191, type: !101, isLocal: false, isDefinition: true, scopeLine: 191, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!678 = !DILocation(line: 191, column: 15, scope: !677)
+!679 = !{!"../../../testcasesupport/io.c", !"191", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad2v", !"191", !"15", !"21937728", !"21937808", !"1"}
+!680 = distinct !DISubprogram(name: "bad3", linkageName: "_Z4bad3v", scope: !4, file: !4, line: 192, type: !101, isLocal: false, isDefinition: true, scopeLine: 192, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!681 = !DILocation(line: 192, column: 15, scope: !680)
+!682 = !{!"../../../testcasesupport/io.c", !"192", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad3v", !"192", !"15", !"21938864", !"22147200", !"1"}
+!683 = distinct !DISubprogram(name: "bad4", linkageName: "_Z4bad4v", scope: !4, file: !4, line: 193, type: !101, isLocal: false, isDefinition: true, scopeLine: 193, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!684 = !DILocation(line: 193, column: 15, scope: !683)
+!685 = !{!"../../../testcasesupport/io.c", !"193", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad4v", !"193", !"15", !"22147440", !"22147520", !"1"}
+!686 = distinct !DISubprogram(name: "bad5", linkageName: "_Z4bad5v", scope: !4, file: !4, line: 194, type: !101, isLocal: false, isDefinition: true, scopeLine: 194, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!687 = !DILocation(line: 194, column: 15, scope: !686)
+!688 = !{!"../../../testcasesupport/io.c", !"194", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad5v", !"194", !"15", !"22148304", !"22148384", !"1"}
+!689 = distinct !DISubprogram(name: "bad6", linkageName: "_Z4bad6v", scope: !4, file: !4, line: 195, type: !101, isLocal: false, isDefinition: true, scopeLine: 195, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!690 = !DILocation(line: 195, column: 15, scope: !689)
+!691 = !{!"../../../testcasesupport/io.c", !"195", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad6v", !"195", !"15", !"22149168", !"22149248", !"1"}
+!692 = distinct !DISubprogram(name: "bad7", linkageName: "_Z4bad7v", scope: !4, file: !4, line: 196, type: !101, isLocal: false, isDefinition: true, scopeLine: 196, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!693 = !DILocation(line: 196, column: 15, scope: !692)
+!694 = !{!"../../../testcasesupport/io.c", !"196", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad7v", !"196", !"15", !"22150032", !"22150112", !"1"}
+!695 = distinct !DISubprogram(name: "bad8", linkageName: "_Z4bad8v", scope: !4, file: !4, line: 197, type: !101, isLocal: false, isDefinition: true, scopeLine: 197, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!696 = !DILocation(line: 197, column: 15, scope: !695)
+!697 = !{!"../../../testcasesupport/io.c", !"197", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad8v", !"197", !"15", !"22159040", !"22159120", !"1"}
+!698 = distinct !DISubprogram(name: "bad9", linkageName: "_Z4bad9v", scope: !4, file: !4, line: 198, type: !101, isLocal: false, isDefinition: true, scopeLine: 198, flags: DIFlagPrototyped, isOptimized: false, unit: !3, variables: !5)
+!699 = !DILocation(line: 198, column: 15, scope: !698)
+!700 = !{!"../../../testcasesupport/io.c", !"198", !"15", !"int8_t", !"22203320", !"18058093552324746023", !"94541214677173297", !"Return", !"_Z4bad9v", !"198", !"15", !"22159872", !"22159952", !"1"}
