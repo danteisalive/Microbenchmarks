@@ -1,546 +1,546 @@
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32038752][Inst ID: 31939352]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 9703264][Inst ID: 9603864]
   %2 = alloca i8*, align 8, !effectiveSan !25
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32075728][Inst ID: 32075728]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 9740240][Inst ID: 9740240]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Return][Location: 17,1][Inlined Location: 17,1][BB ID: 32896240][Inst ID: 32309024]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Return][Location: 17,1][Inlined Location: 17,1][BB ID: 10560752][Inst ID: 9973536]
   ret void, !dbg !119
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32891040][Inst ID: 32890840]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10555552][Inst ID: 10555352]
   %2 = alloca i32*, align 8, !effectiveSan !29
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32906304][Inst ID: 32906304]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10570816][Inst ID: 10570816]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Return][Location: 25,1][Inlined Location: 25,1][BB ID: 32898720][Inst ID: 32891456]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Return][Location: 25,1][Inlined Location: 25,1][BB ID: 10563232][Inst ID: 10555968]
   ret void, !dbg !119
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32906832][Inst ID: 32912248]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10571344][Inst ID: 10576760]
   %2 = alloca i32, align 4, !effectiveSan !36
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32913856][Inst ID: 32913856]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10578368][Inst ID: 10578368]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Return][Location: 30,1][Inlined Location: 30,1][BB ID: 32906832][Inst ID: 32914512]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Return][Location: 30,1][Inlined Location: 30,1][BB ID: 10571344][Inst ID: 10579024]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32918656][Inst ID: 30985912]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10583168][Inst ID: 8650424]
   %2 = alloca i16, align 2, !effectiveSan !37
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 31002592][Inst ID: 31002592]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 8667104][Inst ID: 8667104]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Return][Location: 35,1][Inlined Location: 35,1][BB ID: 32918656][Inst ID: 32918992]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Return][Location: 35,1][Inlined Location: 35,1][BB ID: 10583168][Inst ID: 10583504]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32920848][Inst ID: 32920136]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10585360][Inst ID: 10584648]
   %2 = alloca float, align 4, !effectiveSan !39
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 30986160][Inst ID: 30986160]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 8650672][Inst ID: 8650672]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Return][Location: 40,1][Inlined Location: 40,1][BB ID: 32920848][Inst ID: 32927280]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Return][Location: 40,1][Inlined Location: 40,1][BB ID: 10585360][Inst ID: 10591792]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32928832][Inst ID: 32920952]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10593344][Inst ID: 10585464]
   %2 = alloca i64, align 8, !effectiveSan !41
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32931760][Inst ID: 32931760]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10596272][Inst ID: 10596272]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Return][Location: 45,1][Inlined Location: 45,1][BB ID: 32928832][Inst ID: 32932256]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Return][Location: 45,1][Inlined Location: 45,1][BB ID: 10593344][Inst ID: 10596768]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32933808][Inst ID: 32934136]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10598320][Inst ID: 10598648]
   %2 = alloca i64, align 8, !effectiveSan !43
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32935520][Inst ID: 32935520]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10600032][Inst ID: 10600032]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Return][Location: 50,1][Inlined Location: 50,1][BB ID: 32933808][Inst ID: 32934224]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Return][Location: 50,1][Inlined Location: 50,1][BB ID: 10598320][Inst ID: 10598736]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32938416][Inst ID: 32933448]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10602928][Inst ID: 10597960]
   %2 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32928656][Inst ID: 32928656]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10593168][Inst ID: 10593168]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Return][Location: 55,1][Inlined Location: 55,1][BB ID: 32938416][Inst ID: 32005344]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Return][Location: 55,1][Inlined Location: 55,1][BB ID: 10602928][Inst ID: 9669856]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32942032][Inst ID: 32938328]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10606544][Inst ID: 10602840]
   %2 = alloca i8, align 1, !effectiveSan !51
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32940240][Inst ID: 32940240]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10604752][Inst ID: 10604752]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Return][Location: 60,1][Inlined Location: 60,1][BB ID: 32942032][Inst ID: 32943888]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Return][Location: 60,1][Inlined Location: 60,1][BB ID: 10606544][Inst ID: 10608400]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32945376][Inst ID: 32944536]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10609888][Inst ID: 10609048]
   %2 = alloca i32, align 4, !effectiveSan !53
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32945376][Inst ID: 32945592]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10609888][Inst ID: 10610104]
   %3 = alloca [2 x i32], align 4, !effectiveSan !54
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32937968][Inst ID: 32937968]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10602480][Inst ID: 10602480]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Return][Location: 70,1][Inlined Location: 70,1][BB ID: 32945376][Inst ID: 32951424]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Return][Location: 70,1][Inlined Location: 70,1][BB ID: 10609888][Inst ID: 10615936]
   ret void, !dbg !121
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32953168][Inst ID: 32945176]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10617680][Inst ID: 10609688]
   %2 = alloca i32, align 4, !effectiveSan !58
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32956480][Inst ID: 32956480]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10620992][Inst ID: 10620992]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Return][Location: 75,1][Inlined Location: 75,1][BB ID: 32953168][Inst ID: 32957632]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Return][Location: 75,1][Inlined Location: 75,1][BB ID: 10617680][Inst ID: 10622144]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32962560][Inst ID: 32953080]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10627072][Inst ID: 10617592]
   %2 = alloca i8, align 1, !effectiveSan !60
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32962816][Inst ID: 32962816]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10627328][Inst ID: 10627328]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Return][Location: 80,1][Inlined Location: 80,1][BB ID: 32962560][Inst ID: 32962640]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Return][Location: 80,1][Inlined Location: 80,1][BB ID: 10627072][Inst ID: 10627152]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32964016][Inst ID: 32959320]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10628528][Inst ID: 10623832]
   %2 = alloca double, align 8, !effectiveSan !61
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32966720][Inst ID: 32966720]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10631232][Inst ID: 10631232]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Return][Location: 85,1][Inlined Location: 85,1][BB ID: 32964016][Inst ID: 32967216]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Return][Location: 85,1][Inlined Location: 85,1][BB ID: 10628528][Inst ID: 10631728]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32970624][Inst ID: 32970728]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10635136][Inst ID: 10635240]
   %2 = alloca %struct._twoIntsStruct*, align 8, !effectiveSan !63
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32971824][Inst ID: 32971824]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10636336][Inst ID: 10636336]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Return][Location: 90,1][Inlined Location: 90,1][BB ID: 32970624][Inst ID: 32971040]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Return][Location: 90,1][Inlined Location: 90,1][BB ID: 10635136][Inst ID: 10635552]
   ret void, !dbg !116
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32886480][Inst ID: 32886696]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10550992][Inst ID: 10551208]
   %3 = alloca i8*, align 8, !effectiveSan !74
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32886480][Inst ID: 32978008]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10550992][Inst ID: 10642520]
   %4 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32886480][Inst ID: 32886392]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10550992][Inst ID: 10550904]
   %5 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32887872][Inst ID: 32887872]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10552384][Inst ID: 10552384]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32887936][Inst ID: 32887936]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10552448][Inst ID: 10552448]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Return][Location: 100,1][Inlined Location: 100,1][BB ID: 32992768][Inst ID: 32977408]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Return][Location: 100,1][Inlined Location: 100,1][BB ID: 10657280][Inst ID: 10641920]
   ret void, !dbg !139
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32997088][Inst ID: 32888904]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10661600][Inst ID: 10553416]
   %4 = alloca i8*, align 8, !effectiveSan !77
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32997088][Inst ID: 32888296]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10661600][Inst ID: 10552808]
   %5 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32997088][Inst ID: 32997000]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10661600][Inst ID: 10661512]
   %6 = alloca i8*, align 8, !effectiveSan !25
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32997088][Inst ID: 32888568]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10661600][Inst ID: 10553080]
   %7 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 32997088][Inst ID: 33011704]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10661600][Inst ID: 10676216]
   %8 = alloca i32, align 4, !effectiveSan !36
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33004416][Inst ID: 33004416]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10668928][Inst ID: 10668928]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33004480][Inst ID: 33004480]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10668992][Inst ID: 10668992]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33004544][Inst ID: 33004544]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10669056][Inst ID: 10669056]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Return][Location: 121,5][Inlined Location: 121,5][BB ID: 33009584][Inst ID: 33029112]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Return][Location: 121,5][Inlined Location: 121,5][BB ID: 10674096][Inst ID: 10693624]
   ret i64 %60, !dbg !153
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33025584][Inst ID: 33024504]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10690096][Inst ID: 10689016]
   %4 = alloca i8*, align 8, !effectiveSan !77
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33025584][Inst ID: 33025112]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10690096][Inst ID: 10689624]
   %5 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33025584][Inst ID: 33024952]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10690096][Inst ID: 10689464]
   %6 = alloca i32*, align 8, !effectiveSan !29
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33025584][Inst ID: 32997640]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10690096][Inst ID: 10662152]
   %7 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33025584][Inst ID: 32965784]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10690096][Inst ID: 10630296]
   %8 = alloca i32, align 4, !effectiveSan !36
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33034928][Inst ID: 33034928]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10699440][Inst ID: 10699440]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33034992][Inst ID: 33034992]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10699504][Inst ID: 10699504]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 33035056][Inst ID: 33035056]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10699568][Inst ID: 10699568]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Return][Location: 143,5][Inlined Location: 143,5][BB ID: 32980800][Inst ID: 33061768]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Return][Location: 143,5][Inlined Location: 143,5][BB ID: 10645312][Inst ID: 10726280]
   ret i64 %46, !dbg !160
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrue][Allocator Name: Return][Location: 150,5][Inlined Location: 150,5][BB ID: 32965648][Inst ID: 33062600]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrue][Allocator Name: Return][Location: 150,5][Inlined Location: 150,5][BB ID: 10630160][Inst ID: 10727112]
   ret i32 1, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsFalse][Allocator Name: Return][Location: 155,5][Inlined Location: 155,5][BB ID: 33062816][Inst ID: 33064104]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsFalse][Allocator Name: Return][Location: 155,5][Inlined Location: 155,5][BB ID: 10727328][Inst ID: 10728616]
   ret i32 0, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrueOrFalse][Allocator Name: Return][Location: 160,5][Inlined Location: 160,5][BB ID: 33064320][Inst ID: 33065752]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrueOrFalse][Allocator Name: Return][Location: 160,5][Inlined Location: 160,5][BB ID: 10728832][Inst ID: 10730264]
   ret i32 %2, !dbg !107
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good1][Allocator Name: Return][Location: 179,16][Inlined Location: 179,16][BB ID: 33074208][Inst ID: 33074832]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good1][Allocator Name: Return][Location: 179,16][Inlined Location: 179,16][BB ID: 10738720][Inst ID: 10739344]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good2][Allocator Name: Return][Location: 180,16][Inlined Location: 180,16][BB ID: 33075136][Inst ID: 33075216]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good2][Allocator Name: Return][Location: 180,16][Inlined Location: 180,16][BB ID: 10739648][Inst ID: 10739728]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good3][Allocator Name: Return][Location: 181,16][Inlined Location: 181,16][BB ID: 33075952][Inst ID: 33076032]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good3][Allocator Name: Return][Location: 181,16][Inlined Location: 181,16][BB ID: 10740464][Inst ID: 10740544]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good4][Allocator Name: Return][Location: 182,16][Inlined Location: 182,16][BB ID: 33081088][Inst ID: 33081296]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good4][Allocator Name: Return][Location: 182,16][Inlined Location: 182,16][BB ID: 10745600][Inst ID: 10745808]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good5][Allocator Name: Return][Location: 183,16][Inlined Location: 183,16][BB ID: 33081728][Inst ID: 33081808]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good5][Allocator Name: Return][Location: 183,16][Inlined Location: 183,16][BB ID: 10746240][Inst ID: 10746320]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good6][Allocator Name: Return][Location: 184,16][Inlined Location: 184,16][BB ID: 33082544][Inst ID: 33082624]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good6][Allocator Name: Return][Location: 184,16][Inlined Location: 184,16][BB ID: 10747056][Inst ID: 10747136]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good7][Allocator Name: Return][Location: 185,16][Inlined Location: 185,16][BB ID: 33083360][Inst ID: 33083440]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good7][Allocator Name: Return][Location: 185,16][Inlined Location: 185,16][BB ID: 10747872][Inst ID: 10747952]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good8][Allocator Name: Return][Location: 186,16][Inlined Location: 186,16][BB ID: 32878784][Inst ID: 32878864]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good8][Allocator Name: Return][Location: 186,16][Inlined Location: 186,16][BB ID: 10543296][Inst ID: 10543376]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good9][Allocator Name: Return][Location: 187,16][Inlined Location: 187,16][BB ID: 32879568][Inst ID: 32879952]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good9][Allocator Name: Return][Location: 187,16][Inlined Location: 187,16][BB ID: 10544080][Inst ID: 10544464]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad1][Allocator Name: Return][Location: 190,15][Inlined Location: 190,15][BB ID: 32880384][Inst ID: 32880464]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad1][Allocator Name: Return][Location: 190,15][Inlined Location: 190,15][BB ID: 10544896][Inst ID: 10544976]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad2][Allocator Name: Return][Location: 191,15][Inlined Location: 191,15][BB ID: 32881232][Inst ID: 32881312]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad2][Allocator Name: Return][Location: 191,15][Inlined Location: 191,15][BB ID: 10545744][Inst ID: 10545824]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad3][Allocator Name: Return][Location: 192,15][Inlined Location: 192,15][BB ID: 33094000][Inst ID: 33094080]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad3][Allocator Name: Return][Location: 192,15][Inlined Location: 192,15][BB ID: 10758512][Inst ID: 10758592]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad4][Allocator Name: Return][Location: 193,15][Inlined Location: 193,15][BB ID: 32975408][Inst ID: 32975488]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad4][Allocator Name: Return][Location: 193,15][Inlined Location: 193,15][BB ID: 10639920][Inst ID: 10640000]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad5][Allocator Name: Return][Location: 194,15][Inlined Location: 194,15][BB ID: 32976208][Inst ID: 32976288]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad5][Allocator Name: Return][Location: 194,15][Inlined Location: 194,15][BB ID: 10640720][Inst ID: 10640800]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad6][Allocator Name: Return][Location: 195,15][Inlined Location: 195,15][BB ID: 32182656][Inst ID: 32182736]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad6][Allocator Name: Return][Location: 195,15][Inlined Location: 195,15][BB ID: 9847168][Inst ID: 9847248]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad7][Allocator Name: Return][Location: 196,15][Inlined Location: 196,15][BB ID: 32183472][Inst ID: 32183552]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad7][Allocator Name: Return][Location: 196,15][Inlined Location: 196,15][BB ID: 9847984][Inst ID: 9848064]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad8][Allocator Name: Return][Location: 197,15][Inlined Location: 197,15][BB ID: 32184288][Inst ID: 32184368]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad8][Allocator Name: Return][Location: 197,15][Inlined Location: 197,15][BB ID: 9848800][Inst ID: 9848880]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad9][Allocator Name: Return][Location: 198,15][Inlined Location: 198,15][BB ID: 32185104][Inst ID: 32185184]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad9][Allocator Name: Return][Location: 198,15][Inlined Location: 198,15][BB ID: 9849616][Inst ID: 9849696]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: CWE843_Type_Confusion__char_07_good][Allocator Name: Return][Location: 93,1][Inlined Location: 93,1][BB ID: 38752560][Inst ID: 39157056]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: CWE843_Type_Confusion__char_07_good][Allocator Name: Return][Location: 93,1][Inlined Location: 93,1][BB ID: 35311920][Inst ID: 35716416]
   ret void, !dbg !25
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 39894992][Inst ID: 39895096]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 36454352][Inst ID: 36454456]
   %3 = alloca i32, align 4, !effectiveSan !8
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 39894992][Inst ID: 39883208]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 36454352][Inst ID: 36442568]
   %4 = alloca i32, align 4, !effectiveSan !8
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 39894992][Inst ID: 39892616]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 36454352][Inst ID: 36451976]
   %5 = alloca i8**, align 8, !effectiveSan !10
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 39894192][Inst ID: 39894192]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 36453552][Inst ID: 36453552]
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 39892272][Inst ID: 39892272]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 36451632][Inst ID: 36451632]
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Return][Location: 119,5][Inlined Location: 119,5][BB ID: 39894992][Inst ID: 39927128]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Return][Location: 119,5][Inlined Location: 119,5][BB ID: 36454352][Inst ID: 36486488]
   ret i32 0, !dbg !40
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B1][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 38473520][Inst ID: 39920776]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B1][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 35032880][Inst ID: 36480136]
   %1 = alloca i8*, align 8, !effectiveSan !15
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B1][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 38473520][Inst ID: 39911640]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B1][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 35032880][Inst ID: 36471000]
   %2 = alloca i32, align 4, !effectiveSan !8
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B1][Allocator Name: Return][Location: 69,1][Inlined Location: 69,1][BB ID: 39930592][Inst ID: 39918272]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B1][Allocator Name: Return][Location: 69,1][Inlined Location: 69,1][BB ID: 36489952][Inst ID: 36477632]
   ret void, !dbg !46
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B2][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 39928608][Inst ID: 39936568]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B2][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 36487968][Inst ID: 36495928]
   %1 = alloca i8*, align 8, !effectiveSan !15
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B2][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 39928608][Inst ID: 39936296]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B2][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 36487968][Inst ID: 36495656]
   %2 = alloca i32, align 4, !effectiveSan !8
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B2][Allocator Name: Return][Location: 87,1][Inlined Location: 87,1][BB ID: 39940160][Inst ID: 39938240]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: goodG2B2][Allocator Name: Return][Location: 87,1][Inlined Location: 87,1][BB ID: 36499520][Inst ID: 36497600]
   ret void, !dbg !44
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36188000][Inst ID: 36088600]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 11358048][Inst ID: 11258648]
   %2 = alloca i8*, align 8, !effectiveSan !25
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 36224976][Inst ID: 36224976]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 11395024][Inst ID: 11395024]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Return][Location: 17,1][Inlined Location: 17,1][BB ID: 37045488][Inst ID: 36458272]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLine][Allocator Name: Return][Location: 17,1][Inlined Location: 17,1][BB ID: 12215536][Inst ID: 11628320]
   ret void, !dbg !119
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37040288][Inst ID: 37040088]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12210336][Inst ID: 12210136]
   %2 = alloca i32*, align 8, !effectiveSan !29
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37055552][Inst ID: 37055552]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12225600][Inst ID: 12225600]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Return][Location: 25,1][Inlined Location: 25,1][BB ID: 37047968][Inst ID: 37040704]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Return][Location: 25,1][Inlined Location: 25,1][BB ID: 12218016][Inst ID: 12210752]
   ret void, !dbg !119
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37056080][Inst ID: 37061496]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12226128][Inst ID: 12231544]
   %2 = alloca i32, align 4, !effectiveSan !36
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37063104][Inst ID: 37063104]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12233152][Inst ID: 12233152]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Return][Location: 30,1][Inlined Location: 30,1][BB ID: 37056080][Inst ID: 37063760]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Return][Location: 30,1][Inlined Location: 30,1][BB ID: 12226128][Inst ID: 12233808]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37067904][Inst ID: 35135160]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12237952][Inst ID: 10305208]
   %2 = alloca i16, align 2, !effectiveSan !37
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 35151840][Inst ID: 35151840]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10321888][Inst ID: 10321888]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Return][Location: 35,1][Inlined Location: 35,1][BB ID: 37067904][Inst ID: 37068240]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Return][Location: 35,1][Inlined Location: 35,1][BB ID: 12237952][Inst ID: 12238288]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37070096][Inst ID: 37069384]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12240144][Inst ID: 12239432]
   %2 = alloca float, align 4, !effectiveSan !39
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 35135408][Inst ID: 35135408]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 10305456][Inst ID: 10305456]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Return][Location: 40,1][Inlined Location: 40,1][BB ID: 37070096][Inst ID: 37076528]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Return][Location: 40,1][Inlined Location: 40,1][BB ID: 12240144][Inst ID: 12246576]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37078080][Inst ID: 37070200]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12248128][Inst ID: 12240248]
   %2 = alloca i64, align 8, !effectiveSan !41
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37081008][Inst ID: 37081008]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12251056][Inst ID: 12251056]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Return][Location: 45,1][Inlined Location: 45,1][BB ID: 37078080][Inst ID: 37081504]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Return][Location: 45,1][Inlined Location: 45,1][BB ID: 12248128][Inst ID: 12251552]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37083056][Inst ID: 37083384]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12253104][Inst ID: 12253432]
   %2 = alloca i64, align 8, !effectiveSan !43
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37084768][Inst ID: 37084768]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12254816][Inst ID: 12254816]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Return][Location: 50,1][Inlined Location: 50,1][BB ID: 37083056][Inst ID: 37083472]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Return][Location: 50,1][Inlined Location: 50,1][BB ID: 12253104][Inst ID: 12253520]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37087664][Inst ID: 37082696]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12257712][Inst ID: 12252744]
   %2 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37077904][Inst ID: 37077904]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12247952][Inst ID: 12247952]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Return][Location: 55,1][Inlined Location: 55,1][BB ID: 37087664][Inst ID: 36154592]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Return][Location: 55,1][Inlined Location: 55,1][BB ID: 12257712][Inst ID: 11324640]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37091280][Inst ID: 37087576]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12261328][Inst ID: 12257624]
   %2 = alloca i8, align 1, !effectiveSan !51
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37089488][Inst ID: 37089488]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12259536][Inst ID: 12259536]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Return][Location: 60,1][Inlined Location: 60,1][BB ID: 37091280][Inst ID: 37093136]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Return][Location: 60,1][Inlined Location: 60,1][BB ID: 12261328][Inst ID: 12263184]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37094624][Inst ID: 37093784]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12264672][Inst ID: 12263832]
   %2 = alloca i32, align 4, !effectiveSan !53
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37094624][Inst ID: 37094840]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12264672][Inst ID: 12264888]
   %3 = alloca [2 x i32], align 4, !effectiveSan !54
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37087216][Inst ID: 37087216]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12257264][Inst ID: 12257264]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Return][Location: 70,1][Inlined Location: 70,1][BB ID: 37094624][Inst ID: 37100672]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Return][Location: 70,1][Inlined Location: 70,1][BB ID: 12264672][Inst ID: 12270720]
   ret void, !dbg !121
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37102416][Inst ID: 37094424]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12272464][Inst ID: 12264472]
   %2 = alloca i32, align 4, !effectiveSan !58
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37105728][Inst ID: 37105728]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12275776][Inst ID: 12275776]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Return][Location: 75,1][Inlined Location: 75,1][BB ID: 37102416][Inst ID: 37106880]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Return][Location: 75,1][Inlined Location: 75,1][BB ID: 12272464][Inst ID: 12276928]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37111808][Inst ID: 37102328]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12281856][Inst ID: 12272376]
   %2 = alloca i8, align 1, !effectiveSan !60
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37112064][Inst ID: 37112064]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12282112][Inst ID: 12282112]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Return][Location: 80,1][Inlined Location: 80,1][BB ID: 37111808][Inst ID: 37111888]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Return][Location: 80,1][Inlined Location: 80,1][BB ID: 12281856][Inst ID: 12281936]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37113264][Inst ID: 37108568]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12283312][Inst ID: 12278616]
   %2 = alloca double, align 8, !effectiveSan !61
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37115968][Inst ID: 37115968]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12286016][Inst ID: 12286016]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Return][Location: 85,1][Inlined Location: 85,1][BB ID: 37113264][Inst ID: 37116464]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Return][Location: 85,1][Inlined Location: 85,1][BB ID: 12283312][Inst ID: 12286512]
   ret void, !dbg !113
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37119872][Inst ID: 37119976]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12289920][Inst ID: 12290024]
   %2 = alloca %struct._twoIntsStruct*, align 8, !effectiveSan !63
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37121072][Inst ID: 37121072]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12291120][Inst ID: 12291120]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Return][Location: 90,1][Inlined Location: 90,1][BB ID: 37119872][Inst ID: 37120288]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Return][Location: 90,1][Inlined Location: 90,1][BB ID: 12289920][Inst ID: 12290336]
   ret void, !dbg !116
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37035728][Inst ID: 37035944]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12205776][Inst ID: 12205992]
   %3 = alloca i8*, align 8, !effectiveSan !74
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37035728][Inst ID: 37127256]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12205776][Inst ID: 12297304]
   %4 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37035728][Inst ID: 37035640]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12205776][Inst ID: 12205688]
   %5 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37037120][Inst ID: 37037120]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12207168][Inst ID: 12207168]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37037184][Inst ID: 37037184]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12207232][Inst ID: 12207232]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Return][Location: 100,1][Inlined Location: 100,1][BB ID: 37142016][Inst ID: 37126656]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Return][Location: 100,1][Inlined Location: 100,1][BB ID: 12312064][Inst ID: 12296704]
   ret void, !dbg !139
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37146336][Inst ID: 37038152]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12316384][Inst ID: 12208200]
   %4 = alloca i8*, align 8, !effectiveSan !77
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37146336][Inst ID: 37037544]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12316384][Inst ID: 12207592]
   %5 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37146336][Inst ID: 37146248]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12316384][Inst ID: 12316296]
   %6 = alloca i8*, align 8, !effectiveSan !25
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37146336][Inst ID: 37037816]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12316384][Inst ID: 12207864]
   %7 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37146336][Inst ID: 37160952]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12316384][Inst ID: 12331000]
   %8 = alloca i32, align 4, !effectiveSan !36
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37153664][Inst ID: 37153664]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12323712][Inst ID: 12323712]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37153728][Inst ID: 37153728]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12323776][Inst ID: 12323776]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37153792][Inst ID: 37153792]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12323840][Inst ID: 12323840]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Return][Location: 121,5][Inlined Location: 121,5][BB ID: 37158832][Inst ID: 37178360]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Return][Location: 121,5][Inlined Location: 121,5][BB ID: 12328880][Inst ID: 12348408]
   ret i64 %60, !dbg !153
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37174832][Inst ID: 37173752]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12344880][Inst ID: 12343800]
   %4 = alloca i8*, align 8, !effectiveSan !77
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37174832][Inst ID: 37174360]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12344880][Inst ID: 12344408]
   %5 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37174832][Inst ID: 37174200]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12344880][Inst ID: 12344248]
   %6 = alloca i32*, align 8, !effectiveSan !29
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37174832][Inst ID: 37146888]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12344880][Inst ID: 12316936]
   %7 = alloca i64, align 8, !effectiveSan !48
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37174832][Inst ID: 37115032]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12344880][Inst ID: 12285080]
   %8 = alloca i32, align 4, !effectiveSan !36
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37184176][Inst ID: 37184176]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12354224][Inst ID: 12354224]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37184240][Inst ID: 37184240]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12354288][Inst ID: 12354288]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 37184304][Inst ID: 37184304]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 12354352][Inst ID: 12354352]
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Return][Location: 143,5][Inlined Location: 143,5][BB ID: 37130048][Inst ID: 37211016]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Return][Location: 143,5][Inlined Location: 143,5][BB ID: 12300096][Inst ID: 12381064]
   ret i64 %46, !dbg !160
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrue][Allocator Name: Return][Location: 150,5][Inlined Location: 150,5][BB ID: 37114896][Inst ID: 37211848]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrue][Allocator Name: Return][Location: 150,5][Inlined Location: 150,5][BB ID: 12284944][Inst ID: 12381896]
   ret i32 1, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsFalse][Allocator Name: Return][Location: 155,5][Inlined Location: 155,5][BB ID: 37212064][Inst ID: 37213352]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsFalse][Allocator Name: Return][Location: 155,5][Inlined Location: 155,5][BB ID: 12382112][Inst ID: 12383400]
   ret i32 0, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrueOrFalse][Allocator Name: Return][Location: 160,5][Inlined Location: 160,5][BB ID: 37213568][Inst ID: 37215000]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: globalReturnsTrueOrFalse][Allocator Name: Return][Location: 160,5][Inlined Location: 160,5][BB ID: 12383616][Inst ID: 12385048]
   ret i32 %2, !dbg !107
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good1][Allocator Name: Return][Location: 179,16][Inlined Location: 179,16][BB ID: 37223456][Inst ID: 37224080]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good1][Allocator Name: Return][Location: 179,16][Inlined Location: 179,16][BB ID: 12393504][Inst ID: 12394128]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good2][Allocator Name: Return][Location: 180,16][Inlined Location: 180,16][BB ID: 37224384][Inst ID: 37224464]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good2][Allocator Name: Return][Location: 180,16][Inlined Location: 180,16][BB ID: 12394432][Inst ID: 12394512]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good3][Allocator Name: Return][Location: 181,16][Inlined Location: 181,16][BB ID: 37225200][Inst ID: 37225280]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good3][Allocator Name: Return][Location: 181,16][Inlined Location: 181,16][BB ID: 12395248][Inst ID: 12395328]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good4][Allocator Name: Return][Location: 182,16][Inlined Location: 182,16][BB ID: 37230336][Inst ID: 37230544]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good4][Allocator Name: Return][Location: 182,16][Inlined Location: 182,16][BB ID: 12400384][Inst ID: 12400592]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good5][Allocator Name: Return][Location: 183,16][Inlined Location: 183,16][BB ID: 37230976][Inst ID: 37231056]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good5][Allocator Name: Return][Location: 183,16][Inlined Location: 183,16][BB ID: 12401024][Inst ID: 12401104]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good6][Allocator Name: Return][Location: 184,16][Inlined Location: 184,16][BB ID: 37231792][Inst ID: 37231872]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good6][Allocator Name: Return][Location: 184,16][Inlined Location: 184,16][BB ID: 12401840][Inst ID: 12401920]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good7][Allocator Name: Return][Location: 185,16][Inlined Location: 185,16][BB ID: 37232608][Inst ID: 37232688]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good7][Allocator Name: Return][Location: 185,16][Inlined Location: 185,16][BB ID: 12402656][Inst ID: 12402736]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good8][Allocator Name: Return][Location: 186,16][Inlined Location: 186,16][BB ID: 37028032][Inst ID: 37028112]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good8][Allocator Name: Return][Location: 186,16][Inlined Location: 186,16][BB ID: 12198080][Inst ID: 12198160]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good9][Allocator Name: Return][Location: 187,16][Inlined Location: 187,16][BB ID: 37028816][Inst ID: 37029200]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: good9][Allocator Name: Return][Location: 187,16][Inlined Location: 187,16][BB ID: 12198864][Inst ID: 12199248]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad1][Allocator Name: Return][Location: 190,15][Inlined Location: 190,15][BB ID: 37029632][Inst ID: 37029712]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad1][Allocator Name: Return][Location: 190,15][Inlined Location: 190,15][BB ID: 12199680][Inst ID: 12199760]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad2][Allocator Name: Return][Location: 191,15][Inlined Location: 191,15][BB ID: 37030480][Inst ID: 37030560]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad2][Allocator Name: Return][Location: 191,15][Inlined Location: 191,15][BB ID: 12200528][Inst ID: 12200608]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad3][Allocator Name: Return][Location: 192,15][Inlined Location: 192,15][BB ID: 37243248][Inst ID: 37243328]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad3][Allocator Name: Return][Location: 192,15][Inlined Location: 192,15][BB ID: 12413296][Inst ID: 12413376]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad4][Allocator Name: Return][Location: 193,15][Inlined Location: 193,15][BB ID: 37124656][Inst ID: 37124736]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad4][Allocator Name: Return][Location: 193,15][Inlined Location: 193,15][BB ID: 12294704][Inst ID: 12294784]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad5][Allocator Name: Return][Location: 194,15][Inlined Location: 194,15][BB ID: 37125456][Inst ID: 37125536]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad5][Allocator Name: Return][Location: 194,15][Inlined Location: 194,15][BB ID: 12295504][Inst ID: 12295584]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad6][Allocator Name: Return][Location: 195,15][Inlined Location: 195,15][BB ID: 36331904][Inst ID: 36331984]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad6][Allocator Name: Return][Location: 195,15][Inlined Location: 195,15][BB ID: 11501952][Inst ID: 11502032]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad7][Allocator Name: Return][Location: 196,15][Inlined Location: 196,15][BB ID: 36332720][Inst ID: 36332800]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad7][Allocator Name: Return][Location: 196,15][Inlined Location: 196,15][BB ID: 11502768][Inst ID: 11502848]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad8][Allocator Name: Return][Location: 197,15][Inlined Location: 197,15][BB ID: 36333536][Inst ID: 36333616]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad8][Allocator Name: Return][Location: 197,15][Inlined Location: 197,15][BB ID: 11503584][Inst ID: 11503664]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad9][Allocator Name: Return][Location: 198,15][Inlined Location: 198,15][BB ID: 36334352][Inst ID: 36334432]
+LLVM IR Location (Inlined): [../../../testcasesupport/io.c][Caller Name: bad9][Allocator Name: Return][Location: 198,15][Inlined Location: 198,15][BB ID: 11504400][Inst ID: 11504480]
   ret void, !dbg !105
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: CWE843_Type_Confusion__char_07_bad][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 25874736][Inst ID: 27002856]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: CWE843_Type_Confusion__char_07_bad][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 31359280][Inst ID: 32487400]
   %1 = alloca i8*, align 8, !effectiveSan !10
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: CWE843_Type_Confusion__char_07_bad][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 25874736][Inst ID: 25224024]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: CWE843_Type_Confusion__char_07_bad][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 31359280][Inst ID: 30708568]
   %2 = alloca i8, align 1, !effectiveSan !6
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: CWE843_Type_Confusion__char_07_bad][Allocator Name: Return][Location: 42,1][Inlined Location: 42,1][BB ID: 27029104][Inst ID: 26279232]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: CWE843_Type_Confusion__char_07_bad][Allocator Name: Return][Location: 42,1][Inlined Location: 42,1][BB ID: 32513648][Inst ID: 31763776]
   ret void, !dbg !43
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 27035328][Inst ID: 27034584]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 32519872][Inst ID: 32519128]
   %3 = alloca i32, align 4, !effectiveSan !7
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 27035328][Inst ID: 27022632]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 32519872][Inst ID: 32507176]
   %4 = alloca i32, align 4, !effectiveSan !7
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 27035328][Inst ID: 27034024]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 32519872][Inst ID: 32518568]
   %5 = alloca i8**, align 8, !effectiveSan !13
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 27037744][Inst ID: 27037744]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 32522288][Inst ID: 32522288]
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Argument][Location: 18446744073709551615,18446744073709551615][Inlined Location: 0,0][BB ID: 27037808][Inst ID: 27037808]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 32522352][Inst ID: 32522352]
 EffectiveSan::
-LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Return][Location: 119,5][Inlined Location: 119,5][BB ID: 27035328][Inst ID: 27049672]
+LLVM IR Location (Inlined): [CWE843_Type_Confusion__char_07.c][Caller Name: main][Allocator Name: Return][Location: 119,5][Inlined Location: 119,5][BB ID: 32519872][Inst ID: 32534216]
   ret i32 0, !dbg !40

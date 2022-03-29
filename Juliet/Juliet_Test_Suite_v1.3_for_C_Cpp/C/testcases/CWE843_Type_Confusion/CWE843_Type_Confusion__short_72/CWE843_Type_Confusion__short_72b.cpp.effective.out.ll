@@ -757,8 +757,8 @@ attributes #3 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-
 !569 = !DISubroutineType(types: !570)
 !570 = !{null, !10}
 !571 = !{!9}
-!572 = !{!"CWE843_Type_Confusion__short_72b.cpp#18446744073709551615#18446744073709551615#class std::vector<void*, std::allocator<void*> >#21430664#12651788120482719357#18335471052008286760#Argument#_ZN31CWE843_Type_Confusion__short_727badSinkESt6vectorIPvSaIS1_EE#0#0#20934656#20934656#3#"}
-!573 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"18446744073709551615", !"18446744073709551615", !"int8_t *", !"21411064", !"526828848944628746", !"11854005139656696112", !"Alloca", !"_ZN31CWE843_Type_Confusion__short_727badSinkESt6vectorIPvSaIS1_EE", !"0", !"0", !"19675696", !"20492696", !"2"}
+!572 = !{!"CWE843_Type_Confusion__short_72b.cpp#9223372036854775807#9223372036854775807#class std::vector<void*, std::allocator<void*> >#13684136#12651788120482719357#18335471052008286760#Argument#_ZN31CWE843_Type_Confusion__short_727badSinkESt6vectorIPvSaIS1_EE#0#0#13201408#13201408#3#"}
+!573 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"9223372036854775807", !"9223372036854775807", !"int8_t *", !"13677336", !"526828848944628746", !"11854005139656696112", !"Alloca", !"_ZN31CWE843_Type_Confusion__short_727badSinkESt6vectorIPvSaIS1_EE", !"0", !"0", !"11942448", !"12759448", !"2"}
 !574 = !DILocalVariable(name: "dataVector", arg: 1, scope: !567, file: !1, line: 27, type: !10)
 !575 = !DIExpression(DW_OP_deref)
 !576 = !DILocation(line: 27, column: 29, scope: !567)
@@ -771,12 +771,12 @@ attributes #3 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-
 !583 = !DILocation(line: 32, column: 18, scope: !567)
 !584 = !DILocation(line: 32, column: 5, scope: !567)
 !585 = !DILocation(line: 33, column: 1, scope: !567)
-!586 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"33", !"1", !"int8_t", !"21376040", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN31CWE843_Type_Confusion__short_727badSinkESt6vectorIPvSaIS1_EE", !"33", !"1", !"19675696", !"20768992", !"1"}
+!586 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"33", !"1", !"int8_t", !"13642792", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZN31CWE843_Type_Confusion__short_727badSinkESt6vectorIPvSaIS1_EE", !"33", !"1", !"11942448", !"13035744", !"1"}
 !587 = distinct !DISubprogram(name: "operator[]", linkageName: "_ZNSt6vectorIPvSaIS0_EEixEm", scope: !10, file: !11, line: 930, type: !248, isLocal: false, isDefinition: true, scopeLine: 931, flags: DIFlagPrototyped, isOptimized: false, unit: !0, declaration: !247, variables: !2)
 !588 = !{!9, null}
-!589 = !{!"CWE843_Type_Confusion__short_72b.cpp#18446744073709551615#18446744073709551615#class std::vector<void*, std::allocator<void*> >#21430664#12651788120482719357#18335471052008286760#Argument#_ZNSt6vectorIPvSaIS0_EEixEm#0#0#20934656#20934656#3#", !"CWE843_Type_Confusion__short_72b.cpp#18446744073709551615#18446744073709551615#int64_t#21380824#18106563096879026311#17544793107196451347#Argument#_ZNSt6vectorIPvSaIS0_EEixEm#0#0#18344152#18344152#5#"}
-!590 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"18446744073709551615", !"18446744073709551615", !"class std::vector<void*, std::allocator<void*> > *", !"21379688", !"9862213165445658544", !"10783874075288768207", !"Alloca", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"0", !"0", !"21367888", !"21362424", !"4"}
-!591 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"18446744073709551615", !"18446744073709551615", !"int64_t", !"21380824", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"0", !"0", !"21367888", !"21362648", !"5"}
+!589 = !{!"CWE843_Type_Confusion__short_72b.cpp#9223372036854775807#9223372036854775807#class std::vector<void*, std::allocator<void*> >#13684136#12651788120482719357#18335471052008286760#Argument#_ZNSt6vectorIPvSaIS0_EEixEm#0#0#13201408#13201408#3#", !"CWE843_Type_Confusion__short_72b.cpp#9223372036854775807#9223372036854775807#int64_t#13647576#18106563096879026311#17544793107196451347#Argument#_ZNSt6vectorIPvSaIS0_EEixEm#0#0#10610904#10610904#5#"}
+!590 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"9223372036854775807", !"9223372036854775807", !"class std::vector<void*, std::allocator<void*> > *", !"13646440", !"9862213165445658544", !"10783874075288768207", !"Alloca", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"0", !"0", !"13634640", !"13629176", !"4"}
+!591 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"9223372036854775807", !"9223372036854775807", !"int64_t", !"13647576", !"18106563096879026311", !"17544793107196451347", !"Alloca", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"0", !"0", !"13634640", !"13629400", !"5"}
 !592 = !DILocalVariable(name: "this", arg: 1, scope: !587, type: !9, flags: DIFlagArtificial | DIFlagObjectPointer)
 !593 = !DILocation(line: 0, scope: !587)
 !594 = !DILocalVariable(name: "__n", arg: 2, scope: !587, file: !11, line: 930, type: !189)
@@ -786,4 +786,4 @@ attributes #3 = { "correctly-rounded-divide-sqrt-fp-math"="false" "disable-tail-
 !598 = !DILocation(line: 933, column: 36, scope: !587)
 !599 = !DILocation(line: 933, column: 34, scope: !587)
 !600 = !DILocation(line: 933, column: 2, scope: !587)
-!601 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"933", !"2", !"int8_t", !"21376040", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"933", !"2", !"21367888", !"21370952", !"1"}
+!601 = !{!"CWE843_Type_Confusion__short_72b.cpp", !"933", !"2", !"int8_t", !"13642792", !"18058093552324746023", !"94541214677173297", !"Return", !"_ZNSt6vectorIPvSaIS0_EEixEm", !"933", !"2", !"13634640", !"13637704", !"1"}
