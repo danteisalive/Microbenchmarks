@@ -1,0 +1,790 @@
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16841584][Inst ID: 16006200]
+  %2 = alloca i8*, align 8, !effectiveSan !25
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16089504][Inst ID: 16089504]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLine][Allocator Name: Return][Location: 17,1][Inlined Location: 17,1][BB ID: 16967904][Inst ID: 16008544]
+  ret void, !dbg !119
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16962624][Inst ID: 16962424]
+  %2 = alloca i32*, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16977920][Inst ID: 16977920]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Return][Location: 25,1][Inlined Location: 25,1][BB ID: 16971072][Inst ID: 16977488]
+  ret void, !dbg !119
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16978528][Inst ID: 16983960]
+  %2 = alloca i32, align 4, !effectiveSan !36
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16985344][Inst ID: 16985344]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Return][Location: 30,1][Inlined Location: 30,1][BB ID: 16978528][Inst ID: 16986144]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16990688][Inst ID: 15052840]
+  %2 = alloca i16, align 2, !effectiveSan !37
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16991408][Inst ID: 16991408]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Return][Location: 35,1][Inlined Location: 35,1][BB ID: 16990688][Inst ID: 16990768]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16992560][Inst ID: 16998424]
+  %2 = alloca float, align 4, !effectiveSan !39
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16994224][Inst ID: 16994224]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Return][Location: 40,1][Inlined Location: 40,1][BB ID: 16992560][Inst ID: 16987408]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17000624][Inst ID: 16992664]
+  %2 = alloca i64, align 8, !effectiveSan !41
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16987152][Inst ID: 16987152]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Return][Location: 45,1][Inlined Location: 45,1][BB ID: 17000624][Inst ID: 17004176]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17005760][Inst ID: 17006088]
+  %2 = alloca i64, align 8, !effectiveSan !43
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17007360][Inst ID: 17007360]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Return][Location: 50,1][Inlined Location: 50,1][BB ID: 17005760][Inst ID: 17007696]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17010320][Inst ID: 17005400]
+  %2 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17011616][Inst ID: 17011616]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Return][Location: 55,1][Inlined Location: 55,1][BB ID: 17010320][Inst ID: 17012528]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17013952][Inst ID: 17010232]
+  %2 = alloca i8, align 1, !effectiveSan !51
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17014864][Inst ID: 17014864]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Return][Location: 60,1][Inlined Location: 60,1][BB ID: 17013952][Inst ID: 17015744]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17016960][Inst ID: 17016264]
+  %2 = alloca i32, align 4, !effectiveSan !53
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17016960][Inst ID: 17017176]
+  %3 = alloca [2 x i32], align 4, !effectiveSan !54
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17018032][Inst ID: 17018032]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Return][Location: 70,1][Inlined Location: 70,1][BB ID: 17016960][Inst ID: 17013872]
+  ret void, !dbg !121
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17024320][Inst ID: 17023208]
+  %2 = alloca i32, align 4, !effectiveSan !58
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17024624][Inst ID: 17024624]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Return][Location: 75,1][Inlined Location: 75,1][BB ID: 17024320][Inst ID: 17029072]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17034176][Inst ID: 17024424]
+  %2 = alloca i8, align 1, !effectiveSan !60
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17034528][Inst ID: 17034528]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Return][Location: 80,1][Inlined Location: 80,1][BB ID: 17034176][Inst ID: 17034256]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17035680][Inst ID: 17030520]
+  %2 = alloca double, align 8, !effectiveSan !61
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17029824][Inst ID: 17029824]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Return][Location: 85,1][Inlined Location: 85,1][BB ID: 17035680][Inst ID: 17039168]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17042240][Inst ID: 17042344]
+  %2 = alloca %struct._twoIntsStruct*, align 8, !effectiveSan !63
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17041680][Inst ID: 17041680]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Return][Location: 90,1][Inlined Location: 90,1][BB ID: 17042240][Inst ID: 17043744]
+  ret void, !dbg !116
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16957808][Inst ID: 16958024]
+  %3 = alloca i8*, align 8, !effectiveSan !74
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16957808][Inst ID: 17049544]
+  %4 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16957808][Inst ID: 17049928]
+  %5 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16959552][Inst ID: 16959552]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16959616][Inst ID: 16959616]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Return][Location: 100,1][Inlined Location: 100,1][BB ID: 17064368][Inst ID: 16959376]
+  ret void, !dbg !139
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17068800][Inst ID: 16960360]
+  %4 = alloca i8*, align 8, !effectiveSan !77
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17068800][Inst ID: 17068712]
+  %5 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17068800][Inst ID: 17068568]
+  %6 = alloca i8*, align 8, !effectiveSan !25
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17068800][Inst ID: 16960024]
+  %7 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17068800][Inst ID: 17083400]
+  %8 = alloca i32, align 4, !effectiveSan !36
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17076080][Inst ID: 17076080]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17076144][Inst ID: 17076144]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17076208][Inst ID: 17076208]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Return][Location: 121,5][Inlined Location: 121,5][BB ID: 17081280][Inst ID: 17100456]
+  ret i64 %60, !dbg !153
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17097296][Inst ID: 17096216]
+  %4 = alloca i8*, align 8, !effectiveSan !77
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17097296][Inst ID: 17096824]
+  %5 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17097296][Inst ID: 17096664]
+  %6 = alloca i32*, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17097296][Inst ID: 16960472]
+  %7 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17097296][Inst ID: 17037656]
+  %8 = alloca i32, align 4, !effectiveSan !36
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17096464][Inst ID: 17096464]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17106400][Inst ID: 17106400]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17106464][Inst ID: 17106464]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Return][Location: 143,5][Inlined Location: 143,5][BB ID: 17052496][Inst ID: 17133064]
+  ret i64 %46, !dbg !160
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: globalReturnsTrue][Allocator Name: Return][Location: 150,5][Inlined Location: 150,5][BB ID: 17057408][Inst ID: 17134088]
+  ret i32 1, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: globalReturnsFalse][Allocator Name: Return][Location: 155,5][Inlined Location: 155,5][BB ID: 17133856][Inst ID: 17135592]
+  ret i32 0, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: globalReturnsTrueOrFalse][Allocator Name: Return][Location: 160,5][Inlined Location: 160,5][BB ID: 17135360][Inst ID: 17137352]
+  ret i32 %2, !dbg !107
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good1][Allocator Name: Return][Location: 179,16][Inlined Location: 179,16][BB ID: 17145760][Inst ID: 17146384]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good2][Allocator Name: Return][Location: 180,16][Inlined Location: 180,16][BB ID: 17146688][Inst ID: 17146768]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good3][Allocator Name: Return][Location: 181,16][Inlined Location: 181,16][BB ID: 17147504][Inst ID: 17147584]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good4][Allocator Name: Return][Location: 182,16][Inlined Location: 182,16][BB ID: 17152640][Inst ID: 17152848]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good5][Allocator Name: Return][Location: 183,16][Inlined Location: 183,16][BB ID: 17153280][Inst ID: 17153360]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good6][Allocator Name: Return][Location: 184,16][Inlined Location: 184,16][BB ID: 17154096][Inst ID: 17154176]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good7][Allocator Name: Return][Location: 185,16][Inlined Location: 185,16][BB ID: 17154912][Inst ID: 17154992]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good8][Allocator Name: Return][Location: 186,16][Inlined Location: 186,16][BB ID: 16950352][Inst ID: 16950432]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good9][Allocator Name: Return][Location: 187,16][Inlined Location: 187,16][BB ID: 16951168][Inst ID: 16951248]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad1][Allocator Name: Return][Location: 190,15][Inlined Location: 190,15][BB ID: 16951680][Inst ID: 16952096]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad2][Allocator Name: Return][Location: 191,15][Inlined Location: 191,15][BB ID: 16952832][Inst ID: 16952912]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad3][Allocator Name: Return][Location: 192,15][Inlined Location: 192,15][BB ID: 17169696][Inst ID: 17171936]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad4][Allocator Name: Return][Location: 193,15][Inlined Location: 193,15][BB ID: 17171712][Inst ID: 17047376]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad5][Allocator Name: Return][Location: 194,15][Inlined Location: 194,15][BB ID: 17048096][Inst ID: 16253920]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad6][Allocator Name: Return][Location: 195,15][Inlined Location: 195,15][BB ID: 16254352][Inst ID: 16254432]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad7][Allocator Name: Return][Location: 196,15][Inlined Location: 196,15][BB ID: 16255168][Inst ID: 16255248]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad8][Allocator Name: Return][Location: 197,15][Inlined Location: 197,15][BB ID: 16255984][Inst ID: 16256064]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad9][Allocator Name: Return][Location: 198,15][Inlined Location: 198,15][BB ID: 16256800][Inst ID: 16256880]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_good][Allocator Name: Return][Location: 183,1][Inlined Location: 183,1][BB ID: 33363888][Inst ID: 33362752]
+  ret void, !dbg !43
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33372176][Inst ID: 33372280]
+  %3 = alloca i32, align 4, !effectiveSan !24
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33372176][Inst ID: 33369080]
+  %4 = alloca i32, align 4, !effectiveSan !24
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33372176][Inst ID: 33369512]
+  %5 = alloca i8**, align 8, !effectiveSan !25
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33362992][Inst ID: 33362992]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33369920][Inst ID: 33369920]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Return][Location: 208,5][Inlined Location: 208,5][BB ID: 33372176][Inst ID: 33392536]
+  ret i32 0, !dbg !58
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good1][Allocator Name: free][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 107,17][Inlined Location: 107,17][BB ID: 33369328][Inst ID: 33406640]
+  call void @free(i8* %11) #5, !dbg !59
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good1][Allocator Name: malloc][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 110,50][Inlined Location: 110,50][BB ID: 33385008][Inst ID: 33409280]
+  %13 = call noalias i8* @malloc(i64 4) #5, !dbg !63, !effectiveSan !13
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good1][Allocator Name: free][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 130,17][Inlined Location: 130,17][BB ID: 33411680][Inst ID: 33394928]
+  call void @free(i8* %28) #5, !dbg !87
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good1][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33386256][Inst ID: 33386056]
+  %1 = alloca %struct._structSigAtomic*, align 8, !effectiveSan !23
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good1][Allocator Name: Return][Location: 136,1][Inlined Location: 136,1][BB ID: 33393808][Inst ID: 33379728]
+  ret void, !dbg !93
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: helperGood][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33396704][Inst ID: 33401240]
+  %2 = alloca i32, align 4, !effectiveSan !24
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: helperGood][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33397696][Inst ID: 33397696]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: helperGood][Allocator Name: Return][Location: 42,1][Inlined Location: 42,1][BB ID: 33397008][Inst ID: 33417552]
+  ret void, !dbg !54
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good2][Allocator Name: free][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 148,17][Inlined Location: 148,17][BB ID: 33410000][Inst ID: 33427888]
+  call void @free(i8* %10) #5, !dbg !56
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good2][Allocator Name: malloc][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 151,50][Inlined Location: 151,50][BB ID: 33426784][Inst ID: 33428784]
+  %12 = call noalias i8* @malloc(i64 4) #5, !dbg !60, !effectiveSan !13
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good2][Allocator Name: free][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 171,17][Inlined Location: 171,17][BB ID: 33430448][Inst ID: 33432912]
+  call void @free(i8* %27) #5, !dbg !84
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good2][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 33418688][Inst ID: 33422488]
+  %1 = alloca %struct._structSigAtomic*, align 8, !effectiveSan !23
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good2][Allocator Name: Return][Location: 177,1][Inlined Location: 177,1][BB ID: 33423904][Inst ID: 33423600]
+  ret void, !dbg !91
+  call void @free(i8* %11) #5, !dbg !60, !TYCHE_MD !61
+Calle Node: 0x2083930: i64 = GlobalAddress<void (i8*)* @free> 0 Node TypeID: [ 0#]
+Second Node: 0x205e660: ch,glue = callseq_end 0x205eac0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205eac0:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good1][Allocator Name: free][Location: 0,0][Inlined Location: 107,17][BB ID: 33369328][Inst ID: 33406640][Prev. Inst ID: 107]
+  call void @free(i8* %11) #5, !dbg !60, !TYCHE_MD !61
+0x205e660: ch,glue = callseq_end 0x205eac0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205eac0:1 Node TypeID: [ 1#107#17#0#0#0#107#17#33369328#33406640#18446744073709551615#33406640#33369328#free#FREE#good1#]
+X86DAGToDAGISel:: 4
+Node: 0x205e660: ch,glue = callseq_end 0x205eac0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205eac0:1 Node TypeID: [ 1#107#17#0#0#0#107#17#33369328#33406640#18446744073709551615#33406640#33369328#free#FREE#good1#]
+0x205eac0: ch,glue = <<Unknown Node #229>> 0x205ede0; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205ede0:1 Node TypeID: [ 0#]
+0x2083890: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x2083890: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x205eac0: ch,glue = <<Unknown Node #229>> 0x205ede0; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205ede0:1 Node TypeID: [ 0#]
+0x205eac0: ch,glue = <<Unknown Node #229>> 0x205ede0; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205ede0:1 Node TypeID: [ 1#107#17#0#0#0#107#17#33369328#33406640#18446744073709551615#33406640#33369328#free#FREE#good1#]
+EmitMachineNode::
+0x205eac0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205ede0; 0x205ede0:1 Node TypeID: [ 1#107#17#0#0#0#107#17#33369328#33406640#18446744073709551615#33406640#33369328#free#FREE#good1#]
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:107:17 Node Type ID: [107#17#0#0#0#107#17#33369328#33406640#18446744073709551615#33406640#33369328#free#FREE#good1#]
+
+  %13 = call noalias i8* @malloc(i64 4) #5, !dbg !64, !effectiveSan !13, !TYCHE_MD !65
+Calle Node: 0x205ee80: i64 = GlobalAddress<i8* (i64)* @malloc> 0 Node TypeID: [ 0#]
+First Node: 0x2083930: i64,ch,glue = CopyFromReg 0x20839d0; Register:i64 %physreg35; 0x20839d0:1 Node TypeID: [ 0#]
+Second Node: 0x2083930: i64,ch,glue = CopyFromReg 0x20839d0; Register:i64 %physreg35; 0x20839d0:1 Node TypeID: [ 0#]
+0x2083930: i64,ch,glue = CopyFromReg 0x20839d0; Register:i64 %physreg35; 0x20839d0:1 Node TypeID: [ 1#110#50#33621912#7328244225587091928#15288228118847118519#110#50#33385008#33409280#5#33409280#33385008#malloc#struct _structSigAtomic#good1#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good1][Allocator Name: malloc][Location: 7328244225587091928,15288228118847118519][Inlined Location: 110,50][BB ID: 33385008][Inst ID: 33409280][Prev. Inst ID: 110]
+  %13 = call noalias i8* @malloc(i64 4) #5, !dbg !64, !effectiveSan !13, !TYCHE_MD !65
+X86DAGToDAGISel:: 3
+Node: 0x2083930: i64,ch,glue = CopyFromReg 0x20839d0; Register:i64 %physreg35; 0x20839d0:1 Node TypeID: [ 1#110#50#33621912#7328244225587091928#15288228118847118519#110#50#33385008#33409280#5#33409280#33385008#malloc#struct _structSigAtomic#good1#]
+0x20839d0: ch,glue = callseq_end 0x205ef20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205ef20:1 Node TypeID: [ 0#]
+0x205e2a0: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x20839d0: ch,glue = callseq_end 0x205ef20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205ef20:1 Node TypeID: [ 0#]
+0x205ef20: ch,glue = <<Unknown Node #229>> 0x205e660; TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e660:1 Node TypeID: [ 0#]
+0x205ef20: ch,glue = <<Unknown Node #229>> 0x205e660; TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e660:1 Node TypeID: [ 1#110#50#33621912#7328244225587091928#15288228118847118519#110#50#33385008#33409280#5#33409280#33385008#malloc#struct _structSigAtomic#good1#]
+EmitMachineNode::
+0x205ef20: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e660; 0x205e660:1 Node TypeID: [ 1#110#50#33621912#7328244225587091928#15288228118847118519#110#50#33385008#33409280#5#33409280#33385008#malloc#struct _structSigAtomic#good1#]
+CALL64pcrel32 <ga:@malloc>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:110:50 Node Type ID: [110#50#33621912#7328244225587091928#15288228118847118519#110#50#33385008#33409280#5#33409280#33385008#malloc#struct _structSigAtomic#good1#]
+
+  call void @free(i8* %28) #5, !dbg !88, !TYCHE_MD !89
+Calle Node: 0x2084150: i64 = GlobalAddress<void (i8*)* @free> 0 Node TypeID: [ 0#]
+Second Node: 0x2083b10: ch,glue = callseq_end 0x2083bb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2083bb0:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good1][Allocator Name: free][Location: 0,0][Inlined Location: 130,17][BB ID: 33411680][Inst ID: 33394928][Prev. Inst ID: 130]
+  call void @free(i8* %28) #5, !dbg !88, !TYCHE_MD !89
+0x2083b10: ch,glue = callseq_end 0x2083bb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2083bb0:1 Node TypeID: [ 1#130#17#0#0#0#130#17#33411680#33394928#18446744073709551615#33394928#33411680#free#FREE#good1#]
+X86DAGToDAGISel:: 4
+Node: 0x2083b10: ch,glue = callseq_end 0x2083bb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2083bb0:1 Node TypeID: [ 1#130#17#0#0#0#130#17#33411680#33394928#18446744073709551615#33394928#33411680#free#FREE#good1#]
+0x2083bb0: ch,glue = <<Unknown Node #229>> 0x205eb60; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205eb60:1 Node TypeID: [ 0#]
+0x20840b0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x20840b0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x2083bb0: ch,glue = <<Unknown Node #229>> 0x205eb60; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205eb60:1 Node TypeID: [ 0#]
+0x2083bb0: ch,glue = <<Unknown Node #229>> 0x205eb60; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205eb60:1 Node TypeID: [ 1#130#17#0#0#0#130#17#33411680#33394928#18446744073709551615#33394928#33411680#free#FREE#good1#]
+EmitMachineNode::
+0x2083bb0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205eb60; 0x205eb60:1 Node TypeID: [ 1#130#17#0#0#0#130#17#33411680#33394928#18446744073709551615#33394928#33411680#free#FREE#good1#]
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:130:17 Node Type ID: [130#17#0#0#0#130#17#33411680#33394928#18446744073709551615#33394928#33411680#free#FREE#good1#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:107:17 Node Type ID: [107#17#0#0#0#107#17#33369328#33406640#18446744073709551615#33406640#33369328#free#FREE#good1#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#107#17#0#0#0#107#17#33369328#33406640#18446744073709551615#33406640#33369328#free#FREE#good1#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@malloc>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:110:50 Node Type ID: [110#50#33621912#7328244225587091928#15288228118847118519#110#50#33385008#33409280#5#33409280#33385008#malloc#struct _structSigAtomic#good1#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#110#50#33621912#7328244225587091928#15288228118847118519#110#50#33385008#33409280#5#33409280#33385008#malloc#struct _structSigAtomic#good1#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:130:17 Node Type ID: [130#17#0#0#0#130#17#33411680#33394928#18446744073709551615#33394928#33411680#free#FREE#good1#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#130#17#0#0#0#130#17#33411680#33394928#18446744073709551615#33394928#33411680#free#FREE#good1#
+---------------------------------------------------------------------------------------
+  call void @free(i8* %10) #5, !dbg !57, !TYCHE_MD !58
+Calle Node: 0x205ed40: i64 = GlobalAddress<void (i8*)* @free> 0 Node TypeID: [ 0#]
+Second Node: 0x205e160: ch,glue = callseq_end 0x2083890; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2083890:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good2][Allocator Name: free][Location: 0,0][Inlined Location: 148,17][BB ID: 33410000][Inst ID: 33427888][Prev. Inst ID: 148]
+  call void @free(i8* %10) #5, !dbg !57, !TYCHE_MD !58
+0x205e160: ch,glue = callseq_end 0x2083890; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2083890:1 Node TypeID: [ 1#148#17#0#0#0#148#17#33410000#33427888#18446744073709551615#33427888#33410000#free#FREE#good2#]
+X86DAGToDAGISel:: 4
+Node: 0x205e160: ch,glue = callseq_end 0x2083890; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x2083890:1 Node TypeID: [ 1#148#17#0#0#0#148#17#33410000#33427888#18446744073709551615#33427888#33410000#free#FREE#good2#]
+0x2083890: ch,glue = <<Unknown Node #229>> 0x205e200; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e200:1 Node TypeID: [ 0#]
+0x2083930: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x2083930: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x2083890: ch,glue = <<Unknown Node #229>> 0x205e200; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e200:1 Node TypeID: [ 0#]
+0x2083890: ch,glue = <<Unknown Node #229>> 0x205e200; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e200:1 Node TypeID: [ 1#148#17#0#0#0#148#17#33410000#33427888#18446744073709551615#33427888#33410000#free#FREE#good2#]
+EmitMachineNode::
+0x2083890: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e200; 0x205e200:1 Node TypeID: [ 1#148#17#0#0#0#148#17#33410000#33427888#18446744073709551615#33427888#33410000#free#FREE#good2#]
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:148:17 Node Type ID: [148#17#0#0#0#148#17#33410000#33427888#18446744073709551615#33427888#33410000#free#FREE#good2#]
+
+  %12 = call noalias i8* @malloc(i64 4) #5, !dbg !61, !effectiveSan !13, !TYCHE_MD !62
+Calle Node: 0x205ede0: i64 = GlobalAddress<i8* (i64)* @malloc> 0 Node TypeID: [ 0#]
+First Node: 0x205ed40: i64,ch,glue = CopyFromReg 0x2083ed0; Register:i64 %physreg35; 0x2083ed0:1 Node TypeID: [ 0#]
+Second Node: 0x205ed40: i64,ch,glue = CopyFromReg 0x2083ed0; Register:i64 %physreg35; 0x2083ed0:1 Node TypeID: [ 0#]
+0x205ed40: i64,ch,glue = CopyFromReg 0x2083ed0; Register:i64 %physreg35; 0x2083ed0:1 Node TypeID: [ 1#151#50#33621912#7328244225587091928#15288228118847118519#151#50#33426784#33428784#5#33428784#33426784#malloc#struct _structSigAtomic#good2#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good2][Allocator Name: malloc][Location: 7328244225587091928,15288228118847118519][Inlined Location: 151,50][BB ID: 33426784][Inst ID: 33428784][Prev. Inst ID: 151]
+  %12 = call noalias i8* @malloc(i64 4) #5, !dbg !61, !effectiveSan !13, !TYCHE_MD !62
+X86DAGToDAGISel:: 3
+Node: 0x205ed40: i64,ch,glue = CopyFromReg 0x2083ed0; Register:i64 %physreg35; 0x2083ed0:1 Node TypeID: [ 1#151#50#33621912#7328244225587091928#15288228118847118519#151#50#33426784#33428784#5#33428784#33426784#malloc#struct _structSigAtomic#good2#]
+0x2083ed0: ch,glue = callseq_end 0x205ef20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205ef20:1 Node TypeID: [ 0#]
+0x2083cf0: i64 = Register %physreg35 Node TypeID: [ 0#]
+0x2083ed0: ch,glue = callseq_end 0x205ef20; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205ef20:1 Node TypeID: [ 0#]
+0x205ef20: ch,glue = <<Unknown Node #229>> 0x205e160; TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e160:1 Node TypeID: [ 0#]
+0x205ef20: ch,glue = <<Unknown Node #229>> 0x205e160; TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e160:1 Node TypeID: [ 1#151#50#33621912#7328244225587091928#15288228118847118519#151#50#33426784#33428784#5#33428784#33426784#malloc#struct _structSigAtomic#good2#]
+EmitMachineNode::
+0x205ef20: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e160; 0x205e160:1 Node TypeID: [ 1#151#50#33621912#7328244225587091928#15288228118847118519#151#50#33426784#33428784#5#33428784#33426784#malloc#struct _structSigAtomic#good2#]
+CALL64pcrel32 <ga:@malloc>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:151:50 Node Type ID: [151#50#33621912#7328244225587091928#15288228118847118519#151#50#33426784#33428784#5#33428784#33426784#malloc#struct _structSigAtomic#good2#]
+
+  call void @free(i8* %27) #5, !dbg !85, !TYCHE_MD !86
+Calle Node: 0x2083a70: i64 = GlobalAddress<void (i8*)* @free> 0 Node TypeID: [ 0#]
+Second Node: 0x205ee80: ch,glue = callseq_end 0x205ec00; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205ec00:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: good2][Allocator Name: free][Location: 0,0][Inlined Location: 171,17][BB ID: 33430448][Inst ID: 33432912][Prev. Inst ID: 171]
+  call void @free(i8* %27) #5, !dbg !85, !TYCHE_MD !86
+0x205ee80: ch,glue = callseq_end 0x205ec00; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205ec00:1 Node TypeID: [ 1#171#17#0#0#0#171#17#33430448#33432912#18446744073709551615#33432912#33430448#free#FREE#good2#]
+X86DAGToDAGISel:: 4
+Node: 0x205ee80: ch,glue = callseq_end 0x205ec00; TargetConstant:i64<0>; TargetConstant:i64<0>; 0x205ec00:1 Node TypeID: [ 1#171#17#0#0#0#171#17#33430448#33432912#18446744073709551615#33432912#33430448#free#FREE#good2#]
+0x205ec00: ch,glue = <<Unknown Node #229>> 0x205e480; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e480:1 Node TypeID: [ 0#]
+0x205e2a0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x205e2a0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0x205ec00: ch,glue = <<Unknown Node #229>> 0x205e480; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e480:1 Node TypeID: [ 0#]
+0x205ec00: ch,glue = <<Unknown Node #229>> 0x205e480; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e480:1 Node TypeID: [ 1#171#17#0#0#0#171#17#33430448#33432912#18446744073709551615#33432912#33430448#free#FREE#good2#]
+EmitMachineNode::
+0x205ec00: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0x205e480; 0x205e480:1 Node TypeID: [ 1#171#17#0#0#0#171#17#33430448#33432912#18446744073709551615#33432912#33430448#free#FREE#good2#]
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:171:17 Node Type ID: [171#17#0#0#0#171#17#33430448#33432912#18446744073709551615#33432912#33430448#free#FREE#good2#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:148:17 Node Type ID: [148#17#0#0#0#148#17#33410000#33427888#18446744073709551615#33427888#33410000#free#FREE#good2#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#148#17#0#0#0#148#17#33410000#33427888#18446744073709551615#33427888#33410000#free#FREE#good2#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@malloc>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:151:50 Node Type ID: [151#50#33621912#7328244225587091928#15288228118847118519#151#50#33426784#33428784#5#33428784#33426784#malloc#struct _structSigAtomic#good2#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#151#50#33621912#7328244225587091928#15288228118847118519#151#50#33426784#33428784#5#33428784#33426784#malloc#struct _structSigAtomic#good2#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:171:17 Node Type ID: [171#17#0#0#0#171#17#33430448#33432912#18446744073709551615#33432912#33430448#free#FREE#good2#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#171#17#0#0#0#171#17#33430448#33432912#18446744073709551615#33432912#33430448#free#FREE#good2#
+---------------------------------------------------------------------------------------
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17324912][Inst ID: 16489528]
+  %2 = alloca i8*, align 8, !effectiveSan !25
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16572832][Inst ID: 16572832]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLine][Allocator Name: Return][Location: 17,1][Inlined Location: 17,1][BB ID: 17451232][Inst ID: 16491872]
+  ret void, !dbg !119
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17445952][Inst ID: 17445752]
+  %2 = alloca i32*, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17461248][Inst ID: 17461248]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWLine][Allocator Name: Return][Location: 25,1][Inlined Location: 25,1][BB ID: 17454400][Inst ID: 17460816]
+  ret void, !dbg !119
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17461856][Inst ID: 17467288]
+  %2 = alloca i32, align 4, !effectiveSan !36
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17468672][Inst ID: 17468672]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printIntLine][Allocator Name: Return][Location: 30,1][Inlined Location: 30,1][BB ID: 17461856][Inst ID: 17469472]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17474016][Inst ID: 15536168]
+  %2 = alloca i16, align 2, !effectiveSan !37
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17474736][Inst ID: 17474736]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printShortLine][Allocator Name: Return][Location: 35,1][Inlined Location: 35,1][BB ID: 17474016][Inst ID: 17474096]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17475888][Inst ID: 17481752]
+  %2 = alloca float, align 4, !effectiveSan !39
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17477552][Inst ID: 17477552]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printFloatLine][Allocator Name: Return][Location: 40,1][Inlined Location: 40,1][BB ID: 17475888][Inst ID: 17470736]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17483952][Inst ID: 17475992]
+  %2 = alloca i64, align 8, !effectiveSan !41
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17470480][Inst ID: 17470480]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLine][Allocator Name: Return][Location: 45,1][Inlined Location: 45,1][BB ID: 17483952][Inst ID: 17487504]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17489088][Inst ID: 17489416]
+  %2 = alloca i64, align 8, !effectiveSan !43
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17490688][Inst ID: 17490688]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printLongLongLine][Allocator Name: Return][Location: 50,1][Inlined Location: 50,1][BB ID: 17489088][Inst ID: 17491024]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17493648][Inst ID: 17488728]
+  %2 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17494944][Inst ID: 17494944]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printSizeTLine][Allocator Name: Return][Location: 55,1][Inlined Location: 55,1][BB ID: 17493648][Inst ID: 17495856]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17497280][Inst ID: 17493560]
+  %2 = alloca i8, align 1, !effectiveSan !51
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17498192][Inst ID: 17498192]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexCharLine][Allocator Name: Return][Location: 60,1][Inlined Location: 60,1][BB ID: 17497280][Inst ID: 17499072]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17500288][Inst ID: 17499592]
+  %2 = alloca i32, align 4, !effectiveSan !53
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17500288][Inst ID: 17500504]
+  %3 = alloca [2 x i32], align 4, !effectiveSan !54
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17501360][Inst ID: 17501360]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printWcharLine][Allocator Name: Return][Location: 70,1][Inlined Location: 70,1][BB ID: 17500288][Inst ID: 17497200]
+  ret void, !dbg !121
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17507648][Inst ID: 17506536]
+  %2 = alloca i32, align 4, !effectiveSan !58
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17507952][Inst ID: 17507952]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printUnsignedLine][Allocator Name: Return][Location: 75,1][Inlined Location: 75,1][BB ID: 17507648][Inst ID: 17512400]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17517504][Inst ID: 17507752]
+  %2 = alloca i8, align 1, !effectiveSan !60
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17517856][Inst ID: 17517856]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printHexUnsignedCharLine][Allocator Name: Return][Location: 80,1][Inlined Location: 80,1][BB ID: 17517504][Inst ID: 17517584]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17519008][Inst ID: 17513848]
+  %2 = alloca double, align 8, !effectiveSan !61
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17513152][Inst ID: 17513152]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printDoubleLine][Allocator Name: Return][Location: 85,1][Inlined Location: 85,1][BB ID: 17519008][Inst ID: 17522496]
+  ret void, !dbg !113
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17525568][Inst ID: 17525672]
+  %2 = alloca %struct._twoIntsStruct*, align 8, !effectiveSan !63
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17525008][Inst ID: 17525008]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printStructLine][Allocator Name: Return][Location: 90,1][Inlined Location: 90,1][BB ID: 17525568][Inst ID: 17527072]
+  ret void, !dbg !116
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17441136][Inst ID: 17441352]
+  %3 = alloca i8*, align 8, !effectiveSan !74
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17441136][Inst ID: 17532872]
+  %4 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17441136][Inst ID: 17533256]
+  %5 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17442880][Inst ID: 17442880]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17442944][Inst ID: 17442944]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: printBytesLine][Allocator Name: Return][Location: 100,1][Inlined Location: 100,1][BB ID: 17547696][Inst ID: 17442704]
+  ret void, !dbg !139
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17552128][Inst ID: 17443688]
+  %4 = alloca i8*, align 8, !effectiveSan !77
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17552128][Inst ID: 17552040]
+  %5 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17552128][Inst ID: 17551896]
+  %6 = alloca i8*, align 8, !effectiveSan !25
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17552128][Inst ID: 17443352]
+  %7 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17552128][Inst ID: 17566728]
+  %8 = alloca i32, align 4, !effectiveSan !36
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17559408][Inst ID: 17559408]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17559472][Inst ID: 17559472]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17559536][Inst ID: 17559536]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexChars][Allocator Name: Return][Location: 121,5][Inlined Location: 121,5][BB ID: 17564608][Inst ID: 17583784]
+  ret i64 %60, !dbg !153
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17580624][Inst ID: 17579544]
+  %4 = alloca i8*, align 8, !effectiveSan !77
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17580624][Inst ID: 17580152]
+  %5 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17580624][Inst ID: 17579992]
+  %6 = alloca i32*, align 8, !effectiveSan !29
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17580624][Inst ID: 17443800]
+  %7 = alloca i64, align 8, !effectiveSan !48
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17580624][Inst ID: 17520984]
+  %8 = alloca i32, align 4, !effectiveSan !36
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17579792][Inst ID: 17579792]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17589728][Inst ID: 17589728]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 17589792][Inst ID: 17589792]
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: decodeHexWChars][Allocator Name: Return][Location: 143,5][Inlined Location: 143,5][BB ID: 17535824][Inst ID: 17616392]
+  ret i64 %46, !dbg !160
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: globalReturnsTrue][Allocator Name: Return][Location: 150,5][Inlined Location: 150,5][BB ID: 17540736][Inst ID: 17617416]
+  ret i32 1, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: globalReturnsFalse][Allocator Name: Return][Location: 155,5][Inlined Location: 155,5][BB ID: 17617184][Inst ID: 17618920]
+  ret i32 0, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: globalReturnsTrueOrFalse][Allocator Name: Return][Location: 160,5][Inlined Location: 160,5][BB ID: 17618688][Inst ID: 17620680]
+  ret i32 %2, !dbg !107
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good1][Allocator Name: Return][Location: 179,16][Inlined Location: 179,16][BB ID: 17629088][Inst ID: 17629712]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good2][Allocator Name: Return][Location: 180,16][Inlined Location: 180,16][BB ID: 17630016][Inst ID: 17630096]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good3][Allocator Name: Return][Location: 181,16][Inlined Location: 181,16][BB ID: 17630832][Inst ID: 17630912]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good4][Allocator Name: Return][Location: 182,16][Inlined Location: 182,16][BB ID: 17635968][Inst ID: 17636176]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good5][Allocator Name: Return][Location: 183,16][Inlined Location: 183,16][BB ID: 17636608][Inst ID: 17636688]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good6][Allocator Name: Return][Location: 184,16][Inlined Location: 184,16][BB ID: 17637424][Inst ID: 17637504]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good7][Allocator Name: Return][Location: 185,16][Inlined Location: 185,16][BB ID: 17638240][Inst ID: 17638320]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good8][Allocator Name: Return][Location: 186,16][Inlined Location: 186,16][BB ID: 17433680][Inst ID: 17433760]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: good9][Allocator Name: Return][Location: 187,16][Inlined Location: 187,16][BB ID: 17434496][Inst ID: 17434576]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad1][Allocator Name: Return][Location: 190,15][Inlined Location: 190,15][BB ID: 17435008][Inst ID: 17435424]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad2][Allocator Name: Return][Location: 191,15][Inlined Location: 191,15][BB ID: 17436160][Inst ID: 17436240]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad3][Allocator Name: Return][Location: 192,15][Inlined Location: 192,15][BB ID: 17653024][Inst ID: 17655264]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad4][Allocator Name: Return][Location: 193,15][Inlined Location: 193,15][BB ID: 17655040][Inst ID: 17530704]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad5][Allocator Name: Return][Location: 194,15][Inlined Location: 194,15][BB ID: 17531424][Inst ID: 16737248]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad6][Allocator Name: Return][Location: 195,15][Inlined Location: 195,15][BB ID: 16737680][Inst ID: 16737760]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad7][Allocator Name: Return][Location: 196,15][Inlined Location: 196,15][BB ID: 16738496][Inst ID: 16738576]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad8][Allocator Name: Return][Location: 197,15][Inlined Location: 197,15][BB ID: 16739312][Inst ID: 16739392]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [/home/dante/Microbenchmarks//Juliet/testcasesupport/io.c][Caller Name: bad9][Allocator Name: Return][Location: 198,15][Inlined Location: 198,15][BB ID: 16740128][Inst ID: 16740208]
+  ret void, !dbg !105
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_bad][Allocator Name: free][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 55,17][Inlined Location: 55,17][BB ID: 16079312][Inst ID: 16099056]
+  call void @free(i8* %10) #5, !dbg !56
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_bad][Allocator Name: malloc][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 58,50][Inlined Location: 58,50][BB ID: 16091520][Inst ID: 16100544]
+  %12 = call noalias i8* @malloc(i64 4) #5, !dbg !60, !effectiveSan !12
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_bad][Allocator Name: free][isCall: 1][isInvoke: 0][isMustTailCall: 0][isTailCall: 0][Location: 81,17][Inlined Location: 81,17][BB ID: 16103360][Inst ID: 16107568]
+  call void @free(i8* %26) #5, !dbg !83
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_bad][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16073552][Inst ID: 16072664]
+  %1 = alloca %struct._structSigAtomic*, align 8, !effectiveSan !23
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_bad][Allocator Name: Return][Location: 86,1][Inlined Location: 86,1][BB ID: 16072752][Inst ID: 16072416]
+  ret void, !dbg !89
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: helperBad][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16116720][Inst ID: 16118536]
+  %2 = alloca i32, align 4, !effectiveSan !24
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: helperBad][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16105456][Inst ID: 16105456]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: helperBad][Allocator Name: Return][Location: 34,1][Inlined Location: 34,1][BB ID: 16116880][Inst ID: 16117440]
+  ret void, !dbg !54
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16084400][Inst ID: 16105320]
+  %3 = alloca i32, align 4, !effectiveSan !24
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16084400][Inst ID: 16105208]
+  %4 = alloca i32, align 4, !effectiveSan !24
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Alloca][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16084400][Inst ID: 16073192]
+  %5 = alloca i8**, align 8, !effectiveSan !27
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16115344][Inst ID: 16115344]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Argument][Location: 9223372036854775807,9223372036854775807][Inlined Location: 0,0][BB ID: 16115712][Inst ID: 16115712]
+EffectiveSan::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: main][Allocator Name: Return][Location: 208,5][Inlined Location: 208,5][BB ID: 16084400][Inst ID: 16125992]
+  ret i32 0, !dbg !58
+  call void @free(i8* %10) #5, !dbg !57, !TYCHE_MD !58
+Calle Node: 0xff8590: i64 = GlobalAddress<void (i8*)* @free> 0 Node TypeID: [ 0#]
+Second Node: 0xff2c10: ch,glue = callseq_end 0xff2d50; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xff2d50:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_bad][Allocator Name: free][Location: 0,0][Inlined Location: 55,17][BB ID: 16079312][Inst ID: 16099056][Prev. Inst ID: 55]
+  call void @free(i8* %10) #5, !dbg !57, !TYCHE_MD !58
+0xff2c10: ch,glue = callseq_end 0xff2d50; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xff2d50:1 Node TypeID: [ 1#55#17#0#0#0#55#17#16079312#16099056#18446744073709551615#16099056#16079312#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+X86DAGToDAGISel:: 4
+Node: 0xff2c10: ch,glue = callseq_end 0xff2d50; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xff2d50:1 Node TypeID: [ 1#55#17#0#0#0#55#17#16079312#16099056#18446744073709551615#16099056#16079312#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+0xff2d50: ch,glue = <<Unknown Node #229>> 0xff3070; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff3070:1 Node TypeID: [ 0#]
+0xff84f0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xff84f0: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xff2d50: ch,glue = <<Unknown Node #229>> 0xff3070; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff3070:1 Node TypeID: [ 0#]
+0xff2d50: ch,glue = <<Unknown Node #229>> 0xff3070; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff3070:1 Node TypeID: [ 1#55#17#0#0#0#55#17#16079312#16099056#18446744073709551615#16099056#16079312#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+EmitMachineNode::
+0xff2d50: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff3070; 0xff3070:1 Node TypeID: [ 1#55#17#0#0#0#55#17#16079312#16099056#18446744073709551615#16099056#16079312#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:55:17 Node Type ID: [55#17#0#0#0#55#17#16079312#16099056#18446744073709551615#16099056#16079312#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+
+  %12 = call noalias i8* @malloc(i64 4) #5, !dbg !61, !effectiveSan !12, !TYCHE_MD !62
+Calle Node: 0xff3110: i64 = GlobalAddress<i8* (i64)* @malloc> 0 Node TypeID: [ 0#]
+First Node: 0xff8590: i64,ch,glue = CopyFromReg 0xff8630; Register:i64 %physreg35; 0xff8630:1 Node TypeID: [ 0#]
+Second Node: 0xff8590: i64,ch,glue = CopyFromReg 0xff8630; Register:i64 %physreg35; 0xff8630:1 Node TypeID: [ 0#]
+0xff8590: i64,ch,glue = CopyFromReg 0xff8630; Register:i64 %physreg35; 0xff8630:1 Node TypeID: [ 1#58#50#16354808#7328244225587091928#15288228118847118519#58#50#16091520#16100544#2#16100544#16091520#malloc#struct _structSigAtomic#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_bad][Allocator Name: malloc][Location: 7328244225587091928,15288228118847118519][Inlined Location: 58,50][BB ID: 16091520][Inst ID: 16100544][Prev. Inst ID: 58]
+  %12 = call noalias i8* @malloc(i64 4) #5, !dbg !61, !effectiveSan !12, !TYCHE_MD !62
+X86DAGToDAGISel:: 3
+Node: 0xff8590: i64,ch,glue = CopyFromReg 0xff8630; Register:i64 %physreg35; 0xff8630:1 Node TypeID: [ 1#58#50#16354808#7328244225587091928#15288228118847118519#58#50#16091520#16100544#2#16100544#16091520#malloc#struct _structSigAtomic#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+0xff8630: ch,glue = callseq_end 0xff31b0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xff31b0:1 Node TypeID: [ 0#]
+0xff2990: i64 = Register %physreg35 Node TypeID: [ 0#]
+0xff8630: ch,glue = callseq_end 0xff31b0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xff31b0:1 Node TypeID: [ 0#]
+0xff31b0: ch,glue = <<Unknown Node #229>> 0xff2c10; TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff2c10:1 Node TypeID: [ 0#]
+0xff31b0: ch,glue = <<Unknown Node #229>> 0xff2c10; TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff2c10:1 Node TypeID: [ 1#58#50#16354808#7328244225587091928#15288228118847118519#58#50#16091520#16100544#2#16100544#16091520#malloc#struct _structSigAtomic#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+EmitMachineNode::
+0xff31b0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<i8* (i64)* @malloc> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff2c10; 0xff2c10:1 Node TypeID: [ 1#58#50#16354808#7328244225587091928#15288228118847118519#58#50#16091520#16100544#2#16100544#16091520#malloc#struct _structSigAtomic#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+CALL64pcrel32 <ga:@malloc>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:58:50 Node Type ID: [58#50#16354808#7328244225587091928#15288228118847118519#58#50#16091520#16100544#2#16100544#16091520#malloc#struct _structSigAtomic#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+
+  call void @free(i8* %26) #5, !dbg !84, !TYCHE_MD !85
+Calle Node: 0xff8810: i64 = GlobalAddress<void (i8*)* @free> 0 Node TypeID: [ 0#]
+Second Node: 0xff2f30: ch,glue = callseq_end 0xff2cb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xff2cb0:1 Node TypeID: [ 0#]
+LowerCallTo::
+LLVM IR Location (Inlined): [CWE364_Signal_Handler_Race_Condition__basic_10.c][Caller Name: CWE364_Signal_Handler_Race_Condition__basic_10_bad][Allocator Name: free][Location: 0,0][Inlined Location: 81,17][BB ID: 16103360][Inst ID: 16107568][Prev. Inst ID: 81]
+  call void @free(i8* %26) #5, !dbg !84, !TYCHE_MD !85
+0xff2f30: ch,glue = callseq_end 0xff2cb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xff2cb0:1 Node TypeID: [ 1#81#17#0#0#0#81#17#16103360#16107568#18446744073709551615#16107568#16103360#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+X86DAGToDAGISel:: 4
+Node: 0xff2f30: ch,glue = callseq_end 0xff2cb0; TargetConstant:i64<0>; TargetConstant:i64<0>; 0xff2cb0:1 Node TypeID: [ 1#81#17#0#0#0#81#17#16103360#16107568#18446744073709551615#16107568#16103360#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+0xff2cb0: ch,glue = <<Unknown Node #229>> 0xff2670; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff2670:1 Node TypeID: [ 0#]
+0xff8770: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xff8770: i64 = TargetConstant<0> Node TypeID: [ 0#]
+0xff2cb0: ch,glue = <<Unknown Node #229>> 0xff2670; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff2670:1 Node TypeID: [ 0#]
+0xff2cb0: ch,glue = <<Unknown Node #229>> 0xff2670; TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff2670:1 Node TypeID: [ 1#81#17#0#0#0#81#17#16103360#16107568#18446744073709551615#16107568#16103360#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+EmitMachineNode::
+0xff2cb0: ch,glue = <<Unknown Machine Node #65088>> TargetGlobalAddress:i64<void (i8*)* @free> 0; Register:i64 %physreg39; RegisterMask:Untyped; 0xff2670; 0xff2670:1 Node TypeID: [ 1#81#17#0#0#0#81#17#16103360#16107568#18446744073709551615#16107568#16103360#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:81:17 Node Type ID: [81#17#0#0#0#81#17#16103360#16107568#18446744073709551615#16107568#16103360#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+
+EmitFunctionBody::
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:55:17 Node Type ID: [55#17#0#0#0#55#17#16079312#16099056#18446744073709551615#16099056#16079312#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#55#17#0#0#0#55#17#16079312#16099056#18446744073709551615#16099056#16079312#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@malloc>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>, %RAX<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:58:50 Node Type ID: [58#50#16354808#7328244225587091928#15288228118847118519#58#50#16091520#16100544#2#16100544#16091520#malloc#struct _structSigAtomic#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#58#50#16354808#7328244225587091928#15288228118847118519#58#50#16091520#16100544#2#16100544#16091520#malloc#struct _structSigAtomic#CWE364_Signal_Handler_Race_Condition__basic_10_bad#
+---------------------------------------------------------------------------------------
+EmitFunctionBody::
+CALL64pcrel32 <ga:@free>, <regmask %BH %BL %BP %BPL %BX %EBP %EBX %RBP %RBX %R12 %R13 %R14 %R15 %R12B %R13B %R14B %R15B %R12D %R13D %R14D %R15D %R12W %R13W %R14W %R15W>, %RSP<imp-use>, %RDI<imp-use,kill>, %RSP<imp-def>; dbg:CWE364_Signal_Handler_Race_Condition__basic_10.c:81:17 Node Type ID: [81#17#0#0#0#81#17#16103360#16107568#18446744073709551615#16107568#16103360#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#]
+
+Dumping Symbol Name: TYCHE_SYMS#CWE364_Signal_Handler_Race_Condition__basic_10.c#81#17#0#0#0#81#17#16103360#16107568#18446744073709551615#16107568#16103360#free#FREE#CWE364_Signal_Handler_Race_Condition__basic_10_bad#
+---------------------------------------------------------------------------------------

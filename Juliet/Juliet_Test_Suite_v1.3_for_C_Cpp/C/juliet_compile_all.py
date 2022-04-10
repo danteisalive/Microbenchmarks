@@ -19,6 +19,15 @@ sys.path.append("..")
 
 import py_common
 
+#such as /home/dante/Microbenchamrks/
+BENCH_HOME_DIR="/home/dante/Microbenchmarks/"
+
+#such as /home/dante/EffectiveSan/build/bin/
+COMPILER_DIR="/home/dante/EffectiveSan/build/bin/"
+
+def find_library_path():
+    return BENCH_HOME_DIR + "/Juliet/testcasesupport"
+
 def common_start(sa, sb):
     """ returns the longest common substring from the beginning of sa and sb """
     def _iter():
@@ -144,9 +153,9 @@ if __name__ == "__main__":
 
                 #now compile the CWE
                 os.chmod(dir_path + "/run_compile_cpp.sh", 0o755)
-                # rc = subprocess.call(dir_path + "/run_compile_cpp.sh", shell=True)
+                lib_path = find_library_path()
                 print(dir_path + '/run_compile_cpp.sh')
-                rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path])
+                rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path, lib_path, COMPILER_DIR])
 
             elif z.groups()[7] == ".c":
                 folder_name = z.groups()[4] + z.groups()[5] + z.groups()[6]
@@ -173,8 +182,8 @@ if __name__ == "__main__":
                 shutil.copy("./run_compile_c.sh", dir_path)
                 os.chmod(dir_path + "/run_compile_c.sh", 0o755)
                 print(dir_path + '/run_compile_c.sh')
-                # rc = subprocess.call(dir_path + "/run_compile_c.sh", shell=True)
-                rc = subprocess.call(['sh', dir_path + '/run_compile_c.sh', dir_path])
+                lib_path = find_library_path()
+                rc = subprocess.call(['sh', dir_path + '/run_compile_c.sh', dir_path, lib_path, COMPILER_DIR])
 
             else:
                 print(result[0])
@@ -221,10 +230,14 @@ if __name__ == "__main__":
             shutil.copy("./run_compile_cpp.sh", dir_path)
             #now compile the CWE
             os.chmod(dir_path + "/run_compile_cpp.sh", 0o755)
-            # rc = subprocess.call(dir_path + "/run_compile_cpp.sh", shell=True)
+            lib_path = find_library_path()
             print(dir_path + '/run_compile_cpp.sh')
-            rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path])
+            rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path, lib_path, COMPILER_DIR])
 
         else:
             assert(0)
+
+
+
+
 
