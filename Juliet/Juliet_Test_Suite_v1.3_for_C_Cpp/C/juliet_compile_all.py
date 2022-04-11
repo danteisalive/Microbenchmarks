@@ -23,8 +23,11 @@ import py_common
 BENCH_HOME_DIR="/home/dante/Microbenchmarks/"
 
 #such as /home/dante/EffectiveSan/build/bin/
-COMPILER_DIR="/home/dante/EffectiveSan/build/bin/"
+#COMPILER_DIR="/home/dante/EffectiveSan/build/bin/"
+COMPILER_DIR="/usr/bin/"
 
+#such as -g -fsanitize=address -fno-omit-frame-pointer
+COMPILER_OPTIONS=" -g -fsanitize=address -fno-omit-frame-pointer "
 def find_library_path():
     return BENCH_HOME_DIR + "/Juliet/testcasesupport"
 
@@ -155,7 +158,7 @@ if __name__ == "__main__":
                 os.chmod(dir_path + "/run_compile_cpp.sh", 0o755)
                 lib_path = find_library_path()
                 print(dir_path + '/run_compile_cpp.sh')
-                rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path, lib_path, COMPILER_DIR])
+                rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path, lib_path, COMPILER_DIR, COMPILER_OPTIONS])
 
             elif z.groups()[7] == ".c":
                 folder_name = z.groups()[4] + z.groups()[5] + z.groups()[6]
@@ -183,7 +186,7 @@ if __name__ == "__main__":
                 os.chmod(dir_path + "/run_compile_c.sh", 0o755)
                 print(dir_path + '/run_compile_c.sh')
                 lib_path = find_library_path()
-                rc = subprocess.call(['sh', dir_path + '/run_compile_c.sh', dir_path, lib_path, COMPILER_DIR])
+                rc = subprocess.call(['sh', dir_path + '/run_compile_c.sh', dir_path, lib_path, COMPILER_DIR, COMPILER_OPTIONS])
 
             else:
                 print(result[0])
@@ -228,11 +231,14 @@ if __name__ == "__main__":
             
             #copy one time
             shutil.copy("./run_compile_cpp.sh", dir_path)
+            shutil.copy("./run_compile_c.sh", dir_path)
             #now compile the CWE
             os.chmod(dir_path + "/run_compile_cpp.sh", 0o755)
+            os.chmod(dir_path + "/run_compile_c.sh", 0o755)
             lib_path = find_library_path()
             print(dir_path + '/run_compile_cpp.sh')
-            rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path, lib_path, COMPILER_DIR])
+            rc = subprocess.call(['sh', dir_path + '/run_compile_cpp.sh', dir_path, lib_path, COMPILER_DIR, COMPILER_OPTIONS])
+            rc = subprocess.call(['sh', dir_path + '/run_compile_c.sh', dir_path, lib_path, COMPILER_DIR, COMPILER_OPTIONS])
 
         else:
             assert(0)
