@@ -1,0 +1,50 @@
+=================================================================
+==23666==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7ffc4420f620 at pc 0x000000517e6e bp 0x7ffc4420f5d0 sp 0x7ffc4420f5c8
+READ of size 4 at 0x7ffc4420f620 thread T0
+    #0 0x517e6d in CWE843_Type_Confusion__char_33::goodG2B() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_33/CWE843_Type_Confusion__char_33.cpp:61:22
+    #1 0x517c58 in CWE843_Type_Confusion__char_33::good() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_33/CWE843_Type_Confusion__char_33.cpp:67:5
+    #2 0x517f1e in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_33/CWE843_Type_Confusion__char_33.cpp:89:5
+    #3 0x7f686da97c86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #4 0x41a589 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_33/test_good.out+0x41a589)
+
+Address 0x7ffc4420f620 is located in stack of thread T0 at offset 64 in frame
+    #0 0x517c6f in CWE843_Type_Confusion__char_33::goodG2B() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_33/CWE843_Type_Confusion__char_33.cpp:48
+
+  This frame has 2 object(s):
+    [32, 40) 'data' (line 49)
+    [64, 68) 'intBuffer' (line 55) <== Memory access at offset 64 is inside this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_33/CWE843_Type_Confusion__char_33.cpp:61:22 in CWE843_Type_Confusion__char_33::goodG2B()
+Shadow bytes around the buggy address:
+  0x100008839e70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100008839e80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100008839e90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100008839ea0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100008839eb0: 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1
+=>0x100008839ec0: 00 f2 f2 f2[f8]f3 f3 f3 00 00 00 00 00 00 00 00
+  0x100008839ed0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100008839ee0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100008839ef0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100008839f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100008839f10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==23666==ABORTING

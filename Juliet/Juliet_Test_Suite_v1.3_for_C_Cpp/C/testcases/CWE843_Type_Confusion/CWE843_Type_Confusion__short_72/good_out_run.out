@@ -1,0 +1,62 @@
+=================================================================
+==25144==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7ffcb11919a0 at pc 0x00000051e996 bp 0x7ffcb11918e0 sp 0x7ffcb11918d8
+READ of size 4 at 0x7ffcb11919a0 thread T0
+    #0 0x51e995 in CWE843_Type_Confusion__short_72::goodG2BSink(std::vector<void*, std::allocator<void*> >) /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_72/CWE843_Type_Confusion__short_72b.cpp:44:18
+    #1 0x5184c5 in CWE843_Type_Confusion__short_72::goodG2B() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_72/CWE843_Type_Confusion__short_72a.cpp:72:5
+    #2 0x517f18 in CWE843_Type_Confusion__short_72::good() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_72/CWE843_Type_Confusion__short_72a.cpp:77:5
+    #3 0x51871e in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_72/CWE843_Type_Confusion__short_72a.cpp:100:5
+    #4 0x7f22cf73ec86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #5 0x41a849 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_72/test_good.out+0x41a849)
+
+Address 0x7ffcb11919a0 is located in stack of thread T0 at offset 128 in frame
+    #0 0x517f2f in CWE843_Type_Confusion__short_72::goodG2B() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_72/CWE843_Type_Confusion__short_72a.cpp:58
+
+  This frame has 13 object(s):
+    [32, 40) 'data' (line 59)
+    [64, 88) 'dataVector' (line 60)
+    [128, 132) 'intBuffer' (line 65) <== Memory access at offset 128 is inside this variable
+    [144, 152) 'agg.tmp'
+    [176, 184) 'ref.tmp' (line 69)
+    [208, 216) 'coerce'
+    [240, 248) 'agg.tmp4'
+    [272, 280) 'ref.tmp5' (line 70)
+    [304, 312) 'coerce10'
+    [336, 344) 'agg.tmp12'
+    [368, 376) 'ref.tmp13' (line 71)
+    [400, 408) 'coerce18'
+    [432, 456) 'agg.tmp20'
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_72/CWE843_Type_Confusion__short_72b.cpp:44:18 in CWE843_Type_Confusion__short_72::goodG2BSink(std::vector<void*, std::allocator<void*> >)
+Shadow bytes around the buggy address:
+  0x10001622a2e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10001622a2f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10001622a300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10001622a310: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10001622a320: 00 00 00 00 f1 f1 f1 f1 00 f2 f2 f2 00 00 00 f2
+=>0x10001622a330: f2 f2 f2 f2[f8]f2 00 f2 f2 f2 f8 f2 f2 f2 00 f2
+  0x10001622a340: f2 f2 00 f2 f2 f2 f8 f2 f2 f2 00 f2 f2 f2 00 f2
+  0x10001622a350: f2 f2 f8 f2 f2 f2 00 f2 f2 f2 00 00 00 f3 f3 f3
+  0x10001622a360: f3 f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10001622a370: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10001622a380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==25144==ABORTING

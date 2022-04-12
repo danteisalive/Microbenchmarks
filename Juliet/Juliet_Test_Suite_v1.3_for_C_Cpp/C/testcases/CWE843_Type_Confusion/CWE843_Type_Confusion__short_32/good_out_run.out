@@ -1,0 +1,50 @@
+=================================================================
+==24676==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7ffd75e12a00 at pc 0x0000005135dc bp 0x7ffd75e129b0 sp 0x7ffd75e129a8
+READ of size 4 at 0x7ffd75e12a00 thread T0
+    #0 0x5135db in goodG2B /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_32/CWE843_Type_Confusion__short_32.c:68:22
+    #1 0x513308 in CWE843_Type_Confusion__short_32_good /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_32/CWE843_Type_Confusion__short_32.c:74:5
+    #2 0x51334e in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_32/CWE843_Type_Confusion__short_32.c:92:5
+    #3 0x7f8383f20c86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #4 0x419f59 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_32/test_good.out+0x419f59)
+
+Address 0x7ffd75e12a00 is located in stack of thread T0 at offset 64 in frame
+    #0 0x51337f in goodG2B /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_32/CWE843_Type_Confusion__short_32.c:50
+
+  This frame has 2 object(s):
+    [32, 40) 'data' (line 51)
+    [64, 68) 'intBuffer' (line 60) <== Memory access at offset 64 is inside this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_32/CWE843_Type_Confusion__short_32.c:68:22 in goodG2B
+Shadow bytes around the buggy address:
+  0x10002ebba4f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba500: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba510: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba520: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba530: 00 00 00 00 00 00 00 00 f1 f1 f1 f1 00 f2 f2 f2
+=>0x10002ebba540:[f8]f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba550: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba560: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba570: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10002ebba590: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==24676==ABORTING

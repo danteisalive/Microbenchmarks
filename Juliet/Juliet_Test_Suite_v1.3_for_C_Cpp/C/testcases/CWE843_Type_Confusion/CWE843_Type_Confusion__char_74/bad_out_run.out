@@ -1,0 +1,54 @@
+=================================================================
+==24170==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7ffd15445e50 at pc 0x00000051de83 bp 0x7ffd15445cd0 sp 0x7ffd15445cc8
+READ of size 4 at 0x7ffd15445e50 thread T0
+    #0 0x51de82 in CWE843_Type_Confusion__char_74::badSink(std::map<int, void*, std::less<int>, std::allocator<std::pair<int const, void*> > >) /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_74/CWE843_Type_Confusion__char_74b.cpp:32:18
+    #1 0x518415 in CWE843_Type_Confusion__char_74::bad() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_74/CWE843_Type_Confusion__char_74a.cpp:45:5
+    #2 0x51863e in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_74/CWE843_Type_Confusion__char_74a.cpp:105:5
+    #3 0x7f3f68385c86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #4 0x41a949 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_74/test_bad.out+0x41a949)
+
+Address 0x7ffd15445e50 is located in stack of thread T0 at offset 112 in frame
+    #0 0x51801f in CWE843_Type_Confusion__char_74::bad() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_74/CWE843_Type_Confusion__char_74a.cpp:31
+
+  This frame has 6 object(s):
+    [32, 80) 'dataMap' (line 33)
+    [112, 113) 'charBuffer' (line 38) <== Memory access at offset 112 partially overflows this variable
+    [128, 132) 'ref.tmp' (line 42)
+    [144, 148) 'ref.tmp1' (line 43)
+    [160, 164) 'ref.tmp3' (line 44)
+    [176, 224) 'agg.tmp'
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_74/CWE843_Type_Confusion__char_74b.cpp:32:18 in CWE843_Type_Confusion__char_74::badSink(std::map<int, void*, std::less<int>, std::allocator<std::pair<int const, void*> > >)
+Shadow bytes around the buggy address:
+  0x100022a80b70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100022a80b80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100022a80b90: 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1
+  0x100022a80ba0: f8 f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100022a80bb0: 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1
+=>0x100022a80bc0: 00 00 00 00 00 00 f2 f2 f2 f2[f8]f2 f8 f2 f8 f2
+  0x100022a80bd0: f8 f2 00 00 00 00 00 00 f3 f3 f3 f3 00 00 00 00
+  0x100022a80be0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100022a80bf0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100022a80c00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100022a80c10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==24170==ABORTING

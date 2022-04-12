@@ -1,0 +1,49 @@
+=================================================================
+==23656==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7ffc18c96980 at pc 0x000000513565 bp 0x7ffc18c96930 sp 0x7ffc18c96928
+READ of size 4 at 0x7ffc18c96980 thread T0
+    #0 0x513564 in CWE843_Type_Confusion__char_32_bad /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_32/CWE843_Type_Confusion__char_32.c:40:22
+    #1 0x51360e in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_32/CWE843_Type_Confusion__char_32.c:97:5
+    #2 0x7f634aec5c86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #3 0x419f59 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_32/test_bad.out+0x419f59)
+
+Address 0x7ffc18c96980 is located in stack of thread T0 at offset 64 in frame
+    #0 0x51330f in CWE843_Type_Confusion__char_32_bad /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_32/CWE843_Type_Confusion__char_32.c:22
+
+  This frame has 2 object(s):
+    [32, 40) 'data' (line 23)
+    [64, 65) 'charBuffer' (line 32) <== Memory access at offset 64 partially overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_32/CWE843_Type_Confusion__char_32.c:40:22 in CWE843_Type_Confusion__char_32_bad
+Shadow bytes around the buggy address:
+  0x10000318ace0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318acf0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318ad00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318ad10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318ad20: 00 00 00 00 00 00 00 00 f1 f1 f1 f1 00 f2 f2 f2
+=>0x10000318ad30:[f8]f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318ad40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318ad50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318ad60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318ad70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000318ad80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==23656==ABORTING

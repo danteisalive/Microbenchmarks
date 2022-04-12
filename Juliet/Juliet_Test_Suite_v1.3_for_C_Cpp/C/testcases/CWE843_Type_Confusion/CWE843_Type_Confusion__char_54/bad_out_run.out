@@ -1,0 +1,52 @@
+=================================================================
+==23885==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7fffc4b85e20 at pc 0x00000051360f bp 0x7fffc4b85d60 sp 0x7fffc4b85d58
+READ of size 4 at 0x7fffc4b85e20 thread T0
+    #0 0x51360e in CWE843_Type_Confusion__char_54e_badSink /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/CWE843_Type_Confusion__char_54e.c:26:18
+    #1 0x5135a4 in CWE843_Type_Confusion__char_54d_badSink /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/CWE843_Type_Confusion__char_54d.c:28:5
+    #2 0x513574 in CWE843_Type_Confusion__char_54c_badSink /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/CWE843_Type_Confusion__char_54c.c:28:5
+    #3 0x513544 in CWE843_Type_Confusion__char_54b_badSink /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/CWE843_Type_Confusion__char_54b.c:28:5
+    #4 0x513428 in CWE843_Type_Confusion__char_54_bad /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/CWE843_Type_Confusion__char_54a.c:34:5
+    #5 0x5134be in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/CWE843_Type_Confusion__char_54a.c:84:5
+    #6 0x7f652d948c86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #7 0x419f59 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/test_bad.out+0x419f59)
+
+Address 0x7fffc4b85e20 is located in stack of thread T0 at offset 32 in frame
+    #0 0x51330f in CWE843_Type_Confusion__char_54_bad /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/CWE843_Type_Confusion__char_54a.c:25
+
+  This frame has 1 object(s):
+    [32, 33) 'charBuffer' (line 31) <== Memory access at offset 32 partially overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54/CWE843_Type_Confusion__char_54e.c:26:18 in CWE843_Type_Confusion__char_54e_badSink
+Shadow bytes around the buggy address:
+  0x100078968b70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100078968b80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100078968b90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100078968ba0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100078968bb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x100078968bc0: f1 f1 f1 f1[f8]f3 f3 f3 00 00 00 00 00 00 00 00
+  0x100078968bd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100078968be0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100078968bf0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100078968c00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x100078968c10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==23885==ABORTING

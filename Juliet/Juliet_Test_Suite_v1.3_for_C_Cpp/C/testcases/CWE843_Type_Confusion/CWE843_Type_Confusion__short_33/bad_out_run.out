@@ -1,0 +1,49 @@
+=================================================================
+==24714==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7ffc7ffa9380 at pc 0x000000517e5d bp 0x7ffc7ffa9330 sp 0x7ffc7ffa9328
+READ of size 4 at 0x7ffc7ffa9380 thread T0
+    #0 0x517e5c in CWE843_Type_Confusion__short_33::bad() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_33/CWE843_Type_Confusion__short_33.cpp:38:22
+    #1 0x517f0e in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_33/CWE843_Type_Confusion__short_33.cpp:94:5
+    #2 0x7fac3c416c86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #3 0x41a589 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_33/test_bad.out+0x41a589)
+
+Address 0x7ffc7ffa9380 is located in stack of thread T0 at offset 64 in frame
+    #0 0x517c5f in CWE843_Type_Confusion__short_33::bad() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_33/CWE843_Type_Confusion__short_33.cpp:25
+
+  This frame has 2 object(s):
+    [32, 40) 'data' (line 26)
+    [64, 66) 'shortBuffer' (line 32) <== Memory access at offset 64 partially overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_33/CWE843_Type_Confusion__short_33.cpp:38:22 in CWE843_Type_Confusion__short_33::bad()
+Shadow bytes around the buggy address:
+  0x10000ffed220: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed230: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed240: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed250: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed260: 00 00 00 00 00 00 00 00 f1 f1 f1 f1 00 f2 f2 f2
+=>0x10000ffed270:[f8]f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed290: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed2a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed2b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000ffed2c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==24714==ABORTING

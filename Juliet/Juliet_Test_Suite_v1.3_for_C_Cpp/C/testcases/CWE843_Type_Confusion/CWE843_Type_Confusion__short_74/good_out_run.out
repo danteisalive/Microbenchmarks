@@ -1,0 +1,55 @@
+=================================================================
+==25224==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7ffe19b35990 at pc 0x00000051dea3 bp 0x7ffe19b35810 sp 0x7ffe19b35808
+READ of size 4 at 0x7ffe19b35990 thread T0
+    #0 0x51dea2 in CWE843_Type_Confusion__short_74::goodG2BSink(std::map<int, void*, std::less<int>, std::allocator<std::pair<int const, void*> > >) /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_74/CWE843_Type_Confusion__short_74b.cpp:44:18
+    #1 0x51842c in CWE843_Type_Confusion__short_74::goodG2B() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_74/CWE843_Type_Confusion__short_74a.cpp:72:5
+    #2 0x518018 in CWE843_Type_Confusion__short_74::good() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_74/CWE843_Type_Confusion__short_74a.cpp:77:5
+    #3 0x51865e in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_74/CWE843_Type_Confusion__short_74a.cpp:100:5
+    #4 0x7f9d9a209c86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #5 0x41a949 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_74/test_good.out+0x41a949)
+
+Address 0x7ffe19b35990 is located in stack of thread T0 at offset 112 in frame
+    #0 0x51802f in CWE843_Type_Confusion__short_74::goodG2B() /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_74/CWE843_Type_Confusion__short_74a.cpp:58
+
+  This frame has 6 object(s):
+    [32, 80) 'dataMap' (line 60)
+    [112, 116) 'intBuffer' (line 65) <== Memory access at offset 112 is inside this variable
+    [128, 132) 'ref.tmp' (line 69)
+    [144, 148) 'ref.tmp1' (line 70)
+    [160, 164) 'ref.tmp3' (line 71)
+    [176, 224) 'agg.tmp'
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_74/CWE843_Type_Confusion__short_74b.cpp:44:18 in CWE843_Type_Confusion__short_74::goodG2BSink(std::map<int, void*, std::less<int>, std::allocator<std::pair<int const, void*> > >)
+Shadow bytes around the buggy address:
+  0x10004335eae0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004335eaf0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004335eb00: 00 00 00 00 f1 f1 f1 f1 f8 f3 f3 f3 00 00 00 00
+  0x10004335eb10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004335eb20: 00 00 00 00 f1 f1 f1 f1 00 00 00 00 00 00 f2 f2
+=>0x10004335eb30: f2 f2[f8]f2 f8 f2 f8 f2 f8 f2 00 00 00 00 00 00
+  0x10004335eb40: f3 f3 f3 f3 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004335eb50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004335eb60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004335eb70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10004335eb80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==25224==ABORTING

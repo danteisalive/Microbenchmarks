@@ -1,0 +1,50 @@
+=================================================================
+==25026==ERROR: AddressSanitizer: stack-use-after-scope on address 0x7ffc7b4042f0 at pc 0x000000513646 bp 0x7ffc7b404230 sp 0x7ffc7b404228
+READ of size 4 at 0x7ffc7b4042f0 thread T0
+    #0 0x513645 in CWE843_Type_Confusion__short_66b_badSink /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_66/CWE843_Type_Confusion__short_66b.c:26:18
+    #1 0x5134a0 in CWE843_Type_Confusion__short_66_bad /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_66/CWE843_Type_Confusion__short_66a.c:37:5
+    #2 0x51354e in main /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_66/CWE843_Type_Confusion__short_66a.c:88:5
+    #3 0x7fa5f5238c86 in __libc_start_main /build/glibc-uZu3wS/glibc-2.27/csu/../csu/libc-start.c:310
+    #4 0x419f59 in _start (/home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_66/test_bad.out+0x419f59)
+
+Address 0x7ffc7b4042f0 is located in stack of thread T0 at offset 112 in frame
+    #0 0x51330f in CWE843_Type_Confusion__short_66_bad /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_66/CWE843_Type_Confusion__short_66a.c:25
+
+  This frame has 2 object(s):
+    [32, 72) 'dataArray' (line 27)
+    [112, 114) 'shortBuffer' (line 32) <== Memory access at offset 112 partially overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism or swapcontext
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-scope /home/dante/Microbenchmarks/Juliet/Juliet_Test_Suite_v1.3_for_C_Cpp/C/testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_66/CWE843_Type_Confusion__short_66b.c:26:18 in CWE843_Type_Confusion__short_66b_badSink
+Shadow bytes around the buggy address:
+  0x10000f678800: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f678810: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f678820: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f678830: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f678840: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x10000f678850: f1 f1 f1 f1 00 00 00 00 00 f2 f2 f2 f2 f2[f8]f3
+  0x10000f678860: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f678870: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f678880: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f678890: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x10000f6788a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==25026==ABORTING
